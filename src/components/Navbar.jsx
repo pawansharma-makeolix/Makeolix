@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 // ─── NAV DATA ────────────────────────────────────────────────────────────────
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
+  
+  
   {
     name: "Services",
     href: "/services",
@@ -91,85 +91,83 @@ const navItems = [
           { label: "Social Media Advertising", href: "/services/sma" },
         ],
       },
-      {
-        heading: "Automobile & Home",
-        href: "/services/automobile-home",
-
-        items: [
-          { label: "Aviation SEO", href: "/services/aviation-seo" },
-          {
-            label: "Home Remodeling SEO",
-            href: "/services/home-remodeling-seo",
-          },
-          { label: "Cleaning SEO", href: "/services/cleaning-seo" },
-          { label: "Entertainment SEO", href: "/services/entertainment-seo" },
-        ],
-      },
-      {
-        heading: "Popular Markets",
-        href: "/services/popular-markets",
-
-        items: [
-          { label: "Automotive SEO", href: "/services/automotive-seo" },
-          { label: "Construction SEO", href: "/services/construction-seo" },
-          { label: "Dental SEO", href: "/services/dental-seo" },
-          { label: "HVAC SEO", href: "/services/hvac-seo" },
-          { label: "Healthcare SEO", href: "/services/healthcare-seo" },
-          { label: "Insurance SEO", href: "/services/insurance-seo" },
-          { label: "Law Firm SEO", href: "/services/law-seo" },
-          { label: "Real Estate SEO", href: "/services/real-estate-seo" },
-          { label: "Plumber SEO", href: "/services/plumber-seo" },
-        ],
-      },
-
-      {
-        heading: "Service Sector",
-        href: "/services/service-sector",
-
-        items: [
-          { label: "Daycare SEO", href: "/services/daycare-seo" },
-          { label: "Contractors SEO", href: "/services/contractors-seo" },
-          { label: "Fire Protection SEO", href: "/services/fire-seo" },
-          { label: "Financial SEO", href: "/services/financial-seo" },
-          { label: "Pest Control SEO", href: "/services/pest-seo" },
-          { label: "Salons SEO", href: "/services/salon-seo" },
-          { label: "Veterinary SEO", href: "/services/veterinary-seo" },
-        ],
-      },
-      {
-        heading: "Food & Health",
-        href: "/services/food-health",
-
-        items: [
-          { label: "Restaurant SEO", href: "/services/restaurant-seo" },
-          { label: "Agriculture SEO", href: "/services/agriculture-seo" },
-          { label: "Fitness SEO", href: "/services/fitness-seo" },
-          { label: "Kitchen Remodeler SEO", href: "/services/kitchen-seo" },
-          { label: "Therapist SEO", href: "/services/therapist-seo" },
-          { label: "Catering SEO", href: "/services/catering-seo" },
-          { label: "Yoga SEO", href: "/services/yoga-seo" },
-          { label: "Pharma SEO", href: "/services/pharma-seo" },
-        ],
-      },
-      {
-        heading: "Others",
-        href: "/services/others",
-
-        items: [
-          { label: "Education SEO", href: "/services/education-seo" },
-          { label: "Jewelry SEO", href: "/services/jewelry-seo" },
-          { label: "Retail SEO", href: "/services/retail-seo" },
-          { label: "Hospitality SEO", href: "/services/hospitality-seo" },
-          { label: "Tree Service SEO", href: "/services/tree-seo" },
-          { label: "Photography SEO", href: "/services/photo-seo" },
-          { label: "Movers SEO", href: "/services/movers-seo" },
-          { label: "Cannabis SEO", href: "/services/cannabis-seo" },
-          { label: "Travel SEO", href: "/services/travel-seo" },
-        ],
-      },
+      
     ],
   },
-
+{
+  name: "Industry",
+  href: "/industry",
+  mega: true,
+  groups: [
+    {
+      heading: "Popular Markets",
+      href: "/services/popular-markets",
+      items: [
+        { label: "Automotive SEO", href: "/services/automotive-seo" },
+        { label: "Construction SEO", href: "/services/construction-seo" },
+        { label: "Dental SEO", href: "/services/dental-seo" },
+        { label: "HVAC SEO", href: "/services/hvac-seo" },
+        { label: "Healthcare SEO", href: "/services/healthcare-seo" },
+        { label: "Insurance SEO", href: "/services/insurance-seo" },
+        { label: "Law Firm SEO", href: "/services/law-seo" },
+        { label: "Real Estate SEO", href: "/services/real-estate-seo" },
+        { label: "Plumber SEO", href: "/services/plumber-seo" },
+      ],
+    },
+    {
+      heading: "Automobile & Home",
+      href: "/services/automobile-home",
+      items: [
+        { label: "Aviation SEO", href: "/services/aviation-seo" },
+        { label: "Home Remodeling SEO", href: "/services/home-remodeling-seo" },
+        { label: "Cleaning SEO", href: "/services/cleaning-seo" },
+        { label: "Entertainment SEO", href: "/services/entertainment-seo" },
+      ],
+    },
+    {
+      heading: "Food & Health",
+      href: "/services/food-health",
+      items: [
+        { label: "Restaurant SEO", href: "/services/restaurant-seo" },
+        { label: "Agriculture SEO", href: "/services/agriculture-seo" },
+        { label: "Fitness SEO", href: "/services/fitness-seo" },
+        { label: "Kitchen Remodeler SEO", href: "/services/kitchen-seo" },
+        { label: "Therapist SEO", href: "/services/therapist-seo" },
+        { label: "Catering SEO", href: "/services/catering-seo" },
+        { label: "Yoga SEO", href: "/services/yoga-seo" },
+        { label: "Pharma SEO", href: "/services/pharma-seo" },
+      ],
+    },
+    {
+      heading: "Service Sector",
+      href: "/services/service-sector",
+      items: [
+        { label: "Daycare SEO", href: "/services/daycare-seo" },
+        { label: "Contractors SEO", href: "/services/contractors-seo" },
+        { label: "Fire Protection SEO", href: "/services/fire-seo" },
+        { label: "Financial SEO", href: "/services/financial-seo" },
+        { label: "Pest Control SEO", href: "/services/pest-seo" },
+        { label: "Salons SEO", href: "/services/salon-seo" },
+        { label: "Veterinary SEO", href: "/services/veterinary-seo" },
+      ],
+    },
+    {
+      heading: "Others",
+      href: "/services/others",
+      items: [
+        { label: "Education SEO", href: "/services/education-seo" },
+        { label: "Jewelry SEO", href: "/services/jewelry-seo" },
+        { label: "Retail SEO", href: "/services/retail-seo" },
+        { label: "Hospitality SEO", href: "/services/hospitality-seo" },
+        { label: "Tree Service SEO", href: "/services/tree-seo" },
+        { label: "Photography SEO", href: "/services/photo-seo" },
+        { label: "Movers SEO", href: "/services/movers-seo" },
+        { label: "Cannabis SEO", href: "/services/cannabis-seo" },
+        { label: "Travel SEO", href: "/services/travel-seo" },
+      ],
+    },
+  ],
+},
   {
     name: "Pricing",
     href: "#",
@@ -180,8 +178,9 @@ const navItems = [
       { label: "Web Packages", href: "/pricing/web" },
     ],
   },
-  { name: "Blog", href: "/blog" },
-  { name: "Contact", href: "/contact-us" },
+  { name: "About", href: "/about" },
+  { name: "Testimonials", href: "/testimonials" },
+  { name: "Contact Us", href: "/contact-us" },
 ];
 
 const MenuIcon = ({ size = 20 }) => (
@@ -583,7 +582,7 @@ export default function Navbar() {
                 style={{
                   // Services = wide grouped, Pricing = narrow simple
                   width: activeMegaItem.groups ? "1200px" : "380px",
-                  maxHeight: "70vh", // 👈 IMPORTANT (screen ke hisaab se)
+                  maxHeight: "80vh", // 👈 IMPORTANT (screen ke hisaab se)
                   overflowY: "auto",
 
                   borderRadius: "24px",
@@ -664,7 +663,7 @@ export default function Navbar() {
                   <div
                     style={{
                       display: "grid",
-                      gridTemplateColumns: "repeat(4, 1fr)",
+                      gridTemplateColumns: "repeat(5, 1fr)",
                       gap: "0",
                     }}
                   >
