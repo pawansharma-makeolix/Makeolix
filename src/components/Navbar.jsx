@@ -697,17 +697,8 @@ export default function Navbar() {
                             marginBottom: "10px",
                           }}
                         >
-                          <span style={{ fontSize: "15px" }}>
-                            <img
-                              src="/logo1.png"
-                              alt="icon"
-                              style={{
-                                width: "16px",
-                                height: "16px",
-                                objectFit: "contain",
-                              }}
-                            />
-                          </span>
+                          
+                          
                           <Link
                             to={group.href || "#"}
                             className="nav-font"
