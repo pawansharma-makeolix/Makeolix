@@ -1,3 +1,4 @@
+import ContactSection from "../components/ContactSection"
 import CTAMarquee from "../components/CTAMarquee"
 import HeroOrbit from "../components/HeroOrbit"
 import Navbar from "../components/Navbar"
@@ -8,6 +9,7 @@ const ContactUs = () => {
     <>
     <Navbar></Navbar>
     <HeroOrbit></HeroOrbit>
+    <ContactSection></ContactSection>
     <CTAMarquee></CTAMarquee>
     <UltraFooter></UltraFooter>
     </>

@@ -83,12 +83,12 @@ function OrbitRing({ radius, duration, icons, delay = 0 }) {
             transition={{ duration, repeat: Infinity, ease: "linear" }}
           >
             <div
-              className="w-10 h-10 rounded-full flex items-center justify-center text-xs font-semibold select-none"
+              className="w-20 h-10 rounded-full flex items-center justify-center text-xs font-semibold select-none"
               style={{
                 background:     "rgba(0,56,99,0.55)",
                 border:         "1px solid rgba(0,80,157,0.5)",
                 color:          "#a0aec0",
-                backdropFilter: "blur(6px)",
+                backdropFilter: "blur(10px)",
                 boxShadow:      "0 0 12px rgba(0,80,157,0.3), inset 0 1px 0 rgba(255,255,255,0.06)",
               }}
             >
@@ -170,7 +170,7 @@ export default function HeroOrbit() {
   return (
     <section
       ref={ref}
-      className="relative py-40  w-full min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative py-50  w-full min-h-screen flex items-center justify-center overflow-hidden"
       style={{ background: "var(--bg-main, #00171f)" }}
     >
       {/* grid + radial overlay */}
@@ -207,40 +207,14 @@ export default function HeroOrbit() {
         initial="hidden"
         animate={controls}
       >
-        <motion.div variants={fadeUp}>
-          <span
-            className="inline-flex items-center gap-2 text-xs tracking-widest uppercase mb-6 px-4 py-1.5 rounded-full"
-            style={{
-              background: "rgba(0,80,157,0.18)",
-              border:     "1px solid rgba(0,80,157,0.4)",
-              color:      "#118ab2",
-            }}
-          >
-            <span
-              className="w-1.5 h-1.5 rounded-full animate-pulse"
-              style={{ background: "#118ab2" }}
-            />
-            Your Tagline Here
-          </span>
-        </motion.div>
+        
 
         <motion.h1
           variants={fadeUp}
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.08] mb-6"
+          className="text-3xl sm:text-5xl lg:text-5xl font-semibold leading-[1.08] mb-6"
           style={{ color: "#e2eaf4" }}
         >
-          Your{" "}
-          <span
-            style={{
-              background: "linear-gradient(135deg, #118ab2 0%, #00509d 50%, #ff8fab 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-            }}
-          >
-            Headline
-          </span>{" "}
-          Goes Here
+          Your Headline Goes Here
         </motion.h1>
 
         <motion.p

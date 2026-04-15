@@ -368,7 +368,7 @@ export const PricingCard = ({
 // ─── Main Page ────────────────────────────────────────────────────────────────
 export const PricingSection = ({
   plans, 
-  title ,
+ 
   subtitle ,
   showBg = true,
   contactUrl,
@@ -386,12 +386,7 @@ export const PricingSection = ({
           transition={{ duration: 0.55 }}
           style={{ width: '50px', height: '3px', background: 'linear-gradient(90deg,var(--blue-2),var(--blue-3))', margin: '0 auto 18px', borderRadius: '2px' }} />
 
-        <motion.h1
-          initial={{ opacity: 0, y: -22 }} animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          style={{ fontSize: 'clamp(28px,5vw,52px)', fontWeight: 800, color: '#fff', letterSpacing: '-0.02em', marginBottom: '8px' }}>
-          {title}
-        </motion.h1>
+       
 
         <motion.p
           initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
@@ -438,3 +433,6 @@ export const PricingSection = ({
 );
 
 export default PricingSection;
+
+
+
