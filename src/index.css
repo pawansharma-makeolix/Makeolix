@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  cursor: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+}
+
+
+:root {
+  /* 🌑 Dark Base */
+  --bg-main: #00171f;
+  --bg-soft: #051923;
+
+  /* 🔤 Text */
+  --text-main: #1b1b1b;
+  --text-muted: #a0aec0;
+  
+
+  /* 🔵 Primary Blues (Headings / accents) */
+  --blue-1: #003863;
+  --blue-2: #00509d;
+  --blue-3: #118ab2;
+
+  /* 🌸 Accent (VERY LIMITED USE) */
+  --accent-pink: #ff8fab;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeInUp 1s ease forwards;
+}
+
+
+/* 🔥 SCROLL ANIMATION */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 15s linear infinite;
+}
+
+.animate-scroll-reverse {
+  animation: scroll 15s linear infinite reverse;
+}
+
+/* 💎 PREMIUM FADE EDGES */
+.fade-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+
+/* FAST SCROLL */
+@keyframes scrollFast {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-fast {
+  animation: scrollFast 15s linear infinite;
+}
+
+.animate-scroll-reverse-fast {
+  animation: scrollFast 15s linear infinite reverse;
+}
+
+
+.scroll-container:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes marquee-up {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+
+@keyframes orb-drift {
+  from { transform: translate(0,0) scale(1); }
+  to   { transform: translate(30px,20px) scale(1.08); }
+}
+
+@keyframes particle-float {
+  0%   { transform: translateY(0) translateX(0) scale(1); opacity:0; }
+  10%  { opacity:.7; }
+  90%  { opacity:.3; }
+  100% { transform: translateY(-120px) translateX(20px) scale(.2); opacity:0; }
+}
+
+@keyframes grid-breathe {
+  0%,100% { opacity:.6; }
+  50%     { opacity:1; }
+}
+
+/* ===== CLASSES ===== */
+
+.animate-marquee {
+  animation: marquee-up 22s linear infinite;
+}
+
+.animate-orb {
+  animation: orb-drift 12s ease-in-out infinite alternate;
+}
+
+.animate-particle {
+  animation: particle-float linear infinite;
+}
+
+.animate-grid {
+  animation: grid-breathe 6s ease-in-out infinite;
+}
+
+
+
+
