@@ -1,291 +1,337 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
-  ArrowRight, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  ArrowRight,
   CheckCircle2,
   Building2,
   User,
   Briefcase,
   Sparkles,
   Send,
-  ChevronRight
-} from 'lucide-react';
+  ChevronRight,
+  Upload,
+  FileText,
+  X,
+  Zap,
+  Globe,
+  Shield,
+} from "lucide-react";
 
-// Business Form Component
-const BusinessForm = ({ isActive }) => {
-  const [formData, setFormData] = useState({
-    companyName: '',
-    businessEmail: '',
-    phone: '',
-    projectType: '',
-    budget: '',
-    message: ''
-  });
+/* ─── Floating Particle ─── */
+const Particle = ({ style }) => (
+  <motion.div
+    className="absolute rounded-full pointer-events-none"
+    style={{ width: 4, height: 4, background: "rgba(103,232,249,0.6)", ...style }}
+    animate={{ y: [0, -120, 0], opacity: [0, 1, 0], scale: [0, 1.5, 0] }}
+    transition={{
+      duration: style.duration ?? 4,
+      repeat: Infinity,
+      delay: style.delay ?? 0,
+      ease: "easeInOut",
+    }}
+  />
+);
 
-  const [focusedField, setFocusedField] = useState(null);
+const particles = Array.from({ length: 18 }, (_, i) => ({
+  left: `${(i * 37 + 11) % 100}%`,
+  top: `${(i * 53 + 7) % 100}%`,
+  delay: (i * 0.37) % 4,
+  duration: 3 + (i % 3),
+}));
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+/* ─── Animated underline input wrapper ─── */
+const FieldWrap = ({ children, focused, className = "" }) => (
+  <motion.div
+    className={`relative ${className}`}
+    animate={
+      focused
+        ? { scale: 1.015, filter: "drop-shadow(0 0 12px rgba(17,138,178,0.4))" }
+        : { scale: 1, filter: "none" }
+    }
+    transition={{ type: "spring", stiffness: 300, damping: 22 }}
+  >
+    {children}
+    <motion.div
+      className="absolute bottom-0 left-0 h-[2px] rounded-full"
+      style={{ background: "linear-gradient(90deg,#118ab2,#67e8f9)" }}
+      animate={{ width: focused ? "100%" : "0%" }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
+    />
+  </motion.div>
+);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Business Form:', formData);
-  };
+const inputStyle = {
+  background: "rgba(0,23,31,0.65)",
+  border: "1.5px solid rgba(17,138,178,0.22)",
+  color: "#e0f2fe",
+  backdropFilter: "blur(12px)",
+  outline: "none",
+};
 
-  const inputVariants = {
-    focused: { 
-      scale: 1.02,
-      borderColor: "var(--blue-3)",
-      boxShadow: "0 0 20px rgba(17,138,178,0.3)",
-      transition: { type: "spring", stiffness: 300, damping: 20 }
-    },
-    unfocused: { 
-      scale: 1,
-      borderColor: "rgba(17,138,178,0.2)",
-      boxShadow: "none",
-      transition: { duration: 0.2 }
+const selectStyle = { ...inputStyle };
+
+/* ─── Resume Upload Field ─── */
+const ResumeUpload = ({ file, setFile }) => {
+  const [dragging, setDragging] = useState(false);
+  const inputRef = useRef(null);
+
+  const handleFile = (f) => {
+    if (f && (f.type === "application/pdf" || f.name.endsWith(".doc") || f.name.endsWith(".docx"))) {
+      setFile(f);
     }
   };
 
+  const onDrop = useCallback((e) => {
+    e.preventDefault();
+    setDragging(false);
+    handleFile(e.dataTransfer.files[0]);
+  }, []);
+
+  const onDragOver = (e) => { e.preventDefault(); setDragging(true); };
+  const onDragLeave = () => setDragging(false);
+
   return (
-    <motion.form
-      initial={{ opacity: 0, x: -50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: 50 }}
-      transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
-      onSubmit={handleSubmit}
-      className="space-y-5"
-    >
-      <div className="grid grid-cols-2 gap-4">
-        {/* Company Name */}
-        <motion.div 
-          className="col-span-2 relative"
-          variants={inputVariants}
-          animate={focusedField === 'companyName' ? "focused" : "unfocused"}
-        >
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#118ab2]">
-            <Building2 size={18} />
-          </div>
-          <input
-            type="text"
-            name="companyName"
-            placeholder="Company Name"
-            value={formData.companyName}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('companyName')}
-            onBlur={() => setFocusedField(null)}
-            className="w-full pl-12 pr-4 py-3.5 rounded-xl text-base transition-all duration-300"
-            style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
-            }}
-          />
+    <motion.div className="col-span-2" layout>
+      <AnimatePresence mode="wait">
+        {!file ? (
           <motion.div
-            className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#118ab2] to-[#67e8f9]"
-            initial={{ width: "0%" }}
-            animate={{ width: focusedField === 'companyName' ? "100%" : "0%" }}
-            transition={{ duration: 0.3 }}
-          />
-        </motion.div>
-
-        {/* Business Email */}
-        <motion.div 
-          className="relative"
-          variants={inputVariants}
-          animate={focusedField === 'businessEmail' ? "focused" : "unfocused"}
-        >
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#118ab2]">
-            <Mail size={18} />
-          </div>
-          <input
-            type="email"
-            name="businessEmail"
-            placeholder="Business Email"
-            value={formData.businessEmail}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('businessEmail')}
-            onBlur={() => setFocusedField(null)}
-            className="w-full pl-12 pr-4 py-3.5 rounded-xl text-base transition-all duration-300"
+            key="dropzone"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            onClick={() => inputRef.current.click()}
+            onDrop={onDrop}
+            onDragOver={onDragOver}
+            onDragLeave={onDragLeave}
+            className="relative cursor-pointer rounded-xl overflow-hidden"
             style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
+              border: `2px dashed ${dragging ? "rgba(103,232,249,0.8)" : "rgba(17,138,178,0.35)"}`,
+              background: dragging
+                ? "rgba(17,138,178,0.12)"
+                : "rgba(0,23,31,0.5)",
+              backdropFilter: "blur(12px)",
+              transition: "all 0.3s",
             }}
-          />
-        </motion.div>
+            whileHover={{ borderColor: "rgba(103,232,249,0.6)", background: "rgba(17,138,178,0.08)" }}
+          >
+            {/* scanning line */}
+            <motion.div
+              className="absolute left-0 right-0 h-[1px]"
+              style={{ background: "linear-gradient(90deg,transparent,#67e8f9,transparent)" }}
+              animate={{ top: ["0%", "100%"] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
+            />
 
-        {/* Phone */}
-        <motion.div 
-          className="relative"
-          variants={inputVariants}
-          animate={focusedField === 'phone' ? "focused" : "unfocused"}
-        >
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#118ab2]">
-            <Phone size={18} />
-          </div>
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            value={formData.phone}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('phone')}
-            onBlur={() => setFocusedField(null)}
-            className="w-full pl-12 pr-4 py-3.5 rounded-xl text-base transition-all duration-300"
-            style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
-            }}
-          />
-        </motion.div>
+            <div className="flex flex-col items-center justify-center py-7 gap-3">
+              <motion.div
+                animate={dragging ? { scale: 1.25, rotate: [0, -8, 8, 0] } : { scale: 1 }}
+                transition={{ duration: 0.4 }}
+                className="p-4 rounded-2xl"
+                style={{
+                  background: "linear-gradient(135deg,rgba(0,56,99,0.7),rgba(17,138,178,0.5))",
+                  border: "1px solid rgba(17,138,178,0.35)",
+                }}
+              >
+                <Upload size={22} style={{ color: "#67e8f9" }} />
+              </motion.div>
 
-        {/* Project Type */}
-        <motion.div 
-          className="col-span-2 relative"
-          variants={inputVariants}
-          animate={focusedField === 'projectType' ? "focused" : "unfocused"}
-        >
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#118ab2]">
-            <Briefcase size={18} />
-          </div>
-          <select
-            name="projectType"
-            value={formData.projectType}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('projectType')}
-            onBlur={() => setFocusedField(null)}
-            className="w-full pl-12 pr-4 py-3.5 rounded-xl text-base transition-all duration-300 appearance-none cursor-pointer"
+              <div className="text-center">
+                <p className="font-semibold text-sm" style={{ color: "#e0f2fe" }}>
+                  {dragging ? "Drop it here!" : "Upload Resume / CV"}
+                </p>
+                <p className="text-xs mt-1" style={{ color: "rgba(148,163,184,0.8)" }}>
+                  Drag & drop or click · PDF, DOC, DOCX
+                </p>
+              </div>
+            </div>
+            <input ref={inputRef} type="file" accept=".pdf,.doc,.docx" className="hidden" onChange={(e) => handleFile(e.target.files[0])} />
+          </motion.div>
+        ) : (
+          <motion.div
+            key="preview"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 300, damping: 22 }}
+            className="flex items-center gap-4 px-5 py-4 rounded-xl"
             style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
+              background: "rgba(17,138,178,0.12)",
+              border: "1.5px solid rgba(103,232,249,0.4)",
+              backdropFilter: "blur(12px)",
             }}
           >
+            <motion.div
+              animate={{ rotate: [0, 5, -5, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+              className="p-2.5 rounded-xl flex-shrink-0"
+              style={{ background: "linear-gradient(135deg,rgba(0,56,99,0.8),rgba(17,138,178,0.6))" }}
+            >
+              <FileText size={20} style={{ color: "#67e8f9" }} />
+            </motion.div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold truncate" style={{ color: "#e0f2fe" }}>
+                {file.name}
+              </p>
+              <p className="text-xs mt-0.5" style={{ color: "rgba(103,232,249,0.8)" }}>
+                {(file.size / 1024).toFixed(1)} KB · Ready to upload
+              </p>
+              {/* progress bar */}
+              <motion.div className="mt-2 h-1 rounded-full overflow-hidden" style={{ background: "rgba(17,138,178,0.2)" }}>
+                <motion.div
+                  className="h-full rounded-full"
+                  style={{ background: "linear-gradient(90deg,#118ab2,#67e8f9)" }}
+                  initial={{ width: "0%" }}
+                  animate={{ width: "100%" }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                />
+              </motion.div>
+            </div>
+            <motion.button
+              onClick={() => setFile(null)}
+              whileHover={{ scale: 1.15, rotate: 90 }}
+              whileTap={{ scale: 0.9 }}
+              className="p-1.5 rounded-lg flex-shrink-0"
+              style={{ background: "rgba(239,68,68,0.15)", border: "1px solid rgba(239,68,68,0.3)" }}
+            >
+              <X size={14} style={{ color: "#f87171" }} />
+            </motion.button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+};
+
+/* ─── Submit Button ─── */
+const SubmitBtn = ({ label }) => (
+  <motion.button
+    type="submit"
+    className="w-full relative overflow-hidden rounded-xl"
+    whileHover={{ scale: 1.025 }}
+    whileTap={{ scale: 0.97 }}
+  >
+    <motion.div
+      className="absolute inset-0"
+      style={{
+        background: "linear-gradient(135deg,#003863,#118ab2,#00509d,#0284c7)",
+        backgroundSize: "300% 300%",
+      }}
+      animate={{ backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"] }}
+      transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+    />
+    {/* shimmer */}
+    <motion.div
+      className="absolute inset-0"
+      style={{ background: "linear-gradient(90deg,transparent,rgba(255,255,255,0.25),transparent)" }}
+      initial={{ x: "-100%" }}
+      animate={{ x: "200%" }}
+      transition={{ duration: 1.6, repeat: Infinity, repeatDelay: 0.8 }}
+    />
+    <div className="relative px-6 py-4 flex items-center justify-center gap-3 text-white font-semibold tracking-wide">
+      <span>{label}</span>
+      <motion.span animate={{ x: [0, 6, 0] }} transition={{ duration: 1.4, repeat: Infinity }}>
+        <Send size={17} />
+      </motion.span>
+    </div>
+  </motion.button>
+);
+
+/* ─── Business Form ─── */
+const BusinessForm = () => {
+  const [formData, setFormData] = useState({
+    companyName: "", businessEmail: "", phone: "", projectType: "", budget: "", message: "",
+  });
+  const [focused, setFocused] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true); setTimeout(() => setSubmitted(false), 3000); };
+
+  const fi = (name) => ({ onFocus: () => setFocused(name), onBlur: () => setFocused(null) });
+
+  const sharedInput = "w-full py-3.5 rounded-xl text-sm transition-all duration-300";
+
+  return (
+    <motion.form
+      initial={{ opacity: 0, x: -40 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 40 }}
+      transition={{ duration: 0.45, ease: [0.23, 1, 0.32, 1] }}
+      onSubmit={handleSubmit}
+      className="space-y-4"
+    >
+      <div className="grid grid-cols-2 gap-4">
+        {/* Company */}
+        <FieldWrap focused={focused === "companyName"} className="col-span-2">
+          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Building2 size={17} /></div>
+          <input type="text" name="companyName" placeholder="Company Name" value={formData.companyName}
+            onChange={handleChange} {...fi("companyName")}
+            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+        </FieldWrap>
+
+        {/* Email */}
+        <FieldWrap focused={focused === "businessEmail"}>
+          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Mail size={17} /></div>
+          <input type="email" name="businessEmail" placeholder="Business Email" value={formData.businessEmail}
+            onChange={handleChange} {...fi("businessEmail")}
+            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+        </FieldWrap>
+
+        {/* Phone */}
+        <FieldWrap focused={focused === "phone"}>
+          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Phone size={17} /></div>
+          <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone}
+            onChange={handleChange} {...fi("phone")}
+            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+        </FieldWrap>
+
+        {/* Project Type */}
+        <FieldWrap focused={focused === "projectType"} className="col-span-2">
+          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Briefcase size={17} /></div>
+          <select name="projectType" value={formData.projectType} onChange={handleChange} {...fi("projectType")}
+            className={`${sharedInput} pl-11 pr-10 appearance-none cursor-pointer`} style={selectStyle}>
             <option value="" style={{ background: "#00171f" }}>Select Project Type</option>
             <option value="web" style={{ background: "#00171f" }}>Web Development</option>
             <option value="mobile" style={{ background: "#00171f" }}>Mobile App</option>
             <option value="ai" style={{ background: "#00171f" }}>AI Solution</option>
             <option value="consulting" style={{ background: "#00171f" }}>Consulting</option>
           </select>
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 text-[#118ab2] pointer-events-none">
-            <ChevronRight size={18} className="rotate-90" />
-          </div>
-        </motion.div>
+          <ChevronRight size={16} className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none" style={{ color: "#118ab2" }} />
+        </FieldWrap>
 
-        {/* Budget Range */}
-        <motion.div 
-          className="col-span-2 relative"
-          variants={inputVariants}
-          animate={focusedField === 'budget' ? "focused" : "unfocused"}
-        >
-          <select
-            name="budget"
-            value={formData.budget}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('budget')}
-            onBlur={() => setFocusedField(null)}
-            className="w-full px-4 py-3.5 rounded-xl text-base transition-all duration-300 appearance-none cursor-pointer"
-            style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
-            }}
-          >
+        {/* Budget */}
+        <FieldWrap focused={focused === "budget"} className="col-span-2">
+          <select name="budget" value={formData.budget} onChange={handleChange} {...fi("budget")}
+            className={`${sharedInput} px-4 pr-10 appearance-none cursor-pointer`} style={selectStyle}>
             <option value="" style={{ background: "#00171f" }}>Budget Range</option>
-            <option value="5k-10k" style={{ background: "#00171f" }}>$5k - $10k</option>
-            <option value="10k-25k" style={{ background: "#00171f" }}>$10k - $25k</option>
-            <option value="25k-50k" style={{ background: "#00171f" }}>$25k - $50k</option>
+            <option value="5k-10k" style={{ background: "#00171f" }}>$5k – $10k</option>
+            <option value="10k-25k" style={{ background: "#00171f" }}>$10k – $25k</option>
+            <option value="25k-50k" style={{ background: "#00171f" }}>$25k – $50k</option>
             <option value="50k+" style={{ background: "#00171f" }}>$50k+</option>
           </select>
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 text-[#118ab2] pointer-events-none">
-            <ChevronRight size={18} className="rotate-90" />
-          </div>
-        </motion.div>
+          <ChevronRight size={16} className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none" style={{ color: "#118ab2" }} />
+        </FieldWrap>
 
         {/* Message */}
-        <motion.div 
-          className="col-span-2 relative"
-          variants={inputVariants}
-          animate={focusedField === 'message' ? "focused" : "unfocused"}
-        >
-          <textarea
-            name="message"
-            placeholder="Tell us about your project..."
-            value={formData.message}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('message')}
-            onBlur={() => setFocusedField(null)}
-            rows="3"
-            className="w-full px-4 py-3.5 rounded-xl text-base transition-all duration-300 resize-none"
-            style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
-            }}
-          />
-        </motion.div>
+        <FieldWrap focused={focused === "message"} className="col-span-2">
+          <textarea name="message" placeholder="Tell us about your project..." value={formData.message}
+            onChange={handleChange} {...fi("message")} rows="3"
+            className="w-full px-4 py-3.5 rounded-xl text-sm transition-all duration-300 resize-none"
+            style={inputStyle} />
+        </FieldWrap>
       </div>
 
-      {/* Submit Button */}
-      <motion.button
-        type="submit"
-        className="w-full relative group overflow-hidden rounded-xl"
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-      >
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-[#003863] via-[#118ab2] to-[#00509d]"
-          animate={{
-            backgroundPosition: ["0% 0%", "100% 100%"],
-          }}
-          transition={{
-            duration: 3,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          style={{ backgroundSize: "200% 200%" }}
-        />
-        <div className="relative px-6 py-4 flex items-center justify-center gap-3 text-white font-semibold">
-          <span>Send Business Inquiry</span>
-          <motion.span
-            animate={{ x: [0, 5, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          >
-            <Send size={18} />
-          </motion.span>
-        </div>
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
-          initial={{ x: "-100%" }}
-          animate={{ x: "200%" }}
-          transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 1 }}
-        />
-      </motion.button>
+      <SubmitBtn label="Send Business Inquiry" />
 
-      {/* Success Message Animation (Hidden by default) */}
       <AnimatePresence>
-        {false && ( // Set to true when form submitted successfully
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="flex items-center gap-2 text-[#67e8f9] text-sm"
-          >
-            <CheckCircle2 size={16} />
-            <span>Message sent successfully! We'll respond within 24 hours.</span>
+        {submitted && (
+          <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+            className="flex items-center gap-2 text-sm justify-center" style={{ color: "#67e8f9" }}>
+            <CheckCircle2 size={15} />
+            <span>Message sent! We'll reply within 24 hours.</span>
           </motion.div>
         )}
       </AnimatePresence>
@@ -293,164 +339,60 @@ const BusinessForm = ({ isActive }) => {
   );
 };
 
-// Career Form Component
-const CareerForm = ({ isActive }) => {
+/* ─── Career Form ─── */
+const CareerForm = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    position: '',
-    experience: '',
-    portfolio: '',
-    message: ''
+    fullName: "", email: "", phone: "", position: "", experience: "", portfolio: "", message: "",
   });
+  const [focused, setFocused] = useState(null);
+  const [resumeFile, setResumeFile] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
 
-  const [focusedField, setFocusedField] = useState(null);
+  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true); setTimeout(() => setSubmitted(false), 3000); };
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Career Form:', formData);
-  };
-
-  const inputVariants = {
-    focused: { 
-      scale: 1.02,
-      borderColor: "var(--blue-3)",
-      boxShadow: "0 0 20px rgba(17,138,178,0.3)",
-      transition: { type: "spring", stiffness: 300, damping: 20 }
-    },
-    unfocused: { 
-      scale: 1,
-      borderColor: "rgba(17,138,178,0.2)",
-      boxShadow: "none",
-      transition: { duration: 0.2 }
-    }
-  };
+  const fi = (name) => ({ onFocus: () => setFocused(name), onBlur: () => setFocused(null) });
+  const sharedInput = "w-full py-3.5 rounded-xl text-sm transition-all duration-300";
 
   return (
     <motion.form
-      initial={{ opacity: 0, x: 50 }}
+      initial={{ opacity: 0, x: 40 }}
       animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
+      exit={{ opacity: 0, x: -40 }}
+      transition={{ duration: 0.45, ease: [0.23, 1, 0.32, 1] }}
       onSubmit={handleSubmit}
-      className="space-y-5"
+      className="space-y-4"
     >
       <div className="grid grid-cols-2 gap-4">
         {/* Full Name */}
-        <motion.div 
-          className="col-span-2 relative"
-          variants={inputVariants}
-          animate={focusedField === 'fullName' ? "focused" : "unfocused"}
-        >
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#118ab2]">
-            <User size={18} />
-          </div>
-          <input
-            type="text"
-            name="fullName"
-            placeholder="Full Name"
-            value={formData.fullName}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('fullName')}
-            onBlur={() => setFocusedField(null)}
-            className="w-full pl-12 pr-4 py-3.5 rounded-xl text-base transition-all duration-300"
-            style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
-            }}
-          />
-          <motion.div
-            className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#118ab2] to-[#67e8f9]"
-            initial={{ width: "0%" }}
-            animate={{ width: focusedField === 'fullName' ? "100%" : "0%" }}
-            transition={{ duration: 0.3 }}
-          />
-        </motion.div>
+        <FieldWrap focused={focused === "fullName"} className="col-span-2">
+          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><User size={17} /></div>
+          <input type="text" name="fullName" placeholder="Full Name" value={formData.fullName}
+            onChange={handleChange} {...fi("fullName")}
+            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+        </FieldWrap>
 
         {/* Email */}
-        <motion.div 
-          className="relative"
-          variants={inputVariants}
-          animate={focusedField === 'email' ? "focused" : "unfocused"}
-        >
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#118ab2]">
-            <Mail size={18} />
-          </div>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            value={formData.email}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('email')}
-            onBlur={() => setFocusedField(null)}
-            className="w-full pl-12 pr-4 py-3.5 rounded-xl text-base transition-all duration-300"
-            style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
-            }}
-          />
-        </motion.div>
+        <FieldWrap focused={focused === "email"}>
+          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Mail size={17} /></div>
+          <input type="email" name="email" placeholder="Email Address" value={formData.email}
+            onChange={handleChange} {...fi("email")}
+            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+        </FieldWrap>
 
         {/* Phone */}
-        <motion.div 
-          className="relative"
-          variants={inputVariants}
-          animate={focusedField === 'phone' ? "focused" : "unfocused"}
-        >
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#118ab2]">
-            <Phone size={18} />
-          </div>
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            value={formData.phone}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('phone')}
-            onBlur={() => setFocusedField(null)}
-            className="w-full pl-12 pr-4 py-3.5 rounded-xl text-base transition-all duration-300"
-            style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
-            }}
-          />
-        </motion.div>
+        <FieldWrap focused={focused === "phone"}>
+          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Phone size={17} /></div>
+          <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone}
+            onChange={handleChange} {...fi("phone")}
+            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+        </FieldWrap>
 
         {/* Position */}
-        <motion.div 
-          className="col-span-2 relative"
-          variants={inputVariants}
-          animate={focusedField === 'position' ? "focused" : "unfocused"}
-        >
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#118ab2]">
-            <Briefcase size={18} />
-          </div>
-          <select
-            name="position"
-            value={formData.position}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('position')}
-            onBlur={() => setFocusedField(null)}
-            className="w-full pl-12 pr-4 py-3.5 rounded-xl text-base transition-all duration-300 appearance-none cursor-pointer"
-            style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
-            }}
-          >
+        <FieldWrap focused={focused === "position"} className="col-span-2">
+          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Briefcase size={17} /></div>
+          <select name="position" value={formData.position} onChange={handleChange} {...fi("position")}
+            className={`${sharedInput} pl-11 pr-10 appearance-none cursor-pointer`} style={selectStyle}>
             <option value="" style={{ background: "#00171f" }}>Position You're Applying For</option>
             <option value="frontend" style={{ background: "#00171f" }}>Frontend Developer</option>
             <option value="backend" style={{ background: "#00171f" }}>Backend Developer</option>
@@ -458,301 +400,159 @@ const CareerForm = ({ isActive }) => {
             <option value="designer" style={{ background: "#00171f" }}>UI/UX Designer</option>
             <option value="pm" style={{ background: "#00171f" }}>Project Manager</option>
           </select>
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 text-[#118ab2] pointer-events-none">
-            <ChevronRight size={18} className="rotate-90" />
-          </div>
-        </motion.div>
+          <ChevronRight size={16} className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none" style={{ color: "#118ab2" }} />
+        </FieldWrap>
 
         {/* Experience */}
-        <motion.div 
-          className="relative"
-          variants={inputVariants}
-          animate={focusedField === 'experience' ? "focused" : "unfocused"}
-        >
-          <select
-            name="experience"
-            value={formData.experience}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('experience')}
-            onBlur={() => setFocusedField(null)}
-            className="w-full px-4 py-3.5 rounded-xl text-base transition-all duration-300 appearance-none cursor-pointer"
-            style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
-            }}
-          >
-            <option value="" style={{ background: "#00171f" }}>Years of Experience</option>
-            <option value="0-2" style={{ background: "#00171f" }}>0-2 Years</option>
-            <option value="3-5" style={{ background: "#00171f" }}>3-5 Years</option>
-            <option value="5-8" style={{ background: "#00171f" }}>5-8 Years</option>
+        <FieldWrap focused={focused === "experience"}>
+          <select name="experience" value={formData.experience} onChange={handleChange} {...fi("experience")}
+            className={`${sharedInput} px-4 pr-10 appearance-none cursor-pointer`} style={selectStyle}>
+            <option value="" style={{ background: "#00171f" }}>Experience</option>
+            <option value="0-2" style={{ background: "#00171f" }}>0–2 Years</option>
+            <option value="3-5" style={{ background: "#00171f" }}>3–5 Years</option>
+            <option value="5-8" style={{ background: "#00171f" }}>5–8 Years</option>
             <option value="8+" style={{ background: "#00171f" }}>8+ Years</option>
           </select>
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 text-[#118ab2] pointer-events-none">
-            <ChevronRight size={18} className="rotate-90" />
-          </div>
-        </motion.div>
+          <ChevronRight size={16} className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none" style={{ color: "#118ab2" }} />
+        </FieldWrap>
 
-        {/* Portfolio URL */}
-        <motion.div 
-          className="relative"
-          variants={inputVariants}
-          animate={focusedField === 'portfolio' ? "focused" : "unfocused"}
-        >
-          <input
-            type="url"
-            name="portfolio"
-            placeholder="Portfolio/GitHub URL"
-            value={formData.portfolio}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('portfolio')}
-            onBlur={() => setFocusedField(null)}
-            className="w-full px-4 py-3.5 rounded-xl text-base transition-all duration-300"
-            style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
-            }}
-          />
-        </motion.div>
+        {/* Portfolio */}
+        <FieldWrap focused={focused === "portfolio"}>
+          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Globe size={17} /></div>
+          <input type="url" name="portfolio" placeholder="Portfolio / GitHub" value={formData.portfolio}
+            onChange={handleChange} {...fi("portfolio")}
+            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+        </FieldWrap>
 
-        {/* Cover Letter / Message */}
-        <motion.div 
-          className="col-span-2 relative"
-          variants={inputVariants}
-          animate={focusedField === 'message' ? "focused" : "unfocused"}
-        >
-          <textarea
-            name="message"
-            placeholder="Why do you want to join us? (Optional)"
-            value={formData.message}
-            onChange={handleChange}
-            onFocus={() => setFocusedField('message')}
-            onBlur={() => setFocusedField(null)}
-            rows="3"
-            className="w-full px-4 py-3.5 rounded-xl text-base transition-all duration-300 resize-none"
-            style={{
-              background: "rgba(0,23,31,0.6)",
-              border: "1.5px solid rgba(17,138,178,0.2)",
-              color: "#e0f2fe",
-              backdropFilter: "blur(10px)",
-            }}
-          />
-        </motion.div>
+        {/* Resume Upload */}
+        <ResumeUpload file={resumeFile} setFile={setResumeFile} />
+
+        {/* Cover Letter */}
+        <FieldWrap focused={focused === "message"} className="col-span-2">
+          <textarea name="message" placeholder="Why do you want to join us? (Optional)" value={formData.message}
+            onChange={handleChange} {...fi("message")} rows="3"
+            className="w-full px-4 py-3.5 rounded-xl text-sm transition-all duration-300 resize-none"
+            style={inputStyle} />
+        </FieldWrap>
       </div>
 
-      {/* Submit Button */}
-      <motion.button
-        type="submit"
-        className="w-full relative group overflow-hidden rounded-xl"
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-      >
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-[#003863] via-[#118ab2] to-[#00509d]"
-          animate={{
-            backgroundPosition: ["0% 0%", "100% 100%"],
-          }}
-          transition={{
-            duration: 3,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          style={{ backgroundSize: "200% 200%" }}
-        />
-        <div className="relative px-6 py-4 flex items-center justify-center gap-3 text-white font-semibold">
-          <span>Submit Application</span>
-          <motion.span
-            animate={{ x: [0, 5, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          >
-            <Send size={18} />
-          </motion.span>
-        </div>
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
-          initial={{ x: "-100%" }}
-          animate={{ x: "200%" }}
-          transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 1 }}
-        />
-      </motion.button>
+      <SubmitBtn label="Submit Application" />
+
+      <AnimatePresence>
+        {submitted && (
+          <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+            className="flex items-center gap-2 text-sm justify-center" style={{ color: "#67e8f9" }}>
+            <CheckCircle2 size={15} />
+            <span>Application sent! We'll be in touch soon.</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.form>
   );
 };
 
-// Form Switcher Component
-const FormSwitcher = ({ activeForm, setActiveForm }) => {
-  return (
-    <motion.div 
-      className="relative flex bg-[rgba(0,23,31,0.7)] backdrop-blur-xl rounded-2xl p-1.5 border border-[rgba(17,138,178,0.25)]"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
-    >
-      {/* Animated Background Slider */}
-      <motion.div
-        className="absolute top-1.5 bottom-1.5 rounded-xl bg-gradient-to-r from-[#003863] to-[#118ab2]"
-        initial={false}
-        animate={{
-          left: activeForm === 'business' ? '0.375rem' : '50%',
-          right: activeForm === 'business' ? '50%' : '0.375rem',
-        }}
-        transition={{ 
-          type: "spring", 
-          stiffness: 400, 
-          damping: 30 
-        }}
-        style={{
-          boxShadow: "0 4px 20px rgba(17,138,178,0.5)"
-        }}
-      />
-
-      {/* Business Button */}
+/* ─── Tab Switcher ─── */
+const FormSwitcher = ({ activeForm, setActiveForm }) => (
+  <motion.div
+    className="relative flex rounded-2xl p-1.5"
+    style={{
+      background: "rgba(0,23,31,0.75)",
+      border: "1px solid rgba(17,138,178,0.28)",
+      backdropFilter: "blur(16px)",
+    }}
+    initial={{ opacity: 0, y: 16 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: 0.15 }}
+  >
+    {/* Slider */}
+    <motion.div
+      className="absolute top-1.5 bottom-1.5 rounded-xl"
+      style={{ background: "linear-gradient(135deg,#003863,#118ab2)", boxShadow: "0 4px 20px rgba(17,138,178,0.55)" }}
+      animate={{ left: activeForm === "business" ? "0.375rem" : "50%", right: activeForm === "business" ? "50%" : "0.375rem" }}
+      transition={{ type: "spring", stiffness: 420, damping: 32 }}
+    />
+    {[
+      { id: "business", Icon: Building2, label: "Business" },
+      { id: "career", Icon: User, label: "Career" },
+    ].map(({ id, Icon, label }) => (
       <motion.button
-        className={`relative flex-1 px-8 py-3 rounded-xl text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${
-          activeForm === 'business' ? 'text-white' : 'text-[#94a3b8] hover:text-[#cbd5e1]'
+        key={id}
+        className={`relative flex-1 px-6 py-3 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 transition-colors duration-300 ${
+          activeForm === id ? "text-white" : "text-slate-400 hover:text-slate-200"
         }`}
-        onClick={() => setActiveForm('business')}
-        whileHover={activeForm !== 'business' ? { scale: 1.02 } : {}}
-        whileTap={{ scale: 0.98 }}
+        onClick={() => setActiveForm(id)}
+        whileTap={{ scale: 0.97 }}
       >
-        <Building2 size={18} />
-        <span>Business</span>
-        {activeForm === 'business' && (
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          >
-            <Sparkles size={16} className="text-[#67e8f9]" />
-          </motion.div>
+        <Icon size={17} />
+        <span>{label}</span>
+        {activeForm === id && (
+          <motion.span initial={{ scale: 0, rotate: -90 }} animate={{ scale: 1, rotate: 0 }} transition={{ type: "spring", stiffness: 300 }}>
+            <Sparkles size={14} style={{ color: "#67e8f9" }} />
+          </motion.span>
         )}
       </motion.button>
+    ))}
+  </motion.div>
+);
 
-      {/* Career Button */}
-      <motion.button
-        className={`relative flex-1 px-8 py-3 rounded-xl text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${
-          activeForm === 'career' ? 'text-white' : 'text-[#94a3b8] hover:text-[#cbd5e1]'
-        }`}
-        onClick={() => setActiveForm('career')}
-        whileHover={activeForm !== 'career' ? { scale: 1.02 } : {}}
-        whileTap={{ scale: 0.98 }}
-      >
-        <User size={18} />
-        <span>Career</span>
-        {activeForm === 'career' && (
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          >
-            <Sparkles size={16} className="text-[#67e8f9]" />
-          </motion.div>
-        )}
-      </motion.button>
-    </motion.div>
-  );
-};
-
-// Main Contact Component
+/* ─── Main Contact Section ─── */
 export default function ContactSection() {
-  const [activeForm, setActiveForm] = useState('business');
+  const [activeForm, setActiveForm] = useState("business");
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, margin: "-50px" });
+  const isInView = useInView(sectionRef, { once: true, margin: "-60px" });
 
   const contactInfo = [
-    {
-      icon: <Phone size={20} />,
-      title: "Call Us",
-      content: "+1 (555) 123-4567",
-      sub: "Mon-Fri 9am-6pm EST"
-    },
-    {
-      icon: <Mail size={20} />,
-      title: "Email Us",
-      content: "hello@futuretech.com",
-      sub: "We reply within 24 hours"
-    },
-    {
-      icon: <MapPin size={20} />,
-      title: "Visit Us",
-      content: "123 Innovation Street",
-      sub: "San Francisco, CA 94105"
-    }
+    { icon: <Phone size={18} />, title: "Call Us", content: "+1 (555) 123-4567", sub: "Mon–Fri 9am–6pm EST" },
+    { icon: <Mail size={18} />, title: "Email Us", content: "hello@futuretech.com", sub: "Reply within 24 hrs" },
+    { icon: <MapPin size={18} />, title: "Visit Us", content: "123 Innovation St", sub: "San Francisco, CA" },
+  ];
+
+  const stats = [
+    { icon: <Zap size={16} />, value: "<2h", label: "Response Time" },
+    { icon: <Shield size={16} />, value: "100%", label: "Satisfaction" },
+    { icon: <Globe size={16} />, value: "24/7", label: "Support" },
   ];
 
   return (
     <section
       ref={sectionRef}
       className="relative min-h-screen flex items-center py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
-      style={{ background: "var(--bg-main)" }}
+      style={{ background: "var(--bg-main, #00111a)" }}
     >
-      {/* Animated Background */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_30%,rgba(17,138,178,0.15)_0%,transparent_70%)]" />
-        <motion.div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(0,86,149,0.03) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(0,86,149,0.03) 1px, transparent 1px)
-            `,
-            backgroundSize: "40px 40px",
-          }}
-          animate={{
-            backgroundPosition: ["0px 0px", "40px 40px"],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
-      </div>
-
-      {/* Floating Orbs */}
+      {/* Background grid */}
       <motion.div
-        className="absolute top-20 left-10 w-72 h-72 rounded-full"
+        className="absolute inset-0 pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(17,138,178,0.1) 0%, transparent 70%)",
-          filter: "blur(40px)",
+          backgroundImage: `linear-gradient(rgba(0,86,149,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,86,149,0.04) 1px, transparent 1px)`,
+          backgroundSize: "44px 44px",
         }}
-        animate={{
-          scale: [1, 1.2, 1],
-          x: [0, 30, 0],
-          y: [0, -30, 0],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
+        animate={{ backgroundPosition: ["0px 0px", "44px 44px"] }}
+        transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
       />
 
-      <motion.div
-        className="absolute bottom-20 right-10 w-96 h-96 rounded-full"
-        style={{
-          background: "radial-gradient(circle, rgba(0,80,157,0.08) 0%, transparent 70%)",
-          filter: "blur(50px)",
-        }}
-        animate={{
-          scale: [1, 1.3, 1],
-          x: [0, -40, 0],
-          y: [0, 40, 0],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
+      {/* Radial glow */}
+      <div className="absolute inset-0 pointer-events-none"
+        style={{ background: "radial-gradient(ellipse 70% 55% at 50% 25%, rgba(17,138,178,0.14) 0%, transparent 70%)" }} />
+
+      {/* Floating orbs */}
+      <motion.div className="absolute top-24 left-8 w-80 h-80 rounded-full pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(17,138,178,0.12) 0%, transparent 70%)", filter: "blur(45px)" }}
+        animate={{ scale: [1, 1.25, 1], x: [0, 35, 0], y: [0, -25, 0] }}
+        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }} />
+      <motion.div className="absolute bottom-16 right-8 w-96 h-96 rounded-full pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(0,80,157,0.1) 0%, transparent 70%)", filter: "blur(55px)" }}
+        animate={{ scale: [1, 1.3, 1], x: [0, -40, 0], y: [0, 45, 0] }}
+        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }} />
+
+      {/* Particles */}
+      {particles.map((p, i) => (
+        <Particle key={i} style={p} />
+      ))}
 
       <div className="relative z-10 max-w-7xl mx-auto w-full">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-          
-          {/* Left Side - Content */}
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
+
+          {/* ── LEFT COLUMN ── */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -760,244 +560,209 @@ export default function ContactSection() {
           >
             {/* Badge */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 18 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.55 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8"
-              style={{
-                background: "rgba(17,138,178,0.1)",
-                border: "1px solid rgba(17,138,178,0.3)",
-              }}
+              style={{ background: "rgba(17,138,178,0.1)", border: "1px solid rgba(17,138,178,0.35)" }}
             >
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-              >
-                <Sparkles size={16} style={{ color: "var(--blue-3)" }} />
+              <motion.div animate={{ rotate: 360 }} transition={{ duration: 3, repeat: Infinity, ease: "linear" }}>
+                <Sparkles size={15} style={{ color: "#67e8f9" }} />
               </motion.div>
-              <span style={{ color: "var(--blue-3)" }} className="text-sm font-medium tracking-wider">
-                GET IN TOUCH
-              </span>
+              <span className="text-sm font-semibold tracking-widest" style={{ color: "#67e8f9" }}>GET IN TOUCH</span>
             </motion.div>
 
-            {/* Main Heading */}
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            {/* Heading */}
+            <h2 className="text-4xl sm:text-5xl lg:text-[3.2rem] font-bold leading-tight mb-5">
               <span style={{ color: "#e0f2fe" }}>Let's Build </span>
               <motion.span
                 style={{
-                  background: "linear-gradient(135deg, #67e8f9, #118ab2, #00509d)",
+                  background: "linear-gradient(135deg,#67e8f9,#118ab2,#00509d)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
+                  backgroundSize: "200% 200%",
                   display: "inline-block",
                 }}
-                animate={{
-                  backgroundPosition: ["0% 0%", "100% 100%"],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                }}
+                animate={{ backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
               >
                 Something Amazing
               </motion.span>
             </h2>
 
-            {/* Description */}
             <motion.p
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg leading-relaxed mb-10"
-              style={{ color: "var(--text-muted)" }}
+              transition={{ delay: 0.2, duration: 0.55 }}
+              className="text-base leading-relaxed mb-10"
+              style={{ color: "rgba(148,163,184,0.9)" }}
             >
-              Whether you have a project in mind or want to join our team, 
-              we're here to help. Choose your path below and let's start the conversation.
+              Whether you have a project in mind or want to join our team, we're here to help.
+              Choose your path below and let's start the conversation.
             </motion.p>
 
-            {/* Contact Info Cards */}
+            {/* ── Contact Cards: horizontal 3-in-a-row ── */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              className="grid grid-cols-3 gap-3 mb-10"
+              initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="space-y-4"
             >
-              {contactInfo.map((info, index) => (
+              {contactInfo.map((info, i) => (
                 <motion.div
-                  key={index}
-                  className="flex items-start gap-4 p-4 rounded-2xl transition-all duration-300 cursor-pointer group"
+                  key={i}
+                  className="flex flex-col items-center text-center p-4 rounded-2xl cursor-pointer group"
                   style={{
-                    background: "rgba(0,23,31,0.4)",
-                    border: "1px solid rgba(17,138,178,0.15)",
-                    backdropFilter: "blur(10px)",
+                    background: "rgba(0,23,31,0.45)",
+                    border: "1px solid rgba(17,138,178,0.18)",
+                    backdropFilter: "blur(12px)",
                   }}
                   whileHover={{
-                    scale: 1.02,
-                    borderColor: "rgba(17,138,178,0.4)",
-                    boxShadow: "0 10px 30px rgba(17,138,178,0.15)",
+                    scale: 1.05,
+                    borderColor: "rgba(103,232,249,0.45)",
+                    boxShadow: "0 12px 35px rgba(17,138,178,0.2)",
+                    y: -4,
                   }}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.45, delay: 0.4 + i * 0.1 }}
                 >
+                  {/* Pulsing ring on hover */}
                   <motion.div
-                    className="p-3 rounded-xl"
-                    style={{
-                      background: "linear-gradient(135deg, rgba(0,56,99,0.6), rgba(17,138,178,0.4))",
-                      border: "1px solid rgba(17,138,178,0.3)",
-                    }}
-                    whileHover={{ rotate: [0, -5, 5, 0] }}
+                    className="relative mb-3 p-3 rounded-xl"
+                    style={{ background: "linear-gradient(135deg,rgba(0,56,99,0.65),rgba(17,138,178,0.45))", border: "1px solid rgba(17,138,178,0.35)" }}
+                    whileHover={{ rotate: [0, -8, 8, 0] }}
                     transition={{ duration: 0.5 }}
                   >
-                    <div style={{ color: "var(--blue-3)" }}>
-                      {info.icon}
-                    </div>
+                    <div style={{ color: "#67e8f9" }}>{info.icon}</div>
+                    {/* pulse ring */}
+                    <motion.div
+                      className="absolute inset-0 rounded-xl"
+                      style={{ border: "1px solid rgba(103,232,249,0.5)" }}
+                      animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
+                      transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.4 }}
+                    />
                   </motion.div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold mb-1" style={{ color: "#e0f2fe" }}>
-                      {info.title}
-                    </h3>
-                    <p className="text-sm mb-0.5" style={{ color: "var(--text-muted)" }}>
-                      {info.content}
-                    </p>
-                    <p className="text-xs" style={{ color: "var(--blue-3)" }}>
-                      {info.sub}
-                    </p>
-                  </div>
+                  <h3 className="font-semibold text-xs mb-1" style={{ color: "#e0f2fe" }}>{info.title}</h3>
+                  <p className="text-xs leading-snug mb-0.5" style={{ color: "rgba(148,163,184,0.8)" }}>{info.content}</p>
+                  <p className="text-[10px]" style={{ color: "#67e8f9" }}>{info.sub}</p>
+
                   <motion.div
-                    initial={{ opacity: 0, x: -10 }}
-                    whileHover={{ opacity: 1, x: 0 }}
-                    className="opacity-0 group-hover:opacity-100 transition-opacity"
+                    initial={{ opacity: 0, y: 4 }}
+                    whileHover={{ opacity: 1, y: 0 }}
+                    className="mt-2"
                   >
-                    <ArrowRight size={18} style={{ color: "var(--blue-3)" }} />
+                    <ArrowRight size={13} style={{ color: "#67e8f9" }} />
                   </motion.div>
                 </motion.div>
               ))}
             </motion.div>
 
-            {/* Stats or Trust Indicators */}
+            {/* Stats Row */}
             <motion.div
+              className="flex gap-6"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="mt-10 flex gap-8"
+              transition={{ delay: 0.65, duration: 0.55 }}
             >
-              <div>
-                <div className="text-2xl font-bold" style={{ color: "#67e8f9" }}>
-                  24/7
-                </div>
-                <div className="text-sm" style={{ color: "var(--text-muted)" }}>
-                  Support Available
-                </div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold" style={{ color: "#67e8f9" }}>
-                  &lt;2h
-                </div>
-                <div className="text-sm" style={{ color: "var(--text-muted)" }}>
-                  Response Time
-                </div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold" style={{ color: "#67e8f9" }}>
-                  100%
-                </div>
-                <div className="text-sm" style={{ color: "var(--text-muted)" }}>
-                  Satisfaction
-                </div>
-              </div>
+              {stats.map(({ icon, value, label }, i) => (
+                <motion.div
+                  key={i}
+                  className="flex items-center gap-2.5"
+                  whileHover={{ scale: 1.06 }}
+                >
+                  <motion.div
+                    className="p-2 rounded-lg"
+                    style={{ background: "rgba(17,138,178,0.18)", border: "1px solid rgba(17,138,178,0.3)" }}
+                    animate={{ boxShadow: ["0 0 0px rgba(103,232,249,0)", "0 0 12px rgba(103,232,249,0.4)", "0 0 0px rgba(103,232,249,0)"] }}
+                    transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.5 }}
+                  >
+                    <div style={{ color: "#67e8f9" }}>{icon}</div>
+                  </motion.div>
+                  <div>
+                    <div className="text-xl font-bold leading-none" style={{ color: "#67e8f9" }}>{value}</div>
+                    <div className="text-[11px] mt-0.5" style={{ color: "rgba(148,163,184,0.75)" }}>{label}</div>
+                  </div>
+                </motion.div>
+              ))}
             </motion.div>
           </motion.div>
 
-          {/* Right Side - Form */}
+          {/* ── RIGHT COLUMN – FORM ── */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1], delay: 0.2 }}
             className="relative"
           >
+            {/* Decorative glow blob */}
+            <motion.div
+              className="absolute -top-6 -right-6 w-24 h-24 rounded-full pointer-events-none"
+              style={{ background: "linear-gradient(135deg,#118ab2,#00509d)", filter: "blur(22px)", opacity: 0.35 }}
+              animate={{ scale: [1, 1.3, 1], opacity: [0.35, 0.55, 0.35] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <motion.div
+              className="absolute -bottom-6 -left-6 w-20 h-20 rounded-full pointer-events-none"
+              style={{ background: "linear-gradient(135deg,#67e8f9,#118ab2)", filter: "blur(20px)", opacity: 0.25 }}
+              animate={{ scale: [1, 1.4, 1], opacity: [0.25, 0.4, 0.25] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            />
+
             {/* Form Card */}
             <div
               className="relative rounded-3xl overflow-hidden"
               style={{
-                background: "rgba(0,23,31,0.5)",
-                border: "1px solid rgba(17,138,178,0.2)",
-                backdropFilter: "blur(20px)",
-                boxShadow: "0 25px 50px -12px rgba(0,0,0,0.5)",
+                background: "rgba(0,17,26,0.6)",
+                border: "1px solid rgba(17,138,178,0.22)",
+                backdropFilter: "blur(22px)",
+                boxShadow: "0 30px 60px -16px rgba(0,0,0,0.6)",
               }}
             >
-              {/* Animated Border Glow */}
+              {/* Animated gradient border sweep */}
               <motion.div
-                className="absolute inset-0 rounded-3xl"
-                style={{
-                  background: "linear-gradient(135deg, transparent 0%, rgba(17,138,178,0.1) 50%, transparent 100%)",
-                }}
-                animate={{
-                  opacity: [0.3, 0.6, 0.3],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
+                className="absolute inset-0 rounded-3xl pointer-events-none"
+                style={{ background: "linear-gradient(135deg,transparent 0%,rgba(17,138,178,0.12) 50%,transparent 100%)" }}
+                animate={{ opacity: [0.3, 0.7, 0.3] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               />
+              {/* Corner accent lines */}
+              <div className="absolute top-0 left-0 w-16 h-16 pointer-events-none"
+                style={{ borderTop: "2px solid rgba(103,232,249,0.4)", borderLeft: "2px solid rgba(103,232,249,0.4)", borderRadius: "1.5rem 0 0 0" }} />
+              <div className="absolute bottom-0 right-0 w-16 h-16 pointer-events-none"
+                style={{ borderBottom: "2px solid rgba(103,232,249,0.25)", borderRight: "2px solid rgba(103,232,249,0.25)", borderRadius: "0 0 1.5rem 0" }} />
 
-              <div className="relative p-8">
-                {/* Form Switcher */}
-                <div className="mb-8">
+              <div className="relative p-7">
+                {/* Tab Switcher */}
+                <div className="mb-7">
                   <FormSwitcher activeForm={activeForm} setActiveForm={setActiveForm} />
                 </div>
 
-                {/* Forms Container with AnimatePresence */}
-                <div className="relative min-h-[500px]">
+                {/* Active Form */}
+                <div className="relative">
                   <AnimatePresence mode="wait">
-                    {activeForm === 'business' ? (
-                      <BusinessForm key="business" isActive={activeForm === 'business'} />
-                    ) : (
-                      <CareerForm key="career" isActive={activeForm === 'career'} />
-                    )}
+                    {activeForm === "business"
+                      ? <BusinessForm key="business" />
+                      : <CareerForm key="career" />
+                    }
                   </AnimatePresence>
                 </div>
 
-                {/* Form Footer */}
-                <motion.div
+                {/* Footer */}
+                <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 0.5 }}
-                  className="mt-6 text-center"
+                  transition={{ delay: 0.6 }}
+                  className="mt-5 text-center text-xs"
+                  style={{ color: "rgba(100,116,139,0.8)" }}
                 >
-                  <p className="text-xs" style={{ color: "var(--text-muted)" }}>
-                    By submitting this form, you agree to our{' '}
-                    <a href="#" style={{ color: "var(--blue-3)" }} className="hover:underline">
-                      Privacy Policy
-                    </a>
-                    {' '}and{' '}
-                    <a href="#" style={{ color: "var(--blue-3)" }} className="hover:underline">
-                      Terms of Service
-                    </a>
-                  </p>
-                </motion.div>
+                  By submitting, you agree to our{" "}
+                  <a href="#" style={{ color: "#67e8f9" }} className="hover:underline">Privacy Policy</a>
+                  {" "}and{" "}
+                  <a href="#" style={{ color: "#67e8f9" }} className="hover:underline">Terms of Service</a>
+                </motion.p>
               </div>
             </div>
-
-            {/* Floating Decorative Elements */}
-            <motion.div
-              className="absolute -top-4 -right-4 w-20 h-20 rounded-full"
-              style={{
-                background: "linear-gradient(135deg, #118ab2, #00509d)",
-                filter: "blur(20px)",
-                opacity: 0.3,
-              }}
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.3, 0.5, 0.3],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
           </motion.div>
         </div>
       </div>
