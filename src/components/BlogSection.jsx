@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Button from "../components/Button"
 
 const blogs = [
   {
@@ -108,13 +109,7 @@ export default function BlogSection() {
               </div>
 
               {/* Button */}
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="px-4 py-2 rounded-full bg-[var(--blue-2)] text-white text-sm"
-              >
-                Read More
-              </motion.button>
+              <Button variant="outline">Read More</Button>
             </div>
 
             {/* Glow effect */}
@@ -132,15 +127,9 @@ export default function BlogSection() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
-        className="text-center mt-16"
+        className="text-center mt-16 flex justify-center"
       >
-        <motion.button
-          whileHover={{ scale: 1.15 }}
-          whileTap={{ scale: 0.85 }}
-          className="px-6 py-3 rounded-full bg-[var(--blue-1)] text-white text-sm shadow-lg"
-        >
-          View More Blogs
-        </motion.button>
+        <Button className = "w-50 ">View More</Button>
       </motion.div>
 
       {/* Floating animation background */}

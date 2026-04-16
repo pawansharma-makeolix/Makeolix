@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Button from "../components/Button"
 
 // ─── NAV DATA ────────────────────────────────────────────────────────────────
 const navItems = [
@@ -487,31 +488,9 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden lg:flex">
-            <Link
-              to="/contact"
-              className="cta-shine"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                padding: "10px 20px",
-                borderRadius: "12px",
-                fontSize: "14px",
-                fontWeight: 700,
-                color: "#fff",
-                textDecoration: "none",
-                position: "relative",
-                overflow: "hidden",
-                fontFamily: "'Lato',sans-serif",
-                background:
-                  "linear-gradient(135deg,#003863 0%,#00509d 50%,#118ab2 100%)",
-              }}
-            >
-              <span style={{ position: "relative", zIndex: 1 }}>
-                Get Started
-              </span>
-              <span style={{ position: "relative", zIndex: 1 }}>→</span>
-            </Link>
+            <Button href="/contact-us">
+  Get Started
+</Button>
           </div>
 
           {/* MOBILE HAMBURGER */}
@@ -1106,27 +1085,7 @@ export default function Navbar() {
                   borderTop: "1px solid rgba(0,80,157,0.08)",
                 }}
               >
-                <Link
-                  to="/contact"
-                  onClick={() => setMobileOpen(false)}
-                  className="nav-font"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "8px",
-                    padding: "14px",
-                    borderRadius: "16px",
-                    fontWeight: 700,
-                    fontSize: "14px",
-                    color: "#fff",
-                    textDecoration: "none",
-                    background:
-                      "linear-gradient(135deg,#003863 0%,#00509d 60%,#118ab2 100%)",
-                  }}
-                >
-                  Get Started →
-                </Link>
+              <Button href={"/contact-us"}>Get Started</Button>
               </div>
             </motion.div>
           </>

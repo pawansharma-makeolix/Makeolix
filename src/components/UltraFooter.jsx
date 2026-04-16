@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { CardSpotlight } from "./card-spotlight";
 import FooterBlob from "../components/FooterBlob";
+import Button from "../components/Button";
 import {
   FaFacebookF,
   FaInstagram,
@@ -34,9 +35,7 @@ export default function UltraFooter() {
           </h2>
 
           <div className="flex gap-4 items-center mt-6">
-            <a href="#" className="px-6 py-3 bg-[var(--blue-2)] rounded-full hover:scale-105 transition">
-              Book Call
-            </a>
+           <Button>Book Call</Button>
 
             <motion.a whileHover={{ scale: 1.2 }} className="p-3 bg-green-500 rounded-full">
               <FaWhatsapp />
@@ -55,9 +54,7 @@ export default function UltraFooter() {
           <input placeholder="Budget" className="w-full mb-4 bg-transparent border-b border-gray-600 p-2 focus:border-[var(--blue-3)] outline-none" />
           <textarea placeholder="Describe your project" className="w-full mb-4 bg-transparent border-b border-gray-600 p-2 focus:border-[var(--blue-3)] outline-none" />
 
-          <button className="px-6 py-3 bg-amber-50 text-black rounded-full hover:scale-105 transition">
-            Submit
-          </button>
+          <Button variant="outline">Submit</Button>
         </motion.form>
       </div>
 

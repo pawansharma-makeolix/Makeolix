@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import Button from "../components/Button"
 
 const orbitConfig = [
   {
@@ -144,7 +145,14 @@ function CenterPulse() {
   );
 }
 
-export default function HeroOrbit() {
+export default function HeroOrbit({
+  title,
+  description,
+  primaryBtnText ,
+  secondaryBtnText ,
+  primaryLink ,
+  secondaryLink 
+}) {
   const ref      = useRef(null);
   const inView   = useInView(ref, { once: true, margin: "-80px" });
   const controls = useAnimation();
@@ -214,65 +222,25 @@ export default function HeroOrbit() {
           className="text-3xl sm:text-5xl lg:text-5xl font-semibold leading-[1.08] mb-6"
           style={{ color: "#e2eaf4" }}
         >
-          Your Headline Goes Here
-        </motion.h1>
+{title}        </motion.h1>
 
         <motion.p
           variants={fadeUp}
           className="text-base sm:text-lg leading-relaxed mb-10 max-w-xl"
-          style={{ color: "var(--text-muted, #a0aec0)" }}
+          style={{ color: "#fff" }}
         >
-          Apna description yahan daal do — chhota aur impactful rakho. Ek do
-          line kaafi hoti hai hero section ke liye.
+          {description}
         </motion.p>
 
         <motion.div
           variants={fadeUp}
           className="flex items-center gap-4 flex-wrap justify-center"
         >
-          <motion.button
-            className="relative px-8 py-3.5 rounded-full text-sm font-semibold overflow-hidden cursor-pointer"
-            style={{
-              background: "linear-gradient(135deg, #003863 0%, #00509d 100%)",
-              color:      "#e2eaf4",
-              border:     "1px solid rgba(17,138,178,0.4)",
-              boxShadow:  "0 0 24px rgba(0,80,157,0.35), inset 0 1px 0 rgba(255,255,255,0.08)",
-            }}
-            whileHover={{
-              scale:     1.04,
-              boxShadow: "0 0 36px rgba(17,138,178,0.55), inset 0 1px 0 rgba(255,255,255,0.1)",
-            }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          >
-            <motion.span
-              className="absolute inset-0 rounded-full"
-              style={{
-                background: "linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.12) 50%, transparent 60%)",
-              }}
-              animate={{ x: ["-100%", "200%"] }}
-              transition={{ duration: 2.4, repeat: Infinity, repeatDelay: 1.5, ease: "easeInOut" }}
-            />
-            <span className="relative z-10">Get Started →</span>
-          </motion.button>
+          <Button href={primaryLink}>
+    {primaryBtnText}
+  </Button>
 
-          <motion.button
-            className="px-8 py-3.5 rounded-full text-sm font-semibold cursor-pointer"
-            style={{
-              background: "transparent",
-              color:      "#a0aec0",
-              border:     "1px solid rgba(0,80,157,0.3)",
-            }}
-            whileHover={{
-              color:      "#e2eaf4",
-              borderColor:"rgba(17,138,178,0.6)",
-              background: "rgba(0,56,99,0.25)",
-            }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ duration: 0.2 }}
-          >
-            Learn More
-          </motion.button>
+          <Button variant="outline" href={secondaryLink}>{secondaryBtnText}</Button>
         </motion.div>
       </motion.div>
 

@@ -6,7 +6,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { useRef } from "react";
-
+import Button from "../components/Button";
 export default function TextMedia({
   title,
   subtitle,
@@ -95,18 +95,7 @@ const words = title.split(" ");
 
           {/* CTA */}
           {ctaText && (
-            <motion.button
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-              className="relative mt-4 w-fit px-8 py-3 text-white font-regular rounded-md bg-(--blue-2) overflow-hidden"
-            >
-              <motion.span
-                className="absolute inset-0 bg-(--blue-3) opacity-20 blur-xl"
-                animate={{ scale: [1, 1.4, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              />
-              <span className="relative z-10">{ctaText}</span>
-            </motion.button>
+            <Button className="w-40" href={"/contact-us"}>{ctaText}</Button>
           )}
         </div>
 

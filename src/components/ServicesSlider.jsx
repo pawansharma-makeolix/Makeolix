@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { SparkleParticles } from "./SparkleParticles";
+import Button from "../components/Button"
 
 const services = [
   { title: "Web Development", image: "/web-dev.jpg" },
@@ -137,15 +138,7 @@ const ServicesSlider = () => {
                   {service.title}
                 </h3>
 
-                <button
-                  className="px-4 py-2 rounded-full text-sm"
-                  style={{
-                    backgroundColor: "#118ab2",
-                    color: "#ffffff",
-                  }}
-                >
-                  Know More
-                </button>
+              <Button variant="outline">Know More</Button>
               </div>
             </div>
           ))}

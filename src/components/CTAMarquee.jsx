@@ -6,6 +6,7 @@ import {
   useAnimationFrame,
 } from "framer-motion";
 import { useState } from "react";
+import Button from "../components/Button"
 import FooterBlob from "../components/FooterBlob";
 
 const items = [
@@ -160,21 +161,9 @@ export default function CTAMarquee() {
           </motion.p>
 
           <motion.div {...fadeUp(0.4)} className="flex gap-4">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 rounded-md bg-[#00509d] text-white font-regular"
-            >
-              Get In Touch
-            </motion.button>
+            <Button href={"/contact-us"}>Get In Touch</Button>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 rounded-md border border-white/20 text-white/70"
-            >
-              Contact Us
-            </motion.button>
+              <Button href={"/contact-us"} variant="outline">Contact Us</Button>
           </motion.div>
 
           <motion.div

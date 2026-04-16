@@ -8,6 +8,8 @@ import Achievements from "../components/Achievements";
 import StackedTestimonials from "../components/StackedTestimonials";
 import OtherPageHero from "../components/OtherPageHero";
 import UltraFooter from "../components/UltraFooter";
+import HeroOrbit from "../components/HeroOrbit";
+import Button from "../components/Button";
 
 const aboutStats = [
   {
@@ -55,7 +57,15 @@ const AboutUs = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <OtherPageHero></OtherPageHero>
+      <HeroOrbit
+      title= {"About Us"} 
+      description={"We blend creativity and technology to build powerful digital solutions that drive growth and create lasting impact."}
+       primaryBtnText = {"Get Started "}
+  secondaryBtnText = {"Learn More"}
+  primaryLink = {"/contact-us"}
+  secondaryLink = {"/contact-us"}
+      ></HeroOrbit>
+      
       <Trusted></Trusted>
       <TextMedia
         title="What makes us the best?"
@@ -64,7 +74,6 @@ const AboutUs = () => {
         image="/Heroimage.jpg"
         ctaText="Get Started"
       />
-      
       <StackedCards></StackedCards>
       <MakeolixNumbers
         heading="THE MAKEOLIX IN NUMBERS"

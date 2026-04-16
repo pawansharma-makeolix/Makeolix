@@ -65,7 +65,7 @@ const FieldWrap = ({ children, focused, className = "" }) => (
 
 const inputStyle = {
   background: "rgba(0,23,31,0.65)",
-  border: "1.5px solid rgba(17,138,178,0.22)",
+  border: "1.5px solid rgba(255,255,255,0.5)",
   color: "#e0f2fe",
   backdropFilter: "blur(12px)",
   outline: "none",
@@ -573,11 +573,11 @@ export default function ContactSection() {
             </motion.div>
 
             {/* Heading */}
-            <h2 className="text-4xl sm:text-5xl lg:text-[3.2rem] font-bold leading-tight mb-5">
-              <span style={{ color: "#e0f2fe" }}>Let's Build </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-[3.2rem] font-semibold leading-tight mb-5">
+              <span style={{ color: "#fff" }}>Let's Build </span>
               <motion.span
                 style={{
-                  background: "linear-gradient(135deg,#67e8f9,#118ab2,#00509d)",
+                  background: "#fff",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundSize: "200% 200%",
@@ -595,7 +595,7 @@ export default function ContactSection() {
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.2, duration: 0.55 }}
               className="text-base leading-relaxed mb-10"
-              style={{ color: "rgba(148,163,184,0.9)" }}
+              style={{ color: "rgba(250,255,250,0.9)" }}
             >
               Whether you have a project in mind or want to join our team, we're here to help.
               Choose your path below and let's start the conversation.
