@@ -139,8 +139,8 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-center gap-4">
-          <Button>Get Started</Button>
-          <Button variant="outline">View Work</Button>
+          <Button href={"/contact-us"}>Get In Touch</Button>
+          <Button variant="outline" href={"/about"}>Know More</Button>
         </div>
       </div>
     </section>
