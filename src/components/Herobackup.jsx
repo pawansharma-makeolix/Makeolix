@@ -4,7 +4,6 @@ import { TypeAnimation } from "react-type-animation";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import Button from "./Button";
 
 const Hero = () => {
@@ -20,27 +19,50 @@ const Hero = () => {
 
   const particlesOptions = {
     fullScreen: { enable: false },
-    background: { color: "#051923" },
+
+    background: {
+      color: "#051923",
+    },
+
     fpsLimit: 120,
+
     interactivity: {
       events: {
-        onClick: { enable: true, mode: "push" },
-        onHover: { enable: true, mode: "grab" },
+        onClick: {
+          enable: true,
+          mode: "push", // 👉 click pe new dots
+        },
+        onHover: {
+          enable: true,
+          mode: "grab", // 👉 hover pe line connect feel
+        },
       },
       modes: {
-        push: { quantity: 4 },
+        push: {
+          quantity: 4,
+        },
         grab: {
           distance: 140,
-          links: { opacity: 0.4 },
+          links: {
+            opacity: 0.4,
+          },
         },
       },
     },
+
     particles: {
       number: {
         value: 80,
-        density: { enable: true, area: 800 },
+        density: {
+          enable: true,
+          area: 800,
+        },
       },
-      color: { value: ["#ef476f", "#fff", "#118ab2"] },
+
+      color: {
+        value: ["#ef476f", "#fff", "#118ab2"], // 🔥 black + blue tones
+      },
+
       links: {
         enable: true,
         distance: 110,
@@ -48,23 +70,35 @@ const Hero = () => {
         opacity: 0.7,
         width: 1,
       },
+
       move: {
         enable: true,
-        speed: 1.2,
+        speed: 1.2, // smooth movement
         direction: "none",
-        outModes: { default: "bounce" },
+        outModes: {
+          default: "bounce",
+        },
       },
-      size: { value: { min: 4, max: 6 } },
-      opacity: { value: 0.7 },
-      shape: { type: "circle" },
+
+      size: {
+        value: { min: 4, max: 6 },
+      },
+
+      opacity: {
+        value: 0.7,
+      },
+
+      shape: {
+        type: "circle",
+      },
     },
+
     detectRetina: true,
   };
 
   return (
     <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
-
-      {/* ✨ PARTICLES */}
+      {/* ✨ PARTICLES BACKGROUND */}
       {init && (
         <Particles
           options={particlesOptions}
@@ -72,54 +106,8 @@ const Hero = () => {
         />
       )}
 
-      {/* 🤖 AI HAND (RIGHT SIDE) */}
-      <motion.img
-        src="/aihand-removebg-preview.png"
-        alt="AI Hand"
-        className="absolute -right-60 top-1/2 w-75 md:w-190 h-125 z-10 pointer-events-none"
-        initial={{ x: 300, opacity: 0 }}
-        animate={{ x: -200, opacity: 1 , y: -200}}
-        transition={{ duration: 3, ease: "easeOut" }}
-      />
-
-      {/* 🧑 HUMAN HAND (LEFT SIDE) */}
-      <motion.img
-        src="/humanhand-removebg-preview.png"
-        alt="Human Hand"
-        className="absolute -left-60 top-1/2 w-75 md:w-190   h-125 z-10 pointer-events-none"
-        initial={{ x: -300, opacity: 0 , y:-100 }}
-        animate={{ x: 200, opacity: 1,y: -190 }}
-        transition={{ duration: 3, ease: "easeOut" }}
-      />
-
-      {/* ⚡ BLUE SPARK */}
-      <motion.div
-        className="absolute top-1/2 left-1/2 z-20"
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{
-          scale: [0, 1.5, 1],
-          opacity: [0, 1, 0.8],
-        }}
-        transition={{
-          delay: 2,
-          duration: 0.8,
-        }}
-      >
-        <div className="w-16 h-16 bg-blue-400 rounded-full blur-xl opacity-80" />
-      </motion.div>
-
       {/* 🔥 CONTENT */}
-      <motion.div
-        className="relative z-30 max-w-3xl px-6 text-white"
-        animate={{
-          y: [0, -10, 0], // 👈 up-down floating
-        }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      >
+      <div className="relative z-10 max-w-3xl px-6 text-white">
         <h1 className="text-4xl md:text-5xl font-regular leading-tight mb-6">
           We are Makeolix
           <br />
@@ -154,7 +142,7 @@ const Hero = () => {
             Know More
           </Button>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
