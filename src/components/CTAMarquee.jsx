@@ -1,12 +1,8 @@
 "use client";
 
-import {
-  motion,
-  useMotionValue,
-  useAnimationFrame,
-} from "framer-motion";
+import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import { useState } from "react";
-import Button from "../components/Button"
+import Button from "../components/Button";
 import FooterBlob from "../components/FooterBlob";
 
 const items = [
@@ -16,7 +12,7 @@ const items = [
   "Local SEO Service",
   "Social Media Marketing",
   "Small Business Plan",
-    "SEO Resellar Service",
+  "SEO Resellar Service",
 ];
 
 /* ── Soft aurora blobs (kept subtle) ─────────────────────── */
@@ -83,7 +79,6 @@ export default function CTAMarquee() {
 
   return (
     <section className="relative min-h-screen bg-[#051923] flex items-center justify-center px-6 md:px-12 overflow-hidden">
-      
       <FooterBlob />
 
       {/* ── SOFT BACKGROUND ── */}
@@ -105,7 +100,6 @@ export default function CTAMarquee() {
 
       {/* ── CONTENT ── */}
       <div className="relative z-10 grid md:grid-cols-2 gap-12 max-w-5xl w-full items-center">
-
         {/* LEFT: Marquee */}
         <div
           className="relative h-137.5 overflow-hidden"
@@ -115,7 +109,8 @@ export default function CTAMarquee() {
           <div
             className="absolute top-0 left-0 right-0 h-40 z-10 pointer-events-none"
             style={{
-              background: "linear-gradient(to bottom, #00171f 20%, transparent)",
+              background:
+                "linear-gradient(to bottom, #00171f 20%, transparent)",
             }}
           />
 
@@ -135,7 +130,6 @@ export default function CTAMarquee() {
 
         {/* RIGHT */}
         <div className="flex flex-col gap-6">
-
           <motion.h1
             {...fadeUp(0.1)}
             className="text-white font-semibold leading-tight"
@@ -145,10 +139,7 @@ export default function CTAMarquee() {
             <span className="text-[#118ab2]">in Minutes</span>
           </motion.h1>
 
-          <motion.p
-            {...fadeUp(0.2)}
-            className="text-[#ff8fab] "
-          >
+          <motion.p {...fadeUp(0.2)} className="text-[#ff8fab] ">
             Do you have a project in mind?
           </motion.p>
 
@@ -156,25 +147,24 @@ export default function CTAMarquee() {
             {...fadeUp(0.3)}
             className="text-white max-w-md leading-relaxed"
           >
-            Touch base with us. <strong className="text-white">Let's discover</strong>{" "}
-            how we can add more value to your business.
+            Touch base with us.{" "}
+            <strong className="text-white">Let's discover</strong> how we can
+            add more value to your business.
           </motion.p>
 
           <motion.div {...fadeUp(0.4)} className="flex gap-4">
             <Button href={"/contact-us"}>Get In Touch</Button>
 
-              <Button href={"/contact-us"} variant="outline">Contact Us</Button>
+            <Button href={"/contact-us"} variant="outline">
+              Contact Us
+            </Button>
           </motion.div>
 
-          <motion.div
-            {...fadeUp(0.5)}
-            className="h-px w-full bg-white/10"
-          />
+          <motion.div {...fadeUp(0.5)} className="h-px w-full bg-white/10" />
         </div>
       </div>
     </section>
   );
 }
 
-
-// 
+//

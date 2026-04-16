@@ -8,10 +8,16 @@ const SeoPackages = () => {
   return (
 <>
 <Navbar></Navbar>
-<HeroOrbit></HeroOrbit>
+<HeroOrbit 
+title={"Seo Packages"}
+primaryBtnText={"Discuss Us"}
+primaryLink={"/contact-us"}
+secondaryBtnText={"Know More"}
+secondaryLink={"/about"}
+></HeroOrbit>
  <PriceSection 
        plans={SEO_PLANS}
-      title="SEO Packages"
+    
       subtitle="Best for ranking"
       ></PriceSection>
       <CTAMarquee></CTAMarquee>

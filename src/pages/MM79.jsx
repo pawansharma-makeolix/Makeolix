@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const MM79 = () => {
-  return (
-    <div>
-      MM79
-    </div>
-  )
-}
+  return <div>MM79</div>;
+};
 
-export default MM79
+export default MM79;

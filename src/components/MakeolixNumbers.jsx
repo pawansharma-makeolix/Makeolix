@@ -68,9 +68,7 @@ const MakeolixNumbers = ({
           {heading}
         </h2>
 
-        {subheading && (
-          <p className="mt-3 text-gray-600">{subheading}</p>
-        )}
+        {subheading && <p className="mt-3 text-gray-600">{subheading}</p>}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

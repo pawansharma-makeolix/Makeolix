@@ -58,7 +58,7 @@ export default function FooterBlob() {
       <img
         ref={blobRef}
         src="/blob.png" // 👈 tera image
-        className={`absolute w-[100px] md:w-[150px] lg:w-[200px] transition-opacity duration-300 ${
+        className={`absolute w-25 md:w-37.5 lg:w-50 transition-opacity duration-300 ${
           visible ? "opacity-80" : "opacity-0"
         }`}
         style={{

@@ -24,7 +24,6 @@ const OtherPageHero = ({ title = "About Us" }) => {
 
       {/* 🔥 CONTENT */}
       <div className="relative z-10 px-4">
-        
         {/* 🚀 REVEAL + SCALE TEXT */}
         <motion.h1
           initial={{ opacity: 0, y: 100, scale: 0.8 }}
@@ -47,7 +46,6 @@ const OtherPageHero = ({ title = "About Us" }) => {
           className="h-0.75 mx-auto mt-4 rounded-full"
           style={{ background: "var(--blue-3)" }}
         />
-
       </div>
     </section>
   );

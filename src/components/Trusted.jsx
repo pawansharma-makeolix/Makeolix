@@ -26,9 +26,7 @@ const Trusted = () => {
 
   return (
     <section className="py-20 bg-[var(--bg-soft)] text-white overflow-hidden">
-
       <div className="max-w-6xl mx-auto px-6 flex flex-col gap-16">
-
         {/* 🔹 CLIENTS */}
         <div>
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
@@ -36,7 +34,6 @@ const Trusted = () => {
           </h2>
 
           <div className="overflow-hidden relative">
-            
             {/* Fade Mask */}
             <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-[var(--bg-soft)] to-transparent z-10" />
             <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-[var(--bg-soft)] to-transparent z-10" />
@@ -64,7 +61,6 @@ const Trusted = () => {
           </h2>
 
           <div className="overflow-hidden relative">
-
             {/* Fade Mask */}
             <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-[var(--bg-soft)] to-transparent z-10" />
             <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-[var(--bg-soft)] to-transparent z-10" />
@@ -84,7 +80,6 @@ const Trusted = () => {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

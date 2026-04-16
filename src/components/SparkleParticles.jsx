@@ -81,8 +81,6 @@ export function SparkleParticles({
   };
 
   return (
-    isReady && (
-      <Particles id={id} options={options} className={className} />
-    )
+    isReady && <Particles id={id} options={options} className={className} />
   );
 }

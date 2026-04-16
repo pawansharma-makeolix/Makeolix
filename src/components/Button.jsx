@@ -18,8 +18,7 @@ export default function Button({
   const variants = {
     primary:
       "bg-[linear-gradient(135deg,var(--blue-1),var(--blue-2))] text-[#e2eaf4] border border-[rgba(17,138,178,0.4)] shadow-[0_0_20px_rgba(0,80,157,0.35)]",
-    outline:
-      "bg-transparent text-white border border-[rgba(255,255,255,1)]",
+    outline: "bg-transparent text-white border border-[rgba(255,255,255,1)]",
   };
 
   const content = (

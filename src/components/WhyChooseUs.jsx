@@ -33,7 +33,6 @@ const gradients = [
 const WhyChooseUs = () => {
   return (
     <div className="relative w-full py-20 px-4 overflow-hidden bg-[#051923]">
-      
       {/* ✨ Particles */}
       <SparkleParticles
         className="absolute inset-0 w-full h-full"
@@ -41,7 +40,6 @@ const WhyChooseUs = () => {
       />
 
       <div className="relative z-10">
-        
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-3xl font-semibold text-white">
@@ -51,9 +49,8 @@ const WhyChooseUs = () => {
 
         {/* Timeline */}
         <div className="relative max-w-5xl mx-auto">
-          
           {/* Line */}
-          <div className="absolute left-1/2 top-0 h-full w-[2px] bg-[#00509d]" />
+          <div className="absolute left-1/2 top-0 h-full w-0.5 bg-[#00509d]" />
 
           {features.map((item, i) => (
             <motion.div
@@ -76,17 +73,16 @@ const WhyChooseUs = () => {
               {/* Gradient Border */}
               <motion.div
                 whileHover={{ y: -14, scale: 1.03 }}
-                className={`group relative w-full md:w-1/2 p-[1px] rounded-xl bg-gradient-to-r ${gradients[i]}`}
+                className={`group relative w-full md:w-1/2 p-px rounded-xl bg-linear-to-r ${gradients[i]}`}
               >
                 {/* Glow */}
-                <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition duration-500 blur-xl bg-gradient-to-r from-[#118ab2] via-[#00509d] to-[#003863]" />
+                <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition duration-500 blur-xl bg-linear-to-r from-[#118ab2] via-[#00509d] to-[#003863]" />
 
                 {/* Glass Card */}
                 <div className="relative p-6 rounded-xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-lg transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
-                  
                   {/* Shine */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700">
-                    <div className="absolute -left-1/2 top-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/30 to-transparent rotate-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
+                    <div className="absolute -left-1/2 top-0 w-[200%] h-full bg-linear-to-r from-transparent via-white/30 to-transparent rotate-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                   </div>
 
                   {/* Icon */}
@@ -94,13 +90,13 @@ const WhyChooseUs = () => {
                     whileHover={{ scale: 1.2, rotate: 8 }}
                     className="mb-3"
                   >
-                    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-[#82c3d9] to-[#6a95bc] text-white shadow-md">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-linear-to-r from-[#82c3d9] to-[#6a95bc] text-white shadow-md">
                       <span>★</span>
                     </div>
                   </motion.div>
 
                   {/* Title */}
-                  <h3 className="text-sm font-medium  leading-snug min-h-[48px] text-white">
+                  <h3 className="text-sm font-medium  leading-snug min-h-12 text-white">
                     {item.title}
                   </h3>
 

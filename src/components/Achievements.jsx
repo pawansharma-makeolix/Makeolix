@@ -24,8 +24,7 @@ const Achievements = () => {
   }, []);
 
   const getPosition = (index) => {
-    if (index === active)
-      return "scale-105 opacity-100 z-20 translate-x-0";
+    if (index === active) return "scale-105 opacity-100 z-20 translate-x-0";
 
     if (index === (active + 1) % awards.length)
       return "translate-x-[110%] scale-90 opacity-70 z-10";
@@ -58,18 +57,19 @@ const Achievements = () => {
         </h2>
 
         <p className="text-gray-600 max-w-xl mx-auto text-sm md:text-base">
-          Recognized for excellence, innovation, and impactful results across industries.
+          Recognized for excellence, innovation, and impactful results across
+          industries.
         </p>
       </motion.div>
 
       {/* 🔥 Slider */}
-      <div className="relative flex items-center justify-center h-[130px] md:h-[200px] -mt-3">
+      <div className="relative flex items-center justify-center h-32.5 md:h-50 -mt-3">
         {awards.map((img, index) => (
           <motion.div
             key={index}
             className={`absolute transition-all duration-700 
-            w-[140px] sm:w-[170px] md:w-[150px] 
-            h-[100px] sm:h-[120px] md:h-[110px] 
+            w-35 sm:w-42.5 md:w-37.5 
+            h-25 sm:h-30 md:h-27.5 
             rounded-xl backdrop-blur-md 
             flex items-center justify-center
             ${getPosition(index)}`}

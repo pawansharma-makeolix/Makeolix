@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import Button from "../components/Button"
+import Button from "../components/Button";
 
 const orbitConfig = [
   {
@@ -19,11 +19,11 @@ const orbitConfig = [
     radius: 260,
     duration: 22,
     icons: [
-      { id: "i5",  src: "/icons/file.png" },
-      { id: "i6",  src: "/icons/google.png" },
-      { id: "i7",  src: "/icons/html.png" },
-      { id: "i8",  src: "/icons/java-script.png" },
-      { id: "i9",  src: "/icons/linkedin.png" },
+      { id: "i5", src: "/icons/file.png" },
+      { id: "i6", src: "/icons/google.png" },
+      { id: "i7", src: "/icons/html.png" },
+      { id: "i8", src: "/icons/java-script.png" },
+      { id: "i9", src: "/icons/linkedin.png" },
       { id: "i10", src: "/icons/meta.png" },
     ],
   },
@@ -50,23 +50,23 @@ function OrbitRing({ radius, duration, icons, delay = 0 }) {
     <motion.div
       className="absolute rounded-full"
       style={{
-        width:      radius * 2,
-        height:     radius * 2,
-        border:     "1px dashed rgba(0,80,157,0.35)",
-        top:        "50%",
-        left:       "50%",
-        marginTop:  -radius,
+        width: radius * 2,
+        height: radius * 2,
+        border: "1px dashed rgba(0,80,157,0.35)",
+        top: "50%",
+        left: "50%",
+        marginTop: -radius,
         marginLeft: -radius,
       }}
       initial={{ opacity: 0, scale: 0.6 }}
       animate={{
         opacity: 1,
-        scale:   1,
-        rotate:  360,
+        scale: 1,
+        rotate: 360,
         transition: {
           opacity: { duration: 0.8, delay },
-          scale:   { duration: 0.8, delay },
-          rotate:  { duration, repeat: Infinity, ease: "linear", delay: 0 },
+          scale: { duration: 0.8, delay },
+          rotate: { duration, repeat: Infinity, ease: "linear", delay: 0 },
         },
       }}
     >
@@ -86,11 +86,12 @@ function OrbitRing({ radius, duration, icons, delay = 0 }) {
             <div
               className="w-20 h-10 rounded-full flex items-center justify-center text-xs font-semibold select-none"
               style={{
-                background:     "rgba(0,56,99,0.55)",
-                border:         "1px solid rgba(0,80,157,0.5)",
-                color:          "#a0aec0",
+                background: "rgba(0,56,99,0.55)",
+                border: "1px solid rgba(0,80,157,0.5)",
+                color: "#a0aec0",
                 backdropFilter: "blur(10px)",
-                boxShadow:      "0 0 12px rgba(0,80,157,0.3), inset 0 1px 0 rgba(255,255,255,0.06)",
+                boxShadow:
+                  "0 0 12px rgba(0,80,157,0.3), inset 0 1px 0 rgba(255,255,255,0.06)",
               }}
             >
               {<img src={icon.src} alt="" className="w-6 h-6 object-contain" />}
@@ -111,9 +112,12 @@ function CenterPulse() {
       <motion.div
         className="rounded-full absolute"
         style={{
-          width: 80, height: 80,
-          top: "50%", left: "50%",
-          marginTop: -40, marginLeft: -40,
+          width: 80,
+          height: 80,
+          top: "50%",
+          left: "50%",
+          marginTop: -40,
+          marginLeft: -40,
           border: "1px solid rgba(17,138,178,0.4)",
         }}
         animate={{ scale: [1, 1.8, 1], opacity: [0.6, 0, 0.6] }}
@@ -122,10 +126,14 @@ function CenterPulse() {
       <motion.div
         className="rounded-full absolute"
         style={{
-          width: 48, height: 48,
-          top: "50%", left: "50%",
-          marginTop: -24, marginLeft: -24,
-          background: "radial-gradient(circle, rgba(17,138,178,0.6) 0%, rgba(0,80,157,0.3) 60%, transparent 100%)",
+          width: 48,
+          height: 48,
+          top: "50%",
+          left: "50%",
+          marginTop: -24,
+          marginLeft: -24,
+          background:
+            "radial-gradient(circle, rgba(17,138,178,0.6) 0%, rgba(0,80,157,0.3) 60%, transparent 100%)",
           boxShadow: "0 0 30px rgba(17,138,178,0.5)",
         }}
         animate={{ scale: [1, 1.12, 1] }}
@@ -134,11 +142,14 @@ function CenterPulse() {
       <div
         className="rounded-full absolute"
         style={{
-          width: 16, height: 16,
-          top: "50%", left: "50%",
-          marginTop: -8, marginLeft: -8,
+          width: 16,
+          height: 16,
+          top: "50%",
+          left: "50%",
+          marginTop: -8,
+          marginLeft: -8,
           background: "#118ab2",
-          boxShadow:  "0 0 16px #118ab2, 0 0 40px rgba(17,138,178,0.4)",
+          boxShadow: "0 0 16px #118ab2, 0 0 40px rgba(17,138,178,0.4)",
         }}
       />
     </div>
@@ -148,13 +159,14 @@ function CenterPulse() {
 export default function HeroOrbit({
   title,
   description,
-  primaryBtnText ,
-  secondaryBtnText ,
-  primaryLink ,
-  secondaryLink 
+  primaryBtnText,
+  secondaryBtnText,
+  primaryLink,
+  secondaryLink,
+  showButtons = true,
 }) {
-  const ref      = useRef(null);
-  const inView   = useInView(ref, { once: true, margin: "-80px" });
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: "-80px" });
   const controls = useAnimation();
 
   useEffect(() => {
@@ -162,12 +174,12 @@ export default function HeroOrbit({
   }, [inView, controls]);
 
   const stagger = {
-    hidden:  {},
+    hidden: {},
     visible: { transition: { staggerChildren: 0.18, delayChildren: 0.3 } },
   };
 
   const fadeUp = {
-    hidden:  { opacity: 0, y: 32 },
+    hidden: { opacity: 0, y: 32 },
     visible: {
       opacity: 1,
       y: 0,
@@ -215,14 +227,13 @@ export default function HeroOrbit({
         initial="hidden"
         animate={controls}
       >
-        
-
         <motion.h1
           variants={fadeUp}
           className="text-3xl sm:text-5xl lg:text-5xl font-semibold leading-[1.08] mb-6"
           style={{ color: "#e2eaf4" }}
         >
-{title}        </motion.h1>
+          {title}{" "}
+        </motion.h1>
 
         <motion.p
           variants={fadeUp}
@@ -232,23 +243,26 @@ export default function HeroOrbit({
           {description}
         </motion.p>
 
-        <motion.div
-          variants={fadeUp}
-          className="flex items-center gap-4 flex-wrap justify-center"
-        >
-          <Button href={primaryLink}>
-    {primaryBtnText}
-  </Button>
+        {showButtons && (
+          <motion.div
+            variants={fadeUp}
+            className="flex items-center gap-4 flex-wrap justify-center"
+          >
+            <Button href={primaryLink}>{primaryBtnText}</Button>
 
-          <Button variant="outline" href={secondaryLink}>{secondaryBtnText}</Button>
-        </motion.div>
+            <Button variant="outline" href={secondaryLink}>
+              {secondaryBtnText}
+            </Button>
+          </motion.div>
+        )}
       </motion.div>
 
       {/* bottom vignette */}
       <div
         className="pointer-events-none absolute bottom-0 left-0 right-0 h-40 z-30"
         style={{
-          background: "linear-gradient(to top, var(--bg-main, #00171f) 0%, transparent 100%)",
+          background:
+            "linear-gradient(to top, var(--bg-main, #00171f) 0%, transparent 100%)",
         }}
       />
     </section>

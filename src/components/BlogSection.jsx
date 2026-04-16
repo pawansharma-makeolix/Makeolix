@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Button from "../components/Button"
+import Button from "../components/Button";
 
 const blogs = [
   {
     id: 1,
-    
+
     desc: "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
     date: "March 10, 2026",
     service: "SEO Reseller Service",
@@ -13,7 +13,7 @@ const blogs = [
   },
   {
     id: 2,
-    
+
     desc: "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
     date: "October 12, 2025",
     service: "SEO",
@@ -52,7 +52,7 @@ const cardVariants = {
 
 export default function BlogSection() {
   return (
-    <section className="min-h-screen px-6 py-20 bg-[var(--bg-main)] text-white overflow-hidden">
+    <section className="min-h-screen px-6 py-20 bg-(--bg-main) text-white overflow-hidden">
       {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}
@@ -63,9 +63,7 @@ export default function BlogSection() {
         <h2 className="text-4xl md:text-3xl font-semibold mb-4 text-amber-50">
           Latest Blogs
         </h2>
-        <p className="text-amber-50">
-          Insights, ideas & creativity
-        </p>
+        <p className="text-amber-50">Insights, ideas & creativity</p>
       </motion.div>
 
       {/* Blog Grid */}
@@ -81,7 +79,7 @@ export default function BlogSection() {
             key={blog.id}
             variants={cardVariants}
             whileHover={{ scale: 1.05, rotate: 1 }}
-            className="relative rounded-2xl overflow-hidden bg-[var(--bg-soft)] shadow-xl group"
+            className="relative rounded-2xl overflow-hidden bg-(--bg-soft) shadow-xl group"
           >
             {/* Image */}
             <div className="overflow-hidden">
@@ -96,17 +94,10 @@ export default function BlogSection() {
 
             {/* Content */}
             <div className="p-6">
-              
-              <p className="text-sm text-amber-50 mb-4">
-                {blog.desc}
-              </p>
+              <p className="text-sm text-amber-50 mb-4">{blog.desc}</p>
 
-              <div className="text-xs text-gray-400 mb-2">
-                {blog.date}
-              </div>
-              <div className="text-xs text-[var(--blue-3)] mb-4">
-                {blog.service}
-              </div>
+              <div className="text-xs text-gray-400 mb-2">{blog.date}</div>
+              <div className="text-xs text-(--blue-3) mb-4">{blog.service}</div>
 
               {/* Button */}
               <Button variant="outline">Read More</Button>
@@ -114,7 +105,7 @@ export default function BlogSection() {
 
             {/* Glow effect */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-tr from-[var(--accent-pink)] to-transparent opacity-0 group-hover:opacity-20"
+              className="absolute inset-0 bg-linear-to-tr from-(--accent-pink) to-transparent opacity-0 group-hover:opacity-20"
               initial={{ opacity: 0 }}
               whileHover={{ opacity: 0.2 }}
             />
@@ -129,20 +120,20 @@ export default function BlogSection() {
         transition={{ delay: 0.3 }}
         className="text-center mt-16 flex justify-center"
       >
-        <Button className = "w-50 ">View More</Button>
+        <Button className="w-50 ">View More</Button>
       </motion.div>
 
       {/* Floating animation background */}
       <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 6, repeat: Infinity }}
-        className="absolute top-10 left-10 w-32 h-32 bg-[var(--blue-2)] opacity-10 rounded-full blur-3xl"
+        className="absolute top-10 left-10 w-32 h-32 bg-(--blue-2) opacity-10 rounded-full blur-3xl"
       />
 
       <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 8, repeat: Infinity }}
-        className="absolute bottom-10 right-10 w-40 h-40 bg-[var(--accent-pink)] opacity-10 rounded-full blur-3xl"
+        className="absolute bottom-10 right-10 w-40 h-40 bg-(--accent-pink) opacity-10 rounded-full blur-3xl"
       />
     </section>
   );

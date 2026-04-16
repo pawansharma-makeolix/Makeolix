@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { SparkleParticles } from "./SparkleParticles";
-import Button from "../components/Button"
+import Button from "../components/Button";
 
 const services = [
   { title: "Web Development", image: "/web-dev.jpg" },
@@ -9,7 +9,7 @@ const services = [
   { title: "Social Media Marketing", image: "/social.jpg" },
   { title: "Local SEO Service", image: "/seo-local.jpg" },
   { title: "Small Business Plan", image: "/business.jpg" },
-  { title: "SEO Reseller Service", image: "/seo.jpg" }
+  { title: "SEO Reseller Service", image: "/seo.jpg" },
 ];
 
 const ServicesSlider = () => {
@@ -26,7 +26,7 @@ const ServicesSlider = () => {
       ([entry]) => {
         setIsActive(entry.isIntersecting);
       },
-      { threshold: 0.6 }
+      { threshold: 0.6 },
     );
 
     if (containerRef.current) observer.observe(containerRef.current);
@@ -88,7 +88,7 @@ const ServicesSlider = () => {
       ref={containerRef}
       className="relative py-20 overflow-hidden"
       style={{
-        background: "#051923"
+        background: "#051923",
       }}
     >
       {/* Particles */}
@@ -106,8 +106,9 @@ const ServicesSlider = () => {
           <p style={{ color: "#fff" }}>
             Discover a spectrum of services at Makeolix designed to amplify your
             online presence. From strategic social media campaigns and local SEO
-            optimization to captivating website design, we offer tailored solutions
-            that propel your brand to new heights in the ever-evolving digital landscape.
+            optimization to captivating website design, we offer tailored
+            solutions that propel your brand to new heights in the ever-evolving
+            digital landscape.
           </p>
         </div>
 
@@ -129,7 +130,8 @@ const ServicesSlider = () => {
               <div
                 className="absolute inset-0"
                 style={{
-                  background: "linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7))",
+                  background:
+                    "linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7))",
                 }}
               />
 
@@ -138,7 +140,7 @@ const ServicesSlider = () => {
                   {service.title}
                 </h3>
 
-              <Button variant="outline">Know More</Button>
+                <Button variant="outline">Know More</Button>
               </div>
             </div>
           ))}

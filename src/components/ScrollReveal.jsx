@@ -28,7 +28,7 @@ const variantClasses = {
 
 const ScrollReveal = ({
   children,
-  as = "p", 
+  as = "p",
   containerClassName,
   textClassName,
   enableBlur = true,
@@ -62,7 +62,7 @@ const ScrollReveal = ({
   const rotation = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
-    [baseRotation, 0, 0]
+    [baseRotation, 0, 0],
   );
 
   const splitText = useMemo(() => {
@@ -107,7 +107,7 @@ const ScrollReveal = ({
   };
 
   // ✅ DYNAMIC TAG (IMPORTANT)
-  const Tag = motion[as] || motion.p; 
+  const Tag = motion[as] || motion.p;
 
   return (
     <motion.div
@@ -121,7 +121,7 @@ const ScrollReveal = ({
           sizeClasses[size],
           alignClasses[align],
           variantClasses[variant],
-          textClassName
+          textClassName,
         )}
         variants={containerVariants}
         initial="hidden"
@@ -129,9 +129,7 @@ const ScrollReveal = ({
       >
         {splitText.map((item) =>
           item.isSpace ? (
-            <span key={`space-${item.originalIndex}`}>
-              {item.value}
-            </span>
+            <span key={`space-${item.originalIndex}`}>{item.value}</span>
           ) : (
             <motion.span
               key={`word-${item.originalIndex}`}
@@ -140,7 +138,7 @@ const ScrollReveal = ({
             >
               {item.value}
             </motion.span>
-          )
+          ),
         )}
       </Tag>
     </motion.div>

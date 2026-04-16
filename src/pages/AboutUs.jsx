@@ -58,14 +58,16 @@ const AboutUs = () => {
     <div>
       <Navbar></Navbar>
       <HeroOrbit
-      title= {"About Us"} 
-      description={"We blend creativity and technology to build powerful digital solutions that drive growth and create lasting impact."}
-       primaryBtnText = {"Get Started "}
-  secondaryBtnText = {"Learn More"}
-  primaryLink = {"/contact-us"}
-  secondaryLink = {"/contact-us"}
+        title={"About Us"}
+        description={
+          "We blend creativity and technology to build powerful digital solutions that drive growth and create lasting impact."
+        }
+        primaryBtnText={"Get Started "}
+        secondaryBtnText={"Learn More"}
+        primaryLink={"/contact-us"}
+        secondaryLink={"/contact-us"}
       ></HeroOrbit>
-      
+
       <Trusted></Trusted>
       <TextMedia
         title="What makes us the best?"

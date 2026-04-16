@@ -3,7 +3,6 @@
 const CardContent = ({ title, desc, icon }) => {
   return (
     <div className="flex items-center justify-between h-full gap-10">
-
       {/* LEFT */}
       <div className="flex-1">
         <div className="flex items-center gap-4 mb-4">
@@ -14,9 +13,7 @@ const CardContent = ({ title, desc, icon }) => {
           </h3>
         </div>
 
-        <p className="text-gray-600 text-sm leading-relaxed max-w-md">
-          {desc}
-        </p>
+        <p className="text-gray-600 text-sm leading-relaxed max-w-md">{desc}</p>
 
         <button
           className="mt-6 px-5 py-2 rounded-full text-sm"
@@ -30,7 +27,7 @@ const CardContent = ({ title, desc, icon }) => {
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className="w-[200px] h-[200px] rounded-xl overflow-hidden bg-gray-100">
+      <div className="w-50 h-50 rounded-xl overflow-hidden bg-gray-100">
         <img src="/placeholder.png" className="w-full h-full object-cover" />
       </div>
     </div>

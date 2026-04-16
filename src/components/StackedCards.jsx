@@ -107,11 +107,7 @@ function ServiceCard({ card, isActive, onClick, index }) {
         transition={{ duration: 0.4 }}
         className="w-14 h-14 rounded-xl bg-[#022c43] flex items-center justify-center mb-4 relative z-10"
       >
-        <img
-          src={card.icon}
-          alt="icon"
-          className="w-7 h-7 object-contain"
-        />
+        <img src={card.icon} alt="icon" className="w-7 h-7 object-contain" />
       </motion.div>
 
       {/* 📝 CONTENT */}
@@ -146,12 +142,10 @@ export default function StackedCards() {
 
   return (
     <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#00171f] px-4 py-20 overflow-hidden">
-
       {/* particles */}
       <SparkleParticles className="absolute inset-0 z-0" />
 
       <div className="relative z-10 w-full flex flex-col items-center">
-
         {/* heading */}
         <motion.div
           initial={{ opacity: 0, y: -40 }}

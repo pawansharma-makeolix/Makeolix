@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Button from "../components/Button"
+import Button from "../components/Button";
 
 // ─── NAV DATA ────────────────────────────────────────────────────────────────
 const navItems = [
@@ -488,9 +488,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden lg:flex">
-            <Button href="/contact-us">
-  Get Started
-</Button>
+            <Button href="/contact-us">Get Started</Button>
           </div>
 
           {/* MOBILE HAMBURGER */}
@@ -676,8 +674,6 @@ export default function Navbar() {
                             marginBottom: "10px",
                           }}
                         >
-                          
-                          
                           <Link
                             to={group.href || "#"}
                             className="nav-font"
@@ -1085,7 +1081,7 @@ export default function Navbar() {
                   borderTop: "1px solid rgba(0,80,157,0.08)",
                 }}
               >
-              <Button href={"/contact-us"}>Get Started</Button>
+                <Button href={"/contact-us"}>Get Started</Button>
               </div>
             </motion.div>
           </>

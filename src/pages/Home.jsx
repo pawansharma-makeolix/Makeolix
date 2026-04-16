@@ -22,15 +22,14 @@ const Home = () => {
       <KnowPoints></KnowPoints>
       <ServicesSlider />
       <MakeolixNumbers></MakeolixNumbers>
-      <WhyChooseUs>
-      </WhyChooseUs>
+      <WhyChooseUs></WhyChooseUs>
       <VideoTestimonials></VideoTestimonials>
       <FAQSection></FAQSection>
       <Achievements></Achievements>
       <BlogSection></BlogSection>
       <UltraFooter></UltraFooter>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

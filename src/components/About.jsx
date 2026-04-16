@@ -6,14 +6,12 @@ import { SparkleParticles } from "./SparkleParticles";
 
 const About = () => {
   return (
-    <section className="relative py-20 bg-[var(--bg-main)] text-white overflow-hidden">
-
+    <section className="relative py-20 bg-(--bg-main) text-white overflow-hidden">
       {/* 🌌 PARTICLES BACKGROUND */}
       <SparkleParticles className="absolute inset-0 z-0 blur-[1px]" />
 
       {/* 🔤 CONTENT */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
         {/* LEFT CONTENT */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
@@ -21,7 +19,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <p className="text-[var(--blue-3)] mb-3 font-semibold">
+          <p className="text-(--blue-3) mb-3 font-semibold">
             What makes us the best?
           </p>
 
@@ -37,7 +35,9 @@ const About = () => {
             heights in the digital space.
           </p>
 
-          <Button>Know More</Button>
+          <Button className="w-40" href={"/contact-us"}>
+            Know More
+          </Button>
         </motion.div>
 
         {/* RIGHT VIDEO */}
@@ -71,7 +71,6 @@ const About = () => {
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition"></div>
           </motion.div>
         </motion.div>
-
       </div>
     </section>
   );

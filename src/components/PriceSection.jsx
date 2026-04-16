@@ -1,8 +1,8 @@
-import React, { useRef, useEffect, useState } from 'react';
-import { motion, AnimatePresence, useInView } from 'framer-motion';
+import React, { useRef, useEffect, useState } from "react";
+import { motion, AnimatePresence, useInView } from "framer-motion";
+import Button from "../components/Button";
 
-// ─── CONFIG — apna contact URL yahan set karo ──────────────────────────────────
-const CONTACT_URL = '/contact'; // ya 'https://yoursite.com/contact' ya 'mailto:hello@yoursite.com'
+const CONTACT_URL = "/contact";
 
 // ─── WebGL Animated Ring Background ───────────────────────────────────────────
 const ShaderCanvas = () => {
@@ -10,7 +10,7 @@ const ShaderCanvas = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const gl = canvas.getContext('webgl');
+    const gl = canvas.getContext("webgl");
     if (!gl) return;
     const vertSrc = `attribute vec2 aPos; void main(){ gl_Position=vec4(aPos,0.,1.); }`;
     const fragSrc = `
@@ -38,26 +38,36 @@ const ShaderCanvas = () => {
         gl_FragColor=vec4(color,1.);
       }`;
     const compile = (type, src) => {
-      const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); return s;
+      const s = gl.createShader(type);
+      gl.shaderSource(s, src);
+      gl.compileShader(s);
+      return s;
     };
     const prog = gl.createProgram();
     gl.attachShader(prog, compile(gl.VERTEX_SHADER, vertSrc));
     gl.attachShader(prog, compile(gl.FRAGMENT_SHADER, fragSrc));
-    gl.linkProgram(prog); gl.useProgram(prog);
+    gl.linkProgram(prog);
+    gl.useProgram(prog);
     const buf = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]), gl.STATIC_DRAW);
-    const loc = gl.getAttribLocation(prog, 'aPos');
+    gl.bufferData(
+      gl.ARRAY_BUFFER,
+      new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]),
+      gl.STATIC_DRAW,
+    );
+    const loc = gl.getAttribLocation(prog, "aPos");
     gl.enableVertexAttribArray(loc);
     gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
-    const iT = gl.getUniformLocation(prog, 'iTime');
-    const iR = gl.getUniformLocation(prog, 'iRes');
+    const iT = gl.getUniformLocation(prog, "iTime");
+    const iR = gl.getUniformLocation(prog, "iRes");
     let raf;
     const resize = () => {
-      canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
       gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight);
     };
-    resize(); window.addEventListener('resize', resize);
+    resize();
+    window.addEventListener("resize", resize);
     const render = (t) => {
       gl.uniform1f(iT, t * 0.001);
       gl.uniform2f(iR, canvas.width, canvas.height);
@@ -65,19 +75,54 @@ const ShaderCanvas = () => {
       raf = requestAnimationFrame(render);
     };
     raf = requestAnimationFrame(render);
-    return () => { cancelAnimationFrame(raf); window.removeEventListener('resize', resize); };
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("resize", resize);
+    };
   }, []);
-  return <canvas ref={canvasRef} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }} />;
+  return (
+    <canvas
+      ref={canvasRef}
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        zIndex: 0,
+      }}
+    />
+  );
 };
 
 // ─── Icons ────────────────────────────────────────────────────────────────────
 const TickIcon = () => (
-  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+  <svg
+    width="13"
+    height="13"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    style={{ flexShrink: 0 }}
+  >
     <path d="M20 6 9 17l-5-5" />
   </svg>
 );
 const CrossIcon = () => (
-  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+  <svg
+    width="13"
+    height="13"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    style={{ flexShrink: 0 }}
+  >
     <path d="M18 6 6 18M6 6l12 12" />
   </svg>
 );
@@ -89,18 +134,32 @@ const FeatureRow = ({ label, included, index }) => (
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: index * 0.015, duration: 0.25 }}
     style={{
-      display: 'flex', alignItems: 'flex-start', gap: '8px',
-      fontSize: '12px', lineHeight: 1.55, padding: '2.5px 0',
-      color: included === false
-        ? 'rgba(255,255,255,0.22)'
-        : included === 'conditional'
-          ? 'rgba(255,255,255,0.48)'
-          : 'rgba(255,255,255,0.84)',
-    }}>
-    <span style={{
-      marginTop: '2px', flexShrink: 0,
-      color: included === false ? 'rgba(255,70,70,0.65)' : included === 'conditional' ? 'rgba(17,138,178,0.9)' : '#22d3a5',
-    }}>
+      display: "flex",
+      alignItems: "flex-start",
+      gap: "8px",
+      fontSize: "12px",
+      lineHeight: 1.55,
+      padding: "2.5px 0",
+      color:
+        included === false
+          ? "rgba(255,255,255,0.22)"
+          : included === "conditional"
+            ? "rgba(255,255,255,0.48)"
+            : "rgba(255,255,255,0.84)",
+    }}
+  >
+    <span
+      style={{
+        marginTop: "2px",
+        flexShrink: 0,
+        color:
+          included === false
+            ? "rgba(255,70,70,0.65)"
+            : included === "conditional"
+              ? "rgba(17,138,178,0.9)"
+              : "#22d3a5",
+      }}
+    >
       {included === false ? <CrossIcon /> : <TickIcon />}
     </span>
     {label}
@@ -109,11 +168,18 @@ const FeatureRow = ({ label, included, index }) => (
 
 // ─── Section Header ───────────────────────────────────────────────────────────
 const SectionHeader = ({ children }) => (
-  <div style={{
-    fontSize: '9px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase',
-    color: 'var(--blue-3)', margin: '16px 0 6px', paddingBottom: '5px',
-    borderBottom: '1px solid rgba(17,138,178,0.2)',
-  }}>
+  <div
+    style={{
+      fontSize: "9px",
+      fontWeight: 700,
+      letterSpacing: "0.14em",
+      textTransform: "uppercase",
+      color: "var(--blue-3)",
+      margin: "16px 0 6px",
+      paddingBottom: "5px",
+      borderBottom: "1px solid rgba(17,138,178,0.2)",
+    }}
+  >
     {children}
   </div>
 );
@@ -122,31 +188,47 @@ const SectionHeader = ({ children }) => (
 const GlowBorder = () => (
   <motion.div
     animate={{ opacity: [0.4, 1, 0.4] }}
-    transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+    transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
     style={{
-      position: 'absolute', inset: -1, borderRadius: '23px', zIndex: -1,
-      background: 'linear-gradient(135deg, var(--blue-2), var(--blue-3), #22d3a5, var(--blue-2))',
-      backgroundSize: '300% 300%',
-    }} />
+      position: "absolute",
+      inset: -1,
+      borderRadius: "23px",
+      zIndex: -1,
+      background:
+        "linear-gradient(135deg, var(--blue-2), var(--blue-3), #22d3a5, var(--blue-2))",
+      backgroundSize: "300% 300%",
+    }}
+  />
 );
 
 // ─── Pricing Card ─────────────────────────────────────────────────────────────
 export const PricingCard = ({
-  planName, currentPrice, originalPrice, period = '/ month',
-  inclusions, sections, isPopular = false, badgeText = 'Best Seller',
+  planName,
+  currentPrice,
+  originalPrice,
+  period = "/ month",
+  inclusions,
+  sections,
+  isPopular = false,
+  badgeText = "Best Seller",
   contactUrl = CONTACT_URL,
 }) => {
   const [expanded, setExpanded] = useState(false);
   const cardRef = useRef(null);
-  const inView = useInView(cardRef, { once: true, margin: '-40px' });
+  const inView = useInView(cardRef, { once: true, margin: "-40px" });
 
   const savePct = originalPrice
-    ? Math.round((1 - parseFloat(currentPrice.replace('$', '')) / parseFloat(originalPrice.replace('$', ''))) * 100)
+    ? Math.round(
+        (1 -
+          parseFloat(currentPrice.replace("$", "")) /
+            parseFloat(originalPrice.replace("$", ""))) *
+          100,
+      )
     : null;
 
   const handleGetStarted = () => {
-    if (contactUrl.startsWith('mailto:') || contactUrl.startsWith('http')) {
-      window.open(contactUrl, '_blank', 'noopener,noreferrer');
+    if (contactUrl.startsWith("mailto:") || contactUrl.startsWith("http")) {
+      window.open(contactUrl, "_blank", "noopener,noreferrer");
     } else {
       window.location.href = contactUrl;
     }
@@ -157,73 +239,118 @@ export const PricingCard = ({
       ref={cardRef}
       initial={{ opacity: 0, y: 55 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      whileHover={{ y: -9, transition: { duration: 0.22, ease: 'easeOut' } }}
-      transition={{ duration: 0.55, type: 'spring', stiffness: 80 }}
+      whileHover={{ y: -9, transition: { duration: 0.22, ease: "easeOut" } }}
+      transition={{ duration: 0.55, type: "spring", stiffness: 80 }}
       style={{
-        position: 'relative',
+        position: "relative",
         background: isPopular
-          ? 'linear-gradient(150deg, rgba(0,56,99,0.72) 0%, rgba(0,80,157,0.42) 50%, rgba(0,23,31,0.68) 100%)'
-          : 'linear-gradient(150deg, rgba(5,25,35,0.84) 0%, rgba(0,23,31,0.72) 100%)',
-        backdropFilter: 'blur(22px)', WebkitBackdropFilter: 'blur(22px)',
-        border: isPopular ? '1.5px solid rgba(17,138,178,0.65)' : '1px solid rgba(17,138,178,0.16)',
-        borderRadius: '22px', width: '100%', maxWidth: '310px',
-        display: 'flex', flexDirection: 'column',
+          ? "linear-gradient(150deg, rgba(0,56,99,0.72) 0%, rgba(0,80,157,0.42) 50%, rgba(0,23,31,0.68) 100%)"
+          : "linear-gradient(150deg, rgba(5,25,35,0.84) 0%, rgba(0,23,31,0.72) 100%)",
+        backdropFilter: "blur(22px)",
+        WebkitBackdropFilter: "blur(22px)",
+        border: isPopular
+          ? "1.5px solid rgba(17,138,178,0.65)"
+          : "1px solid rgba(17,138,178,0.16)",
+        borderRadius: "22px",
+        width: "100%",
+        maxWidth: "310px",
+        display: "flex",
+        flexDirection: "column",
         boxShadow: isPopular
-          ? '0 0 55px rgba(17,138,178,0.25), 0 24px 70px rgba(0,0,0,0.58)'
-          : '0 8px 36px rgba(0,0,0,0.42)',
-        overflow: 'hidden',
-        transform: isPopular ? 'scale(1.035)' : 'scale(1)',
-      }}>
-
+          ? "0 0 55px rgba(17,138,178,0.25), 0 24px 70px rgba(0,0,0,0.58)"
+          : "0 8px 36px rgba(0,0,0,0.42)",
+        overflow: "hidden",
+        transform: isPopular ? "scale(1.035)" : "scale(1)",
+      }}
+    >
       {isPopular && <GlowBorder />}
 
       {/* Animated shimmer top bar */}
       <motion.div
-        animate={isPopular ? { backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] } : {}}
-        transition={{ duration: 3.5, repeat: Infinity, ease: 'linear' }}
+        animate={
+          isPopular
+            ? { backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }
+            : {}
+        }
+        transition={{ duration: 3.5, repeat: Infinity, ease: "linear" }}
         style={{
-          height: isPopular ? '3px' : '1px',
+          height: isPopular ? "3px" : "1px",
           background: isPopular
-            ? 'linear-gradient(90deg, var(--blue-1), var(--blue-3), #22d3a5, var(--blue-2), var(--blue-1))'
-            : 'rgba(17,138,178,0.22)',
-          backgroundSize: '300% 100%', flexShrink: 0,
-        }} />
+            ? "linear-gradient(90deg, var(--blue-1), var(--blue-3), #22d3a5, var(--blue-2), var(--blue-1))"
+            : "rgba(17,138,178,0.22)",
+          backgroundSize: "300% 100%",
+          flexShrink: 0,
+        }}
+      />
 
       {/* Best Seller banner */}
       {isPopular && (
         <motion.div
-          initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}} transition={{ delay: 0.25 }}
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ delay: 0.25 }}
           style={{
-            background: 'linear-gradient(90deg, var(--blue-1), var(--blue-2), var(--blue-3))',
-            textAlign: 'center', fontSize: '10px', fontWeight: 700,
-            letterSpacing: '0.16em', color: '#fff', padding: '6px 0', textTransform: 'uppercase',
-          }}>
+            background:
+              "linear-gradient(90deg, var(--blue-1), var(--blue-2), var(--blue-3))",
+            textAlign: "center",
+            fontSize: "10px",
+            fontWeight: 700,
+            letterSpacing: "0.16em",
+            color: "#fff",
+            padding: "6px 0",
+            textTransform: "uppercase",
+          }}
+        >
           ★ {badgeText}
         </motion.div>
       )}
 
       {/* Floating sparkles */}
-      {isPopular && [0, 1, 2, 3, 4, 5].map(i => (
-        <motion.div key={i}
-          animate={{ y: [-4, -18, -4], opacity: [0, 0.6, 0], x: [0, i % 2 === 0 ? 5 : -5, 0] }}
-          transition={{ duration: 2.8 + i * 0.35, repeat: Infinity, delay: i * 0.45, ease: 'easeInOut' }}
-          style={{
-            position: 'absolute', top: `${18 + i * 11}%`,
-            right: i % 2 === 0 ? '10px' : 'auto', left: i % 2 !== 0 ? '10px' : 'auto',
-            width: '3px', height: '3px', borderRadius: '50%',
-            background: 'var(--blue-3)', pointerEvents: 'none', zIndex: 2,
-          }} />
-      ))}
+      {isPopular &&
+        [0, 1, 2, 3, 4, 5].map((i) => (
+          <motion.div
+            key={i}
+            animate={{
+              y: [-4, -18, -4],
+              opacity: [0, 0.6, 0],
+              x: [0, i % 2 === 0 ? 5 : -5, 0],
+            }}
+            transition={{
+              duration: 2.8 + i * 0.35,
+              repeat: Infinity,
+              delay: i * 0.45,
+              ease: "easeInOut",
+            }}
+            style={{
+              position: "absolute",
+              top: `${18 + i * 11}%`,
+              right: i % 2 === 0 ? "10px" : "auto",
+              left: i % 2 !== 0 ? "10px" : "auto",
+              width: "3px",
+              height: "3px",
+              borderRadius: "50%",
+              background: "var(--blue-3)",
+              pointerEvents: "none",
+              zIndex: 2,
+            }}
+          />
+        ))}
 
       {/* ── Body ── */}
-      <div style={{ padding: '20px 22px 0' }}>
-
+      <div style={{ padding: "20px 22px 0" }}>
         {/* Plan name */}
         <motion.h2
           initial={{ opacity: 0, x: -14 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ delay: 0.1, duration: 0.38 }}
-          style={{ fontSize: '24px', fontWeight: 800, color: '#fff', marginBottom: '6px', letterSpacing: '0.02em' }}>
+          style={{
+            fontSize: "24px",
+            fontWeight: 800,
+            color: "#fff",
+            marginBottom: "6px",
+            letterSpacing: "0.02em",
+          }}
+        >
           {planName}
         </motion.h2>
 
@@ -232,43 +359,76 @@ export const PricingCard = ({
           initial={{ opacity: 0, y: 10 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.16, duration: 0.36 }}
-          style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '4px' }}>
-          <span style={{ fontSize: '29px', fontWeight: 800, color: 'var(--blue-3)' }}>{currentPrice}</span>
+          style={{
+            display: "flex",
+            alignItems: "baseline",
+            gap: "8px",
+            marginBottom: "4px",
+          }}
+        >
+          <span
+            style={{
+              fontSize: "29px",
+              fontWeight: 800,
+              color: "var(--blue-3)",
+            }}
+          >
+            {currentPrice}
+          </span>
           {originalPrice && (
-            <span style={{ fontSize: '15px', color: 'rgba(255,255,255,0.28)', textDecoration: 'line-through' }}>{originalPrice}</span>
+            <span
+              style={{
+                fontSize: "15px",
+                color: "rgba(255,255,255,0.28)",
+                textDecoration: "line-through",
+              }}
+            >
+              {originalPrice}
+            </span>
           )}
-          <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.4)' }}>{period}</span>
+          <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.4)" }}>
+            {period}
+          </span>
         </motion.div>
 
         {/* Save badge */}
         {savePct && (
           <motion.div
-            initial={{ scale: 0 }} animate={inView ? { scale: 1 } : {}}
-            transition={{ delay: 0.26, type: 'spring', stiffness: 220 }}
+            initial={{ scale: 0 }}
+            animate={inView ? { scale: 1 } : {}}
+            transition={{ delay: 0.26, type: "spring", stiffness: 220 }}
             style={{
-              display: 'inline-block', fontSize: '10px', fontWeight: 700,
-              background: 'rgba(34,211,165,0.12)', color: '#22d3a5',
-              border: '1px solid rgba(34,211,165,0.28)', borderRadius: '20px',
-              padding: '2px 9px', marginBottom: '12px', letterSpacing: '0.07em',
-            }}>
+              display: "inline-block",
+              fontSize: "10px",
+              fontWeight: 700,
+              background: "rgba(34,211,165,0.12)",
+              color: "#22d3a5",
+              border: "1px solid rgba(34,211,165,0.28)",
+              borderRadius: "20px",
+              padding: "2px 9px",
+              marginBottom: "12px",
+              letterSpacing: "0.07em",
+            }}
+          >
             SAVE {savePct}%
           </motion.div>
         )}
 
         {/* Top CTA */}
-        <motion.button
-          whileHover={{ scale: 1.03, opacity: 0.88 }} whileTap={{ scale: 0.96 }}
-          onClick={handleGetStarted}
-          style={{
-            width: '100%', padding: '10px', borderRadius: '10px', border: 'none',
-            background: isPopular
-              ? 'linear-gradient(90deg, var(--blue-2), var(--blue-3))'
-              : 'rgba(17,138,178,0.18)',
-            color: '#fff', fontSize: '13px', fontWeight: 700,
-            cursor: 'pointer', marginBottom: '14px', letterSpacing: '0.06em',
-          }}>
-          Get Started
-        </motion.button>
+        <motion.div
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.96 }}
+          className="mb-2"
+        >
+          <Button
+            onClick={handleGetStarted}
+            className="w-full"
+            variant="outline"
+            href={"/contact-us"}
+          >
+            Buy Now
+          </Button>
+        </motion.div>
 
         {/* Inclusions */}
         <motion.div
@@ -276,33 +436,72 @@ export const PricingCard = ({
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ delay: 0.2, duration: 0.38 }}
           style={{
-            background: 'rgba(17,138,178,0.09)', borderRadius: '12px',
-            padding: '12px 14px', marginBottom: '6px',
-            border: '1px solid rgba(17,138,178,0.16)',
-          }}>
-          <div style={{ fontSize: '9px', fontWeight: 700, color: 'var(--blue-3)', letterSpacing: '0.13em', marginBottom: '8px', textTransform: 'uppercase' }}>
+            background: "rgba(17,138,178,0.09)",
+            borderRadius: "12px",
+            padding: "12px 14px",
+            marginBottom: "6px",
+            border: "1px solid rgba(17,138,178,0.16)",
+          }}
+        >
+          <div
+            style={{
+              fontSize: "9px",
+              fontWeight: 700,
+              color: "var(--blue-3)",
+              letterSpacing: "0.13em",
+              marginBottom: "8px",
+              textTransform: "uppercase",
+            }}
+          >
             Inclusions
           </div>
           {inclusions.map((item, i) => (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '7px', fontSize: '12px', color: 'rgba(255,255,255,0.84)', marginBottom: '4px' }}>
-              <span style={{ color: '#22d3a5', fontSize: '9px' }}>◆</span> {item}
+            <div
+              key={i}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "7px",
+                fontSize: "12px",
+                color: "rgba(255,255,255,0.84)",
+                marginBottom: "4px",
+              }}
+            >
+              <span style={{ color: "#22d3a5", fontSize: "9px" }}>◆</span>{" "}
+              {item}
             </div>
           ))}
         </motion.div>
       </div>
 
       {/* Expandable toggle */}
-      <div style={{ padding: '0 22px' }}>
+      <div style={{ padding: "0 22px" }}>
         <motion.button
-          whileHover={{ color: '#fff' }}
+          whileHover={{ color: "#fff" }}
           onClick={() => setExpanded(!expanded)}
           style={{
-            width: '100%', background: 'none', border: 'none', color: 'var(--blue-3)',
-            cursor: 'pointer', fontSize: '11px', fontWeight: 600, padding: '10px 0',
-            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', letterSpacing: '0.07em',
-          }}>
-          {expanded ? 'Hide' : 'View All'} Features
-          <motion.span animate={{ rotate: expanded ? 180 : 0 }} transition={{ duration: 0.22 }}>▼</motion.span>
+            width: "100%",
+            background: "none",
+            border: "none",
+            color: "var(--blue-3)",
+            cursor: "pointer",
+            fontSize: "11px",
+            fontWeight: 600,
+            padding: "10px 0",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "6px",
+            letterSpacing: "0.07em",
+          }}
+        >
+          {expanded ? "Hide" : "View All"} Features
+          <motion.span
+            animate={{ rotate: expanded ? 180 : 0 }}
+            transition={{ duration: 0.22 }}
+          >
+            ▼
+          </motion.span>
         </motion.button>
 
         <AnimatePresence initial={false}>
@@ -310,16 +509,22 @@ export const PricingCard = ({
             <motion.div
               key="feats"
               initial={{ height: 0, opacity: 0 }}
-              animate={{ height: 'auto', opacity: 1 }}
+              animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.38, ease: [0.4, 0, 0.2, 1] }}
-              style={{ overflow: 'hidden' }}>
+              style={{ overflow: "hidden" }}
+            >
               {sections.map((sec, si) => (
                 <div key={si}>
                   <SectionHeader>{sec.title}</SectionHeader>
-                  <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                     {sec.items.map((item, ii) => (
-                      <FeatureRow key={ii} label={item.label} included={item.included} index={ii} />
+                      <FeatureRow
+                        key={ii}
+                        label={item.label}
+                        included={item.included}
+                        index={ii}
+                      />
                     ))}
                   </ul>
                 </div>
@@ -330,30 +535,6 @@ export const PricingCard = ({
       </div>
 
       {/* Bottom CTA */}
-      <div style={{ padding: '14px 22px 22px', marginTop: 'auto' }}>
-        <div style={{ height: '1px', background: 'linear-gradient(90deg,transparent,rgba(17,138,178,0.4),transparent)', margin: '4px 0 14px' }} />
-        <div style={{ display: 'flex', gap: '6px', justifyContent: 'center', marginBottom: '12px' }}>
-          {['Email', 'Phone', 'Chat'].map(s => (
-            <motion.span key={s} whileHover={{ scale: 1.08, color: '#fff' }}
-              style={{ fontSize: '10px', color: 'rgba(255,255,255,0.4)', background: 'rgba(255,255,255,0.05)', padding: '3px 10px', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.07)', cursor: 'default' }}>
-              {s}
-            </motion.span>
-          ))}
-        </div>
-        <motion.button
-          whileHover={{ scale: 1.03, background: 'linear-gradient(90deg, var(--blue-2), var(--blue-3))' }}
-          whileTap={{ scale: 0.97 }}
-          onClick={handleGetStarted}
-          style={{
-            width: '100%', padding: '12px', borderRadius: '10px',
-            border: isPopular ? 'none' : '1px solid rgba(17,138,178,0.38)',
-            background: isPopular ? 'linear-gradient(90deg, var(--blue-2), var(--blue-3))' : 'transparent',
-            color: '#fff', fontSize: '13px', fontWeight: 700, cursor: 'pointer',
-            letterSpacing: '0.06em', transition: 'background 0.2s',
-          }}>
-          Get Started →
-        </motion.button>
-      </div>
     </motion.div>
   );
 };
@@ -363,48 +544,99 @@ export const PricingCard = ({
 // Ek plan ka data badloge to doosre plan pe koi effect nahi padega
 // ═══════════════════════════════════════════════════════════════════════════════
 
-
-
 // ─── Main Page ────────────────────────────────────────────────────────────────
 export const PricingSection = ({
-  plans, 
- 
-  subtitle ,
+  plans,
+
+  subtitle,
   showBg = true,
   contactUrl,
 }) => (
-  <div style={{ minHeight: '100vh', width: '100%', background: 'var(--bg-main)', position: 'relative', overflowX: 'hidden' }}>
+  <div
+    style={{
+      minHeight: "100vh",
+      width: "100%",
+      background: "var(--bg-main)",
+      position: "relative",
+      overflowX: "hidden",
+    }}
+  >
     {showBg && <ShaderCanvas />}
-    <div style={{ position: 'fixed', inset: 0, zIndex: 1, background: 'radial-gradient(ellipse at 50% 18%, rgba(0,56,99,0.2) 0%, rgba(0,23,31,0.6) 100%)', pointerEvents: 'none' }} />
+    <div
+      style={{
+        position: "fixed",
+        inset: 0,
+        zIndex: 1,
+        background:
+          "radial-gradient(ellipse at 50% 18%, rgba(0,56,99,0.2) 0%, rgba(0,23,31,0.6) 100%)",
+        pointerEvents: "none",
+      }}
+    />
 
-    <main style={{ position: 'relative', zIndex: 2, padding: '60px 20px 80px' }}>
-
+    <main
+      style={{ position: "relative", zIndex: 2, padding: "60px 20px 80px" }}
+    >
       {/* Header */}
-      <div style={{ textAlign: 'center', marginBottom: '52px' }}>
+      <div style={{ textAlign: "center", marginBottom: "52px" }}>
         <motion.div
-          initial={{ scaleX: 0, opacity: 0 }} animate={{ scaleX: 1, opacity: 1 }}
+          initial={{ scaleX: 0, opacity: 0 }}
+          animate={{ scaleX: 1, opacity: 1 }}
           transition={{ duration: 0.55 }}
-          style={{ width: '50px', height: '3px', background: 'linear-gradient(90deg,var(--blue-2),var(--blue-3))', margin: '0 auto 18px', borderRadius: '2px' }} />
-
-       
+          style={{
+            width: "50px",
+            height: "3px",
+            background: "linear-gradient(90deg,var(--blue-2),var(--blue-3))",
+            margin: "0 auto 18px",
+            borderRadius: "2px",
+          }}
+        />
 
         <motion.p
-          initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.14, duration: 0.4 }}
-          style={{ fontSize: '13px', color: 'rgba(255,255,255,0.4)', letterSpacing: '0.18em', textTransform: 'uppercase' }}>
+          style={{
+            fontSize: "13px",
+            color: "rgba(255,255,255,0.4)",
+            letterSpacing: "0.18em",
+            textTransform: "uppercase",
+          }}
+        >
           {subtitle}
         </motion.p>
 
         {/* Legend */}
         <motion.div
-          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
-          style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '16px', flexWrap: 'wrap' }}>
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "20px",
+            marginTop: "16px",
+            flexWrap: "wrap",
+          }}
+        >
           {[
-            { color: '#22d3a5', icon: '✓', label: 'Included' },
-            { color: 'rgba(255,70,70,0.8)', icon: '✗', label: 'Not Included' },
-            { color: 'rgba(17,138,178,0.95)', icon: '✓', label: 'Conditional / Client Dependent' },
+            { color: "#22d3a5", icon: "✓", label: "Included" },
+            { color: "rgba(255,70,70,0.8)", icon: "✗", label: "Not Included" },
+            {
+              color: "rgba(17,138,178,0.95)",
+              icon: "✓",
+              label: "Conditional / Client Dependent",
+            },
           ].map(({ color, icon, label }) => (
-            <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '11px', color: 'rgba(255,255,255,0.46)' }}>
+            <div
+              key={label}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "5px",
+                fontSize: "11px",
+                color: "rgba(255,255,255,0.46)",
+              }}
+            >
               <span style={{ color, fontWeight: 700 }}>{icon}</span> {label}
             </div>
           ))}
@@ -412,18 +644,30 @@ export const PricingSection = ({
       </div>
 
       {/* Cards */}
-      <div style={{
-        display: 'flex', flexWrap: 'wrap', gap: '22px',
-        justifyContent: 'center', alignItems: 'flex-start',
-        maxWidth: '1380px', margin: '0 auto',
-      }}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "22px",
+          justifyContent: "center",
+          alignItems: "flex-start",
+          maxWidth: "1380px",
+          margin: "0 auto",
+        }}
+      >
         {plans.map((plan, i) => (
           <motion.div
             key={plan.planName}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.1 + 0.18, duration: 0.5, type: 'spring', stiffness: 78 }}
-            style={{ flex: '1 1 260px', maxWidth: '310px' }}>
+            transition={{
+              delay: i * 0.1 + 0.18,
+              duration: 0.5,
+              type: "spring",
+              stiffness: 78,
+            }}
+            style={{ flex: "1 1 260px", maxWidth: "310px" }}
+          >
             <PricingCard {...plan} contactUrl={contactUrl} />
           </motion.div>
         ))}
@@ -433,6 +677,3 @@ export const PricingSection = ({
 );
 
 export default PricingSection;
-
-
-

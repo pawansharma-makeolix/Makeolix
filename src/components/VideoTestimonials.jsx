@@ -47,8 +47,7 @@ const VideoTestimonials = () => {
   };
 
   const getClass = (index) => {
-    if (index === active)
-      return "scale-100 opacity-100 z-20 translate-x-0";
+    if (index === active) return "scale-100 opacity-100 z-20 translate-x-0";
     if (index === (active + 1) % videos.length)
       return "translate-x-[60%] scale-90 opacity-70 z-10";
     if (index === (active - 1 + videos.length) % videos.length)
@@ -72,18 +71,16 @@ const VideoTestimonials = () => {
       </h2>
 
       {/* Slider */}
-      <div className="relative w-full max-w-6xl h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
-
+      <div className="relative w-full max-w-6xl h-75 sm:h-100 md:h-125 flex items-center justify-center overflow-hidden">
         {videos.map((video, i) => (
           <div
             key={video.id}
             className={`absolute transition-all duration-500 
-            w-[220px] sm:w-[280px] md:w-[340px] h-full 
+            w-55 sm:w-70 md:w-85 h-full 
             rounded-xl overflow-hidden shadow-xl ${getClass(i)}`}
             style={{ backgroundColor: "#051923" }}
           >
             <div className="relative w-full h-full">
-
               {/* 🎥 Video */}
               <video
                 ref={(el) => (videoRefs.current[i] = el)}

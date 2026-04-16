@@ -25,10 +25,9 @@ const KnowPoints = () => {
   return (
     <section className="py-10 pb-20 bg-white text-black">
       <div className="max-w-6xl mx-auto px-6">
-
         {/* HEADING */}
         <div className="text-center mb-16">
-          <ScrollReveal as ="h2"align="center" size="md">
+          <ScrollReveal as="h2" align="center" size="md">
             Know Our Points
           </ScrollReveal>
 
@@ -39,7 +38,6 @@ const KnowPoints = () => {
 
         {/* GRID */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
           {points.map((item, i) => (
             <motion.div
               key={i}
@@ -49,34 +47,27 @@ const KnowPoints = () => {
               viewport={{ once: true }}
               className="group relative p-6 rounded-2xl border border-black/10 bg-white shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2"
             >
-
               {/* GLOW EFFECT */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[var(--blue-3)] to-white opacity-0 group-hover:opacity-10 transition"></div>
 
               {/* CONTENT */}
               <div className="relative z-10 space-y-4">
-
                 {/* ICON */}
                 <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[var(--blue-3)]/10 text-[var(--blue-3)] font-bold">
                   {i + 1}
                 </div>
 
                 {/* TITLE */}
-                <h3 className="font-semibold text-lg">
-                  {item.title}
-                </h3>
+                <h3 className="font-semibold text-lg">{item.title}</h3>
 
                 {/* DESC */}
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {item.desc}
                 </p>
-
               </div>
             </motion.div>
           ))}
-
         </div>
-
       </div>
     </section>
   );

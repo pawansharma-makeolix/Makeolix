@@ -98,7 +98,6 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
-
       {/* ✨ PARTICLES BACKGROUND */}
       {init && (
         <Particles
@@ -109,12 +108,11 @@ const Hero = () => {
 
       {/* 🔥 CONTENT */}
       <div className="relative z-10 max-w-3xl px-6 text-white">
-
         <h1 className="text-4xl md:text-5xl font-regular leading-tight mb-6">
           We are Makeolix
           <br />
           We do{" "}
-          <span className="bg-gradient-to-r from-[#fff] to-[#118ab2] bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-white to-[#118ab2] bg-clip-text text-transparent">
             <TypeAnimation
               sequence={[
                 "SEO Reseller Service",
@@ -140,7 +138,9 @@ const Hero = () => {
 
         <div className="flex justify-center gap-4">
           <Button href={"/contact-us"}>Get In Touch</Button>
-          <Button variant="outline" href={"/about"}>Know More</Button>
+          <Button variant="outline" href={"/about"}>
+            Know More
+          </Button>
         </div>
       </div>
     </section>

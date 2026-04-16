@@ -38,9 +38,9 @@ export default function BlobCursor() {
   return (
     <div
       ref={blobRef}
-      className="pointer-events-none fixed top-0 left-0 z-[999]"
+      className="pointer-events-none fixed top-0 left-0 z-999"
     >
-      <div className="w-72 h-72 rounded-full blur-3xl opacity-40 bg-gradient-to-r from-[#118ab2] via-[#00509d] to-[#003863]" />
+      <div className="w-72 h-72 rounded-full blur-3xl opacity-40 bg-linear-to-r from-[#118ab2] via-[#00509d] to-[#003863]" />
     </div>
   );
 }

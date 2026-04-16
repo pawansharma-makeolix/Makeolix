@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    question: "What is digital marketing and why is it important for my business?",
+    question:
+      "What is digital marketing and why is it important for my business?",
     answer:
       "Digital marketing is the promotion of products or services using online channels such as search engines, social media, email, and websites. It is important because it allows your business to reach a larger audience, generate leads, improve brand visibility, and achieve measurable growth in a cost-effective way.",
   },
@@ -20,7 +21,8 @@ const faqs = [
       "MakeOlix Consulting offers an entire array of digital marketing services, including SEO, performance marketing, social media marketing, and website development.",
   },
   {
-    question: "What is the difference between MakeOlix Consulting and other agencies?",
+    question:
+      "What is the difference between MakeOlix Consulting and other agencies?",
     answer:
       "MakeOlix focuses on ROI-driven growth with transparent reporting, personalized strategies, and fast execution.",
   },
@@ -46,7 +48,6 @@ const FAQSection = () => {
       }}
     >
       <div className="max-w-4xl mx-auto">
-
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -69,10 +70,11 @@ const FAQSection = () => {
           </h3>
 
           <p className="text-gray-600 max-w-xl mx-auto">
-            Explore our FAQs to gain insights into digital marketing, our approach, and how we can tailor solutions for your business. From understanding the basics to getting started, find comprehensive answers to commonly asked questions about our services and the industries we serve.
-
-
-
+            Explore our FAQs to gain insights into digital marketing, our
+            approach, and how we can tailor solutions for your business. From
+            understanding the basics to getting started, find comprehensive
+            answers to commonly asked questions about our services and the
+            industries we serve.
           </p>
         </motion.div>
 
@@ -84,7 +86,6 @@ const FAQSection = () => {
             return (
               <motion.div
                 key={index}
-
                 /* 🔥 Alternating animation */
                 initial={{
                   opacity: 0,
@@ -101,7 +102,6 @@ const FAQSection = () => {
                   delay: index * 0.1,
                   ease: "easeOut",
                 }}
-
                 className="rounded-xl overflow-hidden"
                 style={{
                   background: "#051923",

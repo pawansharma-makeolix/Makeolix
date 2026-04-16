@@ -27,7 +27,7 @@ const testimonials = [
     role: "Weathered Not Worn",
     text: " I was stressed after working with SEO agencies because I was not getting results but after working with MakeOlix I built trust again on SEO strategy. I got more traffic and sales within the given timeline.",
   },
-   {
+  {
     id: 5,
     name: "Kojo White",
     role: "Handypeg",
@@ -39,11 +39,10 @@ const testimonials = [
 function CardStack({ current, direction }) {
   return (
     <div className="relative w-[320px] md:w-100 h-80 md:h-87.5">
-
       {/* Fanned background cards */}
       {[
         { rotate: -8, ty: -14, opacity: 0.3 },
-        { rotate: 5,  ty: -7,  opacity: 0.55 },
+        { rotate: 5, ty: -7, opacity: 0.55 },
       ].map((s, i) => (
         <div
           key={i}
@@ -71,8 +70,11 @@ function CardStack({ current, direction }) {
             filter: "blur(6px)",
           })}
           animate={{
-            y: 0, x: 0, opacity: 1,
-            rotate: 0, scale: 1,
+            y: 0,
+            x: 0,
+            opacity: 1,
+            rotate: 0,
+            scale: 1,
             filter: "blur(0px)",
           }}
           exit={(d) => ({
@@ -105,7 +107,11 @@ function CardStack({ current, direction }) {
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.32, duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              delay: 0.32,
+              duration: 0.45,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             className="text-gray-500 text-sm md:text-[15px] leading-relaxed flex-1 mt-2"
           >
             {testimonials[current].text}
@@ -115,7 +121,11 @@ function CardStack({ current, direction }) {
           <motion.div
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              delay: 0.4,
+              duration: 0.45,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             className="border-t border-gray-100 pt-5 mt-4"
           >
             <h4 className="text-[15px] font-semibold text-[#00509d]">
@@ -141,15 +151,20 @@ export default function StackedTestimonials() {
   const touchStartY = useRef(0);
   const total = testimonials.length;
 
-  const go = useCallback((dir) => {
-    if (cooldown.current) return;
-    const next = current + dir;
-    if (next < 0 || next >= total) return;
-    cooldown.current = true;
-    setTimeout(() => { cooldown.current = false; }, 700);
-    setDirection(dir);
-    setCurrent(next);
-  }, [current, total]);
+  const go = useCallback(
+    (dir) => {
+      if (cooldown.current) return;
+      const next = current + dir;
+      if (next < 0 || next >= total) return;
+      cooldown.current = true;
+      setTimeout(() => {
+        cooldown.current = false;
+      }, 700);
+      setDirection(dir);
+      setCurrent(next);
+    },
+    [current, total],
+  );
 
   const sectionInView = useCallback(() => {
     const el = sectionRef.current;
@@ -172,7 +187,9 @@ export default function StackedTestimonials() {
   }, [sectionInView, go, current, total]);
 
   useEffect(() => {
-    const onStart = (e) => { touchStartY.current = e.touches[0].clientY; };
+    const onStart = (e) => {
+      touchStartY.current = e.touches[0].clientY;
+    };
     const onEnd = (e) => {
       if (!sectionInView()) return;
       const dy = touchStartY.current - e.changedTouches[0].clientY;
@@ -198,7 +215,9 @@ export default function StackedTestimonials() {
   const headingVariants = {
     hidden: { opacity: 0, y: -50, filter: "blur(10px)" },
     visible: {
-      opacity: 1, y: 0, filter: "blur(0px)",
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
       transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1] },
     },
   };
@@ -206,15 +225,27 @@ export default function StackedTestimonials() {
   const subVariants = {
     hidden: { opacity: 0, y: -20, filter: "blur(6px)" },
     visible: {
-      opacity: 1, y: 0, filter: "blur(0px)",
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
       transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
     },
   };
 
   const stackVariants = {
-    hidden: { opacity: 0, y: 80, scale: 0.88, rotate: -4, filter: "blur(12px)" },
+    hidden: {
+      opacity: 0,
+      y: 80,
+      scale: 0.88,
+      rotate: -4,
+      filter: "blur(12px)",
+    },
     visible: {
-      opacity: 1, y: 0, scale: 1, rotate: 0, filter: "blur(0px)",
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      rotate: 0,
+      filter: "blur(0px)",
       transition: { duration: 0.85, ease: [0.22, 1, 0.36, 1] },
     },
   };
@@ -222,7 +253,8 @@ export default function StackedTestimonials() {
   const dotsVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
-      opacity: 1, y: 0,
+      opacity: 1,
+      y: 0,
       transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
     },
   };
@@ -238,7 +270,8 @@ export default function StackedTestimonials() {
         transition={{ duration: 1.2 }}
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse 60% 50% at 50% 60%, rgba(17,138,178,0.09), transparent)",
+          background:
+            "radial-gradient(ellipse 60% 50% at 50% 60%, rgba(17,138,178,0.09), transparent)",
         }}
       />
 
@@ -272,7 +305,10 @@ export default function StackedTestimonials() {
         </motion.div>
 
         {/* Dots */}
-        <motion.div variants={dotsVariants} className="flex items-center gap-2.5 mt-10">
+        <motion.div
+          variants={dotsVariants}
+          className="flex items-center gap-2.5 mt-10"
+        >
           {testimonials.map((_, i) => (
             <motion.button
               key={i}

@@ -24,7 +24,12 @@ import {
 const Particle = ({ style }) => (
   <motion.div
     className="absolute rounded-full pointer-events-none"
-    style={{ width: 4, height: 4, background: "rgba(103,232,249,0.6)", ...style }}
+    style={{
+      width: 4,
+      height: 4,
+      background: "rgba(103,232,249,0.6)",
+      ...style,
+    }}
     animate={{ y: [0, -120, 0], opacity: [0, 1, 0], scale: [0, 1.5, 0] }}
     transition={{
       duration: style.duration ?? 4,
@@ -55,7 +60,7 @@ const FieldWrap = ({ children, focused, className = "" }) => (
   >
     {children}
     <motion.div
-      className="absolute bottom-0 left-0 h-[2px] rounded-full"
+      className="absolute bottom-0 left-0 h-0.5 rounded-full"
       style={{ background: "linear-gradient(90deg,#118ab2,#67e8f9)" }}
       animate={{ width: focused ? "100%" : "0%" }}
       transition={{ duration: 0.35, ease: "easeOut" }}
@@ -79,7 +84,12 @@ const ResumeUpload = ({ file, setFile }) => {
   const inputRef = useRef(null);
 
   const handleFile = (f) => {
-    if (f && (f.type === "application/pdf" || f.name.endsWith(".doc") || f.name.endsWith(".docx"))) {
+    if (
+      f &&
+      (f.type === "application/pdf" ||
+        f.name.endsWith(".doc") ||
+        f.name.endsWith(".docx"))
+    ) {
       setFile(f);
     }
   };
@@ -90,7 +100,10 @@ const ResumeUpload = ({ file, setFile }) => {
     handleFile(e.dataTransfer.files[0]);
   }, []);
 
-  const onDragOver = (e) => { e.preventDefault(); setDragging(true); };
+  const onDragOver = (e) => {
+    e.preventDefault();
+    setDragging(true);
+  };
   const onDragLeave = () => setDragging(false);
 
   return (
@@ -115,23 +128,34 @@ const ResumeUpload = ({ file, setFile }) => {
               backdropFilter: "blur(12px)",
               transition: "all 0.3s",
             }}
-            whileHover={{ borderColor: "rgba(103,232,249,0.6)", background: "rgba(17,138,178,0.08)" }}
+            whileHover={{
+              borderColor: "rgba(103,232,249,0.6)",
+              background: "rgba(17,138,178,0.08)",
+            }}
           >
             {/* scanning line */}
             <motion.div
-              className="absolute left-0 right-0 h-[1px]"
-              style={{ background: "linear-gradient(90deg,transparent,#67e8f9,transparent)" }}
+              className="absolute left-0 right-0 h-px"
+              style={{
+                background:
+                  "linear-gradient(90deg,transparent,#67e8f9,transparent)",
+              }}
               animate={{ top: ["0%", "100%"] }}
               transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
             />
 
             <div className="flex flex-col items-center justify-center py-7 gap-3">
               <motion.div
-                animate={dragging ? { scale: 1.25, rotate: [0, -8, 8, 0] } : { scale: 1 }}
+                animate={
+                  dragging
+                    ? { scale: 1.25, rotate: [0, -8, 8, 0] }
+                    : { scale: 1 }
+                }
                 transition={{ duration: 0.4 }}
                 className="p-4 rounded-2xl"
                 style={{
-                  background: "linear-gradient(135deg,rgba(0,56,99,0.7),rgba(17,138,178,0.5))",
+                  background:
+                    "linear-gradient(135deg,rgba(0,56,99,0.7),rgba(17,138,178,0.5))",
                   border: "1px solid rgba(17,138,178,0.35)",
                 }}
               >
@@ -139,15 +163,27 @@ const ResumeUpload = ({ file, setFile }) => {
               </motion.div>
 
               <div className="text-center">
-                <p className="font-semibold text-sm" style={{ color: "#e0f2fe" }}>
+                <p
+                  className="font-semibold text-sm"
+                  style={{ color: "#e0f2fe" }}
+                >
                   {dragging ? "Drop it here!" : "Upload Resume / CV"}
                 </p>
-                <p className="text-xs mt-1" style={{ color: "rgba(148,163,184,0.8)" }}>
+                <p
+                  className="text-xs mt-1"
+                  style={{ color: "rgba(148,163,184,0.8)" }}
+                >
                   Drag & drop or click · PDF, DOC, DOCX
                 </p>
               </div>
             </div>
-            <input ref={inputRef} type="file" accept=".pdf,.doc,.docx" className="hidden" onChange={(e) => handleFile(e.target.files[0])} />
+            <input
+              ref={inputRef}
+              type="file"
+              accept=".pdf,.doc,.docx"
+              className="hidden"
+              onChange={(e) => handleFile(e.target.files[0])}
+            />
           </motion.div>
         ) : (
           <motion.div
@@ -166,23 +202,37 @@ const ResumeUpload = ({ file, setFile }) => {
             <motion.div
               animate={{ rotate: [0, 5, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="p-2.5 rounded-xl flex-shrink-0"
-              style={{ background: "linear-gradient(135deg,rgba(0,56,99,0.8),rgba(17,138,178,0.6))" }}
+              className="p-2.5 rounded-xl shrink-0"
+              style={{
+                background:
+                  "linear-gradient(135deg,rgba(0,56,99,0.8),rgba(17,138,178,0.6))",
+              }}
             >
               <FileText size={20} style={{ color: "#67e8f9" }} />
             </motion.div>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold truncate" style={{ color: "#e0f2fe" }}>
+              <p
+                className="text-sm font-semibold truncate"
+                style={{ color: "#e0f2fe" }}
+              >
                 {file.name}
               </p>
-              <p className="text-xs mt-0.5" style={{ color: "rgba(103,232,249,0.8)" }}>
+              <p
+                className="text-xs mt-0.5"
+                style={{ color: "rgba(103,232,249,0.8)" }}
+              >
                 {(file.size / 1024).toFixed(1)} KB · Ready to upload
               </p>
               {/* progress bar */}
-              <motion.div className="mt-2 h-1 rounded-full overflow-hidden" style={{ background: "rgba(17,138,178,0.2)" }}>
+              <motion.div
+                className="mt-2 h-1 rounded-full overflow-hidden"
+                style={{ background: "rgba(17,138,178,0.2)" }}
+              >
                 <motion.div
                   className="h-full rounded-full"
-                  style={{ background: "linear-gradient(90deg,#118ab2,#67e8f9)" }}
+                  style={{
+                    background: "linear-gradient(90deg,#118ab2,#67e8f9)",
+                  }}
                   initial={{ width: "0%" }}
                   animate={{ width: "100%" }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
@@ -193,8 +243,11 @@ const ResumeUpload = ({ file, setFile }) => {
               onClick={() => setFile(null)}
               whileHover={{ scale: 1.15, rotate: 90 }}
               whileTap={{ scale: 0.9 }}
-              className="p-1.5 rounded-lg flex-shrink-0"
-              style={{ background: "rgba(239,68,68,0.15)", border: "1px solid rgba(239,68,68,0.3)" }}
+              className="p-1.5 rounded-lg shrink-0"
+              style={{
+                background: "rgba(239,68,68,0.15)",
+                border: "1px solid rgba(239,68,68,0.3)",
+              }}
             >
               <X size={14} style={{ color: "#f87171" }} />
             </motion.button>
@@ -225,14 +278,20 @@ const SubmitBtn = ({ label }) => (
     {/* shimmer */}
     <motion.div
       className="absolute inset-0"
-      style={{ background: "linear-gradient(90deg,transparent,rgba(255,255,255,0.25),transparent)" }}
+      style={{
+        background:
+          "linear-gradient(90deg,transparent,rgba(255,255,255,0.25),transparent)",
+      }}
       initial={{ x: "-100%" }}
       animate={{ x: "200%" }}
       transition={{ duration: 1.6, repeat: Infinity, repeatDelay: 0.8 }}
     />
     <div className="relative px-6 py-4 flex items-center justify-center gap-3 text-white font-semibold tracking-wide">
       <span>{label}</span>
-      <motion.span animate={{ x: [0, 6, 0] }} transition={{ duration: 1.4, repeat: Infinity }}>
+      <motion.span
+        animate={{ x: [0, 6, 0] }}
+        transition={{ duration: 1.4, repeat: Infinity }}
+      >
         <Send size={17} />
       </motion.span>
     </div>
@@ -242,17 +301,31 @@ const SubmitBtn = ({ label }) => (
 /* ─── Business Form ─── */
 const BusinessForm = () => {
   const [formData, setFormData] = useState({
-    companyName: "", businessEmail: "", phone: "", projectType: "", budget: "", message: "",
+    companyName: "",
+    businessEmail: "",
+    phone: "",
+    projectType: "",
+    budget: "",
+    message: "",
   });
   const [focused, setFocused] = useState(null);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true); setTimeout(() => setSubmitted(false), 3000); };
+  const handleChange = (e) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 3000);
+  };
 
-  const fi = (name) => ({ onFocus: () => setFocused(name), onBlur: () => setFocused(null) });
+  const fi = (name) => ({
+    onFocus: () => setFocused(name),
+    onBlur: () => setFocused(null),
+  });
 
-  const sharedInput = "w-full py-3.5 rounded-xl text-sm transition-all duration-300";
+  const sharedInput =
+    "w-full py-3.5 rounded-xl text-sm transition-all duration-300";
 
   return (
     <motion.form
@@ -266,61 +339,148 @@ const BusinessForm = () => {
       <div className="grid grid-cols-2 gap-4">
         {/* Company */}
         <FieldWrap focused={focused === "companyName"} className="col-span-2">
-          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Building2 size={17} /></div>
-          <input type="text" name="companyName" placeholder="Company Name" value={formData.companyName}
-            onChange={handleChange} {...fi("companyName")}
-            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+          <div
+            className="absolute left-4 top-1/2 -translate-y-1/2"
+            style={{ color: "#118ab2" }}
+          >
+            <Building2 size={17} />
+          </div>
+          <input
+            type="text"
+            name="companyName"
+            placeholder="Company Name"
+            value={formData.companyName}
+            onChange={handleChange}
+            {...fi("companyName")}
+            className={`${sharedInput} pl-11 pr-4`}
+            style={inputStyle}
+          />
         </FieldWrap>
 
         {/* Email */}
         <FieldWrap focused={focused === "businessEmail"}>
-          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Mail size={17} /></div>
-          <input type="email" name="businessEmail" placeholder="Business Email" value={formData.businessEmail}
-            onChange={handleChange} {...fi("businessEmail")}
-            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+          <div
+            className="absolute left-4 top-1/2 -translate-y-1/2"
+            style={{ color: "#118ab2" }}
+          >
+            <Mail size={17} />
+          </div>
+          <input
+            type="email"
+            name="businessEmail"
+            placeholder="Business Email"
+            value={formData.businessEmail}
+            onChange={handleChange}
+            {...fi("businessEmail")}
+            className={`${sharedInput} pl-11 pr-4`}
+            style={inputStyle}
+          />
         </FieldWrap>
 
         {/* Phone */}
         <FieldWrap focused={focused === "phone"}>
-          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Phone size={17} /></div>
-          <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone}
-            onChange={handleChange} {...fi("phone")}
-            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+          <div
+            className="absolute left-4 top-1/2 -translate-y-1/2"
+            style={{ color: "#118ab2" }}
+          >
+            <Phone size={17} />
+          </div>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            value={formData.phone}
+            onChange={handleChange}
+            {...fi("phone")}
+            className={`${sharedInput} pl-11 pr-4`}
+            style={inputStyle}
+          />
         </FieldWrap>
 
         {/* Project Type */}
         <FieldWrap focused={focused === "projectType"} className="col-span-2">
-          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Briefcase size={17} /></div>
-          <select name="projectType" value={formData.projectType} onChange={handleChange} {...fi("projectType")}
-            className={`${sharedInput} pl-11 pr-10 appearance-none cursor-pointer`} style={selectStyle}>
-            <option value="" style={{ background: "#00171f" }}>Select Project Type</option>
-            <option value="web" style={{ background: "#00171f" }}>Web Development</option>
-            <option value="mobile" style={{ background: "#00171f" }}>Mobile App</option>
-            <option value="ai" style={{ background: "#00171f" }}>AI Solution</option>
-            <option value="consulting" style={{ background: "#00171f" }}>Consulting</option>
+          <div
+            className="absolute left-4 top-1/2 -translate-y-1/2"
+            style={{ color: "#118ab2" }}
+          >
+            <Briefcase size={17} />
+          </div>
+          <select
+            name="projectType"
+            value={formData.projectType}
+            onChange={handleChange}
+            {...fi("projectType")}
+            className={`${sharedInput} pl-11 pr-10 appearance-none cursor-pointer`}
+            style={selectStyle}
+          >
+            <option value="" style={{ background: "#00171f" }}>
+              Select Project Type
+            </option>
+            <option value="web" style={{ background: "#00171f" }}>
+              Web Development
+            </option>
+            <option value="mobile" style={{ background: "#00171f" }}>
+              Mobile App
+            </option>
+            <option value="ai" style={{ background: "#00171f" }}>
+              AI Solution
+            </option>
+            <option value="consulting" style={{ background: "#00171f" }}>
+              Consulting
+            </option>
           </select>
-          <ChevronRight size={16} className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none" style={{ color: "#118ab2" }} />
+          <ChevronRight
+            size={16}
+            className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none"
+            style={{ color: "#118ab2" }}
+          />
         </FieldWrap>
 
         {/* Budget */}
         <FieldWrap focused={focused === "budget"} className="col-span-2">
-          <select name="budget" value={formData.budget} onChange={handleChange} {...fi("budget")}
-            className={`${sharedInput} px-4 pr-10 appearance-none cursor-pointer`} style={selectStyle}>
-            <option value="" style={{ background: "#00171f" }}>Budget Range</option>
-            <option value="5k-10k" style={{ background: "#00171f" }}>$5k – $10k</option>
-            <option value="10k-25k" style={{ background: "#00171f" }}>$10k – $25k</option>
-            <option value="25k-50k" style={{ background: "#00171f" }}>$25k – $50k</option>
-            <option value="50k+" style={{ background: "#00171f" }}>$50k+</option>
+          <select
+            name="budget"
+            value={formData.budget}
+            onChange={handleChange}
+            {...fi("budget")}
+            className={`${sharedInput} px-4 pr-10 appearance-none cursor-pointer`}
+            style={selectStyle}
+          >
+            <option value="" style={{ background: "#00171f" }}>
+              Budget Range
+            </option>
+            <option value="5k-10k" style={{ background: "#00171f" }}>
+              $5k – $10k
+            </option>
+            <option value="10k-25k" style={{ background: "#00171f" }}>
+              $10k – $25k
+            </option>
+            <option value="25k-50k" style={{ background: "#00171f" }}>
+              $25k – $50k
+            </option>
+            <option value="50k+" style={{ background: "#00171f" }}>
+              $50k+
+            </option>
           </select>
-          <ChevronRight size={16} className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none" style={{ color: "#118ab2" }} />
+          <ChevronRight
+            size={16}
+            className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none"
+            style={{ color: "#118ab2" }}
+          />
         </FieldWrap>
 
         {/* Message */}
         <FieldWrap focused={focused === "message"} className="col-span-2">
-          <textarea name="message" placeholder="Tell us about your project..." value={formData.message}
-            onChange={handleChange} {...fi("message")} rows="3"
+          <textarea
+            name="message"
+            placeholder="Tell us about your project..."
+            value={formData.message}
+            onChange={handleChange}
+            {...fi("message")}
+            rows="3"
             className="w-full px-4 py-3.5 rounded-xl text-sm transition-all duration-300 resize-none"
-            style={inputStyle} />
+            style={inputStyle}
+          />
         </FieldWrap>
       </div>
 
@@ -328,8 +488,13 @@ const BusinessForm = () => {
 
       <AnimatePresence>
         {submitted && (
-          <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
-            className="flex items-center gap-2 text-sm justify-center" style={{ color: "#67e8f9" }}>
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="flex items-center gap-2 text-sm justify-center"
+            style={{ color: "#67e8f9" }}
+          >
             <CheckCircle2 size={15} />
             <span>Message sent! We'll reply within 24 hours.</span>
           </motion.div>
@@ -342,17 +507,32 @@ const BusinessForm = () => {
 /* ─── Career Form ─── */
 const CareerForm = () => {
   const [formData, setFormData] = useState({
-    fullName: "", email: "", phone: "", position: "", experience: "", portfolio: "", message: "",
+    fullName: "",
+    email: "",
+    phone: "",
+    position: "",
+    experience: "",
+    portfolio: "",
+    message: "",
   });
   const [focused, setFocused] = useState(null);
   const [resumeFile, setResumeFile] = useState(null);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true); setTimeout(() => setSubmitted(false), 3000); };
+  const handleChange = (e) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 3000);
+  };
 
-  const fi = (name) => ({ onFocus: () => setFocused(name), onBlur: () => setFocused(null) });
-  const sharedInput = "w-full py-3.5 rounded-xl text-sm transition-all duration-300";
+  const fi = (name) => ({
+    onFocus: () => setFocused(name),
+    onBlur: () => setFocused(null),
+  });
+  const sharedInput =
+    "w-full py-3.5 rounded-xl text-sm transition-all duration-300";
 
   return (
     <motion.form
@@ -366,62 +546,157 @@ const CareerForm = () => {
       <div className="grid grid-cols-2 gap-4">
         {/* Full Name */}
         <FieldWrap focused={focused === "fullName"} className="col-span-2">
-          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><User size={17} /></div>
-          <input type="text" name="fullName" placeholder="Full Name" value={formData.fullName}
-            onChange={handleChange} {...fi("fullName")}
-            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+          <div
+            className="absolute left-4 top-1/2 -translate-y-1/2"
+            style={{ color: "#118ab2" }}
+          >
+            <User size={17} />
+          </div>
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Full Name"
+            value={formData.fullName}
+            onChange={handleChange}
+            {...fi("fullName")}
+            className={`${sharedInput} pl-11 pr-4`}
+            style={inputStyle}
+          />
         </FieldWrap>
 
         {/* Email */}
         <FieldWrap focused={focused === "email"}>
-          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Mail size={17} /></div>
-          <input type="email" name="email" placeholder="Email Address" value={formData.email}
-            onChange={handleChange} {...fi("email")}
-            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+          <div
+            className="absolute left-4 top-1/2 -translate-y-1/2"
+            style={{ color: "#118ab2" }}
+          >
+            <Mail size={17} />
+          </div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            value={formData.email}
+            onChange={handleChange}
+            {...fi("email")}
+            className={`${sharedInput} pl-11 pr-4`}
+            style={inputStyle}
+          />
         </FieldWrap>
 
         {/* Phone */}
         <FieldWrap focused={focused === "phone"}>
-          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Phone size={17} /></div>
-          <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone}
-            onChange={handleChange} {...fi("phone")}
-            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+          <div
+            className="absolute left-4 top-1/2 -translate-y-1/2"
+            style={{ color: "#118ab2" }}
+          >
+            <Phone size={17} />
+          </div>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            value={formData.phone}
+            onChange={handleChange}
+            {...fi("phone")}
+            className={`${sharedInput} pl-11 pr-4`}
+            style={inputStyle}
+          />
         </FieldWrap>
 
         {/* Position */}
         <FieldWrap focused={focused === "position"} className="col-span-2">
-          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Briefcase size={17} /></div>
-          <select name="position" value={formData.position} onChange={handleChange} {...fi("position")}
-            className={`${sharedInput} pl-11 pr-10 appearance-none cursor-pointer`} style={selectStyle}>
-            <option value="" style={{ background: "#00171f" }}>Position You're Applying For</option>
-            <option value="frontend" style={{ background: "#00171f" }}>Frontend Developer</option>
-            <option value="backend" style={{ background: "#00171f" }}>Backend Developer</option>
-            <option value="fullstack" style={{ background: "#00171f" }}>Full Stack Developer</option>
-            <option value="designer" style={{ background: "#00171f" }}>UI/UX Designer</option>
-            <option value="pm" style={{ background: "#00171f" }}>Project Manager</option>
+          <div
+            className="absolute left-4 top-1/2 -translate-y-1/2"
+            style={{ color: "#118ab2" }}
+          >
+            <Briefcase size={17} />
+          </div>
+          <select
+            name="position"
+            value={formData.position}
+            onChange={handleChange}
+            {...fi("position")}
+            className={`${sharedInput} pl-11 pr-10 appearance-none cursor-pointer`}
+            style={selectStyle}
+          >
+            <option value="" style={{ background: "#00171f" }}>
+              Position You're Applying For
+            </option>
+            <option value="frontend" style={{ background: "#00171f" }}>
+              Frontend Developer
+            </option>
+            <option value="backend" style={{ background: "#00171f" }}>
+              Backend Developer
+            </option>
+            <option value="fullstack" style={{ background: "#00171f" }}>
+              Full Stack Developer
+            </option>
+            <option value="designer" style={{ background: "#00171f" }}>
+              UI/UX Designer
+            </option>
+            <option value="pm" style={{ background: "#00171f" }}>
+              Project Manager
+            </option>
           </select>
-          <ChevronRight size={16} className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none" style={{ color: "#118ab2" }} />
+          <ChevronRight
+            size={16}
+            className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none"
+            style={{ color: "#118ab2" }}
+          />
         </FieldWrap>
 
         {/* Experience */}
         <FieldWrap focused={focused === "experience"}>
-          <select name="experience" value={formData.experience} onChange={handleChange} {...fi("experience")}
-            className={`${sharedInput} px-4 pr-10 appearance-none cursor-pointer`} style={selectStyle}>
-            <option value="" style={{ background: "#00171f" }}>Experience</option>
-            <option value="0-2" style={{ background: "#00171f" }}>0–2 Years</option>
-            <option value="3-5" style={{ background: "#00171f" }}>3–5 Years</option>
-            <option value="5-8" style={{ background: "#00171f" }}>5–8 Years</option>
-            <option value="8+" style={{ background: "#00171f" }}>8+ Years</option>
+          <select
+            name="experience"
+            value={formData.experience}
+            onChange={handleChange}
+            {...fi("experience")}
+            className={`${sharedInput} px-4 pr-10 appearance-none cursor-pointer`}
+            style={selectStyle}
+          >
+            <option value="" style={{ background: "#00171f" }}>
+              Experience
+            </option>
+            <option value="0-2" style={{ background: "#00171f" }}>
+              0–2 Years
+            </option>
+            <option value="3-5" style={{ background: "#00171f" }}>
+              3–5 Years
+            </option>
+            <option value="5-8" style={{ background: "#00171f" }}>
+              5–8 Years
+            </option>
+            <option value="8+" style={{ background: "#00171f" }}>
+              8+ Years
+            </option>
           </select>
-          <ChevronRight size={16} className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none" style={{ color: "#118ab2" }} />
+          <ChevronRight
+            size={16}
+            className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none"
+            style={{ color: "#118ab2" }}
+          />
         </FieldWrap>
 
         {/* Portfolio */}
         <FieldWrap focused={focused === "portfolio"}>
-          <div className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#118ab2" }}><Globe size={17} /></div>
-          <input type="url" name="portfolio" placeholder="Portfolio / GitHub" value={formData.portfolio}
-            onChange={handleChange} {...fi("portfolio")}
-            className={`${sharedInput} pl-11 pr-4`} style={inputStyle} />
+          <div
+            className="absolute left-4 top-1/2 -translate-y-1/2"
+            style={{ color: "#118ab2" }}
+          >
+            <Globe size={17} />
+          </div>
+          <input
+            type="url"
+            name="portfolio"
+            placeholder="Portfolio / GitHub"
+            value={formData.portfolio}
+            onChange={handleChange}
+            {...fi("portfolio")}
+            className={`${sharedInput} pl-11 pr-4`}
+            style={inputStyle}
+          />
         </FieldWrap>
 
         {/* Resume Upload */}
@@ -429,10 +704,16 @@ const CareerForm = () => {
 
         {/* Cover Letter */}
         <FieldWrap focused={focused === "message"} className="col-span-2">
-          <textarea name="message" placeholder="Why do you want to join us? (Optional)" value={formData.message}
-            onChange={handleChange} {...fi("message")} rows="3"
+          <textarea
+            name="message"
+            placeholder="Why do you want to join us? (Optional)"
+            value={formData.message}
+            onChange={handleChange}
+            {...fi("message")}
+            rows="3"
             className="w-full px-4 py-3.5 rounded-xl text-sm transition-all duration-300 resize-none"
-            style={inputStyle} />
+            style={inputStyle}
+          />
         </FieldWrap>
       </div>
 
@@ -440,8 +721,13 @@ const CareerForm = () => {
 
       <AnimatePresence>
         {submitted && (
-          <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
-            className="flex items-center gap-2 text-sm justify-center" style={{ color: "#67e8f9" }}>
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="flex items-center gap-2 text-sm justify-center"
+            style={{ color: "#67e8f9" }}
+          >
             <CheckCircle2 size={15} />
             <span>Application sent! We'll be in touch soon.</span>
           </motion.div>
@@ -467,8 +753,14 @@ const FormSwitcher = ({ activeForm, setActiveForm }) => (
     {/* Slider */}
     <motion.div
       className="absolute top-1.5 bottom-1.5 rounded-xl"
-      style={{ background: "linear-gradient(135deg,#003863,#118ab2)", boxShadow: "0 4px 20px rgba(17,138,178,0.55)" }}
-      animate={{ left: activeForm === "business" ? "0.375rem" : "50%", right: activeForm === "business" ? "50%" : "0.375rem" }}
+      style={{
+        background: "linear-gradient(135deg,#003863,#118ab2)",
+        boxShadow: "0 4px 20px rgba(17,138,178,0.55)",
+      }}
+      animate={{
+        left: activeForm === "business" ? "0.375rem" : "50%",
+        right: activeForm === "business" ? "50%" : "0.375rem",
+      }}
       transition={{ type: "spring", stiffness: 420, damping: 32 }}
     />
     {[
@@ -478,7 +770,9 @@ const FormSwitcher = ({ activeForm, setActiveForm }) => (
       <motion.button
         key={id}
         className={`relative flex-1 px-6 py-3 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 transition-colors duration-300 ${
-          activeForm === id ? "text-white" : "text-slate-400 hover:text-slate-200"
+          activeForm === id
+            ? "text-white"
+            : "text-slate-400 hover:text-slate-200"
         }`}
         onClick={() => setActiveForm(id)}
         whileTap={{ scale: 0.97 }}
@@ -486,7 +780,11 @@ const FormSwitcher = ({ activeForm, setActiveForm }) => (
         <Icon size={17} />
         <span>{label}</span>
         {activeForm === id && (
-          <motion.span initial={{ scale: 0, rotate: -90 }} animate={{ scale: 1, rotate: 0 }} transition={{ type: "spring", stiffness: 300 }}>
+          <motion.span
+            initial={{ scale: 0, rotate: -90 }}
+            animate={{ scale: 1, rotate: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <Sparkles size={14} style={{ color: "#67e8f9" }} />
           </motion.span>
         )}
@@ -502,9 +800,24 @@ export default function ContactSection() {
   const isInView = useInView(sectionRef, { once: true, margin: "-60px" });
 
   const contactInfo = [
-    { icon: <Phone size={18} />, title: "Call Us", content: "+1 (555) 123-4567", sub: "Mon–Fri 9am–6pm EST" },
-    { icon: <Mail size={18} />, title: "Email Us", content: "hello@futuretech.com", sub: "Reply within 24 hrs" },
-    { icon: <MapPin size={18} />, title: "Visit Us", content: "123 Innovation St", sub: "San Francisco, CA" },
+    {
+      icon: <Phone size={18} />,
+      title: "Call Us",
+      content: "+1 (555) 123-4567",
+      sub: "Mon–Fri 9am–6pm EST",
+    },
+    {
+      icon: <Mail size={18} />,
+      title: "Email Us",
+      content: "hello@futuretech.com",
+      sub: "Reply within 24 hrs",
+    },
+    {
+      icon: <MapPin size={18} />,
+      title: "Visit Us",
+      content: "123 Innovation St",
+      sub: "San Francisco, CA",
+    },
   ];
 
   const stats = [
@@ -531,18 +844,35 @@ export default function ContactSection() {
       />
 
       {/* Radial glow */}
-      <div className="absolute inset-0 pointer-events-none"
-        style={{ background: "radial-gradient(ellipse 70% 55% at 50% 25%, rgba(17,138,178,0.14) 0%, transparent 70%)" }} />
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 70% 55% at 50% 25%, rgba(17,138,178,0.14) 0%, transparent 70%)",
+        }}
+      />
 
       {/* Floating orbs */}
-      <motion.div className="absolute top-24 left-8 w-80 h-80 rounded-full pointer-events-none"
-        style={{ background: "radial-gradient(circle, rgba(17,138,178,0.12) 0%, transparent 70%)", filter: "blur(45px)" }}
+      <motion.div
+        className="absolute top-24 left-8 w-80 h-80 rounded-full pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(17,138,178,0.12) 0%, transparent 70%)",
+          filter: "blur(45px)",
+        }}
         animate={{ scale: [1, 1.25, 1], x: [0, 35, 0], y: [0, -25, 0] }}
-        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }} />
-      <motion.div className="absolute bottom-16 right-8 w-96 h-96 rounded-full pointer-events-none"
-        style={{ background: "radial-gradient(circle, rgba(0,80,157,0.1) 0%, transparent 70%)", filter: "blur(55px)" }}
+        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <motion.div
+        className="absolute bottom-16 right-8 w-96 h-96 rounded-full pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(0,80,157,0.1) 0%, transparent 70%)",
+          filter: "blur(55px)",
+        }}
         animate={{ scale: [1, 1.3, 1], x: [0, -40, 0], y: [0, 45, 0] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }} />
+        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+      />
 
       {/* Particles */}
       {particles.map((p, i) => (
@@ -551,7 +881,6 @@ export default function ContactSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
-
           {/* ── LEFT COLUMN ── */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -564,12 +893,23 @@ export default function ContactSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.55 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8"
-              style={{ background: "rgba(17,138,178,0.1)", border: "1px solid rgba(17,138,178,0.35)" }}
+              style={{
+                background: "rgba(17,138,178,0.1)",
+                border: "1px solid rgba(17,138,178,0.35)",
+              }}
             >
-              <motion.div animate={{ rotate: 360 }} transition={{ duration: 3, repeat: Infinity, ease: "linear" }}>
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+              >
                 <Sparkles size={15} style={{ color: "#67e8f9" }} />
               </motion.div>
-              <span className="text-sm font-semibold tracking-widest" style={{ color: "#67e8f9" }}>GET IN TOUCH</span>
+              <span
+                className="text-sm font-semibold tracking-widest"
+                style={{ color: "#67e8f9" }}
+              >
+                GET IN TOUCH
+              </span>
             </motion.div>
 
             {/* Heading */}
@@ -583,8 +923,14 @@ export default function ContactSection() {
                   backgroundSize: "200% 200%",
                   display: "inline-block",
                 }}
-                animate={{ backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                animate={{
+                  backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"],
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               >
                 Something Amazing
               </motion.span>
@@ -597,8 +943,9 @@ export default function ContactSection() {
               className="text-base leading-relaxed mb-10"
               style={{ color: "rgba(250,255,250,0.9)" }}
             >
-              Whether you have a project in mind or want to join our team, we're here to help.
-              Choose your path below and let's start the conversation.
+              Whether you have a project in mind or want to join our team, we're
+              here to help. Choose your path below and let's start the
+              conversation.
             </motion.p>
 
             {/* ── Contact Cards: horizontal 3-in-a-row ── */}
@@ -630,7 +977,11 @@ export default function ContactSection() {
                   {/* Pulsing ring on hover */}
                   <motion.div
                     className="relative mb-3 p-3 rounded-xl"
-                    style={{ background: "linear-gradient(135deg,rgba(0,56,99,0.65),rgba(17,138,178,0.45))", border: "1px solid rgba(17,138,178,0.35)" }}
+                    style={{
+                      background:
+                        "linear-gradient(135deg,rgba(0,56,99,0.65),rgba(17,138,178,0.45))",
+                      border: "1px solid rgba(17,138,178,0.35)",
+                    }}
                     whileHover={{ rotate: [0, -8, 8, 0] }}
                     transition={{ duration: 0.5 }}
                   >
@@ -640,12 +991,28 @@ export default function ContactSection() {
                       className="absolute inset-0 rounded-xl"
                       style={{ border: "1px solid rgba(103,232,249,0.5)" }}
                       animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
-                      transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.4 }}
+                      transition={{
+                        duration: 2.5,
+                        repeat: Infinity,
+                        delay: i * 0.4,
+                      }}
                     />
                   </motion.div>
-                  <h3 className="font-semibold text-xs mb-1" style={{ color: "#e0f2fe" }}>{info.title}</h3>
-                  <p className="text-xs leading-snug mb-0.5" style={{ color: "rgba(148,163,184,0.8)" }}>{info.content}</p>
-                  <p className="text-[10px]" style={{ color: "#67e8f9" }}>{info.sub}</p>
+                  <h3
+                    className="font-semibold text-xs mb-1"
+                    style={{ color: "#e0f2fe" }}
+                  >
+                    {info.title}
+                  </h3>
+                  <p
+                    className="text-xs leading-snug mb-0.5"
+                    style={{ color: "rgba(148,163,184,0.8)" }}
+                  >
+                    {info.content}
+                  </p>
+                  <p className="text-[10px]" style={{ color: "#67e8f9" }}>
+                    {info.sub}
+                  </p>
 
                   <motion.div
                     initial={{ opacity: 0, y: 4 }}
@@ -673,15 +1040,38 @@ export default function ContactSection() {
                 >
                   <motion.div
                     className="p-2 rounded-lg"
-                    style={{ background: "rgba(17,138,178,0.18)", border: "1px solid rgba(17,138,178,0.3)" }}
-                    animate={{ boxShadow: ["0 0 0px rgba(103,232,249,0)", "0 0 12px rgba(103,232,249,0.4)", "0 0 0px rgba(103,232,249,0)"] }}
-                    transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.5 }}
+                    style={{
+                      background: "rgba(17,138,178,0.18)",
+                      border: "1px solid rgba(17,138,178,0.3)",
+                    }}
+                    animate={{
+                      boxShadow: [
+                        "0 0 0px rgba(103,232,249,0)",
+                        "0 0 12px rgba(103,232,249,0.4)",
+                        "0 0 0px rgba(103,232,249,0)",
+                      ],
+                    }}
+                    transition={{
+                      duration: 2.5,
+                      repeat: Infinity,
+                      delay: i * 0.5,
+                    }}
                   >
                     <div style={{ color: "#67e8f9" }}>{icon}</div>
                   </motion.div>
                   <div>
-                    <div className="text-xl font-bold leading-none" style={{ color: "#67e8f9" }}>{value}</div>
-                    <div className="text-[11px] mt-0.5" style={{ color: "rgba(148,163,184,0.75)" }}>{label}</div>
+                    <div
+                      className="text-xl font-bold leading-none"
+                      style={{ color: "#67e8f9" }}
+                    >
+                      {value}
+                    </div>
+                    <div
+                      className="text-[11px] mt-0.5"
+                      style={{ color: "rgba(148,163,184,0.75)" }}
+                    >
+                      {label}
+                    </div>
                   </div>
                 </motion.div>
               ))}
@@ -698,15 +1088,28 @@ export default function ContactSection() {
             {/* Decorative glow blob */}
             <motion.div
               className="absolute -top-6 -right-6 w-24 h-24 rounded-full pointer-events-none"
-              style={{ background: "linear-gradient(135deg,#118ab2,#00509d)", filter: "blur(22px)", opacity: 0.35 }}
+              style={{
+                background: "linear-gradient(135deg,#118ab2,#00509d)",
+                filter: "blur(22px)",
+                opacity: 0.35,
+              }}
               animate={{ scale: [1, 1.3, 1], opacity: [0.35, 0.55, 0.35] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             />
             <motion.div
               className="absolute -bottom-6 -left-6 w-20 h-20 rounded-full pointer-events-none"
-              style={{ background: "linear-gradient(135deg,#67e8f9,#118ab2)", filter: "blur(20px)", opacity: 0.25 }}
+              style={{
+                background: "linear-gradient(135deg,#67e8f9,#118ab2)",
+                filter: "blur(20px)",
+                opacity: 0.25,
+              }}
               animate={{ scale: [1, 1.4, 1], opacity: [0.25, 0.4, 0.25] }}
-              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 1,
+              }}
             />
 
             {/* Form Card */}
@@ -722,29 +1125,52 @@ export default function ContactSection() {
               {/* Animated gradient border sweep */}
               <motion.div
                 className="absolute inset-0 rounded-3xl pointer-events-none"
-                style={{ background: "linear-gradient(135deg,transparent 0%,rgba(17,138,178,0.12) 50%,transparent 100%)" }}
+                style={{
+                  background:
+                    "linear-gradient(135deg,transparent 0%,rgba(17,138,178,0.12) 50%,transparent 100%)",
+                }}
                 animate={{ opacity: [0.3, 0.7, 0.3] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               />
               {/* Corner accent lines */}
-              <div className="absolute top-0 left-0 w-16 h-16 pointer-events-none"
-                style={{ borderTop: "2px solid rgba(103,232,249,0.4)", borderLeft: "2px solid rgba(103,232,249,0.4)", borderRadius: "1.5rem 0 0 0" }} />
-              <div className="absolute bottom-0 right-0 w-16 h-16 pointer-events-none"
-                style={{ borderBottom: "2px solid rgba(103,232,249,0.25)", borderRight: "2px solid rgba(103,232,249,0.25)", borderRadius: "0 0 1.5rem 0" }} />
+              <div
+                className="absolute top-0 left-0 w-16 h-16 pointer-events-none"
+                style={{
+                  borderTop: "2px solid rgba(103,232,249,0.4)",
+                  borderLeft: "2px solid rgba(103,232,249,0.4)",
+                  borderRadius: "1.5rem 0 0 0",
+                }}
+              />
+              <div
+                className="absolute bottom-0 right-0 w-16 h-16 pointer-events-none"
+                style={{
+                  borderBottom: "2px solid rgba(103,232,249,0.25)",
+                  borderRight: "2px solid rgba(103,232,249,0.25)",
+                  borderRadius: "0 0 1.5rem 0",
+                }}
+              />
 
               <div className="relative p-7">
                 {/* Tab Switcher */}
                 <div className="mb-7">
-                  <FormSwitcher activeForm={activeForm} setActiveForm={setActiveForm} />
+                  <FormSwitcher
+                    activeForm={activeForm}
+                    setActiveForm={setActiveForm}
+                  />
                 </div>
 
                 {/* Active Form */}
                 <div className="relative">
                   <AnimatePresence mode="wait">
-                    {activeForm === "business"
-                      ? <BusinessForm key="business" />
-                      : <CareerForm key="career" />
-                    }
+                    {activeForm === "business" ? (
+                      <BusinessForm key="business" />
+                    ) : (
+                      <CareerForm key="career" />
+                    )}
                   </AnimatePresence>
                 </div>
 
@@ -757,9 +1183,21 @@ export default function ContactSection() {
                   style={{ color: "rgba(100,116,139,0.8)" }}
                 >
                   By submitting, you agree to our{" "}
-                  <a href="#" style={{ color: "#67e8f9" }} className="hover:underline">Privacy Policy</a>
-                  {" "}and{" "}
-                  <a href="#" style={{ color: "#67e8f9" }} className="hover:underline">Terms of Service</a>
+                  <a
+                    href="#"
+                    style={{ color: "#67e8f9" }}
+                    className="hover:underline"
+                  >
+                    Privacy Policy
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href="#"
+                    style={{ color: "#67e8f9" }}
+                    className="hover:underline"
+                  >
+                    Terms of Service
+                  </a>
                 </motion.p>
               </div>
             </div>
