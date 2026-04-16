@@ -8,7 +8,10 @@ const ContactUs = () => {
   return (
     <>
     <Navbar></Navbar>
-    <HeroOrbit></HeroOrbit>
+    <HeroOrbit
+    title ={"Contact Us"}
+    description= {"We are here for the helping and growing your business. Let's connect with us to growing your business in your way."}
+    ></HeroOrbit>
     <ContactSection></ContactSection>
     <CTAMarquee></CTAMarquee>
     <UltraFooter></UltraFooter>
