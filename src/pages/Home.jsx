@@ -12,6 +12,7 @@ import Achievements from "../components/Achievements";
 import BlogSection from "../components/BlogSection";
 
 import UltraFooter from "../components/UltraFooter";
+import CTAMarquee from "../components/CTAMarquee";
 const Home = () => {
   return (
     <>
@@ -27,6 +28,7 @@ const Home = () => {
       <FAQSection></FAQSection>
       <Achievements></Achievements>
       <BlogSection></BlogSection>
+      <CTAMarquee></CTAMarquee>
       <UltraFooter></UltraFooter>
     </>
   );

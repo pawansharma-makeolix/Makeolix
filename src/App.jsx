@@ -6,6 +6,7 @@ import SeoPackages from "./pages/SeoPackages";
 import SmoPackages from "./pages/SmoPackages";
 import WebPackages from "./pages/WebPackages";
 import ContactUs from "./pages/ContactUs";
+import Testimonials from "./pages/Testimonials";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/pricing/smo" element={<SmoPackages />} />
         <Route path="/pricing/web" element={<WebPackages />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/testimonials" element={<Testimonials/>} />
       </Routes>
     </Router>
   );

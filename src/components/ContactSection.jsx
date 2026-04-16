@@ -313,12 +313,31 @@ const BusinessForm = () => {
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
+  try {
+    const res = await fetch("http://localhost:5000/send-mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 3000);
+    } else {
+      alert("Something went wrong");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Server error");
+  }
+};
   const fi = (name) => ({
     onFocus: () => setFocused(name),
     onBlur: () => setFocused(null),
@@ -521,11 +540,31 @@ const CareerForm = () => {
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch("http://localhost:5000/send-mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 3000);
+    } else {
+      alert("Something went wrong");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Server error");
+  }
+};
 
   const fi = (name) => ({
     onFocus: () => setFocused(name),
