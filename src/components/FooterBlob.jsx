@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function FooterBlob() {
+export default function FooterBlob({variant}) {
+  const imageSrc = variant === "second" ? "/blob2.png" : "/blob.png";
   const blobRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -57,7 +58,7 @@ export default function FooterBlob() {
     <div ref={containerRef} className="absolute inset-0 pointer-events-none">
       <img
         ref={blobRef}
-        src="/blob.png" // 👈 tera image
+        src={imageSrc} 
         className={`absolute w-25 md:w-37.5 lg:w-50 transition-opacity duration-300 ${
           visible ? "opacity-80" : "opacity-0"
         }`}

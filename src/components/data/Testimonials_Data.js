@@ -1,12 +1,6 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import UltraFooter from '../components/UltraFooter'
-import HeroOrbit from '../components/HeroOrbit'
-import  StaggerTestimonials  from '../components/StaggerTestimonials'
-import CTAMarquee from '../components/CTAMarquee'
 
-const Testimonials = () => {
-  const Testimonialdata = [
+
+const Testimonials_Data = [
   {
     id: 0,
     text: "My favorite solution in the market. We work 5x faster with COMPANY. It's completely transformed how our team collaborates.",
@@ -80,22 +74,6 @@ const Testimonials = () => {
     role: "HR Manager at TalentForge",
   },
 ];
-  return (
-    <>
-    <Navbar></Navbar>
-    <HeroOrbit
-    title={"Our Testimonials"}
-    primaryBtnText={"Know More"}
-    primaryLink={"/contact-us"}
-    secondaryBtnText={"Get In Touch"}
-    secondaryLink={"/contact-us"}
-    ></HeroOrbit>
-    <StaggerTestimonials data={Testimonialdata} ></StaggerTestimonials>
-    <CTAMarquee></CTAMarquee>
-    <UltraFooter></UltraFooter>
-    
-    </>
-  )
-}
 
-export default Testimonials
+
+export default Testimonials_Data ;

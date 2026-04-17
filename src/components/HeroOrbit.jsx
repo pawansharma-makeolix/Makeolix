@@ -86,7 +86,7 @@ function OrbitRing({ radius, duration, icons, delay = 0 }) {
             <div
               className="w-20 h-10 rounded-full flex items-center justify-center text-xs font-semibold select-none"
               style={{
-                background: "rgba(0,56,99,0.55)",
+                background: "rgba(255,255,255,0.7)",
                 border: "1px solid rgba(0,80,157,0.5)",
                 color: "#a0aec0",
                 backdropFilter: "blur(10px)",

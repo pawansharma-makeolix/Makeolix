@@ -23,7 +23,7 @@ const About = () => {
             What makes us the best?
           </p>
 
-          <h2 className="text-3xl md:text-3xl font-bold mb-6 leading-snug">
+          <h2 className="text-3xl md:text-3xl font-sembold mb-6 leading-snug">
             About Us
           </h2>
 

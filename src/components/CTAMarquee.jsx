@@ -79,7 +79,7 @@ export default function CTAMarquee() {
 
   return (
     <section className="relative min-h-screen bg-[#051923] flex items-center justify-center px-6 md:px-12 overflow-hidden">
-      <FooterBlob />
+      <FooterBlob variant={"second"} />
 
       {/* ── SOFT BACKGROUND ── */}
       <div className="absolute inset-0 z-0 overflow-hidden">

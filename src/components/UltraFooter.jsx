@@ -20,7 +20,6 @@ export default function UltraFooter() {
     
     <FooterBlob />
 
-    <CardSpotlight className="w-full relative z-10">
 
       {/* CTA + FORM */}
      
@@ -182,7 +181,7 @@ export default function UltraFooter() {
         © 2026 MakeOlix Consulting Pvt Ltd. All Rights Reserved
       </div>
 
-    </CardSpotlight>
+    
 
   </footer>
 

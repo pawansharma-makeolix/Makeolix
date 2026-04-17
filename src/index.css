@@ -146,3 +146,66 @@ h1, h2, h3, h4 {
 
 
 
+
+
+
+
+
+
+
+
+@keyframes ts-fade-up {
+          from { opacity: 0; transform: translateY(20px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes ts-shimmer {
+          0%   { background-position: -200% center; }
+          100% { background-position:  200% center; }
+        }
+
+        .ts-btn {
+          width: 48px; height: 48px;
+          border-radius: 50%;
+          border: 1.5px solid rgba(0,80,157,0.45);
+          background: var(--bg-soft);
+          color: var(--blue-3);
+          cursor: pointer;
+          display: flex; align-items: center; justify-content: center;
+          transition: background 0.2s, border-color 0.2s, transform 0.18s, box-shadow 0.2s;
+          outline: none;
+        }
+        .ts-btn:hover {
+          background: var(--blue-2);
+          border-color: var(--blue-3);
+          color: #fff;
+          box-shadow: 0 0 18px rgba(17,138,178,0.35);
+          transform: scale(1.1);
+        }
+        .ts-btn:active { transform: scale(0.93); }
+
+        .ts-dot {
+          width: 7px; height: 7px;
+          border-radius: 50%;
+          background: rgba(0,80,157,0.35);
+          border: none;
+          cursor: pointer;
+          transition: background 0.3s, transform 0.3s;
+          padding: 0;
+          outline: none;
+        }
+        .ts-dot.active {
+          background: var(--blue-3);
+          transform: scale(1.55);
+          box-shadow: 0 0 8px rgba(17,138,178,0.5);
+        }
+
+        .ts-label { animation: ts-fade-up 0.7s ease both; }
+
+        .ts-shimmer-text {
+          background: linear-gradient(90deg, var(--blue-3), var(--accent-pink), var(--blue-3));
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          animation: ts-shimmer 3s linear infinite;
+        }

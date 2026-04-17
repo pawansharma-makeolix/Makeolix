@@ -62,7 +62,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
 
       {/* ✨ PARTICLES */}
       {init && (
@@ -76,20 +76,47 @@ const Hero = () => {
       <motion.img
         src="/aihand-removebg-preview.png"
         alt="AI Hand"
-        className="absolute -right-60 top-1/2 w-75 md:w-190 h-125 z-10 pointer-events-none"
-        initial={{ x: 300, opacity: 0 }}
-        animate={{ x: -200, opacity: 1 , y: -200}}
-        transition={{ duration: 3, ease: "easeOut" }}
+        className="absolute -right-60 top-1/2 w-75 md:w-100  z-10 pointer-events-none"
+        
+        animate={{
+    x: -200,
+    opacity: 1,
+    y: [-100, -80, -100], // up-down motion
+  }}
+  
+  transition={{
+    x: { duration: 3, ease: "easeOut" },
+    opacity: { duration: 3 },
+    y: {
+      duration: 3,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  }}
       />
 
       {/* 🧑 HUMAN HAND (LEFT SIDE) */}
       <motion.img
         src="/humanhand-removebg-preview.png"
         alt="Human Hand"
-        className="absolute -left-60 top-1/2 w-75 md:w-190   h-125 z-10 pointer-events-none"
-        initial={{ x: -300, opacity: 0 , y:-100 }}
-        animate={{ x: 200, opacity: 1,y: -190 }}
-        transition={{ duration: 3, ease: "easeOut" }}
+        className="absolute -left-60 top-1/2 w-95 md:w-100   z-10 pointer-events-none"
+        initial={{ x: -300, opacity: 0, y: -100 }}
+  
+  animate={{
+    x: 200,
+    opacity: 1,
+    y: [-100, -80, -100], // up-down motion
+  }}
+  
+  transition={{
+    x: { duration: 3, ease: "easeOut" },
+    opacity: { duration: 3 },
+    y: {
+      duration: 3,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  }}
       />
 
       {/* ⚡ BLUE SPARK */}

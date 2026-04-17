@@ -5,87 +5,91 @@ import { useEffect, useState } from "react";
 
 const CustomCursor = () => {
   const [isHovering, setIsHovering] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  // ⚡ Direct motion values (no re-render on every move)
+  // ⚡ Motion values
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  // ⚡ Smooth but FAST springs
-  const springConfig = { damping: 20, stiffness: 500, mass: 0.2 };
+  // ⚡ Faster + smoother springs
+  const cursorX = useSpring(mouseX, { stiffness: 700, damping: 25 });
+  const cursorY = useSpring(mouseY, { stiffness: 700, damping: 25 });
 
-  const cursorX = useSpring(mouseX, springConfig);
-  const cursorY = useSpring(mouseY, springConfig);
+  const ringX = useSpring(mouseX, { stiffness: 400, damping: 30 });
+  const ringY = useSpring(mouseY, { stiffness: 400, damping: 30 });
 
-  const ringX = useSpring(mouseX, { damping: 25, stiffness: 400 });
-  const ringY = useSpring(mouseY, { damping: 25, stiffness: 400 });
-
-  const blurX = useSpring(mouseX, { damping: 40, stiffness: 200 });
-  const blurY = useSpring(mouseY, { damping: 40, stiffness: 200 });
+  const blurX = useSpring(mouseX, { stiffness: 200, damping: 40 });
+  const blurY = useSpring(mouseY, { stiffness: 200, damping: 40 });
 
   useEffect(() => {
+    // ❌ mobile pe disable
+    if (window.innerWidth < 768) return;
+
     const move = (e) => {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
+      setIsVisible(true);
     };
 
+    const handleHover = (e) => {
+      if (e.target.closest("a, button")) {
+        setIsHovering(true);
+      } else {
+        setIsHovering(false);
+      }
+    };
+
+    const leaveWindow = () => setIsVisible(false);
+
     window.addEventListener("mousemove", move);
-
-    const handleHover = () => setIsHovering(true);
-    const handleLeave = () => setIsHovering(false);
-
-    const elements = document.querySelectorAll("a, button");
-
-    elements.forEach((el) => {
-      el.addEventListener("mouseenter", handleHover);
-      el.addEventListener("mouseleave", handleLeave);
-    });
+    window.addEventListener("mouseover", handleHover);
+    window.addEventListener("mouseout", handleHover);
+    window.addEventListener("mouseleave", leaveWindow);
 
     return () => {
       window.removeEventListener("mousemove", move);
+      window.removeEventListener("mouseover", handleHover);
+      window.removeEventListener("mouseout", handleHover);
+      window.removeEventListener("mouseleave", leaveWindow);
     };
   }, []);
 
   return (
     <>
-      {/* 🔥 Glow / Smoke Trail */}
+      {/* 🔥 Glow */}
       <motion.div
-        style={{
-          translateX: blurX,
-          translateY: blurY,
-        }}
+        style={{ translateX: blurX, translateY: blurY }}
         animate={{
-          scale: isHovering ? 2.2 : 1.2,
-          opacity: isHovering ? 0.4 : 0.2,
+          scale: isHovering ? 2.5 : 1.3,
+          opacity: isVisible ? (isHovering ? 0.5 : 0.25) : 0,
         }}
-        transition={{ duration: 0.2 }}
-        className="fixed top-0 left-0 w-16 h-16 rounded-full pointer-events-none z-[9997]"
+        transition={{ duration: 0.15 }}
+        className="fixed top-0 left-0 w-16 h-16 rounded-full pointer-events-none z-9997"
       >
         <div className="w-full h-full rounded-full bg-pink-500 blur-2xl" />
       </motion.div>
 
-      {/* 🔵 Outer Ring */}
+      {/* 🔵 Ring */}
       <motion.div
-        style={{
-          translateX: ringX,
-          translateY: ringY,
-        }}
+        style={{ translateX: ringX, translateY: ringY }}
         animate={{
-          scale: isHovering ? 1.2 : 1,
+          scale: isHovering ? 1.4 : 1,
           borderColor: isHovering ? "#118ab2" : "#ff8fab",
+          opacity: isVisible ? 1 : 0,
         }}
-        className="fixed top-0 left-0 w-10 h-10 -translate-x-1/2 -translate-y-1/2 rounded-full border pointer-events-none z-[9998]"
+        transition={{ duration: 0.15 }}
+        className="fixed top-0 left-0 w-10 h-10 -translate-x-1/2 -translate-y-1/2 rounded-full border pointer-events-none z-9998"
       />
 
-      {/* ⚫ Center Dot */}
+      {/* ⚫ Dot */}
       <motion.div
-        style={{
-          translateX: cursorX,
-          translateY: cursorY,
-        }}
+        style={{ translateX: cursorX, translateY: cursorY }}
         animate={{
-          scale: isHovering ? 0.6 : 1,
+          scale: isHovering ? 0.5 : 1,
+          opacity: isVisible ? 1 : 0,
         }}
-        className="fixed top-0 left-0 w-1 h-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-pink-400 pointer-events-none z-[9999]"
+        transition={{ duration: 0.1 }}
+        className="fixed top-0 left-0 w-1.5 h-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-pink-400 pointer-events-none z-9999"
       />
     </>
   );
