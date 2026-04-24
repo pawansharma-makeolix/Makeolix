@@ -62,9 +62,7 @@ export default function FooterBlob({variant}) {
         className={`absolute w-25 md:w-37.5 lg:w-50 transition-opacity duration-300 ${
           visible ? "opacity-80" : "opacity-0"
         }`}
-        style={{
-          filter: "drop-shadow(0 0 60px rgba(17,138,178,0.4))",
-        }}
+        
       />
     </div>
   );

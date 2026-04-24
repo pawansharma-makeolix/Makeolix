@@ -14,6 +14,39 @@ import BlogSection from "../components/BlogSection";
 import UltraFooter from "../components/UltraFooter";
 import CTAMarquee from "../components/CTAMarquee";
 const Home = () => {
+  const stats = [
+  {
+    number: "10+",
+    title: "Years of Experience",
+    desc: "Expertise honed through a decade of diverse industry challenges.",
+  },
+  {
+    number: "150+",
+    title: "Specialist",
+    desc: "A dedicated team of skilled professionals driving excellence.",
+  },
+  {
+    number: "5,000+",
+    title: "Marketing Consultations",
+    desc: "Proven insights from a wealth of strategic consultations conducted.",
+  },
+  {
+    number: "2",
+    title: "Continents",
+    desc: "Expanding global reach with successful endeavors on multiple continents.",
+  },
+  {
+    number: "3,000+",
+    title: "Executed Campaigns",
+    desc: "A track record of executing effective and impactful marketing campaigns.",
+  },
+  {
+    number: "100",
+    title: "Established Partners Globally",
+    desc: "Trusted partnerships fostering global connections and mutual success.",
+  },
+];
+
   return (
     <>
       <Navbar />
@@ -22,7 +55,7 @@ const Home = () => {
       <About></About>
       <KnowPoints></KnowPoints>
       <ServicesSlider />
-      <MakeolixNumbers></MakeolixNumbers>
+      <MakeolixNumbers heading="The Makeolix in Numbers" statsData={stats} ></MakeolixNumbers>
       <WhyChooseUs></WhyChooseUs>
       <VideoTestimonials></VideoTestimonials>
       <FAQSection></FAQSection>

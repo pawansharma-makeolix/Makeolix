@@ -1,12 +1,15 @@
 import Layout from "../../components/Layout";
 import HeroOrbit from "../../components/HeroOrbit";
-const LocalSeo = () => {
+
+const SeoReseller = () => {
   return (
     <>
     <Layout>
+
+
         <HeroOrbit
         
-        title={"Local Seo Services "}
+        title={"SEO Reseller Service "}
            description={
              "We blend creativity and technology to build powerful digital solutions that drive growth and create lasting impact."
            }
@@ -21,4 +24,4 @@ const LocalSeo = () => {
   )
 }
 
-export default LocalSeo
+export default SeoReseller

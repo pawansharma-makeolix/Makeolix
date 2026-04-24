@@ -804,7 +804,7 @@ export default function Navbar() {
                       : "Need a custom quote?"}
                   </p>
                   <Link
-                    to="/contactus"
+                    to="/contact-us"
                     className="nav-font"
                     style={{
                       fontSize: "12px",

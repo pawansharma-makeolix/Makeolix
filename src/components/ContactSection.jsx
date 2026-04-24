@@ -842,20 +842,20 @@ export default function ContactSection() {
     {
       icon: <Phone size={18} />,
       title: "Call Us",
-      content: "+1 (555) 123-4567",
-      sub: "Mon–Fri 9am–6pm EST",
+      content: "+91 1204537874",
+      sub: "Mon–Fri 10am–7pm EST",
     },
     {
       icon: <Mail size={18} />,
       title: "Email Us",
-      content: "hello@futuretech.com",
+      content: "contactus@makeolix.com",
       sub: "Reply within 24 hrs",
     },
     {
       icon: <MapPin size={18} />,
       title: "Visit Us",
-      content: "123 Innovation St",
-      sub: "San Francisco, CA",
+      content: "Suite G-02, H-143, H Block, Sector 63, Noida, Uttar Pradesh 201301",
+      sub: "India , Uttar Pradesh",
     },
   ];
 

@@ -15,7 +15,7 @@ const cards = [
   {
     id: 1,
     num: "02",
-    icon: "/icons/seo.png",
+    icon: "/icons/seo (2).png",
     title: "Content & Site Optimization for Better Search Results",
     desc: "The content and site optimization is a comprehensive package that helps you in getting better search results by creating and optimising your website, improving user experience, enhancing brand image and building backlinks.",
   },

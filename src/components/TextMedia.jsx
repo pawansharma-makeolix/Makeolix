@@ -8,6 +8,8 @@ export default function TextMedia({
   subtitle,
   description,
   image,
+  list,
+  paragraph2,
   ctaText,
   reverse = false, // 🔥 layout switch
   bgClass = "bg-(--bg-main)", // 🎨 custom background
@@ -37,11 +39,11 @@ export default function TextMedia({
 
       <div
         className={`relative z-10 max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 items-center ${
-          reverse ? "md:flex-row-reverse" : ""
+          reverse ? "md:[&>*:first-child]:order-2" : ""
         }`}
       >
         {/* TEXT */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4">
           {subtitle && (
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -78,13 +80,29 @@ export default function TextMedia({
           </h2>
 
           {description && (
-            <motion.p
-              style={{ opacity }}
-              className="text-white max-w-md leading-relaxed"
-            >
-              {description}
-            </motion.p>
-          )}
+  <motion.p
+    style={{ opacity }}
+    className="text-white max-w-md leading-relaxed"
+  >
+    {description}
+  </motion.p>
+)}
+
+{/* ✅ LIST SUPPORT */}
+{Array.isArray(list) && list.length > 0 && (
+  <ul className="text-white max-w-md space-y-2 list-disc pl-5">
+    {list.map((item, i) => (
+      <li key={i}>{item}</li>
+    ))}
+  </ul>
+)}
+
+{/* ✅ SECOND PARAGRAPH */}
+{paragraph2 && (
+  <p className="text-white max-w-md leading-relaxed">
+    {paragraph2}
+  </p>
+)}
 
           {/* CTA */}
           {ctaText && (

@@ -1,12 +1,11 @@
 import Layout from "../../components/Layout";
 import HeroOrbit from "../../components/HeroOrbit";
-const LocalSeo = () => {
+const PhpDev = () => {
   return (
-    <>
-    <Layout>
-        <HeroOrbit
-        
-        title={"Local Seo Services "}
+   <>
+
+    <Layout><HeroOrbit 
+    title={"Php Development"}
            description={
              "We blend creativity and technology to build powerful digital solutions that drive growth and create lasting impact."
            }
@@ -14,11 +13,10 @@ const LocalSeo = () => {
            secondaryBtnText={"Learn More"}
            primaryLink={"/contact-us"}
            secondaryLink={"/contact-us"}
-        
-        ></HeroOrbit>
+    ></HeroOrbit>
     </Layout>
-    </>
+   </>
   )
 }
 
-export default LocalSeo
+export default PhpDev

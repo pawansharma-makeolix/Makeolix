@@ -57,24 +57,14 @@ const CustomCursor = () => {
   return (
     <>
       {/* 🔥 Glow */}
-      <motion.div
-        style={{ translateX: blurX, translateY: blurY }}
-        animate={{
-          scale: isHovering ? 2.5 : 1.3,
-          opacity: isVisible ? (isHovering ? 0.5 : 0.25) : 0,
-        }}
-        transition={{ duration: 0.15 }}
-        className="fixed top-0 left-0 w-16 h-16 rounded-full pointer-events-none z-9997"
-      >
-        <div className="w-full h-full rounded-full bg-pink-500 blur-2xl" />
-      </motion.div>
+      
 
       {/* 🔵 Ring */}
       <motion.div
         style={{ translateX: ringX, translateY: ringY }}
         animate={{
           scale: isHovering ? 1.4 : 1,
-          borderColor: isHovering ? "#118ab2" : "#ff8fab",
+          borderColor: isHovering ? "bg-pink-400" : "#ff8fab",
           opacity: isVisible ? 1 : 0,
         }}
         transition={{ duration: 0.15 }}

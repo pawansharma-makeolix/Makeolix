@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { CardSpotlight } from "./card-spotlight";
 import FooterBlob from "../components/FooterBlob";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -14,6 +15,30 @@ import {
 } from "react-icons/fa";
 
 export default function UltraFooter() {
+
+
+  const cities = [
+  { name: "Austin", path: "/austin" },
+  { name: "Charlotte", path: "/charlotte" },
+  { name: "Columbus", path: "/columbus" },
+  { name: "Denver", path: "/denver" },
+  { name: "Indianapolis", path: "/indianapolis" },
+  { name: "Los Angeles", path: "/los-angeles" },
+  { name: "New York", path: "/new-york" },
+  { name: "Phoenix", path: "/phoenix" },
+  { name: "San Diego", path: "/san-diego" },
+  { name: "Seattle", path: "/seattle" },
+  { name: "Boston", path: "/boston" },
+  { name: "Chicago", path: "/chicago" },
+  { name: "Dallas", path: "/dallas" },
+  { name: "Houston", path: "/houston" },
+  { name: "Jacksonville", path: "/jacksonville" },
+  { name: "Miami", path: "/miami" },
+  { name: "Philadelphia", path: "/philadelphia" },
+  { name: "San Antonio", path: "/san-antonio" },
+  { name: "San Francisco", path: "/san-francisco" },
+  { name: "Toronto", path: "/toronto" },
+];
   return (
 
    <footer className="relative bg-(--bg-main) text-white pt-20 overflow-hidden">
@@ -29,26 +54,24 @@ export default function UltraFooter() {
         <h4 className="text-center text-(--blue-3) mb-4">Service Areas</h4>
 
         <motion.div
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
-          className="flex gap-10 whitespace-nowrap text-sm text-(--text-muted)"
+  animate={{ x: ["0%", "-50%"] }}
+  transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
+  className="flex gap-10 whitespace-nowrap text-sm text-(--text-muted)"
+>
+  {Array(2)
+    .fill(cities)
+    .flat()
+    .map((city, i) => (
+      <motion.div key={i} whileHover={{ scale: 1.15 }}>
+        <Link
+          to={city.path}
+          className="transition hover:text-white"
         >
-          {Array(2)
-            .fill([
-              "Austin","Charlotte","Columbus","Denver","Indianapolis","Los Angeles","New York","Phoenix","San Diego","Seattle","Boston","Chicago","Dallas","Houston","Jacksonville","Miami","Philadelphia","San Antonio","San Francisco","Toronto"
-            ])
-            .flat()
-            .map((city, i) => (
-              <motion.a
-                key={i}
-                href="#"
-                whileHover={{ scale: 1.15, color: "#fff" }}
-                className="transition"
-              >
-                {city}
-              </motion.a>
-            ))}
-        </motion.div>
+          {city.name}
+        </Link>
+      </motion.div>
+    ))}
+</motion.div>
       </div>
 
       {/* MAIN FOOTER */}
