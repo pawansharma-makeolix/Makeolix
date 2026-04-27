@@ -73,11 +73,12 @@ const AboutUs = () => {
         title="What makes us the best?"
         subtitle="Why Choose Us"
         description="Choosing MakeOlix means choosing excellence, innovation, and reliability. With years of experience and a proven track record of delivering exceptional results, we pride ourselves on our unwavering commitment to client satisfaction. From start-ups to established enterprises, we tailor our services to meet your specific needs and exceed your expectations."
-        image="/Heroimage.jpg"
+        image="/john-FlPc9_VocJ4-unsplash (1).jpg"
         ctaText="Get Started"
       />
       <StackedCards></StackedCards>
       <MakeolixNumbers
+      variant="dark"
         heading="THE MAKEOLIX IN NUMBERS"
         subheading={`Know Our Points 
   At MakeOlix, we believe in a holistic approach to digital marketing. By understanding your unique brand identity, target audience, and business objectives, we develop comprehensive strategies that encompass SEO, PPC, content marketing, social media, and more. Our goal is to optimize every aspect of your online presence for maximum impact and visibility.`}

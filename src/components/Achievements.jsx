@@ -39,7 +39,7 @@ const Achievements = () => {
     <section
       className="py-14 overflow-hidden relative"
       style={{
-        background: "linear-gradient(180deg, #ffffff 85%, #e6f2f8 100%)",
+        background: "#00171f",
       }}
     >
       {/* 🔥 Heading */}
@@ -51,12 +51,12 @@ const Achievements = () => {
       >
         <h2
           className="text-3xl md:text-3xl font-semibold mb-2"
-          style={{ color: "#003863" }}
+          style={{ color: "#fff" }}
         >
           Our Achievements & Awards
         </h2>
 
-        <p className="text-gray-600 max-w-xl mx-auto text-sm md:text-base">
+        <p className="text-white max-w-xl mx-auto text-sm md:text-base">
           Recognized for excellence, innovation, and impactful results across
           industries.
         </p>
@@ -74,7 +74,7 @@ const Achievements = () => {
             flex items-center justify-center
             ${getPosition(index)}`}
             style={{
-              background: "rgba(5, 25, 35, 0.85)",
+              background: "rgba(255, 225, 255, 0.85)",
               boxShadow:
                 index === active
                   ? "0px 15px 30px rgba(17,138,178,0.25)"

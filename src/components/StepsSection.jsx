@@ -412,7 +412,7 @@ export default function StepsSection({
   return (
     <section
       className={`relative py-12 sm:py-16 overflow-hidden ${className}`}
-      style={{ background: "var(--bg-main)" }}
+      style={{ background: "var(--bg-soft)" }}
     >
       <Background />
 

@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // ─── Default FAQ Data ─────────────────────────────────────────────────────────
-
+const defaultBg = "var(--bg-soft)";
 
 // ─── Floating Particle ────────────────────────────────────────────────────────
 function Particle({ x, y, size, duration, delay, color }) {
@@ -217,6 +217,7 @@ export default function FaqVariant({
   heading = "Frequently Asked Questions",
   subheading = "Everything you need to know — answered clearly.",
   tag = "FAQs",
+  bgcolor,
 }) {
  const [openId, setOpenId] = useState(faqs[0]?.id || null);
 
@@ -233,7 +234,7 @@ export default function FaqVariant({
     <section
       className="relative w-full overflow-hidden"
       style={{
-        background: "var(--bg-main)",
+        background: bgcolor || defaultBg,
         padding: "clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px)",
       }}
     >

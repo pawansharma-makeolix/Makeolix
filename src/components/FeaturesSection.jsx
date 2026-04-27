@@ -217,6 +217,7 @@ export default function FeaturesSection({
   heading = "Everything You Need To Dominate",
   highlight = [5, 6],
   subtext,
+  bgcolor,
 }) {
   const finalLeft = leftCards.length ? leftCards : LEFT_CARDS;
   const finalRight = rightCards.length ? rightCards : RIGHT_CARDS;
@@ -246,7 +247,7 @@ export default function FeaturesSection({
   return (
     <section
       ref={containerRef}
-      className="relative w-full overflow-hidden py-24 md:py-32 bg-[linear-gradient(180deg,var(--bg-main,#00171f)_0%,var(--bg-soft,#051923)_50%,var(--bg-main,#00171f)_100%)]"
+      className="relative w-full overflow-hidden py-14 md:py-20  bg-[linear-gradient(180deg,var(--bg-main,#00171f)_0%,var(--bg-soft,#051923)_50%,var(--bg-main,#00171f)_100%)]"
     >
       {/* ── Ambient Background Glows ── */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">

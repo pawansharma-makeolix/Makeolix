@@ -18,6 +18,7 @@ const alignClasses = {
   left: "text-left",
   center: "text-center",
   right: "text-right",
+  white: "text-white",
 };
 
 const variantClasses = {

@@ -59,13 +59,13 @@ const VideoTestimonials = () => {
     <section
       className="w-full py-20 flex flex-col items-center"
       style={{
-        background: "linear-gradient(180deg, #ffffff 90%, #e6f2f8 100%)",
+        background: "linear-gradient(180deg, var(--bg-main) 0%, var(--bg-soft) 60%, var(--bg-main) 100%)",
       }}
     >
       {/* Heading */}
       <h2
         className="text-3xl md:text-3xl font-semibold mb-12 text-center"
-        style={{ color: "#003863" }}
+        style={{ color: "#fff" }}
       >
         Client Testimonials
       </h2>

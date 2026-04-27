@@ -5,15 +5,7 @@ import HeroOrbit from "../components/HeroOrbit";
 import StaggerTestimonials from "../components/StaggerTestimonials";
 import CTAMarquee from "../components/CTAMarquee";
 import UltraAnimatedHero from "../components/UltraAnimatedHero";
-import StepsSection from "../components/StepsSection";
-import IntroText from "../components/IntroText";
-import ServicesSection from "../components/ServicesSection";
-import {PhoenixServiceData} from "../components/data/PhoenixServiceData"
-import ParallaxSection from "../components/ParallaxHero";
-import FaqVariant from "../components/FaqVariant";
-import ServiceHero from "../components/ServiceHero";
-import FeaturesSection from "../components/FeaturesSection";
-import Usp from "../components/Usp";
+
 
 const Testimonials = () => {
   const Testimonialdata = [
@@ -90,50 +82,49 @@ const Testimonials = () => {
       role: "HR Manager at TalentForge",
     },
   ];
- const servicesData = [
-{
-id: "seo",
-tag: "Growth",
-title: "Search Engine Optimization",
-description:
-"Boost your website rankings with data-driven SEO strategies, on-page optimization, and technical improvements that bring consistent organic traffic.",
-nodes: 9,
-},
-{
-id: "smm",
-tag: "Engagement",
-title: "Social Media Marketing",
-description:
-"Build a strong brand presence across platforms with high-performing content, targeted campaigns, and audience-focused growth strategies.",
-nodes: 7,
-},
-{
-id: "ads",
-tag: "Performance",
-title: "Paid Advertising",
-description:
-"Maximize ROI with highly optimized Google Ads and social media campaigns designed to generate leads, conversions, and measurable growth.",
-nodes: 8,
-},
-{
-id: "web",
-tag: "Experience",
-title: "Website Design & Development",
-description:
-"Create fast, modern, and conversion-focused websites that deliver seamless user experiences and turn visitors into customers.",
-nodes: 10,
-},
-{
-id: "branding",
-tag: "Identity",
-title: "Branding & Creative Design",
-description:
-"Craft a unique brand identity with stunning visuals, strategic messaging, and creative assets that leave a lasting impression.",
-nodes: 6,
-},
-];
+  const servicesData = [
+    {
+      id: "seo",
+      tag: "Growth",
+      title: "Search Engine Optimization",
+      description:
+        "Boost your website rankings with data-driven SEO strategies, on-page optimization, and technical improvements that bring consistent organic traffic.",
+      nodes: 9,
+    },
+    {
+      id: "smm",
+      tag: "Engagement",
+      title: "Social Media Marketing",
+      description:
+        "Build a strong brand presence across platforms with high-performing content, targeted campaigns, and audience-focused growth strategies.",
+      nodes: 7,
+    },
+    {
+      id: "ads",
+      tag: "Performance",
+      title: "Paid Advertising",
+      description:
+        "Maximize ROI with highly optimized Google Ads and social media campaigns designed to generate leads, conversions, and measurable growth.",
+      nodes: 8,
+    },
+    {
+      id: "web",
+      tag: "Experience",
+      title: "Website Design & Development",
+      description:
+        "Create fast, modern, and conversion-focused websites that deliver seamless user experiences and turn visitors into customers.",
+      nodes: 10,
+    },
+    {
+      id: "branding",
+      tag: "Identity",
+      title: "Branding & Creative Design",
+      description:
+        "Craft a unique brand identity with stunning visuals, strategic messaging, and creative assets that leave a lasting impression.",
+      nodes: 6,
+    },
+  ];
 
-  
   return (
     <>
       <Navbar></Navbar>
@@ -145,27 +136,10 @@ nodes: 6,
         secondaryLink={"/contact-us"}
       ></HeroOrbit>
       <StaggerTestimonials data={Testimonialdata}></StaggerTestimonials>
-      
-     
-<ServiceHero
- services={servicesData}
-  title="Hello Everyone" 
-  subtitle="lorem5"
-  pattern="auto"
-/>
-<Usp></Usp>
 
-<ServicesSection
-  services={servicesData}
-  heading="Grow Your Business With Smart Digital Solutions"
-  subheading="We help brands scale with performance-driven strategies"
-/>
-<FaqVariant></FaqVariant>
-<CTAMarquee></CTAMarquee>
+      <CTAMarquee></CTAMarquee>
 
-     <FeaturesSection></FeaturesSection>
       <UltraFooter></UltraFooter>
-      
     </>
   );
 };

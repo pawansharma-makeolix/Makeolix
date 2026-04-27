@@ -44,7 +44,7 @@ const FAQSection = () => {
     <section
       className="w-full py-20 px-4"
       style={{
-        background: "linear-gradient(180deg, #ffffff 85%, #e6f2f8 100%)",
+        background: "var(--bg-soft)",
       }}
     >
       <div className="max-w-4xl mx-auto">
@@ -57,19 +57,19 @@ const FAQSection = () => {
         >
           <h2
             className="text-3xl md:text-3xl font-semibold mb-4"
-            style={{ color: "#003863" }}
+            style={{ color: "#fff" }}
           >
             Company FAQs
           </h2>
 
           <h3
             className="text-xl md:text-1xl font-medium mb-2"
-            style={{ color: "#003863" }}
+            style={{ color: "#fff" }}
           >
             Have questions about Makeolix? We've got answers !
           </h3>
 
-          <p className="text-gray-600 max-w-xl mx-auto">
+          <p className="text-white max-w-5xl mx-auto">
             Explore our FAQs to gain insights into digital marketing, our
             approach, and how we can tailor solutions for your business. From
             understanding the basics to getting started, find comprehensive
@@ -104,7 +104,7 @@ const FAQSection = () => {
                 }}
                 className="rounded-xl overflow-hidden"
                 style={{
-                  background: "#051923",
+                  background: "#f2f2f2",
                 }}
               >
                 {/* Question */}
@@ -112,7 +112,7 @@ const FAQSection = () => {
                   onClick={() => toggle(index)}
                   className="w-full flex justify-between items-center p-5 text-left"
                 >
-                  <span className="text-white font-medium text-base md:text-lg">
+                  <span className="text-var(-bg--main) font-medium text-base md:text-lg">
                     {faq.question}
                   </span>
 
@@ -141,7 +141,7 @@ const FAQSection = () => {
                         animate={{ y: 0 }}
                         exit={{ y: -10 }}
                         transition={{ duration: 0.3 }}
-                        className="px-5 pb-5 text-sm text-gray-300"
+                        className="px-5 pb-5 text-sm text-var(-text--main)"
                       >
                         {faq.answer}
                       </motion.div>

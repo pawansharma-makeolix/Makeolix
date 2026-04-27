@@ -55,10 +55,10 @@ const Home = () => {
       <About></About>
       <KnowPoints></KnowPoints>
       <ServicesSlider />
-      <MakeolixNumbers heading="The Makeolix in Numbers" statsData={stats} ></MakeolixNumbers>
+      <MakeolixNumbers heading="The Makeolix in Numbers" statsData={stats}  variant= {"dark"} ></MakeolixNumbers>
       <WhyChooseUs></WhyChooseUs>
       <VideoTestimonials></VideoTestimonials>
-      <FAQSection></FAQSection>
+      <FAQSection ></FAQSection>
       <Achievements></Achievements>
       <BlogSection></BlogSection>
       <CTAMarquee></CTAMarquee>

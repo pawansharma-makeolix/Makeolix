@@ -80,29 +80,27 @@ export default function TextMedia({
           </h2>
 
           {description && (
-  <motion.p
-    style={{ opacity }}
-    className="text-white max-w-md leading-relaxed"
-  >
-    {description}
-  </motion.p>
-)}
+            <motion.p
+              style={{ opacity }}
+              className="text-white max-w-md leading-relaxed"
+            >
+              {description}
+            </motion.p>
+          )}
 
-{/* ✅ LIST SUPPORT */}
-{Array.isArray(list) && list.length > 0 && (
-  <ul className="text-white max-w-md space-y-2 list-disc pl-5">
-    {list.map((item, i) => (
-      <li key={i}>{item}</li>
-    ))}
-  </ul>
-)}
+          {/* ✅ LIST SUPPORT */}
+          {Array.isArray(list) && list.length > 0 && (
+            <ul className="text-white max-w-md space-y-2 list-disc pl-5">
+              {list.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          )}
 
-{/* ✅ SECOND PARAGRAPH */}
-{paragraph2 && (
-  <p className="text-white max-w-md leading-relaxed">
-    {paragraph2}
-  </p>
-)}
+          {/* ✅ SECOND PARAGRAPH */}
+          {paragraph2 && (
+            <p className="text-white max-w-md leading-relaxed">{paragraph2}</p>
+          )}
 
           {/* CTA */}
           {ctaText && (

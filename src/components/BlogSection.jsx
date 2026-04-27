@@ -9,7 +9,7 @@ const blogs = [
     desc: "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
     date: "March 10, 2026",
     service: "SEO Reseller Service",
-    img: "/Heroimage.jpg",
+    img: "/growtika-dQkAdUGCntA-unsplash.jpg",
   },
   {
     id: 2,
@@ -17,14 +17,14 @@ const blogs = [
     desc: "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
     date: "October 12, 2025",
     service: "SEO",
-    img: "/Heroimage.jpg",
+    img: "/myriam-jessier-VCtI-0qlVgA-unsplash.jpg",
   },
   {
     id: 3,
     desc: "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
     date: "September 10, 2025",
     service: "E-commerce",
-    img: "/Heroimage.jpg",
+    img: "/shoper-slLo94wES2M-unsplash (2).jpg",
   },
 ];
 
@@ -52,7 +52,7 @@ const cardVariants = {
 
 export default function BlogSection() {
   return (
-    <section className="min-h-screen px-6 py-20 bg-(--bg-main) text-white overflow-hidden">
+    <section className="min-h-screen px-6 py-20 bg-(--bg-soft) text-white overflow-hidden">
       {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}

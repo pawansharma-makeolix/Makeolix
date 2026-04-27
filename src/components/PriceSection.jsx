@@ -4,7 +4,6 @@ import Button from "../components/Button";
 
 const CONTACT_URL = "/contact";
 
-// ─── WebGL Animated Ring Background ───────────────────────────────────────────
 const ShaderCanvas = () => {
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -53,7 +52,7 @@ const ShaderCanvas = () => {
     gl.bufferData(
       gl.ARRAY_BUFFER,
       new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]),
-      gl.STATIC_DRAW,
+      gl.STATIC_DRAW
     );
     const loc = gl.getAttribLocation(prog, "aPos");
     gl.enableVertexAttribArray(loc);
@@ -95,7 +94,6 @@ const ShaderCanvas = () => {
   );
 };
 
-// ─── Icons ────────────────────────────────────────────────────────────────────
 const TickIcon = () => (
   <svg
     width="13"
@@ -127,7 +125,6 @@ const CrossIcon = () => (
   </svg>
 );
 
-// ─── Feature Row ──────────────────────────────────────────────────────────────
 const FeatureRow = ({ label, included, index }) => (
   <motion.li
     initial={{ opacity: 0, x: -10 }}
@@ -144,8 +141,8 @@ const FeatureRow = ({ label, included, index }) => (
         included === false
           ? "rgba(255,255,255,0.22)"
           : included === "conditional"
-            ? "rgba(255,255,255,0.48)"
-            : "rgba(255,255,255,0.84)",
+          ? "rgba(255,255,255,0.48)"
+          : "rgba(255,255,255,0.84)",
     }}
   >
     <span
@@ -156,8 +153,8 @@ const FeatureRow = ({ label, included, index }) => (
           included === false
             ? "rgba(255,70,70,0.65)"
             : included === "conditional"
-              ? "rgba(17,138,178,0.9)"
-              : "#22d3a5",
+            ? "rgba(17,138,178,0.9)"
+            : "#22d3a5",
       }}
     >
       {included === false ? <CrossIcon /> : <TickIcon />}
@@ -166,7 +163,6 @@ const FeatureRow = ({ label, included, index }) => (
   </motion.li>
 );
 
-// ─── Section Header ───────────────────────────────────────────────────────────
 const SectionHeader = ({ children }) => (
   <div
     style={{
@@ -184,7 +180,6 @@ const SectionHeader = ({ children }) => (
   </div>
 );
 
-// ─── Glow Border ─────────────────────────────────────────────────────────────
 const GlowBorder = () => (
   <motion.div
     animate={{ opacity: [0.4, 1, 0.4] }}
@@ -201,7 +196,6 @@ const GlowBorder = () => (
   />
 );
 
-// ─── Pricing Card ─────────────────────────────────────────────────────────────
 export const PricingCard = ({
   planName,
   currentPrice,
@@ -212,8 +206,9 @@ export const PricingCard = ({
   isPopular = false,
   badgeText = "Best Seller",
   contactUrl = CONTACT_URL,
+  expanded,        // 👈 from parent
+  onToggle,        // 👈 from parent
 }) => {
-  const [expanded, setExpanded] = useState(false);
   const cardRef = useRef(null);
   const inView = useInView(cardRef, { once: true, margin: "-40px" });
 
@@ -222,7 +217,7 @@ export const PricingCard = ({
         (1 -
           parseFloat(currentPrice.replace("$", "")) /
             parseFloat(originalPrice.replace("$", ""))) *
-          100,
+          100
       )
     : null;
 
@@ -265,7 +260,6 @@ export const PricingCard = ({
     >
       {isPopular && <GlowBorder />}
 
-      {/* Animated shimmer top bar */}
       <motion.div
         animate={
           isPopular
@@ -283,7 +277,6 @@ export const PricingCard = ({
         }}
       />
 
-      {/* Best Seller banner */}
       {isPopular && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -305,7 +298,6 @@ export const PricingCard = ({
         </motion.div>
       )}
 
-      {/* Floating sparkles */}
       {isPopular &&
         [0, 1, 2, 3, 4, 5].map((i) => (
           <motion.div
@@ -336,9 +328,7 @@ export const PricingCard = ({
           />
         ))}
 
-      {/* ── Body ── */}
       <div style={{ padding: "20px 22px 0" }}>
-        {/* Plan name */}
         <motion.h2
           initial={{ opacity: 0, x: -14 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -354,7 +344,6 @@ export const PricingCard = ({
           {planName}
         </motion.h2>
 
-        {/* Price */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -391,7 +380,6 @@ export const PricingCard = ({
           </span>
         </motion.div>
 
-        {/* Save badge */}
         {savePct && (
           <motion.div
             initial={{ scale: 0 }}
@@ -414,7 +402,6 @@ export const PricingCard = ({
           </motion.div>
         )}
 
-        {/* Top CTA */}
         <motion.div
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.96 }}
@@ -430,7 +417,6 @@ export const PricingCard = ({
           </Button>
         </motion.div>
 
-        {/* Inclusions */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={inView ? { opacity: 1, scale: 1 } : {}}
@@ -474,11 +460,10 @@ export const PricingCard = ({
         </motion.div>
       </div>
 
-      {/* Expandable toggle */}
       <div style={{ padding: "0 22px" }}>
         <motion.button
           whileHover={{ color: "#fff" }}
-          onClick={() => setExpanded(!expanded)}
+          onClick={onToggle}          // 👈 sirf yahi badla
           style={{
             width: "100%",
             background: "none",
@@ -533,147 +518,146 @@ export const PricingCard = ({
           )}
         </AnimatePresence>
       </div>
-
-      {/* Bottom CTA */}
     </motion.div>
   );
 };
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// PLAN DATA — Har plan ka apna ALAG independent data hai, koi sharing nahi
-// Ek plan ka data badloge to doosre plan pe koi effect nahi padega
-// ═══════════════════════════════════════════════════════════════════════════════
-
-// ─── Main Page ────────────────────────────────────────────────────────────────
 export const PricingSection = ({
   plans,
-
   subtitle,
   showBg = true,
   contactUrl,
-}) => (
-  <div
-    style={{
-      minHeight: "100vh",
-      width: "100%",
-      background: "var(--bg-main)",
-      position: "relative",
-      overflowX: "hidden",
-    }}
-  >
-    {showBg && <ShaderCanvas />}
+}) => {
+  const [allExpanded, setAllExpanded] = useState(false); // 👈 shared state
+
+  return (
     <div
       style={{
-        position: "fixed",
-        inset: 0,
-        zIndex: 1,
-        background:
-          "radial-gradient(ellipse at 50% 18%, rgba(0,56,99,0.2) 0%, rgba(0,23,31,0.6) 100%)",
-        pointerEvents: "none",
+        minHeight: "100vh",
+        width: "100%",
+        background: "var(--bg-main)",
+        position: "relative",
+        overflowX: "hidden",
       }}
-    />
-
-    <main
-      style={{ position: "relative", zIndex: 2, padding: "60px 20px 80px" }}
     >
-      {/* Header */}
-      <div style={{ textAlign: "center", marginBottom: "52px" }}>
-        <motion.div
-          initial={{ scaleX: 0, opacity: 0 }}
-          animate={{ scaleX: 1, opacity: 1 }}
-          transition={{ duration: 0.55 }}
-          style={{
-            width: "50px",
-            height: "3px",
-            background: "linear-gradient(90deg,var(--blue-2),var(--blue-3))",
-            margin: "0 auto 18px",
-            borderRadius: "2px",
-          }}
-        />
-
-        <motion.p
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.14, duration: 0.4 }}
-          style={{
-            fontSize: "13px",
-            color: "rgba(255,255,255,0.4)",
-            letterSpacing: "0.18em",
-            textTransform: "uppercase",
-          }}
-        >
-          {subtitle}
-        </motion.p>
-
-        {/* Legend */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "20px",
-            marginTop: "16px",
-            flexWrap: "wrap",
-          }}
-        >
-          {[
-            { color: "#22d3a5", icon: "✓", label: "Included" },
-            { color: "rgba(255,70,70,0.8)", icon: "✗", label: "Not Included" },
-            {
-              color: "rgba(17,138,178,0.95)",
-              icon: "✓",
-              label: "Conditional / Client Dependent",
-            },
-          ].map(({ color, icon, label }) => (
-            <div
-              key={label}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "5px",
-                fontSize: "11px",
-                color: "rgba(255,255,255,0.46)",
-              }}
-            >
-              <span style={{ color, fontWeight: 700 }}>{icon}</span> {label}
-            </div>
-          ))}
-        </motion.div>
-      </div>
-
-      {/* Cards */}
+      {showBg && <ShaderCanvas />}
       <div
         style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "22px",
-          justifyContent: "center",
-          alignItems: "flex-start",
-          maxWidth: "1380px",
-          margin: "0 auto",
+          position: "fixed",
+          inset: 0,
+          zIndex: 1,
+          background:
+            "radial-gradient(ellipse at 50% 18%, rgba(0,56,99,0.2) 0%, rgba(0,23,31,0.6) 100%)",
+          pointerEvents: "none",
         }}
+      />
+
+      <main
+        style={{ position: "relative", zIndex: 2, padding: "60px 20px 80px" }}
       >
-        {plans.map((plan, i) => (
+        <div style={{ textAlign: "center", marginBottom: "52px" }}>
           <motion.div
-            key={plan.planName}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: i * 0.1 + 0.18,
-              duration: 0.5,
-              type: "spring",
-              stiffness: 78,
+            initial={{ scaleX: 0, opacity: 0 }}
+            animate={{ scaleX: 1, opacity: 1 }}
+            transition={{ duration: 0.55 }}
+            style={{
+              width: "50px",
+              height: "3px",
+              background:
+                "linear-gradient(90deg,var(--blue-2),var(--blue-3))",
+              margin: "0 auto 18px",
+              borderRadius: "2px",
             }}
-            style={{ flex: "1 1 260px", maxWidth: "310px" }}
+          />
+          
+
+          <motion.p
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.14, duration: 0.4 }}
+            style={{
+              fontSize: "13px",
+              color: "rgba(255,255,255,0.4)",
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+            }}
           >
-            <PricingCard {...plan} contactUrl={contactUrl} />
+            {subtitle}
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "20px",
+              marginTop: "16px",
+              flexWrap: "wrap",
+            }}
+          >
+            {[
+              { color: "#22d3a5", icon: "✓", label: "Included" },
+              { color: "rgba(255,70,70,0.8)", icon: "✗", label: "Not Included" },
+              {
+                color: "rgba(17,138,178,0.95)",
+                icon: "✓",
+                label: "Conditional / Client Dependent",
+              },
+            ].map(({ color, icon, label }) => (
+              <div
+                key={label}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "5px",
+                  fontSize: "11px",
+                  color: "rgba(255,255,255,0.46)",
+                }}
+              >
+                <span style={{ color, fontWeight: 700 }}>{icon}</span> {label}
+              </div>
+            ))}
           </motion.div>
-        ))}
-      </div>
-    </main>
-  </div>
-);
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "22px",
+            justifyContent: "center",
+            alignItems: "flex-start",
+            maxWidth: "1380px",
+            margin: "0 auto",
+          }}
+        >
+          {plans.map((plan, i) => (
+            <motion.div
+              key={plan.planName}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: i * 0.1 + 0.18,
+                duration: 0.5,
+                type: "spring",
+                stiffness: 78,
+              }}
+              style={{ flex: "1 1 260px", maxWidth: "310px" }}
+            >
+              <PricingCard
+                {...plan}
+                contactUrl={contactUrl}
+                expanded={allExpanded}                         
+                onToggle={() => setAllExpanded(!allExpanded)}  
+              />
+            </motion.div>
+          ))}
+        </div>
+      </main>
+    </div>
+  );
+};
 
 export default PricingSection;

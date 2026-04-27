@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import CTAMarquee from "../components/CTAMarquee";
 import UltraFooter from "../components/UltraFooter";
-import { ServicesPagesData } from "../components/data/ServicesPagesData";
+import { ServicesPagesData } from "../components/data/index";
 import ServiceHero from "../components/ServiceHero";
 import IntroText from "../components/IntroText";
 import FaqVariant from "../components/FaqVariant";

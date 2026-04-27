@@ -46,7 +46,7 @@ export default function ParallaxHero({
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(0,10,18,0.75)_0%,rgba(0,15,28,0.65)_42%,rgba(0,20,38,0.45)_70%,rgba(0,10,18,0.25)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,10,18,0.3)_0%,rgba(0,15,28,0.5)_42%,rgba(0,20,38,0.4)_70%,rgba(0,10,18,0.10)_100%)]" />
 
       {/* Grid */}
 

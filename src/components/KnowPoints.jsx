@@ -23,15 +23,17 @@ const points = [
 
 const KnowPoints = () => {
   return (
-    <section className="py-10 pb-20 bg-white text-black">
+    <section className="py-10 pb-20 bg-[var(--bg-soft)] text-black">
       <div className="max-w-6xl mx-auto px-6">
         {/* HEADING */}
         <div className="text-center mb-16">
-          <ScrollReveal as="h2" align="center" size="md">
+          <ScrollReveal as="h2" variant="white" align="center"   textClassName="text-white"
+ size="md">
             Know Our Points
           </ScrollReveal>
 
-          <ScrollReveal as="h3" align="center" size="s">
+          <ScrollReveal as="h3" align="center"   textClassName="text-white"
+ size="s">
             We go beyond strategies — we build systems that create real impact.
           </ScrollReveal>
         </div>
