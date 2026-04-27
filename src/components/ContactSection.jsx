@@ -313,28 +313,33 @@ const BusinessForm = () => {
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  const handleSubmit = async (e) => {
+ const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
-    const res = await fetch("http://localhost:5000/send-mail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
+    const data = new FormData();
+
+    Object.entries(formData).forEach(([key, value]) => {
+      data.append(key, value);
     });
 
-    const data = await res.json();
+    
 
-    if (data.success) {
+    const res = await fetch("http://localhost:5000/send-mail", {
+      method: "POST",
+      body: data, // ❌ no JSON headers
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
       setSubmitted(true);
       setTimeout(() => setSubmitted(false), 3000);
     } else {
       alert("Something went wrong");
     }
-  } catch (error) {
-    console.error(error);
+  } catch (err) {
+    console.error(err);
     alert("Server error");
   }
 };
@@ -544,25 +549,31 @@ const CareerForm = () => {
   e.preventDefault();
 
   try {
-    const res = await fetch("http://localhost:5000/send-mail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
+    const data = new FormData();
+
+    Object.entries(formData).forEach(([key, value]) => {
+      data.append(key, value);
     });
 
-    const data = await res.json();
+    if (resumeFile) {
+      data.append("resume", resumeFile);
+    }
 
-    if (data.success) {
+    const res = await fetch("http://localhost:5000/send-mail", {
+      method: "POST",
+      body: data, // ❌ NO headers
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
       setSubmitted(true);
       setTimeout(() => setSubmitted(false), 3000);
     } else {
-      alert("Something went wrong");
+      alert("Failed");
     }
-  } catch (error) {
-    console.error(error);
-    alert("Server error");
+  } catch (err) {
+    console.error(err);
   }
 };
 
