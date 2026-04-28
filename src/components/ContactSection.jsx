@@ -559,7 +559,7 @@ const CareerForm = () => {
       data.append("resume", resumeFile);
     }
 
-    const res = await fetch("http://localhost:5000/send-mail", {
+    const res = await fetch("https://contact-backend-production-b1cb.up.railway.app/", {
       method: "POST",
       body: data, // ❌ NO headers
     });
