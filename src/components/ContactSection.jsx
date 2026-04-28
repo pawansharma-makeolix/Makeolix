@@ -325,7 +325,7 @@ const BusinessForm = () => {
 
     
 
-    const res = await fetch("https://contact-backend-production-b1cb.up.railway.app/", {
+    const res = await fetch("https://contact-backend-production-b1cb.up.railway.app/send-mail", {
       method: "POST",
       body: data, 
     });
@@ -559,7 +559,7 @@ const CareerForm = () => {
       data.append("resume", resumeFile);
     }
 
-    const res = await fetch("https://contact-backend-production-b1cb.up.railway.app/", {
+    const res = await fetch("https://contact-backend-production-b1cb.up.railway.app/send-mail", {
       method: "POST",
       body: data, // ❌ NO headers
     });
