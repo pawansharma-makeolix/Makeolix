@@ -315,6 +315,7 @@ const BusinessForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
  const handleSubmit = async (e) => {
   e.preventDefault();
+  console.log("FORM SUBMIT CLICKED"); // 👈 add
 
   try {
     const data = new FormData();
@@ -329,9 +330,9 @@ const BusinessForm = () => {
       method: "POST",
       body: data, 
     });
-
+    console.log("RESPONSE:", res); // 👈 add
     const result = await res.json();
-
+    console.log("RESULT:", result); // 👈 add
     if (result.success) {
       setSubmitted(true);
       setTimeout(() => setSubmitted(false), 3000);
