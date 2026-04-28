@@ -1,218 +1,137 @@
-// ═══════════════════════════════════════════════════════════════════════════════
-// SMO PLANS — Social Media Optimization
-// Inhe PricingSection me pass karo: <PricingSection plans={SMO_PLANS} title="SMO Packages" />
-// ═══════════════════════════════════════════════════════════════════════════════
+
 
 export const SMO_PLANS = [
 
   // ─── SILVER ─────────────────────────────────────────────────────────────────
   {
-    planName: 'SILVER',
-    currentPrice: 'Custom',
-    originalPrice: null,
-    period: '/ month',
+    planName: 'ESSENTIAL',
+    currentPrice: '$200',
+    originalPrice: '$300',
+    // period: '/ month',
     isPopular: false,
+     inclusionsTitle: 'Scope Of Work',
     inclusions: [
-      'Monthly Creatives – 5',
-      'Monthly Postings – 5',
-      'Organic Promotion',
-      'Analytics Tracking',
+      { label: 'Posts - 12/month', included: true },
+  { label: 'Platforms - 1 (Instagram or Facebook)', included: true },
+  { label: 'Post Design -   Basic (Statics)', included: true },
+  { label: 'Caption Writing + Hashtags', included: true },
+  { label: 'Content Calendar', included: true },
+  { label: 'Analytics Tracking', included: true },
+  { label: 'Competitor Research ', included: false },
+  { label: 'Engagement - Basic (Reply to Comments) ', included: true },
+  { label: 'Story Posting', included: false },
+  { label: 'Community Building', included: false },
+  { label: 'Community Building - 1', included: true },
+  { label: 'Monthly Performance Report', included: true },
+ 
     ],
     sections: [
       {
-        title: 'Organic Promotion',
+        title: 'REPORTS',
         items: [
-          { label: 'Competitor analysis', included: true },
-          { label: 'Strategy formation', included: true },
-          { label: 'Hashtag creation and promotion', included: true },
-          { label: 'Monthly creative creation - 5', included: true },
-          { label: 'Monthly postings - 5', included: true },
-          { label: 'Analytics Tracking', included: true },
-          { label: 'Account Management', included: true },
-          { label: 'Engagement with active communities and groups', included: true },
-          { label: 'Network build-up', included: true },
-          { label: 'Engagement with third-party posts', included: true },
-          { label: 'Content optimization', included: true },
-        ],
-      },
-      {
-        title: 'Paid Promotion',
-        items: [
-          { label: 'Budget estimate', included: false },
-          { label: 'Setting up campaigns', included: false },
-          { label: 'Ad creative creation', included: false },
-          { label: 'Daily account optimization', included: false },
-          { label: 'Setting up sales funnel for conversion objective', included: false },
-          { label: 'Conversion tracking assisted by Google Analytics', included: false },
-        ],
-      },
-      {
-        title: 'Remarketing',
-        items: [
-          { label: 'Creation of audience lists', included: false },
-          { label: 'Setting up campaigns', included: false },
-          { label: 'Ad creative creation', included: false },
-          { label: 'Daily account optimization', included: false },
-          { label: 'Setting up sales funnel for conversion objective', included: false },
-          { label: 'Conversion tracking assisted by Google Analytics', included: false },
-        ],
-      },
-      {
-        title: 'SMO Activities',
-        items: [
-          { label: 'Monthly report generation with insights', included: true },
-          { label: "Next month's line of action", included: true },
-        ],
+          { label: 'Monthly Report with Insights', included: true },
+          { label: 'Pan of Action for next month', included: true },
+        ]
       },
       {
         title: 'Customer Support',
         items: [
           { label: 'Email', included: true },
           { label: 'Phone', included: true },
-          { label: 'Chat', included: true },
+          { label: 'chat', included: true },
+          
         ],
       },
+      
     ],
   },
 
   // ─── GOLD ───────────────────────────────────────────────────────────────────
   {
-    planName: 'GOLD',
-    currentPrice: 'Custom',
-    originalPrice: null,
+    planName: 'GROWTH',
+    currentPrice: '$500',
+    originalPrice: '$600',
     period: '/ month',
     isPopular: true,
     badgeText: 'Most Popular',
+     inclusionsTitle: 'Scope Of Work',
     inclusions: [
-      'Monthly Creatives – 8',
-      'Monthly Postings – 8',
-      'Organic + Paid Promotion',
-      'Analytics Tracking',
+      { label: 'Posts - 20/month', included: true },
+  { label: 'Platforms - 2 (Instagram or Facebook)', included: true },
+  { label: 'Post Design -   High-Quality (Static + Basic Reels)', included: true },
+  { label: 'Caption Writing + Hashtags', included: true },
+  { label: 'Content Calendar', included: true },
+  { label: 'Analytics Tracking', included: true },
+  { label: 'Competitor Research ', included: true },
+  { label: 'Engagement - Engagement (Comments + Replies to DM) ', included: true },
+  { label: 'Story Posting - 2-4 (Festivals & Special Ocaasions)', included: true },
+  { label: 'Community Building', included: false },
+  { label: 'Community Building - 2', included: true },
+  { label: 'Monthly Performance Report', included: true },
+ 
     ],
-    sections: [
+     sections: [
       {
-        title: 'Organic Promotion',
+        title: 'REPORTS',
         items: [
-          { label: 'Competitor analysis', included: true },
-          { label: 'Strategy formation', included: true },
-          { label: 'Hashtag creation and promotion', included: true },
-          { label: 'Monthly creative creation - 8', included: true },
-          { label: 'Monthly postings - 8', included: true },
-          { label: 'Analytics Tracking', included: true },
-          { label: 'Account Management', included: true },
-          { label: 'Engagement with active communities and groups', included: true },
-          { label: 'Network build-up', included: true },
-          { label: 'Engagement with third-party posts', included: true },
-          { label: 'Content optimization', included: true },
-        ],
-      },
-      {
-        title: 'Paid Promotion',
-        items: [
-          { label: 'Budget estimate', included: true },
-          { label: 'Setting up campaigns', included: true },
-          { label: 'Ad creative creation', included: true },
-          { label: 'Daily account optimization', included: true },
-          { label: 'Setting up sales funnel for conversion objective', included: true },
-          { label: 'Conversion tracking assisted by Google Analytics', included: true },
-        ],
-      },
-      {
-        title: 'Remarketing',
-        items: [
-          { label: 'Creation of audience lists', included: false },
-          { label: 'Setting up campaigns', included: false },
-          { label: 'Ad creative creation', included: false },
-          { label: 'Daily account optimization', included: false },
-          { label: 'Setting up sales funnel for conversion objective', included: false },
-          { label: 'Conversion tracking assisted by Google Analytics', included: false },
-        ],
-      },
-      {
-        title: 'SMO Activities',
-        items: [
-          { label: 'Monthly report generation with insights', included: true },
-          { label: "Next month's line of action", included: true },
-        ],
+          { label: 'Monthly Report with Insights', included: true },
+          { label: 'Pan of Action for next month', included: true },
+        ]
       },
       {
         title: 'Customer Support',
         items: [
           { label: 'Email', included: true },
           { label: 'Phone', included: true },
-          { label: 'Chat', included: true },
+          { label: 'chat', included: true },
+          
         ],
       },
+      
     ],
   },
 
   // ─── PREMIUM ─────────────────────────────────────────────────────────────────
   {
-    planName: 'PREMIUM',
+    planName: 'DOMINANCE',
     currentPrice: 'Custom',
     originalPrice: null,
     period: '/ month',
     isPopular: false,
+   inclusionsTitle: 'Scope Of Work',
     inclusions: [
-      'Monthly Creatives – 8',
-      'Monthly Postings – 8',
-      'Organic + Paid + Remarketing',
-      'Full Analytics Suite',
+      { label: 'Posts - 30/month', included: true },
+  { label: 'Platforms - 3 (Instagram , Facebook & Linkedin)', included: true },
+  { label: 'Post Design -   Premium (Static + Reels + Carousels)', included: true },
+  { label: 'Caption Writing + Hashtags', included: true },
+  { label: 'Content Calendar', included: true },
+  { label: 'Analytics Tracking', included: true },
+  { label: 'Competitor Research ', included: true },
+  { label: 'Engagement - Engagement (Comments + Replies to DM) ', included: true },
+  { label: 'Story Posting - 10-15', included: true },
+  { label: 'Community Building', included: true },
+  { label: 'Community Building - 3', included: true },
+  { label: 'Monthly Performance Report', included: true },
+ 
     ],
     sections: [
       {
-        title: 'Organic Promotion',
+        title: 'REPORTS',
         items: [
-          { label: 'Competitor analysis', included: true },
-          { label: 'Strategy formation', included: true },
-          { label: 'Hashtag creation and promotion', included: true },
-          { label: 'Monthly creative creation - 8', included: true },
-          { label: 'Monthly postings - 8', included: true },
-          { label: 'Analytics Tracking', included: true },
-          { label: 'Account Management', included: true },
-          { label: 'Engagement with active communities and groups', included: true },
-          { label: 'Network build-up', included: true },
-          { label: 'Engagement with third-party posts', included: true },
-          { label: 'Content optimization', included: true },
-        ],
-      },
-      {
-        title: 'Paid Promotion',
-        items: [
-          { label: 'Budget estimate', included: true },
-          { label: 'Setting up campaigns', included: true },
-          { label: 'Ad creative creation', included: true },
-          { label: 'Daily account optimization', included: true },
-          { label: 'Setting up sales funnel for conversion objective', included: true },
-          { label: 'Conversion tracking assisted by Google Analytics', included: true },
-        ],
-      },
-      {
-        title: 'Remarketing',
-        items: [
-          { label: 'Creation of audience lists', included: true },
-          { label: 'Setting up campaigns', included: true },
-          { label: 'Ad creative creation', included: true },
-          { label: 'Daily account optimization', included: true },
-          { label: 'Setting up sales funnel for conversion objective', included: true },
-          { label: 'Conversion tracking assisted by Google Analytics', included: true },
-        ],
-      },
-      {
-        title: 'SMO Activities',
-        items: [
-          { label: 'Monthly report generation with insights', included: true },
-          { label: "Next month's line of action", included: true },
-        ],
+          { label: 'Monthly Report with Insights', included: true },
+          { label: 'Pan of Action for next month', included: true },
+        ]
       },
       {
         title: 'Customer Support',
         items: [
           { label: 'Email', included: true },
           { label: 'Phone', included: true },
-          { label: 'Chat', included: true },
+          { label: 'chat', included: true },
+          
         ],
       },
+      
     ],
   },
 ];

@@ -52,7 +52,7 @@ const ShaderCanvas = () => {
     gl.bufferData(
       gl.ARRAY_BUFFER,
       new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]),
-      gl.STATIC_DRAW
+      gl.STATIC_DRAW,
     );
     const loc = gl.getAttribLocation(prog, "aPos");
     gl.enableVertexAttribArray(loc);
@@ -141,8 +141,8 @@ const FeatureRow = ({ label, included, index }) => (
         included === false
           ? "rgba(255,255,255,0.22)"
           : included === "conditional"
-          ? "rgba(255,255,255,0.48)"
-          : "rgba(255,255,255,0.84)",
+            ? "rgba(255,255,255,0.48)"
+            : "rgba(255,255,255,0.84)",
     }}
   >
     <span
@@ -153,8 +153,8 @@ const FeatureRow = ({ label, included, index }) => (
           included === false
             ? "rgba(255,70,70,0.65)"
             : included === "conditional"
-            ? "rgba(17,138,178,0.9)"
-            : "#22d3a5",
+              ? "rgba(17,138,178,0.9)"
+              : "#22d3a5",
       }}
     >
       {included === false ? <CrossIcon /> : <TickIcon />}
@@ -202,12 +202,13 @@ export const PricingCard = ({
   originalPrice,
   period = "/ month",
   inclusions,
+  inclusionsTitle,
   sections,
   isPopular = false,
   badgeText = "Best Seller",
   contactUrl = CONTACT_URL,
-  expanded,        // 👈 from parent
-  onToggle,        // 👈 from parent
+  expanded, // 👈 from parent
+  onToggle, // 👈 from parent
 }) => {
   const cardRef = useRef(null);
   const inView = useInView(cardRef, { once: true, margin: "-40px" });
@@ -217,7 +218,7 @@ export const PricingCard = ({
         (1 -
           parseFloat(currentPrice.replace("$", "")) /
             parseFloat(originalPrice.replace("$", ""))) *
-          100
+          100,
       )
     : null;
 
@@ -417,7 +418,7 @@ export const PricingCard = ({
           </Button>
         </motion.div>
 
-        <motion.div
+       {inclusions && inclusions.length > 0 && ( <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ delay: 0.2, duration: 0.38 }}
@@ -439,31 +440,27 @@ export const PricingCard = ({
               textTransform: "uppercase",
             }}
           >
-            Inclusions
+            {inclusionsTitle || "Inclusions"}{" "}
           </div>
-          {inclusions.map((item, i) => (
-            <div
-              key={i}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "7px",
-                fontSize: "12px",
-                color: "rgba(255,255,255,0.84)",
-                marginBottom: "4px",
-              }}
-            >
-              <span style={{ color: "#22d3a5", fontSize: "9px" }}>◆</span>{" "}
-              {item}
-            </div>
-          ))}
-        </motion.div>
+         {inclusions.map((item, i) => (
+  <div key={i} style={{ display: "flex", alignItems: "center", gap: "7px",
+    fontSize: "12px",
+    color: item.included === false ? "rgba(255,255,255,0.22)" : "rgba(255,255,255,0.84)",
+    marginBottom: "4px"
+  }}>
+    <span style={{ color: item.included === false ? "rgba(255,70,70,0.65)" : "#22d3a5" }}>
+      {item.included === false ? <CrossIcon /> : <TickIcon />}
+    </span>
+    {item.label}
+  </div>
+))}
+        </motion.div>)}
       </div>
 
       <div style={{ padding: "0 22px" }}>
-        <motion.button
+        {sections && sections.length > 0 && (<motion.button
           whileHover={{ color: "#fff" }}
-          onClick={onToggle}          // 👈 sirf yahi badla
+          onClick={onToggle} // 👈 sirf yahi badla
           style={{
             width: "100%",
             background: "none",
@@ -487,7 +484,7 @@ export const PricingCard = ({
           >
             ▼
           </motion.span>
-        </motion.button>
+        </motion.button>)}
 
         <AnimatePresence initial={false}>
           {expanded && (
@@ -563,13 +560,11 @@ export const PricingSection = ({
             style={{
               width: "50px",
               height: "3px",
-              background:
-                "linear-gradient(90deg,var(--blue-2),var(--blue-3))",
+              background: "linear-gradient(90deg,var(--blue-2),var(--blue-3))",
               margin: "0 auto 18px",
               borderRadius: "2px",
             }}
           />
-          
 
           <motion.p
             initial={{ opacity: 0, y: 8 }}
@@ -599,7 +594,11 @@ export const PricingSection = ({
           >
             {[
               { color: "#22d3a5", icon: "✓", label: "Included" },
-              { color: "rgba(255,70,70,0.8)", icon: "✗", label: "Not Included" },
+              {
+                color: "rgba(255,70,70,0.8)",
+                icon: "✗",
+                label: "Not Included",
+              },
               {
                 color: "rgba(17,138,178,0.95)",
                 icon: "✓",
@@ -649,8 +648,8 @@ export const PricingSection = ({
               <PricingCard
                 {...plan}
                 contactUrl={contactUrl}
-                expanded={allExpanded}                         
-                onToggle={() => setAllExpanded(!allExpanded)}  
+                expanded={allExpanded}
+                onToggle={() => setAllExpanded(!allExpanded)}
               />
             </motion.div>
           ))}
