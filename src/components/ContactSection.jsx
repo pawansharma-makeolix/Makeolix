@@ -315,7 +315,6 @@ const BusinessForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
  const handleSubmit = async (e) => {
   e.preventDefault();
-  console.log("FORM SUBMIT CLICKED"); // 👈 add
 
   try {
     const data = new FormData();
@@ -326,13 +325,13 @@ const BusinessForm = () => {
 
     
 
-    const res = await fetch("https://contact-backend-production-b1cb.up.railway.app/send-mail", {
+    const res = await fetch("https://contact-backend-khx3.onrender.com/", {
       method: "POST",
-      body: data, 
+      body: data, // ❌ no JSON headers
     });
-    console.log("RESPONSE:", res); // 👈 add
+
     const result = await res.json();
-    console.log("RESULT:", result); // 👈 add
+
     if (result.success) {
       setSubmitted(true);
       setTimeout(() => setSubmitted(false), 3000);
@@ -560,7 +559,7 @@ const CareerForm = () => {
       data.append("resume", resumeFile);
     }
 
-    const res = await fetch("https://contact-backend-production-b1cb.up.railway.app/send-mail", {
+    const res = await fetch("https://contact-backend-khx3.onrender.com/", {
       method: "POST",
       body: data, // ❌ NO headers
     });
