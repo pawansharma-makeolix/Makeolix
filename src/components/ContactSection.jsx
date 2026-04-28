@@ -325,7 +325,7 @@ const BusinessForm = () => {
 
     
 
-    const res = await fetch("https://contact-backend-khx3.onrender.com/", {
+    const res = await fetch("https://contact-backend-khx3.onrender.com/send-mail", {
       method: "POST",
       body: data, // ❌ no JSON headers
     });
@@ -559,7 +559,7 @@ const CareerForm = () => {
       data.append("resume", resumeFile);
     }
 
-    const res = await fetch("https://contact-backend-khx3.onrender.com/", {
+    const res = await fetch("https://contact-backend-khx3.onrender.com/send-mail", {
       method: "POST",
       body: data, // ❌ NO headers
     });
