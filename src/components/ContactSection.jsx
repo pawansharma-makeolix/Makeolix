@@ -318,7 +318,7 @@ const BusinessForm = () => {
 
   try {
     const data = new FormData();
-
+data.append("formType", "business");
     Object.entries(formData).forEach(([key, value]) => {
       data.append(key, value);
     });
@@ -550,7 +550,7 @@ const CareerForm = () => {
 
   try {
     const data = new FormData();
-
+data.append("formType", "career");
     Object.entries(formData).forEach(([key, value]) => {
       data.append(key, value);
     });
