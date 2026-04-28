@@ -325,9 +325,9 @@ const BusinessForm = () => {
 
     
 
-    const res = await fetch("http://localhost:5000/send-mail", {
+    const res = await fetch("https://your-app.up.railway.app/send-mail", {
       method: "POST",
-      body: data, // ❌ no JSON headers
+      body: data, 
     });
 
     const result = await res.json();
