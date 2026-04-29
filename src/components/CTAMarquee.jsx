@@ -153,7 +153,7 @@ export default function CTAMarquee() {
           </motion.p>
 
           <motion.div {...fadeUp(0.4)} className="flex gap-4">
-            <Button href={"/contact-us"}>Get In Touch</Button>
+            <Button href={"tel:+911204537874"}>Call Now</Button>
 
             <Button href={"/contact-us"} variant="outline">
               Contact Us

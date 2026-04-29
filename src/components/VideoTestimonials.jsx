@@ -7,6 +7,7 @@ const videos = [
   { id: 2, src: "/Videos/client2.webm" },
   { id: 3, src: "/Videos/client3.mp4" },
   { id: 4, src: "/Videos/client4.mp4" },
+  { id: 4, src: "/Videos/client5.mp4" },
 ];
 
 const VideoTestimonials = () => {

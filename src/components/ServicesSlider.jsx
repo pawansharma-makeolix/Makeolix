@@ -3,13 +3,12 @@ import { SparkleParticles } from "./SparkleParticles";
 import Button from "../components/Button";
 
 const services = [
-  { title: "Web Development", image: "/web-dev.jpg" },
-  { title: "Web Design", image: "/web-design.jpg" },
-  { title: "Performance Marketing", image: "/performance.jpg" },
-  { title: "Social Media Marketing", image: "/social.jpg" },
-  { title: "Local SEO Service", image: "/seo-local.jpg" },
-  { title: "Small Business Plan", image: "/business.jpg" },
-  { title: "SEO Reseller Service", image: "/seo.jpg" },
+   { title: "Web Development", image: "/web-dev.jpg", slug: "web-design-development" },
+  { title: "Performance Marketing", image: "/performance.jpg", slug: "performance-marketing" },
+  { title: "Social Media Marketing", image: "/social.jpg", slug: "social-media-marketing" },
+  { title: "Local SEO Service", image: "/seo-local.jpg", slug: "local-seo" },
+  { title: "E Commerce Development", image: "/business.jpg", slug: "ecommerce-develop" },
+  { title: "SEO", image: "/seo.jpg", slug: "seo" },
 ];
 
 const ServicesSlider = () => {
@@ -140,7 +139,7 @@ const ServicesSlider = () => {
                   {service.title}
                 </h3>
 
-                <Button variant="outline">Know More</Button>
+                <Button variant="outline" href={`/services/${service.slug}`}>Know More</Button>
               </div>
             </div>
           ))}

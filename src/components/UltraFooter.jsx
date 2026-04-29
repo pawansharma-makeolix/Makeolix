@@ -84,39 +84,64 @@ export default function UltraFooter() {
           </p>
 
           <div className="flex gap-4 mt-6">
-            {[FaFacebookF, FaInstagram, FaLinkedinIn].map((Icon, i) => (
-              <motion.a
-                key={i}
-                href="#"
-                whileHover={{ scale: 1.2, rotate: 8 }}
-                className="p-3 bg-(--bg-soft) rounded-full hover:bg-(--blue-2)"
-              >
-                <Icon size={16} />
-              </motion.a>
-            ))}
-          </div>
+  {[
+    { Icon: FaFacebookF, url: "https://www.facebook.com/makeolixconsulting" },
+    { Icon: FaInstagram, url: "https://www.instagram.com/makeolix_consulting" },
+    { Icon: FaLinkedinIn, url: "https://www.linkedin.com/company/makeolix-consulting-inc" }
+  ].map((social, i) => (
+    <motion.a
+      key={i}
+      href={social.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ scale: 1.2, rotate: 8 }}
+      className="p-3 bg-(--bg-soft) rounded-full hover:bg-(--blue-2)"
+    >
+      <social.Icon size={16} />
+    </motion.a>
+  ))}
+</div>
         </div>
 
-        <div>
-          <h4 className="mb-4 text-(--blue-2)">Our Company</h4>
-          <ul className="space-y-2 text-sm text-(--text-muted)">
-            {["Home","About Us","Case Studies","Blog","Contact Us"].map((item, i) => (
-              <motion.li key={i} whileHover={{ x: 6 }}>
-                <a href="#" className="hover:text-white">{item}</a>
-              </motion.li>
-            ))}
-          </ul>
-        </div>
+       <div>
+  <h4 className="mb-4 text-(--blue-2)">Our Company</h4>
+  <ul className="space-y-2 text-sm text-(--text-muted)">
+    {["Home", "About Us", "Contact Us"].map((item, i) => {
+      // Create the proper links based on the page name
+      const linkPaths = {
+        "Home": "/",
+        "About Us": "/about",
+        "Contact Us": "/contact-us"
+      };
+      return (
+        <motion.li key={i} whileHover={{ x: 6 }}>
+          <Link to={linkPaths[item]} className="hover:text-white">{item}</Link>
+        </motion.li>
+      );
+    })}
+  </ul>
+</div>
 
         <div>
           <h4 className="mb-4 text-(--blue-2)">Our Services</h4>
-          <ul className="space-y-2 text-sm text-(--text-muted)">
-            {["Web Design & Development","E-commerce SEO","Small Business","Social Media Management","Performance Marketing"].map((item, i) => (
-              <motion.li key={i} whileHover={{ x: 6 }}>
-                <a href="#" className="hover:text-white">{item}</a>
-              </motion.li>
-            ))}
-          </ul>
+            <ul className="space-y-2 text-sm text-(--text-muted)">
+    {["SEO", "Performance Marketing", "Website Design & Development","Local SEO Services","Ecommerce Development","Social Media Marketing"].map((item, i) => {
+      // Create the proper links based on the page name
+      const linkPaths = {
+        "SEO": "/services/seo",
+        "Performance Marketing": "/services/performance-marketing",
+        "Website Design & Development": "/services/website-design-development",
+        "Local SEO Services": "/services/local-seo",
+        "Ecommerce Development": "/services/ecommerce-develop",
+        "Social Media Marketing": "/services/social-media-marketing",
+      };
+      return (
+        <motion.li key={i} whileHover={{ x: 6 }}>
+          <Link to={linkPaths[item]} className="hover:text-white">{item}</Link>
+        </motion.li>
+      );
+    })}
+  </ul>
         </div>
 
         <div>

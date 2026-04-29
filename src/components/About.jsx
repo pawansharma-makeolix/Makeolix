@@ -35,7 +35,7 @@ const About = () => {
             heights in the digital space.
           </p>
 
-          <Button className="w-40" href={"/contact-us"}>
+          <Button className="w-40" href={"/about"}>
             Know More
           </Button>
         </motion.div>
