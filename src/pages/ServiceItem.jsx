@@ -14,10 +14,11 @@ import ServicesSection from "../components/ServicesSection";
 import StepsSection from "../components/StepsSection";
 import FeaturesSection from "../components/FeaturesSection";
 import MakeolixNumbers from "../components/MakeolixNumbers";
+import PageNotFound from "../components/PageNotFound";
 const ServiceItem = () => {
   const { slug } = useParams();
   const pageData = ServicesPagesData[slug];
-  if (!pageData) return <div>Page Not Found</div>;
+  if (!pageData) return <PageNotFound></PageNotFound>;
   return (
     <>
       <Navbar />

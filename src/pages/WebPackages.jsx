@@ -10,7 +10,7 @@ const WebPackages = () => {
 <Navbar></Navbar>
 <HeroOrbit 
 title={"Web Packages"}
-primaryBtnText={"Discuss Us"}
+primaryBtnText={"Discuss With Us"}
 primaryLink={"/contact-us"}
 secondaryBtnText={"Know More"}
 secondaryLink={"/about"}

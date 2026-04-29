@@ -12,7 +12,7 @@ const SmoPackages = () => {
   <Navbar></Navbar>
   <HeroOrbit 
   title={"Smo Packages"}
-  primaryBtnText={"Discuss Us"}
+  primaryBtnText={"Discuss With Us"}
   primaryLink={"/contact-us"}
   secondaryBtnText={"Know More"}
   secondaryLink={"/about"}
