@@ -375,6 +375,7 @@ const BusinessForm = () => {
             type="text"
             name="companyName"
             placeholder="Company Name"
+            required 
             value={formData.companyName}
             onChange={handleChange}
             {...fi("companyName")}
@@ -400,6 +401,7 @@ const BusinessForm = () => {
             {...fi("businessEmail")}
             className={`${sharedInput} pl-11 pr-4`}
             style={inputStyle}
+            required 
           />
         </FieldWrap>
 
@@ -420,11 +422,12 @@ const BusinessForm = () => {
             {...fi("phone")}
             className={`${sharedInput} pl-11 pr-4`}
             style={inputStyle}
+            required 
           />
         </FieldWrap>
 
         {/* Project Type */}
-        <FieldWrap focused={focused === "projectType"} className="col-span-2">
+        <FieldWrap focused={focused === "projectType"} required  className="col-span-2">
           <div
             className="absolute left-4 top-1/2 -translate-y-1/2"
             style={{ color: "#118ab2" }}
@@ -463,7 +466,7 @@ const BusinessForm = () => {
         </FieldWrap>
 
         {/* Budget */}
-        <FieldWrap focused={focused === "budget"} className="col-span-2">
+        <FieldWrap focused={focused === "budget"}  required  className="col-span-2">
           <select
             name="budget"
             value={formData.budget}
@@ -552,7 +555,7 @@ const CareerForm = () => {
   try {
     await emailjs.send(
       "service_p3tp9ng",
-      "template_l8bztmy",
+      "template_ya1c82d",
       {
         formType: "Career Application",
         title: "Career Application",
@@ -605,6 +608,7 @@ const CareerForm = () => {
             <User size={17} />
           </div>
           <input
+          required 
             type="text"
             name="fullName"
             placeholder="Full Name"
@@ -617,7 +621,7 @@ const CareerForm = () => {
         </FieldWrap>
 
         {/* Email */}
-        <FieldWrap focused={focused === "email"}>
+        <FieldWrap focused={focused === "email"} required  >
           <div
             className="absolute left-4 top-1/2 -translate-y-1/2"
             style={{ color: "#118ab2" }}
@@ -633,6 +637,7 @@ const CareerForm = () => {
             {...fi("email")}
             className={`${sharedInput} pl-11 pr-4`}
             style={inputStyle}
+            required 
           />
         </FieldWrap>
 
@@ -645,6 +650,7 @@ const CareerForm = () => {
             <Phone size={17} />
           </div>
           <input
+          required 
             type="tel"
             name="phone"
             placeholder="Phone Number"
@@ -671,6 +677,7 @@ const CareerForm = () => {
             {...fi("position")}
             className={`${sharedInput} pl-11 pr-10 appearance-none cursor-pointer`}
             style={selectStyle}
+            required 
           >
             <option value="" style={{ background: "#00171f" }}>
               Position You're Applying For
@@ -707,6 +714,7 @@ const CareerForm = () => {
             {...fi("experience")}
             className={`${sharedInput} px-4 pr-10 appearance-none cursor-pointer`}
             style={selectStyle}
+            required 
           >
             <option value="" style={{ background: "#00171f" }}>
               Experience
@@ -857,18 +865,26 @@ export default function ContactSection() {
       title: "Call Us",
       content: "+91 1204537874",
       sub: "Mon–Fri 10am–7pm EST",
+          href: "tel:+911204537874",
+          target:"_self"
+
     },
     {
       icon: <Mail size={18} />,
       title: "Email Us",
       content: "contactus@makeolix.com",
       sub: "Reply within 24 hrs",
+          href: "mailto:contactus@makeolix.com",
+          target: "_self"
+
     },
     {
       icon: <MapPin size={18} />,
       title: "Visit Us",
       content: "Suite G-02, H-143, H Block, Sector 63, Noida, Uttar Pradesh 201301",
       sub: "India , Uttar Pradesh",
+      href:"https://www.google.com/maps/dir//MakeOlix+Consulting,+Suite+G-02,+H-143,+H+Block,+Sector+63,+Noida,+Uttar+Pradesh+201301,+India/@45.580661,-122.3743919,7z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce507e86da249:0x5e0e183bceff14c!2m2!1d77.378339!2d28.625822?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D",
+      target: "_blank",
     },
   ];
 
@@ -1008,7 +1024,9 @@ export default function ContactSection() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               {contactInfo.map((info, i) => (
-                <motion.div
+                <motion.a
+                 href={info.href}
+                  target={info.target}
                   key={i}
                   className="flex flex-col items-center text-center p-4 rounded-2xl cursor-pointer group"
                   style={{
@@ -1073,7 +1091,7 @@ export default function ContactSection() {
                   >
                     <ArrowRight size={13} style={{ color: "#67e8f9" }} />
                   </motion.div>
-                </motion.div>
+                </motion.a>
               ))}
             </motion.div>
 
