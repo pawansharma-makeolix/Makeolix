@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import {
   Phone,
   Mail,
@@ -315,29 +316,30 @@ const BusinessForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
  const handleSubmit = async (e) => {
   e.preventDefault();
-
   try {
-    const data = new FormData();
-data.append("formType", "business");
-    Object.entries(formData).forEach(([key, value]) => {
-      data.append(key, value);
-    });
-
-    
-
-    const res = await fetch("https://contact-backend-khx3.onrender.com/send-mail", {
-      method: "POST",
-      body: data, // ❌ no JSON headers
-    });
-
-    const result = await res.json();
-
-    if (result.success) {
-      setSubmitted(true);
-      setTimeout(() => setSubmitted(false), 3000);
-    } else {
-      alert("Something went wrong");
-    }
+    await emailjs.send(
+      "service_p3tp9ng",
+      "template_klu87ui",
+      {
+        formType: "Business Inquiry",
+        title: "Business Inquiry",
+        companyName: formData.companyName,
+        businessEmail: formData.businessEmail,
+        phone: formData.phone,
+        projectType: formData.projectType,
+        budget: formData.budget,
+        message: formData.message,
+        // Career fields empty rakhenge
+        fullName: "-",
+        email: "-",
+        position: "-",
+        experience: "-",
+        portfolio: "-",
+      },
+      "N9vOPjvdCk7xDCUyX"
+    );
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 3000);
   } catch (err) {
     console.error(err);
     alert("Server error");
@@ -547,33 +549,33 @@ const CareerForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   const handleSubmit = async (e) => {
   e.preventDefault();
-
   try {
-    const data = new FormData();
-data.append("formType", "career");
-    Object.entries(formData).forEach(([key, value]) => {
-      data.append(key, value);
-    });
-
-    if (resumeFile) {
-      data.append("resume", resumeFile);
-    }
-
-    const res = await fetch("https://contact-backend-khx3.onrender.com/send-mail", {
-      method: "POST",
-      body: data, // ❌ NO headers
-    });
-
-    const result = await res.json();
-
-    if (result.success) {
-      setSubmitted(true);
-      setTimeout(() => setSubmitted(false), 3000);
-    } else {
-      alert("Failed");
-    }
+    await emailjs.send(
+      "service_p3tp9ng",
+      "template_klu87ui",
+      {
+        formType: "Career Application",
+        title: "Career Application",
+        fullName: formData.fullName,
+        email: formData.email,
+        phone: formData.phone,
+        position: formData.position,
+        experience: formData.experience,
+        portfolio: formData.portfolio,
+        message: formData.message,
+        // Business fields empty rakhenge
+        companyName: "-",
+        businessEmail: "-",
+        projectType: "-",
+        budget: "-",
+      },
+      "N9vOPjvdCk7xDCUyX"
+    );
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 3000);
   } catch (err) {
     console.error(err);
+    alert("Failed");
   }
 };
 
