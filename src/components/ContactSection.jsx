@@ -319,7 +319,7 @@ const BusinessForm = () => {
   try {
     await emailjs.send(
       "service_p3tp9ng",
-      "template_klu87ui",
+      "template_l8bztmy",
       {
         formType: "Business Inquiry",
         title: "Business Inquiry",
@@ -552,7 +552,7 @@ const CareerForm = () => {
   try {
     await emailjs.send(
       "service_p3tp9ng",
-      "template_klu87ui",
+      "template_l8bztmy",
       {
         formType: "Career Application",
         title: "Career Application",
