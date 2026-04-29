@@ -4,13 +4,13 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const awards = [
-  "./public/Achievement1.png",
-  "./public/Achievement2.jpg",
-  "./public/Achievement3.png",
-  "./public/Achievement4.png",
-  "./public/Achievement5.png",
-  "./public/Achievement6.png",
-  "./public/Achievement7.webp",
+  "/Achievement1.png",
+  "/Achievement2.jpg",
+  "/Achievement3.png",
+  "/Achievement4.png",
+  "/Achievement5.png",
+  "/Achievement6.png",
+  "/Achievement7.webp",
 ];
 
 const Achievements = () => {
