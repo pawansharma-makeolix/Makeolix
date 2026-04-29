@@ -325,7 +325,7 @@ data.append("formType", "business");
 
     
 
-    const res = await fetch("https://contact-backend-khx3.onrender.com/send-mail", {
+    const res = await fetch("https://contact-backend-production-7dbd.up.railway.app/send-mail", {
       method: "POST",
       body: data, // ❌ no JSON headers
     });
@@ -559,7 +559,7 @@ data.append("formType", "career");
       data.append("resume", resumeFile);
     }
 
-    const res = await fetch("https://contact-backend-khx3.onrender.com/send-mail", {
+    const res = await fetch("https://contact-backend-production-7dbd.up.railway.app/send-mail", {
       method: "POST",
       body: data, // ❌ NO headers
     });
