@@ -15,7 +15,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/laptop.jpg",
           align: "both",
           // LEFT
           title: "Drive Local Visibility and Business Growth with Expert SEO",
@@ -121,7 +121,7 @@ export const ServiceAreaPagesData = {
         type: "parallax2",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/indianacover.jpg",
           align: "both",
           // LEFT
           title: "Local Expertise with a Global Perspective",
@@ -216,7 +216,7 @@ export const ServiceAreaPagesData = {
           title: "A Growth-Focused SEO Agency in Phoenix",
           description:
             "At MakeOlix Consulting, we don’t believe in one-size-fits-all solutions. As a leading SEO Agency in Phoenix, we create tailored strategies based on your business goals, industry, and local competition. We bring over 15 years of experience delivering measurable success across cities like Denver and Austin. Just like our proven results with our Denver SEO solutions, we apply the same growth-driven mindset to Phoenix businesses, focusing on traffic, conversions, and revenue.",
-          image: "/Heroimage.jpg",
+          image: "/twomans.jpg",
         },
       },
       {
@@ -293,7 +293,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/seoagency.jpg",
           align: "left",
           // LEFT
           title: "Why MakeOlix is the Best SEO Services Company in Phoenix",
@@ -373,7 +373,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/losangeles.jpg",
           align: "left",
           // LEFT
           title:
@@ -431,7 +431,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/justin-morgan-nW16bzrcOCs-unsplash (1).jpg",
           align: "right",
           // LEFT
           rightTitle: "A Results-Driven SEO Approach That Fuels Growth",
@@ -542,7 +542,7 @@ export const ServiceAreaPagesData = {
           title: "Why Choose MakeOlix Consulting for SEO in New York?",
           description:
             "As a trusted SEO Agency in New York, MakeOlix Consulting focuses on delivering measurable results. Whether you're a startup, small business, or enterprise, our approach is tailored to your goals and market. We combine data-driven insights with industry expertise to position your business ahead of competitors. Known as a New York Top SEO Company, we prioritize long-term growth through ethical SEO practices, ensuring your brand builds credibility and trust online. Our client-first approach means we don’t just optimize your website, we build strategies that align with your business vision and customer needs.",
-          image: "/Heroimage.jpg",
+          image: "/newyorkskyline.jpg",
         },
       },
       {
@@ -585,7 +585,7 @@ export const ServiceAreaPagesData = {
         type: "parallax2",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/newyorkskyline2.jpg",
           align: "right",
           rightTitle: "SEO Solutions for Every Business Type",
           rightDescription:
@@ -639,7 +639,7 @@ export const ServiceAreaPagesData = {
           title: "Local SEO That Drives Real Customers",
           description:
             "If your business depends on local customers, our expertise as a New York Local SEO Agency ensures you appear where it matters most, in local search results. We optimize your Google Business Profile, build local citations, and create location-specific content that attracts nearby customers. Recognized for delivering the Best Local SEO in New York, our strategies help increase foot traffic, phone calls, and local inquiries. Whether you're a restaurant in Manhattan or a service provider in Brooklyn, we make sure your business is visible to the right audience at the right time.",
-          image: "/Heroimage.jpg",
+          image: "/business.jpg",
           reverse: true,
         },
       },
@@ -700,7 +700,7 @@ export const ServiceAreaPagesData = {
         type: "parallax2",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/carlos-muza-hpjSkU2UYSU-unsplash.jpg",
           align: "right",
           rightTitle: "Why Your San Diego Business Needs SEO Now",
           rightDescription:
@@ -754,7 +754,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/microsoft-copilot-ghVMdPN33vM-unsplash (1).jpg",
           align: "left",
           // LEFT
           title: "Why Choose MakeOlix Consulting",
@@ -806,7 +806,7 @@ export const ServiceAreaPagesData = {
         type: "parallax2",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/pexels-mikael-blomkvist-6476185 (1).jpg",
           align: "right",
           rightTitle: "Work with a Dedicated SEO Consultant",
           rightDescription:
@@ -884,7 +884,7 @@ export const ServiceAreaPagesData = {
         type: "parallax2",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/pexels-mikael-blomkvist-6476592 (1).jpg",
           align: "right",
           rightTitle:
             "Work with a Trusted SEO Consultant in Seattle for Better Rankings",
@@ -935,7 +935,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/sumup-KqiykWgHBtQ-unsplash (1).jpg",
           align: "left",
           // LEFT
           title: "Seattle Local SEO Agency to Boost Your Local Visibility",
@@ -990,7 +990,7 @@ export const ServiceAreaPagesData = {
           title: "Why Choose MakeOlix Consulting?",
           description:
             "SEO delivers the best results when it’s part of a complete digital strategy. At MakeOlix Consulting, we combine our experience as a Seattle Top SEO Company with the Best Digital Marketing Services in Seattle to help your business grow more effectively.From content marketing and website optimization to conversion-focused strategies, we create a seamless online experience that turns visitors into loyal customers. We also maintain a strong focus on transparency by providing regular updates on rankings, traffic, and conversions. Our goal goes beyond improving rankings, we focus on real business growth by helping you generate leads, increase sales, and build long-term success.",
-          image: "/Heroimage.jpg",
+          image: "/imagine-buddy-vsLbaIdhwaU-unsplash (1).jpg",
         },
       },
 
@@ -1050,7 +1050,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/pexels-cedric-fauntleroy-8154349 (1).jpg",
           align: "both",
           // LEFT
           title: "Why Your Boston Business Needs Digital Marketing Today",
@@ -1120,7 +1120,7 @@ export const ServiceAreaPagesData = {
         type: "parallax2",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/pexels-fauxels-3183179 (1).jpg",
           align: "both",
           // LEFT
           title: "Your Trusted SEO Agency in Boston",

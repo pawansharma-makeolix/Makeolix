@@ -8,13 +8,20 @@ import Button from "./Button";
 export default function UltraAnimatedHero({
   heading = "Grow Your Business with Powerful SEO",
   paragraph = "We help brands dominate search rankings, drive traffic, and convert visitors into customers.",
-  primaryBtn = { label: "Get Started", link: "#" },
-  secondaryBtn = { label: "Learn More", link: "#" },
+  primaryBtn = { label: "Get Started", link: "/contact-us" },
+  secondaryBtn = { label: "About Us", link: "/about" },
   images = [
-    { src: "Heroimage.jpg" },
-    { src: "Heroimage.jpg" },
-    { src: "Heroimage.jpg" },
-    { src: "Heroimage.jpg" },
+    { src: "dallas.jpg" },
+    { src: "houston.jpg" },
+    { src: "jacksonville.jpg" },
+    { src: "chicago.jpg" },
+    { src: "boston2.jpg" },
+    { src: "miami.jpg" },
+    { src: "philadelphia.jpg" },
+    { src: "phoenix.jpg" },
+    { src: "san antanio.jpg" },
+    { src: "seattle.jpg" },
+    { src: "indianapolis.jpg" },
   ],
 }) {
   const x = useMotionValue(0);
