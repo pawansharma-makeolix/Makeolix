@@ -1367,7 +1367,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/pexels-yankrukov-7793171 (1).jpg",
           align: "both",
           // LEFT
           title: "Why Dallas Businesses Choose MakeOlix Consulting",
@@ -1434,7 +1434,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/pexels-mikael-blomkvist-6476254.jpg",
           align: "both",
           // LEFT
           title: "Local SEO That Dominates Dallas Search Results",
@@ -1525,7 +1525,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/nisonco-pr-and-seo-yIRdUr6hIvQ-unsplash.jpg",
           align: "both",
           // LEFT
           title: "Why Houston Businesses Need a Strong SEO Strategy",
@@ -1591,7 +1591,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/myriam-jessier-eveI7MOcSmw-unsplash.jpg",
           align: "both",
           // LEFT
           title: "Local SEO That Drives Real Customers",
@@ -1684,7 +1684,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/pexels-yankrukov-7698822 (1).jpg",
           align: "both",
           // LEFT
           title: "Why MakeOlix Consulting is the Right SEO Partner",
@@ -1758,7 +1758,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/pexels-alphatradezone-5833786 (1).jpg",
           align: "both",
           // LEFT
           title:
@@ -1861,7 +1861,7 @@ export const ServiceAreaPagesData = {
             "Why MakeOlix Consulting is the Right Choice for Miami Businesses",
           description:
             "As a trusted SEO Agency in Miami, MakeOlix Consulting understands the local market dynamics, audience behavior, and competitive landscape. Miami has unique, diverse industries, fast-moving trends, and high competition, demanding smarter strategies. We don’t believe in one-size-fits-all solutions. Every campaign is customized based on your business goals, industry, and target audience. Whether you're a startup or an established brand, our team ensures your digital presence works as a growth engine. You can also explore our broader strategies through our E-commerce SEO services to see how we deliver results across E-commerce.",
-          image: "/Heroimage.jpg",
+          image: "/pexels-kindelmedia-7651801 (1).jpg",
         },
       },
 
@@ -1869,7 +1869,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/pexels-jack-sparrow-5917728 (1).jpg",
           align: "both",
           // LEFT
           title: "Data-Driven SEO Strategies That Deliver Real Results",
@@ -1942,7 +1942,7 @@ export const ServiceAreaPagesData = {
           title: "Final Thoughts",
           description:
             "In a competitive market like Miami, having an online presence is not enough, you need a strategy that converts. The right mix of SEO, local optimization, and digital marketing can transform how your business attracts and retains customers, especially when working with a trusted provider of SEO Services in Miami. With MakeOlix Consulting, you’re not just investing in marketing, you’re partnering with a team committed to delivering the best services. From increasing visibility to driving high-quality leads, every strategy is built for long-term success. If you're ready to boost traffic, improve conversions, and stay ahead of your competition, now is the time to take action.",
-          image: "/Heroimage.jpg",
+          image: "/blake-connally-gQvoSVg3Sf4-unsplash (1).jpg",
           reverse: true,
         },
       },

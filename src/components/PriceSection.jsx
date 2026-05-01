@@ -196,6 +196,17 @@ const GlowBorder = () => (
   />
 );
 
+// ─────────────────────────────────────────────────────────────
+// NEW PROPS (dono optional hain, default pehle jaisa hi rahega):
+//
+//   alwaysExpanded={true}
+//     → "View All Features" button hatao, sections seedha
+//        bahar dikho (collapsed/expand nahi hoga)
+//
+//   fullWidth={true}
+//     → Single card hone par bhi puri width le
+//        (multiple cards ho toh koi fark nahi padta)
+// ─────────────────────────────────────────────────────────────
 export const PricingCard = ({
   planName,
   currentPrice,
@@ -207,8 +218,10 @@ export const PricingCard = ({
   isPopular = false,
   badgeText = "Best Seller",
   contactUrl = CONTACT_URL,
-  expanded, // 👈 from parent
-  onToggle, // 👈 from parent
+  expanded,
+  onToggle,
+    visibleSections = [],
+  alwaysExpanded = false, // NEW — default: false (pehle jaisa)
 }) => {
   const cardRef = useRef(null);
   const inView = useInView(cardRef, { once: true, margin: "-40px" });
@@ -229,6 +242,10 @@ export const PricingCard = ({
       window.location.href = contactUrl;
     }
   };
+
+  // alwaysExpanded=true ho to: sections seedha dikho, button nahi
+  const showToggleButton = !alwaysExpanded && sections && sections.length > 0;
+  const sectionsVisible = alwaysExpanded || expanded;
 
   return (
     <motion.div
@@ -330,6 +347,25 @@ export const PricingCard = ({
         ))}
 
       <div style={{ padding: "20px 22px 0" }}>
+        {visibleSections.length > 0 && (
+  <div style={{ paddingBottom: "10px" }}>
+    {visibleSections.map((sec, si) => (
+      <div key={si}>
+        <SectionHeader>{sec.title}</SectionHeader>
+        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+          {sec.items.map((item, ii) => (
+            <FeatureRow
+              key={ii}
+              label={item.label}
+              included={item.included}
+              index={ii}
+            />
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+)}
         <motion.h2
           initial={{ opacity: 0, x: -14 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -418,114 +454,168 @@ export const PricingCard = ({
           </Button>
         </motion.div>
 
-       {inclusions && inclusions.length > 0 && ( <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={inView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ delay: 0.2, duration: 0.38 }}
-          style={{
-            background: "rgba(17,138,178,0.09)",
-            borderRadius: "12px",
-            padding: "12px 14px",
-            marginBottom: "6px",
-            border: "1px solid rgba(17,138,178,0.16)",
-          }}
-        >
-          <div
+        {inclusions && inclusions.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={inView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ delay: 0.2, duration: 0.38 }}
             style={{
-              fontSize: "9px",
-              fontWeight: 700,
-              color: "var(--blue-3)",
-              letterSpacing: "0.13em",
-              marginBottom: "8px",
-              textTransform: "uppercase",
+              background: "rgba(17,138,178,0.09)",
+              borderRadius: "12px",
+              padding: "12px 14px",
+              marginBottom: "6px",
+              border: "1px solid rgba(17,138,178,0.16)",
             }}
           >
-            {inclusionsTitle || "Inclusions"}{" "}
-          </div>
-         {inclusions.map((item, i) => (
-  <div key={i} style={{ display: "flex", alignItems: "center", gap: "7px",
-    fontSize: "12px",
-    color: item.included === false ? "rgba(255,255,255,0.22)" : "rgba(255,255,255,0.84)",
-    marginBottom: "4px"
-  }}>
-    <span style={{ color: item.included === false ? "rgba(255,70,70,0.65)" : "#22d3a5" }}>
-      {item.included === false ? <CrossIcon /> : <TickIcon />}
-    </span>
-    {item.label}
-  </div>
-))}
-        </motion.div>)}
+            <div
+              style={{
+                fontSize: "9px",
+                fontWeight: 700,
+                color: "var(--blue-3)",
+                letterSpacing: "0.13em",
+                marginBottom: "8px",
+                textTransform: "uppercase",
+              }}
+            >
+              {inclusionsTitle || "Inclusions"}
+            </div>
+            {inclusions.map((item, i) => (
+              <div
+                key={i}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "7px",
+                  fontSize: "12px",
+                  color:
+                    item.included === false
+                      ? "rgba(255,255,255,0.22)"
+                      : "rgba(255,255,255,0.84)",
+                  marginBottom: "4px",
+                }}
+              >
+                <span
+                  style={{
+                    color:
+                      item.included === false
+                        ? "rgba(255,70,70,0.65)"
+                        : "#22d3a5",
+                  }}
+                >
+                  {item.included === false ? <CrossIcon /> : <TickIcon />}
+                </span>
+                {item.label}
+              </div>
+            ))}
+          </motion.div>
+        )}
       </div>
 
       <div style={{ padding: "0 22px" }}>
-        {sections && sections.length > 0 && (<motion.button
-          whileHover={{ color: "#fff" }}
-          onClick={onToggle} // 👈 sirf yahi badla
-          style={{
-            width: "100%",
-            background: "none",
-            border: "none",
-            color: "var(--blue-3)",
-            cursor: "pointer",
-            fontSize: "11px",
-            fontWeight: 600,
-            padding: "10px 0",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "6px",
-            letterSpacing: "0.07em",
-          }}
-        >
-          {expanded ? "Hide" : "View All"} Features
-          <motion.span
-            animate={{ rotate: expanded ? 180 : 0 }}
-            transition={{ duration: 0.22 }}
+        {/* Toggle button — sirf tab dikhe jab alwaysExpanded=false ho */}
+        {showToggleButton && (
+          <motion.button
+            whileHover={{ color: "#fff" }}
+            onClick={onToggle}
+            style={{
+              width: "100%",
+              background: "none",
+              border: "none",
+              color: "var(--blue-3)",
+              cursor: "pointer",
+              fontSize: "11px",
+              fontWeight: 600,
+              padding: "10px 0",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "6px",
+              letterSpacing: "0.07em",
+            }}
           >
-            ▼
-          </motion.span>
-        </motion.button>)}
-
-        <AnimatePresence initial={false}>
-          {expanded && (
-            <motion.div
-              key="feats"
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.38, ease: [0.4, 0, 0.2, 1] }}
-              style={{ overflow: "hidden" }}
+            {expanded ? "Hide" : "View All"} Features
+            <motion.span
+              animate={{ rotate: expanded ? 180 : 0 }}
+              transition={{ duration: 0.22 }}
             >
-              {sections.map((sec, si) => (
-                <div key={si}>
-                  <SectionHeader>{sec.title}</SectionHeader>
-                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                    {sec.items.map((item, ii) => (
-                      <FeatureRow
-                        key={ii}
-                        label={item.label}
-                        included={item.included}
-                        index={ii}
-                      />
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </motion.div>
-          )}
-        </AnimatePresence>
+              ▼
+            </motion.span>
+          </motion.button>
+        )}
+
+        {/* alwaysExpanded=true → seedha sections dikho bina animation ke */}
+        {alwaysExpanded && sections && sections.length > 0 && (
+          <div style={{ paddingBottom: "16px" }}>
+            {sections.map((sec, si) => (
+              <div key={si}>
+                <SectionHeader>{sec.title}</SectionHeader>
+                <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                  {sec.items.map((item, ii) => (
+                    <FeatureRow
+                      key={ii}
+                      label={item.label}
+                      included={item.included}
+                      index={ii}
+                    />
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Normal toggle behavior — sirf tab jab alwaysExpanded=false */}
+        {!alwaysExpanded && (
+          <AnimatePresence initial={false}>
+            {expanded && (
+              <motion.div
+                key="feats"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.38, ease: [0.4, 0, 0.2, 1] }}
+                style={{ overflow: "hidden" }}
+              >
+                {sections.map((sec, si) => (
+                  <div key={si}>
+                    <SectionHeader>{sec.title}</SectionHeader>
+                    <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                      {sec.items.map((item, ii) => (
+                        <FeatureRow
+                          key={ii}
+                          label={item.label}
+                          included={item.included}
+                          index={ii}
+                        />
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        )}
       </div>
     </motion.div>
   );
 };
 
+// ─────────────────────────────────────────────────────────────
+// NEW PROP:
+//   fullWidth={true}
+//     → Agar sirf 1 card ho (ya intentionally chahiye ho) to
+//        card puri row ki width lega, bich mein nahi aayega.
+//        Default: false (pehle jaisa — centered with maxWidth)
+// ─────────────────────────────────────────────────────────────
 export const PricingSection = ({
   plans,
   subtitle,
   showBg = true,
   contactUrl,
+  fullWidth = false,    // NEW
+  alwaysExpanded = false, // NEW — sab cards pe apply hoga
 }) => {
-  const [allExpanded, setAllExpanded] = useState(false); // 👈 shared state
+  const [allExpanded, setAllExpanded] = useState(false);
 
   return (
     <div
@@ -594,11 +684,7 @@ export const PricingSection = ({
           >
             {[
               { color: "#22d3a5", icon: "✓", label: "Included" },
-              {
-                color: "rgba(255,70,70,0.8)",
-                icon: "✗",
-                label: "Not Included",
-              },
+              { color: "rgba(255,70,70,0.8)", icon: "✗", label: "Not Included" },
               {
                 color: "rgba(17,138,178,0.95)",
                 icon: "✓",
@@ -643,13 +729,28 @@ export const PricingSection = ({
                 type: "spring",
                 stiffness: 78,
               }}
-              style={{ flex: "1 1 260px", maxWidth: "310px" }}
+              style={
+                fullWidth
+                  ? {
+                      // fullWidth=true → puri width lo, maxWidth hatao
+                      flex: "1 1 100%",
+                      maxWidth: "100%",
+                    }
+                  : {
+                      // Default → pehle jaisa
+                      flex: "1 1 260px",
+                      maxWidth: "310px",
+                    }
+              }
             >
               <PricingCard
                 {...plan}
                 contactUrl={contactUrl}
                 expanded={allExpanded}
                 onToggle={() => setAllExpanded(!allExpanded)}
+                alwaysExpanded={alwaysExpanded}
+                // fullWidth card ke andar bhi maxWidth hata do
+                {...(fullWidth ? { style: { maxWidth: "100%" } } : {})}
               />
             </motion.div>
           ))}

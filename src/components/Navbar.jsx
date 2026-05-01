@@ -19,22 +19,28 @@ const navItems = [
         href: "/services/seo",
         items: [
           { label: "Ecommerce SEO Service", href: "/services/ecommerce-seo" },
+          { label: "Local SEO Service", href: "/services/local-seo" },
+          {
+            label: "AEO+GEO SEO/AISEO",
+            href: "/services/aeo-geo-seo",
+            isActive: false,
+          },
           { label: "Technical SEO Service", href: "/services/technical-seo" },
+          {
+            label: "Link Building SEO Service",
+            href: "/services/link-building",
+            isActive: false,
+          },
+          {
+            label: "App Store SEO Optimization",
+            href: "/services/app-store-seo",
+            isActive: false,
+          },
+          { label: "SEO Reseller Service", href: "/services/seo-reseller" },
           {
             label: "White Label SEO Service",
             href: "/services/white-label-seo",
           },
-          { label: "AEO+GEO SEO/AISEO", href: "/services/aeo-geo-seo" },
-          {
-            label: "Link Building SEO Service",
-            href: "/services/link-building",
-          },
-          { label: "Local SEO Service", href: "/services/local-seo" },
-          {
-            label: "App Store SEO Optimization",
-            href: "/services/app-store-seo",
-          },
-          { label: "SEO Reseller Service", href: "/services/seo-reseller" },
         ],
       },
       {
@@ -44,7 +50,6 @@ const navItems = [
         items: [
           { label: "PPC Ads", href: "/services/ppc-ads" },
           { label: "Meta Ads", href: "/services/meta-ads" },
-          { label: "Instagram Ads", href: "/services/instagram-ads" },
         ],
       },
       {
@@ -53,10 +58,26 @@ const navItems = [
 
         items: [
           { label: "WordPress Development", href: "/services/wordpress-dev" },
-          { label: "React Development", href: "/services/react-dev" },
-          { label: "Custom Website Design", href: "/services/custom-design" },
-          { label: "Website Redesign Services", href: "/services/redesign" },
-          { label: "PHP Development", href: "/services/php-dev" },
+          {
+            label: "React Development",
+            href: "/services/react-dev",
+            isActive: false,
+          },
+          {
+            label: "Custom Website Design",
+            href: "/services/custom-design",
+            isActive: false,
+          },
+          {
+            label: "Website Redesign Services",
+            href: "/services/redesign",
+            isActive: false,
+          },
+          {
+            label: "PHP Development",
+            href: "/services/php-dev",
+            isActive: false,
+          },
         ],
       },
       {
@@ -68,6 +89,7 @@ const navItems = [
           {
             label: "Google My Business Optimization",
             href: "/services/gmb-optimization",
+            isActive: false,
           },
         ],
       },
@@ -78,7 +100,11 @@ const navItems = [
 
         items: [
           { label: "Shopify Development", href: "/services/shopify" },
-          { label: "WooCommerce Development", href: "/services/woocommerce" },
+          {
+            label: "WooCommerce Development",
+            href: "/services/woocommerce",
+            isActive: false,
+          },
         ],
       },
       {
@@ -92,6 +118,7 @@ const navItems = [
       },
     ],
   },
+  { name: "MM79", href: "/mm79" },
   {
     name: "Industry",
     href: "/industry",
@@ -426,64 +453,70 @@ export default function Navbar() {
 
           {/* DESKTOP MENU */}
           <div className="hidden lg:flex gap-0.5 items-center">
-            {navItems.map((item, i) => (
-              <div
-                key={i}
-                onMouseEnter={() => handleMouseEnter(i)}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Link
-                  to={item.href}
-                  className="nav-font"
-                  style={{
-                    position: "relative",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "6px",
-                    padding: "10px 16px",
-                    borderRadius: "12px",
-                    fontSize: "14px",
-                    fontWeight: 700,
-                    color: activeMenu === i ? "#00509d" : "#003863",
-                    textDecoration: "none",
-                    background:
-                      activeMenu === i ? "rgba(0,80,157,0.06)" : "transparent",
-                    transition: "all 0.2s",
-                  }}
+            {navItems
+              .filter((item) => item.isActive !== false)
+              .map((item, i) => (
+                <div
+                  key={i}
+                  onMouseEnter={() => handleMouseEnter(i)}
+                  onMouseLeave={handleMouseLeave}
                 >
-                  {item.name}
-                  {item.mega && (
-                    <span
-                      style={{
-                        color: "#00509d",
-                        opacity: 0.65,
-                        display: "flex",
-                        alignItems: "center",
-                        transition: "transform 0.25s ease",
-                        transform:
-                          activeMenu === i ? "rotate(180deg)" : "rotate(0deg)",
-                      }}
-                    >
-                      <FaChevronDown size={10} />
-                    </span>
-                  )}
-                  {activeMenu === i && (
-                    <span
-                      style={{
-                        position: "absolute",
-                        bottom: "4px",
-                        left: "16px",
-                        right: "16px",
-                        height: "2px",
-                        borderRadius: "999px",
-                        background:
-                          "linear-gradient(90deg,#003863,#00509d,#118ab2)",
-                      }}
-                    />
-                  )}
-                </Link>
-              </div>
-            ))}
+                  <Link
+                    to={item.href}
+                    className="nav-font"
+                    style={{
+                      position: "relative",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "6px",
+                      padding: "10px 16px",
+                      borderRadius: "12px",
+                      fontSize: "14px",
+                      fontWeight: 700,
+                      color: activeMenu === i ? "#00509d" : "#003863",
+                      textDecoration: "none",
+                      background:
+                        activeMenu === i
+                          ? "rgba(0,80,157,0.06)"
+                          : "transparent",
+                      transition: "all 0.2s",
+                    }}
+                  >
+                    {item.name}
+                    {item.mega && (
+                      <span
+                        style={{
+                          color: "#00509d",
+                          opacity: 0.65,
+                          display: "flex",
+                          alignItems: "center",
+                          transition: "transform 0.25s ease",
+                          transform:
+                            activeMenu === i
+                              ? "rotate(180deg)"
+                              : "rotate(0deg)",
+                        }}
+                      >
+                        <FaChevronDown size={10} />
+                      </span>
+                    )}
+                    {activeMenu === i && (
+                      <span
+                        style={{
+                          position: "absolute",
+                          bottom: "4px",
+                          left: "16px",
+                          right: "16px",
+                          height: "2px",
+                          borderRadius: "999px",
+                          background:
+                            "linear-gradient(90deg,#003863,#00509d,#118ab2)",
+                        }}
+                      />
+                    )}
+                  </Link>
+                </div>
+              ))}
           </div>
 
           {/* CTA */}
@@ -619,18 +652,6 @@ export default function Navbar() {
                   >
                     {activeMegaItem.groups ? "Our Services" : "Our Packages"}
                   </p>
-                  <Link
-                    to={activeMegaItem.href}
-                    className="nav-font"
-                    style={{
-                      fontSize: "12px",
-                      fontWeight: 700,
-                      color: "#118ab2",
-                      textDecoration: "none",
-                    }}
-                  >
-                    View all →
-                  </Link>
                 </div>
 
                 {/* ── SERVICES: grouped layout ── */}
@@ -694,15 +715,17 @@ export default function Navbar() {
                         <div
                           style={{ display: "flex", flexDirection: "column" }}
                         >
-                          {group.items.map((item, ii) => (
-                            <Link
-                              key={ii}
-                              to={item.href}
-                              className="mega-sublink"
-                            >
-                              {item.label}
-                            </Link>
-                          ))}
+                          {group.items
+                            .filter((item) => item.isActive !== false)
+                            .map((item, ii) => (
+                              <Link
+                                key={ii}
+                                to={item.href}
+                                className="mega-sublink"
+                              >
+                                {item.label}
+                              </Link>
+                            ))}
                         </div>
                       </motion.div>
                     ))}
@@ -878,201 +901,214 @@ export default function Navbar() {
               </div>
 
               <div style={{ flex: 1, overflowY: "auto", padding: "16px" }}>
-                {navItems.map((item, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, x: 24 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{
-                      delay: i * 0.055,
-                      duration: 0.32,
-                      ease: [0.22, 1, 0.36, 1],
-                    }}
-                  >
-                    {item.submenu || item.groups ? (
-                      <div style={{ marginBottom: "4px" }}>
-                        <button
-                          onClick={() =>
-                            setMobileExpanded(mobileExpanded === i ? null : i)
-                          }
-                          className="nav-font"
-                          style={{
-                            width: "100%",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "space-between",
-                            padding: "12px 16px",
-                            borderRadius: "16px",
-                            fontWeight: 700,
-                            color: "#003863",
-                            background:
-                              mobileExpanded === i
-                                ? "rgba(0,80,157,0.06)"
-                                : "transparent",
-                            border: "none",
-                            cursor: "pointer",
-                          }}
-                        >
-                          <span>{item.name}</span>
-                          <motion.span
-                            animate={{ rotate: mobileExpanded === i ? 180 : 0 }}
-                            transition={{ duration: 0.22 }}
-                            style={{ color: "#00509d", opacity: 0.7 }}
+                {navItems
+                  .filter((item) => item.isActive !== false)
+                  .map((item, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, x: 24 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{
+                        delay: i * 0.055,
+                        duration: 0.32,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}
+                    >
+                      {item.submenu || item.groups ? (
+                        <div style={{ marginBottom: "4px" }}>
+                          <button
+                            onClick={() =>
+                              setMobileExpanded(mobileExpanded === i ? null : i)
+                            }
+                            className="nav-font"
+                            style={{
+                              width: "100%",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "space-between",
+                              padding: "12px 16px",
+                              borderRadius: "16px",
+                              fontWeight: 700,
+                              color: "#003863",
+                              background:
+                                mobileExpanded === i
+                                  ? "rgba(0,80,157,0.06)"
+                                  : "transparent",
+                              border: "none",
+                              cursor: "pointer",
+                            }}
                           >
-                            <FaChevronDown size={12} />
-                          </motion.span>
-                        </button>
-                        <AnimatePresence>
-                          {mobileExpanded === i && (
-                            <motion.div
-                              initial={{ height: 0, opacity: 0 }}
-                              animate={{ height: "auto", opacity: 1 }}
-                              exit={{ height: 0, opacity: 0 }}
-                              transition={{ duration: 0.28, ease: "easeInOut" }}
-                              style={{ overflow: "hidden" }}
+                            <span>{item.name}</span>
+                            <motion.span
+                              animate={{
+                                rotate: mobileExpanded === i ? 180 : 0,
+                              }}
+                              transition={{ duration: 0.22 }}
+                              style={{ color: "#00509d", opacity: 0.7 }}
                             >
-                              {/* Services grouped */}
-                              {item.groups && (
-                                <div
-                                  style={{
-                                    marginLeft: "12px",
-                                    marginTop: "4px",
-                                    paddingBottom: "8px",
-                                  }}
-                                >
-                                  {item.groups.map((group, gi) => (
-                                    <div
-                                      key={gi}
-                                      style={{ marginBottom: "12px" }}
-                                    >
-                                      <p
-                                        className="nav-font"
-                                        style={{
-                                          fontSize: "11px",
-                                          fontWeight: 700,
-                                          color: "#00509d",
-                                          textTransform: "uppercase",
-                                          letterSpacing: "0.08em",
-                                          padding: "4px 16px 6px",
-                                          opacity: 0.7,
-                                        }}
+                              <FaChevronDown size={12} />
+                            </motion.span>
+                          </button>
+                          <AnimatePresence>
+                            {mobileExpanded === i && (
+                              <motion.div
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: "auto", opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{
+                                  duration: 0.28,
+                                  ease: "easeInOut",
+                                }}
+                                style={{ overflow: "hidden" }}
+                              >
+                                {/* Services grouped */}
+                                {item.groups && (
+                                  <div
+                                    style={{
+                                      marginLeft: "12px",
+                                      marginTop: "4px",
+                                      paddingBottom: "8px",
+                                    }}
+                                  >
+                                    {item.groups.map((group, gi) => (
+                                      <div
+                                        key={gi}
+                                        style={{ marginBottom: "12px" }}
                                       >
-                                        {group.icon} {group.heading}
-                                      </p>
-                                      {group.items.map((sub, si) => (
-                                        <Link
-                                          key={si}
-                                          to={sub.href}
-                                          onClick={() => setMobileOpen(false)}
+                                        <p
+                                          className="nav-font"
                                           style={{
-                                            display: "flex",
-                                            alignItems: "center",
-                                            gap: "8px",
-                                            padding: "8px 16px",
-                                            textDecoration: "none",
-                                            borderRadius: "10px",
+                                            fontSize: "11px",
+                                            fontWeight: 700,
+                                            color: "#00509d",
+                                            textTransform: "uppercase",
+                                            letterSpacing: "0.08em",
+                                            padding: "4px 16px 6px",
+                                            opacity: 0.7,
                                           }}
                                         >
-                                          <span
-                                            style={{
-                                              fontSize: "7px",
-                                              color: "#00509d",
-                                            }}
-                                          >
-                                            ▶
-                                          </span>
-                                          <span
-                                            className="nav-font"
-                                            style={{
-                                              fontSize: "13px",
-                                              fontWeight: 500,
-                                              color: "#374151",
-                                            }}
-                                          >
-                                            {sub.label}
-                                          </span>
-                                        </Link>
-                                      ))}
-                                    </div>
-                                  ))}
-                                </div>
-                              )}
-                              {/* Pricing simple */}
-                              {item.submenu && (
-                                <div
-                                  style={{
-                                    marginLeft: "12px",
-                                    marginTop: "4px",
-                                    paddingBottom: "8px",
-                                  }}
-                                >
-                                  {item.submenu.map((sub, j) => (
-                                    <Link
-                                      key={j}
-                                      to={sub.href}
-                                      onClick={() => setMobileOpen(false)}
-                                      style={{
-                                        display: "flex",
-                                        alignItems: "center",
-                                        gap: "8px",
-                                        padding: "10px 16px",
-                                        textDecoration: "none",
-                                      }}
-                                    >
-                                      <div
+                                          {group.icon} {group.heading}
+                                        </p>
+                                        {group.items
+                                          .filter(
+                                            (item) => item.isActive !== false,
+                                          )
+                                          .map((item, ii) => (
+                                            <Link
+                                              key={si}
+                                              to={sub.href}
+                                              onClick={() =>
+                                                setMobileOpen(false)
+                                              }
+                                              style={{
+                                                display: "flex",
+                                                alignItems: "center",
+                                                gap: "8px",
+                                                padding: "8px 16px",
+                                                textDecoration: "none",
+                                                borderRadius: "10px",
+                                              }}
+                                            >
+                                              <span
+                                                style={{
+                                                  fontSize: "7px",
+                                                  color: "#00509d",
+                                                }}
+                                              >
+                                                ▶
+                                              </span>
+                                              <span
+                                                className="nav-font"
+                                                style={{
+                                                  fontSize: "13px",
+                                                  fontWeight: 500,
+                                                  color: "#374151",
+                                                }}
+                                              >
+                                                {sub.label}
+                                              </span>
+                                            </Link>
+                                          ))}
+                                      </div>
+                                    ))}
+                                  </div>
+                                )}
+                                {/* Pricing simple */}
+                                {item.submenu && (
+                                  <div
+                                    style={{
+                                      marginLeft: "12px",
+                                      marginTop: "4px",
+                                      paddingBottom: "8px",
+                                    }}
+                                  >
+                                    {item.submenu.map((sub, j) => (
+                                      <Link
+                                        key={j}
+                                        to={sub.href}
+                                        onClick={() => setMobileOpen(false)}
                                         style={{
-                                          width: "32px",
-                                          height: "32px",
-                                          borderRadius: "8px",
-                                          flexShrink: 0,
-                                          background: "rgba(0,80,157,0.08)",
                                           display: "flex",
                                           alignItems: "center",
-                                          justifyContent: "center",
+                                          gap: "8px",
+                                          padding: "10px 16px",
+                                          textDecoration: "none",
                                         }}
                                       >
-                                        <MenuIcon size={16} />
-                                      </div>
-                                      <p
-                                        className="nav-font"
-                                        style={{
-                                          fontSize: "13px",
-                                          fontWeight: 700,
-                                          color: "#003863",
-                                        }}
-                                      >
-                                        {sub.label}
-                                      </p>
-                                    </Link>
-                                  ))}
-                                </div>
-                              )}
-                            </motion.div>
-                          )}
-                        </AnimatePresence>
-                      </div>
-                    ) : (
-                      <div
-                        style={{ borderRadius: "16px", marginBottom: "4px" }}
-                      >
-                        <Link
-                          to={item.href}
-                          onClick={() => setMobileOpen(false)}
-                          className="nav-font"
-                          style={{
-                            display: "flex",
-                            padding: "12px 16px",
-                            fontWeight: 700,
-                            color: "#003863",
-                            textDecoration: "none",
-                          }}
+                                        <div
+                                          style={{
+                                            width: "32px",
+                                            height: "32px",
+                                            borderRadius: "8px",
+                                            flexShrink: 0,
+                                            background: "rgba(0,80,157,0.08)",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                          }}
+                                        >
+                                          <MenuIcon size={16} />
+                                        </div>
+                                        <p
+                                          className="nav-font"
+                                          style={{
+                                            fontSize: "13px",
+                                            fontWeight: 700,
+                                            color: "#003863",
+                                          }}
+                                        >
+                                          {sub.label}
+                                        </p>
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                        </div>
+                      ) : (
+                        <div
+                          style={{ borderRadius: "16px", marginBottom: "4px" }}
                         >
-                          {item.name}
-                        </Link>
-                      </div>
-                    )}
-                  </motion.div>
-                ))}
+                          <Link
+                            to={item.href}
+                            onClick={() => setMobileOpen(false)}
+                            className="nav-font"
+                            style={{
+                              display: "flex",
+                              padding: "12px 16px",
+                              fontWeight: 700,
+                              color: "#003863",
+                              textDecoration: "none",
+                            }}
+                          >
+                            {item.name}
+                          </Link>
+                        </div>
+                      )}
+                    </motion.div>
+                  ))}
               </div>
 
               <div

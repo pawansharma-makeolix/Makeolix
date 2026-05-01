@@ -12,6 +12,7 @@ import ServiceItem from "./pages/ServiceItem";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About"; // About Page
 import Services from "./pages/Services"; // Services Page
+import MM79 from "./pages/MM79";
 function App() {
   return (
     <Router>
@@ -26,16 +27,14 @@ function App() {
         <Route path="/pricing/smo" element={<SmoPackages />} />
         <Route path="/pricing/web" element={<WebPackages />} />
         <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/testimonials" element={<Testimonials/>} />
-       
-      <Route path="/:city" element={<CountryPage />} />
-      <Route path="/services/:slug" element={<ServiceItem />} />
+        <Route path="/mm79" element={<MM79 />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+
+        <Route path="/:city" element={<CountryPage />} />
+        <Route path="/services/:slug" element={<ServiceItem />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
-
-
-

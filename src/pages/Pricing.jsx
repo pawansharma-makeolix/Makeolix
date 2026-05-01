@@ -6,7 +6,7 @@ import UltraFooter from '../components/UltraFooter';
 const Pricing = () => {
   return (
 <>
-
+<Navbar></Navbar>
 </>
   )
 }
