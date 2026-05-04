@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const pricingData = {
   title: "PRICING",
-  price: "$700",
+  price: "$1000",
   sections: [
     {
       id: "initial",

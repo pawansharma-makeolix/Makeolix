@@ -23,7 +23,7 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
   const isLong = testimonial.text.length > 120;
 
   const x = (cardSize / 1.5) * position;
-  const y = isCenter ? -65 : position % 2 !== 0 ? 15 : -15;
+  const y = isCenter ? 0 : position % 2 !== 0 ? 15 : -15;  // ✅ 0 — no upward shift
   const rotate = isCenter ? 0 : position % 2 !== 0 ? 2.5 : -2.5;
   const scale = isCenter ? 1 : Math.max(0.85 - absPos * 0.07, 0.62);
   const opacity = isCenter ? 1 : Math.max(0.95 - absPos * 0.18, 0.3);
@@ -39,7 +39,7 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
       style={{
         position: "absolute",
         left: "50%",
-        top: "50%",
+        top: "50%",           // ✅ 50% — center
         translateX: "-50%",
         translateY: "-50%",
         width: cardSize,
@@ -100,11 +100,9 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
         </div>
       </div>
 
-      {/* Text */}
       <div
-        className={` transition-all duration-350 ease-in-out text-[14.5px] leading-[1.7] overflow-hidden
+        className={`transition-all duration-350 ease-in-out text-[14.5px] leading-[1.7] overflow-hidden
           ${isCenter ? "text-[rgba(232,244,248,0.88)]" : "text-(--text-muted)"}`}
-        // webkit line-clamp cannot be expressed in Tailwind without plugin
         style={{
           display: expanded ? "block" : "-webkit-box",
           WebkitBoxOrient: "vertical",
@@ -113,6 +111,7 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
       >
         &ldquo;{testimonial.text}&rdquo;
       </div>
+
       {isLong && (
         <motion.button
           whileHover={{ scale: 1.04 }}
@@ -129,7 +128,6 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
         </motion.button>
       )}
 
-      {/* Author */}
       <div
         className={`mt-auto pt-3 border-t
           ${isCenter ? "border-[rgba(255,255,255,0.1)]" : "border-[rgba(0,80,157,0.18)]"}`}
@@ -151,7 +149,6 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
   );
 }
 
-// ─── MAIN COMPONENT ───────────────────────────────────────────────────────────
 export function StaggerTestimonials({ data }) {
   const isMobile = useIsMobile();
   const cardSize = isMobile ? 260 : 340;
@@ -188,8 +185,7 @@ export function StaggerTestimonials({ data }) {
 
   return (
     <>
-      <div className="w-full flex flex-col items-center justify-center px-4 pt-12 pb-14 relative overflow-hidden min-h-155 bg-(--bg-main)">
-        {/* Background ambient glows — radial-gradient requires style */}
+      <div className="w-full flex flex-col items-center justify-center px-4 pt-12 pb-14 relative overflow-visible min-h-155 bg-(--bg-main)">
         <div
           className="absolute top-[10%] left-[15%] w-80 h-80 rounded-full pointer-events-none"
           style={{
@@ -205,13 +201,9 @@ export function StaggerTestimonials({ data }) {
           }}
         />
 
-        {/* Header */}
         <div className="ts-label text-center mb-10 z-10">
-            <h2
-            className="text-4xl md:text-4xl font-semibold text-white"
-   
-          >
-          Testimonials
+          <h2 className="text-4xl md:text-4xl font-semibold text-white">
+            Testimonials
           </h2>
           <h2
             className={`ts-shimmer-text font-normal m-0 leading-tight ${
@@ -220,7 +212,6 @@ export function StaggerTestimonials({ data }) {
           >
             Loved by teams worldwide
           </h2>
-          {/* linear-gradient requires style */}
           <div
             className="w-12 h-0.75 rounded-sm mx-auto mt-3.5"
             style={{
@@ -230,10 +221,10 @@ export function StaggerTestimonials({ data }) {
           />
         </div>
 
-        {/* Cards stage — height is JS-computed */}
+        {/* ✅ overflow-visible, no paddingTop, height fixed */}
         <div
-          className="relative w-full z-10"
-          style={{ height: isMobile ? 340 : 400 }}
+          className="relative w-full z-10 overflow-visible"
+          style={{ height: isMobile ? 380 : 460 }}
         >
           {list.map((t, index) => {
             const position =
@@ -252,7 +243,6 @@ export function StaggerTestimonials({ data }) {
           })}
         </div>
 
-        {/* Controls */}
         <div className="flex items-center gap-4 mt-8 z-10">
           <button
             className="ts-btn"
@@ -290,4 +280,4 @@ export function StaggerTestimonials({ data }) {
   );
 }
 
-export default StaggerTestimonials;
+export default StaggerTestimonials

@@ -145,22 +145,21 @@ const Hero = () => {
         }}
       >
         <h1 className="text-4xl md:text-5xl font-regular leading-tight mb-6">
-          We are Makeolix
+          We are MAKEOLIX
           <br />
           We do{" "}
           <span className="bg-linear-to-r from-white to-[#118ab2] bg-clip-text text-transparent">
             <TypeAnimation
               sequence={[
-                "SEO Reseller Service",
+                "We are building brands across the GLOBE",
                 2000,
-                "Web Development",
+                 "We are building brands across the GLOBE",
                 2000,
-                "Web Design",
+                 "We are building brands across the GLOBE",
                 2000,
-                "Small Business Planning",
+                 "We are building brands across the GLOBE",
                 2000,
-                "Social Media Marketing",
-                2000,
+                
               ]}
               speed={50}
               repeat={Infinity}

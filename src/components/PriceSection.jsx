@@ -267,7 +267,7 @@ export const PricingCard = ({
           : "1px solid rgba(17,138,178,0.16)",
         borderRadius: "22px",
         width: "100%",
-        maxWidth: "1000px",
+        maxWidth: "450px",
         display: "flex",
         flexDirection: "column",
         boxShadow: isPopular
@@ -746,7 +746,7 @@ export const PricingSection = ({
                   : {
                       // Default → pehle jaisa
                       flex: "1 1 260px",
-                      maxWidth: "1000px",
+                      maxWidth: "450px",
                     }
               }
             >

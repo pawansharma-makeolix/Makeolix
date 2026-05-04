@@ -10,7 +10,7 @@ const SeoAiVisibility = () => {
     <>
       <Navbar></Navbar>
       <HeroOrbit
-        title={"SEO + Ai Visibility"}
+        title={"SEO + AI Visibility"}
         primaryBtnText={"Discuss With Us"}
         primaryLink={"/contact-us"}
         secondaryBtnText={"Know More"}

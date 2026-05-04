@@ -4,8 +4,8 @@ export const SeoAiVisibilityData = [
   {
     planName: 'BASIC',
     buttonWidth: '200px',
-    currentPrice: '$400 - $500',
-    originalPrice: '$700.00',
+    currentPrice: '$500',
+    originalPrice: '$700',
     isPopular: false,
     inclusionsTitle: 'Scope Of Work',
     inclusions: [

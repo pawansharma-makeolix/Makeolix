@@ -169,18 +169,14 @@ export default function UltraFooter() {
 
       <div className="flex flex-wrap justify-center gap-8">
           {Array(1).fill([
+            
             {
               img: "/indianflag.png",
               address: "Suite G-02, H-143, Sector 63, Noida",
               mail: "contactus@makeolix.com",
               phone: "+91 1204537874"
             },
-            {
-              img: "/Usflag.webp",
-              address: "8 The Green, Dover, DE 19901",
-              mail: "contactus@makeolix.com",
-              phone: "+1 302 550 8772"
-            },
+            
             {
               img: "/uaeflag.webp",
               address: "Arriving soon",
