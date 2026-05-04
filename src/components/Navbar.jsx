@@ -204,7 +204,7 @@ const navItems = [
       { label: "SEO + Ai Visibility", href: "/pricing/seo+ai_visibility" },
       { label: "SEO ", href: "/pricing/seo" },
       { label: "SMO ", href: "/pricing/smo" },
-      { label: "WEB ", href: "/pricing/web" },
+      { label: "WEB DEV", href: "/pricing/web" },
       
       { label: "AEO + GEO", href: "/pricing/aeo+geo" },
     ],
