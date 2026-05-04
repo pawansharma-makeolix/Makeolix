@@ -201,9 +201,12 @@ const navItems = [
     href: "#",
     mega: true,
     submenu: [
-      { label: "SEO Packages", href: "/pricing/seo" },
-      { label: "SMO Packages", href: "/pricing/smo" },
-      { label: "Web Packages", href: "/pricing/web" },
+      { label: "SEO + Ai Visibility", href: "/pricing/seo+ai_visibility" },
+      { label: "SEO ", href: "/pricing/seo" },
+      { label: "SMO ", href: "/pricing/smo" },
+      { label: "WEB ", href: "/pricing/web" },
+      
+      { label: "AEO + GEO", href: "/pricing/aeo+geo" },
     ],
   },
   { name: "About", href: "/about" },
@@ -785,15 +788,7 @@ export default function Navbar() {
                               gap: "10px",
                             }}
                           >
-                            <img
-                              src="/logo1.png"
-                              alt="icon"
-                              style={{
-                                width: "18px",
-                                height: "18px",
-                                objectFit: "contain",
-                              }}
-                            />
+                            
 
                             <span>{service.label}</span>
                           </div>

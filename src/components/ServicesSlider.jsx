@@ -14,7 +14,9 @@ const services = [
 const ServicesSlider = () => {
   const containerRef = useRef(null);
   const itemsRef = useRef([]);
-
+const touchStartX = useRef(0);
+const touchStartY = useRef(0);
+const touchStartTarget = useRef(50);
   const progress = useRef(50);
   const target = useRef(50);
   const [isActive, setIsActive] = useState(false);
@@ -81,7 +83,41 @@ const ServicesSlider = () => {
 
     return () => el.removeEventListener("wheel", wheel);
   }, [isActive]);
+// Touch control (Mobile fix)
+useEffect(() => {
+  const el = containerRef.current;
 
+  const onTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+    touchStartTarget.current = target.current;
+  };
+
+  const onTouchMove = (e) => {
+    const dx = touchStartX.current - e.touches[0].clientX;
+    const dy = touchStartY.current - e.touches[0].clientY;
+
+    // Horizontal ya vertical — jis direction mein zyada movement ho
+    const delta = Math.abs(dx) > Math.abs(dy) ? dx : dy;
+    const sensitivity = 0.3;
+
+    const next = touchStartTarget.current + delta * sensitivity;
+    target.current = Math.max(0, Math.min(100, next));
+
+    // Sirf horizontal swipe pe page scroll rokein
+    if (Math.abs(dx) > Math.abs(dy)) {
+      e.preventDefault();
+    }
+  };
+
+  el.addEventListener("touchstart", onTouchStart, { passive: true });
+  el.addEventListener("touchmove", onTouchMove, { passive: false });
+
+  return () => {
+    el.removeEventListener("touchstart", onTouchStart);
+    el.removeEventListener("touchmove", onTouchMove);
+  };
+}, []);
   return (
     <div
       ref={containerRef}
@@ -138,7 +174,6 @@ const ServicesSlider = () => {
                 <h3 className="text-lg font-semibold mb-2 text-white">
                   {service.title}
                 </h3>
-
                 <Button variant="outline" href={`/services/${service.slug}`}>Know More</Button>
               </div>
             </div>

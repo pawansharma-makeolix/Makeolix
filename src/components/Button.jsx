@@ -10,6 +10,7 @@ export default function Button({
   onClick,
   variant = "primary",
   icon = true,
+  type = "button", 
   className = "",
 }) {
   const base =
@@ -74,5 +75,8 @@ export default function Button({
     return <Link to={href}>{content}</Link>;
   }
 
-  return <div onClick={onClick}>{content}</div>;
+  return <button type={type} onClick={onClick} style={{ background: "none", border: "none", padding: 0 }}>{content}</button>;
 }
+
+
+

@@ -71,19 +71,16 @@ const Hero = () => {
           className="absolute inset-0 z-0"
         />
       )}
-
-      {/* 🤖 AI HAND (RIGHT SIDE) */}
-      <motion.img
-        src="/aihand-removebg-preview.png"
-        alt="AI Hand"
-        className="absolute -right-60 top-1/2 w-75 md:w-100  z-10 pointer-events-none"
-        
-        animate={{
+{/* 🤖 AI HAND */}
+<motion.img
+  src="/aihand-removebg-preview.png"
+  alt="AI Hand"
+  className="hidden lg:block absolute -right-60 top-1/2 w-75 md:w-100 z-10 pointer-events-none"
+  animate={{
     x: -200,
     opacity: 1,
-    y: [-100, -80, -100], // up-down motion
+    y: [-100, -80, -100],
   }}
-  
   transition={{
     x: { duration: 3, ease: "easeOut" },
     opacity: { duration: 3 },
@@ -93,21 +90,19 @@ const Hero = () => {
       ease: "easeInOut",
     },
   }}
-      />
+/>
 
-      {/* 🧑 HUMAN HAND (LEFT SIDE) */}
-      <motion.img
-        src="/humanhand-removebg-preview.png"
-        alt="Human Hand"
-        className="absolute -left-60 top-1/2 w-95 md:w-100   z-10 pointer-events-none"
-        initial={{ x: -300, opacity: 0, y: -100 }}
-  
+{/* 🧑 HUMAN HAND */}
+<motion.img
+  src="/humanhand-removebg-preview.png"
+  alt="Human Hand"
+  className="hidden lg:block absolute -left-60 top-1/2 w-95 md:w-100 z-10 pointer-events-none"
+  initial={{ x: -300, opacity: 0, y: -100 }}
   animate={{
     x: 200,
     opacity: 1,
-    y: [-100, -80, -100], // up-down motion
+    y: [-100, -80, -100],
   }}
-  
   transition={{
     x: { duration: 3, ease: "easeOut" },
     opacity: { duration: 3 },
@@ -117,7 +112,9 @@ const Hero = () => {
       ease: "easeInOut",
     },
   }}
-      />
+/>
+
+      
 
       {/* ⚡ BLUE SPARK */}
       <motion.div

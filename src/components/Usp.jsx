@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FiCheckCircle } from "react-icons/fi";
 
 const containerVariants = {
   hidden: {},
@@ -31,25 +32,32 @@ const headingVariants = {
     transition: { duration: 0.6, ease: "easeOut" },
   },
 };
-
-const CheckIcon = () => (
-  <svg
-    width="18"
-    height="18"
-    viewBox="0 0 18 18"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    style={{ flexShrink: 0 }}
+const CheckIcon = ({ delay = 0 }) => (
+  <motion.span
+    initial={{ opacity: 0, scale: 0.4, rotate: -18 }}
+    whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+    transition={{
+      delay,
+      duration: 0.4,
+      type: "spring",
+      stiffness: 260,
+      damping: 16,
+    }}
+    whileHover={{
+      scale: 1.12,
+      rotate: 6,
+      transition: { duration: 0.18 },
+    }}
+    style={{
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      color: "#118ab2",
+      flexShrink: 0,
+    }}
   >
-    <circle cx="9" cy="9" r="9" fill="rgba(17,138,178,0.15)" />
-    <path
-      d="M5 9.2L7.6 12 13 6.5"
-      stroke="#118ab2"
-      strokeWidth="1.6"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
+    <FiCheckCircle size={16} />
+  </motion.span>
 );
 
 const Usp = ({ heading, subheading, statsData = [] }) => {
@@ -224,6 +232,59 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
             >
               {item.desc}
             </p>
+            {Array.isArray(item.points) && item.points.length > 0 && (
+  <motion.ul
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={{
+      hidden: {},
+      visible: {
+        transition: {
+          staggerChildren: 0.08,
+        },
+      },
+    }}
+    style={{
+      listStyle: "none",
+      padding: 0,
+      margin: "1rem 0 0",
+      display: "flex",
+      flexDirection: "column",
+      gap: "0.65rem",
+    }}
+  >
+    {item.points.map((point, idx) => (
+      <motion.li
+        key={idx}
+        variants={{
+          hidden: { opacity: 0, x: -16 },
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 0.35,
+              ease: "easeOut",
+            },
+          },
+        }}
+        style={{
+          display: "flex",
+          alignItems: "flex-start",
+          gap: "0.55rem",
+          fontSize: "0.88rem",
+          color: "#b8d7e6",
+          lineHeight: 1.6,
+        }}
+      >
+        <span style={{ marginTop: 2 }}>
+          <CheckIcon />
+        </span>
+        {point}
+      </motion.li>
+    ))}
+  </motion.ul>
+)}
           </motion.div>
         ))}
       </motion.div>
@@ -232,4 +293,6 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
 };
 
 export default Usp;
+
+
 

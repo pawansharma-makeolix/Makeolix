@@ -220,7 +220,8 @@ export const PricingCard = ({
   contactUrl = CONTACT_URL,
   expanded,
   onToggle,
-    visibleSections = [],
+  buttonWidth,
+  visibleSections = [],
   alwaysExpanded = false, // NEW — default: false (pehle jaisa)
 }) => {
   const cardRef = useRef(null);
@@ -266,7 +267,7 @@ export const PricingCard = ({
           : "1px solid rgba(17,138,178,0.16)",
         borderRadius: "22px",
         width: "100%",
-        maxWidth: "310px",
+        maxWidth: "1000px",
         display: "flex",
         flexDirection: "column",
         boxShadow: isPopular
@@ -348,24 +349,24 @@ export const PricingCard = ({
 
       <div style={{ padding: "20px 22px 0" }}>
         {visibleSections.length > 0 && (
-  <div style={{ paddingBottom: "10px" }}>
-    {visibleSections.map((sec, si) => (
-      <div key={si}>
-        <SectionHeader>{sec.title}</SectionHeader>
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {sec.items.map((item, ii) => (
-            <FeatureRow
-              key={ii}
-              label={item.label}
-              included={item.included}
-              index={ii}
-            />
-          ))}
-        </ul>
-      </div>
-    ))}
-  </div>
-)}
+          <div style={{ paddingBottom: "10px" }}>
+            {visibleSections.map((sec, si) => (
+              <div key={si}>
+                <SectionHeader>{sec.title}</SectionHeader>
+                <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                  {sec.items.map((item, ii) => (
+                    <FeatureRow
+                      key={ii}
+                      label={item.label}
+                      included={item.included}
+                      index={ii}
+                    />
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
         <motion.h2
           initial={{ opacity: 0, x: -14 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -442,11 +443,13 @@ export const PricingCard = ({
         <motion.div
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.96 }}
-          className="mb-2"
+          className="mb-2 "
+          style={{
+            width: buttonWidth === "full" ? "100%" : buttonWidth,
+          }}
         >
           <Button
             onClick={handleGetStarted}
-            className="w-full"
             variant="outline"
             href={"/contact-us"}
           >
@@ -612,7 +615,7 @@ export const PricingSection = ({
   subtitle,
   showBg = true,
   contactUrl,
-  fullWidth = false,    // NEW
+  fullWidth = false, // NEW
   alwaysExpanded = false, // NEW — sab cards pe apply hoga
 }) => {
   const [allExpanded, setAllExpanded] = useState(false);
@@ -684,7 +687,11 @@ export const PricingSection = ({
           >
             {[
               { color: "#22d3a5", icon: "✓", label: "Included" },
-              { color: "rgba(255,70,70,0.8)", icon: "✗", label: "Not Included" },
+              {
+                color: "rgba(255,70,70,0.8)",
+                icon: "✗",
+                label: "Not Included",
+              },
               {
                 color: "rgba(17,138,178,0.95)",
                 icon: "✓",
@@ -739,7 +746,7 @@ export const PricingSection = ({
                   : {
                       // Default → pehle jaisa
                       flex: "1 1 260px",
-                      maxWidth: "310px",
+                      maxWidth: "1000px",
                     }
               }
             >

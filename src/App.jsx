@@ -13,6 +13,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About"; // About Page
 import Services from "./pages/Services"; // Services Page
 import MM79 from "./pages/MM79";
+import AeoGeo from "./pages/AeoGeo";
+import SeoAiVisibility from "./pages/SeoAiVisibility";
 function App() {
   return (
     <Router>
@@ -26,6 +28,8 @@ function App() {
         <Route path="/pricing/seo" element={<SeoPackages />} />
         <Route path="/pricing/smo" element={<SmoPackages />} />
         <Route path="/pricing/web" element={<WebPackages />} />
+        <Route path="/pricing/aeo+geo" element={<AeoGeo />} />
+        <Route path="/pricing/seo+ai_visibility" element={<SeoAiVisibility />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/mm79" element={<MM79 />} />
         <Route path="/testimonials" element={<Testimonials />} />

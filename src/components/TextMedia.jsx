@@ -1,16 +1,22 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import {motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { useRef, useState } from "react";
 import Button from "../components/Button";
+import { Check } from "lucide-react";
+import emailjs from "@emailjs/browser";
 export default function TextMedia({
   title,
   subtitle,
   description,
   image,
   list,
+    paymentLink,
+
+  listTitle,
   paragraph2,
   ctaText,
+  ctaHref = "/contact-us",
   reverse = false, // 🔥 layout switch
   bgClass = "bg-(--bg-main)", // 🎨 custom background
 }) {
@@ -23,10 +29,161 @@ export default function TextMedia({
 
   const yImg = useTransform(scrollYProgress, [0, 1], [80, -80]);
   const opacity = useTransform(scrollYProgress, [0, 0.3, 1], [0, 1, 1]);
+const [showForm, setShowForm] = useState(false);
+const [loading, setLoading] = useState(false);
 
+const [formData, setFormData] = useState({
+  name: "",
+  email: "",
+  phone: "",
+});
+
+const handleChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+};
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    setLoading(true);
+
+   await emailjs.send(
+  "service_p3tp9ng",
+  "template_ya1c82d", // business wali
+  {
+    formType: "Matrix Maximizer - Get Started",
+    nameOrCompany: formData.name,
+    companyName: formData.name,
+    businessEmail: formData.email,
+    phone: formData.phone,
+  },
+  "N9vOPjvdCk7xDCUyX"
+);
+    setShowForm(false);
+
+    if (paymentLink) {
+      window.open(paymentLink, "_blank", "noopener,noreferrer");
+    }
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+    });
+  } catch (error) {
+    console.error(error);
+    alert("Something went wrong. Please try again.");
+  } finally {
+    setLoading(false);
+  }
+};
   const words = title.split(" ");
+  
   return (
+    
+
     <section ref={ref} className={`relative py-20 overflow-hidden ${bgClass}`}>
+      <AnimatePresence>
+  {showForm && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={() => setShowForm(false)}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 backdrop-blur-sm px-4"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 50, scale: 0.92 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: 30, scale: 0.96 }}
+        transition={{ duration: 0.35, ease: "easeOut" }}
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-xl rounded-3xl border border-white/10 bg-(--bg-soft) p-6 md:p-8 overflow-hidden shadow-2xl"
+      >
+        <motion.div
+          animate={{
+            x: [0, 20, -20, 0],
+            y: [0, -10, 10, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="absolute -top-16 -right-16 w-40 h-40 rounded-full bg-(--blue-2) opacity-20 blur-3xl"
+        />
+
+        <button
+          onClick={() => setShowForm(false)}
+          className="absolute top-4 right-4 text-white/60 hover:text-white text-xl"
+        >
+          ×
+        </button>
+
+        <div className="relative z-10">
+          <motion.h3
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.05 }}
+            className="text-2xl md:text-3xl text-white font-semibold mb-2"
+          >
+            Get Started
+          </motion.h3>
+
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="text-(--text-muted) text-sm mb-6"
+          >
+            Fill in your details to continue.
+          </motion.p>
+
+          <form onSubmit={handleSubmit} className="space-y-4">
+            {["name", "email", "phone"].map((field, i) => (
+              <motion.input
+                key={field}
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.12 + i * 0.05 }}
+                type={field === "email" ? "email" : field === "phone" ? "tel" : "text"}
+                name={field}
+                required
+                placeholder={
+                  field === "name"
+                    ? "Your Name"
+                    : field === "email"
+                    ? "Email Address"
+                    : "Phone Number"
+                }
+                value={formData[field]}
+                onChange={handleChange}
+                className="w-full rounded-2xl bg-(--bg-main) border border-white/10 px-4 py-3 text-white outline-none focus:border-(--blue-3)"
+              />
+            ))}
+
+            
+
+            <motion.div
+  initial={{ opacity: 0, y: 14 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.34 }}
+>
+  <Button type="submit" className="w-full" icon={!loading}>
+    {loading ? "Submitting..." : "Let’s Do This"}
+  </Button>
+</motion.div>
+          </form>
+         
+        </div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
       {/* 🌌 ambient glow */}
       <motion.div
         className="absolute w-150 h-150 bg-(--blue-2) opacity-20 blur-[160px] -top-32 -left-32"
@@ -87,15 +244,49 @@ export default function TextMedia({
               {description}
             </motion.p>
           )}
-
+{listTitle && (
+  <motion.p
+    initial={{ opacity: 0, y: 10 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.35 }}
+    className="text-(--blue-3) text-xs uppercase tracking-[0.18em] font-semibold"
+  >
+    {listTitle}
+  </motion.p>
+)}
           {/* ✅ LIST SUPPORT */}
-          {Array.isArray(list) && list.length > 0 && (
-            <ul className="text-white max-w-md space-y-2 list-disc pl-5">
-              {list.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          )}
+        {Array.isArray(list) && list.length > 0 && (
+  <ul className="max-w-md space-y-3">
+    {list.map((item, i) => (
+      <motion.li
+        key={i}
+        initial={{ opacity: 0, x: -24 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          delay: i * 0.08,
+          duration: 0.45,
+          ease: "easeOut",
+        }}
+        className="flex items-start gap-3 text-white"
+      >
+        <motion.span
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{
+            delay: i * 0.08 + 0.12,
+            type: "spring",
+            stiffness: 260,
+          }}
+          className="mt-1 shrink-0 w-5 h-5 rounded-full bg-(--blue-2) flex items-center justify-center"
+        >
+          <Check size={12} />
+        </motion.span>
+
+        <span className="leading-relaxed">{item}</span>
+      </motion.li>
+    ))}
+  </ul>
+)}
 
           {/* ✅ SECOND PARAGRAPH */}
           {paragraph2 && (
@@ -104,10 +295,10 @@ export default function TextMedia({
 
           {/* CTA */}
           {ctaText && (
-            <Button className="w-40" href={"/contact-us"}>
-              {ctaText}
-            </Button>
-          )}
+  <Button className="w-40" onClick={() => setShowForm(true)}>
+    {ctaText}
+  </Button>
+)}
         </div>
 
         {/* IMAGE */}

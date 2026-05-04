@@ -5,6 +5,7 @@ import HeroOrbit from "../components/HeroOrbit";
 import StaggerTestimonials from "../components/StaggerTestimonials";
 import CTAMarquee from "../components/CTAMarquee";
 import UltraAnimatedHero from "../components/UltraAnimatedHero";
+import VideoTestimonials from "../components/VideoTestimonials";
 
 
 
@@ -137,7 +138,7 @@ const Testimonials = () => {
         secondaryLink={"/contact-us"}
       ></HeroOrbit>
       <StaggerTestimonials data={Testimonialdata}></StaggerTestimonials>
-  
+  <VideoTestimonials></VideoTestimonials>
 
       <CTAMarquee></CTAMarquee>
 

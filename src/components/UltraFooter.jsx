@@ -167,12 +167,8 @@ export default function UltraFooter() {
       <div className="border-t border-gray-700 py-10 overflow-hidden">
         <h4 className="text-center text-(--blue-3) mb-6">Our Offices</h4>
 
-        <motion.div
-          animate={{ x: ["0%", "-60%"] }}
-          transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
-          className="flex gap-12"
-        >
-          {Array(2).fill([
+      <div className="flex flex-wrap justify-center gap-8">
+          {Array(1).fill([
             {
               img: "/indianflag.png",
               address: "Suite G-02, H-143, Sector 63, Noida",
@@ -222,7 +218,7 @@ export default function UltraFooter() {
             </motion.div>
 
           ))}
-        </motion.div>
+       </div>
       </div>
 
       <div className="text-center text-sm text-(--text-muted) py-6 border-t border-gray-700">

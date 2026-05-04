@@ -555,7 +555,7 @@ const CareerForm = () => {
   try {
     await emailjs.send(
       "service_p3tp9ng",
-      "template_ya1c82d",
+      "template_l8bztmy",
       {
         formType: "Career Application",
         title: "Career Application",
