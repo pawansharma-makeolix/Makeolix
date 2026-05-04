@@ -2,7 +2,7 @@ export const WEB_PLANS = [
   // ─── SILVER ─────────────────────────────────────────────────────────────────
   {
     planName: "STARTER",
-    currentPrice: "$500.00",
+    currentPrice: "$500",
     originalPrice: null,
     period: "/ month",
     isPopular: false,
@@ -52,7 +52,7 @@ export const WEB_PLANS = [
   // ─── GOLD ───────────────────────────────────────────────────────────────────
   {
     planName: "GROWTH",
-    currentPrice: "$1500.00",
+    currentPrice: "$1500",
     originalPrice: null,
     period: "/ month",
     isPopular: true,
@@ -104,7 +104,7 @@ export const WEB_PLANS = [
   // ─── PREMIUM ─────────────────────────────────────────────────────────────────
   {
     planName: "PRO",
-    currentPrice: "$2500.00",
+    currentPrice: "$3100",
     originalPrice: null,
     period: "/ month",
     isPopular: false,

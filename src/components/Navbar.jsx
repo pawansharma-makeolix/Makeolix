@@ -201,7 +201,7 @@ const navItems = [
     href: "#",
     mega: true,
     submenu: [
-      { label: "SEO + Ai Visibility", href: "/pricing/seo+ai_visibility" },
+      { label: "SEO + AI Visibility", href: "/pricing/seo+ai_visibility" },
       { label: "SEO ", href: "/pricing/seo" },
       { label: "SMO ", href: "/pricing/smo" },
       { label: "WEB DEV", href: "/pricing/web" },

@@ -94,7 +94,7 @@ export const SMO_PLANS = [
   // ─── PREMIUM ─────────────────────────────────────────────────────────────────
   {
     planName: 'DOMINANCE',
-    currentPrice: 'Custom',
+    currentPrice: '$700',
     originalPrice: null,
     period: '/ month',
     isPopular: false,
