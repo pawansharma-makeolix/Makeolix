@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { href, Link } from "react-router-dom";
 import Button from "../components/Button";
 
 // ─── NAV DATA ────────────────────────────────────────────────────────────────
@@ -201,8 +201,8 @@ const navItems = [
     href: "#",
     mega: true,
     submenu: [
-      { label: "SEO + AI Visibility", href: "/pricing/seo+ai_visibility" },
-      { label: "SEO ", href: "/pricing/seo" },
+      // { label: "SEO + AI Visibility", href: "/pricing/seo+ai_visibility" },
+      { label: "SEO POWERED BY AI ", href: "/pricing/seo-powere-by-ai" },
       { label: "SMO ", href: "/pricing/smo" },
       { label: "WEB DEV", href: "/pricing/web" },
       
@@ -211,6 +211,7 @@ const navItems = [
   },
   { name: "About", href: "/about" },
   { name: "Testimonials", href: "/testimonials" },
+  {name: "Case Studies", href: "/case-studies"},
   { name: "Contact Us", href: "/contact-us" },
 ];
 

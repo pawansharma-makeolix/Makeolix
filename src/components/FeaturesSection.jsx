@@ -7,6 +7,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
+import { Check } from "lucide-react";
 
 // ─── Floating Particle ────────────────────────────────────────────────────────
 function Particle({ x, y, size, delay, duration }) {
@@ -30,6 +31,54 @@ function Particle({ x, y, size, delay, duration }) {
       }}
       transition={{ duration, delay, repeat: Infinity, ease: "easeInOut" }}
     />
+  );
+}
+function FeatureIconList({ title, items = [] }) {
+  if (!items.length) return null;
+
+  return (
+    <div className="rounded-2xl p-5 md:p-6 border border-[rgba(17,138,178,0.16)] bg-[linear-gradient(135deg,rgba(0,23,31,0.88)_0%,rgba(0,56,99,0.28)_100%)] backdrop-blur-[12px]">
+      {title && (
+        <h4 className="text-white font-semibold text-base mb-4 tracking-[-0.02em]">
+          {title}
+        </h4>
+      )}
+
+      <div className="flex flex-col gap-3">
+        {items.map((item, i) => (
+          <motion.div
+            key={i}
+            className="flex items-start gap-3"
+            initial={{ opacity: 0, y: 8 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: i * 0.06,
+              duration: 0.35,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+          >
+            <motion.span
+              animate={{
+                scale: [1, 1.18, 1],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                delay: i * 0.12,
+              }}
+              className="mt-[2px] text-[var(--blue-3)] shrink-0"
+            >
+              <Check size={16} strokeWidth={3} />
+            </motion.span>
+
+            <span className="text-sm leading-relaxed text-[var(--text-muted,#a0aec0)]">
+              {item}
+            </span>
+          </motion.div>
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -75,6 +124,7 @@ function FeatureCard({ card, index, side }) {
 
       {/* Card body */}
       <div className="relative rounded-2xl p-6 md:p-7 overflow-hidden bg-[linear-gradient(135deg,rgba(0,23,31,0.9)_0%,rgba(0,56,99,0.35)_100%)] border border-[rgba(17,138,178,0.18)] backdrop-blur-[16px]">
+        
         {/* Shimmer sweep */}
         <motion.div
           className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 bg-[linear-gradient(110deg,transparent_30%,rgba(17,138,178,0.07)_50%,transparent_70%)]"
@@ -134,6 +184,13 @@ function FeatureCard({ card, index, side }) {
         >
           {card.body}
         </motion.p>
+
+        {/* Card icon lists */}
+        {card.iconLists?.map((group, i) => (
+          <div key={i} className="mt-5">
+            <FeatureIconList title={group.title} items={group.items} />
+          </div>
+        ))}
 
         {/* Bottom accent line */}
         <motion.div
@@ -214,6 +271,7 @@ function OrbitRing({ size, duration, reverse = false, opacity = 0.15 }) {
 export default function FeaturesSection({
   leftCards = [],
   rightCards = [],
+
   heading = "Everything You Need To Dominate",
   highlight = [5, 6],
   subtext,

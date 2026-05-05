@@ -86,6 +86,17 @@ export const SEO_PLANS = [
         ],
       },
       {
+        title: 'AI Search Visibility ',
+        items: [
+          { label: 'AI Visibility Score', included: true },
+          { label: 'AI Monthly Audience', included: true },
+          { label: 'AI Competitor Visibilty Comparison', included: true },
+          { label: 'AI Share of Voice', included: true },
+          { label: 'AI Sentiment ', included: true },
+          
+        ],
+      },
+      {
         title: 'SMO Activities',
         items: [
           { label: 'Facebook Profile Creation', included: false },
@@ -188,6 +199,17 @@ export const SEO_PLANS = [
           { label: 'PPT Creation & Submission - 10', included: true },
           { label: 'PDF Submission - 10', included: true },
           { label: 'Infographics Creation/Month - 10', included: true },
+        ],
+      },
+       {
+        title: 'AI Search Visibility ',
+        items: [
+          { label: 'AI Visibility Score', included: true },
+          { label: 'AI Monthly Audience', included: true },
+          { label: 'AI Competitor Visibilty Comparison', included: true },
+          { label: 'AI Share of Voice', included: true },
+          { label: 'AI Sentiment ', included: true },
+          
         ],
       },
       {
@@ -297,6 +319,17 @@ export const SEO_PLANS = [
         ],
       },
       {
+        title: 'AI Search Visibility ',
+        items: [
+          { label: 'AI Visibility Score', included: true },
+          { label: 'AI Monthly Audience', included: true },
+          { label: 'AI Competitor Visibilty Comparison', included: true },
+          { label: 'AI Share of Voice', included: true },
+          { label: 'AI Sentiment ', included: true },
+          
+        ],
+      },
+      {
         title: 'SMO Activities',
         items: [
            { label: 'Facebook Profile Creation', included: true },
@@ -399,6 +432,17 @@ export const SEO_PLANS = [
           { label: 'Social Sharing - 20', included: true },
           { label: 'PPT Creation & Submission - 20', included: true },
           { label: 'PDF Submission - 20', included: true },
+        ],
+      },
+      {
+        title: 'AI Search Visibility ',
+        items: [
+          { label: 'AI Visibility Score', included: true },
+          { label: 'AI Monthly Audience', included: true },
+          { label: 'AI Competitor Visibilty Comparison', included: true },
+          { label: 'AI Share of Voice', included: true },
+          { label: 'AI Sentiment ', included: true },
+          
         ],
       },
       {

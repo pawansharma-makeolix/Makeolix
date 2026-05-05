@@ -96,7 +96,13 @@ h1, h2, h3, h4 {
   animation-play-state: paused;
 }
 
+.PhoneInputCountrySelect option {
+  color: black;
+}
 
+.PhoneInputCountrySelect {
+  color: black;
+}
 
 
 

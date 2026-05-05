@@ -318,8 +318,8 @@ const BusinessForm = () => {
   e.preventDefault();
   try {
     await emailjs.send(
-      "service_p3tp9ng",
-      "template_l8bztmy",
+      "service_8oqd2qb",
+      "template_s22ivva",
       {
         formType: "Business Inquiry",
         title: "Business Inquiry",
@@ -336,7 +336,7 @@ const BusinessForm = () => {
         experience: "-",
         portfolio: "-",
       },
-      "N9vOPjvdCk7xDCUyX"
+      "daTfRauE6dCIypmMo"
     );
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
@@ -554,8 +554,8 @@ const CareerForm = () => {
   e.preventDefault();
   try {
     await emailjs.send(
-      "service_p3tp9ng",
-      "template_l8bztmy",
+      "service_8oqd2qb",
+      "template_s22ivva",
       {
         formType: "Career Application",
         title: "Career Application",
@@ -572,7 +572,7 @@ const CareerForm = () => {
         projectType: "-",
         budget: "-",
       },
-      "N9vOPjvdCk7xDCUyX"
+      "daTfRauE6dCIypmMo"
     );
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);

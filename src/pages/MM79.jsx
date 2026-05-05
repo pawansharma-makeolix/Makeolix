@@ -68,10 +68,7 @@ const MM79 = () => {
       <HeroOrbit
         title={"MATRIX MAXIMIZER $79"}
         description={"A KICK START TO YOUR DIGITAL JOURNEY"}
-        primaryBtnText={"Get Started "}
-        secondaryBtnText={"Learn More"}
-        primaryLink={"/contact-us"}
-        secondaryLink={"/about"}
+      
       ></HeroOrbit>
       <IntroText
         heading="WE DRIVE SUCCESS, YOU REAP REWARDS"

@@ -222,7 +222,7 @@ export default function HeroOrbit({
 
       {/* CONTENT */}
       <motion.div
-        className="relative z-20 flex flex-col items-center text-center px-6 max-w-3xl mx-auto"
+        className="relative z-20 flex flex-col items-center text-center px-6 max-w-6xl mx-auto"
         variants={stagger}
         initial="hidden"
         animate={controls}
@@ -243,18 +243,22 @@ export default function HeroOrbit({
           {description}
         </motion.p>
 
-        {showButtons && (
-          <motion.div
-            variants={fadeUp}
-            className="flex items-center gap-4 flex-wrap justify-center"
-          >
-            <Button href={primaryLink}>{primaryBtnText}</Button>
+        {showButtons && (primaryLink || secondaryLink) && (
+  <motion.div
+    variants={fadeUp}
+    className="flex items-center gap-4 flex-wrap justify-center"
+  >
+    {primaryLink && primaryBtnText && (
+      <Button href={primaryLink}>{primaryBtnText}</Button>
+    )}
 
-            <Button variant="outline" href={secondaryLink}>
-              {secondaryBtnText}
-            </Button>
-          </motion.div>
-        )}
+    {secondaryLink && secondaryBtnText && (
+      <Button variant="outline" href={secondaryLink}>
+        {secondaryBtnText}
+      </Button>
+    )}
+  </motion.div>
+)}
       </motion.div>
 
       {/* bottom vignette */}
