@@ -44,15 +44,15 @@ function CaseStudies() {
       buttonHref: "/case-studies/west-coast-belts",
       buttonVariant: "outline",
     },
-    // {
-    //   slug: "weathered",
-    //   image: "/MSEO-Case-Study-–-Weathered-Not-Worn.webp",
-    //   description: "SEO Case Study – Weathered Not Worn",
+    {
+      slug: "weathered",
+      image: "/MSEO-Case-Study-–-Weathered-Not-Worn.webp",
+      description: "SEO Case Study – Weathered Not Worn",
 
-    //   buttonText: "Read More",
-    //   buttonHref: "/case-studies/weathered",
-    //   buttonVariant: "outline",
-    // },
+      buttonText: "Read More",
+      buttonHref: "/case-studies/weathered",
+      buttonVariant: "outline",
+    },
     // {
     //   slug: "aitkens-pewter",
     //   image: "/MSEO-Case-Study-–-Aitkens-Pewter-1.webp",
