@@ -17,6 +17,8 @@ import AeoGeo from "./pages/AeoGeo";
 import SeoAiVisibility from "./pages/SeoAiVisibility";
 import CaseStudies from "./pages/CaseStudies";
 import CaseStudyDetail from "./pages/CaseStudyDetail";
+import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
 function App() {
   return (
     <Router>
@@ -30,17 +32,22 @@ function App() {
         <Route path="/pricing/smo" element={<SmoPackages />} />
         <Route path="/pricing/web" element={<WebPackages />} />
         <Route path="/pricing/aeo+geo" element={<AeoGeo />} />
-        <Route path="/pricing/seo+ai_visibility" element={<SeoAiVisibility />} />
+        <Route
+          path="/pricing/seo+ai_visibility"
+          element={<SeoAiVisibility />}
+        />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/mm79" element={<MM79 />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path = "/case-studies" element = {<CaseStudies/>} />
+        <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
+
         <Route path="/:city" element={<CountryPage />} />
         <Route path="/services/:slug" element={<ServiceItem />} />
       </Routes>
     </Router>
-    
   );
 }
 

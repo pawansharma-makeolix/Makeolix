@@ -5,7 +5,7 @@ import Button from "../components/Button";
 const blogs = [
   {
     id: 1,
-
+    slug: "how-do-i-choose-the-best-seo",
     desc: "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
     date: "March 10, 2026",
     service: "SEO Reseller Service",
@@ -13,6 +13,7 @@ const blogs = [
   },
   {
     id: 2,
+    slug: "top-seo-agencies-in-india",
 
     desc: "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
     date: "October 12, 2025",
@@ -21,6 +22,8 @@ const blogs = [
   },
   {
     id: 3,
+    slug: "want-more-traffic-sales",
+
     desc: "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
     date: "September 10, 2025",
     service: "E-commerce",
@@ -100,12 +103,14 @@ export default function BlogSection() {
               <div className="text-xs text-(--blue-3) mb-4">{blog.service}</div>
 
               {/* Button */}
-              <Button variant="outline">Read More</Button>
+              <Button variant="outline" href={`/blog/${blog.slug}`}>
+                Read More
+              </Button>
             </div>
 
             {/* Glow effect */}
             <motion.div
-              className="absolute inset-0 bg-linear-to-tr from-(--accent-pink) to-transparent opacity-0 group-hover:opacity-20"
+              className="absolute inset-0 pointer-events-none bg-linear-to-tr from-(--accent-pink) to-transparent opacity-0 group-hover:opacity-20"
               initial={{ opacity: 0 }}
               whileHover={{ opacity: 0.2 }}
             />
@@ -120,7 +125,9 @@ export default function BlogSection() {
         transition={{ delay: 0.3 }}
         className="text-center mt-16 flex justify-center"
       >
-        <Button className="w-50 ">View More</Button>
+        <Button className="w-50 " href="/blog">
+          View More
+        </Button>
       </motion.div>
 
       {/* Floating animation background */}

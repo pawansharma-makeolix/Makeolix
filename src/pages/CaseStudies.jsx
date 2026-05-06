@@ -53,22 +53,22 @@ function CaseStudies() {
       buttonHref: "/case-studies/weathered",
       buttonVariant: "outline",
     },
-    // {
-    //   slug: "aitkens-pewter",
-    //   image: "/MSEO-Case-Study-–-Aitkens-Pewter-1.webp",
-    //   description: "SEO Case Study – Aitkens Pewter",
-    //   buttonText: "Read More",
-    //   buttonHref: "/case-studies/aitkens-pewter",
-    //   buttonVariant: "outline",
-    // },
-    // {
-    //   slug: "grell-watson",
-    //   image: "/MSEO-Case-Study-–-Greel-Watson-Patent-Attorneys-1.webp",
-    //   description: "SEO Case Study – Grell & Watson Patent Attorneys",
-    //   buttonText: "Read More",
-    //   buttonHref: "/case-studies/grell-watson",
-    //   buttonVariant: "outline",
-    // },
+    {
+      slug: "aitkens-pewter",
+      image: "/MSEO-Case-Study-–-Aitkens-Pewter-1.webp",
+      description: "SEO Case Study – Aitkens Pewter",
+      buttonText: "Read More",
+      buttonHref: "/case-studies/aitkens-pewter",
+      buttonVariant: "outline",
+    },
+    {
+      slug: "grell-watson",
+      image: "/MSEO-Case-Study-–-Greel-Watson-Patent-Attorneys-1.webp",
+      description: "SEO Case Study – Grell & Watson Patent Attorneys",
+      buttonText: "Read More",
+      buttonHref: "/case-studies/grell-watson",
+      buttonVariant: "outline",
+    },
   ];
   return (
     <>

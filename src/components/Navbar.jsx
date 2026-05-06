@@ -212,6 +212,7 @@ const navItems = [
   { name: "About", href: "/about" },
   { name: "Testimonials", href: "/testimonials" },
   {name: "Case Studies", href: "/case-studies"},
+  {name: "Blog", href:"/blog"},
   { name: "Contact Us", href: "/contact-us" },
 ];
 

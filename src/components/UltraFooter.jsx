@@ -106,12 +106,15 @@ export default function UltraFooter() {
        <div>
   <h4 className="mb-4 text-(--blue-2)">Our Company</h4>
   <ul className="space-y-2 text-sm text-(--text-muted)">
-    {["Home", "About Us", "Contact Us"].map((item, i) => {
+    {["Home", "About Us", "Testimonials","Case Studies","Blog","Contact Us",].map((item, i) => {
       // Create the proper links based on the page name
       const linkPaths = {
         "Home": "/",
         "About Us": "/about",
-        "Contact Us": "/contact-us"
+        "Contact Us": "/contact-us",
+        "Testimonials":"/testimonials",
+        "Case Studies":"/case-studies",
+        "Blog":"/blog",
       };
       return (
         <motion.li key={i} whileHover={{ x: 6 }}>

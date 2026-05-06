@@ -9,14 +9,16 @@ import TextMedia from "../components/TextMedia";
 import Usp from "../components/Usp";
 import StepsSection from "../components/StepsSection";
 import CaseStudiesSection from "../components/CaseStudiesSection";
-import { caseStudiesData } from "../components/data/caseStudiesData";
+import { BlogData } from "../components/data/BlogData";
 import FeaturesSection from "../components/FeaturesSection";
 import OtherPageHero from "../components/OtherPageHero";
+import BlogContent from "../components/BlogContent";
+import FaqVariant from "../components/FaqVariant";
 
-function CaseStudyDetail() {
+const BlogDetail = () => {
   const { slug } = useParams();
 
-  const pageData = caseStudiesData[slug];
+  const pageData = BlogData[slug];
 
   if (!pageData) {
     return (
@@ -28,13 +30,12 @@ function CaseStudyDetail() {
           padding: "100px 20px",
         }}
       >
-        Case Study Not Found
+        Blog Not Found{" "}
       </div>
     );
   }
 
-  const relatedCases = pageData.relatedCases || [];
-
+  const relatedBlogs = pageData.relatedblogs || [];
   return (
     <>
       <Navbar />
@@ -44,33 +45,24 @@ function CaseStudyDetail() {
           case "hero":
             return <OtherPageHero key={index} {...section.data} />;
 
-          case "intro":
-            return <IntroText key={index} {...section.data} />;
-
-          case "textmedia":
-            return <TextMedia key={index} {...section.data} />;
-
-          case "usp":
-            return <Usp key={index} {...section.data} />;
-          case "features":
-            return <FeaturesSection key={index} {...section.data} />;
-          case "steps":
-            return <StepsSection key={index} {...section.data} />;
-
+          case "blogcontent":
+            return <BlogContent key={index} {...section.data} />;
+          case "faq":
+            return <FaqVariant key={index} faqs={section.data.faqdata} />;
           default:
             return null;
         }
       })}
 
-      {relatedCases.length > 0 && (
+      {relatedBlogs.length > 0 && (
         <CaseStudiesSection
-          heading="Related Case Studies"
-          subtext="Explore more success stories"
-          cases={relatedCases.map((item) => ({
+          heading="Related Blogs"
+          subtext="Explore more articles"
+          cases={relatedBlogs.map((item) => ({
             ...item,
             buttonText: "Read More",
-            buttonHref: `/case-studies/${item.slug}`,
-            buttonVariant: "outline",
+            buttonHref: `/blog/${item.slug}`,
+            buttonVariant: "",
           }))}
           columns={3}
         />
@@ -80,6 +72,6 @@ function CaseStudyDetail() {
       <UltraFooter />
     </>
   );
-}
+};
 
-export default CaseStudyDetail;
+export default BlogDetail;

@@ -449,13 +449,13 @@ const BusinessForm = () => {
               Web Development
             </option>
             <option value="mobile" style={{ background: "#00171f" }}>
-              Mobile App
+              Seo Powered By AI
             </option>
             <option value="ai" style={{ background: "#00171f" }}>
-              AI Solution
+              SMO
             </option>
             <option value="consulting" style={{ background: "#00171f" }}>
-              Consulting
+              AEO + GEO
             </option>
           </select>
           <ChevronRight
@@ -683,19 +683,25 @@ const CareerForm = () => {
               Position You're Applying For
             </option>
             <option value="frontend" style={{ background: "#00171f" }}>
-              Frontend Developer
+             Business Development Manager
             </option>
             <option value="backend" style={{ background: "#00171f" }}>
-              Backend Developer
+              Business Development Executive
             </option>
             <option value="fullstack" style={{ background: "#00171f" }}>
-              Full Stack Developer
+              Project Manager
             </option>
             <option value="designer" style={{ background: "#00171f" }}>
-              UI/UX Designer
+              HR
             </option>
             <option value="pm" style={{ background: "#00171f" }}>
-              Project Manager
+              SEO Executive
+            </option>
+            <option value="pm" style={{ background: "#00171f" }}>
+              Content Writer
+            </option>
+            <option value="pm" style={{ background: "#00171f" }}>
+              Developer
             </option>
           </select>
           <ChevronRight
