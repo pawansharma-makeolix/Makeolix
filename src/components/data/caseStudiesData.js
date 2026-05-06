@@ -619,4 +619,180 @@ export const caseStudiesData = {
     },
     ],
   },
+
+
+
+
+
+
+
+
+
+
+   "weathered": {
+    sections: [
+      {
+        type: "hero",
+        data: {
+          title:
+            "How West Coast Belts Scaled Organic Revenue by 130% and Improved Search Visibility in 6 Months",
+          primaryBtnText: "Get In Touch",
+          primaryLink: "/contact-us",
+          secondaryBtnText: "Know More",
+          secondaryLink: "/case-studies",
+        },
+      },
+
+      {
+        type: "intro",
+        data: {
+          topImage: {
+            src: "/Untitled-design-87-png-300×200-03-03-2026_05_07_PM.webp",
+            alt: "Africa Direct",
+            href: "https://westcoastbelts.com/",
+            width: "140px",
+          },
+          heading: "About The Brand",
+          paragraph:
+            "West Coast Belts is a premium accessories brand specializing in high-quality belts designed for durability, comfort, and everyday style. The brand caters to customers seeking timeless designs with reliable craftsmanship, primarily through its eCommerce platform.",
+        },
+      },
+      {
+        type: "usp",
+        data: {
+          statsData: [
+            {
+              tag: "01",
+              title: "Background",
+              desc: "West Coast Belts aimed to scale its online revenue while reducing dependency on paid marketing channels. Although the brand had a solid product offering, organic visibility and consistent search-driven sales growth were key challenges. The goal was to strengthen search presence, attract high-intent users, and convert organic traffic into revenue.",
+            
+            },
+            {
+              tag: "02",
+              title: "Objective",
+              desc: "The primary objectives of the SEO campaign were:",
+              points: [
+                "Increase organic sales and revenue",
+                "Drive consistent growth in organic clicks and impressions",
+                "Improve average search position and CTR",
+                "Build a sustainable, long-term organic traffic channel",
+              ],
+            },
+            {
+              tag: "03",
+              title: "Link Building or Backlinks",
+              desc:"We did create high quality backlinks such as classified submission, business listing, blog submission, article submission, profile, blog promotion, PDF Submission, bookmarking submission etc.",
+             
+              
+             
+            },
+              {
+              tag: "04",
+              title: "Organic Sales Performance",
+             
+              points: [
+                "Total Sales: $122,990.07 (+130% growth)",
+                "Net Sales: $110,723.08 (+116% growth)",
+                "Orders: 4,705 (+50% growth)",
+                "Products Sold: 5,631 (+70% growth)",
+                "Visitors: 3,281 (+90% growth)",
+                "Views: 7,806 (+48% growth)",
+              ],
+             
+            },
+            {
+              tag: "05",
+              title: "Organic Search Performance",
+             
+              points: [
+                "Total Clicks: 48.8K (up from 15.7K in the previous 6 months)",
+                "Total Impressions: 375K (up from 327K)",
+                "Average CTR: Improved to 5%",
+                "Average Position: Improved from 18.8 to 13",
+               
+              ],
+             
+            },
+          
+          ],
+        },
+      },
+     
+      {
+        type: "steps",
+        data: {
+          heading: "Our Approach",
+          subtitle:
+            "We implemented a data-driven and conversion-focused SEO strategy, including",
+
+          steps: [
+            {
+              number: 1,
+              title: "Keyword & Intent Mapping",
+              body: "Identified high-commercial and informational keywords aligned with product categories and customer search intent.",
+            
+            },
+            {
+              number: 2,
+              title: "On-Page Optimization",
+              body: "Optimized product pages, collection pages, and metadata to improve relevance, rankings, and CTR.",
+            },
+            {
+              number: 3,
+              title: "Content Enhancement",
+              body: "Strengthened existing content and optimized landing pages to capture mid- and bottom-funnel organic traffic.",
+            },
+            {
+              number: 4,
+              title: "Technical SEO Improvements",
+              body: "Ensured proper indexing, crawl efficiency, and performance optimization for better search visibility",
+            },
+            {
+              number: 5,
+              title: "Continuous Performance Tracking",
+              body: "Monitored Google Search Console and analytics data to refine strategies based on real-time performance",
+            },
+          ],
+        },
+      },
+    //   {
+    //     type: "textmedia",
+    //     data: {
+    //       title: "The Challenge",
+    //       description: "Detailed text...",
+    //       image: "/some-image.webp",
+    //     },
+    //   },
+    ],
+    relatedCases: [
+     
+      {
+      slug: "africa-direct",
+      image: "/About-the-Client-600x400-1.webp",
+      description:
+        "How MakeOlix Consulting Drove a 22% Visibility Surge & 17% More Clicks for Africa Direct in 3 Months",
+      buttonText: "Read More",
+      buttonHref: "/case-studies/africa-direct",
+      buttonVariant: "outline",
+    },
+    
+       {
+      slug: "weathered",
+      image: "/MSEO-Case-Study-–-Weathered-Not-Worn.webp",
+      description: "SEO Case Study – Weathered Not Worn",
+
+      buttonText: "Read More",
+      buttonHref: "/case-studies/weathered",
+      buttonVariant: "outline",
+    },
+    {
+      slug: "aitkens-pewter",
+      image: "/MSEO-Case-Study-–-Aitkens-Pewter-1.webp",
+      description: "SEO Case Study – Aitkens Pewter",
+      buttonText: "Read More",
+      buttonHref: "/case-studies/aitkens-pewter",
+      buttonVariant: "outline",
+    },
+    ],
+  },
 };

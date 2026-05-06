@@ -17,13 +17,11 @@ import AeoGeo from "./pages/AeoGeo";
 import SeoAiVisibility from "./pages/SeoAiVisibility";
 import CaseStudies from "./pages/CaseStudies";
 import CaseStudyDetail from "./pages/CaseStudyDetail";
-import ChatBot from "./components/Chatbot";
 function App() {
   return (
     <Router>
       <ScrollToTop></ScrollToTop>
       <CustomCursor />
-      <ChatBot></ChatBot>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
