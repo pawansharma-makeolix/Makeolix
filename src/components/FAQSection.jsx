@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FiPlus } from "react-icons/fi";
 
 const faqs = [
   {
@@ -118,12 +119,18 @@ const FAQSection = () => {
 
                   {/* Animated Icon */}
                   <motion.span
-                    animate={{ rotate: isOpen ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="text-[#118ab2] text-xl"
-                  >
-                    ⌄
-                  </motion.span>
+  animate={{
+    rotate: isOpen ? 45 : 0,
+    scale: isOpen ? 1.08 : 1,
+  }}
+  transition={{
+    duration: 0.28,
+    ease: "easeInOut",
+  }}
+  className="text-[#118ab2] text-xl flex items-center justify-center"
+>
+  <FiPlus />
+</motion.span>
                 </button>
 
                 {/* Answer */}

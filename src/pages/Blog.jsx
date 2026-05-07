@@ -36,24 +36,24 @@ const Blog = () => {
       buttonHref: "/blog/want-more-traffic-sales",
       buttonVariant: "",
     },
-    // {
-    //   slug: "how-much-do-seo-companies-charge",
-    //   image: "/How-Much-Do-SEO-Companies-Charge_3.webp",
-    //   description: "How Much Do SEO Companies Charge?",
-    //   buttonText: "Read More",
-    //   buttonHref: "/blog/how-much-do-seo-companies-charge",
-    //   buttonVariant: "",
-    // },
-    // {
-    //   slug: "the-role-of-an-seo-company",
-    //   image: "/The-Role-of-an-SEO-Company_BLOG-3.webp",
-    //   description:
-    //     "The Role of an SEO Company in Boosting Your Online Presence",
+    {
+      slug: "how-much-do-seo-companies-charge",
+      image: "/How-Much-Do-SEO-Companies-Charge_3.webp",
+      description: "How Much Do SEO Companies Charge?",
+      buttonText: "Read More",
+      buttonHref: "/blog/how-much-do-seo-companies-charge",
+      buttonVariant: "",
+    },
+    {
+      slug: "the-role-of-an-seo-company",
+      image: "/The-Role-of-an-SEO-Company_BLOG-3.webp",
+      description:
+        "The Role of an SEO Company in Boosting Your Online Presence",
 
-    //   buttonText: "Read More",
-    //   buttonHref: "/blog/the-role-of-an-seo-company",
-    //   buttonVariant: "",
-    // },
+      buttonText: "Read More",
+      buttonHref: "/blog/the-role-of-an-seo-company",
+      buttonVariant: "",
+    },
   ];
   return (
     <>

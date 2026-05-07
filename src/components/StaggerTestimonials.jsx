@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight, Quote ,Star} from "lucide-react";
+
 const SQRT_5000 = Math.sqrt(5000);
 
 function useIsMobile() {
@@ -38,8 +39,8 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
       transition={{ type: "spring", stiffness: 280, damping: 28, mass: 0.9 }}
       style={{
         position: "absolute",
-        left: "50%",
-        top: "50%",           // ✅ 50% — center
+        left: "30%",
+        top: "30%",           // ✅ 50% — center
         translateX: "-50%",
         translateY: "-50%",
         width: cardSize,
@@ -99,7 +100,16 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
           />
         </div>
       </div>
-
+<div className="flex items-center gap-1">
+  {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
+    <Star
+      key={i}
+      size={14}
+      className={isCenter ? "text-(--accent-pink)" : "text-(--blue-3)"}
+      fill="currentColor"
+    />
+  ))}
+</div>
       <div
         className={`transition-all duration-350 ease-in-out text-[14.5px] leading-[1.7] overflow-hidden
           ${isCenter ? "text-[rgba(232,244,248,0.88)]" : "text-(--text-muted)"}`}
@@ -120,7 +130,7 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
             e.stopPropagation();
             setExpanded((v) => !v);
           }}
-          className={`self-start bg-transparent border-none cursor-pointer text-[11.5px] font-semibold
+          className={`self-start bg-transparent border-none cursor-pointer text-[10px] font-normal
             tracking-[0.06em] uppercase flex items-center gap-1 p-0
             ${isCenter ? "text-(--accent-pink)" : "text-(--blue-3)"}`}
         >

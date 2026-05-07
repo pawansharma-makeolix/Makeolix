@@ -32,7 +32,7 @@ export const SEO_PLANS = [
           { label: 'Meta Tag Optimization - 10 pages', included: true },
           { label: 'Image Optimization (ALT Tag) - 20 images', included: true },
           { label: 'Heading Tags Optimization - 10 pages', included: true },
-          { label: 'Schema Implementation', included: false },
+          { label: 'Schema Implementation', included: true },
           { label: 'Website Speed Analysis & Recommendations', included: true },
           { label: 'Website Canonical Tag Analysis', included: true },
           { label: 'XML Sitemap Optimization', included: true },
@@ -293,7 +293,7 @@ export const SEO_PLANS = [
           { label: 'Bing Webmaster Tools Setup', included: true },
           { label: 'Website Content Interlinking ', included: true },
           { label: 'Website Content Optimization', included: true },
-          { label: 'Structured Data Setup', included: false },
+          { label: 'Structured Data Setup', included: true },
         ],
       },
       {

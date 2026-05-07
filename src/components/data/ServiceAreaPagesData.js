@@ -1209,7 +1209,7 @@ export const ServiceAreaPagesData = {
           title: "Why MakeOlix Consulting is the Right Choice",
           description:
             "Choosing the Best SEO Services Company in Chicago means working with a team that understands both search engines and local markets. At MakeOlix Consulting, we combine deep industry knowledge with data-driven strategies. We don’t believe in one-size-fits-all solutions. Every business gets a tailored SEO roadmap based on its goals, competitors, and audience behavior. Our transparent reporting and consistent performance tracking ensure you always know how your business is growing.",
-          image: "/Heroimage.jpg",
+          image: "/diggitymarketing-search-engine-optimization-4111000_1920.jpg",
         },
       },
       {
@@ -1250,7 +1250,7 @@ export const ServiceAreaPagesData = {
           title: "Local SEO That Drives Real Results",
           description:
             "As a trusted SEO Consultant Chicago, we specialize in helping businesses dominate local search results. Local SEO is not just about ranking, it’s about being found by customers ready to take action. Our team focuses on optimizing your local presence, ensuring your business appears in relevant searches, maps, and directories. This approach helps us stand out as a reliable Chicago Local SEO Agency focused on real outcomes.",
-          image: "/Heroimage.jpg",
+          image: "/12019-city-1775878_1920.jpg",
           reverse: true,
         },
       },
@@ -1297,7 +1297,7 @@ export const ServiceAreaPagesData = {
           title: "Complete Digital Growth for Chicago Businesses",
           description:
             "We help businesses achieve the Best Local SEO in Chicago by integrating SEO with a broader growth strategy. Our goal is to not only improve rankings but also drive conversions and revenue. With our expertise, your business can compete with top brands and benefit from the Best Digital Marketing Services in Chicago, all under one roof. If you want to scale faster, consider combining SEO with our Performance Marketing strategies..",
-          image: "/Heroimage.jpg",
+          image: "/startupstockphotos-student-849826_1920.jpg",
         },
       },
 
@@ -2010,7 +2010,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/as_photography-digital-marketing-1725340_1920.jpg",
           align: "both",
           // LEFT
           title: "Why Philadelphia Businesses Need SEO Today",
@@ -2082,7 +2082,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/geralt-business-7100794_1920.jpg",
           align: "both",
           // LEFT
           title: "Local SEO: Winning Customers Near You",
@@ -2178,7 +2178,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/stocksnap-analytics-2618277_1920.jpg",
           align: "both",
           // LEFT
           title: "Why Local SEO Matters for San Antonio Businesses",
@@ -2250,7 +2250,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/tumisu-search-6821469_1920.jpg",
           align: "both",
           // LEFT
           title: "How We Help You Rank Higher & Get More Leads",
@@ -2339,7 +2339,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/stocksnap-wordpress-923188_1920.jpg",
           align: "both",
           // LEFT
           title: "Why MakeOlix Consulting is the Right SEO Partner",
@@ -2411,7 +2411,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/fietzfotos-stairs-6133971_1920.jpg",
           align: "both",
           // LEFT
           title: "Work with an Experienced SEO Consultant in San Francisco",
@@ -2504,7 +2504,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/Heroimage.jpg",
+          bgImage: "/lucasgeorgewendt-buildings-5070537_1920.jpg",
           align: "both",
           // LEFT
           title: "Why Local SEO Matters for Toronto Businesses",
@@ -2572,7 +2572,7 @@ export const ServiceAreaPagesData = {
           title: "Designed for Toronto’s Competitive Market & Real Growth",
           description:
             "Toronto’s diverse market demands a localized, strategic approach. Our Toronto SEO Marketing Services help you connect with the right audience and drive better engagement. With data-driven strategies, MakeOlix Consulting delivers the Best Local SEO in Toronto to boost rankings, leads, and long-term growth.",
-          image: "/Heroimage.jpg",
+          image: "/startupstockphotos-startup-849804_1920.jpg",
         },
       },
       {
@@ -2649,4 +2649,179 @@ export const ServiceAreaPagesData = {
       },
     ],
   },
+
+
+
+
+
+//   austin: {
+//     sections: [
+//       {
+//         type: "hero",
+//         data: {
+//           heading:
+//             "Austin SEO Agency",
+        
+//         },
+//       },
+// {
+//         type: "textmedia",
+//         data: {
+//           title: "Boost Your Online Presence with MakeOlix - Your Austin SEO Agency",
+//           subtitle:"Austin SEO Agency",
+//           description:
+//             "Welcome to MakeOlix Austin, your trusted SEO Company in Austin. If you’re searching for a top-tier Austin SEO Firm, you’ve come to the right place. Our team of Austin SEO Consultants and Specialists delivers strategic, data-driven, and result‑oriented Local SEO Services in Austin that help businesses thrive in this competitive market.",
+//           image: "/startupstockphotos-startup-849804_1920.jpg",
+//         },
+//       },
+//       {
+//         type: "usptype",
+//         data: {
+//           heading: "Our Services - Comprehensive Austin SEO Service",
+          
+//           stats: [
+//             {
+//               title:
+//                 "Discovery & Technical Analysis",
+//               desc: "Similar to all the other campaigns, we start by conducting a thorough dive analysis, competitor research and audience insight using powerful tools. Our bespoke approach is centered on this discovery data-based process.",
+//             },
+//             {
+//               title: "On-Page Site Architecture Optimization",
+//               desc: "Whether it's WordPress, Shopify, or custom-built sites, we optimize structure, metadata, schema markup, site speed, and mobile responsiveness, key tactics for dominating search results.",
+//             },
+//             {
+//               title: "Local SEO Services Austin",
+//               desc: "We maximize local visibility through Google Business Profile (GBP) optimization, local citations, geo‑targeted content, and review management, essential for ranking in Austin’s map pack and neighborhood search results.",
+//             },
+//             {
+//               title: "Keyword and Content Strategy",
+//               desc: "Our Austin SEO Consultants build strategic content ecosystems - blogs, landing pages, FAQs - that tap high-intent local and national keywords. Every article is also customized in order to attract buyers and achieve conversion.",
+//             },
+//             {
+//               title: "Off Page Authority & Link Building",
+//               desc: "We obtain high-value local and national conformity backlinks, such as media placements, citation, and evangelized editorial outreach - this enhances trust and ranking capability of your brand.",
+//             },
+//             {
+//               title: "Close Reporting and Constant Optimization",
+//               desc: "Our customers receive monthly analytics reporting and ranking updates as well as auditing performances. The strategic insights make campaigns precise and increase the outcomes in the long run.",
+//             },
+//           ],
+//         },
+//       },
+//       {
+//         type: "parallax",
+
+//         data: {
+//           bgImage: "/lucasgeorgewendt-buildings-5070537_1920.jpg",
+//           align: "both",
+//           // LEFT
+//           title: "The Austin Business Results",
+//           description:
+//             "We are one of the Top Austin SEO Companies and we are serious and have the measurable ROI.",
+//             subtext:"The following is what our site optimization and search engine optimization techniques have done on behalf of local clients:",
+// features: [
+//             "Gain of 500 percent of organic traffic in six months",
+//             "Google Maps ranks locations with multiple businesses appearing in the top three pack in the local searches",
+//             "Conversion of the inbound leads through the site and service pages grew by 80 percent.",
+//             "Better placement of keywords, including featured snippets and country-wide ones, such as: Austin hvac company or Austin boutique interior designer.",
+//           ],
+         
+
+//           // RIGHT
+//           rightTitle: "Why Choose MakeOlix as Your Top Austin SEO Company?",
+//           rightDescription:
+//             "From local visibility to long-term growth, we combine Austin market insight with data-driven SEO strategies that turn search traffic into qualified leads and measurable business results.",
+
+//           rightFeatures: [
+//             "Local Expertise with Global Standards: As a specialized Austin SEO Company, we understand the local market dynamics - from tech startups to creative agencies, and tailor strategies accordingly.",
+//             "Custom, Transparent Solutions: Every business is unique. Our approach ensures you receive bespoke SEO strategies, open reporting, and a steady focus on growth.",
+//             "Proven Results for Local Brands: We pride ourselves in being recognized among the Best Austin SEO Companies by delivering measurable improvements in traffic, leads, and conversions.",
+//           ],
+       
+//         },
+//       },
+//       {
+//         type: "features",
+//         data: {
+//           heading: "Strategic SEO Services for Austin Brands",
+          
+//           leftCards: [
+//             {
+//               id: 1,
+//               number: "01",
+//               title: "WordPress SEO Service Austin",
+//               body:"From blogs to WooCommerce stores, our Austin SEO Expert team is skilled at optimizing WordPress platforms - boosting page speed, streamlining URLs, integrating schema, and improving UX to convert visitors into customers.",
+//               icon: "⬡",
+//             },
+//             {
+//               id: 2,
+//               number: "02",
+//               title: "SEO Consultant in Austin for Local Businesses",
+//               body:"We help Austin-based businesses, from restaurants to consultants, achieve top search results using tailored local strategies: GBP optimization, hyper-local keywords, neighborhood service pages, and referral-focused content.",
+              
+//               icon: "⬡",
+//             },
+           
+          
+//           ],
+//           rightCards: [
+//             {
+//               id: 3,
+//               number: "03",
+//               title: "National & Google-Focused SEO Strategy",
+//               body: "Want to grow beyond Austin? Our SEO activities enable a company to rank on increasingly more general, nationwide terms, and support brand reinforcement on all platforms owned by Google, including Google search, maps, featured snippets, and so on.",
+//               icon: "◈",
+//             },
+//             {
+//               id: 4,
+//               number: "04",
+//               title: "SEO Agency in Austin for eCommerce & SaaS",
+//               body:"If you’re running an online store or SaaS in Austin, our SEO firm combines technical SEO expertise with content strategy and conversion optimization, tailored to your platform (WordPress, Shopify, Magento, etc.).",
+//               icon: "◈",
+//             }
+//           ],
+//         },
+//       },
+     
+
+      
+//       {
+//         type: "faq",
+//         data: {
+//           faqdata: [
+//             {
+//               id: 1,
+//               question: "Which industries are you specialised in (SEO in Austin)?",
+//               answer:
+//                 "We have experience in numerous diverse industrial bodies, including the tech industry, real estate or legal, healthcare, eCommerce, and local service provider business. As an experienced Austin SEO Agency, we customize strategies based on your niche and business goals.",
+//             },
+//             {
+//               id: 2,
+//               question: "Do you provide Local SEO to companies with a focus on Austin neighbourhoods?",
+//               answer:
+//                 "Absolutely. Our Local SEO Services Austin focus on helping your business rank in Google Maps and local search results across Austin’s neighborhoods like Downtown, South Congress, East Austin, and more.",
+//             },
+//             {
+//               id: 3,
+//               question: "Will you fix up my Google Business Profile?",
+//               answer:
+//                 "Yes. As part of our Austin SEO Service, we optimize and manage your Google Business Profile to improve local visibility, reviews, and map pack rankings.",
+//             },
+//             {
+//               id: 4,
+//               question: "Will you assist in WordPress seo optimization?",
+//               answer:
+//                 "Definitely. Our WordPress SEO Service Austin includes technical fixes, speed optimization, metadata improvements, and content strategy for WordPress websites of all sizes.",
+//             },
+//             {
+//               id: 5,
+//               question: "How do I get started with your Austin SEO Company?",
+//               answer:
+//                 "It’s easy! When you call us at any time, you will have a free consultation. We will audit your site, and know what you want to accomplish, and suggest a customised solution that befits your brand and pocket. No expectations, but open information and procedural activity in the future are pointed out.",
+//             },
+//           ],
+//         },
+//       },
+//     ],
+//   },
 };

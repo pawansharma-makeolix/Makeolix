@@ -1,13 +1,15 @@
 "use client";
 
 import React, { useState, useRef } from "react";
+import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 const videos = [
   { id: 1, src: "/Videos/client1.mp4" },
-  { id: 2, src: "/Videos/client2.webm" },
+  { id: 2, src: "/Videos/client2.mp4" },
   { id: 3, src: "/Videos/client3.mp4" },
   { id: 4, src: "/Videos/client4.mp4" },
   { id: 4, src: "/Videos/client5.mp4" },
+  { id: 4, src: "/Videos/client6.mp4" },
 ];
 
 const VideoTestimonials = () => {
@@ -116,7 +118,7 @@ const VideoTestimonials = () => {
           w-10 h-10 rounded-full flex items-center justify-center text-white z-30"
           style={{ backgroundColor: "#00509d" }}
         >
-          {"<"}
+          <HiChevronLeft className="text-xl" />
         </button>
 
         {/* ➡ Right */}
@@ -126,7 +128,7 @@ const VideoTestimonials = () => {
           w-10 h-10 rounded-full flex items-center justify-center text-white z-30"
           style={{ backgroundColor: "#00509d" }}
         >
-          {">"}
+         <HiChevronRight className="text-xl" />
         </button>
       </div>
     </section>

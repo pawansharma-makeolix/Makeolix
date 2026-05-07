@@ -22,7 +22,7 @@ const CustomCursor = () => {
   const blurY = useSpring(mouseY, { stiffness: 200, damping: 40 });
 
   useEffect(() => {
-    // ❌ mobile pe disable
+    
     if (window.innerWidth < 768) return;
 
     const move = (e) => {
@@ -56,10 +56,7 @@ const CustomCursor = () => {
 
   return (
     <>
-      {/* 🔥 Glow */}
-      
-
-      {/* 🔵 Ring */}
+     
       <motion.div
         style={{ translateX: ringX, translateY: ringY }}
         animate={{
@@ -68,10 +65,10 @@ const CustomCursor = () => {
           opacity: isVisible ? 1 : 0,
         }}
         transition={{ duration: 0.15 }}
-        className="fixed top-0 left-0 w-10 h-10 -translate-x-1/2 -translate-y-1/2 rounded-full border pointer-events-none z-9998"
+        className="fixed top-0 left-0 w-10 h-10 -translate-x-1/2 -translate-y-1/2 rounded-full border pointer-events-none z-100000"
       />
 
-      {/* ⚫ Dot */}
+      
       <motion.div
         style={{ translateX: cursorX, translateY: cursorY }}
         animate={{
@@ -79,7 +76,7 @@ const CustomCursor = () => {
           opacity: isVisible ? 1 : 0,
         }}
         transition={{ duration: 0.1 }}
-        className="fixed top-0 left-0 w-1.5 h-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-pink-400 pointer-events-none z-9999"
+        className="fixed top-0 left-0 w-1.5 h-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-pink-400 pointer-events-none z-100000"
       />
     </>
   );

@@ -13,6 +13,7 @@ import ParallaxHero from "../components/ParallaxHero";
 import FaqVariant from "../components/FaqVariant";
 import { ServiceAreaPagesData } from "../components/data/ServiceAreaPagesData";
 import MakeolixNumbers from "../components/MakeolixNumbers";
+import FeaturesSection from "../components/FeaturesSection";
 const CountryPage = () => {
   const { city } = useParams();
   const pageData = ServiceAreaPagesData[city];
@@ -66,6 +67,8 @@ const CountryPage = () => {
             );
           case "parallax2":
             return <ParallaxHero key={index} {...section.data} />;
+          case "features":
+            return <FeaturesSection key ={index} {...section.data} />
           case "faq":
             return <FaqVariant key={index} faqs={section.data.faqdata} />;
           case "textmedia":

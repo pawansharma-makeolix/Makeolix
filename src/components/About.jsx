@@ -7,10 +7,9 @@ import { SparkleParticles } from "./SparkleParticles";
 const About = () => {
   return (
     <section className="relative py-20 bg-(--bg-main) text-white overflow-hidden">
-      {/* 🌌 PARTICLES BACKGROUND */}
+
       <SparkleParticles className="absolute inset-0 z-0 blur-[1px]" />
 
-      {/* 🔤 CONTENT */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* LEFT CONTENT */}
         <motion.div
@@ -40,7 +39,6 @@ const About = () => {
           </Button>
         </motion.div>
 
-        {/* RIGHT VIDEO */}
         <motion.div
           initial={{ opacity: 0, x: 120, rotate: 6, scale: 0.9 }}
           whileInView={{ opacity: 1, x: 0, rotate: 0, scale: 1 }}
@@ -57,7 +55,7 @@ const About = () => {
             }}
             className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,80,157,0.4)] group"
           >
-            {/* VIDEO */}
+            
             <video
               src={aboutVideo}
               autoPlay
@@ -67,7 +65,6 @@ const About = () => {
               className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
             />
 
-            {/* SUBTLE OVERLAY */}
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition"></div>
           </motion.div>
         </motion.div>

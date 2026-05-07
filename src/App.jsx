@@ -19,11 +19,15 @@ import CaseStudies from "./pages/CaseStudies";
 import CaseStudyDetail from "./pages/CaseStudyDetail";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
+import ChatBot from "./components/chatbot/ChatBot"
 function App() {
   return (
     <Router>
+      
       <ScrollToTop></ScrollToTop>
+      <ChatBot></ChatBot>
       <CustomCursor />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

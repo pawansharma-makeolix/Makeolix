@@ -61,8 +61,7 @@ const Achievements = () => {
           industries.
         </p>
       </motion.div>
-
-      {/* 🔥 Slider */}
+      
       <div className="relative flex items-center justify-center h-32.5 md:h-50 -mt-3">
         {awards.map((img, index) => (
           <motion.div
@@ -94,7 +93,6 @@ const Achievements = () => {
         ))}
       </div>
 
-      {/* 🔥 subtle floating blobs */}
       <motion.div
         className="absolute top-6 left-6 w-28 h-28 bg-[#118ab2]/20 rounded-full blur-3xl"
         animate={{ y: [0, 20, 0] }}
