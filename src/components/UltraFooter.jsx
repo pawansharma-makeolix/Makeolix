@@ -87,7 +87,7 @@ export default function UltraFooter() {
   {[
     { Icon: FaFacebookF, url: "https://www.facebook.com/makeolixconsulting" },
     { Icon: FaInstagram, url: "https://www.instagram.com/makeolix_consulting" },
-    { Icon: FaLinkedinIn, url: "https://www.linkedin.com/company/makeolix-consulting-inc" }
+    { Icon: FaLinkedinIn, url: "https://www.linkedin.com/company/makeolix-consulting-inc/" }
   ].map((social, i) => (
     <motion.a
       key={i}
