@@ -5,17 +5,17 @@ const benefits = [
   {
     title: "Long-Term Growth",
     text: "A solid foundation for long-term search engine performance and user engagement",
-    image: "/White-and-Blue-Modern-Dynamic-Marketing-Strategy-Presentation-2-1024x576.webp",
+    image: "/yamu_jay-global-business-9062781_1920.jpg",
   },
   {
     title: "Immediate Impact",
     text: "Immediate improvements in technical, content, and user experience aspects",
-    image: "/White-and-Blue-Modern-Dynamic-Marketing-Strategy-Presentation-1024x576.webp",
+    image: "/imediategrowth.jpg",
   },
   {
     title: "Cost-Effective Coverage",
     text: "Affordable yet comprehensive service targeting critical SEO elements",
-    image: "/White-and-Blue-Modern-Dynamic-Marketing-Strategy-Presentation-3-1024x576.webp",
+    image: "/costeffective.jpg",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function BenefitsSection() {
         className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[var(--blue-3)] blur-3xl opacity-10"
       />
 
-      <div className="relative z-10 mx-auto max-w-8xl">
+      <div className="relative z-10 mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

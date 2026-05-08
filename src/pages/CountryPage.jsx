@@ -75,10 +75,8 @@ const CountryPage = () => {
             return (
               <TextMedia
                 key={index}
-                title={section.data.title}
-                description={section.data.description}
-                image={section.data.image}
-                reverse={section.data.reverse}
+               {...section.data}
+                
               />
             );
           default:

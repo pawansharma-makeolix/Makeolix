@@ -28,7 +28,7 @@ export default function UltraAnimatedHero({
   const containerRef = useRef(null);
 
   // duplicate images (IMPORTANT)
-  const duplicated = [...images, ...images];
+  const duplicated = [...images, ...images, ...images];
 
   useEffect(() => {
     let controls;
@@ -55,12 +55,11 @@ export default function UltraAnimatedHero({
       <section className="relative min-h-screen pt-30 flex items-center justify-center overflow-hidden bg-(--bg-main) px-6">
 
         {/* ─── SLIDER ───────────────── */}
-        <div className="absolute inset-0 pt-30 flex items-center justify-center z-0 overflow-hidden">
-
+<div className="absolute inset-0 pt-30 flex items-center z-0 overflow-hidden">
           <motion.div
             ref={containerRef}
             style={{ x }}
-            className="flex gap-8 w-max"
+            className="absolute left-0 flex gap-8 w-max"
             onMouseEnter={() => x.stop()} // 🛑 pause
             onMouseLeave={() => {
               const width = containerRef.current?.scrollWidth / 2;

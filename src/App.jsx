@@ -19,7 +19,9 @@ import CaseStudies from "./pages/CaseStudies";
 import CaseStudyDetail from "./pages/CaseStudyDetail";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
+// import IndustryItem from "./pages/IndustryItem"
 import ChatBot from "./components/chatbot/ChatBot"
+
 function App() {
   return (
     <Router>
@@ -50,6 +52,7 @@ function App() {
 
         <Route path="/:city" element={<CountryPage />} />
         <Route path="/services/:slug" element={<ServiceItem />} />
+        {/* <Route path="/industry/:slug" element={<IndustryItem />} /> */}
       </Routes>
     </Router>
   );

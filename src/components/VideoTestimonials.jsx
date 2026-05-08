@@ -62,7 +62,8 @@ const VideoTestimonials = () => {
     <section
       className="w-full py-20 flex flex-col items-center"
       style={{
-        background: "linear-gradient(180deg, var(--bg-main) 0%, var(--bg-soft) 60%, var(--bg-main) 100%)",
+        background:
+          "linear-gradient(180deg, var(--bg-main) 0%, var(--bg-soft) 60%, var(--bg-main) 100%)",
       }}
     >
       {/* Heading */}
@@ -128,7 +129,7 @@ const VideoTestimonials = () => {
           w-10 h-10 rounded-full flex items-center justify-center text-white z-30"
           style={{ backgroundColor: "#00509d" }}
         >
-         <HiChevronRight className="text-xl" />
+          <HiChevronRight className="text-xl" />
         </button>
       </div>
     </section>

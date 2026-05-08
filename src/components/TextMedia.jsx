@@ -247,8 +247,7 @@ export default function TextMedia({
           <h2
             className="text-white leading-tight flex flex-wrap"
             style={{
-              fontSize: "clamp(2.5rem, 3.5vw, 3.5rem)",
-              fontFamily: "Merriweather, serif",
+              fontSize: "clamp(2rem, 3vw, 3rem)",
             }}
           >
             {words.map((word, i) => (
@@ -270,7 +269,7 @@ export default function TextMedia({
           {description && (
             <motion.p
               style={{ opacity }}
-              className="text-white max-w-md leading-relaxed"
+              className="text-white max-w-LG leading-relaxed"
             >
               {description}
             </motion.p>

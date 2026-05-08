@@ -130,7 +130,7 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
           gap: "1.25rem",
-          maxWidth: 1100,
+          maxWidth: 1200,
           margin: "0 auto",
           perspective: 1000,
         }}

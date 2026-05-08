@@ -1209,7 +1209,8 @@ export const ServiceAreaPagesData = {
           title: "Why MakeOlix Consulting is the Right Choice",
           description:
             "Choosing the Best SEO Services Company in Chicago means working with a team that understands both search engines and local markets. At MakeOlix Consulting, we combine deep industry knowledge with data-driven strategies. We don’t believe in one-size-fits-all solutions. Every business gets a tailored SEO roadmap based on its goals, competitors, and audience behavior. Our transparent reporting and consistent performance tracking ensure you always know how your business is growing.",
-          image: "/diggitymarketing-search-engine-optimization-4111000_1920.jpg",
+          image:
+            "/diggitymarketing-search-engine-optimization-4111000_1920.jpg",
         },
       },
       {
@@ -2650,178 +2651,706 @@ export const ServiceAreaPagesData = {
     ],
   },
 
+  austin: {
+    sections: [
+      {
+        type: "hero",
+        data: {
+          heading: "Austin SEO Agency",
+        },
+      },
+      {
+        type: "textmedia",
+        data: {
+          title:
+            "Boost Your Online Presence with MakeOlix - Your Austin SEO Agency",
+          subtitle: "Austin SEO Agency",
+          description:
+            "Welcome to MakeOlix Austin, your trusted SEO Company in Austin. If you’re searching for a top-tier Austin SEO Firm, you’ve come to the right place. Our team of Austin SEO Consultants and Specialists delivers strategic, data-driven, and result‑oriented Local SEO Services in Austin that help businesses thrive in this competitive market.",
+          image: "/ornaw-women-3978569_1920.jpg",
+        },
+      },
+      {
+        type: "usptype",
+        data: {
+          heading: "Our Services - Comprehensive Austin SEO Service",
 
+          stats: [
+            {
+              title: "Discovery & Technical Analysis",
+              desc: "Similar to all the other campaigns, we start by conducting a thorough dive analysis, competitor research and audience insight using powerful tools. Our bespoke approach is centered on this discovery data-based process.",
+            },
+            {
+              title: "On-Page Site Architecture Optimization",
+              desc: "Whether it's WordPress, Shopify, or custom-built sites, we optimize structure, metadata, schema markup, site speed, and mobile responsiveness, key tactics for dominating search results.",
+            },
+            {
+              title: "Local SEO Services Austin",
+              desc: "We maximize local visibility through Google Business Profile (GBP) optimization, local citations, geo‑targeted content, and review management, essential for ranking in Austin’s map pack and neighborhood search results.",
+            },
+            {
+              title: "Keyword and Content Strategy",
+              desc: "Our Austin SEO Consultants build strategic content ecosystems - blogs, landing pages, FAQs - that tap high-intent local and national keywords. Every article is also customized in order to attract buyers and achieve conversion.",
+            },
+            {
+              title: "Off Page Authority & Link Building",
+              desc: "We obtain high-value local and national conformity backlinks, such as media placements, citation, and evangelized editorial outreach - this enhances trust and ranking capability of your brand.",
+            },
+            {
+              title: "Close Reporting and Constant Optimization",
+              desc: "Our customers receive monthly analytics reporting and ranking updates as well as auditing performances. The strategic insights make campaigns precise and increase the outcomes in the long run.",
+            },
+          ],
+        },
+      },
+      {
+        type: "parallax",
 
+        data: {
+          bgImage: "/startupstockphotos-student-849828_1920.jpg",
+          align: "both",
+          // LEFT
+          title: "The Austin Business Results",
+          description:
+            "We are one of the Top Austin SEO Companies and we are serious and have the measurable ROI.",
+          subtext:
+            "The following is what our site optimization and search engine optimization techniques have done on behalf of local clients:",
+          features: [
+            "Gain of 500 percent of organic traffic in six months",
+            "Google Maps ranks locations with multiple businesses appearing in the top three pack in the local searches",
+            "Conversion of the inbound leads through the site and service pages grew by 80 percent.",
+            "Better placement of keywords, including featured snippets and country-wide ones, such as: Austin hvac company or Austin boutique interior designer.",
+          ],
 
+          // RIGHT
+          rightTitle: "Why Choose MakeOlix as Your Top Austin SEO Company?",
+          rightDescription:
+            "From local visibility to long-term growth, we combine Austin market insight with data-driven SEO strategies that turn search traffic into qualified leads and measurable business results.",
 
-//   austin: {
-//     sections: [
-//       {
-//         type: "hero",
-//         data: {
-//           heading:
-//             "Austin SEO Agency",
-        
-//         },
-//       },
-// {
-//         type: "textmedia",
-//         data: {
-//           title: "Boost Your Online Presence with MakeOlix - Your Austin SEO Agency",
-//           subtitle:"Austin SEO Agency",
-//           description:
-//             "Welcome to MakeOlix Austin, your trusted SEO Company in Austin. If you’re searching for a top-tier Austin SEO Firm, you’ve come to the right place. Our team of Austin SEO Consultants and Specialists delivers strategic, data-driven, and result‑oriented Local SEO Services in Austin that help businesses thrive in this competitive market.",
-//           image: "/startupstockphotos-startup-849804_1920.jpg",
-//         },
-//       },
-//       {
-//         type: "usptype",
-//         data: {
-//           heading: "Our Services - Comprehensive Austin SEO Service",
-          
-//           stats: [
-//             {
-//               title:
-//                 "Discovery & Technical Analysis",
-//               desc: "Similar to all the other campaigns, we start by conducting a thorough dive analysis, competitor research and audience insight using powerful tools. Our bespoke approach is centered on this discovery data-based process.",
-//             },
-//             {
-//               title: "On-Page Site Architecture Optimization",
-//               desc: "Whether it's WordPress, Shopify, or custom-built sites, we optimize structure, metadata, schema markup, site speed, and mobile responsiveness, key tactics for dominating search results.",
-//             },
-//             {
-//               title: "Local SEO Services Austin",
-//               desc: "We maximize local visibility through Google Business Profile (GBP) optimization, local citations, geo‑targeted content, and review management, essential for ranking in Austin’s map pack and neighborhood search results.",
-//             },
-//             {
-//               title: "Keyword and Content Strategy",
-//               desc: "Our Austin SEO Consultants build strategic content ecosystems - blogs, landing pages, FAQs - that tap high-intent local and national keywords. Every article is also customized in order to attract buyers and achieve conversion.",
-//             },
-//             {
-//               title: "Off Page Authority & Link Building",
-//               desc: "We obtain high-value local and national conformity backlinks, such as media placements, citation, and evangelized editorial outreach - this enhances trust and ranking capability of your brand.",
-//             },
-//             {
-//               title: "Close Reporting and Constant Optimization",
-//               desc: "Our customers receive monthly analytics reporting and ranking updates as well as auditing performances. The strategic insights make campaigns precise and increase the outcomes in the long run.",
-//             },
-//           ],
-//         },
-//       },
-//       {
-//         type: "parallax",
+          rightFeatures: [
+            "Local Expertise with Global Standards: As a specialized Austin SEO Company, we understand the local market dynamics - from tech startups to creative agencies, and tailor strategies accordingly.",
+            "Custom, Transparent Solutions: Every business is unique. Our approach ensures you receive bespoke SEO strategies, open reporting, and a steady focus on growth.",
+            "Proven Results for Local Brands: We pride ourselves in being recognized among the Best Austin SEO Companies by delivering measurable improvements in traffic, leads, and conversions.",
+          ],
+        },
+      },
+      {
+        type: "features",
+        data: {
+          heading: "Strategic SEO Services for Austin Brands",
 
-//         data: {
-//           bgImage: "/lucasgeorgewendt-buildings-5070537_1920.jpg",
-//           align: "both",
-//           // LEFT
-//           title: "The Austin Business Results",
-//           description:
-//             "We are one of the Top Austin SEO Companies and we are serious and have the measurable ROI.",
-//             subtext:"The following is what our site optimization and search engine optimization techniques have done on behalf of local clients:",
-// features: [
-//             "Gain of 500 percent of organic traffic in six months",
-//             "Google Maps ranks locations with multiple businesses appearing in the top three pack in the local searches",
-//             "Conversion of the inbound leads through the site and service pages grew by 80 percent.",
-//             "Better placement of keywords, including featured snippets and country-wide ones, such as: Austin hvac company or Austin boutique interior designer.",
-//           ],
-         
+          leftCards: [
+            {
+              id: 1,
+              number: "01",
+              title: "WordPress SEO Service Austin",
+              body: "From blogs to WooCommerce stores, our Austin SEO Expert team is skilled at optimizing WordPress platforms - boosting page speed, streamlining URLs, integrating schema, and improving UX to convert visitors into customers.",
+              icon: "⬡",
+            },
+            {
+              id: 2,
+              number: "02",
+              title: "SEO Consultant in Austin for Local Businesses",
+              body: "We help Austin-based businesses, from restaurants to consultants, achieve top search results using tailored local strategies: GBP optimization, hyper-local keywords, neighborhood service pages, and referral-focused content.",
 
-//           // RIGHT
-//           rightTitle: "Why Choose MakeOlix as Your Top Austin SEO Company?",
-//           rightDescription:
-//             "From local visibility to long-term growth, we combine Austin market insight with data-driven SEO strategies that turn search traffic into qualified leads and measurable business results.",
+              icon: "⬡",
+            },
+          ],
+          rightCards: [
+            {
+              id: 3,
+              number: "03",
+              title: "National & Google-Focused SEO Strategy",
+              body: "Want to grow beyond Austin? Our SEO activities enable a company to rank on increasingly more general, nationwide terms, and support brand reinforcement on all platforms owned by Google, including Google search, maps, featured snippets, and so on.",
+              icon: "◈",
+            },
+            {
+              id: 4,
+              number: "04",
+              title: "SEO Agency in Austin for eCommerce & SaaS",
+              body: "If you’re running an online store or SaaS in Austin, our SEO firm combines technical SEO expertise with content strategy and conversion optimization, tailored to your platform (WordPress, Shopify, Magento, etc.).",
+              icon: "◈",
+            },
+          ],
+        },
+      },
 
-//           rightFeatures: [
-//             "Local Expertise with Global Standards: As a specialized Austin SEO Company, we understand the local market dynamics - from tech startups to creative agencies, and tailor strategies accordingly.",
-//             "Custom, Transparent Solutions: Every business is unique. Our approach ensures you receive bespoke SEO strategies, open reporting, and a steady focus on growth.",
-//             "Proven Results for Local Brands: We pride ourselves in being recognized among the Best Austin SEO Companies by delivering measurable improvements in traffic, leads, and conversions.",
-//           ],
-       
-//         },
-//       },
-//       {
-//         type: "features",
-//         data: {
-//           heading: "Strategic SEO Services for Austin Brands",
-          
-//           leftCards: [
-//             {
-//               id: 1,
-//               number: "01",
-//               title: "WordPress SEO Service Austin",
-//               body:"From blogs to WooCommerce stores, our Austin SEO Expert team is skilled at optimizing WordPress platforms - boosting page speed, streamlining URLs, integrating schema, and improving UX to convert visitors into customers.",
-//               icon: "⬡",
-//             },
-//             {
-//               id: 2,
-//               number: "02",
-//               title: "SEO Consultant in Austin for Local Businesses",
-//               body:"We help Austin-based businesses, from restaurants to consultants, achieve top search results using tailored local strategies: GBP optimization, hyper-local keywords, neighborhood service pages, and referral-focused content.",
-              
-//               icon: "⬡",
-//             },
-           
-          
-//           ],
-//           rightCards: [
-//             {
-//               id: 3,
-//               number: "03",
-//               title: "National & Google-Focused SEO Strategy",
-//               body: "Want to grow beyond Austin? Our SEO activities enable a company to rank on increasingly more general, nationwide terms, and support brand reinforcement on all platforms owned by Google, including Google search, maps, featured snippets, and so on.",
-//               icon: "◈",
-//             },
-//             {
-//               id: 4,
-//               number: "04",
-//               title: "SEO Agency in Austin for eCommerce & SaaS",
-//               body:"If you’re running an online store or SaaS in Austin, our SEO firm combines technical SEO expertise with content strategy and conversion optimization, tailored to your platform (WordPress, Shopify, Magento, etc.).",
-//               icon: "◈",
-//             }
-//           ],
-//         },
-//       },
-     
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question:
+                "Which industries are you specialised in (SEO in Austin)?",
+              answer:
+                "We have experience in numerous diverse industrial bodies, including the tech industry, real estate or legal, healthcare, eCommerce, and local service provider business. As an experienced Austin SEO Agency, we customize strategies based on your niche and business goals.",
+            },
+            {
+              id: 2,
+              question:
+                "Do you provide Local SEO to companies with a focus on Austin neighbourhoods?",
+              answer:
+                "Absolutely. Our Local SEO Services Austin focus on helping your business rank in Google Maps and local search results across Austin’s neighborhoods like Downtown, South Congress, East Austin, and more.",
+            },
+            {
+              id: 3,
+              question: "Will you fix up my Google Business Profile?",
+              answer:
+                "Yes. As part of our Austin SEO Service, we optimize and manage your Google Business Profile to improve local visibility, reviews, and map pack rankings.",
+            },
+            {
+              id: 4,
+              question: "Will you assist in WordPress seo optimization?",
+              answer:
+                "Definitely. Our WordPress SEO Service Austin includes technical fixes, speed optimization, metadata improvements, and content strategy for WordPress websites of all sizes.",
+            },
+            {
+              id: 5,
+              question: "How do I get started with your Austin SEO Company?",
+              answer:
+                "It’s easy! When you call us at any time, you will have a free consultation. We will audit your site, and know what you want to accomplish, and suggest a customised solution that befits your brand and pocket. No expectations, but open information and procedural activity in the future are pointed out.",
+            },
+          ],
+        },
+      },
+    ],
+  },
 
-      
-//       {
-//         type: "faq",
-//         data: {
-//           faqdata: [
-//             {
-//               id: 1,
-//               question: "Which industries are you specialised in (SEO in Austin)?",
-//               answer:
-//                 "We have experience in numerous diverse industrial bodies, including the tech industry, real estate or legal, healthcare, eCommerce, and local service provider business. As an experienced Austin SEO Agency, we customize strategies based on your niche and business goals.",
-//             },
-//             {
-//               id: 2,
-//               question: "Do you provide Local SEO to companies with a focus on Austin neighbourhoods?",
-//               answer:
-//                 "Absolutely. Our Local SEO Services Austin focus on helping your business rank in Google Maps and local search results across Austin’s neighborhoods like Downtown, South Congress, East Austin, and more.",
-//             },
-//             {
-//               id: 3,
-//               question: "Will you fix up my Google Business Profile?",
-//               answer:
-//                 "Yes. As part of our Austin SEO Service, we optimize and manage your Google Business Profile to improve local visibility, reviews, and map pack rankings.",
-//             },
-//             {
-//               id: 4,
-//               question: "Will you assist in WordPress seo optimization?",
-//               answer:
-//                 "Definitely. Our WordPress SEO Service Austin includes technical fixes, speed optimization, metadata improvements, and content strategy for WordPress websites of all sizes.",
-//             },
-//             {
-//               id: 5,
-//               question: "How do I get started with your Austin SEO Company?",
-//               answer:
-//                 "It’s easy! When you call us at any time, you will have a free consultation. We will audit your site, and know what you want to accomplish, and suggest a customised solution that befits your brand and pocket. No expectations, but open information and procedural activity in the future are pointed out.",
-//             },
-//           ],
-//         },
-//       },
-//     ],
-//   },
+  charlotte: {
+    sections: [
+      {
+        type: "hero",
+        data: {
+          heading: "Charlotte SEO Agency",
+        },
+      },
+      {
+        type: "textmedia",
+        data: {
+          title: "Elevate Your Digital Presence with MakeOlix Consulting ",
+          subtitle: "Charlotte SEO Agency",
+          description:
+            "Your Premier SEO Agency Charlotte ,Welcome to MakeOlix Consulting Charlotte, your trusted Charlotte SEO Company. If you’re looking for a top-performing SEO Company in Charlotte, you’ve landed in the right place. Our local team of Charlotte SEO Specialists and SEO Consultants in Charlotte delivers custom, data-driven SEO strategies tailored for local businesses aiming to grow in the competitive Charlotte market.",
+          image: "/652234-architecture-2256489_1920.jpg",
+        },
+      },
+
+      {
+        type: "usptype",
+        data: {
+          heading: "Our Core Charlotte SEO Services",
+
+          stats: [
+            {
+              title: "Strategy & Keyword Research SEO",
+              desc: "Our initial work begins with intensive research: analysis of competitors, mapping of the behavior of customers, and exact planning of keywords. Your Charlotte SEO Service roadmap is crafted to align with your business objectives and customer intent.",
+            },
+            {
+              title: "On-Page, Technical SEO Optimization",
+              desc: "Our Charlotte SEO Company tackles everything from site speed and structured data to secure architecture and meta tags. We streamline your website and content so that your company can be noticed, particularly in local search engines.",
+            },
+            {
+              title: "Charlotte Local SEO Services",
+              desc: "Conquer the map pack and local searches of Charlotte. We also maximize your Google Business Profile, keep your NAP consistent, and get customers to write you reviews and get you local citations, which are the key to local discovery.",
+            },
+            {
+              title: "Charlotte Local SEO Services",
+              desc: "Conquer the map pack and local searches of Charlotte. We also maximize your Google Business Profile, keep your NAP consistent, and get customers to write you reviews and get you local citations, which are the key to local discovery.",
+            },
+            {
+              title: "Content Optimization & Creation",
+              desc: "Our skilled Charlotte SEO Specialists craft targeted landing pages, blog posts, and local guides that connect with your audience and search engines alike. All the content is optimized with the use of the Charlotte keywords and intent searches.",
+            },
+            {
+              title: "Link building and Characteristic construction",
+              desc: "We earn high-quality backlinks by collaborating with trusted Charlotte-based publications, relevant industry websites, and well-established directories that align with your niche. Strategic placement, outreach, and media, as well as ethical partnership building, improve the authority and search ranking of your site.",
+            },
+          ],
+        },
+      },
+      {
+        type: "parallax",
+
+        data: {
+          bgImage: "/omgaustin-laptop-7669027_1920.jpg",
+          align: "both",
+          // LEFT
+          title: "Our Proven SEO Process for Charlotte Businesses",
+
+          features: [
+            "Free Strategy Call & Website Review We begin with a zero-cost consultation to audit your website and uncover ranking opportunities.",
+            "Custom SEO Roadmap & Keyword Planning As your Charlotte SEO Consultant, we map out SEO priorities, technical fixes, on-page enhancements, content deliverables, and outreach plans.",
+            "Execution Phase Week-by-week implementation by our Charlotte SEO Specialists, optimizing your site, publishing content, and building authority.",
+            "Performance Monitoring & Reporting Receive monthly reports with traffic data, keyword rankings, and recommendations for ongoing optimization.",
+            "Iterative Growth SEO is a marathon, not a sprint. We continuously refine our strategy based on analytics, search trends, and new opportunities.",
+          ],
+
+          // RIGHT
+          rightTitle: "Our Clients",
+          rightSubtext:
+            "Our services are scalable, whether you are a startup or a local service provider, an ecommerce brand or an enterprise brand in Charlotte:",
+
+          rightFeatures: [
+            "City local businesses in local neighborhoods or niche marketplaces",
+            "Law, real estate, healthcare, and consulting professional services",
+            "Ecommerce companies like WooCommerce, Shopify, and BigCommerce",
+            "Enterprise customers seeking long-term SEO development",
+          ],
+        },
+      },
+      {
+        type: "features",
+        data: {
+          heading: "Strategic SEO Services for Charlotte Brands",
+
+          leftCards: [
+            {
+              id: 1,
+              number: "01",
+              title: "Charlotte Local SEO Services",
+              body: "Whether you serve Uptown, NoDa, South End, or Ballantyne, our local strategies  geo-targeted content, Google Maps optimization, neighborhood landing pages. Designed to capture local searchers  ready to engage.",
+              icon: "⬡",
+            },
+            {
+              id: 2,
+              number: "02",
+              title:
+                "Charlotte Professional SEO Services for WordPress Projects",
+              body: "As WordPress experts, our WordPress SEO Service Charlotte includes theme optimization, URL cleanup, schema markup implementation, and on-site SEO tailored to your site’s structure.",
+
+              icon: "⬡",
+            },
+          ],
+          rightCards: [
+            {
+              id: 3,
+              number: "03",
+              title: "Charlotte SEO Consultant for National Growth",
+              body: "Looking to grow beyond Charlotte? We can help you rank for regional and national keywords while optimizing for local relevance, everything from blog strategy to technical scalability.",
+              icon: "◈",
+            },
+            {
+              id: 4,
+              number: "04",
+              title: "SEO Agency in Charlotte for eCommerce & SaaS",
+              body: "If you’re running an online store or SaaS in Charlotte, our SEO firm combines technical SEO expertise with content strategy and conversion optimization, tailored to your platform (WordPress, Shopify, Magento, etc.).",
+              icon: "◈",
+            },
+          ],
+        },
+      },
+
+      {
+        type: "parallax",
+
+        data: {
+          bgImage: "/hamonazaryan1-notebook-2386034_1920.jpg",
+          align: "both",
+          // LEFT
+          title: "Results That Talk Volumes",
+          subtext:
+            "Clients working with our SEO Company in Charlotte have seen outstanding outcomes:",
+          features: [
+            "Growth of up to 400 percent of organic traffic in 4 to 6 months",
+            "Ruling the Local Pack of Google Core Charlotte searches",
+            "Inbound leads utilizing optimized content on page of service page increased by 80%",
+            "The featured snippets and the placement at the top of the keyboards with words like Charlotte interior designer, Charlotte law firm SEO, and others",
+          ],
+
+          // RIGHT
+          rightTitle:
+            "Why Choose MakeOlix Consulting as Your Charlotte SEO Firm?",
+          rightDescription:
+            "Stating regional tectonics, decreeing worldwide tectonics, pose Based right here in Charlotte, our Charlotte SEO Agency understands the unique audience, industry trends, and competitive landscape in the Queen City. We combine local expertise with effective practices that are actively used by leading companies worldwide so that your business not only gains dominance in Charlotte but also in the entire country.",
+
+          rightFeatures: [
+            "Individualistic Approach to Getting Results Each business brand has its own exclusive objectives, and your SEO ought to look into that. As a leading Charlotte SEO Company, we design fully customized plans covering technical audits, content optimization, local listings, and measurable growth tracking.",
+            "Informed, Open Reporting We are in favor of transparency. Regular performance reports, insights, as well as ranking updates are provided to each of the clients. MakeOlix Consulting gives you what you see: steady SEO results without the elements of surprise.",
+          ],
+        },
+      },
+
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question: "How long until I see results?",
+              answer:
+                "While timelines vary by industry and competition, most clients see significant ROI and traffic gains within 3 to 6 months. Long-term growth is our goal.",
+            },
+            {
+              id: 2,
+              question: "Do you guarantee specific rankings?",
+              answer:
+                "No. Ethical SEO firms don’t guarantee rankings because search algorithms evolve constantly. However, we do guarantee ongoing improvements in online visibility, traffic, and conversions.",
+            },
+            {
+              id: 3,
+              question: "Can I cancel or pause SEO services at any time?",
+              answer:
+                "Absolutely. Our Charlotte SEO Service plans are flexible and month-to-month with no long-term contracts. Your comfort and success come first.",
+            },
+            {
+              id: 4,
+              question: "What platforms do you optimize?",
+              answer:
+                "We’re experts in WordPress, Shopify, Wix, Squarespace, Magento, and custom CMS platforms. Our optimization tactics adapt to your tech stack.",
+            },
+            {
+              id: 5,
+              question:
+                "Will you help optimize my Google Business Profile and local listings?",
+              answer:
+                "Yes. As part of our Charlotte Local SEO Services, we manage your Google Business Profile, fix NAP consistency across directories, and gather customer reviews to enhance local visibility.",
+            },
+          ],
+        },
+      },
+    ],
+  },
+
+  columbus: {
+    sections: [
+      {
+        type: "hero",
+        data: {
+          heading: "Columbus SEO Company",
+        },
+      },
+      {
+        type: "textmedia",
+        data: {
+          title: "Boost Your Online Presence with MakeOlix ",
+          subtitle: "columbus SEO Agency",
+          description:
+            "MakeOlix Consulting is a company that supports businesses in Columbus to realize the full potential of their digital presence and online marketing through result-oriented SEO approaches. In case your site is not ranking, getting quality leads, or turning traffic into paying customers, our team of proven SEO experts will do so. Being the leading Columbus SEO Company, we integrate high-level research and data-driven insights with proven methods to deliver quantifiable results that can directly influence the growth of your business. You do not receive more clicks with us, you receive quality leads, better sales and brand recognition in the long run.",
+          image: "/ronaldcandonga-job-5382501_1920.jpg",
+        },
+      },
+      {
+        type: "usptype",
+        data: {
+          heading:
+            "Columbus SEO Services: Achieve Ranking #1 With Our Dynamic SEO Solutions",
+
+          subheading:
+            "Our Columbus SEO services are diverse and serve businesses of all categories. We aim to develop tailor-made approaches that would fit your business goals and make sure you remain ahead of others.",
+          stats: [
+            {
+              title: "SEO Audit",
+              desc: "A solid strategy begins with a deep analysis. Our SEO consulting Columbus specialists will conduct a thorough SEO audit to identify the technical mistakes, spot the opportunities and create the conditions under which the optimization will take place. We will open the path to improved rankings and organic growth by solving issues on-site and matching the content with the user intent.",
+            },
+            {
+              title: "Keyword Research",
+              desc: "The cornerstone of SEO is keywords. Being one of the top Columbus SEO companies, we employ powerful tools and competitive analysis to establish high-value keywords, such as short- and long-tail terms. This is what makes sure that your business reaches the right audience at the right time.",
+            },
+            {
+              title: "Content Marketing",
+              desc: "We have a content team that knows the strength of storytelling and relevance. We increase brand exposure by use of blogs, landing pages, product descriptions, and social media content and we get quality leads. At Columbus SEO marketing, we are interested in producing quality, E-E-A-T content (Experience, Expertise, Authority and Trust) that sells.",
+            },
+            {
+              title: "On-Page SEO",
+              desc: "Optimizing title tags and meta descriptions and enhancing site speed and mobile responsiveness, our Columbus SEO professionals make sure that every on-page factor is helping your rankings. Internal linking and user experience are other areas that we optimize in order to retain visitors.",
+            },
+            {
+              title: "Link Building",
+              desc: "Our white-hat link-building campaigns work to build credibility and authority for your website. We make links to reputable names, industry-relevant websites, and authoritative sites to fortify your online presence. That is what our Columbus SEO company helps to enhance your search presence and brand reputation.",
+            },
+            {
+              title: "Local SEO",
+              desc: "If you’re targeting customers in Columbus, our Columbus local SEO services will put your business on the map, literally. We optimize your Google Business Profile, create local citations, and align your content for location-based search terms to drive foot traffic and local leads.",
+            },
+            {
+              title: "Small Business SEO",
+              desc: "Small business requires a new strategy. Being a Columbus SEO firm, we know the limitations of the budget and competition. That is why we provide free custom solutions that can help a small business shine in the local environment, seek new clients and establish a strong online presence.",
+            },
+            {
+              title: "E-Commerce SEO",
+              desc: "Online stores thrive when they rank for the right products. Our Columbus E-commerce SEO services include optimizing product descriptions, category pages, images, and schema markup to enhance search engine rankings while improving the shopping experience.",
+            },
+            {
+              title: "Voice Search SEO",
+              desc: "The future of search is voice search. We make your content searchable on voice and local intent and make sure it works with devices such as Alexa, Siri, and Google Assistant. This makes your business stay on course in the evolving search environment.",
+            },
+          ],
+        },
+      },
+      {
+        type: "textmedia",
+        data: {
+          title:
+            "Best Columbus SEO Company to hire to increase sales and returns.",
+          subtitle: "columbus SEO Agency",
+          description:
+            "MakeOlix Consulting has gained a reputation as a reliable SEO firm in Columbus and has provided low-cost, yet effective services to local businesses. Our strategies are designed to achieve ROI whether it is a startup and a small business or a large enterprise. This is our mission and we make your business flourish online by creating more exposure, driving traffic and transforming that traffic into customers that pay. We are a full-service Columbus SEO company that is committed to seeing you succeed in the long term within a competitive digital environment.",
+          reverse: true,
+          image: "/fancycrave1-hands-820272_1920.jpg",
+        },
+      },
+
+      {
+        type: "features",
+        data: {
+          heading:
+            "Columbus SEO Services: Achieve Ranking #1 With Our Dynamic SEO Solutions",
+
+          leftCards: [
+            {
+              id: 1,
+              number: "01",
+              title: "Free SEO Consultation",
+              body: "Become a client of our SEO consulting Columbus team and start with no risk. We examine your digital presence and develop a unique strategy that fits your objectives.",
+              icon: "⬡",
+            },
+            {
+              id: 2,
+              number: "02",
+              title: "Client-Focused Approach",
+              body: "At MakeOlix Consulting, we are interested in your success. We design our strategies to fit your industry, audience and goals. This client's first strategy has enabled us to establish long-term partnerships.",
+
+              icon: "⬡",
+            },
+            {
+              id: 3,
+              number: "03",
+              title: "Data-Driven Analysis Reports",
+              body: "Analytics support our campaigns. We give practical recommendations on what is working, what is not and where we can do better to guarantee good ROI.",
+
+              icon: "⬡",
+            },
+          ],
+          rightCards: [
+            {
+              id: 4,
+              number: "04",
+              title: "Prompt Turnaround Times",
+              body: "We know time is money. That’s why our team delivers results within agreed timelines, without sacrificing quality.",
+              icon: "◈",
+            },
+            {
+              id: 5,
+              number: "05",
+              title: "Google-Certified Experts",
+              body: "Our Columbus SEO experts are Google-certified professionals who understand how to implement ethical, effective SEO practices for sustainable results.",
+              icon: "◈",
+            },
+            {
+              id: 6,
+              number: "06",
+              title: "Data-Driven Analysis Reports",
+              body: "Analytics support our campaigns. We give practical recommendations on what is working, what is not and where we can do better to guarantee good ROI.",
+              icon: "◈",
+            },
+          ],
+        },
+      },
+      {
+        type: "parallax",
+
+        data: {
+          bgImage: "/startupstockphotos-startup-594090_1920.jpg",
+          align: "left",
+          // LEFT
+          title:
+            "You Can Boost Your Business with the Best Columbus SEO Agency",
+          description:
+            "Every day, your customers are seeking products and services on the Internet. Your business may not be noticed by them without a powerful SEO strategy. That’s where MakeOlix Consulting, a trusted Columbus SEO agency, comes in.",
+          subtext: "Our Columbus SEO services are customized to:",
+
+          features: [
+            "Grow organic traffic and visibility in search engines",
+            "Grow sign-ups and conversions.",
+            "Surpass competition through new digital approaches.",
+            "Build site authority through ethical link-building",
+            "Get the right leads that suit your target audience.",
+            "Boost sales revenue consistently.",
+          ],
+          lastpara:
+            "We’re not just about rankings, we’re about sustainable business growth.",
+        },
+      },
+
+      {
+        type: "textmedia",
+        data: {
+          title: "Final Thoughts",
+          subtitle: "What makes us the best?",
+          description:
+            "When you need the best Columbus SEO company, you need not look further than MakeOlix Consulting. We have years of experience, strategies that have worked, and a desire to see your business at the top of search results, generate quality leads, and increase sales revenue. Do not allow your competitors to shine in Columbus. Find a Columbus SEO firm that works to deliver results and grow your business now.",
+          image: "/startupstockphotos-laptops-593296_1920.jpg",
+        },
+      },
+
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question:
+                "Do you provide Local SEO of small businesses in Columbus?",
+              answer:
+                "Yes, absolutely. Columbus Local SEO is the type of services that are implemented to make small and medium-sized business visible in the local search results. We will optimise your Google Business Profile, build citations as well as location-based strategies to generate more local leads and foot traffic.",
+            },
+            {
+              id: 2,
+              question: " Do you offer e-commerce SEO in Columbus?",
+              answer:
+                "Yes. Our E-commerce search engine optimization is customized to online stores. Product pages, category pages, images and schema markup are optimised to enhance visibility, targeted traffic as well as conversion rates.",
+            },
+            {
+              id: 3,
+              question:
+                " Which are the industries that MakeOlix Consulting specialises in?",
+              answer:
+                "Our customers belong to a wide industry segment that consists of retail, e-commerce, healthcare, legal, technology, education and local services. SEO plans that we have developed are aligned with your industry and market needs.",
+            },
+            {
+              id: 4,
+              question:
+                "How do you select the appropriate keywords to my business?",
+              answer:
+                "We employ high-tech tools, competitor analysis and extensive market research in discovering high value keywords. These are short-tail, long-tail, and local search terms that are related to the search intent of your target audience.",
+            },
+            {
+              id: 5,
+              question:
+                "When will you see the results of your Columbus SEO services?",
+              answer:
+                "SEO is a long term investment and results usually begin to show in 3-6 months, depending on your industry, competition and your current status in the web page. MakeOlix Consulting team has a stable progress due to periodic audits, optimisation, and reporting.",
+            },
+          ],
+        },
+      },
+    ],
+  },
+
+  denver: {
+    sections: [
+      {
+        type: "hero",
+        data: {
+          heading: "Denver SEO Agency",
+        },
+      },
+      {
+        type: "textmedia",
+        data: {
+          title: "A Denver Search Engine Optimization Agency",
+          subtitle: "Denver SEO Agency",
+          description:
+            "At MakeOlix Consulting, we don’t just do SEO, we deliver growth. As a leading Denver SEO Agency, we’ve helped countless businesses in Colorado and beyond dominate search results, attract qualified leads, and drive revenue through customized SEO strategies.",
+
+          list: [
+            "Search Engine Rankings",
+            "Website Traffic",
+            "Website Conversions",
+            "Business Revenue",
+          ],
+          image: "/startupstockphotos-student-849822_1920.jpg",
+        },
+      },
+      {
+        type: "usptype",
+        data: {
+          heading: "Denver SEO Services that Deliver ROI",
+
+          subheading:
+            "Our digital marketing solutions are designed to give businesses an edge in one of the most competitive markets in the U.S. When you work with our SEO Agency in Denver, you’re not just getting clicks, you’re getting growth.",
+          stats: [
+            {
+              title: "Search Engine Optimization (SEO)",
+              desc: "One of the most effective tools to expand a business is SEO. We focus on intent-driven keywords that bring in qualified leads. As a Denver Top SEO Company, we make sure your store or service gets visibility, credibility, and conversions.",
+            },
+            {
+              title: "On-Site SEO",
+              desc: "Our team will help your site to be technically perfect, starting with meta tags and content structure and going all the way to schema markup. On-site optimization assists Google in knowing the relevancy of your site and improves your ranking on the search results.",
+            },
+            {
+              title: "Denver Local SEO",
+              desc: "Local search is exploding. With Local SEO in Denver, we’ll make sure your business shows up when nearby customers search for your services. This is ideal for small and medium businesses looking to dominate their local market.",
+            },
+            {
+              title: "Mobile SEO",
+              desc: "Over 60% of searches happen on mobile devices, many with local intent. We optimize your site for fast loading, mobile responsiveness, and location-based search queries.",
+            },
+            {
+              title: "Site Speed Optimization",
+              desc: "Google values speed and it is what customers demand. The quicker the site, the less bouncing and the more conversions.",
+            },
+            {
+              title: "Content Creation",
+              desc: "Search visibility is supported by high-quality content that is search engine optimized. Our copywriting team is creating ranking and converting blogs, product descriptions and web pages.",
+            },
+          ],
+        },
+      },
+
+      {
+        type: "parallax",
+
+        data: {
+          bgImage: "/tungnguyen0905-technology-7111763_1920.jpg",
+          align: "left",
+          // LEFT
+          title: "What makes us the best?",
+
+          subtext: "Our 5-point Denver SEO strategy that works",
+
+          features: [
+            "Analysis and Audit- We perform a full SEO analysis, research on keywords and competitor analysis to find opportunities.",
+            "Plan and Strategize - Our professionals create a personal roadmap in relation to your objectives.",
+            "Implement- Technical fixes to content optimization, we do.",
+            "Link Building - We build your authority, using high quality and niche relevant backlinks.",
+            "Monitor and Report- With continued tracking, you will always have real time monitoring and ROI.",
+          ],
+        },
+      },
+
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question:
+                " What is the SEO service offered by MakeOlix Consulting?",
+              answer:
+                "We provide a complete scope of SEO such as on-site optimization, local SEO, mobile SEO, site speed optimization, voice search optimization, content creation, link building, and conversion rate optimization (CRO).",
+            },
+            {
+              id: 2,
+              question:
+                "What is the Methodology of measuring SEO at MakeOlix Consulting?",
+              answer:
+                "Our success is calculated in terms of ROI, not only traffic. We monitor rankings, leads, conversions, and revenue growth using live dashboards, detailed reporting, and constant monitoring to make sure that the results can be measured.",
+            },
+            {
+              id: 3,
+              question:
+                "Is MakeOlix Consulting able to help small businesses in Denver grow online?",
+              answer:
+                "Absolutely. No matter what your business is a startup, a brick-and-mortar store, or an established firm, we create customized SEO strategies that align with your goals and budget and enable small and medium businesses to compete efficiently in the online environment.",
+            },
+            {
+              id: 4,
+              question:
+                "What is the duration of seeing the SEO results in Denver?",
+              answer:
+                "SEO is a long-term strategy. The clients begin to notice significant changes in the rankings and traffic in 3-6 months, whereas the most significant ROI-driven outcomes tend to appear in 6-12 months.",
+            },
+            {
+              id: 5,
+              question: "Do you offer tailor-made SEO plans or packages?",
+              answer:
+                "We do not think of the one-size-fits-all at MakeOlix Consulting. Each Denver SEO campaign is designed to meet your business objectives, competition, and industry to maximize the results.",
+            },
+          ],
+        },
+      },
+    ],
+  },
 };

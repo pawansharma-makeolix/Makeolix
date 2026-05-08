@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import {
   motion,
   useInView,
@@ -117,13 +117,13 @@ function FeatureCard({ card, index, side }) {
       animate={isInView ? { opacity: 1, x: 0, filter: "blur(0px)" } : {}}
       transition={{ duration: 0.75, delay, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ scale: 1.025 }}
-      className="relative group cursor-default"
+      className="relative group cursor-default lg:h-full"
     >
       {/* Glow border on hover */}
       <motion.div className="absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-[linear-gradient(135deg,rgba(17,138,178,0.5),rgba(255,143,171,0.2),transparent)]" />
 
       {/* Card body */}
-      <div className="relative rounded-2xl p-6 md:p-7 overflow-hidden bg-[linear-gradient(135deg,rgba(0,23,31,0.9)_0%,rgba(0,56,99,0.35)_100%)] border border-[rgba(17,138,178,0.18)] backdrop-blur-[16px]">
+      <div className="relative rounded-2xl p-6 md:p-7 overflow-hidden bg-[linear-gradient(135deg,rgba(0,23,31,0.9)_0%,rgba(0,56,99,0.35)_100%)] border border-[rgba(17,138,178,0.18)] backdrop-blur-[16px] lg:h-full">
         
         {/* Shimmer sweep */}
         <motion.div
@@ -279,6 +279,31 @@ export default function FeaturesSection({
 }) {
   const finalLeft = leftCards.length ? leftCards : LEFT_CARDS;
   const finalRight = rightCards.length ? rightCards : RIGHT_CARDS;
+  const [maxCardHeight, setMaxCardHeight] = useState(0);
+
+useEffect(() => {
+  const updateHeights = () => {
+    const cards = Array.from(document.querySelectorAll(".feature-card"));
+
+    if (!cards.length) return;
+
+    // pehle reset
+    cards.forEach((card) => {
+      card.style.minHeight = "auto";
+    });
+
+    const tallest = Math.max(...cards.map((card) => card.offsetHeight));
+    setMaxCardHeight(tallest);
+  };
+
+  updateHeights();
+
+  window.addEventListener("resize", updateHeights);
+
+  return () => {
+    window.removeEventListener("resize", updateHeights);
+  };
+}, [finalLeft, finalRight]);
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -428,7 +453,9 @@ export default function FeaturesSection({
             </motion.div>
 
             {finalLeft.map((card, i) => (
-              <FeatureCard key={card.id} card={card} index={i} side="left" />
+              <div key={card.id} className="lg:flex-1">
+                <FeatureCard card={card} index={i} side="left" />
+              </div>
             ))}
           </div>
 
@@ -456,7 +483,9 @@ export default function FeaturesSection({
             </motion.div>
 
             {finalRight.map((card, i) => (
-              <FeatureCard key={card.id} card={card} index={i} side="right" />
+              <div key={card.id} className="lg:flex-1">
+                <FeatureCard card={card} index={i} side="right" />
+              </div>
             ))}
           </div>
         </div>
