@@ -9,10 +9,6 @@ import {
   useTransform,
 } from "framer-motion";
 
-// ─── Default data ─────────────────────────────────────────────────────────────
-
-
-
 // ─── Particle burst on open ───────────────────────────────────────────────────
 
 function Burst({ active }) {
@@ -106,7 +102,7 @@ function Counter({ value, run }) {
 
 // ─── Single Step Card ─────────────────────────────────────────────────────────
 
-function StepCard({ step, index, total, globalActive, onActivate ,  animatedIcons = [], }) {
+function StepCard({ step, index, total, globalActive, onActivate, animatedIcons = [] }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
   const isActive = globalActive === index;
@@ -160,7 +156,7 @@ function StepCard({ step, index, total, globalActive, onActivate ,  animatedIcon
         }}
         onClick={handleClick}
         onMouseMove={onMouseMove}
-         onMouseEnter={() => onActivate(index)}
+        onMouseEnter={() => onActivate(index)}
         onMouseLeave={onMouseLeave}
         whileHover={{ y: -4, transition: { duration: 0.2 } }}
         whileTap={{ scale: 0.97 }}
@@ -228,19 +224,19 @@ function StepCard({ step, index, total, globalActive, onActivate ,  animatedIcon
             animate={isActive ? { rotate: [0, -10, 10, 0] } : { rotate: 0 }}
             transition={{ duration: 0.5 }}
           >
-             <svg
-          viewBox="0 0 28 28"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={1.5}
-          width={28}
-          height={28}
-        >
-          <rect x="3" y="3" width="9" height="9" rx="2" />
-          <rect x="16" y="3" width="9" height="9" rx="2" />
-          <rect x="3" y="16" width="9" height="9" rx="2" />
-          <rect x="16" y="16" width="9" height="9" rx="2" />
-        </svg>
+            <svg
+              viewBox="0 0 28 28"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={1.5}
+              width={28}
+              height={28}
+            >
+              <rect x="3" y="3" width="9" height="9" rx="2" />
+              <rect x="16" y="3" width="9" height="9" rx="2" />
+              <rect x="3" y="16" width="9" height="9" rx="2" />
+              <rect x="16" y="16" width="9" height="9" rx="2" />
+            </svg>
           </motion.div>
 
           {/* Title */}
@@ -255,83 +251,83 @@ function StepCard({ step, index, total, globalActive, onActivate ,  animatedIcon
           </h3>
 
           {/* Body — slides open when active */}
-        <AnimatePresence initial={false}>
-  {isActive && (
-    <motion.div
-      key="content"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.25 }}
-      className="overflow-hidden"
-    >
-      <motion.p
-        initial={{ height: 0, opacity: 0 }}
-        animate={{ height: "auto", opacity: 1 }}
-        exit={{ height: 0, opacity: 0 }}
-        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-        className="text-sm leading-relaxed whitespace-pre-line"
-        style={{ color: "var(--text-muted)" }}
-      >
-        {step.body}
-      </motion.p>
-
-      {Array.isArray(step.animatedIcons) && step.animatedIcons.length > 0 && (
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0 }}
-          transition={{ delay: 0.08, duration: 0.28 }}
-          className="mt-4 flex flex-wrap gap-2"
-        >
-          {step.animatedIcons.map((item, ai) => (
-            <motion.div
-              key={ai}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                delay: ai * 0.06,
-                duration: 0.25,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-              whileHover={{ y: -2, scale: 1.03 }}
-              style={{
-                background: "rgba(17,138,178,0.08)",
-                border: "1px solid rgba(17,138,178,0.18)",
-                color: "var(--text-muted)",
-              }}
-            >
-              <motion.span
-                animate={{
-                  scale: [0.7, 1.15, 1],
-                  rotate: [-8, 8, 0],
-                  opacity: [0, 1],
-                }}
-                transition={{
-                  duration: 0.45,
-                  delay: ai * 0.06,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-                style={{
-                  color: "var(--blue-3)",
-                  display: "inline-flex",
-                  lineHeight: 0,
-                }}
+          <AnimatePresence initial={false}>
+            {isActive && (
+              <motion.div
+                key="content"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25 }}
+                className="overflow-hidden"
               >
-                <Check size={14} strokeWidth={3} />
-              </motion.span>
+                <motion.p
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                  className="text-sm leading-relaxed whitespace-pre-line"
+                  style={{ color: "var(--text-muted)" }}
+                >
+                  {step.body}
+                </motion.p>
 
-              <span className="text-xs sm:text-sm leading-none">
-                {typeof item === "string" ? item : item.label}
-              </span>
-            </motion.div>
-          ))}
-        </motion.div>
-      )}
-    </motion.div>
-  )}
-</AnimatePresence>
+                {Array.isArray(step.animatedIcons) && step.animatedIcons.length > 0 && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ delay: 0.08, duration: 0.28 }}
+                    className="mt-4 flex flex-wrap gap-2"
+                  >
+                    {step.animatedIcons.map((item, ai) => (
+                      <motion.div
+                        key={ai}
+                        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{
+                          delay: ai * 0.06,
+                          duration: 0.25,
+                          ease: [0.22, 1, 0.36, 1],
+                        }}
+                        whileHover={{ y: -2, scale: 1.03 }}
+                        style={{
+                          background: "rgba(17,138,178,0.08)",
+                          border: "1px solid rgba(17,138,178,0.18)",
+                          color: "var(--text-muted)",
+                        }}
+                      >
+                        <motion.span
+                          animate={{
+                            scale: [0.7, 1.15, 1],
+                            rotate: [-8, 8, 0],
+                            opacity: [0, 1],
+                          }}
+                          transition={{
+                            duration: 0.45,
+                            delay: ai * 0.06,
+                            ease: [0.22, 1, 0.36, 1],
+                          }}
+                          style={{
+                            color: "var(--blue-3)",
+                            display: "inline-flex",
+                            lineHeight: 0,
+                          }}
+                        >
+                          <Check size={14} strokeWidth={3} />
+                        </motion.span>
+
+                        <span className="text-xs sm:text-sm leading-none">
+                          {typeof item === "string" ? item : item.label}
+                        </span>
+                      </motion.div>
+                    ))}
+                  </motion.div>
+                )}
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           {/* Bottom strip */}
           <div className="mt-5 flex items-center justify-between">
@@ -373,7 +369,6 @@ function StepCard({ step, index, total, globalActive, onActivate ,  animatedIcon
 function Background() {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
-     
       {[
         { left: "-5%", top: "10%", color: "rgba(0,80,157,0.12)" },
         { right: "-5%", top: "40%", color: "rgba(17,138,178,0.09)" },
@@ -425,8 +420,8 @@ function Header({ eyebrow, heading, subtitle }) {
       </motion.div>
 
       <h2
-        className=" tracking-tight leading-tight mb-5"
-        style={{  color: "white" }}
+        className="tracking-tight leading-tight mb-5"
+        style={{ color: "white" }}
       >
         {words.map((w, wi) => (
           <motion.span
@@ -461,38 +456,68 @@ function Header({ eyebrow, heading, subtitle }) {
  * @param {{ steps, eyebrow, heading, subtitle, className }} props
  */
 export default function StepsSection({
-  steps = DEFAULT_STEPS,
+  steps = [],
   eyebrow = "How it works",
   heading = "Five steps to remember everything",
-  subtitle ,
-  animatedIcons =[],
+  subtitle,
+  animatedIcons = [],
   className = "",
   columns = "",
-  perRow = null // 👈 NEW PROP
+  perRow = null,
 }) {
   const [active, setActive] = useState(0);
+
+  // ─── RESPONSIVE FIX ───────────────────────────────────────────────────────
+  // Mobile (< 640px)  → always 1 column
+  // Tablet (640–1023) → 2 columns
+  // Desktop (≥ 1024)  → perRow prop > columns prop > auto-fit
+  const gridStyle = perRow
+    ? {
+        // Manual perRow: respect it on large screens, collapse on small
+        gridTemplateColumns: `repeat(1, 1fr)`,
+      }
+    : columns
+    ? { gridTemplateColumns: `repeat(1, 1fr)` }
+    : { gridTemplateColumns: `repeat(1, 1fr)` };
+
+  // We use CSS classes for breakpoints via inline style override at sm/md/lg
+  // Because Tailwind JIT classes can't use dynamic values, we use a style tag trick
+  const gridId = "steps-grid";
 
   return (
     <section
       className={`relative py-12 sm:py-16 overflow-hidden ${className}`}
       style={{ background: "var(--bg-main)" }}
     >
+      {/* Inline responsive override */}
+      <style>{`
+        #${gridId} {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        @media (min-width: 640px) {
+          #${gridId} {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        @media (min-width: 1024px) {
+          #${gridId} {
+            grid-template-columns: ${
+              perRow
+                ? `repeat(${perRow}, 1fr)`
+                : columns
+                ? `repeat(${columns}, 1fr)`
+                : "repeat(auto-fit, minmax(min(100%, 200px), 1fr))"
+            };
+          }
+        }
+      `}</style>
+
       <Background />
 
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8">
         <Header eyebrow={eyebrow} heading={heading} subtitle={subtitle} />
 
-        {/* Grid: 2 cols sm, 3 cols md, 5 cols xl */}
-        <div
-          className="grid gap-4 sm:gap-5"
-        style={{
-gridTemplateColumns: perRow
-  ? `repeat(${perRow}, 1fr)` // 👈 manual control
-  : columns
-  ? `repeat(${columns}, 1fr)`
-  : "repeat(auto-fit, minmax(min(100%, 200px), 1fr))",
-}}
-        >
+        <div id={gridId} className="grid gap-4 sm:gap-5">
           {steps.map((step, i) => (
             <StepCard
               key={i}
@@ -501,16 +526,11 @@ gridTemplateColumns: perRow
               total={steps.length}
               globalActive={active}
               onActivate={setActive}
-                  animatedIcons={animatedIcons}
-
+              animatedIcons={animatedIcons}
             />
           ))}
         </div>
-
-        {/* Global step label */}
-        
       </div>
     </section>
   );
 }
-
