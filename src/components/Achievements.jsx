@@ -50,13 +50,13 @@ const Achievements = () => {
         className="text-center mb-4 px-4" // ✅ reduced gap
       >
         <h2
-          className="text-3xl md:text-3xl font-semibold mb-2"
+          className="mb-2"
           style={{ color: "#fff" }}
         >
           Our Achievements & Awards
         </h2>
 
-        <p className="text-white max-w-xl mx-auto text-sm md:text-base">
+        <p className="text-white max-w-xl mx-auto  md:text-base">
           Recognized for excellence, innovation, and impactful results across
           industries.
         </p>

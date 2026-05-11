@@ -285,7 +285,7 @@ export default function StackedTestimonials() {
         {/* Heading */}
         <motion.div variants={headingVariants} className="text-center mb-2">
           <h2
-            className="text-4xl md:text-4xl font-semibold text-white"
+            className=" text-white"
    
           >
             Customer Testimonials

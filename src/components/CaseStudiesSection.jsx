@@ -60,7 +60,7 @@ export default function CaseStudiesSection({
         className="text-center mb-16"
       >
         <h2
-          className="text-4xl md:text-4xl font-semibold mb-4 "
+          className="mb-4 "
           style={{
             background: "linear-gradient(135deg, var(--blue-1), var(--blue-3))",
             WebkitBackgroundClip: "text",

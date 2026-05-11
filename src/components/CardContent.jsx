@@ -8,7 +8,7 @@ const CardContent = ({ title, desc, icon }) => {
         <div className="flex items-center gap-4 mb-4">
           <img src={icon} className="w-10 h-10" />
 
-          <h3 className="text-lg font-semibold text-black leading-snug">
+          <h3 className=" text-black leading-snug">
             {title}
           </h3>
         </div>

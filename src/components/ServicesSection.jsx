@@ -191,9 +191,8 @@ function Slide({ service, direction }) {
         </motion.span>
 
         <motion.h3
-          className="font-medium leading-tight mb-4"
+          className="leading-tight mb-4"
           style={{
-            fontSize: "clamp(1.5rem, 2.5vw, 2.5rem)",
             color: "white",
             letterSpacing: "-0.02em",
           }}
@@ -486,7 +485,7 @@ export default function ServicesSection({
           <motion.h2
             className="font-black leading-tight max-w-3xl"
             style={{
-              fontSize: "clamp(1.35rem, 3vw, 2.2rem)",
+             
               color: "white",
               letterSpacing: "-0.02em",
             }}

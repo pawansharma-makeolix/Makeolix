@@ -68,7 +68,7 @@ export default function UltraFooter() {
       {/* MAIN FOOTER */}
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-10 mb-16">
         <div>
-          <h3 className="text-2xl mb-4 text-(--blue-3)">About MakeOlix</h3>
+          <h3 className=" mb-4 text-(--blue-3)">About MakeOlix</h3>
           <p className="text-sm text-(--text-muted)">
             At MakeOlix, we are passionate about propelling your brand to new
             heights through innovative digital marketing strategies. With a

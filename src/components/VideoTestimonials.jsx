@@ -68,7 +68,7 @@ const VideoTestimonials = () => {
     >
       {/* Heading */}
       <h2
-        className="text-3xl md:text-3xl font-semibold mb-12 text-center"
+        className=" mb-12 text-center"
         style={{ color: "#fff" }}
       >
         Client Testimonials

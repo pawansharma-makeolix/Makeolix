@@ -63,7 +63,7 @@ export default function BlogSection() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl md:text-3xl font-semibold mb-4 text-amber-50">
+        <h2 className=" mb-4 text-white">
           Latest Blogs
         </h2>
         <p className="text-amber-50">Insights, ideas & creativity</p>

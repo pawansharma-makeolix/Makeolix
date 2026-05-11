@@ -258,7 +258,7 @@ const PageNotFound = () => {
 
         {/* Heading */}
         <motion.h1
-          className="text-3xl font-semibold mb-3 tracking-tight"
+          className=" mb-3 tracking-tight"
           style={{ color: "var(--blue-3)" }}
           variants={itemVariants}
         >

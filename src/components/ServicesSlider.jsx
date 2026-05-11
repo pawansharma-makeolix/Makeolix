@@ -135,7 +135,7 @@ useEffect(() => {
       <div className="relative z-10">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 px-4">
-          <h2 className="text-3xl font-semibold mb-4" style={{ color: "#fff" }}>
+          <h2 className=" mb-4" style={{ color: "#fff" }}>
             Our Services
           </h2>
           <p style={{ color: "#fff" }}>
@@ -171,7 +171,7 @@ useEffect(() => {
               />
 
               <div className="absolute bottom-4 left-4 right-4">
-                <h3 className="text-lg font-semibold mb-2 text-white">
+                <h3 className=" mb-2 text-white">
                   {service.title}
                 </h3>
                 <Button variant="outline" href={`/services/${service.slug}`}>Know More</Button>

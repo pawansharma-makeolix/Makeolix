@@ -39,7 +39,7 @@ function FeatureIconList({ title, items = [] }) {
   return (
     <div className="rounded-2xl p-5 md:p-6 border border-[rgba(17,138,178,0.16)] bg-[linear-gradient(135deg,rgba(0,23,31,0.88)_0%,rgba(0,56,99,0.28)_100%)] backdrop-blur-[12px]">
       {title && (
-        <h4 className="text-white font-semibold text-base mb-4 tracking-[-0.02em]">
+        <h4 className="text-white  text-base mb-4 tracking-[-0.02em]">
           {title}
         </h4>
       )}
@@ -163,7 +163,7 @@ function FeatureCard({ card, index, side }) {
 
         {/* Title */}
         <motion.h3
-          className="font-bold leading-tight mb-3 text-white text-[clamp(1rem,1.5vw,1.25rem)] tracking-[-0.02em]"
+          className="leading-tight mb-3 text-white  tracking-[-0.02em]"
           initial={{ opacity: 0, y: 12 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{

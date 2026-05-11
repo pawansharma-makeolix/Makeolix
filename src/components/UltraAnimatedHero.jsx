@@ -101,7 +101,7 @@ export default function UltraAnimatedHero({
 
           {/* Heading */}
           <motion.h1
-            className="text-4xl sm:text-5xl font-bold text-white leading-tight"
+            className=" text-white leading-tight"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
           >

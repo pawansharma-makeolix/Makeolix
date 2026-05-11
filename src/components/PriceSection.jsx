@@ -367,20 +367,18 @@ export const PricingCard = ({
             ))}
           </div>
         )}
-        <motion.h2
+        <motion.h3
           initial={{ opacity: 0, x: -14 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ delay: 0.1, duration: 0.38 }}
           style={{
-            fontSize: "24px",
-            fontWeight: 800,
+            
             color: "#fff",
             marginBottom: "6px",
-            letterSpacing: "0.02em",
           }}
         >
           {planName}
-        </motion.h2>
+        </motion.h3>
 
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -603,13 +601,7 @@ export const PricingCard = ({
   );
 };
 
-// ─────────────────────────────────────────────────────────────
-// NEW PROP:
-//   fullWidth={true}
-//     → Agar sirf 1 card ho (ya intentionally chahiye ho) to
-//        card puri row ki width lega, bich mein nahi aayega.
-//        Default: false (pehle jaisa — centered with maxWidth)
-// ─────────────────────────────────────────────────────────────
+
 export const PricingSection = ({
   plans,
   subtitle,

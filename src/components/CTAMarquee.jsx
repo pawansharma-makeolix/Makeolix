@@ -130,14 +130,14 @@ export default function CTAMarquee() {
 
         {/* RIGHT */}
         <div className="flex flex-col gap-6">
-          <motion.h1
+          <motion.h2
             {...fadeUp(0.1)}
-            className="text-white font-semibold leading-tight"
-            style={{ fontSize: "clamp(2.4rem,3.8vw,4rem)" }}
+            className="text-white  leading-tight"
+           
           >
             Get Started <br />
             <span className="text-[#118ab2]">in Minutes</span>
-          </motion.h1>
+          </motion.h2>
 
           <motion.p {...fadeUp(0.2)} className="text-[#ff8fab] ">
             Do you have a project in mind?

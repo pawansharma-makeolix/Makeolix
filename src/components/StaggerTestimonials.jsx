@@ -212,7 +212,7 @@ export function StaggerTestimonials({ data }) {
         />
 
         <div className="ts-label text-center mb-10 z-10">
-          <h2 className="text-4xl md:text-4xl font-semibold text-white">
+          <h2 className=" text-white">
             Testimonials
           </h2>
           <h2

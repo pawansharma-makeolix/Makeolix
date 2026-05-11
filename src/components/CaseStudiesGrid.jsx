@@ -60,7 +60,7 @@ function CaseStudiesGrid({
           className="mx-auto mb-14 max-w-3xl text-center"
         >
           <h2
-            className="text-3xl font-semibold leading-tight md:text-5xl"
+            className="leading-tight "
             style={{ color: "var(--blue-3)" }}
           >
             {heading}
@@ -137,7 +137,7 @@ function CaseStudiesGrid({
               <div className="relative p-6 md:p-7">
                 {item.title && (
                   <h3
-                    className="mb-3 text-xl font-semibold leading-snug transition-all duration-500 group-hover:translate-x-1"
+                    className="mb-3  leading-snug transition-all duration-500 group-hover:translate-x-1"
                     style={{ color: "#e2eaf4" }}
                   >
                     {item.title}

@@ -139,7 +139,7 @@ export default function TextMedia({
                   initial={{ opacity: 0, y: 14 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.05 }}
-                  className="text-2xl md:text-3xl text-white font-semibold mb-2"
+                  className=" text-white  mb-2"
                 >
                   Get Started
                 </motion.h3>
@@ -246,9 +246,7 @@ export default function TextMedia({
           {/* TITLE */}
           <h2
             className="text-white leading-tight flex flex-wrap"
-            style={{
-              fontSize: "clamp(2rem, 3vw, 3rem)",
-            }}
+           
           >
             {words.map((word, i) => (
               <motion.span

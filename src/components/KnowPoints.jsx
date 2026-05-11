@@ -60,10 +60,10 @@ const KnowPoints = () => {
                 </div>
 
                 {/* TITLE */}
-                <h3 className="font-semibold text-lg">{item.title}</h3>
+                <h3 >{item.title}</h3>
 
                 {/* DESC */}
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className=" text-gray-600 leading-relaxed">
                   {item.desc}
                 </p>
               </div>

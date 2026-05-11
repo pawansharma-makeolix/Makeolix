@@ -111,7 +111,7 @@ export default function ParallaxHero({
           initial={{ opacity: 0, y: 18 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.15, duration: 0.5 }}
-          className="relative text-white text-[1.8rem] md:text-[1.8rem] font-semibold leading-[1.08]"
+          className="relative text-white  leading-[1.08]"
         >
           {heading}
         </motion.h2>

@@ -108,7 +108,7 @@ const Hero = () => {
 
       {/* 🔥 CONTENT */}
       <div className="relative z-10 max-w-3xl px-6 text-white">
-        <h1 className="text-4xl md:text-5xl font-regular leading-tight mb-6">
+        <h1 className=" leading-tight mb-6">
           We are Makeolix
           <br />
           We do{" "}

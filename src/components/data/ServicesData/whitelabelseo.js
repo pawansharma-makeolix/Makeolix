@@ -6,7 +6,7 @@ export const whitelabelseo ={
         title:
           "Best White Label SEO Services for Agencies & Businesses",
         subtitle:
-          "Did you know that over 68% of online experiences begin with a search engine, and agencies that offer SEO services can increase client retention by up to 70%? Yet, hiring an in-house team is expensive and time-consuming. That’s where white label SEO becomes a game-changer.",
+          "Did you know that over 68% of online experiences begin with a search engine, and agencies that offer SEO services can increase client retention by up to 70%? ",
                   pattern: "neural",
 
       },
@@ -16,7 +16,7 @@ export const whitelabelseo ={
       type: "intro",
       data: {
         paragraph:
-          "At MakeOlix Consulting, we provide the Best White Label SEO Services designed specifically for agencies and businesses. Whether you're a marketing agency, web design firm, or consultant, we help you scale your services, deliver real results, and grow your revenue, while you keep 100% of your brand identity.",
+          "Yet, hiring an in-house team is expensive and time-consuming. That’s where white label SEO becomes a game-changer. At MakeOlix Consulting, we provide the Best White Label SEO Services designed specifically for agencies and businesses. Whether you're a marketing agency, web design firm, or consultant, we help you scale your services, deliver real results, and grow your revenue, while you keep 100% of your brand identity.",
       },
     },
     {

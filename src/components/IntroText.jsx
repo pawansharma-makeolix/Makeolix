@@ -54,7 +54,7 @@ export default function IntroText({
         {heading && (
           <h2
             className="font-black leading-tight"
-            style={{ fontSize: "clamp(2rem, 4vw, 2.5rem)", color: "white" }}
+            style={{  color: "white" }}
           >
             {words.map((word, i) => (
               <motion.span

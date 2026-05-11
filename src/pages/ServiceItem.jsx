@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import CTAMarquee from "../components/CTAMarquee";
@@ -19,9 +20,16 @@ import PageNotFound from "../components/PageNotFound";
 const ServiceItem = () => {
   const { slug } = useParams();
   const pageData = ServicesPagesData[slug];
+  const noIndexPages = ["ppc-ads", "meta-ads", "performance-marketing","website-design-development"];
+  const shouldNoIndex = noIndexPages.includes(slug);
   if (!pageData) return <PageNotFound></PageNotFound>;
   return (
     <>
+      {shouldNoIndex && (
+        <Helmet>
+          <meta name="robots" content="noindex, nofollow" />
+        </Helmet>
+      )}
       <Navbar />
 
       {pageData.sections.map((section, index) => {

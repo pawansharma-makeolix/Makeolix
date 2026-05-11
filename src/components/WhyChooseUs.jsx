@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
       <div className="relative z-10">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-3xl font-semibold text-white">
+          <h2 className=" text-white">
             Why Choose Makeolix ?
           </h2>
         </div>
@@ -96,7 +96,7 @@ const WhyChooseUs = () => {
                   </motion.div>
 
                   {/* Title */}
-                  <h3 className="text-sm font-medium  leading-snug min-h-12 text-white">
+                  <h3 className=" leading-snug min-h-12 text-white">
                     {item.title}
                   </h3>
 

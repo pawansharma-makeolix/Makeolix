@@ -87,7 +87,7 @@ export default function AnimatedFeatureCard({
         <motion.h3
           variants={{ hover: { x: 4 } }}
           transition={{ duration: 0.35 }}
-          className="mb-3 text-xl sm:text-2xl font-semibold leading-tight text-white"
+          className="mb-3  leading-tight text-white"
         >
           {title}
         </motion.h3>

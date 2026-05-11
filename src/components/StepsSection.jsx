@@ -247,7 +247,6 @@ function StepCard({ step, index, total, globalActive, onActivate ,  animatedIcon
           <h3
             className="font-bold leading-snug mb-2"
             style={{
-              fontSize: "clamp(1rem, 2.5vw, 1.2rem)",
               color: isActive ? "white" : "rgba(255,255,255,0.45)",
               transition: "color 0.3s",
             }}
@@ -426,8 +425,8 @@ function Header({ eyebrow, heading, subtitle }) {
       </motion.div>
 
       <h2
-        className="font-semibold tracking-tight leading-tight mb-5"
-        style={{ fontSize: "clamp(2rem, 3.5vw, 3.5rem)", color: "white" }}
+        className=" tracking-tight leading-tight mb-5"
+        style={{  color: "white" }}
       >
         {words.map((w, wi) => (
           <motion.span

@@ -987,7 +987,7 @@ export default function ContactSection() {
             </motion.div>
 
             {/* Heading */}
-            <h2 className="text-3xl sm:text-4xl lg:text-[3.2rem] font-semibold leading-tight mb-5">
+            <h2 className=" leading-tight mb-5">
               <span style={{ color: "#fff" }}>Let's Build </span>
               <motion.span
                 style={{
@@ -1075,7 +1075,7 @@ export default function ContactSection() {
                     />
                   </motion.div>
                   <h3
-                    className="font-semibold text-xs mb-1"
+                    className=" mb-1"
                     style={{ color: "#e0f2fe" }}
                   >
                     {info.title}

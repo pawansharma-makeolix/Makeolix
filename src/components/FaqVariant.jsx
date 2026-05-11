@@ -310,9 +310,9 @@ export default function FaqVariant({
           </motion.div>
 
           <motion.h2
-            className="font-medium leading-tight mb-3"
+            className=" leading-tight mb-3"
             style={{
-              fontSize: "clamp(1.6rem, 3.5vw, 2.6rem)",
+              
               color: "#fff",
               letterSpacing: "-0.02em",
             }}

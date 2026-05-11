@@ -30,7 +30,7 @@ const OtherPageHero = ({ title = "About Us" }) => {
             duration: 1,
             ease: "easeOut",
           }}
-          className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight"
+          className="leading-tight"
           style={{ color: "#ffffff" }}
         >
           {title}

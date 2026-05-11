@@ -57,14 +57,14 @@ const FAQSection = () => {
           className="text-center mb-12"
         >
           <h2
-            className="text-3xl md:text-3xl font-semibold mb-4"
+            className=" mb-4"
             style={{ color: "#fff" }}
           >
             Company FAQs
           </h2>
 
           <h3
-            className="text-xl md:text-1xl font-medium mb-2"
+            className="mb-2"
             style={{ color: "#fff" }}
           >
             Have questions about Makeolix? We've got answers !

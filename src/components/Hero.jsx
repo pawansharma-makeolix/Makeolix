@@ -144,7 +144,7 @@ const Hero = () => {
           ease: "easeInOut",
         }}
       >
-        <h1 className="text-4xl md:text-5xl font-regular leading-tight mb-6">
+        <h1 className=" leading-tight mb-6">
           We are MAKEOLIX
           <br />
           We are{" "}

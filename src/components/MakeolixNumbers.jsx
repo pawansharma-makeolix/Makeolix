@@ -35,7 +35,7 @@ const MakeolixNumbers = ({
     >
       <div className="text-center mb-16 max-w-3xl mx-auto">
         <h2
-          className={`text-3xl font-semibold ${
+          className={` ${
             isDark ? "text-white" : "text-[#003863]"
           }`}
         >
@@ -66,7 +66,7 @@ const MakeolixNumbers = ({
             }`}
           >
             <h3
-              className={`text-3xl font-bold mb-2 ${
+              className={` mb-2 ${
                 isDark ? "text-[#003863]" : "text-[#118ab2]"
               }`}
             >
@@ -74,7 +74,7 @@ const MakeolixNumbers = ({
             </h3>
 
             <h4
-              className={`text-lg font-semibold mb-2 ${
+              className={` mb-2 ${
                 isDark ? "text-black" : "text-white"
               }`}
             >

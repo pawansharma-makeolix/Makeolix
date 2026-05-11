@@ -29,7 +29,7 @@ const Trusted = () => {
       <div className="max-w-6xl mx-auto px-6 flex flex-col gap-16">
         {/* 🔹 CLIENTS */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+          <h2 className=" mb-8 text-center">
             Trusted by 1,000+ leading businesses
           </h2>
 
@@ -56,7 +56,7 @@ const Trusted = () => {
 
         {/* 🔹 PARTNERS */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+          <h2 className=" mb-8 text-center">
             Trusted Partners
           </h2>
 

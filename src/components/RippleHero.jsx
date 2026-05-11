@@ -140,9 +140,8 @@ function AnimatedHeading({ text }) {
   const words = text.split(" ");
   return (
     <h1
-      className="font-bold leading-tight tracking-tight"
+      className=" leading-tight tracking-tight"
       style={{
-        fontSize: "clamp(2rem, 5vw, 4rem)",
         color: "#e2eaf4",
       }}
     >

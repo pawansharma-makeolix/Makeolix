@@ -229,7 +229,7 @@ export default function HeroOrbit({
       >
         <motion.h1
           variants={fadeUp}
-          className="text-3xl sm:text-5xl lg:text-5xl font-semibold leading-[1.08] mb-6"
+          className=" leading-[1.08] mb-6"
           style={{ color: "#e2eaf4" }}
         >
           {title}{" "}

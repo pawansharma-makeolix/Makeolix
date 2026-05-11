@@ -96,11 +96,8 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
         </span>
         <h2
           style={{
-            fontSize: "clamp(1.75rem, 4vw, 2.5rem)",
-            fontWeight: 600,
             color: "#ffffff",
             margin: "0 0 0.9rem",
-            lineHeight: 1.2,
             letterSpacing: "-0.02em",
           }}
         >

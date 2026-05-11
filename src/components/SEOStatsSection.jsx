@@ -305,7 +305,7 @@ export default function SEOStatsSection({
         {/* Heading — word-by-word reveal */}
         <div ref={headingRef} className="text-center mb-4 px-2">
           <h2
-            className="font-bold leading-tight text-3xl sm:text-4xl lg:text-5xl"
+            className=" leading-tight "
             style={{ color: "#e8f4ff" }}
           >
             {words.map((word, i) => (

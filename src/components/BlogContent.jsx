@@ -70,7 +70,7 @@ const H2Block = ({ text, index }) => (
       transition={{ duration: 0.4, ease: "easeOut" }}
     />
     <h2
-      className="text-3xl font-bold leading-tight pl-4"
+      className=" leading-tight pl-4"
       style={{ color: "#ffffff" }}
     >
       {text}
@@ -81,7 +81,7 @@ const H2Block = ({ text, index }) => (
 const H3Block = ({ text, index }) => (
   <ScrollReveal custom={index} className="mt-10 mb-4">
     <h3
-      className="text-xl font-semibold tracking-wide"
+      className="tracking-wide"
       style={{ color: "var(--blue-3)" }}
     >
       {text}

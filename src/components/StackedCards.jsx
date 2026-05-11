@@ -118,7 +118,7 @@ function ServiceCard({ card, isActive, onClick, index }) {
         transition={{ delay: 0.2 + index * 0.1 }}
         className="relative z-10"
       >
-        <h3 className="text-white font-semibold text-[15px] leading-snug mb-3">
+        <h3 className="text-white  text-[15px] leading-snug mb-3">
           {card.title}
         </h3>
 
@@ -156,7 +156,7 @@ export default function StackedCards() {
           <span className="text-xs tracking-[.3em] text-[#118ab2] block mb-2">
             OUR SERVICES
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className=" text-white">
             What We Do <span className="text-[#118ab2]">For You</span>
           </h2>
         </motion.div>

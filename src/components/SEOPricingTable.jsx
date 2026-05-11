@@ -563,7 +563,7 @@ export default function SEOPricingTable() {
           initial={{ opacity: 0, y: -22, scale: 0.94 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          style={{ fontSize: 46, fontWeight: 900, color: "#fff", margin: 0, textTransform: "uppercase", letterSpacing: "0.1em" }}
+          style={{  color: "#fff", margin: 0, textTransform: "uppercase", letterSpacing: "0.1em" }}
         >
           {pricingData.title}
         </motion.h1>

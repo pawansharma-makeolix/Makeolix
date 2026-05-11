@@ -119,7 +119,7 @@ KEY BENEFITS OF OUR SERVICE
                   initial={{ opacity: 0, y: 16 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.18 + i * 0.08, duration: 0.45 }}
-                  className="mb-3 text-xl font-medium text-white"
+                  className="mb-3  text-white"
                 >
                   {item.title}
                 </motion.h3>

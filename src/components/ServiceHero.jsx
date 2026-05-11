@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import Button from "./Button"; 
+import Button from "./Button";
 import { useMemo } from "react";
 
 // ─── Geometric Grid Pattern ──────────────────────────────────────────────────
@@ -196,7 +196,7 @@ function SpiralPaths() {
 
 // ─── Main ServiceHero Component ───────────────────────────────────────────────
 export default function ServiceHero({
-   title,
+  title,
   subtitle,
   primaryCTA = {
     text: "Explore Services",
@@ -211,20 +211,20 @@ export default function ServiceHero({
 }) {
   const patterns = ["spiral", "neural", "flow", "geometric"];
 
-const [currentPattern, setCurrentPattern] = useState(
-  pattern === "auto" ? 0 : patterns.indexOf(pattern)
-);
+  const [currentPattern, setCurrentPattern] = useState(
+    pattern === "auto" ? 0 : patterns.indexOf(pattern),
+  );
   const words = title.split(" ");
 
- useEffect(() => {
-  if (pattern !== "auto") return;
+  useEffect(() => {
+    if (pattern !== "auto") return;
 
-  const interval = setInterval(() => {
-    setCurrentPattern((prev) => (prev + 1) % patterns.length);
-  }, 8000);
+    const interval = setInterval(() => {
+      setCurrentPattern((prev) => (prev + 1) % patterns.length);
+    }, 8000);
 
-  return () => clearInterval(interval);
-}, [pattern]);
+    return () => clearInterval(interval);
+  }, [pattern]);
 
   const renderPattern = () => {
     switch (currentPattern) {
@@ -292,33 +292,33 @@ const [currentPattern, setCurrentPattern] = useState(
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
           {/* ── H1 Heading ── */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 mt-8 tracking-tighter leading-none">
-              {words.map((word, wordIndex) => (
-                <span key={wordIndex} className="inline-block mr-4 last:mr-0">
-                  {word.split("").map((letter, letterIndex) => (
-                    <motion.span
-                      key={`${wordIndex}-${letterIndex}`}
-                      initial={{ y: 100, opacity: 0, rotateX: -90 }}
-                      animate={{ y: 0, opacity: 1, rotateX: 0 }}
-                      transition={{
-                        delay: wordIndex * 0.15 + letterIndex * 0.05,
-                        type: "spring",
-                        stiffness: 100,
-                        damping: 20,
-                        duration: 0.8,
-                      }}
-                      className="inline-block text-transparent bg-clip-text 
-                                 bg-gradient-to-r from-[var(--blue-1)] via-[var(--blue-2)] to-[var(--blue-3)]
-                                 hover:from-[var(--accent-pink)] hover:to-[var(--blue-3)]
-                                 transition-all duration-700 cursor-default"
-                      whileHover={{ scale: 1.05, y: -2 }}
-                    >
-                      {letter}
-                    </motion.span>
-                  ))}
-                </span>
-              ))}
-            </h1>
+          <h1 className=" font-black mb-4 mt-8 tracking-tighter leading-none">
+            {words.map((word, wordIndex) => (
+              <span key={wordIndex} className="inline-block mr-4 last:mr-0">
+                {word.split("").map((letter, letterIndex) => (
+                  <motion.span
+                    key={`${wordIndex}-${letterIndex}`}
+                    initial={{ y: 100, opacity: 0, rotateX: -90 }}
+                    animate={{ y: 0, opacity: 1, rotateX: 0 }}
+                    transition={{
+                      delay: wordIndex * 0.15 + letterIndex * 0.05,
+                      type: "spring",
+                      stiffness: 100,
+                      damping: 20,
+                      duration: 0.8,
+                    }}
+                    className="inline-block text-transparent bg-clip-text 
+           bg-gradient-to-r from-white via-white to-[rgba(17,138,178,0.65)]
+           hover:from-white hover:to-[var(--blue-3)]
+           transition-all duration-700 cursor-default"
+                    whileHover={{ scale: 1.05, y: -2 }}
+                  >
+                    {letter}
+                  </motion.span>
+                ))}
+              </span>
+            ))}
+          </h1>
 
           {/* ── Divider line ── */}
           <motion.div
@@ -337,7 +337,7 @@ const [currentPattern, setCurrentPattern] = useState(
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.9 }}
-            className="text-base md:text-xl font-light tracking-wide leading-relaxed max-w-2xl mx-auto mb-10 text-white"
+            className="text-base md:text-xl font-light tracking-wide leading-relaxed max-w-5xl mx-auto mb-10 text-white"
           >
             {subtitle}
           </motion.p>
@@ -355,12 +355,12 @@ const [currentPattern, setCurrentPattern] = useState(
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Button href={primaryCTA.link} variant="primary">
-  {primaryCTA.text}
-</Button>
+              {primaryCTA.text}
+            </Button>
 
-<Button href={secondaryCTA.link} variant="outline">
-  {secondaryCTA.text}
-</Button>
+            <Button href={secondaryCTA.link} variant="outline">
+              {secondaryCTA.text}
+            </Button>
           </motion.div>
 
           {/* ── Pattern Label ── */}

@@ -99,7 +99,7 @@ const ResultsByNumbers = ({
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--blue-3)] leading-tight drop-shadow-lg">
+          <h2 className="text-[var(--blue-3)] leading-tight drop-shadow-lg">
             {heading}
           </h2>
           <p className="mt-4 text-lg text-[var(--text-muted)] max-w-2xl mx-auto">
