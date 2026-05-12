@@ -7,6 +7,7 @@ import {
   MapPin,
   ArrowRight,
   CheckCircle2,
+  Handshake,
   Building2,
   User,
   Briefcase,
@@ -311,11 +312,25 @@ const BusinessForm = () => {
   });
   const [focused, setFocused] = useState(null);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+const initialFormState = {
+  companyName: "",
+  businessEmail: "",
+  phone: "",
+  projectType: "",
+  budget: "",
+  message: "",
+};
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
- const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
   e.preventDefault();
+
+  if (loading) return;
+
+  setLoading(true);
+
   try {
     await emailjs.send(
       "service_8oqd2qb",
@@ -329,7 +344,7 @@ const BusinessForm = () => {
         projectType: formData.projectType,
         budget: formData.budget,
         message: formData.message,
-        // Career fields empty rakhenge
+
         fullName: "-",
         email: "-",
         position: "-",
@@ -338,11 +353,20 @@ const BusinessForm = () => {
       },
       "daTfRauE6dCIypmMo"
     );
+
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+
+    // reset fields
+    setFormData(initialFormState);
+
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 3500);
   } catch (err) {
     console.error(err);
     alert("Server error");
+  } finally {
+    setLoading(false);
   }
 };
   const fi = (name) => ({
@@ -513,22 +537,59 @@ const BusinessForm = () => {
         </FieldWrap>
       </div>
 
-      <SubmitBtn label="Send Business Inquiry" />
-
+<SubmitBtn
+  label={loading ? "Sending..." : "Send Business Inquiry"}
+/>
       <AnimatePresence>
-        {submitted && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            className="flex items-center gap-2 text-sm justify-center"
-            style={{ color: "#67e8f9" }}
-          >
-            <CheckCircle2 size={15} />
-            <span>Message sent! We'll reply within 24 hours.</span>
-          </motion.div>
-        )}
-      </AnimatePresence>
+  {submitted && (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.8 }}
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
+    >
+      <motion.div
+        initial={{ y: 40 }}
+        animate={{ y: 0 }}
+        exit={{ y: 40 }}
+        transition={{ type: "spring", stiffness: 180, damping: 18 }}
+        className="relative w-full max-w-md rounded-3xl p-8 text-center overflow-hidden"
+        style={{
+          background: "rgba(0,17,26,0.95)",
+          border: "1px solid rgba(103,232,249,0.25)",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
+        }}
+      >
+        <motion.div
+          animate={{ rotate: [0, -10, 10, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+          className="mx-auto mb-5 flex items-center justify-center w-20 h-20 rounded-full"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(17,138,178,0.25), rgba(103,232,249,0.15))",
+          }}
+        >
+          <Handshake size={42} style={{ color: "#67e8f9" }} />
+        </motion.div>
+
+        <h3
+          className="text-2xl font-bold mb-3"
+          style={{ color: "#e0f2fe" }}
+        >
+          Thank You!
+        </h3>
+
+        <p
+          className="text-sm leading-relaxed"
+          style={{ color: "rgba(226,232,240,0.85)" }}
+        >
+          Thank you for contacting us. We’ve received your inquiry and our team
+          will get back to you shortly.
+        </p>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
     </motion.form>
   );
 };
@@ -547,11 +608,27 @@ const CareerForm = () => {
   const [focused, setFocused] = useState(null);
   const [resumeFile, setResumeFile] = useState(null);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+const initialCareerState = {
+  fullName: "",
+  email: "",
+  phone: "",
+  position: "",
+  experience: "",
+  portfolio: "",
+  message: "",
+};
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
   const handleSubmit = async (e) => {
   e.preventDefault();
+
+  if (loading) return;
+
+  setLoading(true);
+
   try {
     await emailjs.send(
       "service_8oqd2qb",
@@ -566,7 +643,7 @@ const CareerForm = () => {
         experience: formData.experience,
         portfolio: formData.portfolio,
         message: formData.message,
-        // Business fields empty rakhenge
+
         companyName: "-",
         businessEmail: "-",
         projectType: "-",
@@ -574,11 +651,21 @@ const CareerForm = () => {
       },
       "daTfRauE6dCIypmMo"
     );
+
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+
+    setFormData(initialCareerState);
+
+    setResumeFile(null);
+
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 3500);
   } catch (err) {
     console.error(err);
     alert("Failed");
+  } finally {
+    setLoading(false);
   }
 };
 
@@ -783,22 +870,59 @@ const CareerForm = () => {
         </FieldWrap>
       </div>
 
-      <SubmitBtn label="Submit Application" />
-
+<SubmitBtn
+  label={loading ? "Submitting..." : "Submit Application"}
+/>
       <AnimatePresence>
-        {submitted && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            className="flex items-center gap-2 text-sm justify-center"
-            style={{ color: "#67e8f9" }}
-          >
-            <CheckCircle2 size={15} />
-            <span>Application sent! We'll be in touch soon.</span>
-          </motion.div>
-        )}
-      </AnimatePresence>
+  {submitted && (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.8 }}
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
+    >
+      <motion.div
+        initial={{ y: 40 }}
+        animate={{ y: 0 }}
+        exit={{ y: 40 }}
+        transition={{ type: "spring", stiffness: 180, damping: 18 }}
+        className="relative w-full max-w-md rounded-3xl p-8 text-center overflow-hidden"
+        style={{
+          background: "rgba(0,17,26,0.95)",
+          border: "1px solid rgba(103,232,249,0.25)",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
+        }}
+      >
+        <motion.div
+          animate={{ rotate: [0, -10, 10, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+          className="mx-auto mb-5 flex items-center justify-center w-20 h-20 rounded-full"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(17,138,178,0.25), rgba(103,232,249,0.15))",
+          }}
+        >
+          <Handshake size={42} style={{ color: "#67e8f9" }} />
+        </motion.div>
+
+        <h3
+          className="text-2xl font-bold mb-3"
+          style={{ color: "#e0f2fe" }}
+        >
+          Application Submitted!
+        </h3>
+
+        <p
+          className="text-sm leading-relaxed"
+          style={{ color: "rgba(226,232,240,0.85)" }}
+        >
+          Thank you for applying. Our team will review your application and
+          connect with you soon.
+        </p>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
     </motion.form>
   );
 };

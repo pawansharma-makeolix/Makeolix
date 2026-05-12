@@ -112,7 +112,7 @@ const navItems = [
         href: "/services/social-media-marketing",
 
         items: [
-          { label: "Social Media Optimization", href: "/services/smo" },
+          { label: "Social Media Optimization", href: "/services/social-media-optimization" },
           { label: "Social Media Advertising", href: "/services/sma" },
         ],
       },

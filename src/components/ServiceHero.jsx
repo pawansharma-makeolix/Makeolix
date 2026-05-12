@@ -199,14 +199,14 @@ export default function ServiceHero({
   title,
   subtitle,
   primaryCTA = {
-    text: "Explore Services",
-    link: "/services",
+    text: "About Us",
+    link: "/about",
   },
   secondaryCTA = {
     text: "Contact Us",
     link: "/contact-us",
   },
-  pattern = "auto", // 👈 important
+  pattern = "auto", 
   height = "min-h-[85vh] md:min-h-screen",
 }) {
   const patterns = ["spiral", "neural", "flow", "geometric"];
