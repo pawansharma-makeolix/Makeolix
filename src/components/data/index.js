@@ -15,6 +15,7 @@ import { ShopifyDevData } from "./ServicesData/ShopifyDev";
 import { socialMediaData } from "./ServicesData/SocialMediaMarketing";
 import { SocialMediaOpt } from "./ServicesData/SocialMediaOpt";
 import { SocialMediaAds } from "./ServicesData/SocialmediaAds";
+import { ShopifyDevData } from "./ServicesData/ShopifyDev";
 export const ServicesPagesData = {
   seo: seoData,
   "ecommerce-seo": ecommerceSeoData,
@@ -29,7 +30,7 @@ export const ServicesPagesData = {
   "wordpress-dev" : WordpresDevData,
   "small-business-seo" : SmallBusinessSeoData,
   "ecommerce-develop" : EcommerceDevelopData,
-  "shopify" : EcommerceDevelopData,
+  "shopify" : shopify,
   "social-media-marketing" : socialMediaData,
   "social-media-optimization" : SocialMediaOpt,
   "sma" : SocialMediaAds,
