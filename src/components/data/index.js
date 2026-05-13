@@ -30,7 +30,7 @@ export const ServicesPagesData = {
   "wordpress-dev" : WordpresDevData,
   "small-business-seo" : SmallBusinessSeoData,
   "ecommerce-develop" : EcommerceDevelopData,
-  "shopify" : shopify,
+  "shopify" : ShopifyDevData,
   "social-media-marketing" : socialMediaData,
   "social-media-optimization" : SocialMediaOpt,
   "sma" : SocialMediaAds,
