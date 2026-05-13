@@ -15,7 +15,6 @@ import { ShopifyDevData } from "./ServicesData/ShopifyDev";
 import { socialMediaData } from "./ServicesData/SocialMediaMarketing";
 import { SocialMediaOpt } from "./ServicesData/SocialMediaOpt";
 import { SocialMediaAds } from "./ServicesData/SocialmediaAds";
-import { ShopifyDevData } from "./ServicesData/ShopifyDev";
 export const ServicesPagesData = {
   seo: seoData,
   "ecommerce-seo": ecommerceSeoData,
