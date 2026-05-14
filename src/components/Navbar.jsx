@@ -202,7 +202,7 @@ const navItems = [
     mega: true,
     submenu: [
       // { label: "SEO + AI Visibility", href: "/pricing/seo+ai_visibility" },
-      { label: "SEO POWERED BY AI ", href: "/pricing/seo-powere-by-ai" },
+      { label: "AI-POWERED SEO ", href: "/pricing/seo-powere-by-ai" },
       { label: "SMO ", href: "/pricing/smo" },
       { label: "WEB DEV", href: "/pricing/web" },
 
