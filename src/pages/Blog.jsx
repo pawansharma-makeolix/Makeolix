@@ -5,8 +5,7 @@ import UltraFooter from "../components/UltraFooter";
 import HeroOrbit from "../components/HeroOrbit";
 import CaseStudiesSection from "../components/CaseStudiesSection";
 import BlogContent from "../components/BlogContent";
-import WovenLightHero from "../components/WovenLightHero";
-import ImmersiveHero from "../components/ImmersiveScrollHero";
+
 const Blog = () => {
   const blogsData = [
     {
