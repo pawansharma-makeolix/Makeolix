@@ -9,7 +9,7 @@ const SeoPackages = () => {
     <>
       <Navbar></Navbar>
       <HeroOrbit
-        title={"SEO POWERED BY AI"}
+        title={"AI-Powered SEO"}
         primaryBtnText={"Discuss With Us"}
         primaryLink={"/contact-us"}
         secondaryBtnText={"Know More"}
