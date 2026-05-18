@@ -17,7 +17,7 @@ const SeoPackages = () => {
       ></HeroOrbit>
       <PriceSection
         plans={SEO_PLANS}
-        subtitle="Best for ranking"
+        subtitle="Best for rankin"
         alwaysExpanded={true}
       ></PriceSection>
       <CTAMarquee></CTAMarquee>
