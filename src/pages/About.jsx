@@ -8,7 +8,7 @@ import Achievements from "../components/Achievements";
 import StackedTestimonials from "../components/StackedTestimonials";
 import OtherPageHero from "../components/OtherPageHero";
 import UltraFooter from "../components/UltraFooter";
-import HeroOrbit from "../components/HeroOrbit";
+// import HeroOrbit from "../components/HeroOrbit";
 import Button from "../components/Button";
 
 const aboutStats = [
@@ -57,16 +57,7 @@ const AboutUs = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <HeroOrbit
-        title={"About Us"}
-        description={
-          "We blend creativity and technology to build powerful digital solutions that drive growth and create lasting impact."
-        }
-        primaryBtnText={"Get Started "}
-        secondaryBtnText={"Learn More"}
-        primaryLink={"/contact-us"}
-        secondaryLink={"/contact-us"}
-      ></HeroOrbit>
+      
 
       <Trusted></Trusted>
       <TextMedia
