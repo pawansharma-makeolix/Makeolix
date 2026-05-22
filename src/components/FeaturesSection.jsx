@@ -415,7 +415,7 @@ useEffect(() => {
           {subtext && (
             <motion.p
               ref={subtextRef}
-              className="text-base md:text-lg leading-relaxed mx-auto text-white max-w-[820px]"
+              className="text-base md:text-lg leading-relaxed mx-auto text-white max-w-[1020px]"
               initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
               animate={
                 subtextInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}
