@@ -6,9 +6,9 @@ export const PpcAdsData = {
       type: "hero",
       data: {
         title:
-          "Performance-Driven PPC Advertising Services That Generate Qualified Leads",
+          "PPC Services in India | Results-Driven Paid Ad Campaigns",
         subtitle:
-          "Our PPC Advertising Services help maximize visibility, improve lead quality, and deliver measurable return on ad spend.",
+          "At MakeOlix Consulting, we partner with businesses that are serious about growth, companies that want expert paid advertising management without the overhead of overpriced agencies.",
       },
     },
     {

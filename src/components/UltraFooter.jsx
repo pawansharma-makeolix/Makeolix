@@ -269,14 +269,14 @@ export default function UltraFooter() {
   <div className="hidden md:block">|</div>
 
   <div className="flex items-center gap-4">
-    {/* <Link
+    <Link
       to="/privacy-policy"
       className="transition hover:text-white"
     >
       Privacy Policy
     </Link>
 
-    <span>|</span> */}
+    <span>|</span>
 
     <Link
       to="/terms-and-conditions"

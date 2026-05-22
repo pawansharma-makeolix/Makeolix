@@ -22,7 +22,7 @@ import BlogDetail from "./pages/BlogDetail";
 // import IndustryItem from "./pages/IndustryItem"
 import ChatBot from "./components/chatbot/ChatBot";
 import TermsConditions from "./pages/TermsCondition";
-// import PrivacyPolicy from "./pages/PrivacyPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 
 function App() {
@@ -55,7 +55,7 @@ function App() {
         <Route path="/:city" element={<CountryPage />} />
         <Route path="/services/:slug" element={<ServiceItem />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
-        {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         {/* <Route path="/industry/:slug" element={<IndustryItem />} /> */}
       </Routes>
     </Router>
