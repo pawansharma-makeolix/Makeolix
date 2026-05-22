@@ -20,16 +20,18 @@ import CaseStudyDetail from "./pages/CaseStudyDetail";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 // import IndustryItem from "./pages/IndustryItem"
-import ChatBot from "./components/chatbot/ChatBot"
+import ChatBot from "./components/chatbot/ChatBot";
+import TermsConditions from "./pages/TermsCondition";
+// import PrivacyPolicy from "./pages/PrivacyPolicy";
+
 
 function App() {
   return (
     <Router>
-      
       <ScrollToTop></ScrollToTop>
       <ChatBot></ChatBot>
       <CustomCursor />
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -52,6 +54,8 @@ function App() {
 
         <Route path="/:city" element={<CountryPage />} />
         <Route path="/services/:slug" element={<ServiceItem />} />
+        <Route path="/terms-and-conditions" element={<TermsConditions />} />
+        {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
         {/* <Route path="/industry/:slug" element={<IndustryItem />} /> */}
       </Routes>
     </Router>

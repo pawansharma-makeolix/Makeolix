@@ -253,9 +253,39 @@ export default function UltraFooter() {
         </div>
       </div>
 
-      <div className="text-center text-sm text-(--text-muted) py-6 border-t border-gray-700">
-        © 2026 MakeOlix Consulting Pvt Ltd. All Rights Reserved
-      </div>
+     <div
+  className="
+    flex flex-col items-center justify-center gap-3
+    border-t border-gray-700
+    py-6
+    text-sm text-(--text-muted)
+    md:flex-row
+  "
+>
+  <p>
+    © 2026 MakeOlix Consulting Pvt Ltd. All Rights Reserved
+  </p>
+
+  <div className="hidden md:block">|</div>
+
+  <div className="flex items-center gap-4">
+    {/* <Link
+      to="/privacy-policy"
+      className="transition hover:text-white"
+    >
+      Privacy Policy
+    </Link>
+
+    <span>|</span> */}
+
+    <Link
+      to="/terms-and-conditions"
+      className="transition hover:text-white"
+    >
+      Terms & Conditions
+    </Link>
+  </div>
+</div>
     </footer>
   );
 }
