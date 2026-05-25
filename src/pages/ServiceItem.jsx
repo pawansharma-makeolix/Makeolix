@@ -20,7 +20,7 @@ import PageNotFound from "../components/PageNotFound";
 const ServiceItem = () => {
   const { slug } = useParams();
   const pageData = ServicesPagesData[slug];
-  const noIndexPages = ["ppc-ads","website-design-development","wordpress-dev","small-business-seo","ecommerce-develop","shopify","social-media-marketing","social-media-optimization","sma"];
+  const noIndexPages = ["website-design-development","wordpress-dev","small-business-seo","ecommerce-develop","shopify","social-media-marketing","social-media-optimization","sma"];
   const shouldNoIndex = noIndexPages.includes(slug);
   if (!pageData) return <PageNotFound></PageNotFound>;
   return (

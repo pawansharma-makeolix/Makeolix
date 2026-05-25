@@ -8,100 +8,187 @@ export const PpcAdsData = {
         title:
           "PPC Services in India | Results-Driven Paid Ad Campaigns",
         subtitle:
-          "At MakeOlix Consulting, we partner with businesses that are serious about growth, companies that want expert paid advertising management without the overhead of overpriced agencies.",
+          "A home services company was spending $15,000 a month on Google Ads.",
       },
     },
     {
       type: "intro",
       data: {
         paragraph:
-          "At MakeOlix Consulting, we create data-focused PPC campaigns designed to put your business in front of the right audience at the right moment.",
+          " Their internal team was stretched thin, their cost-per-lead had climbed over 60% in two years, and their campaigns hadn't been properly optimized in months. They needed expert help,  but bringing on a senior PPC manager would have cost them $80,000 a year in salary alone. They partnered with MakeOlix Consulting instead. Within 60 days, their cost-per-lead dropped by 38%. Within 90 days, their monthly leads doubled, without increasing the ad budget by a single dollar. And their total investment in expert PPC management? A fraction of what an in-house hire would have cost.",
       },
     },
     {
       type: "textmedia",
       data: {
-        title: "What Are PPC Advertising Services?",
+        title: "What is PPC Advertising & Why Does It Matter?",
         description:
-          "Pay-Per-Click advertising is one of the fastest ways to attract targeted traffic, generate qualified leads, and scale revenue. Unlike long-term organic strategies, PPC allows your brand to appear instantly in front of users actively searching for your products or services. At MakeOlix Consulting, we build performance-focused campaigns that combine audience targeting, keyword intent, compelling ad copy, and continuous optimization to help you achieve stronger business outcomes.",
+          "Pay-per-click advertising is a digital marketing model where advertisers pay only when someone clicks on their ads. Instead of waiting months for organic rankings, PPC campaigns place your business directly in front of people actively searching for your products or services. Our expertise in Pay Per Click Advertising in India helps businesses create targeted campaigns across Google Search, YouTube, Shopping Ads, and Display Networks. This allows brands to generate immediate visibility, attract high-intent users, and drive faster conversions. As a trusted PPC Agency in India, MakeOlix Consulting focuses on creating campaigns backed by audience research, keyword intent, competitor analysis, and real-time optimization. Every strategy is designed to help businesses reduce wasted ad spend while improving lead quality and overall campaign performance.",
         image: "/coffeebeanworks-web-design-1953128_1920.jpg",
       },
     },
     {
       type: "usp",
       data: {
-        heading: "Why Your Agency Needs PPC Ads",
+        heading: "Why Choose MakeOlix for PPC Advertising?",
         subheading:
-          "Scaling an agency in today’s competitive market isn’t easy. With the right PPC Ads, you can expand your offerings and increase profitability without increasing operational costs.",
+          "Choosing the right PPC partner can directly impact your advertising success. At MakeOlix Consulting, we focus on creating campaigns that deliver real business results instead of vanity metrics.",
 
         statsData: [
           {
             title:
-              "Intent-driven keyword targeting that reaches high-converting audiences",
+              "Customized Advertising Strategies",
+              desc:"Every campaign is tailored to your industry, target audience, and business goals to ensure better engagement and higher conversions."
           },
           {
-            title: "Strategic ad copy built to improve click-through rates",
+            title: "Performance-Driven Campaigns",
+            desc: "We use real-time analytics, conversion tracking, and data insights to continuously improve campaign performance and maximize ROI."
           },
           {
-            title: "Conversion-focused landing page recommendationss",
+            title: "Transparent Reporting & Communication",
+            desc: "Get clear monthly reports, campaign updates, and performance insights without complicated marketing jargon."
           },
           {
-            title: "Smart budget allocation to reduce wasted ad spend",
+            title: "Experienced PPC Specialists",
+            desc: "Our skilled team of dedicated PPC Experts in India manages campaigns strategically to improve traffic, leads, and sales."
           },
           {
-            title: "Remarketing campaigns that re-engage lost visitors",
+            title: "Scalable Campaign Management",
+            desc: "Whether you are a startup, eCommerce brand, or growing enterprise, our campaigns are designed to scale profitably with your business."
           },
           {
-            title: "Ongoing optimization based on live performance data",
+            title: "Complete PPC Growth Solutions",
+            desc: "As a trusted PPC Services Company in India and experienced PPC Consultant India, MakeOlix Consulting delivers smart paid advertising strategies focused on long-term business growth and measurable results."
           },
         ],
       },
     },
-
-    {
+     {
       type: "parallax",
 
       data: {
         bgImage: "/ppcadss.jpg",
-        align: "both",
+        align: "left",
         // LEFT
-        title: "Why Choose MakeOlix for PPC Advertising?",
+        title: "Why Businesses Invest in PPC Campaigns",
         description:
-          "A successful PPC campaign is not just about clicks — it is about attracting the right traffic and turning that traffic into measurable business growth.",
+          "In today’s competitive digital landscape, businesses need more than just online visibility, they need measurable results. A strong PPC strategy helps brands connect with the right audience at the right time while maintaining full control over budget and performance.",
+          subtext:"Here’s how our campaigns help businesses grow:",
 
         features: [
-          "Customized campaign strategies aligned with your business goals",
-          "Detailed keyword research and audience targeting for better lead quality",
-          "Continuous bid, budget, and performance optimization for stronger ROI",
+          "Highly targeted traffic based on search intent, demographics, interests, and location",
+          "Faster lead generation and immediate online visibility",
+          "Better budget control with scalable campaign management",
+          "Real-time campaign tracking and performance optimization",
+          "Advanced remarketing campaigns that re-engage lost visitors",
+          "Improved brand visibility across search engines and digital platforms",
         ],
         lastpara:
-          "Our team monitors every stage of the campaign lifecycle to ensure your advertising budget is invested where it creates the highest possible impact.",
+          "Our Pay Per Click Service in India is designed for businesses that want predictable growth through measurable paid advertising campaigns.",
 
-        // RIGHT
-        rightTitle: "Why Your Business Needs PPC Management Services",
-        rightDescription:
-          "PPC gives businesses the ability to generate fast visibility, reach high-intent buyers, and scale growth with measurable precision.",
-
-        rightFeatures: [
-          "Immediate placement in search results for targeted keywords",
-          "Better control over ad spend, location targeting, and audience segmentation",
-          "Clear performance insights that help improve future marketing decisions",
-        ],
-        rightlastpara:
-          "Whether you want more leads, more calls, or more sales, professional PPC management helps convert paid traffic into real business opportunities.",
+   
       },
     },
-
-    {
-      type: "textmedia",
+   {
+      type: "services",
       data: {
-        title: "Our Proven PPC Advertising Approach",
-        reverse: true,
-        description:
-          "We combine strategic planning, precise targeting, creative testing, and continuous optimization to build PPC campaigns that consistently improve visibility, lead quality, and return on investment.",
-        image: "/pexels-khwanchai-4175028.jpg",
+        heading: "Our PPC Services",
+        subheading:
+          "At MakeOlix Consulting, we offer customized PPC Management Services in India designed to help businesses generate better traffic, leads, and sales through strategic advertising.",
+        services: [
+          {
+            id: "1",
+            title: "Google Ads Campaign Management",
+            description:
+              "As an experienced Google Ads Agency in India, we manage Search Ads, Shopping Ads, Display Campaigns, and YouTube Ads focused on maximizing conversions and return on investment.",
+            nodes: 9,
+          },
+          {
+            id: "2",
+            title: "Competitor & Market Research",
+            description:
+              "Our team studies industry trends, competitor strategies, audience behavior, and keyword opportunities to build campaigns that outperform competitors.",
+            nodes: 7,
+          },
+          {
+            id: "3",
+
+            title: "Keyword Research & Audience Targeting",
+            description:
+              "As a reliable PPC Company in India, we identify high-intent keywords and create detailed audience targeting strategies that help businesses reach users most likely to convert.",
+            nodes: 8,
+          },
+          {
+            id: "4",
+
+            title: "Ad Copy & Creative Optimization",
+            description:
+              "Strong creatives drive better engagement. We create compelling ad copy and continuously test multiple ad variations to improve click-through rates and conversion performance.",
+            nodes: 10,
+          },
+          {
+            id: "5",
+
+            title: "Meta Ads (Facebook & Instagram) ",
+            description:
+              "Our team runs paid social campaigns built for your specific audience segments, Meta Ads are designed to generate qualified leads and sales at a competitive cost per result, whether your goal is e-commerce revenue, lead generation, or app growth. ",
+            nodes: 6,
+          },
+          {
+            id: "6",
+
+            title: "Reporting & Campaign Insights",
+            description:
+              "As a trusted Pay Per Click Company in India, we provide transparent monthly reporting with insights into impressions, clicks, cost-per-click, conversions, and ROI.",
+            nodes: 10,
+          },
+          
+        ],
       },
     },
+    {
+      type: "steps",
+
+      data: {
+        heading: "Our Proven PPC Management Process",
+        subtitle:
+          "Every successful PPC campaign requires a structured process. At MakeOlix Consulting, we follow a data-driven strategy focused on long-term growth and measurable business outcomes. ",
+        perRow: "5",
+        steps: [
+          {
+            number: 1,
+            title: "PPC Audit & Business Discovery",
+            body: "As a leading PPC Advertising Company in India, we begin by analyzing your current campaigns, competitors, business goals, and target audience to identify opportunities for improvement.",
+          },
+
+          {
+            number: 2,
+            title: "Market & Keyword Research",
+            body: "Our team researches high-converting keywords, audience intent, and market trends to create campaigns that attract relevant traffic.",
+          },
+
+          {
+            number: 3,
+            title: "Campaign Strategy & Setup",
+            body: "We build customized campaign structures, audience targeting, conversion tracking systems, and ad groups tailored to your business goals.",
+          },
+          {
+            number: 4,
+            title: "Ad Campaign Execution",
+            body: "As an experienced PPC Management Company in India, we launch optimized campaigns with strategic bidding, compelling ad creatives, and detailed audience segmentation.",
+          },
+
+          {
+            number: 5,
+            title: "Performance Optimization & A/B Testing",
+            body: "We continuously test ad copy, landing pages, keywords, and targeting strategies to improve click-through rates and reduce acquisition costs.",
+          },
+          
+        ],
+      },
+    },
+   
+
 
     {
       type: "faq",
@@ -109,40 +196,40 @@ export const PpcAdsData = {
         faqs: [
           {
             id: 1,
-            question: "What are PPC advertising services?",
+            question: "What are PPC services, and how do they work?",
 
             answer:
-              "PPC advertising services involve creating and managing paid ad campaigns where businesses pay only when users click on their ads. These campaigns help drive targeted traffic, leads, and conversions.",
+              "PPC services help businesses run paid ads across platforms like Google and YouTube. Advertisers only pay when users click on their ads, making PPC one of the most measurable and cost-effective digital marketing strategies.",
           },
           {
             id: 2,
 
-            question: "How quickly can PPC campaigns generate results?",
+            question: "Why should businesses outsource PPC management to an agency in India?",
 
             answer:
-              "PPC campaigns can begin driving traffic almost immediately after launch. However, consistent optimization is usually required to improve lead quality and return on ad spend.",
+              "Working with an experienced India-based agency like MakeOlix Consulting gives businesses access to skilled PPC specialists, advanced campaign management, and cost-effective solutions while maintaining high campaign quality and performance.",
           },
           {
             id: 3,
 
-            question: "Which platforms do you manage for PPC advertising?",
+            question: "How quickly can PPC campaigns generate results?",
 
             answer:
-              "We manage campaigns across major platforms including Google Ads, search campaigns, display advertising, remarketing campaigns, and location-based paid advertising strategies.",
+              "Most campaigns begin generating traffic and initial leads within days after launch. However, optimization and stronger conversion performance usually improve significantly within the first 60-90 days.",
           },
           {
             id: 4,
-            question: "How do you reduce wasted ad spend?",
+            question: "What platforms do you manage PPC campaigns on?",
 
             answer:
-              "We reduce wasted ad spend through careful keyword targeting, negative keyword filtering, audience segmentation, bid optimization, and ongoing campaign monitoring.",
+              "We manage campaigns across Google Search, Shopping Ads, YouTube, Display Networks, and remarketing platforms based on your business goals and target audience.",
           },
           {
             id: 5,
-            question: "Is PPC suitable for small businesses?",
+            question: "How does MakeOlix Consulting measure PPC success?",
 
             answer:
-              "Yes. PPC can be highly effective for small businesses because it allows controlled budgeting, precise targeting, and fast access to high-intent potential customers.",
+              "We track important performance metrics such as clicks, conversions, cost per acquisition, conversion rates, and return on ad spend to ensure campaigns generate measurable business results.",
           },
         ],
       },
