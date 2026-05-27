@@ -1,7 +1,7 @@
 import { desc, head, image, param } from "framer-motion/client";
 
 export const ServiceAreaPagesData = {
-  indianapolis: {
+  "indianapolis-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -192,7 +192,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  phoenix: {
+  "phoenix-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -351,7 +351,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  "los-angeles": {
+  "los-angeles-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -526,7 +526,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  "new-york": {
+  "new-york-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -685,7 +685,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  "san-diego": {
+  "san-diego-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -861,7 +861,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  seattle: {
+  "seattle-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -1036,7 +1036,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  boston: {
+  "boston-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -1192,7 +1192,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  chicago: {
+  "chicago-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -1345,7 +1345,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  dallas: {
+  "dallas-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -1504,7 +1504,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  houston: {
+  "houston-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -1662,7 +1662,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  jacksonville: {
+  "jacksonville-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -1837,7 +1837,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  miami: {
+  "miami-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -1989,7 +1989,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  philadelphia: {
+  "philadelphia-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -2156,7 +2156,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  "san-antonio": {
+  "san-antonio-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -2317,7 +2317,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  "san-francisco": {
+  "san-francisco-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -2489,7 +2489,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  toronto: {
+  "toronto-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -2651,7 +2651,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  austin: {
+  "austin-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -2817,7 +2817,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  charlotte: {
+  "charlotte-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -3012,7 +3012,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  columbus: {
+  "columbus-seo-agency": {
     sections: [
       {
         type: "hero",
@@ -3228,7 +3228,7 @@ export const ServiceAreaPagesData = {
     ],
   },
 
-  denver: {
+  "denver-seo-agency": {
     sections: [
       {
         type: "hero",
