@@ -1,20 +1,20 @@
-import { seoData } from "./ServicesData/Seo";
-import { ecommerceSeoData } from "./ServicesData/ecommerceSeo";
-import { seoResellerData } from "./ServicesData/seoresellar";
-import { technicalSeo } from "./ServicesData/technicalSeo";
-import { whitelabelseo } from "./ServicesData/whitelabelseo";
-import { localSeoData } from "./ServicesData/localseoservice";
-import { PpcAdsData } from "./ServicesData/ppcads";
-import { PerformanceMarketingData } from "./ServicesData/PerformanceMarketing";
-import { MetaAds } from "./ServicesData/MetaAds";
-import { WebDevDesignData } from "./ServicesData/WebDev";
-import { WordpresDevData } from "./ServicesData/WordpressDev";
-import { SmallBusinessSeoData } from "./ServicesData/SmallBusinessSeo";
-import { EcommerceDevelopData } from "./ServicesData/EcommerceDevelop";
-import { ShopifyDevData } from "./ServicesData/ShopifyDev";
-import { socialMediaData } from "./ServicesData/SocialMediaMarketing";
-import { SocialMediaOpt } from "./ServicesData/SocialMediaOpt";
-import { SocialMediaAds } from "./ServicesData/SocialmediaAds";
+import { seoData } from "./ServicesData/Seo.js";
+import { ecommerceSeoData } from "./ServicesData/ecommerceSeo.js";
+import { seoResellerData } from "./ServicesData/seoresellar.js";
+import { technicalSeo } from "./ServicesData/technicalSeo.js";
+import { whitelabelseo } from "./ServicesData/whitelabelseo.js";
+import { localSeoData } from "./ServicesData/localseoservice.js";
+import { PpcAdsData } from "./ServicesData/ppcads.js";
+import { PerformanceMarketingData } from "./ServicesData/PerformanceMarketing.js";
+import { MetaAds } from "./ServicesData/MetaAds.js";
+import { WebDevDesignData } from "./ServicesData/WebDev.js";
+import { WordpresDevData } from "./ServicesData/WordpressDev.js";
+import { SmallBusinessSeoData } from "./ServicesData/SmallBusinessSeo.js";
+import { EcommerceDevelopData } from "./ServicesData/EcommerceDevelop.js";
+import { ShopifyDevData } from "./ServicesData/ShopifyDev.js";
+import { socialMediaData } from "./ServicesData/SocialMediaMarketing.js";
+import { SocialMediaOpt } from "./ServicesData/SocialMediaOpt.js";
+import { SocialMediaAds } from "./ServicesData/SocialmediaAds.js";
 export const ServicesPagesData = {
   seo: seoData,
   "ecommerce-seo": ecommerceSeoData,

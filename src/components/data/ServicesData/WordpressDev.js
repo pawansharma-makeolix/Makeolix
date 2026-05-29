@@ -7,134 +7,159 @@ export const WordpresDevData = {
         type: "hero",
         data: {
           title:
-            "Professional WordPress Development Services for Modern Businesses",
+            "Stop Blending In. Stand Out with MakeOlix’s Custom WordPress Development ",
           subtitle:
-            "Build a powerful, scalable, and user-friendly website with custom WordPress development solutions designed to strengthen your online presence and support business growth.",
+            "Your website is often the first impression customers have of your business. A slow, outdated, or poorly structured website directly impacts your credibility, user engagement, and conversions.",
         },
       },
       {
         type: "intro",
         data: {
           paragraph:
-            "At MakeOlix, we develop high-performance WordPress websites that combine modern design, responsive functionality, SEO-friendly structure, and seamless user experience to help businesses stand out in the digital space.",
+            "At MakeOlix Consulting, we help businesses build powerful digital experiences through professional WordPress web development solutions tailored for long-term growth. ",
         },
       },
       {
         type: "textmedia",
         data: {
-          title: "Custom WordPress Websites Built for Performance",
+          title: "Scalable WordPress Development Services in India Built for Speed and Conversion",
           description:
-            "Our WordPress development services focus on creating fast, secure, and fully customized websites tailored to your business goals, audience expectations, and long-term growth strategy.",
+            "At MakeOlix, we don't just build websites; we engineer digital platforms designed to scale. Our development process prioritizes clean code architecture for lightning-fast load times and conversion-focused UI/UX to turn casual visitors into paying customers. As a leading WordPress web development company in India, we bring strategy, design, and technical expertise together under one roof… so your website doesn't just look good, it actually works for your business.",
           image: "/john-FlPc9_VocJ4-unsplash (2).jpg",
+        },
+      },
+      {
+        type: "services",
+        data: {
+          heading: "What We Build & Maintain for You",
+          subheading:
+            "Six core service lines… all under one specialist WordPress development agency.",
+          services: [
+            {
+              id: "1",
+              title: "Custom WordPress Website Design",
+              description:
+                "We design WordPress websites from the ground up, no page-builder shortcuts, no recycled templates. Our custom WordPress website design process starts with brand strategy, audience research, and conversion goals. The result is a site that feels like yours genuinely and performs like a well-oiled machine - tied to our broader website design and development philosophy.",
+              nodes: 9,
+            },
+            {
+              id: "2",
+              title: "WordPress Theme Customization",
+              description:
+                "Already have a theme, but it's not doing you justice? Our WordPress theme customization services go deep, with custom child themes, precision CSS overrides, advanced layout restructuring, and brand alignment throughout. We transform off-the-shelf into bespoke, without the cost of a full rebuild.",
+              nodes: 7,
+            },
+            {
+              id: "3",
+
+              title: "WooCommerce & E-commerce Development",
+              description:
+                "We specialize in WooCommerce development, turning WordPress into a high-converting digital storefront. From product catalog architecture to secure checkout flows and payment gateway integration, our e-commerce development builds are designed to sell. Custom product pages, subscription models, multi-currency… we've done it all.",
+              nodes: 8,
+            },
+            {
+              id: "4",
+
+              title: "WordPress Performance & SEO Optimization",
+              description:
+                "Speed and search are inseparable. Our affordable WordPress development services include full performance audits, Core Web Vitals fixes, image and asset optimization, schema markup, and technical SEO restructuring. ",
+              nodes: 10,
+            },
+            {
+              id: "5",
+
+              title: "WordPress Website Development for Business",
+              description:
+                "From lead-generation landing pages to full multi-page service sites and membership platforms, our WordPress website development services in India cover the full business spectrum. We build for conversion, clear CTAs, trust signals, fast load times, and mobile-first layouts that turn visitors into clients.",
+              nodes: 6,
+            },
+            {
+              id: "5",
+
+              title: "WordPress Maintenance & Ongoing Support",
+              description:
+                "Launch isn't the end…it's the beginning. Our proactive WordPress maintenance services keep your site secure, updated, and running smoothly month after month. Core updates, plugin management, security scanning, uptime monitoring, and priority support. Think of us as your on-call technical team, always in your corner.",
+              nodes: 6,
+            },
+            
+          ],
         },
       },
       {
         type: "usp",
         data: {
-          heading: "Why Businesses Choose Our WordPress Development Services",
-          subheading:
-            "We create modern WordPress websites focused on performance, scalability, user experience, and long-term business growth to help brands build a stronger digital presence.",
+          heading: "How Our Custom WordPress Engineering Transforms Your Digital Performance",
+   
 
           statsData: [
             {
-              title: "Custom Website Development",
-              desc: "We build fully customized WordPress websites that align with your brand identity, business objectives, and customer experience requirements.",
+              title: "90+ PageSpeed scores and Core Web Vitals that delight users and impress Google",
+         
             },
             {
-              title: "Responsive Design Experience",
-              desc: "Every website is optimized for desktops, tablets, and mobile devices to ensure smooth performance across all screen sizes.",
+              title: "A distinctive WordPress website design in India that sets your brand apart",
+              
             },
             {
-              title: "SEO-Friendly Structure",
-              desc: "Our development process follows SEO best practices with clean coding, optimized architecture, and faster loading performance.",
+              title: "Technical SEO infrastructure built to rank from day one",
+            
             },
             {
-              title: "Easy Content Management",
-              desc: "WordPress allows businesses to easily manage website content, update pages, and maintain their online presence without technical complexity.",
+              title: "Fully responsive, mobile-first design with flawless cross-device performance",
             },
             {
-              title: "Secure & Scalable Solutions",
-              desc: "We implement secure development practices and scalable website structures that support future business expansion.",
+              title: "Intuitive CMS, your team updates content with zero technical friction",
             },
             {
-              title: "Speed Optimization",
-              desc: "Our team focuses on improving website speed, responsiveness, and overall performance to deliver a better user experience.",
+              title: "High-converting WooCommerce storefront engineered to maximise revenue",
             },
           ],
         },
       },
-      {
-        type: "parallax",
-
-        data: {
-          bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
-          align: "left",
-          // LEFT
-          title: "WordPress Solutions Designed for Business Growth",
-          description:
-            "We create WordPress websites that not only look visually appealing but also help businesses improve engagement, lead generation, and online credibility.",
-          subtext: "Here’s how Wordpress Development benefits your business:",
-          features: [
-            "Custom theme and plugin integration",
-            "Mobile-friendly website development",
-            "Performance-focused website structure",
-        
-          ],
-          lastpara: "From business websites to service-based platforms and eCommerce stores, our WordPress development solutions are designed to deliver flexibility, functionality, and long-term digital growth.",
-        },
-      },
+      
        {
         type: "steps",
         data: {
-          heading: "Our WordPress Development Process",
-          perRow: "4",
+          heading: "Our WordPress Development Process - Start to Scale",
+          perRow: "3",
           steps: [
             {
               number: 1,
-              title: "Discovery & Planning",
-              body: "We understand your business goals, target audience, and project requirements to create a strategic development roadmap.",
+              title: "Discovery & Strategy Workshop",
+              body: "We start by understanding your business deeply, your goals, your audience, your competitors, and your existing digital footprint. This session shapes every design and development decision that follows. No assumptions. No guesswork.",
             },
 
             {
               number: 2,
-              title: "UI/UX Design",
-              body: "Our designers create visually engaging layouts focused on user experience, accessibility, and brand consistency.",
+              title: "Information Architecture & UX Design",
+              body: "We map every page, user journey, and conversion path before touching a design tool. Sitemaps, wireframes, and UX flows get reviewed and signed off, so we never build a beautiful dead-end.",
             },
 
             {
               number: 3,
-              title: "Development & Integration",
-              body: "We develop your WordPress website using modern technologies, custom functionality, and required integrations.",
+              title: "Visual Design & Brand Integration",
+              body: "Our experienced WordPress website designer in India team crafts high-fidelity mockups in your brand language, typography, color systems, interactive states, and responsive breakpoints, all reviewed before development starts.",
             },
             {
               number: 4,
-              title: "Testing & Launch",
-              body: "Before launch, we thoroughly test performance, responsiveness, and functionality to ensure a flawless final product.",
+              title: "WordPress Development & Integration",
+              body: "Custom theme development, plugin build or integration, WordPress theme customization services, WooCommerce setup, page builders where appropriate, all built to a clean, documented codebase that won't fall apart under updates.",
+            },
+            {
+              number: 5,
+              title: "QA, Speed & SEO Testing",
+              body: "Full cross-browser and cross-device QA, performance optimization, Core Web Vitals benchmarking, technical SEO audit, and security hardening. We don't launch until every metric clears our threshold.",
+            },
+            {
+              number: 6,
+              title: "Launch, Training & Ongoing Maintenance",
+              body: "Coordinated zero-downtime launch, full CMS training session for your team, and handover documentation. Then our WordPress maintenance services in India kick in, keeping your site secure, updated, and performing long after launch day.",
             },
            
           ],
         },
       },
-{
-        type: "parallax",
 
-        data: {
-          bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
-          align: "right",
-          // LEFT
-          rightTitle: "High-Performance Websites with Modern Functionality",
-          rightDescription:
-            "Our development approach combines modern UI/UX design with advanced WordPress functionality to create websites that offer seamless user experiences and strong online performance.",
-          rightSubtext: "Here’s how Wordpress Development benefits your business:",
-          rightFeatures: [
-            "User-focused website experiences",
-            "Fast-loading and optimized pages",
-            "Clean and scalable development process",
-        
-          ],
-          rightlastpara: "We help businesses establish a strong digital presence through professionally developed WordPress websites that support branding, visibility, and conversion-focused growth strategies.",
-        },
-      },
       
     
      
@@ -147,41 +172,41 @@ export const WordpresDevData = {
           faqs: [
             {
               id: 1,
-              question: "Why should I choose WordPress for my website?",
+              question: "Why WordPress over other platforms?",
 
               answer:
-                "WordPress is flexible, scalable, SEO-friendly, and easy to manage, making it one of the most popular website development platforms for businesses of all sizes.",
+                "WordPress powers over 43% of the web for good reason: it's flexible, scalable, and SEO-friendly out of the box. More importantly, when built correctly by a specialist WordPress web development company, it becomes a genuine competitive advantage rather than a liability.",
             },
             {
               id: 2,
 
-              question: "Do you create custom WordPress websites?",
+              question: "Can you build an online store with WordPress?",
 
               answer:
-                "Yes, we provide fully customized WordPress development solutions tailored to your brand identity, business goals, and functionality requirements.",
+                "Absolutely. We specialize in WooCommerce development,  transforming WordPress into a fully-featured, high-converting digital storefront. From product architecture to secure checkout and payment gateways, our e-commerce development capability covers every stage of the buying journey.",
             },
             {
               id: 3,
 
-              question: "Will my WordPress website be mobile-friendly?",
+              question: "Can you customize an existing WordPress theme?",
 
               answer:
-                "Absolutely. Every WordPress website we develop is fully responsive and optimized for all modern devices and screen sizes.",
+                "Yes. Our WordPress theme customization services in India can take an existing theme and reshape it entirely into custom child themes, layout restructuring, brand-aligned typography and color systems, and advanced functionality additions. Sometimes a rebuild makes more sense. We'll tell you honestly which route is right for you.",
             },
             {
               id: 4,
               question:
-                "Can you optimize my WordPress website for SEO?",
+                "Do you offer WordPress maintenance after launch?",
 
               answer:
-                "Yes, we develop SEO-friendly WordPress websites with optimized structure, clean code, fast loading speed, and search-engine-friendly practices.",
+                "Yes, and we consider it essential. Our WordPress maintenance services cover core and plugin updates, security monitoring, performance checks, and priority support. Most clients stay on a monthly retainer because they've seen what happens to unmanaged WordPress sites.",
             },
             {
               id: 5,
-              question: "Why choose MakeOlix for WordPress development services?",
+              question: "What makes your WordPress website design different?",
 
               answer:
-                "MakeOlix delivers custom WordPress solutions focused on performance, scalability, user experience, and long-term business growth.",
+                "We don't use page builders or pre-built templates as a starting point. Our WordPress website design process begins with your brand, your audience, and your conversion goals. Everything is designed and coded specifically for you, no shortcuts that compromise performance.",
             },
           ],
         },

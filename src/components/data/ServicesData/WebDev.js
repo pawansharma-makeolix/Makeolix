@@ -7,24 +7,24 @@ export const WebDevDesignData = {
         type: "hero",
         data: {
           title:
-            "Website Design and Development Services Built for Growth",
+            "Transform Your Business with a Top Indian Website Design Company",
           subtitle:
-            "At MakeOlix Consulting, we create modern, conversion-focused websites that help businesses build credibility, improve user experience, and turn visitors into customers.",
+            "Your Vision Deserves More Than Just a Basic Website",
         },
       },
       {
         type: "intro",
         data: {
           paragraph:
-            "From custom website design and responsive development to performance optimization and scalable functionality, our Website Design and Development Services are built to support visibility, engagement, and long-term business growth.",
+            "At MakeOlix Consulting, we help brands transform ideas into high-performing digital experiences through modern design, strategic development, and user-focused functionality. As a leading Website Design Company in India, we combine creativity, advanced technologies, and AI-driven strategies to help businesses attract, engage, and convert customers online. In today’s competitive digital world, your website is more than an online presence, it is your brand’s first impression, sales engine, and growth platform. Businesses across the U.S. are partnering with global experts to build fast, scalable, and conversion-focused websites that deliver measurable results.",
         },
       },
       {
         type: "textmedia",
         data: {
-          title: "What Are Website Design and Development Services?",
+          title: "Why Businesses Choose MakeOlix Consulting",
           description:
-            "Website design and development is more than creating an attractive online presence — it is about building a digital experience that supports your business goals. A well-designed website improves trust, user engagement, and conversion potential while ensuring fast performance across devices. At MakeOlix Consulting, we combine strategic design, responsive development, and user-focused functionality to create websites that not only look strong but also perform effectively.",
+            "Businesses today need more than just developers, they need a strategic digital partner. At MakeOlix Consulting, we deliver industry-focused solutions designed to help brands grow faster in competitive markets. As a trusted Website Development Agency in India, we understand the expectations of international clients and develop websites that align with modern market standards.",
           image: "/pexels-jakubzerdzicki-36496927.jpg",
         },
       },
@@ -33,34 +33,33 @@ export const WebDevDesignData = {
       {
         type: "usp",
         data: {
-          heading: "Why Businesses Choose Our Web Development Expertise",
-          subheading:
-            "We combine strategic design, clean development, and performance-focused execution to create websites that strengthen user experience, improve functionality, and support long-term business growth.",
+          heading: "Here’s Why Brands Choose Us",
+        
 
           statsData: [
             {
-              title: "Custom Design Built Around Your Brand",
-              desc: "Every website is designed to reflect your business identity, messaging, and positioning so your brand stands out with clarity and consistency.",
+              title: "Experienced Development Team",
+              desc: "Our experts specialize in UI/UX design, custom coding, CMS platforms, and eCommerce technologies.",
             },
             {
-              title: "Responsive Across All Devices",
-              desc: "We build websites that perform smoothly across desktops, tablets, and mobile devices to ensure a seamless user experience everywhere.",
+              title: "Mobile-First Development",
+              desc: "We create responsive websites that perform smoothly across desktops, tablets, and smartphones.",
             },
             {
-              title: "Conversion-Focused User Experience",
-              desc: "Layouts, calls to action, and page structures are planned to guide visitors toward inquiries, leads, and conversions.",
+              title: "SEO-Friendly Architecture",
+              desc: "Our websites are structured for better indexing, faster performance, and improved visibility on search engines.",
             },
             {
-              title: "Fast and Performance Optimized",
-              desc: "Speed optimization and clean development practices help improve loading times, user retention, and overall site performance.",
+              title: "Conversion-Focused Design",
+              desc: "Every layout, CTA, and page structure is designed to improve user engagement and lead generation.",
             },
             {
-              title: "Scalable Development for Future Growth",
-              desc: "Our websites are built with flexibility in mind so they can grow alongside your business needs and future digital goals.",
+              title: "Scalable Technologies",
+              desc: "We use modern frameworks and scalable architectures to support future business growth.",
             },
             {
-              title: "SEO-Friendly Development Structure",
-              desc: "We follow search-friendly development practices that help improve crawlability, usability, and long-term visibility.",
+              title: "Transparent Communication",
+              desc: "Our team maintains clear communication, project updates, and reliable support throughout the development process.",
             },
           ],
         },
@@ -73,46 +72,52 @@ export const WebDevDesignData = {
           align: "right",
           // LEFT
           
-          rightTitle: "Why Your Business Needs Professional Website Development Services",
+          rightTitle: "What Makes a High-Performing Business Website?",
         rightDescription:
-          "Your website is often the first interaction customers have with your brand, which makes performance, clarity, and usability critical.",
+          "A successful website is not just about attractive visuals. It should also deliver speed, security, user experience, and measurable business growth. Research from Google shows that users often leave websites that take longer than 3 seconds to load, which directly impacts conversions and customer trust.",
+          rightsubtext:
+            "As a top-rated Website Design and Development Company in India, MakeOlix Consulting focuses on building websites that:",
 
         rightFeatures: [
-          "Build trust and credibility with a professional online presence",
-          "Improve engagement through better navigation and user experience",
-          "Generate more leads through conversion-focused design and functionality",
+          "Load fast on all devices",
+          "Improve user engagement",
+          "Increase lead generation",
+          "Support SEO growth",
+          "Deliver smooth mobile experiences",
+          "Strengthen brand credibility",
+          "Scale with your business growth",
         ],
         rightlastpara:
-          "A professionally developed website helps your business stay competitive while creating stronger opportunities for customer acquisition and growth.",
+          "Our goal is simple, create websites that not only look professional but also drive real business results.",
         },
       },
       {
         type: "services",
         data: {
-          heading: "Specialized Web Development Solutions for Every Business Need",
+          heading: "What Website Design Services a Company Should Provide?",
           subheading:
-            "From custom builds and modern redesigns to ecommerce development and scalable front-end solutions, our specialized development services are designed to support performance, usability, and long-term business growth.",
+            "A professional web design company should offer complete digital solutions that help businesses build a strong, scalable, and high-performing online presence. ",
           services: [
             {
               id: "1",
-              title: "React Development",
+              title: "Custom Website Design",
               description:
-                "Our React development services help businesses build fast, interactive, and scalable web experiences. Using modern front-end architecture, we create responsive interfaces that deliver smoother performance and better user engagement.",
+                "Every business needs a unique digital identity. A reliable web design company should provide fully customized website design services based on business goals, audience behavior, and industry trends. Our team creates responsive and conversion-focused websites with clean UI/UX, modern layouts, and strong brand consistency to help businesses improve customer engagement and online visibility.",
               nodes: 9,
             },
             {
               id: "2",
-              title: "Shopify Development",
+              title: "E-commerce Website Development",
               description:
-                "Our Shopify development services help businesses launch and grow high-performing ecommerce stores with user-friendly design, streamlined functionality, and conversion-focused shopping experiences built for online sales.",
+                "A modern web development company should also offer advanced eCommerce solutions for businesses looking to grow online. As a leading eCommerce Website Development Company in India, we develop secure, scalable, and user-friendly online stores with mobile optimization, seamless navigation, and secure payment integration. Our eCommerce solutions include Shopify development, WooCommerce development, custom eCommerce platforms, and marketplace solutions designed to improve customer experience and increase conversions.",
               nodes: 7,
             },
             {
               id: "3",
 
-              title: "PHP Development",
+              title: "CMS Web Development",
               description:
-                "Our PHP development services focus on building fast, secure, and scalable websites tailored to your business requirements. From custom functionality to dynamic web applications, we create flexible solutions designed to support long-term performance and growth.",
+                "Content management is essential for growing businesses. A professional company should provide flexible CMS solutions that allow businesses to manage website content efficiently. As an experienced Website Development Company in India, we build scalable CMS websites with strong performance and long-term usability. Our expertise includes WordPress development and custom CMS platforms tailored to modern business requirements.",
               nodes: 8,
             },
             {
@@ -120,15 +125,23 @@ export const WebDevDesignData = {
 
               title: "Website Redesign Services",
               description:
-                "Our website redesign services help modernize outdated websites by improving visual appeal, user experience, site structure, and conversion potential. We focus on turning underperforming websites into stronger digital assets that better support your business goals.",
+                "Outdated websites can negatively impact trust, engagement, and conversions. A trusted Website Redesign Company in India should help businesses modernize their websites with improved UI/UX, faster speed, mobile responsiveness, and conversion-focused structures. Website redesign services help businesses improve customer trust, user experience, and long-term digital growth.",
               nodes: 10,
             },
             {
               id: "5",
 
-              title: "Custom Website Design",
+              title: "Custom Web Application Development",
               description:
-                "Our custom website design services are built around your brand identity, target audience, and business objectives. Every design is created from the ground up to deliver a unique online presence that improves engagement and strengthens credibility.",
+                "Modern businesses often require advanced and scalable web applications tailored to their operations and workflows. A professional web development company should be capable of building custom solutions such as customer portals, SaaS platforms, and workflow management systems that improve operational efficiency and customer experience.",
+              nodes: 6,
+            },
+            {
+              id: "5",
+
+              title: "Website Maintenance & Support",
+              description:
+                "Ongoing support is another essential service every company should provide. Websites require regular updates, security improvements, performance monitoring, backups, bug fixing, and technical maintenance to remain optimized and secure. Through our complete Website Development Services, we help businesses maintain smooth website performance while supporting long-term digital success in competitive markets, including the U.S. market.",
               nodes: 6,
             },
             
@@ -138,32 +151,38 @@ export const WebDevDesignData = {
       {
         type: "steps",
         data: {
-          heading: "Our Proven Website Development Process",
+          heading: "Our 5-Step Proven Website Development Strategy",
           subtitle:
-            "Our process combines planning, design, development, and optimization to create websites that deliver better user experiences and measurable business impact.",
-          perRow: "4",
+            "At MakeOlix Consulting, we follow a structured approach to ensure every project delivers performance, scalability, and measurable business value.",
+          perRow: "5",
           steps: [
             {
               number: 1,
-              title: "Discovery & Planning",
-              body: "We begin by understanding your business goals, target audience, and website requirements to build a clear strategy for structure, functionality, and user flow.",
+              title: "Discovery & Research",
+              body: "We analyze your business goals, target audience, competitors, and market trends to create a strategic roadmap.",
             },
 
             {
               number: 2,
-              title: "Design & Development",
-              body: "Our team creates responsive layouts, visual design elements, and clean code that work together to deliver a seamless and professional digital experience.",
+              title: "UI/UX Planning",
+              body: "Our design team creates user-focused layouts and interactive wireframes that improve customer engagement and navigation.",
             },
 
             {
               number: 3,
-              title: "Testing & Optimization",
-              body: "Before launch, we test responsiveness, speed, usability, and functionality to ensure the website performs smoothly across devices and user scenarios.",
+              title: "Custom Development",
+              body: "As a leading provider of Web Design Services India, we build fast, secure, and scalable websites using the latest technologies and frameworks.",
             },
             {
               number: 4,
-              title: "Launch & Ongoing Growth",
-              body: "After launch, we monitor performance and support future improvements so your website continues to evolve with your business goals.",
+              title: "Testing & Optimization",
+              body: "We thoroughly test website speed, responsiveness, security, compatibility, and functionality before launch.",
+            },
+           
+            {
+              number: 5,
+              title: "Launch & Growth Support",
+              body: "After deployment, we continue supporting your website with maintenance, updates, analytics monitoring, and performance optimization.",
             },
            
           ],
@@ -174,71 +193,51 @@ export const WebDevDesignData = {
 
         data: {
           bgImage: "/domenico-loia-hGV2TfOh0ns-unsplash (1).jpg",
-          align: "left",
+          align: "both",
           // LEFT
-          title: "Why Choose MakeOlix for Website Design and Development?",
+          title: "Results-Driven Web Solutions Built for Growth",
           description:
-            "A business website should do more than look good — it should support visibility, trust, and measurable business growth.",
+            "Modern consumers expect speed, convenience, and seamless digital experiences. A professionally designed website directly impacts customer trust, engagement, and conversions.",
+            subtext:
+            "At MakeOlix Consulting, we build websites that:",
           features: [
-            "Strategic design aligned with your business goals and audience behavior",
-            "Clean development focused on speed, usability, and scalability",
-            "Conversion-oriented structure that turns visitors into opportunities",
+            "Improve online visibility",
+            "Generate more qualified leads",
+            "Enhance user experience",
+            "Increase online sales",
+            "Support long-term scalability",
+            "Strengthen brand authority",
          
           ],
-          lastpara:"Our team combines design thinking with development precision to create websites that deliver stronger user experiences and better long-term performance.",
-          rightTitle: "Why Your Business Needs Professional Website Development Services",
+          lastpara:"As a trusted partner for eCommerce Website Development Services in India, we help businesses launch high-performing online stores optimized for conversions and customer retention.",
+          rightTitle: "What Industries Need Professional Website Design & Development Services?",
         rightDescription:
-          "Your website is often the first interaction customers have with your brand, which makes performance, clarity, and usability critical.",
+          "Almost every modern industry needs a professional website to improve visibility, build trust, and attract customers online. ",
+          rightsubtext:
+            "Businesses in industries like",
 
         rightFeatures: [
-          "Build trust and credibility with a professional online presence",
-          "Improve engagement through better navigation and user experience",
-          "Generate more leads through conversion-focused design and functionality",
+          "eCommerce & retail",
+          "Real estate ",
+          "Healthcare",
+          "Education",
+          "Finance",
+          "Technology ",
+          "Legal Services ",
+          "Manufacturing ",
         ],
         rightlastpara:
-          "A professionally developed website helps your business stay competitive while creating stronger opportunities for customer acquisition and growth.",
+          "These industries need professional websites to attract customers, build trust, and grow online. Modern businesses also need websites that perform well across Google Search, AI-powered search platforms, and mobile devices.",
         },
       },
-      {
-        type: "features",
+       {
+        type: "textmedia",
         data: {
-          heading: "Core Website Design and Development Features",
-          subtext:
-            "Our website solutions combine strategic design, responsive development, and performance-focused functionality to create a stronger digital experience that supports long-term business growth.",
-          leftCards: [
-            {
-              id: 1,
-              number: "01",
-              title: "Custom Website Design",
-              body: "We create visually aligned website designs built around your brand identity, messaging, and business objectives.",
-              icon: "⬡",
-            },
-            {
-              id: 2,
-              number: "02",
-              title: "Responsive Development",
-              body: "Every website is developed to perform smoothly across desktops, tablets, and mobile devices for a consistent user experience.",
-              icon: "⬡",
-            },
-            
-          ],
-          rightCards: [
-            {
-              id: 3,
-              number: "03",
-              title: "Speed & Performance Optimization",
-              body: "Clean development practices and optimized site structure help improve loading speed, usability, and visitor retention.",
-              icon: "◈",
-            },
-            {
-              id: 6,
-              number: "06",
-              title: "Scalable Business Functionality",
-              body: "We build websites with flexible architecture so your platform can grow with future features, integrations, and business needs.",
-              icon: "◈",
-            },
-            
-          ],
+          title: "Ready to Build a Website That Drives Real Business Growth?",
+          description:
+            "Your website should do more than just exist, it should generate leads, build trust, and help your business scale confidently. Partner with MakeOlix Consulting to create a modern, high-performing website tailored for the U.S. market. From custom web development to advanced eCommerce solutions, our experts are ready to help you build a stronger digital presence.Get started today with a strategic website solution designed for performance, scalability, and long-term success.",
+          image: "/kobu-agency-7okkFhxrxNw-unsplash (1).jpg",
+          reverse: true,
         },
       },
      
@@ -248,41 +247,41 @@ export const WebDevDesignData = {
           faqs: [
             {
               id: 1,
-              question: "What do website design and development services include?",
+              question: "Why should I hire an Indian website design company for my U.S. business?",
 
               answer:
-                "These services typically include strategy, design, responsive development, functionality setup, speed optimization, and conversion-focused page structuring.",
+                "India has become a global hub for high-quality web development because of its skilled developers, advanced technologies, and cost-effective solutions. Companies like MakeOlix Consulting provide professional services aligned with U.S. market standards while offering excellent scalability and support.",
             },
             {
               id: 2,
 
-              question: "Will my website be mobile-friendly?",
+              question: "How long does it take to build a professional website?",
 
               answer:
-                "Yes. Every website is built to be fully responsive so it performs smoothly across mobile, tablet, and desktop devices.",
+                "The timeline depends on the project scope, features, and complexity. A standard business website may take 2-6 weeks, while custom platforms and eCommerce websites may require additional development time.",
             },
             {
               id: 3,
 
-              question: "How long does website development usually take?",
+              question: "Does MakeOlix Consulting provide Shopify and WordPress development?",
 
               answer:
-                "Timelines depend on the size and complexity of the project, but most business websites move through planning, design, development, and testing before launch.",
+                "Yes. MakeOlix Consulting offers complete Shopify, WooCommerce, and WordPress development solutions tailored to business goals, branding requirements, and scalability needs.",
             },
             {
               id: 4,
               question:
-                "Can you redesign an existing website?",
+                "Can you redesign my existing website to improve conversions?",
 
               answer:
-                "Yes. Existing websites can be redesigned to improve visual appeal, user experience, speed, and overall conversion performance.",
+                "Absolutely. Our website redesign services focus on improving user experience, mobile responsiveness, speed, SEO structure, and conversion optimization to help businesses achieve better results online.",
             },
             {
               id: 5,
-              question: "Is website development important for SEO?",
+              question: "Do you offer ongoing website support after launch?",
 
               answer:
-                "Yes. Clean code, fast loading speed, mobile responsiveness, and structured page architecture all support stronger long-term SEO performance.",
+                "Yes. We provide ongoing website maintenance, performance optimization, security updates, bug fixes, and technical support to ensure your website remains secure, updated, and high-performing.",
             },
           ],
         },
