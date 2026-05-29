@@ -1,186 +1,226 @@
 import { Heading } from "lucide-react";
 
 export const EcommerceDevelopData = {
-  
-    sections: [
-      {
-        type: "hero",
-        data: {
-          title:
-            "ECommerce Development Services for High-Converting Online Stores",
-          subtitle:
-            "Build a powerful and scalable online store with custom eCommerce development solutions designed to improve user experience, increase conversions, and support long-term business growth.",
-        },
+  sections: [
+    {
+      type: "hero",
+      data: {
+        title:
+          "Leading Ecommerce Website Development Company in India | MakeOlix Consulting",
+        subtitle:
+          "Build a High-Converting eCommerce Store That Customers Trust",
       },
-      {
-        type: "intro",
-        data: {
-          paragraph:
-            "At MakeOlix, we create modern eCommerce websites with responsive design, secure payment integration, optimized performance, and seamless shopping experiences to help businesses grow successfully in the digital marketplace.",
-        },
+    },
+    {
+      type: "intro",
+      data: {
+        paragraph:
+          "Did you know that global eCommerce sales are expected to cross $8 trillion in the coming years, while more than 70% of online shoppers judge a brand based on website experience alone? As a leading eCommerce Website Development Company in India, MakeOlix Consulting helps businesses with slow, outdated, or poorly designed online stores that can impact sales, trust, and customer retention. At MakeOlix Consulting, we create fast, scalable, and conversion-focused eCommerce websites designed for modern customers and AI-driven search experiences. Our team develops custom online stores that strengthen brand visibility, improve website performance, and deliver seamless shopping experiences across devices.",
       },
-      {
-        type: "textmedia",
-        data: {
-          title: "Custom eCommerce Websites Built for Growth",
-          description:
-            "Our eCommerce development services focus on creating visually engaging, user-friendly, and performance-driven online stores tailored to your business goals and customer expectations.",
-          image: "/john-FlPc9_VocJ4-unsplash (2).jpg",
-        },
+    },
+    // {
+    //   type: "textmedia",
+    //   data: {
+    //     title: "Custom eCommerce Websites Built for Growth",
+    //     description:
+    //       "Our eCommerce development services focus on creating visually engaging, user-friendly, and performance-driven online stores tailored to your business goals and customer expectations.",
+    //     image: "/john-FlPc9_VocJ4-unsplash (2).jpg",
+    //   },
+    // },
+
+    {
+      type: "parallax",
+
+      data: {
+        bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
+        align: "left",
+        // LEFT
+        title: "What Makes a Successful eCommerce Website?",
+        description:
+          "A successful eCommerce website is more than an attractive design. Modern online stores must load quickly, work smoothly on mobile devices, support secure payments, and provide seamless shopping experiences across every stage of the customer journey.",
+        subtext:
+          "At MakeOlix Consulting, we focus on creating websites that are optimized for:",
+        features: [
+          "Better customer engagement",
+          "Faster website speed",
+          "Higher search visibility",
+          "AI-powered search experiences",
+          "Improved checkout experiences",
+          "Mobile-first browsing",
+          "Better conversion rates",
+          "Long-term scalability",
+        ],
+        lastpara:
+          "As a trusted provider of advanced eCommerce Web Development solutions, we combine modern technologies with strategic design practices to help businesses attract and retain customers more effectively. Our eCommerce websites are also optimized for conversational search platforms like ChatGPT, Gemini, Google AI Overviews, and voice search experiences, helping your business remain discoverable in the future of digital commerce.",
       },
-      {
-        type: "usp",
-        data: {
-          heading: "Why Businesses Choose Our eCommerce Development Services",
-          subheading:
-            "We build modern eCommerce platforms focused on performance, scalability, user experience, and conversion optimization to help businesses grow successfully online.",
+    },
+    {
+      type: "usp",
+      data: {
+        heading: "Why Businesses Choose MakeOlix Consulting",
+        subheading:
+          "Choosing the right eCommerce development partner can directly impact your online success.  At MakeOlix Consulting, we combine technical expertise, creative design, and AI-focused optimization strategies to help businesses build stronger digital storefronts.",
 
-          statsData: [
-            {
-              title: "Custom Store Development",
-              desc: "We develop fully customized eCommerce websites designed around your products, branding, and customer experience goals.",
-            },
-            {
-              title: "Mobile-Friendly Shopping Experience",
-              desc: "Every online store is optimized for mobile devices to ensure smooth browsing and purchasing across all screen sizes.",
-            },
-            {
-              title: "Secure Payment Integration",
-              desc: "We integrate secure and reliable payment gateways to provide safe and seamless online transactions for customers.",
-            },
-            {
-              title: "SEO-Optimized Store Structure",
-              desc: "Our eCommerce websites are built with SEO-friendly architecture to improve visibility and support long-term organic growth.",
-            },
-            {
-              title: "Fast & Scalable Performance",
-              desc: "We create high-performance online stores optimized for speed, scalability, and smooth customer interactions.",
-            },
-            {
-              title: "User-Focused Design",
-              desc: "Our team designs intuitive shopping experiences that help improve engagement, customer retention, and conversion rates.",
-            },
-          ],
-        },
+        statsData: [
+          {
+            title: "Industry-Focused Development",
+            desc: "We create eCommerce solutions tailored to your products, audience behavior, and business goals.",
+          },
+          {
+            title: "AI & Search Optimized Websites",
+            desc: "Our stores are structured for Google Search, AI-powered search platforms, and conversational discovery experiences.",
+          },
+          {
+            title: "Mobile-First Shopping Experiences",
+            desc: "We develop responsive online stores that work seamlessly across smartphones, tablets, and desktops.",
+          },
+          {
+            title: "Faster & Scalable Performance",
+            desc: "Our websites are optimized for speed, security, scalability, and future growth.",
+          },
+          {
+            title: "SEO + AEO + GEO Optimization",
+            desc: "We combine traditional SEO with AI-focused optimization strategies that improve discoverability across search engines and AI platforms.",
+          },
+          {
+            title: "Transparent Communication",
+            desc: "Our team provides clear timelines, regular updates, and ongoing technical support throughout the development process.",
+          },
+        ],
       },
-      {
-        type: "parallax",
+    },
 
-        data: {
-          bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
-          align: "left",
-          // LEFT
-          title: "eCommerce Solutions Designed for Online Success",
-          description:
-            "Our development process combines strategy, functionality, and modern design to create online stores that deliver seamless customer experiences and stronger business performance.",
-          features: [
-            "Custom eCommerce website development",
-            "Responsive and conversion-focused design",
-            "Secure and scalable online store solutions",
-        
-          ],
-          lastpara: "From product management to checkout optimization, we develop eCommerce platforms that help businesses improve customer engagement and increase online sales.",
-        },
+    {
+      type: "services",
+      data: {
+        heading: "eCommerce Development Services We Provide",
+        subheading:
+          "At MakeOlix Consulting, we provide complete eCommerce solutions tailored to different industries, business models, and growth goals. Our team focuses on building user-friendly, SEO-focused, and AI-optimized online stores that improve customer experience and online sales.",
+        services: [
+          {
+            id: "1",
+            title: "Shopify Development Services",
+            description:
+              "Shopify is one of the most trusted platforms for modern online businesses. As a leading Shopify Development Company in India, we build custom Shopify stores with responsive designs, secure payment integration, and conversion-focused layouts tailored to your business needs. We also provide advanced Shopify Development Services in India, including theme customization, app integration, store migration, optimization, and ongoing support. Our Shopify experts help businesses create scalable and high-performing online stores that drive sales.",
+            nodes: 9,
+          },
+          {
+            id: "2",
+            title: "WooCommerce Development Services",
+            description:
+              "WooCommerce is a flexible solution for businesses looking for easy content and store management. As an experienced WooCommerce Development Company in India, we create secure, SEO-friendly, and scalable WooCommerce stores designed around your products and business goals. Our WooCommerce solutions include custom store design, plugin integration, responsive shopping experiences, secure checkout systems, and speed optimization. We focus on building user-friendly stores that improve customer engagement and online performance.",
+            nodes: 7,
+          },
+          {
+            id: "3",
+
+            title: "Custom eCommerce Website Development",
+            description:
+              "Every business has unique requirements, and custom eCommerce development helps create tailored online solutions with advanced functionality and scalable architecture. Our team develops B2B platforms, B2C online stores, multi-vendor marketplaces, and enterprise eCommerce solutions designed for long-term growth. As a trusted provider of eCommerce Website Development Services in India, we create flexible and performance-driven digital commerce platforms that improve user experience and business scalability.",
+            nodes: 8,
+          },
+          {
+            id: "4",
+
+            title: "eCommerce UI/UX & Store Design",
+            description:
+              "User experience plays a major role in improving conversions and online engagement. Our team creates modern and conversion-focused store layouts that improve navigation, product discovery, and customer interaction. As a provider of premium eCommerce Web Design in India, we focus on mobile-friendly experiences, clean user interfaces, faster navigation, and optimized shopping journeys that help businesses increase customer trust and sales.",
+            nodes: 10,
+          },
+          {
+            id: "5",
+
+            title: "Platform Migration & Optimization",
+            description:
+              "Outdated platforms can limit business growth and website performance. Our migration and optimization services help businesses move to more scalable eCommerce platforms while maintaining SEO value and improving overall functionality. We assist with Shopify migration, WooCommerce migration, platform upgrades, store redesign, and performance optimization to ensure a smooth transition and better customer experience.",
+            nodes: 6,
+          },
+        ],
       },
-       {
-        type: "steps",
-        data: {
-          heading: "Our eCommerce Development Process",
-          perRow: "4",
-          steps: [
-            {
-              number: 1,
-              title: "Strategy & Store Planning",
-              body: "We understand your business goals, target audience, and product requirements to create a strategic roadmap for your eCommerce website.",
-            },
+    },
+    {
+      type: "steps",
+      data: {
+        heading: "Our 5-Step Proven eCommerce Development Strategy",
+        perRow: "5",
+        steps: [
+          {
+            number: 1,
+            title: "1. Discovery & Market Research",
+            body: "We understand your products, competitors, target audience, and business goals to create a clear eCommerce strategy. Our team researches market trends and customer behavior to build a strong foundation for your online store.",
+          },
 
-            {
-              number: 2,
-              title: "Custom Design & Development",
-              body: "Our team designs and develops visually engaging, user-friendly online stores with responsive layouts and modern functionality.",
-            },
+          {
+            number: 2,
+            title: "Store Planning & UI/UX Design",
+            body: "Our team creates customer-focused layouts, smooth shopping flows, and mobile-friendly designs optimized for engagement and conversions. We focus on building intuitive user experiences that improve navigation and encourage customers to complete purchases.",
+          },
 
-            {
-              number: 3,
-              title: "Integration & Optimization",
-              body: "We integrate payment gateways, product management systems, and performance optimizations to ensure smooth store operations and faster user experiences.",
-            },
-            {
-              number: 4,
-              title: "Testing, Launch & Support",
-              body: "Before launch, we thoroughly test your eCommerce website for performance, responsiveness, and functionality while providing ongoing support for future growth and improvements.",
-            },
-           
-           
-          ],
-        },
+          {
+            number: 3,
+            title: "Development & Integration",
+            body: "As a trusted Shopify Web Development Company in India, we build secure and scalable stores with custom features, payment integrations, and advanced functionality.",
+          },
+          {
+            number: 4,
+            title: "Testing & Optimization",
+            body: "We optimize websites for speed, strong Core Web Vitals, and seamless mobile responsiveness to ensure a smooth user experience on every device. Our process also improves SEO and AI search visibility, enhances checkout security, and fine-tunes overall website performance and functionality for better results.",
+          },
+          {
+            number: 5,
+            title: "Launch & Ongoing Support",
+            body: "After your eCommerce website goes live, our team continues to monitor and improve store performance through regular updates, technical support, security checks, and optimization. We help ensure your online store remains fast, secure, user-friendly, and ready to support long-term business growth. ",
+          },
+        ],
       },
-{
-        type: "parallax",
+    },
 
-        data: {
-          bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
-          align: "right",
-          // LEFT
-          rightTitle: "High-Performance Online Stores with Modern Features",
-          rightDescription:
-            "We create eCommerce websites equipped with modern functionality, intuitive navigation, and optimized shopping experiences to support business growth.",
-          rightFeatures: [
-            "Easy product and inventory management",
-            "SEO-friendly eCommerce development",
-            "Fast-loading and optimized store performance",
-        
-          ],
-          rightlastpara: "Our eCommerce development services help businesses build reliable, scalable, and customer-focused online stores that strengthen brand credibility and support long-term growth.",
-        },
+    {
+      type: "faq",
+      data: {
+        faqs: [
+          {
+            id: 1,
+            question:
+              "Why should businesses invest in professional eCommerce website development?",
+
+            answer:
+              "A professionally developed eCommerce website improves customer experience, search visibility, security, and conversion rates. It also helps businesses build trust and scale online more effectively.",
+          },
+          {
+            id: 2,
+
+            question:
+              "Which platform is better for eCommerce, Shopify or WooCommerce?",
+
+            answer:
+              "Both platforms are excellent, but the right choice depends on your business goals. Shopify is ideal for fast and scalable store management, while WooCommerce offers greater flexibility and customization for WordPress users.",
+          },
+          {
+            id: 3,
+
+            question:
+              "Does MakeOlix Consulting provide custom Shopify and WooCommerce development?",
+
+            answer:
+              "Yes. MakeOlix Consulting offers custom Shopify and WooCommerce development services tailored to your business model, audience behavior, and long-term growth strategy.",
+          },
+          {
+            id: 4,
+            question: "How long does it take to develop an eCommerce website?",
+
+            answer:
+              "The timeline depends on project complexity, features, integrations, and design requirements. Most standard eCommerce websites take between 3 to 8 weeks to complete.",
+          },
+          {
+            id: 5,
+            question: "Do you provide support after the website goes live?",
+
+            answer:
+              "Absolutely. We provide ongoing maintenance, technical support, updates, performance optimization, and security monitoring to ensure your online store continues performing smoothly.",
+          },
+        ],
       },
-      
-      {
-        type: "faq",
-        data: {
-          faqs: [
-            {
-              id: 1,
-              question: "What is eCommerce development?",
-
-              answer:
-                "eCommerce development involves designing and building online stores that allow businesses to sell products or services digitally through secure and user-friendly platforms.",
-            },
-            {
-              id: 2,
-
-              question: "Do you create custom eCommerce websites?",
-
-              answer:
-                "Yes, we develop fully customized eCommerce websites tailored to your business goals, branding, and customer requirements.",
-            },
-            {
-              id: 3,
-
-              question: "Will my eCommerce website be mobile-friendly?",
-
-              answer:
-                "Absolutely. Every eCommerce store we build is fully responsive and optimized for mobile, tablet, and desktop devices.",
-            },
-            {
-              id: 4,
-              question:
-                "Can you integrate payment gateways into my online store?",
-
-              answer:
-                "Yes, we integrate secure payment gateways to ensure smooth and reliable online transactions for customers.",
-            },
-            {
-              id: 5,
-              question: "Why choose MakeOlix for eCommerce development services?",
-
-              answer:
-                "MakeOlix delivers scalable, performance-focused eCommerce solutions designed to improve user experience, online sales, and long-term business growth.",
-            },
-          ],
-        },
-      },
-    ],
-  
-}
- 
+    },
+  ],
+};

@@ -3,192 +3,286 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 
-    <url>
-      <loc>https://makeolix.com</loc>
-    </url>
-  
+  <url>
+    <loc>https://makeolix.com</loc>
+    <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+
     <url>
       <loc>https://makeolix.com/about</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/contact-us</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/careers</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/privacy-policy</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/terms-and-conditions</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/mm79</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/testimonials</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/case-studies</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/blog</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>monthly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/seo</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/ecommerce-seo</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/technical-seo</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/white-label-seo</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/seo-reseller</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/local-seo</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/ppc-ads</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/performance-marketing</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/meta-ads</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/website-design-development</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/wordpress-dev</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/small-business-seo</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/ecommerce-develop</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/shopify</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/social-media-marketing</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/social-media-optimization</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/services/sma</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/indianapolis-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/phoenix-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/los-angeles-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/new-york-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/san-diego-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/seattle-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/boston-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/chicago-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/dallas-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/houston-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/jacksonville-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/miami-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/philadelphia-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/san-antonio-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/san-francisco-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/toronto-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/austin-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/charlotte-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/columbus-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
     <url>
       <loc>https://makeolix.com/denver-seo-agency</loc>
+      <lastmod>2026-05-29T14:22:33+05:30</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   
 

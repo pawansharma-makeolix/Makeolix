@@ -5,14 +5,36 @@ import { ServiceAreaPagesData } from "./src/components/data/ServiceAreaPagesData
 
 const BASE_URL = "https://makeolix.com";
 
+/* =========================
+   INDIA TIMEZONE LASTMOD
+========================= */
+
+const today =
+  new Date()
+    .toLocaleString("sv-SE", {
+      timeZone: "Asia/Kolkata",
+    })
+    .replace(" ", "T") + "+05:30";
+
 let urls = "";
+
+/* =========================
+   HOMEPAGE
+========================= */
+
+urls += `
+  <url>
+    <loc>${BASE_URL}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+`;
 
 /* =========================
    STATIC PAGES
 ========================= */
 
 const staticPages = [
-  "",
   "/about",
   "/contact-us",
   "/careers",
@@ -28,6 +50,8 @@ staticPages.forEach((page) => {
   urls += `
     <url>
       <loc>${BASE_URL}${page}</loc>
+      <lastmod>${today}</lastmod>
+      <changefreq>monthly</changefreq>
     </url>
   `;
 });
@@ -40,6 +64,8 @@ Object.keys(ServicesPagesData).forEach((slug) => {
   urls += `
     <url>
       <loc>${BASE_URL}/services/${slug}</loc>
+      <lastmod>${today}</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   `;
 });
@@ -52,6 +78,8 @@ Object.keys(ServiceAreaPagesData).forEach((city) => {
   urls += `
     <url>
       <loc>${BASE_URL}/${city}</loc>
+      <lastmod>${today}</lastmod>
+      <changefreq>weekly</changefreq>
     </url>
   `;
 });

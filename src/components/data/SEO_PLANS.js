@@ -3,8 +3,8 @@ export const SEO_PLANS = [
   // ─── BASIC ──────────────────────────────────────────────────────────────────
   {
     planName: 'BASIC',
-    currentPrice: '$500.00',
-    originalPrice: '$700.00',
+    currentPrice: '$750.00',
+    originalPrice: '$1000.00',
     isPopular: false,
     inclusionsTitle: 'Scope Of Work',
     inclusions: [
@@ -126,9 +126,9 @@ export const SEO_PLANS = [
 
   // ─── SILVER ─────────────────────────────────────────────────────────────────
   {
-    planName: 'Plus',
-    currentPrice: '$700.00',
-    originalPrice: '$900.00',
+    planName: 'PLUS',
+    currentPrice: '$1250.00',
+    originalPrice: '$1500.00',
     isPopular: false,
     inclusionsTitle: 'Scope Of Work',
     inclusions: [
@@ -243,8 +243,8 @@ export const SEO_PLANS = [
   // ─── GOLD ───────────────────────────────────────────────────────────────────
   {
     planName: 'PRIME',
-    currentPrice: '$1000.00',
-    originalPrice: '$1200.00',
+    currentPrice: '$1750.00',
+    originalPrice: '$2000.00',
     isPopular: true,
     badgeText: 'Best Seller',
        inclusionsTitle: 'Scope Of Work',
@@ -361,8 +361,8 @@ export const SEO_PLANS = [
   // ─── STARTUP ────────────────────────────────────────────────────────────────
   {
     planName: 'MAX',
-    currentPrice: '$1800.00',
-    originalPrice: '$2000.00',
+    currentPrice: '$3250.00',
+    originalPrice: '$3500.00',
     isPopular: false,
       inclusionsTitle: 'Scope Of Work',
     inclusions: [

@@ -160,7 +160,62 @@ export const WordpresDevData = {
         },
       },
 
-      
+       {
+        type: "features",
+        data: {
+          heading: "What Makes Us a Different Kind of WordPress Partner",
+          
+         subtext: "As an experienced WordPress development agency in India, we believe expertise matters more than offering endless generic services. Our full range of digital capabilities, including website design and development, and e-commerce development, all revolve around one platform we know inside out.",
+          leftCards: [
+            {
+              id: 1,
+              number: "01",
+              title: "Strategic Development Approach",
+              body: "We understand that every business has different objectives. Our team creates customized development plans that align with your branding, functionality, and conversion goals.",
+              icon: "⬡",
+            },
+            {
+              id: 2,
+              number: "02",
+              title: "India-Based, Global-Standard",
+              body: "Our WordPress web development company in India operates to international quality standards, rigorous QA, documented code, and communication that actually works across time zones.",
+              icon: "⬡",
+            },
+            {
+              id: 3,
+              number: "03",
+              title: "Performance-Driven Website Structure",
+              body: "Website speed and responsiveness directly impact user experience and SEO performance. Our developers focus on lightweight coding practices, optimized assets, and technical performance improvements.",
+              icon: "⬡",
+            },
+            
+          ],
+          rightCards: [
+            {
+              id: 4,
+              number: "04",
+              title: "E-Commerce Depth",
+              body: "Our WooCommerce development and e-commerce development expertise runs deep, from simple product shops to complex B2B catalogue systems and subscription platforms.",
+              icon: "◈",
+            },
+            {
+              id: 5,
+              number: "05",
+              title: "Transparent, Fixed-Scope Delivery",
+              body: "Clear milestones, no scope creep surprises, and regular progress updates. We treat your budget with the same respect we'd want for our own, ensuring transparency, efficiency, and reliable project delivery throughout.",
+              icon: "◈",
+            },
+            {
+              id: 6,
+              number: "06",
+              title: "Expertise in Modern Web Technologies",
+              body: "Our developers stay updated with the latest WordPress standards, plugin compatibility requirements, UI/UX trends, and website security practices to ensure your website remains modern and future-ready.",
+              icon: "◈",
+            },
+           
+          ],
+        },
+      },
     
      
 
