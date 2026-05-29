@@ -101,14 +101,14 @@ export const EcommerceDevelopData = {
             id: "1",
             title: "Shopify Development Services",
             description:
-              "Shopify is one of the most trusted platforms for modern online businesses. As a leading Shopify Development Company in India, we build custom Shopify stores with responsive designs, secure payment integration, and conversion-focused layouts tailored to your business needs. We also provide advanced Shopify Development Services in India, including theme customization, app integration, store migration, optimization, and ongoing support. Our Shopify experts help businesses create scalable and high-performing online stores that drive sales.",
+              "Shopify is one of the most trusted platforms for modern online businesses. As a leading Shopify Development Company in India, we build custom Shopify stores with responsive designs, secure payment integration, and conversion-focused layouts tailored to your business needs. ",
             nodes: 9,
           },
           {
             id: "2",
             title: "WooCommerce Development Services",
             description:
-              "WooCommerce is a flexible solution for businesses looking for easy content and store management. As an experienced WooCommerce Development Company in India, we create secure, SEO-friendly, and scalable WooCommerce stores designed around your products and business goals. Our WooCommerce solutions include custom store design, plugin integration, responsive shopping experiences, secure checkout systems, and speed optimization. We focus on building user-friendly stores that improve customer engagement and online performance.",
+              "WooCommerce is a flexible solution for businesses looking for easy content and store management. As an experienced WooCommerce Development Company in India, we create secure, SEO-friendly, and scalable WooCommerce stores designed around your products and business goals. ",
             nodes: 7,
           },
           {
@@ -116,7 +116,7 @@ export const EcommerceDevelopData = {
 
             title: "Custom eCommerce Website Development",
             description:
-              "Every business has unique requirements, and custom eCommerce development helps create tailored online solutions with advanced functionality and scalable architecture. Our team develops B2B platforms, B2C online stores, multi-vendor marketplaces, and enterprise eCommerce solutions designed for long-term growth. As a trusted provider of eCommerce Website Development Services in India, we create flexible and performance-driven digital commerce platforms that improve user experience and business scalability.",
+              "Every business has unique requirements, and custom eCommerce development helps create tailored online solutions with advanced functionality and scalable architecture. Our team develops B2B platforms, B2C online stores, multi-vendor marketplaces, and enterprise eCommerce solutions designed for long-term growth. ",
             nodes: 8,
           },
           {
@@ -124,7 +124,7 @@ export const EcommerceDevelopData = {
 
             title: "eCommerce UI/UX & Store Design",
             description:
-              "User experience plays a major role in improving conversions and online engagement. Our team creates modern and conversion-focused store layouts that improve navigation, product discovery, and customer interaction. As a provider of premium eCommerce Web Design in India, we focus on mobile-friendly experiences, clean user interfaces, faster navigation, and optimized shopping journeys that help businesses increase customer trust and sales.",
+              "User experience plays a major role in improving conversions and online engagement. Our team creates modern and conversion-focused store layouts that improve navigation, product discovery, and customer interaction. ",
             nodes: 10,
           },
           {
@@ -132,7 +132,7 @@ export const EcommerceDevelopData = {
 
             title: "Platform Migration & Optimization",
             description:
-              "Outdated platforms can limit business growth and website performance. Our migration and optimization services help businesses move to more scalable eCommerce platforms while maintaining SEO value and improving overall functionality. We assist with Shopify migration, WooCommerce migration, platform upgrades, store redesign, and performance optimization to ensure a smooth transition and better customer experience.",
+              "Outdated platforms can limit business growth and website performance. Our migration and optimization services help businesses move to more scalable eCommerce platforms while maintaining SEO value and improving overall functionality. ",
             nodes: 6,
           },
         ],
