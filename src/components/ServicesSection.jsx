@@ -238,16 +238,7 @@ function Slide({ service, direction }) {
         exit="exit"
         transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
       >
-        <motion.div
-          className="absolute inset-0 rounded-3xl pointer-events-none"
-          style={{
-            background: "conic-gradient(from 0deg,rgba(17,138,178,0.18),rgba(255,143,171,0.09),rgba(17,138,178,0.18))",
-            filter: "blur(28px)",
-            scale: 1.12,
-          }}
-          animate={{ rotate: 360 }}
-          transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
-        />
+      
         <motion.div
           className="relative w-full h-full rounded-3xl overflow-hidden"
           style={{
@@ -414,47 +405,7 @@ export default function ServicesSection({
         onTouchEnd={onTouchEnd}
       >
         {/* Ambient BG */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(0,80,157,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,80,157,0.04) 1px,transparent 1px)",
-              backgroundSize: "56px 56px",
-            }}
-          />
-          <motion.div
-            className="absolute left-0 right-0"
-            style={{
-              height: 1,
-              background: "linear-gradient(to right,transparent,rgba(17,138,178,0.3),transparent)",
-            }}
-            animate={{ top: ["-1%", "101%"] }}
-            transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
-          />
-          <motion.div
-            className="absolute rounded-full"
-            style={{
-              width: 500, height: 500,
-              left: "-10%", top: "20%",
-              background: "radial-gradient(circle,rgba(0,56,99,0.18) 0%,transparent 70%)",
-              filter: "blur(60px)",
-            }}
-            animate={{ y: [0, 30, 0] }}
-            transition={{ duration: 9, repeat: Infinity }}
-          />
-          <motion.div
-            className="absolute rounded-full"
-            style={{
-              width: 380, height: 380,
-              right: "-8%", bottom: "10%",
-              background: "radial-gradient(circle,rgba(17,138,178,0.1) 0%,transparent 70%)",
-              filter: "blur(60px)",
-            }}
-            animate={{ y: [0, -25, 0] }}
-            transition={{ duration: 11, repeat: Infinity }}
-          />
-        </div>
+        
 
         {/* ✅ FIX 4: Header — padding-top reduced, left padding ensured so "S" never clips */}
         <div

@@ -31,43 +31,43 @@ export default function ParallaxHero({
     offset: ["start end", "end start"],
   });
 
-  const bgY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
-  const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0.65, 0.35]);
+  const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0.6, 0.4]);
 
   const isRight = align === "right";
   const isBoth = align === "both";
 
   const cardVariants = {
-  hidden: (dir) => ({
-    opacity: 0,
-    x: dir === "left" ? -420 : 420,
-    y: 22,
-    scale: 0.985,
-    filter: "blur(6px)",
-  }),
-  visible: {
-    opacity: 1,
-    x: 0,
-    y: 0,
-    scale: 1,
-    filter: "blur(0px)",
-    transition: {
-      duration: 3,
-      ease: [0.16, 1, 0.3, 1],
+    hidden: (dir) => ({
+      opacity: 0,
+      x: dir === "left" ? -60 : 60,
+      y: 12,
+      scale: 1,
+      filter: "blur(0px)",
+    }),
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      scale: 1,
+      filter: "blur(0px)",
+      transition: {
+        duration: 0.8,
+        ease: [0.16, 1, 0.3, 1],
+      },
     },
-  },
-};
+  };
+
   const featureVariants = {
     hidden: {
       opacity: 0,
-      x: -20,
+      x: -12,
     },
     visible: (i) => ({
       opacity: 1,
       x: 0,
       transition: {
-        delay: 0.15 + i * 0.08,
-        duration: 0.45,
+        delay: 0.1 + i * 0.05,
+        duration: 0.3,
       },
     }),
   };
@@ -81,7 +81,6 @@ export default function ParallaxHero({
     finalText,
   }) => (
     <motion.div
-    
       custom={side}
       variants={cardVariants}
       initial="hidden"
@@ -98,20 +97,16 @@ export default function ParallaxHero({
         bg-[linear-gradient(145deg,rgba(5,25,35,0.88),rgba(0,23,31,0.82))]
         backdrop-blur-xl
         shadow-[0_25px_60px_rgba(0,0,0,0.45)]
-        transition-all duration-500
+        transition-all duration-200
         group-hover:-translate-y-1.5
         group-hover:border-[rgba(17,138,178,0.35)]"
       >
-        {/* Decorative glow */}
-        <div className="absolute -top-16 -right-16 w-36 h-36 rounded-full bg-[rgba(17,138,178,0.14)] blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-14 -left-12 w-28 h-28 rounded-full bg-[rgba(255,143,171,0.08)] blur-3xl pointer-events-none" />
-
         {/* Title */}
         <motion.h2
-          initial={{ opacity: 0, y: 18 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.15, duration: 0.5 }}
-          className="relative text-white  leading-[1.08]"
+          transition={{ delay: 0.1, duration: 0.4 }}
+          className="relative text-white leading-[1.08]"
         >
           {heading}
         </motion.h2>
@@ -120,14 +115,15 @@ export default function ParallaxHero({
         <motion.div
           initial={{ width: 0 }}
           animate={isInView ? { width: "100%" } : {}}
-          transition={{ delay: 0.28, duration: 0.7 }}
+          transition={{ delay: 0.18, duration: 0.4 }}
           className="h-[2px] max-w-[220px] bg-gradient-to-r from-[var(--blue-2)] via-[var(--blue-3)] to-transparent my-6 rounded-full"
         />
+
         {/* Description */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.25 }}
+          transition={{ delay: 0.2 }}
           className="text-white/80 leading-[1.9] text-[15px] md:text-[16px]"
         >
           {desc}
@@ -138,7 +134,7 @@ export default function ParallaxHero({
           <motion.p
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
-            transition={{ delay: 0.32 }}
+            transition={{ delay: 0.25 }}
             className="mt-6 text-sm font-semibold tracking-[0.14em] 
             bg-gradient-to-r from-white via-[var(--accent-pink)] to-white
             bg-clip-text text-transparent"
@@ -159,8 +155,8 @@ export default function ParallaxHero({
               className="flex items-start gap-3"
             >
               <span className="mt-[3px] shrink-0 w-5 h-5 rounded-full bg-[rgba(17,138,178,0.16)] border border-[rgba(17,138,178,0.22)] flex items-center justify-center">
-  <FiCheck className="text-[12px] text-[var(--accent-pink)]" />
-</span>
+                <FiCheck className="text-[12px] text-[var(--accent-pink)]" />
+              </span>
               <span className="text-white/80 leading-[1.7]">{item}</span>
             </motion.li>
           ))}
@@ -169,9 +165,9 @@ export default function ParallaxHero({
         {/* Final note */}
         {finalText && (
           <motion.div
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 8 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.45 }}
+            transition={{ delay: 0.35 }}
             className="mt-8 pl-4 border-l-[3px] border-[var(--accent-pink)]"
           >
             <p className="text-white font-medium leading-[1.7]">{finalText}</p>
@@ -187,11 +183,10 @@ export default function ParallaxHero({
       className="relative py-20 md:py-28 w-full overflow-hidden min-h-[620px]"
     >
       {/* Background */}
-      <motion.div
-        className="absolute inset-0 bg-cover bg-center scale-[1.12]"
+      <div
+        className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url('${bgImage}')`,
-          y: bgY,
         }}
       />
 
