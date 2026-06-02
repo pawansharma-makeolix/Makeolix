@@ -34,7 +34,6 @@ export default function TextMedia({
     offset: ["start end", "end start"],
   });
 
-  const yImg = useTransform(scrollYProgress, [0, 1], [80, -80]);
   const opacity = useTransform(scrollYProgress, [0, 0.3, 1], [0, 1, 1]);
   const [showForm, setShowForm] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -93,7 +92,6 @@ export default function TextMedia({
       setLoading(false);
     }
   };
-  const words = title.split(" ");
 
   return (
     <section ref={ref} className={`relative py-20 overflow-hidden ${bgClass}`}>
@@ -244,25 +242,18 @@ export default function TextMedia({
           )}
 
           {/* TITLE */}
-          <h2
-            className="text-white leading-tight flex flex-wrap"
-           
-          >
-            {words.map((word, i) => (
-              <motion.span
-                key={i}
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  delay: i * 0.08,
-                  duration: 0.5,
-                }}
-                className="mr-2 whitespace-nowrap" // 🔥 important
-              >
-                {word}
-              </motion.span>
-            ))}
-          </h2>
+          <motion.h2
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{
+    duration: 0.7,
+    ease: "easeOut",
+  }}
+  className="text-white leading-tight"
+>
+  {title}
+</motion.h2>
 
           {description && (
             <motion.p
@@ -331,7 +322,7 @@ export default function TextMedia({
 
         {/* IMAGE */}
         <motion.div
-          style={{ y: yImg }}
+         
           className="relative flex justify-center"
         >
           <motion.div
@@ -340,10 +331,10 @@ export default function TextMedia({
           >
             <div className="absolute inset-0 bg-(--blue-3) opacity-20 blur-3xl rounded-2xl" />
 
-            <motion.div
+            <div
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 6, repeat: Infinity }}
-              className="relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl"
+             className="relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl"
             >
               <img
                 src={image}
@@ -351,7 +342,7 @@ export default function TextMedia({
                 className="w-full h-105 object-cover"
               />
               <div className="absolute inset-0 bg-linear-to-t from-[#00171f]/70 via-transparent" />
-            </motion.div>
+            </div>
           </motion.div>
         </motion.div>
       </div>

@@ -193,6 +193,7 @@ export default function RippleHero({
         paddingTop: "clamp(3.5rem, 10vw, 7rem)",
         paddingBottom: "clamp(3rem, 8vw, 5rem)",
       }}
+      
     >
       {/* Layered backgrounds */}
       <FloatingOrbs />
@@ -201,7 +202,15 @@ export default function RippleHero({
         rippleCount={20}
         rippleSpeed={0.45}
       />
-
+{/* PNG Background Object */}
+<motion.img
+  src="/laptop_1-removebg-preview.png"
+  alt=""
+  className="absolute -right-5 bottom-2.5 w-162.5 z-2"
+  initial={{ opacity: 0, x: 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1 }}
+/>
       {/* Content */}
       <div className="relative z-10 max-w-6xl w-full text-center flex flex-col items-center">
         {/* Heading */}

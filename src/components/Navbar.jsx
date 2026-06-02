@@ -209,6 +209,7 @@ const navItems = [
       { label: "AEO + GEO", href: "/pricing/aeo+geo" },
     ],
   },
+  // {name: "Dropshipping", href: "/dropshipping"},
   { name: "About", href: "/about" },
   { name: "Testimonials", href: "/testimonials" },
   { name: "Case Studies", href: "/case-studies" },
@@ -311,7 +312,7 @@ export default function Navbar() {
           top: 20px;
           left: 50%;
           transform: translateX(-50%);
-          width: 90%;
+          width: 98%;
           height: 64px;
           border-radius: 24px;
           background: rgba(255,255,255,0.97);

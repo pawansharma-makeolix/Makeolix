@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, Quote ,Star} from "lucide-react";
+import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
 
 const SQRT_5000 = Math.sqrt(5000);
 
@@ -24,7 +24,7 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
   const isLong = testimonial.text.length > 120;
 
   const x = (cardSize / 1.5) * position;
-  const y = isCenter ? 0 : position % 2 !== 0 ? 15 : -15;  // ✅ 0 — no upward shift
+  const y = isCenter ? 0 : position % 2 !== 0 ? 15 : -15; // ✅ 0 — no upward shift
   const rotate = isCenter ? 0 : position % 2 !== 0 ? 2.5 : -2.5;
   const scale = isCenter ? 1 : Math.max(0.85 - absPos * 0.07, 0.62);
   const opacity = isCenter ? 1 : Math.max(0.95 - absPos * 0.18, 0.3);
@@ -40,7 +40,7 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
       style={{
         position: "absolute",
         left: "30%",
-        top: "30%",           // ✅ 50% — center
+        top: "30%", // ✅ 50% — center
         translateX: "-50%",
         translateY: "-50%",
         width: cardSize,
@@ -80,7 +80,6 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
           }}
         />
       )}
-
       <div className="flex items-center gap-2.5">
         <div
           className="w-8 h-8 rounded-full flex items-center justify-center ml-auto"
@@ -100,16 +99,16 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
           />
         </div>
       </div>
-<div className="flex items-center gap-1">
-  {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
-    <Star
-      key={i}
-      size={14}
-      className={isCenter ? "text-(--accent-pink)" : "text-(--blue-3)"}
-      fill="currentColor"
-    />
-  ))}
-</div>
+      <div className="flex items-center gap-1">
+        {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
+          <Star
+            key={i}
+            size={14}
+            className={isCenter ? "text-(--accent-pink)" : "text-(--blue-3)"}
+            fill="currentColor"
+          />
+        ))}
+      </div>
       <div
         className={`transition-all duration-350 ease-in-out text-[14.5px] leading-[1.7] overflow-hidden
           ${isCenter ? "text-[rgba(232,244,248,0.88)]" : "text-(--text-muted)"}`}
@@ -212,9 +211,7 @@ export function StaggerTestimonials({ data }) {
         />
 
         <div className="ts-label text-center mb-10 z-10">
-          <h2 className=" text-white">
-            Testimonials
-          </h2>
+          <h2 className=" text-white">Testimonials</h2>
           <h2
             className={`ts-shimmer-text font-normal m-0 leading-tight ${
               isMobile ? "text-[26px]" : "text-[34px]"
@@ -290,4 +287,4 @@ export function StaggerTestimonials({ data }) {
   );
 }
 
-export default StaggerTestimonials
+export default StaggerTestimonials;

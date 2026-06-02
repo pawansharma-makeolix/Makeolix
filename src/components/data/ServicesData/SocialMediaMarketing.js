@@ -7,63 +7,138 @@ export const socialMediaData ={
         type: "hero",
         data: {
           title:
-            "Social Media Marketing Services That Build Brand Growth",
+            "Professional Social Media Marketing Services | Content, Ads & Analytics",
           subtitle:
-            "Strengthen your online presence, engage your audience, and grow your business with strategic social media marketing solutions designed for long-term digital success.",
+            "Grow Your Brand with Data-Driven Social Media Marketing Services",
         },
       },
       {
         type: "intro",
         data: {
           paragraph:
-            "At MakeOlix, we create data-driven social media marketing strategies that help businesses increase brand awareness, connect with targeted audiences, and drive meaningful engagement across major social platforms.",
+            "More than 5 billion people actively use social media worldwide, and consumers increasingly discover, evaluate, and engage with brands through platforms like Facebook, Instagram, LinkedIn, and YouTube. However, simply posting content is no longer enough. Businesses need a strategic approach that combines engaging content, targeted advertising, audience insights, and performance tracking.",
         },
       },
       {
         type: "textmedia",
         data: {
-          title: "Strategic Social Media Marketing for Modern Brands",
+          title: "At MakeOlix Consulting",
           description:
-            "Our social media marketing services focus on creating engaging content, audience-driven campaigns, and performance-based strategies that help businesses grow their digital presence effectively.",
-          image: "/john-FlPc9_VocJ4-unsplash (2).jpg",
+            "we help businesses increase visibility, build brand authority, and generate qualified leads through professional Social Media Marketing Services. As a trusted digital growth partner serving businesses targeting the U.S. market, our team creates customized social media strategies designed to improve engagement, drive conversions, and support long-term business growth. Whether you want to build brand awareness, generate leads, or increase sales, our experts are ready to help.",
+          image: "/austin-distel-tLZhFRLj6nY-unsplash (1).jpg",
         },
       },
-      
       {
-        type: "usp",
+        type: "textmedia",
         data: {
-          heading: "Why Businesses Choose Our Social Media Marketing Services",
-          subheading:
-            "We create result-driven social media strategies focused on audience engagement, brand awareness, and long-term digital growth for modern businesses.",
-
-          statsData: [
-            {
-              title: "Brand-Focused Social Strategies",
-              desc: "We develop customized social media strategies aligned with your business goals, audience behavior, and brand identity.",
-            },
-            {
-              title: "Engaging Content Creation",
-              desc: "Our team creates visually engaging and audience-focused content designed to improve interaction and strengthen brand visibility.",
-            },
-            {
-              title: "Multi-Platform Marketing",
-              desc: "We manage campaigns across Facebook, Instagram, LinkedIn, Twitter, and other major platforms to maximize audience reach.",
-            },
-            {
-              title: "Audience Growth & Engagement",
-              desc: "Our strategies focus on building meaningful customer engagement and increasing social media community growth.",
-            },
-            {
-              title: "Performance Tracking & Optimization",
-              desc: "We continuously monitor campaign performance and optimize strategies to improve engagement, reach, and overall marketing effectiveness.",
-            },
-            {
-              title: "Consistent Brand Presence",
-              desc: "We help businesses maintain a strong and professional social media presence through regular content planning and strategic posting.",
-            },
-          ],
+          title: "What is Social Media Marketing and How Can It Help Your Business Grow?",
+          description:
+            "Social media marketing means using social platforms to reach potential customers, increase brand awareness, and support business growth. It includes content creation, audience engagement, paid advertising, community management, and performance analysis. Most businesses struggle to consistently engage their audience, expand their reach, and turn social media activity into measurable business growth. Working with a leading Social Media Marketing Agency in India helps businesses get the right support, from experienced marketers and creative content specialists to data-driven strategies that deliver measurable results.",
+          image: "/john-FlPc9_VocJ4-unsplash (2).jpg",
+          reverse: true,
         },
       },
+       {
+      type: "parallax",
+
+      data: {
+        bgImage: "/pexels-olly-3760081.jpg",
+        align: "both",
+        // LEFT
+        title: "What Results Can Social Media Marketing Deliver?",
+        description:
+          "When executed correctly, social media marketing can become one of the most effective digital growth channels for modern businesses.",
+        subtext:
+          "Our campaigns help businesses:",
+        features: [
+          "Increase brand awareness",
+          "Improve audience engagement",
+          "Reduce dependency on paid ads",
+          "Drive website traffic",
+          "Increase customer trust",
+          "Improve customer retention",
+          "Support sales growth",
+        ],
+        lastpara:
+          "As a leading Social Media Company in India, MakeOlix Consulting focuses on measurable outcomes rather than vanity metrics, helping businesses achieve sustainable digital growth.",
+
+        // RIGHT
+        rightTitle: "Why Choose MakeOlix Consulting for Social Media Marketing?",
+        rightDescription:
+          "Businesses choose MakeOlix Consulting because we combine creativity, analytics, and modern digital marketing strategies to deliver results.",
+        rightSubtext: "Why clients work with us:",
+
+        rightFeatures: [
+          "Customized social media strategies",
+          "Content designed for engagement and conversions",
+          "Paid advertising expertise",
+          "Audience-focused campaign management",
+          "Transparent reporting and communication",
+          "SEO, AEO, and GEO optimization expertise",
+          "Dedicated account management",
+          "Long-term growth-focused approach",
+        ],
+        rightlastpara:
+          "Our team understands how modern search engines and AI platforms evaluate brand authority, helping businesses strengthen their visibility across social media and digital ecosystems.",
+      },
+    },
+      {
+      type: "services",
+      data: {
+        heading: "What Social Media Marketing Services Do We Provide?",
+        subheading:
+          "At MakeOlix Consulting, we offer complete social media solutions tailored to your business goals, target audience, and industry.",
+        services: [
+          {
+            id: "1",
+            title: "Social Media Strategy & Planning",
+            description:
+              "Every successful campaign begins with a solid strategy. As a results-driven Social Media Management Company, we develop customized social media plans based on audience research, competitor analysis, and business objectives.",
+            nodes: 9,
+          },
+          {
+            id: "2",
+            title: "Content Creation & Brand Storytelling",
+            description:
+              "Our team creates engaging content designed to educate, entertain, and convert. From graphics and videos to captions and campaign messaging, we help businesses build stronger relationships with their audiences.",
+            nodes: 7,
+          },
+          {
+            id: "3",
+
+            title: "Social Media Optimization",
+            description:
+              "As a professional Social Media Optimization Company, we optimize profiles, content structures, hashtags, posting schedules, and engagement strategies to improve visibility and audience interaction. Our advanced Social Media Optimization Services help businesses maximize the value of every social media channel.",
+            nodes: 8,
+          },
+          {
+            id: "4",
+
+            title: "Facebook Marketing",
+            description:
+              "As an experienced Facebook Marketing Company, we create targeted campaigns designed to increase reach, generate leads, and improve return on ad spend through strategic audience targeting and campaign optimization. Businesses can also explore our Social Media Advertising Services to run data-driven paid campaigns across multiple social platforms.",
+            nodes: 10,
+          },
+          {
+            id: "5",
+
+            title: "Instagram Growth Marketing",
+            description:
+              "Our team also works as a top Instagram Marketing Agency in India, helping brands build stronger communities through creative content, influencer collaborations, Reels strategies, and engagement-focused campaigns.",
+            nodes: 6,
+          },
+          {
+            id: "5",
+
+            title: "Social Media Management",
+            description:
+              "As a trusted Social Media Management Agency in India, we handle content scheduling, audience engagement, account monitoring, performance tracking, and ongoing optimization so you can focus on running your business.",
+            nodes: 6,
+          },
+        ],
+      },
+    },
+    
       {
         type: "parallax",
 
@@ -88,43 +163,48 @@ export const socialMediaData ={
       {
         type: "steps",
         data: {
-          heading: "Our Social Media Marketing Process",
-          subtitle:
-            "We follow a strategic social media marketing process focused on building brand visibility, increasing audience engagement, and driving long-term digital growth through targeted campaigns and creative content.",
+          heading: "Our 5-Step Social Media Growth Strategy",
+        
           perRow: "5",
           steps: [
             {
               number: 1,
-              title: "Brand & Audience Research",
-              body: "We analyze your business, target audience, industry trends, and competitors to create a customized social media marketing strategy.",
+              title: "Business & Audience Research",
+              body: "We analyze your industry, competitors, audience behavior, and business goals to develop a customized social media roadmap.",
             },
 
             {
               number: 2,
-              title: "Content Planning & Strategy",
-              body: "Our team develops content calendars, campaign ideas, and platform-specific strategies designed to improve engagement and strengthen brand identity.",
+              title: "Content & Campaign Planning",
+              body: "Our team creates a strategic content calendar focused on engagement, brand awareness, and lead generation opportunities.",
             },
 
             {
               number: 3,
-              title: "Creative Content & Campaign Execution",
-              body: "We create engaging visuals, captions, and marketing campaigns tailored to connect with your audience across multiple social media platforms.",
+              title: "Creative Development & Publishing",
+              body: "We develop compelling content and publish it across the right social media channels based on audience activity and platform trends.",
             },
             {
               number: 4,
-              title: "Audience Engagement & Optimization",
-              body: "Our experts monitor audience interaction, optimize campaign performance, and improve engagement strategies to maximize social media growth.",
+              title: "Advertising & Optimization",
+              body: "As part of our advanced SMO Services in India, we continuously optimize campaigns, audience targeting, and content performance to improve results.",
             },
             {
               number: 5,
-              title: "Performance Tracking & Reporting",
-              body: "We continuously track campaign metrics, audience growth, and engagement performance while providing transparent reports and ongoing improvements.",
+              title: "Reporting & Growth Analysis",
+              body: "We provide detailed reporting, audience insights, and performance recommendations to help businesses make informed marketing decisions and achieve long-term growth.",
             },
 
             
           ],
         },
       },
+
+
+ 
+
+
+ 
 {
         type: "parallax",
 
@@ -132,102 +212,78 @@ export const socialMediaData ={
           bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
           align: "right",
           // LEFT
-          rightTitle: "Build Stronger Customer Connections Online",
+          rightTitle: "What Industries Benefit Most from Social Media Marketing?",
+
           rightDescription:
-            "We help businesses create impactful social media experiences that improve audience interaction, increase visibility, and support long-term customer relationships.",
+            "Social media marketing is essential for businesses that want to increase brand awareness, connect with customers, and generate consistent leads online. At MakeOlix Consulting, we create customized social media strategies for a wide range of industries, helping brands improve engagement and grow their digital presence.",
+            rightSubtext: "We provide social media marketing solutions for:",
           rightFeatures: [
-            "Data-driven social media campaigns",
-            "Community engagement and audience growth",
-            "Continuous performance monitoring and optimization",
+            "eCommerce & Retail",
+            "Healthcare & Medical Practices",
+            "Real Estate Companies",
+            "Law Firms & Legal Services",
+            "Financial & Insurance Businesses",
+            "Technology & SaaS Companies",
+            "Education & eLearning Platforms",
+            "Restaurants & Hospitality Brands",
+            "Home Services Businesses",
+            "Manufacturing & Industrial Companies",
         
           ],
-          rightlastpara: "Our social media marketing services are designed to help businesses increase online influence, improve customer engagement, and create sustainable digital growth opportunities.",
+          rightlastpara: "Our industry-focused approach allows us to create relevant content, targeted advertising campaigns, and audience engagement strategies that help businesses achieve measurable growth across social media platforms.",
         },
       },
-      {
-        type: "features",
+  
+       {
+        type: "textmedia",
         data: {
-          heading: "Advanced Social Media Marketing Solutions",
-          subtext:
-            "Our social media marketing services are designed to help businesses strengthen brand presence, improve audience engagement, and achieve measurable digital growth through strategic campaigns and creative content.",
-          leftCards: [
-            {
-              id: 1,
-              number: "01",
-              title: "Content Strategy & Planning",
-              body: "We create customized social media content strategies focused on audience engagement, brand consistency, and long-term marketing success.",
-              icon: "⬡",
-            },
-            {
-              id: 2,
-              number: "02",
-              title: "Paid Social Media Campaigns",
-              body: "Our team develops targeted paid advertising campaigns that help businesses increase reach, generate leads, and improve conversion opportunities.",
-              icon: "⬡",
-            },
-            
-          ],
-          rightCards: [
-            {
-              id: 3,
-              number: "03",
-              title: "Creative Visual Branding",
-              body: "We design engaging social media creatives and brand-focused visuals that capture attention and improve audience interaction across platforms.",
-              icon: "◈",
-            },
-            {
-              id: 4,
-              number: "04",
-              title: "Analytics & Performance Optimization",
-              body: "We continuously monitor campaign performance, audience behavior, and engagement metrics to improve results and maximize marketing effectiveness.",
-              icon: "◈",
-            },
-           
-          ],
+          title: "Is Your Brand Getting the Attention It Deserves on Social Media?",
+          description:
+            "Social media is one of the most powerful channels for building brand awareness, generating quality leads, and creating long-term customer relationships. At MakeOlix Consulting, we don't just manage your social media, we build strategies that drive real, measurable business results. Let's start with a conversation. Get in touch with our team today for a free consultation and find out exactly how professional social media marketing can take your business to the next level.",
+          image: "/jakob-owens-WUmb_eBrpjs-unsplash (1).jpg",
         },
       },
-     
       {
         type: "faq",
         data: {
           faqs: [
             {
               id: 1,
-              question: "What is social media marketing?",
+              question: "What Does a Social Media Marketing Agency Actually Do?",
 
               answer:
-                "Social media marketing involves promoting a business, brand, or service through platforms like Facebook, Instagram, LinkedIn, and Twitter to improve engagement and visibility.",
+                "A social media marketing agency helps businesses create content, manage social media accounts, run advertising campaigns, engage with audiences, and track performance to improve brand visibility and generate leads.",
             },
             {
               id: 2,
 
-              question: "Which social media platforms do you manage?",
+              question: "How Long Does It Take to See Results from Social Media Marketing?",
 
               answer:
-                "We manage campaigns across major social platforms including Facebook, Instagram, LinkedIn, Twitter, and other platforms based on business goals.",
+                "While engagement improvements can happen within weeks, most businesses begin seeing meaningful growth in brand awareness, website traffic, and lead generation within 3 to 6 months.",
             },
             {
               id: 3,
 
-              question: "Can social media marketing help generate leads?",
+              question: "What are the Best Social Media Platforms for Business Growth? ",
 
               answer:
-                "Yes, strategic social media marketing can improve audience engagement, increase website traffic, and help generate qualified leads for businesses.",
+                "The best platforms depend on your target audience and business goals. Facebook, Instagram, LinkedIn, and YouTube are commonly used for business growth and brand awareness.",
             },
             {
               id: 4,
               question:
-                "Do you create content for social media campaigns?",
+                "What is the Cost of Social Media Marketing for Businesses? ",
 
               answer:
-                "Absolutely. We create engaging and brand-focused content tailored to your audience and marketing objectives.",
+                "Social media marketing is never truly free, whether you're spending time, hiring an employee, or outsourcing to an agency, there is always a cost involved. The key is maximizing ROI from every amount or hour invested. It's important to remember that ROI doesn't always mean direct revenue, it can also mean generating new leads, increasing email subscriptions, growing brand awareness, or boosting customer satisfaction. The ROI you achieve is a direct result of how focused and well-executed your social media strategy is.",
             },
             {
               id: 5,
-              question: "Why choose MakeOlix for social media marketing services?",
+              question: "What makes your social media marketing approach different?",
 
               answer:
-                "MakeOlix provides customized, performance-focused social media strategies designed to improve engagement, brand visibility, and long-term business growth.",
+                "Our approach combines content strategy, paid advertising, audience insights, SEO principles, and AI-focused visibility techniques to help businesses perform better across social platforms and modern search experiences.",
             },
           ],
         },
