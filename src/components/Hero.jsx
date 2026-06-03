@@ -1,21 +1,59 @@
 "use client";
 
-import { TypeAnimation } from "react-type-animation";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
 import Button from "./Button";
 
 const Hero = () => {
   const [init, setInit] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
+  const videoRef = useRef(null);
+  const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadFull(engine);
-    }).then(() => {
-      setInit(true);
-    });
+    const mq = window.matchMedia("(min-width: 900px)");
+    setIsDesktop(mq.matches);
+    const handler = (e) => setIsDesktop(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
+  useEffect(() => {
+    if (!isDesktop) {
+      initParticlesEngine(async (engine) => {
+        await loadFull(engine);
+      }).then(() => setInit(true));
+    }
+  }, [isDesktop]);
+
+  // ✅ Video ko force play karo — autoplay block ka fix
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const tryPlay = () => {
+      video.play().catch(() => {
+        // Autoplay block hua — user interaction pe retry karo
+        const playOnInteraction = () => {
+          video.play().catch(() => {});
+          document.removeEventListener("click", playOnInteraction);
+          document.removeEventListener("touchstart", playOnInteraction);
+        };
+        document.addEventListener("click", playOnInteraction);
+        document.addEventListener("touchstart", playOnInteraction);
+      });
+    };
+
+    if (video.readyState >= 3) {
+      setVideoReady(true);
+      tryPlay();
+    } else {
+      video.addEventListener("canplay", () => {
+        setVideoReady(true);
+        tryPlay();
+      });
+    }
   }, []);
 
   const particlesOptions = {
@@ -29,31 +67,14 @@ const Hero = () => {
       },
       modes: {
         push: { quantity: 4 },
-        grab: {
-          distance: 140,
-          links: { opacity: 0.4 },
-        },
+        grab: { distance: 140, links: { opacity: 0.4 } },
       },
     },
     particles: {
-      number: {
-        value: 80,
-        density: { enable: true, area: 800 },
-      },
+      number: { value: 80, density: { enable: true, area: 800 } },
       color: { value: ["#ef476f", "#fff", "#118ab2"] },
-      links: {
-        enable: true,
-        distance: 110,
-        color: "#ffffff",
-        opacity: 0.7,
-        width: 1,
-      },
-      move: {
-        enable: true,
-        speed: 1.2,
-        direction: "none",
-        outModes: { default: "bounce" },
-      },
+      links: { enable: true, distance: 110, color: "#ffffff", opacity: 0.7, width: 1 },
+      move: { enable: true, speed: 1.2, direction: "none", outModes: { default: "bounce" } },
       size: { value: { min: 4, max: 6 } },
       opacity: { value: 0.7 },
       shape: { type: "circle" },
@@ -62,108 +83,43 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+    <section
+      className="relative min-h-screen flex items-center justify-center text-center overflow-hidden"
+      style={{ backgroundColor: "#051923" }}
+    >
+      {/* Video — hamesha DOM mein, opacity se control */}
+      <video
+        ref={videoRef}
+        muted           // ✅ muted ZAROORI hai autoplay ke liye
+        loop
+        playsInline
+        preload="auto"
+        poster="/Heroimage.jpg"
+        className="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000"
+        style={{
+          opacity: isDesktop && videoReady ? 1 : 0,
+          pointerEvents: "none",
+        }}
+      >
+        <source src="/hero-video.mp4" type="video/mp4" />
+      </video>
 
-      {/* ✨ PARTICLES */}
-      {init && (
+      {/* Particles — mobile only */}
+      {!isDesktop && init && (
         <Particles
           options={particlesOptions}
           className="absolute inset-0 z-0"
         />
       )}
-{/* 🤖 AI HAND */}
-<motion.img
-  src="/aihand-removebg-preview.png"
-  alt="AI Hand"
-  className="hidden lg:block absolute -right-60 top-1/2 w-75 md:w-100 z-10 pointer-events-none"
-  animate={{
-    x: -200,
-    opacity: 1,
-    y: [-100, -80, -100],
-  }}
-  transition={{
-    x: { duration: 3, ease: "easeOut" },
-    opacity: { duration: 3 },
-    y: {
-      duration: 3,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  }}
-/>
 
-{/* 🧑 HUMAN HAND */}
-<motion.img
-  src="/humanhand-removebg-preview.png"
-  alt="Human Hand"
-  className="hidden lg:block absolute -left-60 top-1/2 w-95 md:w-100 z-10 pointer-events-none"
-  initial={{ x: -300, opacity: 0, y: -100 }}
-  animate={{
-    x: 200,
-    opacity: 1,
-    y: [-100, -80, -100],
-  }}
-  transition={{
-    x: { duration: 3, ease: "easeOut" },
-    opacity: { duration: 3 },
-    y: {
-      duration: 3,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  }}
-/>
-
-      
-
-      {/* ⚡ BLUE SPARK */}
-      <motion.div
-        className="absolute top-1/2 left-1/2 z-20"
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{
-          scale: [0, 1.5, 1],
-          opacity: [0, 1, 0.8],
-        }}
-        transition={{
-          delay: 2,
-          duration: 0.8,
-        }}
-      >
-        <div className="w-16 h-16 bg-blue-400 rounded-full blur-xl opacity-80" />
-      </motion.div>
-
-      {/* 🔥 CONTENT */}
-      <motion.div
-        className="relative z-30 max-w-3xl px-6 text-white"
-        animate={{
-          y: [0, -10, 0], // 👈 up-down floating
-        }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      >
-        <h1 className=" leading-tight mb-6">
+      {/* Content */}
+      <div className="relative z-30 max-w-5xl px-6 text-white">
+        <h1 className="leading-tight mb-6">
           We are MAKEOLIX
           <br />
           We are{" "}
           <span className="bg-linear-to-r from-white to-[#118ab2] bg-clip-text text-transparent">
-            <TypeAnimation
-              sequence={[
-                "building brands across the GLOBE",
-                2000,
-                 "building brands across the GLOBE",
-                2000,
-                 "building brands across the GLOBE",
-                2000,
-                 "building brands across the GLOBE",
-                2000,
-                
-              ]}
-              speed={50}
-              repeat={Infinity}
-            />
+            building brands across the GLOBE
           </span>
         </h1>
 
@@ -173,11 +129,9 @@ const Hero = () => {
 
         <div className="flex justify-center gap-4">
           <Button href={"/contact-us"}>Get In Touch</Button>
-          <Button variant="outline" href={"/about"}>
-            Know More
-          </Button>
+          <Button variant="outline" href={"/about"}>Know More</Button>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
