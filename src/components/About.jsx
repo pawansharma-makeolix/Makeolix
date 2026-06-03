@@ -1,13 +1,36 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Button from "./Button";
-import aboutVideo from "../assets/MakeOlix-Home-Page-Intro-Video.mp4";
 import { SparkleParticles } from "./SparkleParticles";
 
 const About = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    // Intersection Observer — sirf tab load karo jab section visible ho
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const video = videoRef.current;
+            if (video) {
+              video.src = "/MakeOlix-Home-Page-Intro-Video.mp4"; // ✅ tab src set karo
+              video.load();
+              video.play().catch(() => {});
+            }
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (videoRef.current) observer.observe(videoRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="relative py-20 bg-(--bg-main) text-white overflow-hidden">
-
       <SparkleParticles className="absolute inset-0 z-0 blur-[1px]" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -22,13 +45,11 @@ const About = () => {
             What makes us the best?
           </p>
 
-          <h2 className=" mb-6 leading-snug">
-            About Us
-          </h2>
+          <h2 className="mb-6 leading-snug">About Us</h2>
 
           <p className="text-gray-300 mb-8 leading-relaxed">
             MakeOlix is not just a performance marketing agency; we are your
-            dedicated partner in success. We thrive on our clients’ success
+            dedicated partner in success. We thrive on our clients' success
             stories, and our goal is to see your brand soar to new heights in
             the digital realm. Our mission is to propel your brand to new
             heights in the digital space.
@@ -48,20 +69,17 @@ const About = () => {
         >
           <motion.div
             animate={{ y: [0, -10, 0] }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,80,157,0.4)] group"
           >
-            
+            {/* ✅ src nahi diya — sirf ref, preload none */}
             <video
-              src={aboutVideo}
+              ref={videoRef}
               autoPlay
               loop
               muted
               playsInline
+              preload="none"
               className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
             />
 

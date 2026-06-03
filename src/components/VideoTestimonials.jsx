@@ -14,7 +14,7 @@ const videos = [
 
 const VideoTestimonials = () => {
   const [active, setActive] = useState(0);
-  const [playingIndex, setPlayingIndex] = useState(null); // ✅ ID nahi, INDEX track karo
+  const [playingIndex, setPlayingIndex] = useState(null);
   const videoRefs = useRef([]);
 
   const next = () => {
@@ -28,30 +28,29 @@ const VideoTestimonials = () => {
   };
 
   const stopAll = () => {
-  videoRefs.current.forEach((video) => {
-    if (video) {
-      video.pause();
-    }
-  });
-
-  setPlayingIndex(null);
-};
+    videoRefs.current.forEach((video) => {
+      if (video) video.pause();
+    });
+    setPlayingIndex(null);
+  };
 
   const handlePlay = (index) => {
-  videoRefs.current.forEach((video, i) => {
-    if (video && i !== index) {
-      video.pause();
-    }
-  });
+    videoRefs.current.forEach((video, i) => {
+      if (video && i !== index) video.pause();
+    });
+    setPlayingIndex(index);
+    const currentVideo = videoRefs.current[index];
+    if (currentVideo) currentVideo.play().catch(() => {});
+  };
 
-  setPlayingIndex(index);
-
-  const currentVideo = videoRefs.current[index];
-
-  if (currentVideo) {
-    currentVideo.play().catch(() => {});
-  }
-};
+  // ✅ Active aur adjacent cards ko preload karo, baaki none
+  const getPreload = (index) => {
+    const isActive = index === active;
+    const isNext = index === (active + 1) % videos.length;
+    const isPrev = index === (active - 1 + videos.length) % videos.length;
+    if (isActive || isNext || isPrev) return "none"; // sirf play pe load
+    return "none";
+  };
 
   const getClass = (index) => {
     if (index === active) return "scale-100 opacity-100 z-20 translate-x-0";
@@ -84,38 +83,39 @@ const VideoTestimonials = () => {
             style={{ backgroundColor: "#051923" }}
           >
             <div className="relative w-full h-full">
-  <video
-    ref={(el) => (videoRefs.current[i] = el)}
-    src={video.src}
-    controls={playingIndex === i}
-    className="w-full h-full object-cover"
-    playsInline
-    preload="metadata"
-    onEnded={() => setPlayingIndex(null)}
-  />
+              <video
+                ref={(el) => (videoRefs.current[i] = el)}
+                src={video.src}
+                controls={playingIndex === i}
+                className="w-full h-full object-cover"
+                playsInline
+                preload="none" // ✅ KEY FIX — koi bhi video page load pe download nahi hogi
+                onEnded={() => setPlayingIndex(null)}
+              />
 
-  {/* ✅ poster nahi, manual img — ye hamesha wapas aayegi */}
-  {playingIndex !== i && (
-    <>
-      <img
-        src={video.thumbnail}
-        alt="thumbnail"
-        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-      />
-      <button
-        onClick={() => handlePlay(i)}
-        className="absolute inset-0 flex items-center justify-center"
-      >
-        <div
-          className="w-14 h-14 rounded-full flex items-center justify-center text-white text-xl transition-all duration-300 hover:scale-110"
-          style={{ backgroundColor: "#118ab2" }}
-        >
-          ▶
-        </div>
-      </button>
-    </>
-  )}
-</div>
+              {/* Thumbnail + Play button — jab tak play na karo */}
+              {playingIndex !== i && (
+                <>
+                  <img
+                    src={video.thumbnail}
+                    alt="thumbnail"
+                    loading="lazy" // ✅ images bhi lazy load
+                    className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                  />
+                  <button
+                    onClick={() => handlePlay(i)}
+                    className="absolute inset-0 flex items-center justify-center"
+                  >
+                    <div
+                      className="w-14 h-14 rounded-full flex items-center justify-center text-white text-xl transition-all duration-300 hover:scale-110"
+                      style={{ backgroundColor: "#118ab2" }}
+                    >
+                      ▶
+                    </div>
+                  </button>
+                </>
+              )}
+            </div>
           </div>
         ))}
 

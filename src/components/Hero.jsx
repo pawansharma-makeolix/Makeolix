@@ -1,6 +1,7 @@
 "use client";
 
 import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { TypeAnimation } from "react-type-animation";
 import { loadFull } from "tsparticles";
 import { useEffect, useState, useRef } from "react";
 import Button from "./Button";
@@ -114,12 +115,26 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-30 max-w-5xl px-6 text-white">
-        <h1 className="leading-tight mb-6">
+         <h1 className=" leading-tight mb-6">
           We are MAKEOLIX
           <br />
           We are{" "}
           <span className="bg-linear-to-r from-white to-[#118ab2] bg-clip-text text-transparent">
-            building brands across the GLOBE
+            <TypeAnimation
+              sequence={[
+                "building brands across the GLOBE",
+                2000,
+                 "building brands across the GLOBE",
+                2000,
+                 "building brands across the GLOBE",
+                2000,
+                 "building brands across the GLOBE",
+                2000,
+                
+              ]}
+              speed={50}
+              repeat={Infinity}
+            />
           </span>
         </h1>
 
