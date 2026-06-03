@@ -20,7 +20,7 @@ import TextMediaVariant from "../components/TextMediaVariant";
 const ServiceItem = () => {
   const { slug } = useParams();
   const pageData = ServicesPagesData[slug];
-  const noIndexPages = ["small-business-seo","social-media-optimization","sma"];
+  const noIndexPages = ["social-media-optimization","sma"];
   const shouldNoIndex = noIndexPages.includes(slug);
   if (!pageData) return <PageNotFound></PageNotFound>;
   return (
