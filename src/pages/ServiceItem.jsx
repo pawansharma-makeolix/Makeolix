@@ -16,7 +16,7 @@ import StepsSection from "../components/StepsSection";
 import FeaturesSection from "../components/FeaturesSection";
 import MakeolixNumbers from "../components/MakeolixNumbers";
 import PageNotFound from "../components/PageNotFound";
-
+import TextMediaVariant from "../components/TextMediaVariant";
 const ServiceItem = () => {
   const { slug } = useParams();
   const pageData = ServicesPagesData[slug];
@@ -42,6 +42,9 @@ const ServiceItem = () => {
 
           case "faq":
             return <FaqVariant key={index} {...section.data} />;
+
+          case "textmediavariant":
+            return <TextMediaVariant key={index} {...section.data} />;
           case "textmedia":
             return <TextMedia key={index} {...section.data} />;
           case "parallax":

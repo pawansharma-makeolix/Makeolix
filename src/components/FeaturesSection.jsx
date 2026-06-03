@@ -360,33 +360,10 @@ useEffect(() => {
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
 
-        {/* Floating particles */}
-        {particles.map((p, i) => (
-          <Particle key={i} {...p} />
-        ))}
+        
 
-        {/* Orbiting rings wrapper — parallax scroll */}
-        <motion.div
-          className="absolute left-1/2 top-1/2 -translate-x-1/2"
-          style={{ y: decoY }}
-        >
-          <OrbitRing size={320} duration={28} opacity={0.08} />
-          <OrbitRing size={500} duration={42} reverse opacity={0.05} />
-          <OrbitRing size={700} duration={60} opacity={0.03} />
 
-          {/* Center dot */}
-          <motion.div
-            className="absolute rounded-full w-[6px] h-[6px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[var(--blue-3)] shadow-[0_0_20px_rgba(17,138,178,0.8)]"
-            animate={{ scale: [1, 1.6, 1], opacity: [0.6, 1, 0.6] }}
-            transition={{ duration: 3, repeat: Infinity }}
-          />
-        </motion.div>
-
-        {/* Diagonal accent line — scroll-driven rotate */}
-        <motion.div
-          className="absolute pointer-events-none w-px h-[60%] left-1/2 top-[20%] bg-[linear-gradient(180deg,transparent,rgba(17,138,178,0.25),rgba(255,143,171,0.15),transparent)] origin-top"
-          style={{ rotate: decoRotate }}
-        />
+        
       </div>
 
       {/* ── Section Content ── */}

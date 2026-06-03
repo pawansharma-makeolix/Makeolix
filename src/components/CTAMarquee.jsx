@@ -148,8 +148,8 @@ export default function CTAMarquee() {
             className="text-white max-w-md leading-relaxed"
           >
             Touch base with us.{" "}
-            <strong className="text-white">Let's discover</strong> how we can
-            add more value to your business.
+            <strong className="text-white">Let's discover</strong>  Your next customer is already searching. Let's make sure they find you first.
+
           </motion.p>
 
           <motion.div {...fadeUp(0.4)} className="flex gap-4">

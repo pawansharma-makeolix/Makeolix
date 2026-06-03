@@ -95,7 +95,7 @@ const Hero = () => {
         loop
         playsInline
         preload="auto"
-        poster="/Heroimage.jpg"
+        
         className="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000"
         style={{
           opacity: isDesktop && videoReady ? 1 : 0,
