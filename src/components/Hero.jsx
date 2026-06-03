@@ -116,19 +116,19 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-30 max-w-5xl px-6 text-white">
          <h1 className=" leading-tight mb-6">
-          We are MAKEOLIX
+          We Are MAKEOLIX
           <br />
-          We are{" "}
+          We Are{" "}
           <span className="bg-linear-to-r from-white to-[#118ab2] bg-clip-text text-transparent">
             <TypeAnimation
               sequence={[
-                "building brands across the GLOBE",
+                "Building Brands Across The GLOBE",
                 2000,
-                 "building brands across the GLOBE",
+                "Building Brands Across The GLOBE",
                 2000,
-                 "building brands across the GLOBE",
+                 "Building Brands Across The GLOBE",
                 2000,
-                 "building brands across the GLOBE",
+                 "Building Brands Across The GLOBE",
                 2000,
                 
               ]}
