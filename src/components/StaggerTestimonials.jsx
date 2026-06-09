@@ -24,7 +24,7 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
   const isLong = testimonial.text.length > 120;
 
   const x = (cardSize / 1.5) * position;
-  const y = isCenter ? 0 : position % 2 !== 0 ? 15 : -15; // ✅ 0 — no upward shift
+  const y = isCenter ? 0 : position % 2 !== 0 ? 15 : -15;
   const rotate = isCenter ? 0 : position % 2 !== 0 ? 2.5 : -2.5;
   const scale = isCenter ? 1 : Math.max(0.85 - absPos * 0.07, 0.62);
   const opacity = isCenter ? 1 : Math.max(0.95 - absPos * 0.18, 0.3);
@@ -40,7 +40,7 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
       style={{
         position: "absolute",
         left: "30%",
-        top: "30%", // ✅ 50% — center
+        top: "30%",
         translateX: "-50%",
         translateY: "-50%",
         width: cardSize,
@@ -158,11 +158,30 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
   );
 }
 
-export function StaggerTestimonials({ data }) {
+export function StaggerTestimonials({ data: fallbackData }) {
   const isMobile = useIsMobile();
   const cardSize = isMobile ? 260 : 340;
-  const [list, setList] = useState(data);
+  const [list, setList] = useState(fallbackData);
   const [direction, setDirection] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // Google Reviews fetch
+  useEffect(() => {
+    fetch("/api/reviews")
+      .then((r) => r.json())
+      .then((d) => {
+        if (d.reviews && d.reviews.length > 0) {
+          setList(d.reviews);
+        }
+        // agar koi review nahi aaya toh fallbackData rahega
+      })
+      .catch(() => {
+        // silently fail — fallbackData already set hai
+        setError("fallback");
+      })
+      .finally(() => setLoading(false));
+  }, []);
 
   const handleMove = (steps) => {
     setDirection(steps > 0 ? 1 : -1);
@@ -211,7 +230,7 @@ export function StaggerTestimonials({ data }) {
         />
 
         <div className="ts-label text-center mb-10 z-10">
-          <h2 className=" text-white">Testimonials</h2>
+          <h2 className="text-white">Testimonials</h2>
           <h2
             className={`ts-shimmer-text font-normal m-0 leading-tight ${
               isMobile ? "text-[26px]" : "text-[34px]"
@@ -228,27 +247,32 @@ export function StaggerTestimonials({ data }) {
           />
         </div>
 
-        {/* ✅ overflow-visible, no paddingTop, height fixed */}
-        <div
-          className="relative w-full z-10 overflow-visible"
-          style={{ height: isMobile ? 380 : 460 }}
-        >
-          {list.map((t, index) => {
-            const position =
-              list.length % 2
-                ? index - (list.length + 1) / 2
-                : index - list.length / 2;
-            return (
-              <TestimonialCard
-                key={t.id}
-                testimonial={t}
-                position={position}
-                handleMove={handleMove}
-                cardSize={cardSize}
-              />
-            );
-          })}
-        </div>
+        {loading ? (
+          <div className="flex items-center justify-center z-10" style={{ height: isMobile ? 380 : 460 }}>
+            <p className="text-(--text-muted) text-sm animate-pulse">Loading reviews...</p>
+          </div>
+        ) : (
+          <div
+            className="relative w-full z-10 overflow-visible"
+            style={{ height: isMobile ? 380 : 460 }}
+          >
+            {list.map((t, index) => {
+              const position =
+                list.length % 2
+                  ? index - (list.length + 1) / 2
+                  : index - list.length / 2;
+              return (
+                <TestimonialCard
+                  key={t.id}
+                  testimonial={t}
+                  position={position}
+                  handleMove={handleMove}
+                  cardSize={cardSize}
+                />
+              );
+            })}
+          </div>
+        )}
 
         <div className="flex items-center gap-4 mt-8 z-10">
           <button
@@ -260,14 +284,14 @@ export function StaggerTestimonials({ data }) {
           </button>
 
           <div className="flex gap-1.75 items-center">
-            {Array.from({ length: Math.min(data.length, 10) }).map((_, i) => (
+            {Array.from({ length: Math.min(list.length, 10) }).map((_, i) => (
               <button
                 key={i}
                 className={`ts-dot${i === 0 ? " active" : ""}`}
                 aria-label={`Go to ${i + 1}`}
                 onClick={() => {
                   const diff =
-                    i - (list.findIndex((_, idx) => idx === 0) % data.length);
+                    i - (list.findIndex((_, idx) => idx === 0) % list.length);
                   if (diff !== 0) handleMove(diff);
                 }}
               />

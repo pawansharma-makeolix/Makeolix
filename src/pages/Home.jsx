@@ -15,6 +15,7 @@ import StaggerTestimonials from "../components/StaggerTestimonials";
 import UltraFooter from "../components/UltraFooter";
 import CTAMarquee from "../components/CTAMarquee";
 import HorizontalScrollSection from "../components/HorizontalScrollSection";
+import GoogleReviewsWidget from "../components/GoogleReviewsWidget";
 const Home = () => {
   const stats = [
     {
@@ -65,8 +66,8 @@ const Home = () => {
       ></MakeolixNumbers>
       <WhyChooseUs></WhyChooseUs>
       <VideoTestimonials></VideoTestimonials>
-      <StaggerTestimonials data={TestimonialData}></StaggerTestimonials>
-
+      <StaggerTestimonials ></StaggerTestimonials>
+      {/* <GoogleReviewsWidget></GoogleReviewsWidget> */}
       <FAQSection></FAQSection>
       <Achievements></Achievements>
       <BlogSection></BlogSection>
