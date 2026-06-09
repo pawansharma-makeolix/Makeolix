@@ -10,27 +10,32 @@ export default async function handler(req, res) {
 
   try {
     const response = await fetch(
-      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=reviews,rating,user_ratings_total&key=${API_KEY}&reviews_sort=newest`
+      `https://places.googleapis.com/v1/places/${PLACE_ID}?fields=reviews,rating,userRatingCount&key=${API_KEY}&languageCode=en`,
+      {
+        headers: {
+          "X-Goog-FieldMask": "reviews,rating,userRatingCount",
+        },
+      }
     );
 
     const data = await response.json();
 
-    if (!data.result) {
-      return res.status(500).json({ error: "Place not found", raw: data });
+    if (data.error) {
+      return res.status(500).json({ error: "API error", raw: data });
     }
 
-    const allReviews = data.result.reviews || [];
+    const allReviews = data.reviews || [];
 
     const filtered = allReviews
       .filter((r) => r.rating >= 4)
       .map((r) => ({
-        id: r.time,
-        text: r.text,
+        id: r.name,
+        text: r.text?.text || "",
         rating: r.rating,
-        by: r.author_name,
+        by: r.authorAttribution?.displayName || "Google User",
         role: "Google Review",
-        avatar: r.profile_photo_url,
-        time: r.relative_time_description,
+        avatar: r.authorAttribution?.photoUri || "",
+        time: r.relativePublishTimeDescription,
       }));
 
     res.setHeader("Cache-Control", "s-maxage=3600, stale-while-revalidate");
