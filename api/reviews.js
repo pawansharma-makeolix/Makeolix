@@ -1,18 +1,21 @@
 export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
 
-  const PLACE_ID = process.env.GOOGLE_PLACE_ID;
   const API_KEY = process.env.GOOGLE_API_KEY;
+  const PLACE_ID = "ChIJSaJt6AflDDkRTPHvvIPh4AU";
 
-  if (!PLACE_ID || !API_KEY) {
-    return res.status(500).json({ error: "Missing env variables" });
+  if (!API_KEY) {
+    return res.status(500).json({ error: "Missing API key" });
   }
 
   try {
     const response = await fetch(
-      `https://places.googleapis.com/v1/places/${PLACE_ID}?fields=reviews,rating,userRatingCount&key=${API_KEY}&languageCode=en`,
+      `https://places.googleapis.com/v1/places/${PLACE_ID}`,
       {
+        method: "GET",
         headers: {
+          "Content-Type": "application/json",
+          "X-Goog-Api-Key": API_KEY,
           "X-Goog-FieldMask": "reviews,rating,userRatingCount",
         },
       }
