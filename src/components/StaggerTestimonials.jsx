@@ -158,7 +158,7 @@ function TestimonialCard({ testimonial, position, handleMove, cardSize }) {
   );
 }
 
-export function StaggerTestimonials({ data: fallbackData }) {
+export function StaggerTestimonials({ data: fallbackData  = []  }) {
   const isMobile = useIsMobile();
   const cardSize = isMobile ? 260 : 340;
   const [list, setList] = useState(fallbackData);

@@ -66,7 +66,7 @@ const Home = () => {
       ></MakeolixNumbers>
       <WhyChooseUs></WhyChooseUs>
       <VideoTestimonials></VideoTestimonials>
-      <StaggerTestimonials data={TestimonialData}></StaggerTestimonials>
+      <StaggerTestimonials ></StaggerTestimonials>
       {/* <GoogleReviewsWidget></GoogleReviewsWidget> */}
       <FAQSection></FAQSection>
       <Achievements></Achievements>
