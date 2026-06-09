@@ -7,7 +7,6 @@ import CTAMarquee from "../components/CTAMarquee";
 import UltraAnimatedHero from "../components/UltraAnimatedHero";
 import VideoTestimonials from "../components/VideoTestimonials";
 import { TestimonialData } from "../components/data/TestimonialData";
-import TextMediaVariant from "../components/TextMediaVariant";
 const Testimonials = () => {
   const servicesData = [
     {
@@ -62,7 +61,6 @@ const Testimonials = () => {
         secondaryBtnText={"Get In Touch"}
         secondaryLink={"/contact-us"}
       ></HeroOrbit>
-      <TextMediaVariant></TextMediaVariant>
      
       <StaggerTestimonials data={TestimonialData}></StaggerTestimonials>
       <VideoTestimonials></VideoTestimonials>
