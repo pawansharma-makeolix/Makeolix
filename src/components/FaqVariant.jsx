@@ -5,32 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const defaultBg = "var(--bg-soft)";
 
 // ─── Floating Particle ────────────────────────────────────────────────────────
-function Particle({ x, y, size, duration, delay, color }) {
-  return (
-    <motion.div
-      className="absolute rounded-full pointer-events-none"
-      style={{
-        left: `${x}%`,
-        top: `${y}%`,
-        width: size,
-        height: size,
-        background: color,
-        filter: "blur(1px)",
-      }}
-      animate={{
-        y: [0, -18, 0],
-        opacity: [0.15, 0.45, 0.15],
-        scale: [1, 1.3, 1],
-      }}
-      transition={{
-        duration,
-        delay,
-        repeat: Infinity,
-        ease: "easeInOut",
-      }}
-    />
-  );
-}
+
 
 // ─── Number Badge ─────────────────────────────────────────────────────────────
 function NumberBadge({ num, isOpen }) {
@@ -221,14 +196,7 @@ export default function FaqVariant({
 }) {
  const [openId, setOpenId] = useState(faqs[0]?.id || null);
 
-  const particles = [
-    { x: 5,  y: 15, size: 4,  duration: 5,   delay: 0,    color: "rgba(17,138,178,0.5)"  },
-    { x: 90, y: 10, size: 3,  duration: 6,   delay: 1,    color: "rgba(255,143,171,0.45)" },
-    { x: 15, y: 75, size: 5,  duration: 7,   delay: 0.5,  color: "rgba(0,80,157,0.45)"   },
-    { x: 80, y: 80, size: 3,  duration: 5.5, delay: 2,    color: "rgba(17,138,178,0.4)"  },
-    { x: 50, y: 5,  size: 2,  duration: 8,   delay: 1.5,  color: "rgba(255,143,171,0.3)" },
-    { x: 95, y: 50, size: 4,  duration: 6.5, delay: 0.8,  color: "rgba(0,56,99,0.6)"     },
-  ];
+ 
 
   return (
     <section
@@ -271,21 +239,9 @@ export default function FaqVariant({
       />
 
       {/* Particles */}
-      {particles.map((p, i) => (
-        <Particle key={i} {...p} />
-      ))}
-
+     
       {/* Scanning line */}
-      <motion.div
-        className="absolute left-0 right-0 pointer-events-none"
-        style={{
-          height: 1,
-          background:
-            "linear-gradient(to right, transparent, rgba(17,138,178,0.2), transparent)",
-        }}
-        animate={{ top: ["-1%", "101%"] }}
-        transition={{ duration: 9, repeat: Infinity, ease: "linear" }}
-      />
+      
 
       {/* Content wrapper */}
       <div className="relative z-10 max-w-3xl mx-auto">

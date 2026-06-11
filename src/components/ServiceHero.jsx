@@ -49,109 +49,10 @@ function GeometricPaths() {
 }
 
 // ─── Flow Paths Pattern ───────────────────────────────────────────────────────
-function FlowPaths() {
-  const flowPaths = Array.from({ length: 12 }, (_, i) => {
-    const amplitude = 50 + i * 10;
-    const offset = i * 60;
-    return {
-      id: `flow-${i}`,
-      d: `M-100,${200 + offset} Q200,${200 + offset - amplitude} 500,${200 + offset} T900,${200 + offset}`,
-      strokeWidth: 1 + i * 0.3,
-      opacity: 0.1 + i * 0.05,
-      delay: i * 0.8,
-    };
-  });
-  return (
-    <svg
-      className="absolute inset-0 w-full h-full opacity-30"
-      viewBox="0 0 800 800"
-    >
-      {flowPaths.map((path) => (
-        <motion.path
-          key={path.id}
-          d={path.d}
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={path.strokeWidth}
-          strokeLinecap="round"
-          initial={{ pathLength: 0 }}
-          animate={{
-            pathLength: [0, 1, 0.8, 0],
-            opacity: [0, path.opacity, path.opacity * 0.7, 0],
-          }}
-          transition={{
-            duration: 15,
-            delay: path.delay,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-      ))}
-    </svg>
-  );
-}
+
 
 // ─── Neural Network Pattern ───────────────────────────────────────────────────
-function NeuralPaths() {
-  const nodes = Array.from({ length: 50 }, (_, i) => ({
-    x: Math.random() * 800,
-    y: Math.random() * 600,
-    id: `node-${i}`,
-  }));
-  const connections = [];
-  nodes.forEach((node, i) => {
-    const nearbyNodes = nodes.filter((other, j) => {
-      if (i === j) return false;
-      const dist = Math.sqrt(
-        Math.pow(node.x - other.x, 2) + Math.pow(node.y - other.y, 2),
-      );
-      return dist < 120 && Math.random() > 0.6;
-    });
-    nearbyNodes.forEach((target) => {
-      connections.push({
-        id: `conn-${i}-${target.id}`,
-        d: `M${node.x},${node.y} L${target.x},${target.y}`,
-        delay: Math.random() * 10,
-      });
-    });
-  });
-  return (
-    <svg
-      className="absolute inset-0 w-full h-full opacity-15"
-      viewBox="0 0 800 600"
-    >
-      {connections.map((conn) => (
-        <motion.path
-          key={conn.id}
-          d={conn.d}
-          stroke="currentColor"
-          strokeWidth="0.5"
-          fill="none"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: [0, 1, 0], opacity: [0, 0.8, 0] }}
-          transition={{
-            duration: 6,
-            delay: conn.delay,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-      ))}
-      {nodes.map((node) => (
-        <motion.circle
-          key={node.id}
-          cx={node.x}
-          cy={node.y}
-          r="2"
-          fill="currentColor"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: [0, 1, 1.2, 1], opacity: [0, 0.6, 0.8, 0.6] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        />
-      ))}
-    </svg>
-  );
-}
+
 
 // ─── Spiral Pattern ───────────────────────────────────────────────────────────
 function SpiralPaths() {
@@ -209,12 +110,11 @@ export default function ServiceHero({
   pattern = "auto", 
   height = "min-h-[85vh] md:min-h-screen",
 }) {
-  const patterns = ["spiral", "neural", "flow", "geometric"];
+  const patterns = ["spiral",   "geometric"];
 
   const [currentPattern, setCurrentPattern] = useState(
     pattern === "auto" ? 0 : patterns.indexOf(pattern),
   );
-  const words = title.split(" ");
 
   useEffect(() => {
     if (pattern !== "auto") return;
@@ -231,11 +131,8 @@ export default function ServiceHero({
       case 0:
         return <SpiralPaths />;
       case 1:
-        return <NeuralPaths />;
-      case 2:
-        return <FlowPaths />;
-      case 3:
         return <GeometricPaths />;
+    
       default:
         return <SpiralPaths />;
     }
@@ -292,33 +189,25 @@ export default function ServiceHero({
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
           {/* ── H1 Heading ── */}
-          <h1 className=" font-black mb-4 mt-8 tracking-tighter leading-none">
-            {words.map((word, wordIndex) => (
-              <span key={wordIndex} className="inline-block mr-4 last:mr-0">
-                {word.split("").map((letter, letterIndex) => (
-                  <motion.span
-                    key={`${wordIndex}-${letterIndex}`}
-                    initial={{ y: 100, opacity: 0, rotateX: -90 }}
-                    animate={{ y: 0, opacity: 1, rotateX: 0 }}
-                    transition={{
-                      delay: wordIndex * 0.15 + letterIndex * 0.05,
-                      type: "spring",
-                      stiffness: 100,
-                      damping: 20,
-                      duration: 0.8,
-                    }}
-                    className="inline-block text-transparent bg-clip-text 
-           bg-gradient-to-r from-white via-white to-[rgba(17,138,178,0.65)]
-           hover:from-white hover:to-[var(--blue-3)]
-           transition-all duration-700 cursor-default"
-                    whileHover={{ scale: 1.05, y: -2 }}
-                  >
-                    {letter}
-                  </motion.span>
-                ))}
-              </span>
-            ))}
-          </h1>
+       <motion.h1
+  initial={{
+    opacity: 0,
+    y: 30,
+    scale: 0.97,
+  }}
+  animate={{
+    opacity: 1,
+    y: 0,
+    scale: 1,
+  }}
+  transition={{
+    duration: 1.2,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+  className="font-black mb-4 mt-8 tracking-tighter leading-none text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-[rgba(17,138,178,0.65)]"
+>
+  {title}
+</motion.h1>
 
           {/* ── Divider line ── */}
           <motion.div

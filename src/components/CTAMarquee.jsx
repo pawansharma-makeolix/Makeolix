@@ -1,9 +1,10 @@
 "use client";
 
 import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Button from "../components/Button";
 import FooterBlob from "../components/FooterBlob";
+import { useInView } from "framer-motion";
 
 const items = [
   "Web Design",
@@ -26,7 +27,7 @@ const BLOBS = [
       opacity: 0.25,
     },
     animate: { x: [0, 40, -20, 0], y: [0, -30, 20, 0] },
-    duration: 30,
+    duration: 10,
   },
   {
     className: "w-[400px] h-[400px]",
@@ -37,7 +38,7 @@ const BLOBS = [
       opacity: 0.2,
     },
     animate: { x: [0, -30, 20, 0], y: [0, 20, -15, 0] },
-    duration: 35,
+    duration: 5,
   },
 ];
 
@@ -61,11 +62,18 @@ function MarqueeItem({ children }) {
 export default function CTAMarquee() {
   const y = useMotionValue(0);
   const [paused, setPaused] = useState(false);
+  const sectionRef = useRef(null);
 
+  const isInView = useInView(sectionRef, {
+    amount: 0.3,
+  });
   useAnimationFrame((_, delta) => {
-    if (paused) return;
+    if (paused || !isInView) return;
+
     let next = y.get() - delta * 0.01;
+
     if (next < -50) next = 0;
+
     y.set(next);
   });
 
@@ -78,7 +86,10 @@ export default function CTAMarquee() {
   });
 
   return (
-    <section className="relative min-h-screen bg-[#051923] flex items-center justify-center px-6 md:px-12 overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="relative min-h-screen bg-[#051923] flex items-center justify-center px-6 md:px-12 overflow-hidden"
+    >
       <FooterBlob variant={"second"} />
 
       {/* ── SOFT BACKGROUND ── */}
@@ -114,7 +125,15 @@ export default function CTAMarquee() {
             }}
           />
 
-          <motion.div style={{ y }} className="flex flex-col pl-4">
+          <motion.div
+            className="flex flex-col pl-4"
+            animate={isInView ? { y: ["0%", "-50%"] } : { y: "0%" }}
+            transition={{
+              duration: 18,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          >
             {allItems.map((item, i) => (
               <MarqueeItem key={i}>{item}</MarqueeItem>
             ))}
@@ -130,11 +149,7 @@ export default function CTAMarquee() {
 
         {/* RIGHT */}
         <div className="flex flex-col gap-6">
-          <motion.h2
-            {...fadeUp(0.1)}
-            className="text-white  leading-tight"
-           
-          >
+          <motion.h2 {...fadeUp(0.1)} className="text-white  leading-tight">
             Get Started <br />
             <span className="text-[#118ab2]">in Minutes</span>
           </motion.h2>
@@ -148,8 +163,8 @@ export default function CTAMarquee() {
             className="text-white max-w-md leading-relaxed"
           >
             Touch base with us.{" "}
-            <strong className="text-white">Let's discover</strong>  Your next customer is already searching. Let's make sure they find you first.
-
+            <strong className="text-white">Let's discover</strong> Your next
+            customer is already searching. Let's make sure they find you first.
           </motion.p>
 
           <motion.div {...fadeUp(0.4)} className="flex gap-4">
