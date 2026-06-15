@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route ,Navigate  } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/About";
 import CustomCursor from "./components/CustomCursor";
@@ -54,6 +54,10 @@ function App() {
         <Route path="/blog/:slug" element={<BlogDetail />} />
 
         <Route path="/:city" element={<CountryPage />} />
+        <Route 
+  path="/services/ecommerce-seo" 
+  element={<Navigate to="/services/e-commerce-seo" replace />} 
+/>
         <Route path="/services/:slug" element={<ServiceItem />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

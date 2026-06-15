@@ -18,7 +18,7 @@ const navItems = [
         heading: "SEO",
         href: "/services/seo",
         items: [
-          { label: "Ecommerce SEO Service", href: "/services/ecommerce-seo" },
+          { label: "Ecommerce SEO Service", href: "/services/e-commerce-seo" },
           { label: "Local SEO Service", href: "/services/local-seo" },
           {
             label: "AEO+GEO SEO/AISEO",

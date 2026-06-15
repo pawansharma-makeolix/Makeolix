@@ -125,6 +125,7 @@ export default function CTAMarquee() {
             }}
           />
 
+
           <motion.div
             className="flex flex-col pl-4"
             animate={isInView ? { y: ["0%", "-50%"] } : { y: "0%" }}

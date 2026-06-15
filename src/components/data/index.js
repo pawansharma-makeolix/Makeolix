@@ -17,7 +17,7 @@ import { SocialMediaOpt } from "./ServicesData/SocialMediaOpt.js";
 import { SocialMediaAds } from "./ServicesData/SocialmediaAds.js";
 export const ServicesPagesData = {
   seo: seoData,
-  "ecommerce-seo": ecommerceSeoData,
+  "e-commerce-seo": ecommerceSeoData,
   "technical-seo" : technicalSeo,
   "white-label-seo": whitelabelseo,
   "seo-reseller" : seoResellerData,
