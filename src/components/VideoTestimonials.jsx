@@ -4,12 +4,12 @@ import React, { useState, useRef } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 const videos = [
-  { id: 1, src: "/Videos/client1.mp4", thumbnail: "/tina.jpg-new (1).jpg" },
-  { id: 2, src: "/Videos/client2.mp4", thumbnail: "/patrick.jpg-new1.jpg" },
-  { id: 3, src: "/Videos/client3.mp4", thumbnail: "/k9school.jpg-new (1).jpg" },
-  { id: 4, src: "/Videos/client4.mp4", thumbnail: "/tanu.jpg-new (1).jpg" },
-  { id: 5, src: "/Videos/client5.mp4", thumbnail: "/Corey.jpg-new (1).jpg" },
-  { id: 6, src: "/Videos/client6.mp4", thumbnail: "/Gavin-Lawson.jpg-new (1).jpg" },
+  { id: 1, src: "/Videos/client1.mp4", thumbnail: "/tina.webp" },
+  { id: 2, src: "/Videos/client2.mp4", thumbnail: "/patrick.webp" },
+  { id: 3, src: "/Videos/client3.mp4", thumbnail: "/k9school.webp" },
+  { id: 4, src: "/Videos/client4.mp4", thumbnail: "/tanu.webp" },
+  { id: 5, src: "/Videos/client5.mp4", thumbnail: "/Corey.webp" },
+  { id: 6, src: "/Videos/client6.mp4", thumbnail: "/Gavin-Lawson.webp" },
 ];
 
 const VideoTestimonials = () => {

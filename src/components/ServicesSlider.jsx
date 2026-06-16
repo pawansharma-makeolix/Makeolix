@@ -3,12 +3,12 @@ import { SparkleParticles } from "./SparkleParticles";
 import Button from "../components/Button";
 
 const services = [
-   { title: "Web Development", image: "/web-dev.jpg", slug: "web-design-development" },
-  { title: "Performance Marketing", image: "/performance.jpg", slug: "performance-marketing" },
-  { title: "Social Media Marketing", image: "/social.jpg", slug: "social-media-marketing" },
-  { title: "Local SEO Service", image: "/seo-local.jpg", slug: "local-seo" },
-  { title: "E Commerce Development", image: "/business.jpg", slug: "ecommerce-develop" },
-  { title: "SEO", image: "/seo.jpg", slug: "seo" },
+   { title: "Web Development", image: "/web-dev.webp", slug: "web-design-development" },
+  { title: "Performance Marketing", image: "/performance.webp", slug: "performance-marketing" },
+  { title: "Social Media Marketing", image: "/social.webp", slug: "social-media-marketing" },
+  { title: "Local SEO Service", image: "/seo-local.webp", slug: "local-seo" },
+  { title: "E Commerce Development", image: "/business.webp", slug: "ecommerce-develop" },
+  { title: "SEO", image: "/seo.webp", slug: "seo" },
 ];
 
 const ServicesSlider = () => {

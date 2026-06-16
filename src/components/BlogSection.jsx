@@ -9,7 +9,7 @@ const blogs = [
     desc: "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
     date: "March 10, 2026",
     service: "SEO Reseller Service",
-    img: "/growtika-dQkAdUGCntA-unsplash.jpg",
+    img: "/growtika-dQkAdUGCntA-unsplash.webp",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const blogs = [
     desc: "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
     date: "October 12, 2025",
     service: "SEO",
-    img: "/myriam-jessier-VCtI-0qlVgA-unsplash.jpg",
+    img: "/myriam-jessier-VCtI-0qlVgA-unsplash (1).webp",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const blogs = [
     desc: "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
     date: "September 10, 2025",
     service: "E-commerce",
-    img: "/shoper-slLo94wES2M-unsplash (2).jpg",
+    img: "/shoper-slLo94wES2M-unsplash (2).webp",
   },
 ];
 
