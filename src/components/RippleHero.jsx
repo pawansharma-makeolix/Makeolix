@@ -218,7 +218,7 @@ export default function RippleHero({
 
         {/* Paragraph */}
         <motion.p
-          className="mt-4 sm:mt-5 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl"
+          className="mt-4 sm:mt-5 text-sm sm:text-base md:text-lg leading-relaxed max-w-4xl"
           style={{ color: "rgba(226,234,244,0.58)" }}
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
