@@ -67,7 +67,7 @@ const Home = () => {
       <WhyChooseUs></WhyChooseUs>
       <VideoTestimonials></VideoTestimonials>
       {/* <StaggerTestimonials data={TestimonialData}></StaggerTestimonials> */}
-      {/* <GoogleReviewsWidget></GoogleReviewsWidget> */}
+      <GoogleReviewsWidget></GoogleReviewsWidget>
       <FAQSection></FAQSection>
       <Achievements></Achievements>
       <BlogSection></BlogSection>
