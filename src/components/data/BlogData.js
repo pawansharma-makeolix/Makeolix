@@ -1310,7 +1310,7 @@ export const BlogData = {
                 {
                   title: "Strategic Interlinking",
                   description:
-                  "Structure your data so users can find your phone number or hours directly on the search results page without even clicking your link. By winning these "rich snippets," you become the most visible option on the page.",
+                  'Structure your data so users can find your phone number or hours directly on the search results page without even clicking your link. By winning these "rich snippets," you become the most visible option on the page.',
                 },
                 {
                   title: "Strategic Interlinking",
