@@ -918,7 +918,6 @@ export const BlogData = {
               ],
             },
 
-            
             { type: "h2", text: "Conclusion" },
 
             {
@@ -940,13 +939,13 @@ export const BlogData = {
     ],
     relatedblogs: [
       {
-      slug: "how-much-do-seo-companies-charge",
-      image: "/How-Much-Do-SEO-Companies-Charge_3.webp",
-      description: "How Much Do SEO Companies Charge?",
-      buttonText: "Read More",
-      buttonHref: "/blog/how-much-do-seo-companies-charge",
-      buttonVariant: "",
-    },
+        slug: "how-much-do-seo-companies-charge",
+        image: "/How-Much-Do-SEO-Companies-Charge_3.webp",
+        description: "How Much Do SEO Companies Charge?",
+        buttonText: "Read More",
+        buttonHref: "/blog/how-much-do-seo-companies-charge",
+        buttonVariant: "",
+      },
       {
         slug: "how-do-i-choose-the-best-seo",
         image:
@@ -1005,15 +1004,19 @@ export const BlogData = {
 
             {
               type: "list",
-              heading: "Effective E-commerce Website SEO now requires a mix of:",
+              heading:
+                "Effective E-commerce Website SEO now requires a mix of:",
               items: [
                 "Technical Precision: Fast loading speeds and mobile-first indexing.",
                 "Content Authority: In-depth product guides and comparison articles.",
                 "Semantic Search: Helping AI understand the context of your products.",
               ],
             },
-            
-            { type: "h2", text: "10 SEO Brands to Consider for Ecommerce Growth in 2026" },
+
+            {
+              type: "h2",
+              text: "10 SEO Brands to Consider for Ecommerce Growth in 2026",
+            },
             {
               type: "para",
               text: "Finding the right SEO partner can significantly impact your online store's visibility, traffic, and revenue. While every business has unique needs, the following agencies are among the most recognized names in e-commerce SEO. This list is not ranked, but we begin with a brand that has been gaining attention for its personalized, results-focused approach.",
@@ -1024,56 +1027,59 @@ export const BlogData = {
                 {
                   title: "MakeOlix Consulting",
                   description:
-                  "MakeOlix Consulting has emerged as a trusted partner for ecommerce businesses seeking customized SEO strategies and measurable growth. Unlike agencies that rely on generic templates, MakeOlix develops tailored campaigns based on your industry, competitors, target audience, and business goals. The agency specializes in Technical SEO, keyword research, content optimization, link-building strategies, and conversion-focused improvements. Whether you're operating a Shopify store, WooCommerce website, or a custom ecommerce platform, MakeOlix focuses on driving qualified traffic that turns into revenue. Their transparent reporting, personalized support, and commitment to long-term growth make them a strong choice for brands looking to scale in the competitive U.S. market.",
+                    "MakeOlix Consulting has emerged as a trusted partner for ecommerce businesses seeking customized SEO strategies and measurable growth. Unlike agencies that rely on generic templates, MakeOlix develops tailored campaigns based on your industry, competitors, target audience, and business goals. The agency specializes in Technical SEO, keyword research, content optimization, link-building strategies, and conversion-focused improvements. Whether you're operating a Shopify store, WooCommerce website, or a custom ecommerce platform, MakeOlix focuses on driving qualified traffic that turns into revenue. Their transparent reporting, personalized support, and commitment to long-term growth make them a strong choice for brands looking to scale in the competitive U.S. market.",
                 },
                 {
                   title: "Victorious",
                   description:
-                  "Victorious is known for its data-driven approach to SEO and its emphasis on measurable results. The agency works with businesses of various sizes and focuses heavily on keyword strategy, content optimization, and technical SEO improvements.",
+                    "Victorious is known for its data-driven approach to SEO and its emphasis on measurable results. The agency works with businesses of various sizes and focuses heavily on keyword strategy, content optimization, and technical SEO improvements.",
                 },
                 {
                   title: "OuterBox",
                   description:
-                  "OuterBox has built a strong reputation in the e-commerce SEO industry, particularly among online retailers. The agency combines SEO expertise with web development and digital marketing services to create comprehensive growth strategies.",
+                    "OuterBox has built a strong reputation in the e-commerce SEO industry, particularly among online retailers. The agency combines SEO expertise with web development and digital marketing services to create comprehensive growth strategies.",
                 },
                 {
                   title: "WebFX",
                   description:
-                  "WebFX is one of the larger digital marketing agencies offering SEO, PPC, content marketing, and conversion optimization services. Their team leverages analytics and proprietary technology to identify growth opportunities.",
+                    "WebFX is one of the larger digital marketing agencies offering SEO, PPC, content marketing, and conversion optimization services. Their team leverages analytics and proprietary technology to identify growth opportunities.",
                 },
                 {
                   title: "Ignite Visibility",
                   description:
-                  "Ignite Visibility provides integrated digital marketing services with a strong focus on SEO performance and return on investment. Their strategies typically combine search optimization, content marketing, and paid advertising.",
+                    "Ignite Visibility provides integrated digital marketing services with a strong focus on SEO performance and return on investment. Their strategies typically combine search optimization, content marketing, and paid advertising.",
                 },
                 {
                   title: "NP Digital",
                   description:
-                  "Founded by digital marketing expert Neil Patel, NP Digital is known for its expertise in SEO, content marketing, and growth-focused strategies. The agency works with both enterprise and mid-sized businesses across various industries.",
+                    "Founded by digital marketing expert Neil Patel, NP Digital is known for its expertise in SEO, content marketing, and growth-focused strategies. The agency works with both enterprise and mid-sized businesses across various industries.",
                 },
                 {
                   title: "Siege Media",
                   description:
-                  "Siege Media has earned recognition for its content-first SEO approach. The agency specializes in creating high-quality content assets designed to attract backlinks, improve authority, and generate organic traffic.",
+                    "Siege Media has earned recognition for its content-first SEO approach. The agency specializes in creating high-quality content assets designed to attract backlinks, improve authority, and generate organic traffic.",
                 },
                 {
                   title: "Higher Visibility",
                   description:
-                  "Higher Visibility offers a variety of SEO services, including local SEO, ecommerce SEO, and enterprise SEO solutions. Their strategies are focused on improving rankings, increasing website traffic, and generating leads.",
+                    "Higher Visibility offers a variety of SEO services, including local SEO, ecommerce SEO, and enterprise SEO solutions. Their strategies are focused on improving rankings, increasing website traffic, and generating leads.",
                 },
                 {
                   title: "iPullRank",
                   description:
-                  "iPullRank is highly regarded for its technical SEO expertise and data-driven search strategies. The agency combines advanced analytics, content planning, and technical optimization to improve search performance.",
+                    "iPullRank is highly regarded for its technical SEO expertise and data-driven search strategies. The agency combines advanced analytics, content planning, and technical optimization to improve search performance.",
                 },
                 {
                   title: "Amsive",
                   description:
-                  "Amsive provides a combination of technical SEO, analytics, customer acquisition, and digital marketing services. Their strategies are designed to help businesses improve visibility across multiple channels while enhancing customer engagement.",
+                    "Amsive provides a combination of technical SEO, analytics, customer acquisition, and digital marketing services. Their strategies are designed to help businesses improve visibility across multiple channels while enhancing customer engagement.",
                 },
               ],
             },
-            { type: "h2", text: "What Does a Best E-Commerce SEO Services Agency Actually Do?" },
+            {
+              type: "h2",
+              text: "What Does a Best E-Commerce SEO Services Agency Actually Do?",
+            },
             {
               type: "para",
               text: 'When you hire a professional team, they don’t just "add keywords." A comprehensive E-commerce SEO optimization plan usually includes four main pillars',
@@ -1107,16 +1113,17 @@ export const BlogData = {
               type: "h2",
               text: "How to Choose the Right Ecommerce SEO Consultant",
             },
-             {
+            {
               type: "list",
-              heading: "If you are a mid-sized business, you might prefer a dedicated E-commerce SEO Consultant over a massive agency. Here is what to look for:",
+              heading:
+                "If you are a mid-sized business, you might prefer a dedicated E-commerce SEO Consultant over a massive agency. Here is what to look for:",
               items: [
                 "Case Studies: Can they show you a store they’ve taken from $10k to $100k in organic revenue?",
                 'Transparency: Do they explain their process in simple English, or do they hide behind "technical jargon"?',
                 "Platform Knowledge: Do they understand the specific SEO challenges of your platform (e.g., BigCommerce vs. Adobe Commerce)?",
               ],
             },
-           
+
             {
               type: "h2",
               text: "Conclusion: Take Your Store to the Next Level",
@@ -1129,7 +1136,6 @@ export const BlogData = {
               type: "para",
               text: "While there are many agencies to choose from, MakeOlix Consulting stands out for its customized, results-driven approach to ecommerce growth. If you're ready to increase rankings, drive more sales, and build a stronger online presence, now is the perfect time to partner with MakeOlix Consulting and unlock your store's full potential. ",
             },
-            
           ],
         },
       },
@@ -1167,12 +1173,10 @@ export const BlogData = {
             },
             {
               id: 5,
-              question:
-                "How much does SEO for e-commerce stores cost in 2026?",
+              question: "How much does SEO for e-commerce stores cost in 2026?",
               answer:
                 "Monthly retainers for reputable best SEO companies for ecommerce typically range from $2,500 to $10,000+, depending on the size of your store and the competitiveness of your market.",
             },
-           
           ],
         },
       },
@@ -1189,16 +1193,16 @@ export const BlogData = {
         buttonHref: "/blog/top-seo-agencies-in-india",
         buttonVariant: "",
       },
-     {
-      slug: "the-role-of-an-seo-company",
-      image: "/The-Role-of-an-SEO-Company_BLOG-3.webp",
-      description:
-        "The Role of an SEO Company in Boosting Your Online Presence",
+      {
+        slug: "the-role-of-an-seo-company",
+        image: "/The-Role-of-an-SEO-Company_BLOG-3.webp",
+        description:
+          "The Role of an SEO Company in Boosting Your Online Presence",
 
-      buttonText: "Read More",
-      buttonHref: "/blog/the-role-of-an-seo-company",
-      buttonVariant: "",
-    },
+        buttonText: "Read More",
+        buttonHref: "/blog/the-role-of-an-seo-company",
+        buttonVariant: "",
+      },
       {
         slug: "how-much-do-seo-companies-charge",
         image: "/How-Much-Do-SEO-Companies-Charge_3.webp",
@@ -1245,7 +1249,7 @@ export const BlogData = {
             },
             {
               type: "para",
-              text: 'Back in the day, businesses could improve their search visibility by simply adding keywords to a webpage. Today, the internet is crowded. For a small shop or a local service provider, competing with global giants is a losing battle. You need a strategy that focuses on the person standing two blocks away from your office. This is where SEO Services For Small Business become vital. You need to be relevant to your specific geography.',
+              text: "Back in the day, businesses could improve their search visibility by simply adding keywords to a webpage. Today, the internet is crowded. For a small shop or a local service provider, competing with global giants is a losing battle. You need a strategy that focuses on the person standing two blocks away from your office. This is where SEO Services For Small Business become vital. You need to be relevant to your specific geography.",
             },
             {
               type: "para",
@@ -1253,21 +1257,21 @@ export const BlogData = {
             },
             {
               type: "para",
-              text: 'Over the years, Makeolix has worked with businesses across ecommerce, healthcare, SaaS, and local service industries to improve local search visibility through technical SEO and content optimization.',
+              text: "Over the years, Makeolix has worked with businesses across ecommerce, healthcare, SaaS, and local service industries to improve local search visibility through technical SEO and content optimization.",
             },
 
-            { type: "h2", text: "How to Increase Your Visibility with Modern Local Strategies" },
-           
-            
+            {
+              type: "h2",
+              text: "How to Increase Your Visibility with Modern Local Strategies",
+            },
+
             {
               type: "para",
               text: "The way people find businesses in 2026 is through a mix of AI search, voice commands, and highly personalized map results. ",
-              
             },
             {
               type: "para",
               text: "Here are nine ways to ensure you dominate your local area.",
-              
             },
             {
               type: "steps",
@@ -1275,112 +1279,93 @@ export const BlogData = {
                 {
                   title: "Claim Your AI Identity",
                   description:
-                  "You must optimize for what experts call Answer Engine Optimization (AEO). AI tools like ChatGPT and Perplexity are becoming the primary way people find information, and they rely on clear, factual language about your business location and offerings. If your data is vague, these AI models might overlook you entirely. ",
+                    "You must optimize for what experts call Answer Engine Optimization (AEO). AI tools like ChatGPT and Perplexity are becoming the primary way people find information, and they rely on clear, factual language about your business location and offerings. If your data is vague, these AI models might overlook you entirely. ",
                 },
                 {
                   title: "Hyper-Local Landing Pages",
                   description:
-                  'Do not just say you serve "New York." Create pages for specific neighborhoods like "SEO in Brooklyn" or "Local Marketing in Manhattan." This level of detail tells search engines that you have a deep connection to those specific communities. ',
+                    'Do not just say you serve "New York." Create pages for specific neighborhoods like "SEO in Brooklyn" or "Local Marketing in Manhattan." This level of detail tells search engines that you have a deep connection to those specific communities. ',
                 },
                 {
                   title: "Interactive Business Profiles",
                   description:
-                  "Your “Google Business Profile” must be alive. Post daily updates, respond to every review, and add high-resolution videos of your team at work. In 2026, search engines favor profiles that show high levels of engagement and recent activity.  By treating your profile like a social media feed, you prove that your business is active and ready to serve new customers immediately.",
+                    "Your “Google Business Profile” must be alive. Post daily updates, respond to every review, and add high-resolution videos of your team at work. In 2026, search engines favor profiles that show high levels of engagement and recent activity.  By treating your profile like a social media feed, you prove that your business is active and ready to serve new customers immediately.",
                 },
                 {
                   title: "Voice Search Optimization",
                   description:
-                  'People ask, "Where are the best SEO Services near me?" Use natural, conversational questions and answers throughout your website to capture this voice traffic. When you align your content with these verbal search patterns, you increase the chances of being the top answer provided by smart speakers and mobile assistants.',
+                    'People ask, "Where are the best SEO Services near me?" Use natural, conversational questions and answers throughout your website to capture this voice traffic. When you align your content with these verbal search patterns, you increase the chances of being the top answer provided by smart speakers and mobile assistants.',
                 },
                 {
                   title: "Technical Health",
                   description:
-                  "A slow or broken website will kill your local rankings faster than almost anything else. Ensure your site loads instantly. If you are unsure about your site health, Makeolix SEO Audit Services can find the hidden errors that are pushing you down the rankings.",
+                    "A slow or broken website will kill your local rankings faster than almost anything else. Ensure your site loads instantly. If you are unsure about your site health, Makeolix SEO Audit Services can find the hidden errors that are pushing you down the rankings.",
                 },
                 {
                   title: "Localized Content Clusters",
                   description:
-                  "Write about local events or news related to your industry. This proves to search engines that you are an authority in that specific patch of land. When you create a cluster of content centered around your local area, you build topical authority.",
+                    "Write about local events or news related to your industry. This proves to search engines that you are an authority in that specific patch of land. When you create a cluster of content centered around your local area, you build topical authority.",
                 },
                 {
                   title: "Zero-Click Optimization",
                   description:
-                  "Siege Media has earned recognition for its content-first SEO approach. The agency specializes in creating high-quality content assets designed to attract backlinks, improve authority, and generate organic traffic.",
+                    "Siege Media has earned recognition for its content-first SEO approach. The agency specializes in creating high-quality content assets designed to attract backlinks, improve authority, and generate organic traffic.",
                 },
                 {
                   title: "Strategic Interlinking",
                   description:
-                  'Structure your data so users can find your phone number or hours directly on the search results page without even clicking your link. By winning these "rich snippets," you become the most visible option on the page.',
+                    "Connect your local pages to your broader Website Optimization Services to keep users on your site longer.  Interlinking helps search engine bots crawl your site more effectively and understand the relationship between your different services. ",
                 },
                 {
-                  title: "Strategic Interlinking",
+                  title: "Mobile-First Design",
                   description:
-                  "iPullRank is highly regarded for its technical SEO expertise and data-driven search strategies. The agency combines advanced analytics, content planning, and technical optimization to improve search performance.",
+                    "In 2026, almost all local searches happen on mobile devices while people are on the move. Your website must be designed for the thumb and the small screen first, rather than being a shrunk-down version of a desktop site. ",
                 },
                 {
                   title: "Amsive",
                   description:
-                  "Amsive provides a combination of technical SEO, analytics, customer acquisition, and digital marketing services. Their strategies are designed to help businesses improve visibility across multiple channels while enhancing customer engagement.",
+                    "Amsive provides a combination of technical SEO, analytics, customer acquisition, and digital marketing services. Their strategies are designed to help businesses improve visibility across multiple channels while enhancing customer engagement.",
                 },
               ],
             },
-            { type: "h2", text: "What Does a Best E-Commerce SEO Services Agency Actually Do?" },
-            {
+             {
               type: "para",
-              text: 'When you hire a professional team, they don’t just "add keywords." A comprehensive E-commerce SEO optimization plan usually includes four main pillars',
+              text: 'To make these strategies work, your foundation must be strong. This includes Technical SEO Services to ensure search bots can actually read your local data. Without the right technical setup, even the best content will stay hidden. ',
             },
-            {
-              type: "steps",
-              items: [
-                {
-                  title: "In-Depth Keyword Research",
-                  description:
-                    'It’s not just about high volume; it’s about "buyer intent." They find the words your customers use when they are ready to pull out their credit cards.',
-                },
-                {
-                  title: "Product and Category Page Optimization",
-                  description:
-                    'Every category page on your site should be a "landing page." A top E-commerce SEO consultant will help you structure these pages so they answer user questions and satisfy search engine crawlers.',
-                },
-                {
-                  title: "High-Quality Link Building",
-                  description:
-                    'Google still views links as "votes of confidence." The best SEO companies for e-commerce earn these links through high-quality content, not spammy tactics.',
-                },
-                {
-                  title: "Continuous Technical Audits",
-                  description:
-                    "E-commerce sites are dynamic. New products are added, and old ones are deleted. Constant E-commerce website SEO monitoring ensures that '404 errors' or broken links don't tank your rankings.",
-                },
-              ],
+             {
+              type: "para",
+              text: 'Want to go deeper on e-commerce growth? Read our blog: Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India.',
             },
             {
               type: "h2",
-              text: "How to Choose the Right Ecommerce SEO Consultant",
+              text: "When to Partner with a Global Expert",
             },
-             {
-              type: "list",
-              heading: "If you are a mid-sized business, you might prefer a dedicated E-commerce SEO Consultant over a massive agency. Here is what to look for:",
-              items: [
-                "Case Studies: Can they show you a store they’ve taken from $10k to $100k in organic revenue?",
-                'Transparency: Do they explain their process in simple English, or do they hide behind "technical jargon"?',
-                "Platform Knowledge: Do they understand the specific SEO challenges of your platform (e.g., BigCommerce vs. Adobe Commerce)?",
-              ],
+            {
+              type: "para",
+              text: 'Many business owners try to do this alone until they realize that Search Engine Optimization is a full-time job. You should consider professional help when your growth plateaus or when you find yourself buried on page two of the results. Working with a dedicated SEO Services Company in India can offer you a massive advantage. You get world-class talent and AI-powered strategies at a price point that makes sense for a growing brand. ',
+            },
+            {
+              type: "para",
+              text: 'At Makeolix, we bridge the gap between global expertise and local needs. We understand that a business in Seattle has different needs than one in Toronto, and our team of 150 specialists knows how to tailor those strategies.',
+            },
+            {
+              type: "para",
+              text: 'Whether you need general SEO Agency Services or you are running a niche store and need an E-commerce SEO Agency, the goal is the same: clarity and results. If you are struggling to move the needle, it might be time to contact us for a personalized audit of your current system.',
             },
            
             {
               type: "h2",
-              text: "Conclusion: Take Your Store to the Next Level",
+              text: "The Future of Local Growth",
             },
             {
               type: "para",
-              text: "E-commerce SEO is no longer optional for businesses that want sustainable growth in 2026. A strong SEO strategy helps your store attract qualified traffic, improve search visibility, and generate consistent revenue without relying solely on paid advertising. ",
+              text: 'Getting found online is not about luck. It is about putting the right signals in the right places so Google can connect you with the people already looking for what you offer. Local SEO services work because they focus on relevance, proximity, and trust. When all three are in place, your business shows up at the moment it matters most.',
             },
             {
               type: "para",
-              text: "While there are many agencies to choose from, MakeOlix Consulting stands out for its customized, results-driven approach to ecommerce growth. If you're ready to increase rankings, drive more sales, and build a stronger online presence, now is the perfect time to partner with MakeOlix Consulting and unlock your store's full potential. ",
+              text: 'If you are looking for a results-driven team that understands both local markets and digital growth, MakeOlix Consulting offers full-scale SEO solutions designed for businesses that want real, measurable outcomes. From technical audits to content strategy, our team at MakeOlix builds visibility that lasts.',
             },
-            
+           
           ],
         },
       },
@@ -1391,73 +1376,71 @@ export const BlogData = {
             {
               id: 1,
               question:
-                "What is E-commerce SEO and why is it important for online stores?",
+                "What are local SEO services and how do they work?",
               answer:
-                "E-commerce SEO is the process of optimizing an online store to improve its visibility on search engines like Google. It involves optimizing product pages, category pages, site structure, content, and technical elements to attract more qualified traffic. A strong e-commerce SEO strategy helps increase organic rankings, drive potential customers to your store, and generate long-term sales without relying heavily on paid advertising.",
+                "Local SEO services improve your business's visibility in location-based search results. They work by optimizing your Google Business Profile, building local citations, creating location-specific pages, and fixing technical issues so search engines can connect you with nearby customers.",
             },
             {
               id: 2,
               question:
-                "What are the benefits of hiring an E-commerce SEO Services Agency?",
+                "How long does it take to see results from local SEO?",
               answer:
-                "Hiring an agency provides you with a team of experts, including technical SEOs, content writers, and link builders who work together to increase your organic traffic, improve brand trust, and drive long-term revenue growth without the high cost of recurring ads.",
+                "Most businesses start seeing measurable improvements in 3 to 6 months. Results depend on your current site health, competition in your area, and how consistently you apply local SEO strategies like review building and content updates.",
             },
             {
               id: 3,
               question:
-                "How long does E-commerce SEO optimization take to show results?",
+                "What is the difference between local SEO and regular SEO?",
               answer:
-                "Typically, you will start seeing significant movements in rankings and traffic within 4 to 6 months. However, for highly competitive niches, it can take up to a year of consistent effort to see a major ROI.",
+                "Regular SEO targets broad, national, or global audiences. Local SEO focuses specifically on reaching customers in a defined geographic area, using tools like Google Business Profile, map pack rankings, and neighborhood-level landing pages.",
             },
             {
               id: 4,
               question:
-                "Which is better: An agency or an e-commerce SEO Consultant?",
+                "Why is my business not showing up in Google Maps?",
               answer:
-                "An agency is better for large-scale projects requiring multiple skill sets. A consultant is often better for smaller businesses or specific projects where you need deep, personalized expertise and direct communication with the person doing the work.",
+                "The most common reasons are an unclaimed or incomplete Google Business Profile, inconsistent NAP information across directories, low review volume, or technical errors on your website that prevent Google from reading your local data.An agency is better for large-scale projects requiring multiple skill sets. A consultant is often better for smaller businesses or specific projects where you need deep, personalized expertise and direct communication with the person doing the work.",
+
             },
             {
               id: 5,
-              question:
-                "How much does SEO for e-commerce stores cost in 2026?",
+              question: "Do small businesses really need local SEO services?",
               answer:
-                "Monthly retainers for reputable best SEO companies for ecommerce typically range from $2,500 to $10,000+, depending on the size of your store and the competitiveness of your market.",
+                "Yes. Small businesses compete for customers in a specific area, not globally. Local SEO levels the playing field by helping you appear in searches made by people nearby who are ready to buy, making it one of the highest-ROI strategies for small business growth.",
             },
-           
           ],
         },
       },
     ],
     relatedblogs: [
       {
-        slug: "top-seo-agencies-in-india",
-
-        image:
-          "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
-        description:
-          "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
-        buttonText: "Read More",
-        buttonHref: "/blog/top-seo-agencies-in-india",
-        buttonVariant: "",
-      },
-     {
-      slug: "the-role-of-an-seo-company",
-      image: "/The-Role-of-an-SEO-Company_BLOG-3.webp",
+      slug: "10-best-e-commerce-seo-services-agencies",
+      image: "/blog-image-16-6-2026 (1).webp",
       description:
-        "The Role of an SEO Company in Boosting Your Online Presence",
+        "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
 
       buttonText: "Read More",
-      buttonHref: "/blog/the-role-of-an-seo-company",
+      buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+      buttonVariant: "",
+    },
+       {
+      slug: "want-more-traffic-sales",
+      image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+      description:
+        "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+      buttonText: "Read More",
+      buttonHref: "/blog/want-more-traffic-sales",
       buttonVariant: "",
     },
       {
-        slug: "how-much-do-seo-companies-charge",
-        image: "/How-Much-Do-SEO-Companies-Charge_3.webp",
-        description: "How Much Do SEO Companies Charge?",
-        buttonText: "Read More",
-        buttonHref: "/blog/how-much-do-seo-companies-charge",
-        buttonVariant: "",
-      },
+      slug: "how-do-i-choose-the-best-seo",
+      image: "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
+      description:
+        "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
+      buttonText: "Read More",
+      buttonHref: "/blog/how-do-i-choose-the-best-seo",
+      buttonVariant: "",
+    },
     ],
   },
 };
