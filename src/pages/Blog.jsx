@@ -55,6 +55,26 @@ const Blog = () => {
       buttonHref: "/blog/the-role-of-an-seo-company",
       buttonVariant: "",
     },
+    {
+      slug: "10-best-e-commerce-seo-services-agencies",
+      image: "/blog-image-16-6-2026 (1).webp",
+      description:
+        "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+      buttonVariant: "",
+    },
+    {
+      slug: "local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
+      image: "/10-Best-E-Commerce-SEO-Services-Agencies-to-Grow-Your-Revenue-in-2026 (1).webp",
+      description:
+        "Local SEO Services: 9 Best Ways to Increase Online Visibility in 2026",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
+      buttonVariant: "",
+    },
   ];
   return (
     <>
