@@ -262,7 +262,7 @@ const StepsBlock = ({ items }) => {
         >
           {/* Number badge */}
           <div
-            className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold mt-0.5"
+            className="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold mt-0.5"
             style={{
               background:
                 "linear-gradient(135deg, var(--blue-2), var(--blue-3))",
