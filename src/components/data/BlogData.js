@@ -1321,11 +1321,7 @@ export const BlogData = {
                   description:
                     "In 2026, almost all local searches happen on mobile devices while people are on the move. Your website must be designed for the thumb and the small screen first, rather than being a shrunk-down version of a desktop site. ",
                 },
-                {
-                  title: "Amsive",
-                  description:
-                    "Amsive provides a combination of technical SEO, analytics, customer acquisition, and digital marketing services. Their strategies are designed to help businesses improve visibility across multiple channels while enhancing customer engagement.",
-                },
+               
               ],
             },
              {
