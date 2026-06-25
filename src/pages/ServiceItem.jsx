@@ -25,6 +25,16 @@ const ServiceItem = () => {
   if (!pageData) return <PageNotFound></PageNotFound>;
   return (
     <>
+    <Helmet>
+
+<title>{pageData.meta?.title}</title>
+
+<meta
+ name="description"
+ content={pageData.meta?.description}
+/>
+
+</Helmet>
       {shouldNoIndex && (
         <Helmet>
           <meta name="robots" content="noindex, nofollow" />

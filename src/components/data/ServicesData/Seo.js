@@ -1,7 +1,12 @@
 import { Heading } from "lucide-react";
 
 export const seoData = {
-  
+    meta: {
+    title: "#1 SEO Agency in India | Increase Rankings & Traffic",
+
+    description:
+      "Partner with MakeOlix for data-driven SEO Services in India. We optimize your website to boost search rankings, drive quality traffic, and generate more leads. Contact us today!"
+  },
     sections: [
       {
         type: "hero",

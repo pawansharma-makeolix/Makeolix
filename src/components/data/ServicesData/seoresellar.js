@@ -1,5 +1,10 @@
 export const seoResellerData = {
-  
+  meta: {
+    title: "SEO Reseller Services in India | Grow Your Agency Faster",
+
+    description:
+      "Scale your agency with MakeOlix's SEO Reseller Services in India. Get white label SEO, transparent reporting, and expert support. Book a free consultation today!"
+  },
     sections: [
       {
         type: "hero",

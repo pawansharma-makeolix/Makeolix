@@ -1,4 +1,10 @@
 export const whitelabelseo ={
+  meta: {
+    title: "#1 White Label SEO Agency in India | Scale Your Agency",
+
+    description:
+      "Boost your agency with White Label SEO Services in India. From technical SEO to content and link building, we deliver results under your brand. Contact us today!"
+  },
     sections: [
     {
       type: "hero",

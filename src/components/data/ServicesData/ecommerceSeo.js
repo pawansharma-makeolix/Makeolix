@@ -1,4 +1,10 @@
 export const ecommerceSeoData = {
+    meta: {
+    title: "#1 Ecommerce SEO Agency in India | SEO Services Experts",
+
+    description:
+      "Choose MakeOlix for result-driven Ecommerce SEO Services in India. We help ecommerce businesses rank higher, attract buyers, and increase revenue. Get started now!"
+  },
   sections: [
     {
       type: "hero",

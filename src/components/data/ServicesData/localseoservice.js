@@ -1,7 +1,12 @@
 import { TfiLayoutMenuSeparated } from "react-icons/tfi";
 
 export const localSeoData = {
-  
+  meta: {
+    title: "#1 Local SEO Agency in India | Grow Your Local Business",
+
+    description:
+      "Grow your local business with MakeOlix's expert Local SEO Services in India. Improve Google Maps rankings, generate more local leads, and increase sales. Get started now!"
+  },
     sections: [
       {
         type: "hero",

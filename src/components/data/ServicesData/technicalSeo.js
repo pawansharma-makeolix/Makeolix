@@ -1,6 +1,12 @@
 import { body } from "framer-motion/client";
 
 export const technicalSeo = {
+  meta: {
+    title: "#1 Technical SEO Agency in India | Improve Site Performance",
+
+    description:
+      "Improve crawlability, Core Web Vitals, and website performance with MakeOlix's Technical SEO Services in India. Get a free technical SEO audit today!"
+  },
   sections: [
     {
       type: "hero",

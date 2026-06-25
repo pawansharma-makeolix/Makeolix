@@ -989,9 +989,9 @@ export default function Navbar() {
                                           .filter(
                                             (item) => item.isActive !== false,
                                           )
-                                          .map((item, ii) => (
+                                          .map((sub, ii) => (
                                             <Link
-                                              key={si}
+                                              key={ii}
                                               to={sub.href}
                                               onClick={() =>
                                                 setMobileOpen(false)
