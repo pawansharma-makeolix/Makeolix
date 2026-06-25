@@ -36,7 +36,7 @@ const navItems = [
             href: "/services/app-store-seo",
             isActive: false,
           },
-          { label: "SEO Reseller Service", href: "/services/seo-reseller" },
+          { label: "SEO Reseller Service", href: "/services/seo-reseller-service" },
           {
             label: "White Label SEO Service",
             href: "/services/white-label-seo",
@@ -210,7 +210,7 @@ const navItems = [
     ],
   },
   // {name: "Dropshipping", href: "/dropshipping"},
-  { name: "About", href: "/about" },
+  { name: "About", href: "/about-us" },
   { name: "Testimonials", href: "/testimonials" },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blog" },

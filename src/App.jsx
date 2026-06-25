@@ -35,7 +35,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about-us" element={<About />} />
         <Route path="/dropshipping" element={<Dropshipping />} />
         <Route path="/pricing/ai-powered-seo" element={<SeoPackages />} />
         <Route path="/pricing/smo" element={<SmoPackages />} />

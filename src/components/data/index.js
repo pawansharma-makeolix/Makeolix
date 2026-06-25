@@ -20,7 +20,7 @@ export const ServicesPagesData = {
   "e-commerce-seo": ecommerceSeoData,
   "technical-seo" : technicalSeo,
   "white-label-seo": whitelabelseo,
-  "seo-reseller" : seoResellerData,
+  "seo-reseller-service" : seoResellerData,
   "local-seo" : localSeoData,
   "ppc-ads" : PpcAdsData,
   "performance-marketing" : PerformanceMarketingData,
