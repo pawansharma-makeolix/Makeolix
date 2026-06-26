@@ -1,3 +1,5 @@
+import { text } from "framer-motion/client";
+
 export const BlogData = {
   "how-do-i-choose-the-best-seo": {
     sections: [
@@ -1417,6 +1419,305 @@ export const BlogData = {
 
       buttonText: "Read More",
       buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+      buttonVariant: "",
+    },
+       {
+      slug: "want-more-traffic-sales",
+      image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+      description:
+        "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+      buttonText: "Read More",
+      buttonHref: "/blog/want-more-traffic-sales",
+      buttonVariant: "",
+    },
+      {
+      slug: "how-do-i-choose-the-best-seo",
+      image: "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
+      description:
+        "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
+      buttonText: "Read More",
+      buttonHref: "/blog/how-do-i-choose-the-best-seo",
+      buttonVariant: "",
+    },
+    ],
+  },
+
+
+
+
+
+
+
+
+
+
+   "top-7-best-wordpress-web-development-companies-in-2026": {
+    sections: [
+      {
+        type: "hero",
+        data: {
+          title:
+            "Top 7 Best WordPress Web Development Companies in 2026 ",
+        },
+      },
+      {
+        type: "blogcontent",
+        data: {
+          blocks: [
+            {
+              type: "image",
+              src: "/domenico-loia-hGV2TfOh0ns-unsplash1 (1).webp",
+              alt: "desc",
+            },
+            {
+              type: "para",
+              text: "Finding the best WordPress web development company in India is no longer just about building a website. It is about finding a technical partner who understands performance, search visibility, and long-term scalability.",
+            },
+            {
+              type: "para",
+              text: "WordPress dominates the web, powering more than 40% of all websites and close to 60% of CMS-driven sites. But running on the most popular platform does not guarantee results. Poorly built WordPress sites load slowly, rank badly, and lose customers before they ever read a single line of your content.",
+            },
+            
+
+            {
+              type: "para",
+              text: "The companies on this list were evaluated on five criteria: technical depth, portfolio quality, client reviews, post-launch support, and value for the investment. Whether you need a startup site, a WooCommerce store, or an enterprise-level platform, this guide will help you make a confident, informed decision.",
+            },
+            {
+              type: "h2",
+              text: "What is a WordPress Development Agency and What Services Should It Offer?",
+            },
+            {
+              type: "para",
+              text: "A WordPress development agency is a team of developers, designers, and strategists that builds and maintains websites on the WordPress CMS. The right agency goes far beyond installing a theme.",
+            },
+              {
+              type: "list",
+              heading: "Services you should expect from a full-service WordPress development agency include:",
+              items: [
+                "Custom WordPress theme development tailored to your brand, not a template",
+                "Plugin development and integration for specific business functionality",
+                "WooCommerce development for eCommerce stores with complex product catalogs",
+                "WordPress maintenance services covering security updates, backups, and performance monitoring",
+                "Technical SEO implementation including schema markup, Core Web Vitals optimization, and site speed tuning",
+                "Headless WordPress development using React or Next.js for high-traffic content platforms",
+              ],
+            },
+            {
+              type: "para",
+              text: 'The best WordPress website designers combine all of the above under one roof, which eliminates the handoff problems that plague multi-vendor setups.',
+            },
+{
+
+  type: "h2",
+  text :"Quick Comparison: Top WordPress Development Companies in 2026"
+},
+ {
+              type: "para",
+              text: "Before diving into the detailed reviews, here's a quick comparison of the leading WordPress development companies in 2026 and the types of businesses they serve best.",
+            },
+{
+  type: "table",
+  data: {
+    headers: ["Company", "Best For"],
+    rows: [
+      ["MakeOlix", "SMBs & Growth Marketing"],
+      ["10up", "Enterprise Publishing"],
+      ["Multidots", "Enterprise WordPress & Migrations"],
+      ["WPWeb Infotech", "Custom Plugin Development & Integrations"],
+      ["Mavlers", "Mid-Market Brands"],
+      ["HUEMOR", "Conversion-Focused Websites"],
+      ["WebDevStudios", "Long-Term Enterprise Partnerships"],
+    ],
+  },
+},
+
+
+          
+            {
+              type: "h2",
+              text: "7 Leading WordPress Development Companies in 2026 ",
+            },
+
+          
+            {
+              type: "steps",
+              items: [
+                {
+                  title: "10up",
+                  description:
+                    "Best for: Large media companies, publishers, and enterprise brands needing high-traffic WordPress platforms. 10up is a leading WordPress agency and a WordPress VIP Gold Partner, known for building high-performance custom WordPress solutions. They specialize in multisite networks, headless architecture, and optimizing large-scale websites that handle millions of visitors. Best fit: Enterprise content teams with complex publishing workflows and six-figure development budgets.",
+                },
+                {
+                  title: "MakeOlix Consulting",
+                  description:
+                    'Best for: SMBs, startups, and growing brands in India, the USA, the UK, and the Middle East seeking an integrated WordPress and digital marketing partner. At MakeOlix, we have built our WordPress practice around one belief: a website should be a revenue engine, not a digital brochure. Founded in 2022 and headquartered in Noida, we have partnered with over 1,000 brands across four countries to deliver custom WordPress websites that rank, convert, and scale. What sets us apart from other WordPress web development companies in India is our integrated model. We combine Custom WordPress Development with Technical SEO, Performance Marketing, and ongoing WordPress maintenance services under one roof.  Our clients do not need to manage five vendors to get one result. We handle the full lifecycle: discovery, design, development, deployment, and post-launch optimization. Our WordPress development work spans service websites, WooCommerce stores, and CMS-driven content platforms. We are one of the top website design companies for WordPress in Noida and one of the few agencies in India that delivers to US-level delivery standards on Indian-scale economics. Key services: Custom WordPress development, WordPress theme customization services, WooCommerce development, technical SEO integration, performance marketing, WordPress maintenance services. Headquarters: Noida, India (also registered in Delaware, USA) ',
+                },
+                {
+                  title: "Multidots",
+                  description:
+                    "Best for: Enterprises focused on WooCommerce and large-scale content publishing.Multidots has worked with major enterprise publishing, media, and digital brands and is recognized as a WordPress VIP Gold Partner specializing in migrations, enterprise WordPress, and WooCommerce solutions. Best fit: Mid-market to enterprise brands with WooCommerce stores and heavy content operations. Your “Google Business Profile” must be alive. Post daily updates, respond to every review, and add high-resolution videos of your team at work. In 2026, search engines favor profiles that show high levels of engagement and recent activity.  By treating your profile like a social media feed, you prove that your business is active and ready to serve new customers immediately.",
+                },
+                {
+                  title: "WPWeb Infotech",
+                  description:
+                    'Best for: Medium to large enterprises needing complex third-party integrations and custom plugin development. WPWeb Infotech specializes in custom WordPress development, plugin engineering, and complex integrations. They help businesses build scalable, tailored solutions and offer both project-based and long-term development support, making them a flexible option for enterprises seeking dedicated WordPress expertise. Best fit: Indian enterprises and mid-market companies with technically complex integration requirements.',
+                },
+                {
+                  title: "Mavlers",
+                  description:
+                    "Best for: Brands that need transparent project management and AI-enhanced WordPress development. Mavlers is a WordPress development agency known for transparent project management and reliable delivery. They offer custom WordPress development, WooCommerce solutions, maintenance, and AI-assisted workflows to improve efficiency and code quality. Best fit: Businesses that have been burned by communication failures with other agencies and want structured, accountable delivery.",
+                },
+                {
+                  title: "HUEMOR (USA)",
+                  description:
+                    "Best for: Consumer-facing brands focused on conversion rate optimization and user experience. HUEMOR is a US-based WordPress agency known for building conversion-focused websites that improve the customer journey and user experience. They specialize in custom WordPress development, UX strategy, messaging, and conversion-focused website design to help businesses increase conversions and maximize website performance. Best fit: Direct-to-consumer brands and SaaS companies with strong traffic but underperforming conversion rates.",
+                },
+                {
+                  title: "WebDevStudios (USA)",
+                  description:
+                    "Best for: Businesses that need a family-owned, full-service agency with a long track record on complex WordPress builds. WebDevStudios has more than 15 years of experience building custom WordPress solutions and is widely recognized within the WordPress community for enterprise development and platform expertise.  Best fit: Organizations that want a long-term agency partner with a stable, senior team and an investment in the WordPress community.",
+                },
+              
+               
+              ],
+            },
+            
+            {
+              type: "h2",
+              text: "How to Choose the Best WordPress Development Company in India",
+            },
+            {
+              
+              type: "para",
+              text : "Use this framework before you sign any proposal:"
+            },
+            {
+              type: "steps",
+              items: [
+                {
+                  title: "Match The Agency Tier To Your Project Size",
+                  description:
+                  "A boutique agency in Noida is the right call for a 20-page service website. An enterprise agency like 10up is only justified when your traffic exceeds millions of monthly visits, or your content operations run at media-company scale.",
+                },
+                {
+                  title: "Check Core Web Vitals on Sites They Have Already Built",
+                  description:
+                  "Run any agency's portfolio URLs through Google PageSpeed Insights. If their delivered sites score below 80 on mobile performance, that is a red flag regardless of what their pitch deck says.",
+                },
+                {
+                  title: "Ask Specifically About Post-Launch WordPress Maintenance Services",
+                  description:
+                    "Most agencies are happy to build. Fewer have structured retainer programs for security patching, plugin updates, and uptime monitoring. Post-launch neglect is how WordPress sites get hacked and de-indexed.",
+                },
+                {
+                  title: "Understand the Wordpress Vip Tier Before Assuming You Need It",
+                  description:
+                    'WordPress VIP Gold and Silver partnerships signal technical rigor, but VIP-hosted infrastructure starts at approximately $25,000 per year. For most Indian SMBs and startups, a technically skilled non-VIP agency on managed hosting delivers equivalent outcomes at a fraction of the cost.',
+                  },
+                  {
+                    title: "Request a Methodology, Not Just A Portfolio",
+                    description:
+                    "Ask how they handle Core Web Vitals, how they structure their development sprints, and what their handoff process looks like. Agencies that cannot answer these questions specifically are likely reselling offshore work without internal quality control.",
+                  },
+                  
+                  
+                  
+                ],
+              },
+              
+              {
+                type: "h2",
+                text: "Is WordPress Still the Best CMS Choice in 2026?",
+              },
+              {
+                type: "para",
+                text: 'Yes. WordPress remains the best choice for the majority of business websites in 2026. WordPress powers approximately 41-43% of all websites on the internet, making it the most widely used CMS globally, according to W3Techs. ',
+              },
+              {
+                type: "para",
+                text: 'The plugin ecosystem includes over 59,000 active plugins. The block editor (Gutenberg) has matured significantly, giving content teams the editorial flexibility previously reserved for custom CMS builds. And headless WordPress, using WordPress as a backend API with a React or Next.js frontend, now makes enterprise-grade architecture accessible to mid-market businesses.',
+              },
+              {
+                type: "para",
+                text: "For companies looking to rank on Google, the combination of WordPress's SEO-friendly architecture and a technically skilled WordPress development agency in Noida or Delhi NCR remains one of the most cost-efficient digital strategies available. ",
+              },
+              {
+                type: "para",
+                text: "If you are also building out your organic presence alongside your WordPress site, Makeolix’s Small Business SEO Services are designed to work in step with your development roadmap.",
+              },
+              {
+                type: "h2",
+                text: "Conclusion: Find the Right WordPress Partner Before You Build",
+              },
+           
+            {
+                type: "para",
+                text: "The best WordPress web development company in India is not the one with the most awards or the longest agency page. It is the one that understands your business goals, builds to performance standards, and stays accountable after launch.",
+              },
+            {
+                type: "para",
+                text: "If you are ready to build a WordPress site that ranks and converts, Reach Out to the MakeOlix team today. We will map your goals, scope your project honestly, and deliver a WordPress website that earns its place as your hardest-working business asset.",
+              },
+          ],
+        },
+      },
+      
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question:
+                "What is the cost of WordPress website development? ",
+              answer:
+                "Basic service websites typically start between $500 and $2,500. Custom mid-market WordPress sites range from $3,000 to $10,000 depending on design complexity, number of pages, and required functionality. Enterprise-level builds with WooCommerce or headless architecture can run $15,000 and above.",
+            },
+            {
+              id: 2,
+              question:
+                "What are WordPress theme customization services? ",
+              answer:
+                "WordPress theme customization services involve modifying an existing theme's code, layout, and design to match your brand identity and functional requirements. Custom-tailored themes load faster and convert better than out-of-the-box alternatives because they carry only the code your site actually needs. ",
+            },
+            {
+              id: 3,
+              question:
+                "Which is the best WordPress development company in Noida? ",
+              answer:
+                "MakeOlix, headquartered in Noida, is one of the top WordPress website design companies in the Delhi-NCR region, offering end-to-end WordPress development, SEO integration, and WordPress maintenance services.",
+            },
+            {
+              id: 4,
+              question:
+                "How long does a WordPress website take to build? ",
+              answer:
+                "A standard service website takes 3 to 5 weeks. A custom mid-market build with WooCommerce integration typically takes 8 to 14 weeks. Enterprise WordPress projects can run 3 to 6 months depending on scope.",
+
+            },
+            {
+              id: 5,
+              question: "Can a WordPress development agency also handle SEO? ",
+              answer:
+                "Yes, and ideally it should. The best WordPress website designers integrate on-page SEO, schema markup, and Core Web Vitals optimization into the development process rather than treating SEO as an afterthought. ",
+            },
+          ],
+        },
+      },
+      
+    
+    ],
+    
+    relatedblogs: [
+    {
+      slug: "local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
+      image: "/10-Best-E-Commerce-SEO-Services-Agencies-to-Grow-Your-Revenue-in-2026 (1).webp",
+      description:
+        "Local SEO Services: 9 Best Ways to Increase Online Visibility in 2026",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
       buttonVariant: "",
     },
        {

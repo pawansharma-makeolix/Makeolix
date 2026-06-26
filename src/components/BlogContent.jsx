@@ -342,6 +342,7 @@ const BlogContent = ({ blocks = [] }) => {
       <div className="max-w-3xl mx-auto">
         {blocks.map((block, i) => {
           switch (block.type) {
+            
             case "h2":
               return <H2Block key={i} text={block.text} index={i} />;
 
@@ -393,10 +394,67 @@ const BlogContent = ({ blocks = [] }) => {
 
             case "quote":
               return <QuoteBlock key={i} text={block.text} index={i} />;
+case "table":
+  return (
+    <div key={i} className="overflow-x-auto my-8">
+
+      <table 
+        className="w-full border-collapse"
+        style={{
+          border: "1px solid rgba(255,255,255,0.2)"
+        }}
+      >
+
+        <thead>
+          <tr>
+            {block.data.headers.map((head,index)=>(
+              <th
+                key={index}
+                className="px-4 py-3 text-left font-bold"
+                style={{
+                  border: "1px solid rgba(255,255,255,0.2)",
+                  color:"#ffffff"
+                }}
+              >
+                {head}
+              </th>
+            ))}
+          </tr>
+        </thead>
+
+
+        <tbody>
+
+          {block.data.rows.map((row,index)=>(
+            <tr key={index}>
+
+              {row.map((cell,i)=>(
+                <td
+                  key={i}
+                  className="px-4 py-3"
+                  style={{
+                    border:"1px solid rgba(255,255,255,0.2)",
+                    color:"var(--text-muted)"
+                  }}
+                >
+                  {cell}
+                </td>
+              ))}
+
+            </tr>
+          ))}
+
+        </tbody>
+
+      </table>
+
+    </div>
+  );
 
             default:
               return null;
           }
+          
         })}
       </div>
     </section>

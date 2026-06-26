@@ -9,6 +9,36 @@ import BlogContent from "../components/BlogContent";
 const Blog = () => {
   const blogsData = [
     {
+      slug: "top-7-best-wordpress-web-development-companies-in-2026 ",
+      image: "/domenico-loia-hGV2TfOh0ns-unsplash1 (1).webp",
+      description:
+        "Top 7 Best WordPress Web Development Companies in 2026 ",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/top-7-best-wordpress-web-development-companies-in-2026 ",
+      buttonVariant: "",
+    },
+     {
+      slug: "local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
+      image: "/10-Best-E-Commerce-SEO-Services-Agencies-to-Grow-Your-Revenue-in-2026 (1).webp",
+      description:
+        "Local SEO Services: 9 Best Ways to Increase Online Visibility in 2026",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
+      buttonVariant: "",
+    },
+    {
+      slug: "10-best-e-commerce-seo-services-agencies",
+      image: "/blog-image-16-6-2026 (1).webp",
+      description:
+        "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+      buttonVariant: "",
+    },
+    {
       slug: "how-do-i-choose-the-best-seo",
       image: "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
       description:
@@ -55,26 +85,8 @@ const Blog = () => {
       buttonHref: "/blog/the-role-of-an-seo-company",
       buttonVariant: "",
     },
-    {
-      slug: "10-best-e-commerce-seo-services-agencies",
-      image: "/blog-image-16-6-2026 (1).webp",
-      description:
-        "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
-      buttonVariant: "",
-    },
-    {
-      slug: "local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
-      image: "/10-Best-E-Commerce-SEO-Services-Agencies-to-Grow-Your-Revenue-in-2026 (1).webp",
-      description:
-        "Local SEO Services: 9 Best Ways to Increase Online Visibility in 2026",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
-      buttonVariant: "",
-    },
+    
+   
   ];
   return (
     <>
