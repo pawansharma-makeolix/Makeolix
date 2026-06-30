@@ -1781,6 +1781,12 @@ metaDescription:
             {
               type: "para",
               text: "Unlike a traditional marketing firm that charges for creative work or brand awareness, a digital performance marketing agency is accountable to ROI at every stage of the funnel. This model originated with Pay-per-click (PPC) advertising, where advertisers only pay when a user takes a specific action. That core principle now extends across every paid channel. At MakeOlix, this philosophy sits at the center of every campaign we run. We do not optimize for impressions. We optimize for outcomes.",
+              links:[
+ {
+   word:"Pay-per-click",
+   url:"https://en.wikipedia.org/wiki/Pay-per-click"
+ }
+]
             },
             {
               type: "h2",
@@ -1903,6 +1909,12 @@ metaDescription:
             {
               type: "para",
               text: "At MakeOlix, our Performance Marketing Services are designed to deliver precisely that short-term paid results layered on top of a long-term digital foundation.",
+              links:[
+ {
+   word:"Performance Marketing Services",
+   url:"https://makeolix.com/services/performance-marketing/"
+ }
+]
             },
 
             {
@@ -1955,6 +1967,12 @@ metaDescription:
             {
               type: "para",
               text: "If you need both, look for an agency that integrates performance marketing with SEO and Content under one roof. That alignment prevents the attribution gaps that occur when your paid and organic teams are not talking to each other.",
+              links:[
+ {
+   word:"SEO and Content",
+   url:"https://makeolix.com/services/small-business-seo"
+ }
+]
             },
             {
               type: "h2",
@@ -2054,6 +2072,12 @@ metaDescription:
             {
               type: "para",
               text: "Ready to see what data-driven performance marketing looks like for your business? Get in touch with MakeOlix today for a free strategy consultation.",
+              links:[
+ {
+   word:"Get in touch with MakeOlix",
+   url:"https://makeolix.com/contact-us"
+ }
+]
             },
           ],
         },

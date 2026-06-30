@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { Link } from "react-router-dom";
 
 // ── Animation Variants ──────────────────────────────────────────────
 const fadeUp = {
@@ -9,6 +10,53 @@ const fadeUp = {
     y: 0,
     transition: { duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] },
   }),
+};
+
+const RenderTextWithLinks = ({ text, links = [] }) => {
+
+  let content = [text];
+
+  links.forEach((link) => {
+
+    content = content.flatMap((part) => {
+
+      if (typeof part !== "string") {
+        return part;
+      }
+
+      const splitText = part.split(link.word);
+
+      return splitText.flatMap((item, index) => {
+
+        if(index !== splitText.length - 1){
+
+          return [
+            item,
+            <Link
+              key={index}
+              to={link.url}
+              style={{
+                color:"#118ab2",
+                textDecoration:"underline"
+              }}
+            >
+              {link.word}
+            </Link>
+          ];
+
+        }
+
+        return item;
+
+      });
+
+    });
+
+  });
+
+
+  return content;
+
 };
 
 const fadeIn = {
@@ -89,13 +137,16 @@ const H3Block = ({ text, index }) => (
   </ScrollReveal>
 );
 
-const ParaBlock = ({ text, index }) => (
+const ParaBlock = ({ text, index,links }) => (
   <ScrollReveal custom={index} className="mb-5">
     <p
       className="text-base leading-relaxed"
       style={{ color: "var(--text-muted)" }}
     >
-      {text}
+     <RenderTextWithLinks 
+   text={text}
+   links={links}
+/>
     </p>
   </ScrollReveal>
 );
@@ -349,8 +400,15 @@ const BlogContent = ({ blocks = [] }) => {
             case "h3":
               return <H3Block key={i} text={block.text} index={i} />;
 
-            case "para":
-              return <ParaBlock key={i} text={block.text} index={i} />;
+          case "para":
+ return (
+   <ParaBlock
+     key={i}
+     text={block.text}
+     links={block.links}
+     index={i}
+   />
+ );
 
             case "boldpara":
               return (
