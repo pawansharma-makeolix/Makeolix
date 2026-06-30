@@ -970,6 +970,12 @@ export const BlogData = {
     ],
   },
   "10-best-e-commerce-seo-services-agencies": {
+    metaTitle:
+"Best E-Commerce SEO Services Agency | E-commerce SEO Experts",
+
+metaDescription:
+"Boost your online store with expert E-commerce Search Engine Optimization. Our best E-Commerce SEO services agency helps increase rankings, traffic, and sales.",
+
     sections: [
       {
         type: "hero",
@@ -1216,6 +1222,12 @@ export const BlogData = {
     ],
   },
   "local-seo-services-9-best-ways-to-increase-online-visibility-in-2026": {
+    metaTitle:
+"SEO Agency Services | Grow Rankings & Organic Traffic",
+
+metaDescription:
+"Partner with a trusted SEO agency for data-driven SEO services that improve search rankings, drive targeted traffic, and maximize your business growth.",
+
     sections: [
       {
         type: "hero",
@@ -1323,16 +1335,15 @@ export const BlogData = {
                   description:
                     "In 2026, almost all local searches happen on mobile devices while people are on the move. Your website must be designed for the thumb and the small screen first, rather than being a shrunk-down version of a desktop site. ",
                 },
-               
               ],
             },
-             {
+            {
               type: "para",
-              text: 'To make these strategies work, your foundation must be strong. This includes Technical SEO Services to ensure search bots can actually read your local data. Without the right technical setup, even the best content will stay hidden. ',
+              text: "To make these strategies work, your foundation must be strong. This includes Technical SEO Services to ensure search bots can actually read your local data. Without the right technical setup, even the best content will stay hidden. ",
             },
-             {
+            {
               type: "para",
-              text: 'Want to go deeper on e-commerce growth? Read our blog: Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India.',
+              text: "Want to go deeper on e-commerce growth? Read our blog: Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India.",
             },
             {
               type: "h2",
@@ -1340,30 +1351,29 @@ export const BlogData = {
             },
             {
               type: "para",
-              text: 'Many business owners try to do this alone until they realize that Search Engine Optimization is a full-time job. You should consider professional help when your growth plateaus or when you find yourself buried on page two of the results. Working with a dedicated SEO Services Company in India can offer you a massive advantage. You get world-class talent and AI-powered strategies at a price point that makes sense for a growing brand. ',
+              text: "Many business owners try to do this alone until they realize that Search Engine Optimization is a full-time job. You should consider professional help when your growth plateaus or when you find yourself buried on page two of the results. Working with a dedicated SEO Services Company in India can offer you a massive advantage. You get world-class talent and AI-powered strategies at a price point that makes sense for a growing brand. ",
             },
             {
               type: "para",
-              text: 'At Makeolix, we bridge the gap between global expertise and local needs. We understand that a business in Seattle has different needs than one in Toronto, and our team of 150 specialists knows how to tailor those strategies.',
+              text: "At Makeolix, we bridge the gap between global expertise and local needs. We understand that a business in Seattle has different needs than one in Toronto, and our team of 150 specialists knows how to tailor those strategies.",
             },
             {
               type: "para",
-              text: 'Whether you need general SEO Agency Services or you are running a niche store and need an E-commerce SEO Agency, the goal is the same: clarity and results. If you are struggling to move the needle, it might be time to contact us for a personalized audit of your current system.',
+              text: "Whether you need general SEO Agency Services or you are running a niche store and need an E-commerce SEO Agency, the goal is the same: clarity and results. If you are struggling to move the needle, it might be time to contact us for a personalized audit of your current system.",
             },
-           
+
             {
               type: "h2",
               text: "The Future of Local Growth",
             },
             {
               type: "para",
-              text: 'Getting found online is not about luck. It is about putting the right signals in the right places so Google can connect you with the people already looking for what you offer. Local SEO services work because they focus on relevance, proximity, and trust. When all three are in place, your business shows up at the moment it matters most.',
+              text: "Getting found online is not about luck. It is about putting the right signals in the right places so Google can connect you with the people already looking for what you offer. Local SEO services work because they focus on relevance, proximity, and trust. When all three are in place, your business shows up at the moment it matters most.",
             },
             {
               type: "para",
-              text: 'If you are looking for a results-driven team that understands both local markets and digital growth, MakeOlix Consulting offers full-scale SEO solutions designed for businesses that want real, measurable outcomes. From technical audits to content strategy, our team at MakeOlix builds visibility that lasts.',
+              text: "If you are looking for a results-driven team that understands both local markets and digital growth, MakeOlix Consulting offers full-scale SEO solutions designed for businesses that want real, measurable outcomes. From technical audits to content strategy, our team at MakeOlix builds visibility that lasts.",
             },
-           
           ],
         },
       },
@@ -1373,15 +1383,13 @@ export const BlogData = {
           faqdata: [
             {
               id: 1,
-              question:
-                "What are local SEO services and how do they work?",
+              question: "What are local SEO services and how do they work?",
               answer:
                 "Local SEO services improve your business's visibility in location-based search results. They work by optimizing your Google Business Profile, building local citations, creating location-specific pages, and fixing technical issues so search engines can connect you with nearby customers.",
             },
             {
               id: 2,
-              question:
-                "How long does it take to see results from local SEO?",
+              question: "How long does it take to see results from local SEO?",
               answer:
                 "Most businesses start seeing measurable improvements in 3 to 6 months. Results depend on your current site health, competition in your area, and how consistently you apply local SEO strategies like review building and content updates.",
             },
@@ -1394,11 +1402,9 @@ export const BlogData = {
             },
             {
               id: 4,
-              question:
-                "Why is my business not showing up in Google Maps?",
+              question: "Why is my business not showing up in Google Maps?",
               answer:
                 "The most common reasons are an unclaimed or incomplete Google Business Profile, inconsistent NAP information across directories, low review volume, or technical errors on your website that prevent Google from reading your local data.An agency is better for large-scale projects requiring multiple skill sets. A consultant is often better for smaller businesses or specific projects where you need deep, personalized expertise and direct communication with the person doing the work.",
-
             },
             {
               id: 5,
@@ -1412,52 +1418,49 @@ export const BlogData = {
     ],
     relatedblogs: [
       {
-      slug: "10-best-e-commerce-seo-services-agencies",
-      image: "/blog-image-16-6-2026 (1).webp",
-      description:
-        "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
+        slug: "10-best-e-commerce-seo-services-agencies",
+        image: "/blog-image-16-6-2026 (1).webp",
+        description:
+          "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
 
-      buttonText: "Read More",
-      buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
-      buttonVariant: "",
-    },
-       {
-      slug: "want-more-traffic-sales",
-      image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
-      description:
-        "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
-      buttonText: "Read More",
-      buttonHref: "/blog/want-more-traffic-sales",
-      buttonVariant: "",
-    },
+        buttonText: "Read More",
+        buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+        buttonVariant: "",
+      },
       {
-      slug: "how-do-i-choose-the-best-seo",
-      image: "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
-      description:
-        "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
-      buttonText: "Read More",
-      buttonHref: "/blog/how-do-i-choose-the-best-seo",
-      buttonVariant: "",
-    },
+        slug: "want-more-traffic-sales",
+        image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+        description:
+          "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+        buttonText: "Read More",
+        buttonHref: "/blog/want-more-traffic-sales",
+        buttonVariant: "",
+      },
+      {
+        slug: "how-do-i-choose-the-best-seo",
+        image:
+          "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
+        description:
+          "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
+        buttonText: "Read More",
+        buttonHref: "/blog/how-do-i-choose-the-best-seo",
+        buttonVariant: "",
+      },
     ],
   },
 
+  "top-7-best-wordpress-web-development-companies-in-2026": {
+    metaTitle:
+"WordPress Development Agency | Custom WP Solutions | Makeolix",
 
+metaDescription:
+"Makeolix is a trusted WordPress development agency offering custom website development, plugin integration, theme customization, and ongoing support.",
 
-
-
-
-
-
-
-
-   "top-7-best-wordpress-web-development-companies-in-2026": {
     sections: [
       {
         type: "hero",
         data: {
-          title:
-            "Top 7 Best WordPress Web Development Companies in 2026 ",
+          title: "Top 7 Best WordPress Web Development Companies in 2026 ",
         },
       },
       {
@@ -1477,7 +1480,6 @@ export const BlogData = {
               type: "para",
               text: "WordPress dominates the web, powering more than 40% of all websites and close to 60% of CMS-driven sites. But running on the most popular platform does not guarantee results. Poorly built WordPress sites load slowly, rank badly, and lose customers before they ever read a single line of your content.",
             },
-            
 
             {
               type: "para",
@@ -1491,9 +1493,10 @@ export const BlogData = {
               type: "para",
               text: "A WordPress development agency is a team of developers, designers, and strategists that builds and maintains websites on the WordPress CMS. The right agency goes far beyond installing a theme.",
             },
-              {
+            {
               type: "list",
-              heading: "Services you should expect from a full-service WordPress development agency include:",
+              heading:
+                "Services you should expect from a full-service WordPress development agency include:",
               items: [
                 "Custom WordPress theme development tailored to your brand, not a template",
                 "Plugin development and integration for specific business functionality",
@@ -1505,41 +1508,40 @@ export const BlogData = {
             },
             {
               type: "para",
-              text: 'The best WordPress website designers combine all of the above under one roof, which eliminates the handoff problems that plague multi-vendor setups.',
+              text: "The best WordPress website designers combine all of the above under one roof, which eliminates the handoff problems that plague multi-vendor setups.",
             },
-{
-
-  type: "h2",
-  text :"Quick Comparison: Top WordPress Development Companies in 2026"
-},
- {
+            {
+              type: "h2",
+              text: "Quick Comparison: Top WordPress Development Companies in 2026",
+            },
+            {
               type: "para",
               text: "Before diving into the detailed reviews, here's a quick comparison of the leading WordPress development companies in 2026 and the types of businesses they serve best.",
             },
-{
-  type: "table",
-  data: {
-    headers: ["Company", "Best For"],
-    rows: [
-      ["MakeOlix", "SMBs & Growth Marketing"],
-      ["10up", "Enterprise Publishing"],
-      ["Multidots", "Enterprise WordPress & Migrations"],
-      ["WPWeb Infotech", "Custom Plugin Development & Integrations"],
-      ["Mavlers", "Mid-Market Brands"],
-      ["HUEMOR", "Conversion-Focused Websites"],
-      ["WebDevStudios", "Long-Term Enterprise Partnerships"],
-    ],
-  },
-},
+            {
+              type: "table",
+              data: {
+                headers: ["Company", "Best For"],
+                rows: [
+                  ["MakeOlix", "SMBs & Growth Marketing"],
+                  ["10up", "Enterprise Publishing"],
+                  ["Multidots", "Enterprise WordPress & Migrations"],
+                  [
+                    "WPWeb Infotech",
+                    "Custom Plugin Development & Integrations",
+                  ],
+                  ["Mavlers", "Mid-Market Brands"],
+                  ["HUEMOR", "Conversion-Focused Websites"],
+                  ["WebDevStudios", "Long-Term Enterprise Partnerships"],
+                ],
+              },
+            },
 
-
-          
             {
               type: "h2",
               text: "7 Leading WordPress Development Companies in 2026 ",
             },
 
-          
             {
               type: "steps",
               items: [
@@ -1551,7 +1553,7 @@ export const BlogData = {
                 {
                   title: "MakeOlix Consulting",
                   description:
-                    'Best for: SMBs, startups, and growing brands in India, the USA, the UK, and the Middle East seeking an integrated WordPress and digital marketing partner. At MakeOlix, we have built our WordPress practice around one belief: a website should be a revenue engine, not a digital brochure. Founded in 2022 and headquartered in Noida, we have partnered with over 1,000 brands across four countries to deliver custom WordPress websites that rank, convert, and scale. What sets us apart from other WordPress web development companies in India is our integrated model. We combine Custom WordPress Development with Technical SEO, Performance Marketing, and ongoing WordPress maintenance services under one roof.  Our clients do not need to manage five vendors to get one result. We handle the full lifecycle: discovery, design, development, deployment, and post-launch optimization. Our WordPress development work spans service websites, WooCommerce stores, and CMS-driven content platforms. We are one of the top website design companies for WordPress in Noida and one of the few agencies in India that delivers to US-level delivery standards on Indian-scale economics. Key services: Custom WordPress development, WordPress theme customization services, WooCommerce development, technical SEO integration, performance marketing, WordPress maintenance services. Headquarters: Noida, India (also registered in Delaware, USA) ',
+                    "Best for: SMBs, startups, and growing brands in India, the USA, the UK, and the Middle East seeking an integrated WordPress and digital marketing partner. At MakeOlix, we have built our WordPress practice around one belief: a website should be a revenue engine, not a digital brochure. Founded in 2022 and headquartered in Noida, we have partnered with over 1,000 brands across four countries to deliver custom WordPress websites that rank, convert, and scale. What sets us apart from other WordPress web development companies in India is our integrated model. We combine Custom WordPress Development with Technical SEO, Performance Marketing, and ongoing WordPress maintenance services under one roof.  Our clients do not need to manage five vendors to get one result. We handle the full lifecycle: discovery, design, development, deployment, and post-launch optimization. Our WordPress development work spans service websites, WooCommerce stores, and CMS-driven content platforms. We are one of the top website design companies for WordPress in Noida and one of the few agencies in India that delivers to US-level delivery standards on Indian-scale economics. Key services: Custom WordPress development, WordPress theme customization services, WooCommerce development, technical SEO integration, performance marketing, WordPress maintenance services. Headquarters: Noida, India (also registered in Delaware, USA) ",
                 },
                 {
                   title: "Multidots",
@@ -1561,7 +1563,7 @@ export const BlogData = {
                 {
                   title: "WPWeb Infotech",
                   description:
-                    'Best for: Medium to large enterprises needing complex third-party integrations and custom plugin development. WPWeb Infotech specializes in custom WordPress development, plugin engineering, and complex integrations. They help businesses build scalable, tailored solutions and offer both project-based and long-term development support, making them a flexible option for enterprises seeking dedicated WordPress expertise. Best fit: Indian enterprises and mid-market companies with technically complex integration requirements.',
+                    "Best for: Medium to large enterprises needing complex third-party integrations and custom plugin development. WPWeb Infotech specializes in custom WordPress development, plugin engineering, and complex integrations. They help businesses build scalable, tailored solutions and offer both project-based and long-term development support, making them a flexible option for enterprises seeking dedicated WordPress expertise. Best fit: Indian enterprises and mid-market companies with technically complex integration requirements.",
                 },
                 {
                   title: "Mavlers",
@@ -1578,19 +1580,16 @@ export const BlogData = {
                   description:
                     "Best for: Businesses that need a family-owned, full-service agency with a long track record on complex WordPress builds. WebDevStudios has more than 15 years of experience building custom WordPress solutions and is widely recognized within the WordPress community for enterprise development and platform expertise.  Best fit: Organizations that want a long-term agency partner with a stable, senior team and an investment in the WordPress community.",
                 },
-              
-               
               ],
             },
-            
+
             {
               type: "h2",
               text: "How to Choose the Best WordPress Development Company in India",
             },
             {
-              
               type: "para",
-              text : "Use this framework before you sign any proposal:"
+              text: "Use this framework before you sign any proposal:",
             },
             {
               type: "steps",
@@ -1598,86 +1597,84 @@ export const BlogData = {
                 {
                   title: "Match The Agency Tier To Your Project Size",
                   description:
-                  "A boutique agency in Noida is the right call for a 20-page service website. An enterprise agency like 10up is only justified when your traffic exceeds millions of monthly visits, or your content operations run at media-company scale.",
+                    "A boutique agency in Noida is the right call for a 20-page service website. An enterprise agency like 10up is only justified when your traffic exceeds millions of monthly visits, or your content operations run at media-company scale.",
                 },
                 {
-                  title: "Check Core Web Vitals on Sites They Have Already Built",
+                  title:
+                    "Check Core Web Vitals on Sites They Have Already Built",
                   description:
-                  "Run any agency's portfolio URLs through Google PageSpeed Insights. If their delivered sites score below 80 on mobile performance, that is a red flag regardless of what their pitch deck says.",
+                    "Run any agency's portfolio URLs through Google PageSpeed Insights. If their delivered sites score below 80 on mobile performance, that is a red flag regardless of what their pitch deck says.",
                 },
                 {
-                  title: "Ask Specifically About Post-Launch WordPress Maintenance Services",
+                  title:
+                    "Ask Specifically About Post-Launch WordPress Maintenance Services",
                   description:
                     "Most agencies are happy to build. Fewer have structured retainer programs for security patching, plugin updates, and uptime monitoring. Post-launch neglect is how WordPress sites get hacked and de-indexed.",
                 },
                 {
-                  title: "Understand the Wordpress Vip Tier Before Assuming You Need It",
+                  title:
+                    "Understand the Wordpress Vip Tier Before Assuming You Need It",
                   description:
-                    'WordPress VIP Gold and Silver partnerships signal technical rigor, but VIP-hosted infrastructure starts at approximately $25,000 per year. For most Indian SMBs and startups, a technically skilled non-VIP agency on managed hosting delivers equivalent outcomes at a fraction of the cost.',
-                  },
-                  {
-                    title: "Request a Methodology, Not Just A Portfolio",
-                    description:
+                    "WordPress VIP Gold and Silver partnerships signal technical rigor, but VIP-hosted infrastructure starts at approximately $25,000 per year. For most Indian SMBs and startups, a technically skilled non-VIP agency on managed hosting delivers equivalent outcomes at a fraction of the cost.",
+                },
+                {
+                  title: "Request a Methodology, Not Just A Portfolio",
+                  description:
                     "Ask how they handle Core Web Vitals, how they structure their development sprints, and what their handoff process looks like. Agencies that cannot answer these questions specifically are likely reselling offshore work without internal quality control.",
-                  },
-                  
-                  
-                  
-                ],
-              },
-              
-              {
-                type: "h2",
-                text: "Is WordPress Still the Best CMS Choice in 2026?",
-              },
-              {
-                type: "para",
-                text: 'Yes. WordPress remains the best choice for the majority of business websites in 2026. WordPress powers approximately 41-43% of all websites on the internet, making it the most widely used CMS globally, according to W3Techs. ',
-              },
-              {
-                type: "para",
-                text: 'The plugin ecosystem includes over 59,000 active plugins. The block editor (Gutenberg) has matured significantly, giving content teams the editorial flexibility previously reserved for custom CMS builds. And headless WordPress, using WordPress as a backend API with a React or Next.js frontend, now makes enterprise-grade architecture accessible to mid-market businesses.',
-              },
-              {
-                type: "para",
-                text: "For companies looking to rank on Google, the combination of WordPress's SEO-friendly architecture and a technically skilled WordPress development agency in Noida or Delhi NCR remains one of the most cost-efficient digital strategies available. ",
-              },
-              {
-                type: "para",
-                text: "If you are also building out your organic presence alongside your WordPress site, Makeolix’s Small Business SEO Services are designed to work in step with your development roadmap.",
-              },
-              {
-                type: "h2",
-                text: "Conclusion: Find the Right WordPress Partner Before You Build",
-              },
-           
+                },
+              ],
+            },
+
             {
-                type: "para",
-                text: "The best WordPress web development company in India is not the one with the most awards or the longest agency page. It is the one that understands your business goals, builds to performance standards, and stays accountable after launch.",
-              },
+              type: "h2",
+              text: "Is WordPress Still the Best CMS Choice in 2026?",
+            },
             {
-                type: "para",
-                text: "If you are ready to build a WordPress site that ranks and converts, Reach Out to the MakeOlix team today. We will map your goals, scope your project honestly, and deliver a WordPress website that earns its place as your hardest-working business asset.",
-              },
+              type: "para",
+              text: "Yes. WordPress remains the best choice for the majority of business websites in 2026. WordPress powers approximately 41-43% of all websites on the internet, making it the most widely used CMS globally, according to W3Techs. ",
+            },
+            {
+              type: "para",
+              text: "The plugin ecosystem includes over 59,000 active plugins. The block editor (Gutenberg) has matured significantly, giving content teams the editorial flexibility previously reserved for custom CMS builds. And headless WordPress, using WordPress as a backend API with a React or Next.js frontend, now makes enterprise-grade architecture accessible to mid-market businesses.",
+            },
+            {
+              type: "para",
+              text: "For companies looking to rank on Google, the combination of WordPress's SEO-friendly architecture and a technically skilled WordPress development agency in Noida or Delhi NCR remains one of the most cost-efficient digital strategies available. ",
+            },
+            {
+              type: "para",
+              text: "If you are also building out your organic presence alongside your WordPress site, Makeolix’s Small Business SEO Services are designed to work in step with your development roadmap.",
+            },
+            {
+              type: "h2",
+              text: "Conclusion: Find the Right WordPress Partner Before You Build",
+            },
+
+            {
+              type: "para",
+              text: "The best WordPress web development company in India is not the one with the most awards or the longest agency page. It is the one that understands your business goals, builds to performance standards, and stays accountable after launch.",
+            },
+            {
+              type: "para",
+              text: "If you are ready to build a WordPress site that ranks and converts, Reach Out to the MakeOlix team today. We will map your goals, scope your project honestly, and deliver a WordPress website that earns its place as your hardest-working business asset.",
+            },
           ],
         },
       },
-      
+
       {
         type: "faq",
         data: {
           faqdata: [
             {
               id: 1,
-              question:
-                "What is the cost of WordPress website development? ",
+              question: "What is the cost of WordPress website development? ",
               answer:
                 "Basic service websites typically start between $500 and $2,500. Custom mid-market WordPress sites range from $3,000 to $10,000 depending on design complexity, number of pages, and required functionality. Enterprise-level builds with WooCommerce or headless architecture can run $15,000 and above.",
             },
             {
               id: 2,
-              question:
-                "What are WordPress theme customization services? ",
+              question: "What are WordPress theme customization services? ",
               answer:
                 "WordPress theme customization services involve modifying an existing theme's code, layout, and design to match your brand identity and functional requirements. Custom-tailored themes load faster and convert better than out-of-the-box alternatives because they carry only the code your site actually needs. ",
             },
@@ -1690,11 +1687,9 @@ export const BlogData = {
             },
             {
               id: 4,
-              question:
-                "How long does a WordPress website take to build? ",
+              question: "How long does a WordPress website take to build? ",
               answer:
                 "A standard service website takes 3 to 5 weeks. A custom mid-market build with WooCommerce integration typically takes 8 to 14 weeks. Enterprise WordPress projects can run 3 to 6 months depending on scope.",
-
             },
             {
               id: 5,
@@ -1705,39 +1700,438 @@ export const BlogData = {
           ],
         },
       },
-      
-    
     ],
-    
-    relatedblogs: [
-    {
-      slug: "local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
-      image: "/10-Best-E-Commerce-SEO-Services-Agencies-to-Grow-Your-Revenue-in-2026 (1).webp",
-      description:
-        "Local SEO Services: 9 Best Ways to Increase Online Visibility in 2026",
 
-      buttonText: "Read More",
-      buttonHref: "/blog/local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
-      buttonVariant: "",
-    },
-       {
-      slug: "want-more-traffic-sales",
-      image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
-      description:
-        "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
-      buttonText: "Read More",
-      buttonHref: "/blog/want-more-traffic-sales",
-      buttonVariant: "",
-    },
+    relatedblogs: [
       {
-      slug: "how-do-i-choose-the-best-seo",
-      image: "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
-      description:
-        "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
-      buttonText: "Read More",
-      buttonHref: "/blog/how-do-i-choose-the-best-seo",
-      buttonVariant: "",
-    },
+        slug: "local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
+        image:
+          "/10-Best-E-Commerce-SEO-Services-Agencies-to-Grow-Your-Revenue-in-2026 (1).webp",
+        description:
+          "Local SEO Services: 9 Best Ways to Increase Online Visibility in 2026",
+
+        buttonText: "Read More",
+        buttonHref:
+          "/blog/local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
+        buttonVariant: "",
+      },
+      {
+        slug: "want-more-traffic-sales",
+        image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+        description:
+          "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+        buttonText: "Read More",
+        buttonHref: "/blog/want-more-traffic-sales",
+        buttonVariant: "",
+      },
+      {
+        slug: "how-do-i-choose-the-best-seo",
+        image:
+          "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
+        description:
+          "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
+        buttonText: "Read More",
+        buttonHref: "/blog/how-do-i-choose-the-best-seo",
+        buttonVariant: "",
+      },
+    ],
+  },
+
+  "what-does-a-performance-marketing-agency-in-india-do": {
+    metaTitle:
+"Performance Marketing Agency in India | PPC & Paid Marketing",
+
+metaDescription:
+"Grow your business with a leading performance marketing agency in India. We deliver PPC, paid performance marketing, and ROI-driven digital campaigns.",
+
+    sections: [
+      {
+        type: "hero",
+        data: {
+          title:
+            "What Does a Performance Marketing Agency in India Do? A 2026 Guide",
+        },
+      },
+      {
+        type: "blogcontent",
+        data: {
+          blocks: [
+            {
+              type: "image",
+              src: "/campaign-creators-pypeCEaJeZY-unsplash (2).webp",
+              alt: "desc",
+            },
+            {
+              type: "para",
+              text: "Why Marketing Spend Without Accountability is a 2026 Problem… A performance marketing agency in India runs paid campaigns, optimizes conversions, and tracks every rupee of ad spend back to measurable business outcomes like leads, sales, or revenue.",
+            },
+            {
+              type: "para",
+              text: "That one-line answer matters more in 2026 than it ever has. As marketing budgets grow, businesses are demanding clearer accountability. Instead of paying for activity alone, companies increasingly invest in performance marketing because it focuses on measurable business results.",
+            },
+
+            {
+              type: "h2",
+              text: "What is a Performance Marketing Agency?",
+            },
+            {
+              type: "para",
+              text: "A performance marketing agency is a growth partner that ties every campaign directly to measurable outcomes, clicks, leads, conversions, and revenue, rather than soft metrics like reach or impressions.",
+            },
+            {
+              type: "para",
+              text: "Unlike a traditional marketing firm that charges for creative work or brand awareness, a digital performance marketing agency is accountable to ROI at every stage of the funnel. This model originated with Pay-per-click (PPC) advertising, where advertisers only pay when a user takes a specific action. That core principle now extends across every paid channel. At MakeOlix, this philosophy sits at the center of every campaign we run. We do not optimize for impressions. We optimize for outcomes.",
+            },
+            {
+              type: "h2",
+              text: "What Does a Performance Marketing Agency Actually Do?",
+            },
+
+            {
+              type: "list",
+              heading: "Paid Search and PPC Performance Marketing",
+              items: [
+                "Manages Google Ads and Microsoft Ads campaigns end-to-end",
+                "Conducts keyword research, writes ad copy, and optimizes bidding strategies",
+                "Targets high-intent users at the exact moment they are searching",
+                "For every $1 invested in Google Ads, businesses earn an average of $2 in return (Google benchmark) - a well-managed PPC account improves that ratio significantly",
+              ],
+            },
+            {
+              type: "list",
+              heading: "Paid Social Advertising",
+              items: [
+                "Runs performance marketing campaigns across Meta, TikTok, LinkedIn, and Instagram",
+                "Builds audience segments, tests creative variants at scale, and manages cross-platform spend",
+                "Optimizes toward CAC (Cost Per Acquisition) and ROAS (Return on Ad Spend) targets",
+                "In 2026, algorithms reward creative volume - agencies that win produce high quantities of tested ad creative alongside their media buying",
+              ],
+            },
+            {
+              type: "list",
+              heading: "Conversion Rate Optimization (CRO)",
+              items: [
+                "Analyzes user behavior on landing pages using heatmaps and session data",
+                "Runs A/B tests on headlines, CTAs, layouts, and offers",
+                "Implements changes that convert more existing visitors into paying customers",
+                "A 1% improvement in CVR can lift revenue significantly without increasing ad spend by a single dollar",
+              ],
+            },
+            {
+              type: "list",
+              heading: "Attribution Modeling and Analytics",
+              items: [
+                "Connects ad platforms to your CRM and configures conversion events correctly",
+                "Builds dashboards that show which channels drove which revenue",
+                "Without clean attribution, campaigns are optimized on the wrong signals",
+                "Many businesses discover that 30 to 40% of reported conversions were being double-counted across platforms",
+              ],
+            },
+            {
+              type: "list",
+              heading: "Performance Creative",
+              items: [
+                "Produces ad creative as a core service, not an add-on",
+                "Covers static ads, short-form video, UGC, and landing page copy",
+                "All creatives are built to support paid campaigns and tested continuously for performance signals",
+                "In 2026, the wall between media buying and creative production has fully collapsed - one function, not two",
+              ],
+            },
+            {
+              type: "h2",
+              text: "Performance Marketing vs Digital Marketing: What is the Difference?",
+            },
+            {
+              type: "para",
+              text: "Performance marketing is a results-first methodology focused on paid channels, measurable KPIs, and continuous optimization. Every action is designed to produce a trackable outcome.",
+            },
+            {
+              type: "para",
+              text: "Digital marketing is broader. It includes content, SEO, social media management, email, branding, and organic growth, channels that build visibility over months or years.",
+            },
+            {
+              type: "para",
+              text: "The key distinction: digital marketing charges for activity. Performance marketing charges for outcomes.",
+            },
+            {
+              type: "para",
+              text: "Here is a quick comparison:",
+            },
+
+            {
+              type: "table",
+              data: {
+                headers: [
+                  "Factor",
+                  "Digital Marketing Agency",
+                  "Performance Marketing Agency",
+                ],
+                rows: [
+                  [
+                    "Primary focus",
+                    "Brand building, visibility",
+                    "Conversions, revenue, ROI",
+                  ],
+                  [
+                    "Channels",
+                    "SEO, content, social, email",
+                    "PPC, paid social, programmatic",
+                  ],
+                  [
+                    "How success is measured",
+                    "Traffic, engagement, rankings",
+                    "ROAS, CPA, CAC, leads",
+                  ],
+                  [
+                    "Timeline",
+                    "Long-term (6 to 18 months)",
+                    "Short-term results, continuous",
+                  ],
+                  [
+                    "Billing model",
+                    "Monthly retainer for activity",
+                    "Retainer or performance-based",
+                  ],
+                ],
+              },
+            },
+            {
+              type: "para",
+              text: "The best digital performance marketing agencies combine both. Paid media creates immediate revenue. SEO and content create compounding organic growth. When these work together inside one coordinated system, CAC drops and LTV grows.",
+            },
+
+            {
+              type: "para",
+              text: "At MakeOlix, our Performance Marketing Services are designed to deliver precisely that short-term paid results layered on top of a long-term digital foundation.",
+            },
+
+            {
+              type: "h2",
+              text: "What Are the Key Metrics a Performance Marketing Agency Tracks?",
+            },
+            {
+              type: "para",
+              text: "Every performance marketing campaign lives and dies by the numbers it is measured against. These are the metrics that matter:",
+            },
+            {
+              type: "list",
+              heading: "Instead of:",
+              items: [
+                "ROAS (Return on Ad Spend): Revenue generated per rupee spent on ads. A 3x ROAS means every Rs. 1 spent returns Rs. 3 in revenue.",
+                "CPA (Cost Per Acquisition): How much it costs to acquire one customer. Lower is better.",
+                "CAC (Customer Acquisition Cost): Total marketing and sales spend divided by new customers acquired.",
+                "LTV (Lifetime Value): The total revenue a customer generates over their relationship with your brand. The LTV: CAC ratio is the best single indicator of marketing health.",
+                "CVR (Conversion Rate): The percentage of visitors who complete a desired action.",
+                "CTR (Click-Through Rate): Percentage of ad impressions that result in a click.",
+                "Pipeline velocity: In B2B contexts, how fast leads move through the sales funnel.",
+              ],
+            },
+            {
+              type: "para",
+              text: "A credible performance-based marketing agency near you will report on these metrics transparently, not bury them inside 40-page PDFs full of charts that do not answer business questions.",
+            },
+            {
+              type: "h2",
+              text: "Who Should Hire a Performance Marketing Agency?",
+            },
+            {
+              type: "para",
+              text: "Hire a performance marketing agency in India when:",
+            },
+            {
+              type: "list",
+              heading: "Instead of:",
+              items: [
+                "You have a product or service with proven demand and need to scale acquisition efficiently",
+                "Your in-house team lacks the paid media, analytics, or creative bandwidth to manage campaigns at scale",
+                "You need results within 30 to 90 days, not 6 to 12 months",
+                "You are spending on ads, but cannot explain where the revenue is coming from",
+              ],
+            },
+            {
+              type: "para",
+              text: "A traditional digital marketing agency may be a better fit when you need to build brand presence, organic search visibility, or content infrastructure over a longer period.",
+            },
+            {
+              type: "para",
+              text: "If you need both, look for an agency that integrates performance marketing with SEO and Content under one roof. That alignment prevents the attribution gaps that occur when your paid and organic teams are not talking to each other.",
+            },
+            {
+              type: "h2",
+              text: "5 Red Flags When Evaluating a Performance Marketing Agency",
+            },
+            {
+              type: "para",
+              text: "Not every agency that calls itself a performance marketing agency actually operates as one. Watch for these warning signs:",
+            },
+            {
+              type: "steps",
+              items: [
+                {
+                  title: "They Report On Impressions And Reach As Primary Kpis",
+                  description:
+                    'If the end-of-month report leads with how many people "saw" your ad, the agency is not optimizing for your business outcomes.',
+                },
+                {
+                  title: "No Attribution Setup Conversation",
+                  description:
+                    "An agency that does not ask about your CRM, conversion events, or offline sales data cannot give you accurate ROI numbers.",
+                },
+                {
+                  title: "Guaranteed Results Before Auditing Your Business",
+                  description:
+                    'Legitimate agencies will tell you what is realistic based on your budget and market. Anyone promising "3x ROAS in 30 days" without looking at your account first is guessing.',
+                },
+                {
+                  title: "Creative Is An Afterthought",
+                  description:
+                    "In 2026, performance and creative are the same function. If the agency treats ad design as a bolt-on service, its campaign performance will suffer.",
+                },
+                {
+                  title: "Vague Case Studies",
+                  description:
+                    'Look for specific numbers: "Grew ROAS from 1.8x to 4.2x over 5 months for an ecommerce client in the fashion space." Vague claims like "significantly improved results" are meaningless.',
+                },
+              ],
+            },
+
+            {
+              type: "h2",
+              text: "Performance Marketing: What Has Changed in 2026?",
+            },
+            {
+              type: "para",
+              text: "Global advertising spend surpassed the $1 trillion mark in 2025, with digital channels accounting for more than 70% of total ad investment. Several shifts are reshaping how performance marketing campaigns work:",
+            },
+            {
+              type: "list",
+              heading: "Instead of:",
+              items: [
+                "AI-powered campaign optimization through Google Performance Max and Meta Advantage+.",
+                "Greater reliance on first-party data as privacy regulations evolve.",
+                "Short-form video is becoming the dominant paid social format.",
+                "Growing importance of GEO (Generative Engine Optimization) and AI search visibility.",
+              ],
+            },
+
+            {
+              type: "para",
+              text: "Agencies that combine data, creative production, and attribution are gaining a competitive advantage.",
+            },
+            {
+              type: "h2",
+              text: "How MakeOlix Approaches Performance Marketing",
+            },
+            {
+              type: "para",
+              text: "At MakeOlix, we take a full-funnel approach to paid performance marketing. That means we do not run ads in isolation. We connect paid campaigns to landing page performance, attribution infrastructure, and content strategy so every channel reinforces the others.",
+            },
+            {
+              type: "para",
+              text: "Our performance marketing service covers Google Ads, Meta, LinkedIn, and programmatic channels, with dedicated creative production, CRO, and transparent ROI reporting built into every engagement.",
+            },
+            {
+              type: "para",
+              text: "We work with startups, mid-sized businesses, and established brands across India. Our model is simple: if the campaigns do not produce measurable growth, we are not doing our job.",
+            },
+            {
+              type: "h2",
+              text: "Conclusion: The Right Agency Connects Spend to Revenue",
+            },
+
+            {
+              type: "para",
+              text: "A performance marketing agency in India does one thing differently from every other kind of marketing partner: it makes itself accountable to your business outcomes, not just its own activity.",
+            },
+            {
+              type: "para",
+              text: "In 2026, accountability is not a nice-to-have. Rising acquisition costs, smarter algorithms, and a more competitive digital landscape mean that marketing spend without clear attribution is a waste.",
+            },
+            {
+              type: "para",
+              text: "If you are spending on ads and are not confident in what they are returning, or if you are ready to scale paid acquisition efficiently, it is time to work with a performance-first partner.",
+            },
+            {
+              type: "para",
+              text: "Ready to see what data-driven performance marketing looks like for your business? Get in touch with MakeOlix today for a free strategy consultation.",
+            },
+          ],
+        },
+      },
+
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question: "What does a performance marketing agency do? ",
+              answer:
+                "A performance marketing agency plans, executes, and optimizes paid campaigns across channels like Google Ads, Meta, LinkedIn, and programmatic networks. Every campaign is tied to measurable KPIs, including leads, conversions, ROAS, and revenue.",
+            },
+            {
+              id: 2,
+              question: "How does performance marketing work?",
+              answer:
+                "Performance marketing works by tracking user actions from ad click to conversion. Marketers launch campaigns, measure engagement and conversions, analyze performance data, and continuously optimize targeting, bidding, creatives, and landing pages to improve return on ad spend (ROAS) and customer acquisition costs (CAC).",
+            },
+            {
+              id: 3,
+              question: "How much does a performance marketing agency cost?",
+              answer:
+                "Retainers typically range from $3,000 to $8,000 per month for boutique agencies. Full-funnel agencies charge $10,000 to $25,000 per month and above. Media spend is billed separately on top of the retainer. ",
+            },
+            {
+              id: 4,
+              question:
+                "What are the most important performance marketing KPIs?",
+              answer:
+                "Key performance marketing KPIs include Return on Ad Spend (ROAS), Cost Per Acquisition (CPA), Customer Acquisition Cost (CAC), Conversion Rate (CVR), Click-Through Rate (CTR), Customer Lifetime Value (LTV), and revenue generated. The most important KPI depends on the business objective and stage of growth.",
+            },
+            {
+              id: 5,
+              question:
+                "How do I find a performance-based marketing agency near me? ",
+              answer:
+                "Search for agencies with verifiable case studies, transparent attribution practices, and clear reporting on revenue KPIs. Location matters less than expertise; many top-performing campaigns are managed remotely. ",
+            },
+          ],
+        },
+      },
+    ],
+
+    relatedblogs: [
+      {
+        slug: "local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
+        image:
+          "/10-Best-E-Commerce-SEO-Services-Agencies-to-Grow-Your-Revenue-in-2026 (1).webp",
+        description:
+          "Local SEO Services: 9 Best Ways to Increase Online Visibility in 2026",
+
+        buttonText: "Read More",
+        buttonHref:
+          "/blog/local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
+        buttonVariant: "",
+      },
+      {
+        slug: "want-more-traffic-sales",
+        image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+        description:
+          "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+        buttonText: "Read More",
+        buttonHref: "/blog/want-more-traffic-sales",
+        buttonVariant: "",
+      },
+      {
+        slug: "how-do-i-choose-the-best-seo",
+        image:
+          "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
+        description:
+          "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
+        buttonText: "Read More",
+        buttonHref: "/blog/how-do-i-choose-the-best-seo",
+        buttonVariant: "",
+      },
     ],
   },
 };

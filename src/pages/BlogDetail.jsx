@@ -14,6 +14,7 @@ import FeaturesSection from "../components/FeaturesSection";
 import OtherPageHero from "../components/OtherPageHero";
 import BlogContent from "../components/BlogContent";
 import FaqVariant from "../components/FaqVariant";
+import SeoMetaDesc from "../components/SeoMetaDesc";
 
 const BlogDetail = () => {
   const { slug } = useParams();
@@ -38,6 +39,15 @@ const BlogDetail = () => {
   const relatedBlogs = pageData.relatedblogs || [];
   return (
     <>
+     <SeoMetaDesc
+
+        title={pageData.metaTitle}
+
+        description={pageData.metaDescription}
+
+        url={`https://makeolix.com/blog/${slug}`}
+
+      />
       <Navbar />
 
       {pageData.sections.map((section, index) => {

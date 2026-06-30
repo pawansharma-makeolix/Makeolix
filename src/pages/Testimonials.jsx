@@ -7,6 +7,7 @@ import CTAMarquee from "../components/CTAMarquee";
 import UltraAnimatedHero from "../components/UltraAnimatedHero";
 import VideoTestimonials from "../components/VideoTestimonials";
 import { TestimonialData } from "../components/data/TestimonialData";
+import SeoMetaDesc from "../components/SeoMetaDesc";
 const Testimonials = () => {
   const servicesData = [
     {
@@ -53,6 +54,13 @@ const Testimonials = () => {
 
   return (
     <>
+     <SeoMetaDesc
+   title="Client Testimonials & Success Stories | Real Customer Reviews"
+
+description="Read genuine client testimonials and success stories from businesses that achieved measurable growth through expert digital marketing, SEO, web development."
+
+url="https://makeolix.com/testimonials"
+    ></SeoMetaDesc>
       <Navbar></Navbar>
       <HeroOrbit
         title={"Our Testimonials"}

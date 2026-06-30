@@ -7,6 +7,7 @@ import IntroText from "../components/IntroText";
 import Usp from "../components/Usp";
 import TextMedia from "../components/TextMedia";
 import BenefitsSection from "../components/BenefitsSection";
+import SeoMetaDesc from "../components/SeoMetaDesc";
 const MM79 = () => {
   const statsData = [
     {
@@ -64,6 +65,15 @@ const MM79 = () => {
 
   return (
     <>
+    <SeoMetaDesc
+
+title="Matrix Maximizer $79 SEO Package | Website Optimization | MakeOlix"
+
+description="Improve your website's rankings with our $79 SEO package. Includes onsite optimization, content enhancements, UI/UX improvements, SEO audit, and growth strategy."
+
+url="https://makeolix.com/mm79"
+
+/>
       <Navbar></Navbar>
       <HeroOrbit
         title={"MATRIX MAXIMIZER $79"}

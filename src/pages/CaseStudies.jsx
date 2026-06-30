@@ -5,6 +5,7 @@ import UltraFooter from "../components/UltraFooter";
 import HeroOrbit from "../components/HeroOrbit";
 import CaseStudiesGrid from "../components/CaseStudiesGrid";
 import CaseStudiesSection from "../components/CaseStudiesSection";
+import SeoMetaDesc from "../components/SeoMetaDesc";
 function CaseStudies() {
   const caseData = [
     {
@@ -72,6 +73,13 @@ function CaseStudies() {
   ];
   return (
     <>
+     <SeoMetaDesc
+    title="Case Studies | Proven Digital Marketing & SEO Success Stories"
+
+description="Explore real-world case studies showcasing successful SEO, digital marketing, and business growth strategies. Discover measurable results, increased traffic."
+
+url="https://makeolix.com/case-studies"
+    ></SeoMetaDesc>
       <Navbar></Navbar>
       <HeroOrbit
         title={"Our Case Studies"}

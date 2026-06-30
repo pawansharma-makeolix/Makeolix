@@ -5,9 +5,20 @@ import UltraFooter from "../components/UltraFooter";
 import HeroOrbit from "../components/HeroOrbit";
 import CaseStudiesSection from "../components/CaseStudiesSection";
 import BlogContent from "../components/BlogContent";
+import SeoMetaDesc from "../components/SeoMetaDesc";
 
 const Blog = () => {
   const blogsData = [
+    {
+      slug: "what-does-a-performance-marketing-agency-in-india-do",
+      image: "/campaign-creators-pypeCEaJeZY-unsplash (2).webp",
+      description:
+        "What Does a Performance Marketing Agency in India Do? A 2026 Guide",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/what-does-a-performance-marketing-agency-in-india-do ",
+      buttonVariant: "",
+    },
     {
       slug: "top-7-best-wordpress-web-development-companies-in-2026 ",
       image: "/domenico-loia-hGV2TfOh0ns-unsplash1 (1).webp",
@@ -90,6 +101,13 @@ const Blog = () => {
   ];
   return (
     <>
+     <SeoMetaDesc
+    title="AI, SEO & Digital Marketing Blog | Expert Tips, Guides & Insights"
+
+description="Discover expert insights on AI, SEO, content marketing, digital strategy, automation, and business growth. Explore actionable guides, industry trends | Makeolix"
+
+url="https://makeolix.com/blog"
+    ></SeoMetaDesc>
       <Navbar></Navbar>
       <HeroOrbit
         title={"Our Blogs"}

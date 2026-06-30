@@ -10,6 +10,7 @@ import OtherPageHero from "../components/OtherPageHero";
 import UltraFooter from "../components/UltraFooter";
 import HeroOrbit from "../components/HeroOrbit";
 import Button from "../components/Button";
+import SeoMetaDesc from "../components/SeoMetaDesc";
 
 const aboutStats = [
   {
@@ -56,6 +57,13 @@ const AboutUs = () => {
 
   return (
     <div>
+       <SeoMetaDesc
+    title="About Us | AI-Powered SEO, Digital Marketing & Web Solutions"
+
+description="Explore our mission, expertise, and commitment to helping businesses grow with AI-powered SEO, digital marketing, website development, and innovative online growth."
+
+url="https://makeolix.com/about-us"
+    ></SeoMetaDesc>
       <Navbar></Navbar>
       <HeroOrbit
         title={"About Us"}

@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Home from "./pages/Home";
 import AboutUs from "./pages/About";
 import CustomCursor from "./components/CustomCursor";
@@ -28,6 +29,7 @@ import Dropshipping from "./pages/Dropshipping";
 
 function App() {
   return (
+      <HelmetProvider>
     <Router>
       <ScrollToTop></ScrollToTop>
       <ChatBot></ChatBot>
@@ -64,6 +66,7 @@ function App() {
         {/* <Route path="/industry/:slug" element={<IndustryItem />} /> */}
       </Routes>
     </Router>
+    </HelmetProvider>
   );
 }
 

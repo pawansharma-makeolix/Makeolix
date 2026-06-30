@@ -16,6 +16,7 @@ import UltraFooter from "../components/UltraFooter";
 import CTAMarquee from "../components/CTAMarquee";
 import HorizontalScrollSection from "../components/HorizontalScrollSection";
 import GoogleReviewsWidget from "../components/GoogleReviewsWidget";
+import SeoMetaDesc from "../components/SeoMetaDesc";
 const Home = () => {
   const stats = [
     {
@@ -52,6 +53,13 @@ const Home = () => {
 
   return (
     <>
+    <SeoMetaDesc
+    title="MakeOlix: India's #1 Result-Driven Digital Marketing Agency"
+
+
+
+url="https://makeolix.com/"
+    ></SeoMetaDesc>
       <Navbar />
       <Hero />
       <Trusted></Trusted>
