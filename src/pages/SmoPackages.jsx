@@ -4,10 +4,16 @@ import UltraFooter from "../components/UltraFooter";
 import CTAMarquee from "../components/CTAMarquee";
 import Navbar from "../components/Navbar";
 import HeroOrbit from "../components/HeroOrbit";
+import SeoMetaDesc from '../components/SeoMetaDesc';
 
 const SmoPackages = () => {
   return (
     <div>
+      <SeoMetaDesc
+  title="SMO Pricing Plans | Affordable Social Media Optimization Packages"
+  description="Explore MakeOlix's affordable SMO pricing plans designed to grow your brand on social media. Get expert content creation, profile optimization, audience engagement"
+  url="https://makeolix.com/pricing/smo"
+/>
       <Navbar></Navbar>
       <HeroOrbit
         title={"SMO PRICING"}

@@ -53,13 +53,10 @@ const Home = () => {
 
   return (
     <>
-    <SeoMetaDesc
-    title="MakeOlix: India's #1 Result-Driven Digital Marketing Agency"
-
-
-
-url="https://makeolix.com/"
-    ></SeoMetaDesc>
+      <SeoMetaDesc
+        title="MakeOlix: India's #1 Result-Driven Digital Marketing Agency"
+        url="https://makeolix.com/"
+      ></SeoMetaDesc>
       <Navbar />
       <Hero />
       <Trusted></Trusted>
