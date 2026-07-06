@@ -30,19 +30,34 @@ const RenderTextWithLinks = ({ text, links = [] }) => {
 
         if(index !== splitText.length - 1){
 
-          return [
-            item,
-            <Link
-              key={index}
-              to={link.url}
-              style={{
-                color:"#118ab2",
-                textDecoration:"underline"
-              }}
-            >
-              {link.word}
-            </Link>
-          ];
+         return [
+  item,
+  link.newTab ? (
+    <a
+      key={index}
+      href={link.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        color: "#118ab2",
+        textDecoration: "underline",
+      }}
+    >
+      {link.word}
+    </a>
+  ) : (
+    <Link
+      key={index}
+      to={link.url}
+      style={{
+        color: "#118ab2",
+        textDecoration: "underline",
+      }}
+    >
+      {link.word}
+    </Link>
+  ),
+];
 
         }
 
@@ -331,11 +346,14 @@ const StepsBlock = ({ items }) => {
               {step.title}
             </h4>
             <p
-              className="text-sm leading-relaxed"
-              style={{ color: "var(--text-muted)" }}
-            >
-              {step.description}
-            </p>
+  className="text-sm leading-relaxed"
+  style={{ color: "var(--text-muted)" }}
+>
+  <RenderTextWithLinks
+    text={step.description}
+    links={step.links}
+  />
+</p>
           </div>
 
           {/* Animated left glow line on hover */}

@@ -1,4 +1,4 @@
-import { text } from "framer-motion/client";
+import { link, text } from "framer-motion/client";
 
 export const BlogData = {
   "how-do-i-choose-the-best-seo": {
@@ -970,11 +970,10 @@ export const BlogData = {
     ],
   },
   "10-best-e-commerce-seo-services-agencies": {
-    metaTitle:
-"Best E-Commerce SEO Services Agency | E-commerce SEO Experts",
+    metaTitle: "Best E-Commerce SEO Services Agency | E-commerce SEO Experts",
 
-metaDescription:
-"Boost your online store with expert E-commerce Search Engine Optimization. Our best E-Commerce SEO services agency helps increase rankings, traffic, and sales.",
+    metaDescription:
+      "Boost your online store with expert E-commerce Search Engine Optimization. Our best E-Commerce SEO services agency helps increase rankings, traffic, and sales.",
 
     sections: [
       {
@@ -1036,7 +1035,22 @@ metaDescription:
                   title: "MakeOlix Consulting",
                   description:
                     "MakeOlix Consulting has emerged as a trusted partner for ecommerce businesses seeking customized SEO strategies and measurable growth. Unlike agencies that rely on generic templates, MakeOlix develops tailored campaigns based on your industry, competitors, target audience, and business goals. The agency specializes in Technical SEO, keyword research, content optimization, link-building strategies, and conversion-focused improvements. Whether you're operating a Shopify store, WooCommerce website, or a custom ecommerce platform, MakeOlix focuses on driving qualified traffic that turns into revenue. Their transparent reporting, personalized support, and commitment to long-term growth make them a strong choice for brands looking to scale in the competitive U.S. market.",
+                    links: [
+                      {
+                        word: "Technical SEO",
+                        url:"https://makeolix.com/services/technical-seo",
+                      }
+                    ],
                 },
+
+
+
+
+
+
+
+
+                
                 {
                   title: "Victorious",
                   description:
@@ -1222,11 +1236,10 @@ metaDescription:
     ],
   },
   "local-seo-services-9-best-ways-to-increase-online-visibility-in-2026": {
-    metaTitle:
-"SEO Agency Services | Grow Rankings & Organic Traffic",
+    metaTitle: "SEO Agency Services | Grow Rankings & Organic Traffic",
 
-metaDescription:
-"Partner with a trusted SEO agency for data-driven SEO services that improve search rankings, drive targeted traffic, and maximize your business growth.",
+    metaDescription:
+      "Partner with a trusted SEO agency for data-driven SEO services that improve search rankings, drive targeted traffic, and maximize your business growth.",
 
     sections: [
       {
@@ -1268,6 +1281,13 @@ metaDescription:
             {
               type: "para",
               text: 'Search engine optimization now prioritizes "proximity, prominence, and relevance" more than ever. If your digital footprint is messy, Google will not trust you enough to recommend you. ',
+              links: [
+                {
+                  word: "Search engine optimization",
+                  url: "https://en.wikipedia.org/wiki/Search_engine_optimization",
+                  newTab: true
+                },
+              ],
             },
             {
               type: "para",
@@ -1314,6 +1334,12 @@ metaDescription:
                   title: "Technical Health",
                   description:
                     "A slow or broken website will kill your local rankings faster than almost anything else. Ensure your site loads instantly. If you are unsure about your site health, Makeolix SEO Audit Services can find the hidden errors that are pushing you down the rankings.",
+                    links: [
+                      {
+                        word: "SEO Audit Services",
+                        url: "https://makeolix.com/services/seo",
+                      }
+                    ],
                 },
                 {
                   title: "Localized Content Clusters",
@@ -1340,10 +1366,22 @@ metaDescription:
             {
               type: "para",
               text: "To make these strategies work, your foundation must be strong. This includes Technical SEO Services to ensure search bots can actually read your local data. Without the right technical setup, even the best content will stay hidden. ",
+              links: [
+                {
+                  word: "Technical SEO Services",
+                  url: "https://makeolix.com/services/technical-seo",
+                }
+              ],
             },
             {
               type: "para",
               text: "Want to go deeper on e-commerce growth? Read our blog: Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India.",
+              links: [
+                {
+                  word: "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India.",
+                  url: "https://makeolix.com/blog/want-more-traffic-sales",
+                }
+              ],
             },
             {
               type: "h2",
@@ -1360,6 +1398,16 @@ metaDescription:
             {
               type: "para",
               text: "Whether you need general SEO Agency Services or you are running a niche store and need an E-commerce SEO Agency, the goal is the same: clarity and results. If you are struggling to move the needle, it might be time to contact us for a personalized audit of your current system.",
+              links: [
+                {
+                  word: "E-commerce SEO Agency",
+                  url: "https://makeolix.com/services/ecommerce-seo",
+                },
+                {
+                  word: "contact us",
+                  url: "https://makeolix.com/contact-us",
+                }
+              ],
             },
 
             {
@@ -1450,11 +1498,10 @@ metaDescription:
   },
 
   "top-7-best-wordpress-web-development-companies-in-2026": {
-    metaTitle:
-"WordPress Development Agency | Custom WP Solutions | Makeolix",
+    metaTitle: "WordPress Development Agency | Custom WP Solutions | Makeolix",
 
-metaDescription:
-"Makeolix is a trusted WordPress development agency offering custom website development, plugin integration, theme customization, and ongoing support.",
+    metaDescription:
+      "Makeolix is a trusted WordPress development agency offering custom website development, plugin integration, theme customization, and ongoing support.",
 
     sections: [
       {
@@ -1554,6 +1601,20 @@ metaDescription:
                   title: "MakeOlix Consulting",
                   description:
                     "Best for: SMBs, startups, and growing brands in India, the USA, the UK, and the Middle East seeking an integrated WordPress and digital marketing partner. At MakeOlix, we have built our WordPress practice around one belief: a website should be a revenue engine, not a digital brochure. Founded in 2022 and headquartered in Noida, we have partnered with over 1,000 brands across four countries to deliver custom WordPress websites that rank, convert, and scale. What sets us apart from other WordPress web development companies in India is our integrated model. We combine Custom WordPress Development with Technical SEO, Performance Marketing, and ongoing WordPress maintenance services under one roof.  Our clients do not need to manage five vendors to get one result. We handle the full lifecycle: discovery, design, development, deployment, and post-launch optimization. Our WordPress development work spans service websites, WooCommerce stores, and CMS-driven content platforms. We are one of the top website design companies for WordPress in Noida and one of the few agencies in India that delivers to US-level delivery standards on Indian-scale economics. Key services: Custom WordPress development, WordPress theme customization services, WooCommerce development, technical SEO integration, performance marketing, WordPress maintenance services. Headquarters: Noida, India (also registered in Delaware, USA) ",
+                    links: [
+                {
+                  word: "Custom WordPress Development",
+                  url: "https://makeolix.com/services/wordpress-dev",
+                },
+                {
+                  word: "Technical SEO",
+                  url: "https://makeolix.com/services/technical-seo",
+                },
+                {
+                  word: "Performance Marketing",
+                  url: "https://makeolix.com/services/performance-marketing",
+                }
+              ],
                 },
                 {
                   title: "Multidots",
@@ -1632,6 +1693,12 @@ metaDescription:
             {
               type: "para",
               text: "Yes. WordPress remains the best choice for the majority of business websites in 2026. WordPress powers approximately 41-43% of all websites on the internet, making it the most widely used CMS globally, according to W3Techs. ",
+              links: [
+                {
+                  word: "W3Techs",
+                  url: "https://w3techs.com/",
+                },
+              ],
             },
             {
               type: "para",
@@ -1644,6 +1711,12 @@ metaDescription:
             {
               type: "para",
               text: "If you are also building out your organic presence alongside your WordPress site, Makeolix’s Small Business SEO Services are designed to work in step with your development roadmap.",
+              links: [
+                {
+                  word: "Small Business SEO Services",
+                  url: "https://makeolix.com/services/small-business-seo/",
+                },
+              ],
             },
             {
               type: "h2",
@@ -1657,6 +1730,12 @@ metaDescription:
             {
               type: "para",
               text: "If you are ready to build a WordPress site that ranks and converts, Reach Out to the MakeOlix team today. We will map your goals, scope your project honestly, and deliver a WordPress website that earns its place as your hardest-working business asset.",
+              links: [
+                {
+                  word: "Reach Out",
+                  url: "https://makeolix.com/contact-us",
+                },
+              ],
             },
           ],
         },
@@ -1738,11 +1817,10 @@ metaDescription:
   },
 
   "what-does-a-performance-marketing-agency-in-india-do": {
-    metaTitle:
-"Performance Marketing Agency in India | PPC & Paid Marketing",
+    metaTitle: "Performance Marketing Agency in India | PPC & Paid Marketing",
 
-metaDescription:
-"Grow your business with a leading performance marketing agency in India. We deliver PPC, paid performance marketing, and ROI-driven digital campaigns.",
+    metaDescription:
+      "Grow your business with a leading performance marketing agency in India. We deliver PPC, paid performance marketing, and ROI-driven digital campaigns.",
 
     sections: [
       {
@@ -1781,12 +1859,12 @@ metaDescription:
             {
               type: "para",
               text: "Unlike a traditional marketing firm that charges for creative work or brand awareness, a digital performance marketing agency is accountable to ROI at every stage of the funnel. This model originated with Pay-per-click (PPC) advertising, where advertisers only pay when a user takes a specific action. That core principle now extends across every paid channel. At MakeOlix, this philosophy sits at the center of every campaign we run. We do not optimize for impressions. We optimize for outcomes.",
-              links:[
- {
-   word:"Pay-per-click",
-   url:"https://en.wikipedia.org/wiki/Pay-per-click"
- }
-]
+              links: [
+                {
+                  word: "Pay-per-click",
+                  url: "https://en.wikipedia.org/wiki/Pay-per-click",
+                },
+              ],
             },
             {
               type: "h2",
@@ -1909,12 +1987,12 @@ metaDescription:
             {
               type: "para",
               text: "At MakeOlix, our Performance Marketing Services are designed to deliver precisely that short-term paid results layered on top of a long-term digital foundation.",
-              links:[
- {
-   word:"Performance Marketing Services",
-   url:"https://makeolix.com/services/performance-marketing/"
- }
-]
+              links: [
+                {
+                  word: "Performance Marketing Services",
+                  url: "https://makeolix.com/services/performance-marketing/",
+                },
+              ],
             },
 
             {
@@ -1967,12 +2045,12 @@ metaDescription:
             {
               type: "para",
               text: "If you need both, look for an agency that integrates performance marketing with SEO and Content under one roof. That alignment prevents the attribution gaps that occur when your paid and organic teams are not talking to each other.",
-              links:[
- {
-   word:"SEO and Content",
-   url:"https://makeolix.com/services/small-business-seo"
- }
-]
+              links: [
+                {
+                  word: "SEO and Content",
+                  url: "https://makeolix.com/services/small-business-seo",
+                },
+              ],
             },
             {
               type: "h2",
@@ -2072,12 +2150,12 @@ metaDescription:
             {
               type: "para",
               text: "Ready to see what data-driven performance marketing looks like for your business? Get in touch with MakeOlix today for a free strategy consultation.",
-              links:[
- {
-   word:"Get in touch with MakeOlix",
-   url:"https://makeolix.com/contact-us"
- }
-]
+              links: [
+                {
+                  word: "Get in touch with MakeOlix",
+                  url: "https://makeolix.com/contact-us",
+                },
+              ],
             },
           ],
         },
@@ -2146,6 +2224,397 @@ metaDescription:
         buttonHref: "/blog/want-more-traffic-sales",
         buttonVariant: "",
       },
+      {
+        slug: "how-do-i-choose-the-best-seo",
+        image:
+          "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
+        description:
+          "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
+        buttonText: "Read More",
+        buttonHref: "/blog/how-do-i-choose-the-best-seo",
+        buttonVariant: "",
+      },
+    ],
+  },
+
+
+
+
+
+
+
+
+
+
+
+   "how-the-best-e-commerce-seo-agency-helps-brands-achieve-10x-growth": {
+    metaTitle: "Best Ecommerce SEO Services Agency in India | Makeolix",
+
+    metaDescription:
+      "Boost rankings and sales with the best ecommerce SEO services agency in India. Expert ecommerce SEO optimization, consultants, and SEO for ecommerce stores.",
+
+    sections: [
+      {
+        type: "hero",
+        data: {
+          title:
+            "How the Best E-commerce SEO Agency Helps Brands Achieve 10X Growth",
+        },
+      },
+      {
+        type: "blogcontent",
+        data: {
+          blocks: [
+            {
+              type: "image",
+              src: "/lukas-muller-Q4iYWsWbR90-unsplash (1).webp",
+              alt: "desc",
+            },
+            {
+              type: "para",
+              text: "The best e-commerce SEO services agency in India helps brands achieve 10X growth by combining technical site optimization, conversion-focused content strategy, and data-driven link building into one unified system that drives compounding organic revenue.",
+            },
+            {
+              type: "para",
+              text: "If your online store is getting traffic but not sales, or worse, getting neither, you already know the problem: visibility. In India's booming e-commerce market, projected to reach $350 billion by 2030, showing up on page one of Google is not optional. It is the difference between scaling and stagnating.",
+            },
+            {
+              type: "para",
+              text: "This guide breaks down exactly how a top e-commerce SEO agency operates, what makes their strategies work, and why brands that invest in professional SEO consistently outperform competitors who rely on paid ads alone.",
+            },
+
+            {
+              type: "h2",
+              text: "What Does E-Commerce SEO Optimization Actually Involve?",
+            },
+            {
+              type: "para",
+              text: "E-commerce SEO optimization is the process of improving every layer of your online store so that search engines rank your product and category pages higher and shoppers click through to buy.",
+            },
+             {
+              type: "list",
+              heading: "It covers six core areas:",
+              items: [
+                "Technical SEO: Site speed, crawlability, structured data, and mobile usability",
+                "On-page optimization: Keyword-rich titles, descriptions, and product copy",
+                "Content strategy: Blogs, buying guides, and comparison pages that capture mid-funnel searches",
+                "Link building: Earning backlinks from authoritative sites to boost domain authority",
+                "Category page architecture: Organizing URLs and internal links so Google understands your catalog",
+                "Conversion rate signals: Reducing bounce rate and improving dwell time, both of which influence rankings",
+              ],
+            },
+            {
+              type: "para",
+              text: "At MakeOlix, we treat all six as interconnected. Fixing one without the others rarely produces results that last.",
+              
+            },
+            {
+              type: "h2",
+              text: "Why SEO for E-Commerce Stores Outperforms Paid Ads Long-Term",
+            },
+            {
+              type: "para",
+              text: "Paid traffic stops the moment you stop paying. Organic traffic compounds.",
+              
+            },
+            {
+              type: "para",
+              text: "According to a BrightEdge study, organic search drives 53% of all website traffic across industries, compared to 15% from paid search.",
+              links: [
+                {
+                  word: "BrightEdge study",
+                  url: "https://www.brightedge.com/resources/research-reports/channel_share",
+                  newTab: true,
+                },
+              ],
+            },
+            {
+              type: "para",
+              text: "This highlights why investing in ecommerce search engine optimization remains one of the most effective long-term growth strategies for online brands. ",
+              
+            },
+            {
+              type: "para",
+              text: "Here is the math that matters: if you spend Rs. 1,50,000 per month on Google Ads and achieve 200 conversions, your cost per acquisition is Rs. 750. An equivalent SEO investment in month one may produce fewer conversions. By month six, however, that same investment typically delivers 3X to 5X more conversions at a fraction of the ongoing cost.",
+              
+            },
+            {
+              type: "para",
+              text: "Brands that pair organic SEO with a targeted Social media advertising strategy see even faster results in the early months while SEO builds momentum. The best SEO companies for e-commerce understand this curve. They set realistic expectations in the first 90 days while building infrastructure that pays dividends for years.",
+              links: [
+                {
+                  word: "Social media advertising",
+                  url: "https://makeolix.com/services/sma",
+                },
+              ],
+            },
+            {type: "h2", text: "How a Top E-Commerce SEO Consultant Approaches a New Brand"},
+            
+ {
+              type: "h2",
+              text: "Technical Audit and Crawl Health Assessment",
+            },
+            {
+
+              type: "para",
+              text: "Before touching a single keyword, a top e-commerce SEO consultant will audit your site's technical foundation. ",
+            },
+            
+           
+             
+            {
+              type: "list",
+              heading: "Common problems we uncover at MakeOlix include:",
+              items: [
+                "Duplicate product pages created by URL parameter variations ",
+                "Missing canonical tags causing thin content penalties",
+                "Core Web Vitals failures, especially Largest Contentful Paint above 2.5 seconds",
+                "Broken internal links across category hierarchies",
+              ],
+            },
+            {
+              type:"para",
+              text:"Google cannot rank what it cannot crawl. This step is non-negotiable.",
+            },
+
+            {
+
+              type: "h2",
+              text: "Keyword Architecture for the Full Catalog"
+            },
+            {
+              type: "para",
+              text: "Most e-commerce sites target the wrong keywords. They go after high-volume head terms and ignore the transactional long-tail queries where purchase intent is highest."
+            },
+            {
+              type: "para",
+              text: 'For brands targeting specific regions, adding Local SEO to your keyword strategy helps capture high-intent shoppers searching with location-based terms such as "buy online in New York" or "same-day delivery in California.',
+              links: [
+                {
+                  word: "Local SEO",
+                  url: "https://makeolix.com/services/local-seo",
+                  
+                },
+              ],
+            },
+           {
+
+            type: "para",
+            text: "A structured keyword approach maps three tiers:"
+           },
+             
+
+
+ {
+              type: "table",
+              data: {
+                headers: [
+                  "Tier",
+                  "Example",
+                  "Intent",
+                ],
+                rows: [
+                  [
+                    "Head term",
+                    "running shoes",
+                    "Informational",
+                  ],
+                  [
+                    "Category keyword",
+                    "best running shoes for flat feet",
+                    "Navigational/commercial",
+                  ],
+                  [
+                    "Long-tail transactional",
+                    "buy Brooks Ghost 16 size 10 online India",
+                    "High purchase intent",
+                  ],
+                 
+                ],
+              },
+            },
+
+ {
+
+            type: "para",
+            text: "Tiers two and three convert at rates 3X to 6X higher than head terms. Optimizing e-commerce websites means capturing all three tiers systematically."
+           },
+
+           {
+            type: "h2",
+            text: "Content That Ranks and Converts"
+           },
+           
+
+           
+            {
+              type: "list",
+              heading: "Product descriptions are not content strategy. A true SEO content plan includes:",
+              items: [
+                "Category page copy with naturally embedded primary and secondary keywords",
+                "Buying guides that rank for 'best product type' queries",
+                "Comparison articles that capture searchers in the decision stage",
+                "FAQs that appear in Google's People Also Ask boxes",
+              ],
+            },
+            {
+              type: "h2",
+              text: "Link Acquisition at Scale"
+            },
+            {
+              type: "para", 
+              text: "Domain authority is a ranking multiplier. A well-optimized store with low domain authority will lose to a mediocre competitor with strong backlinks. The best e-commerce SEO agencies build links through digital PR, supplier partnerships, and industry publications, not through low-quality directories."
+            },
+            {
+              type: "h2",
+              text: "Common Mistakes That Kill E-Commerce SEO Results"
+            },
+            {
+              type: "para", 
+              text: "Even well-funded brands make these errors:"
+            },
+            {
+              type: "para", 
+              text: "Using manufacturer product descriptions verbatim. When 50 e-commerce sites carry the same product with identical copy, Google cannot determine which page to rank. Unique descriptions are mandatory."
+            },
+            {
+              type: "para", 
+              text: "Neglecting internal linking on category pages. Category pages need to pass authority to subcategory and product pages. Without deliberate internal link structures, PageRank pools at the top and never reaches where it is needed. Ignoring pagination and faceted navigation. Filtering by size, color, or price creates thousands of near-duplicate URLs. Without a proper canonical and robots.txt strategy, you are diluting your crawl budget.",
+              links: [
+                {
+                  word: "PageRank",
+                  url: "https://en.wikipedia.org/wiki/PageRank"
+                }
+              ]
+            },
+            {
+              type: "para",
+              text: "Optimizing for traffic instead of revenue. An agency that celebrates raw traffic increases while your revenue stays flat is not doing its job."
+            },
+            {
+              type: "h2",
+              text: "What 10X Growth Looks Like in Practice"
+            },
+            {
+              type: "list",
+              heading: "A mid-size apparel e-commerce brand that partnered with an expert agency saw the following results over 12 months:",
+              items: [
+                "Organic sessions grew from 18,000 per month to 190,000 per month",
+                "Revenue from organic search increased by 840%",
+                "312 product pages moved to page one of Google",
+                "Cost per acquisition from organic fell to one-eighth of their paid search CPA",
+              ],
+            },
+            {
+              type: "para",
+              text: "These results are not accidental. They come from disciplined execution across technical SEO, content production, and link building done simultaneously and sustained over time.",
+            },
+            {
+              type: "h2", 
+              text: "Expert Tips for Choosing the Best E-Commerce SEO Services Agency in India"
+            },
+            {
+              type: "list",
+              heading: "",
+              items: [
+                "Ask for case studies with revenue data, not just traffic charts.",
+                "Request a technical audit before signing any contract. An agency that cannot identify your site's biggest problems within 48 hours is not the right partner.",
+                "Verify their content team. SEO without quality content is a machine without fuel.",
+                "Confirm they understand your platform, whether that is Shopify, WooCommerce, or a custom build. Each has distinct technical SEO requirements.",
+                "Avoid any agency promising page-one rankings in 30 days. Legitimate SEO takes 90 to 180 days to show meaningful momentum.",
+              ],
+            },
+           
+          ],
+        },
+      },
+
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question: "What is the difference between SEO for e-commerce stores and regular SEO?",
+              answer:
+                "E-commerce SEO deals with thousands of product and category URLs, faceted navigation, inventory fluctuations, and purchase-intent keyword targeting. Regular SEO typically involves fewer pages and focuses more on brand awareness than conversion.",
+            },
+            {
+              id: 2,
+              question: "How long does it take to see results from e-commerce search engine optimization?",
+              answer:
+                "Most brands see measurable traffic improvement within 90 to 120 days. Significant revenue impact typically begins at months four to six, with compounding growth continuing well beyond year one.",
+            },
+            {
+              id: 3,
+              question: "What makes MakeOlix one of the best SEO companies for e-commerce in India?",
+              answer:
+                "We combine deep technical SEO expertise with a full-stack content production team and transparent, revenue-focused reporting. Our strategies are built around what actually drives sales, not vanity metrics. ",
+            },
+            {
+              id: 4,
+              question:
+                "How much does e-commerce SEO cost in India?",
+              answer:
+                "Monthly retainers for professional e-commerce SEO services in India typically range from Rs. 25,000 to Rs. 2,00,000 depending on catalog size, competition level, and service scope. The ROI from organic rankings almost always exceeds paid advertising at the same budget level within 6 to 12 months.",
+            },
+            {
+              id: 5,
+              question:
+                "Can I do e-commerce SEO myself?",
+              answer:
+                "Basic on-page optimization is learnable. However, technical SEO audits, crawl budget management, large-scale link building, and advanced schema implementation require specialized expertise. DIY SEO at scale typically produces slower results and risks costly technical errors.",
+            },
+          ],
+        },
+      },
+      {
+        type: "h2",
+        text: "Conclusion",
+      },
+      {
+        type: "para",
+        text: "Achieving 10X growth through SEO is not a shortcut strategy. It is a system: strong technical foundations, strategic keyword architecture, content that answers real buyer questions, and consistent link building executed by people who understand how e-commerce search actually works.  ",
+      },
+      {
+        type: "para",
+        text: "The brands winning in organic search right now are not spending more on ads. They are investing in the best e-commerce seo services agency in India with the right team. ",
+      },
+      {
+        type: "para",
+        text: "Ready to scale your store through organic search? Connect with MakeOlix today and get a free technical SEO audit of your e-commerce site. ",
+        links: [
+          {
+            word: "Connect",
+            url: "https://makeolix.com/contact-us",
+          }
+        ]
+      },
+    ],
+    
+
+    relatedblogs: [
+      {
+      slug: "10-best-e-commerce-seo-services-agencies",
+      image: "/blog-image-16-6-2026 (1).webp",
+      description:
+        "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+      buttonVariant: "",
+    },
+     {
+      slug: "what-does-a-performance-marketing-agency-in-india-do",
+      image: "/campaign-creators-pypeCEaJeZY-unsplash (2).webp",
+      description:
+        "What Does a Performance Marketing Agency in India Do? A 2026 Guide",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/what-does-a-performance-marketing-agency-in-india-do ",
+      buttonVariant: "",
+    },
+    
       {
         slug: "how-do-i-choose-the-best-seo",
         image:

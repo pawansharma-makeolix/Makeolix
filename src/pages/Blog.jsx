@@ -9,6 +9,18 @@ import SeoMetaDesc from "../components/SeoMetaDesc";
 
 const Blog = () => {
   const blogsData = [
+
+
+      {
+      slug: "how-the-best-e-commerce-seo-agency-helps-brands-achieve-10x-growth",
+      image: "/lukas-muller-Q4iYWsWbR90-unsplash (1).webp",
+      description:
+        "How the Best E-commerce SEO Agency Helps Brands Achieve 10X Growth",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/how-the-best-e-commerce-seo-agency-helps-brands-achieve-10x-growth",
+      buttonVariant: "",
+    },
     {
       slug: "what-does-a-performance-marketing-agency-in-india-do",
       image: "/campaign-creators-pypeCEaJeZY-unsplash (2).webp",
