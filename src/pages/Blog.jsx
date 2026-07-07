@@ -73,14 +73,14 @@ const Blog = () => {
       buttonVariant: "",
     },
     {
-      slug: "top-seo-agencies-in-india",
+      slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
 
       image:
         "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
       description:
         "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
       buttonText: "Read More",
-      buttonHref: "/blog/top-seo-agencies-in-india",
+      buttonHref: "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
       buttonVariant: "",
     },
     {

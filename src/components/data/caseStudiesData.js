@@ -240,12 +240,12 @@ export const caseStudiesData = {
           "How West Coast Belts Scaled Organic Revenue by 130% and Improved Search Visibility in 6 Months",
       },
       {
-        slug: "weathered",
+        slug: "seo-case-study-weathered-not-worn",
         image: "/MSEO-Case-Study-–-Weathered-Not-Worn.webp",
         description: "SEO Case Study – Weathered Not Worn",
 
         buttonText: "Read More",
-        buttonHref: "/case-studies/weathered",
+        buttonHref: "/case-studies/seo-case-study-weathered-not-worn",
         buttonVariant: "outline",
       },
     ],
@@ -383,12 +383,12 @@ export const caseStudiesData = {
           "How West Coast Belts Scaled Organic Revenue by 130% and Improved Search Visibility in 6 Months",
       },
       {
-        slug: "weathered",
+        slug: "seo-case-study-weathered-not-worn",
         image: "/MSEO-Case-Study-–-Weathered-Not-Worn.webp",
         description: "SEO Case Study – Weathered Not Worn",
 
         buttonText: "Read More",
-        buttonHref: "/case-studies/weathered",
+        buttonHref: "/case-studies/seo-case-study-weathered-not-worn",
         buttonVariant: "outline",
       },
       {
@@ -536,12 +536,12 @@ export const caseStudiesData = {
       },
 
       {
-        slug: "weathered",
+        slug: "seo-case-study-weathered-not-worn",
         image: "/MSEO-Case-Study-–-Weathered-Not-Worn.webp",
         description: "SEO Case Study – Weathered Not Worn",
 
         buttonText: "Read More",
-        buttonHref: "/case-studies/weathered",
+        buttonHref: "/case-studies/seo-case-study-weathered-not-worn",
         buttonVariant: "outline",
       },
       {
@@ -555,7 +555,7 @@ export const caseStudiesData = {
     ],
   },
 
-  weathered: {
+  "seo-case-study-weathered-not-worn": {
     sections: [
       {
         type: "hero",

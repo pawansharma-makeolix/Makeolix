@@ -118,7 +118,7 @@ const navItems = [
       },
     ],
   },
-  { name: "MM79", href: "/mm79" },
+  { name: "MM79", href: "/matrix-maximizer-plan" },
   // {
   //   name: "Industry",
   //   href: "#",

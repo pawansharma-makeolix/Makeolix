@@ -46,12 +46,12 @@ function CaseStudies() {
       buttonVariant: "outline",
     },
     {
-      slug: "weathered",
+      slug: "seo-case-study-weathered-not-worn",
       image: "/MSEO-Case-Study-–-Weathered-Not-Worn.webp",
       description: "SEO Case Study – Weathered Not Worn",
 
       buttonText: "Read More",
-      buttonHref: "/case-studies/weathered",
+      buttonHref: "/case-studies/seo-case-study-weathered-not-worn",
       buttonVariant: "outline",
     },
     {

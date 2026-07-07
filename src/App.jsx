@@ -48,7 +48,7 @@ function App() {
             element={<SeoAiVisibility />}
           />
           <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/mm79" element={<MM79 />} />
+          <Route path="/matrix-maximizer-plan" element={<MM79 />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
