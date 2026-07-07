@@ -1,4 +1,5 @@
 import React from "react";
+import { BlogData } from "../components/data/BlogData";
 import Navbar from "../components/Navbar";
 import CTAMarquee from "../components/CTAMarquee";
 import UltraFooter from "../components/UltraFooter";
@@ -6,6 +7,7 @@ import HeroOrbit from "../components/HeroOrbit";
 import CaseStudiesSection from "../components/CaseStudiesSection";
 import BlogContent from "../components/BlogContent";
 import SeoMetaDesc from "../components/SeoMetaDesc";
+
 
 const Blog = () => {
   const blogsData = [
@@ -28,17 +30,17 @@ const Blog = () => {
         "What Does a Performance Marketing Agency in India Do? A 2026 Guide",
 
       buttonText: "Read More",
-      buttonHref: "/blog/what-does-a-performance-marketing-agency-in-india-do ",
+      buttonHref: "/blog/what-does-a-performance-marketing-agency-in-india-do",
       buttonVariant: "",
     },
     {
-      slug: "top-7-best-wordpress-web-development-companies-in-2026 ",
+      slug: "top-7-best-wordpress-web-development-companies-in-2026",
       image: "/domenico-loia-hGV2TfOh0ns-unsplash1 (1).webp",
       description:
         "Top 7 Best WordPress Web Development Companies in 2026 ",
 
       buttonText: "Read More",
-      buttonHref: "/blog/top-7-best-wordpress-web-development-companies-in-2026 ",
+      buttonHref: "/blog/top-7-best-wordpress-web-development-companies-in-2026",
       buttonVariant: "",
     },
      {

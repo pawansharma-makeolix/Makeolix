@@ -2,6 +2,7 @@ import fs from "fs";
 
 import { ServicesPagesData } from "./src/components/data/index.js";
 import { ServiceAreaPagesData } from "./src/components/data/ServiceAreaPagesData.js";
+import { BlogData } from "./src/components/data/BlogData.js";
 
 const BASE_URL = "https://makeolix.com";
 
@@ -35,7 +36,7 @@ urls += `
 ========================= */
 
 const staticPages = [
-  "/about",
+  "/about-us",
   "/contact-us",
   "/careers",
   "/privacy-policy",
