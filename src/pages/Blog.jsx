@@ -12,7 +12,16 @@ import SeoMetaDesc from "../components/SeoMetaDesc";
 const Blog = () => {
   const blogsData = [
 
+{
+      slug: "the-2026-seo-cliff-is-ai-replacing-everything-you-know-about-ranking",
+      image: "/pexels-freestockpro-12969403 (1).webp",
+      description:
+        "The 2026 SEO Cliff: Is AI Replacing Everything You Know About Ranking?",
 
+      buttonText: "Read More",
+      buttonHref: "/blog/the-2026-seo-cliff-is-ai-replacing-everything-you-know-about-ranking",
+      buttonVariant: "",
+    },
       {
       slug: "how-the-best-e-commerce-seo-agency-helps-brands-achieve-10x-growth",
       image: "/lukas-muller-Q4iYWsWbR90-unsplash (1).webp",
