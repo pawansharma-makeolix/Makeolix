@@ -11,6 +11,26 @@ import SeoMetaDesc from "../components/SeoMetaDesc";
 
 const Blog = () => {
   const blogsData = [
+    {
+      slug: "meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
+      image: "/lalmch-computer-767776_1920 (1).webp",
+      description:
+        "Meta Ads Trends 2026: What Your Agency Should Be Doing Right Now",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
+      buttonVariant: "",
+    },
+    {
+      slug: "2026-top-10-technical-seo-agency-list",
+      image: "/pexels-yankrukov-7698812 (1).webp",
+      description:
+        "2026’s Top 10 Technical SEO Agency List: Experts in Crawlability & Speed",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/2026-top-10-technical-seo-agency-list",
+      buttonVariant: "",
+    },
 
 {
       slug: "the-2026-seo-cliff-is-ai-replacing-everything-you-know-about-ranking",
