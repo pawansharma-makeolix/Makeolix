@@ -12,6 +12,16 @@ import SeoMetaDesc from "../components/SeoMetaDesc";
 const Blog = () => {
   const blogsData = [
     {
+      slug: "9-best-ppc-agencies-in-india-2026-features-roi-reviews",
+      image: "/jakub-zerdzicki-9PwLeZA-RGc-unsplash (1).webp",
+      description:
+        "9 Best PPC Agencies in India (2026): Features, ROI & Reviews",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/9-best-ppc-agencies-in-india-2026-features-roi-reviews",
+      buttonVariant: "",
+    },
+    {
       slug: "meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
       image: "/lalmch-computer-767776_1920 (1).webp",
       description:

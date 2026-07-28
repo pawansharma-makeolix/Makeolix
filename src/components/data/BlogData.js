@@ -2949,8 +2949,7 @@ export const BlogData = {
             },
             {
               type: "list",
-              heading:
-                "We focus on:",
+              heading: "We focus on:",
               items: [
                 "Server-Side Rendering (SSR): Helping search engines see your content faster.",
                 "Schema Markup: Giving search engines context about your products and prices.",
@@ -3007,88 +3006,83 @@ export const BlogData = {
         },
       },
       {
-              type: "faq",
-              data: {
-                faqdata: [
-                  {
-                    id: 1,
-                    question:
-                      "How much do technical SEO services typically cost in the US?",
-                    answer:
-                      "In 2026, most US-based businesses spend between $2,500 and $10,000 per month on professional technical management. At MakeOlix Consulting, we offer transparent pricing tiers based on the size of your site and the complexity of your code. We focus on providing a clear ROI so your SEO spend is an investment, not an expense.",
-                  },
-                  {
-                    id: 2,
-                    question:
-                      "What is the difference between Technical SEO and On-Page SEO?",
-                    answer:
-                      "On-page SEO focuses on what the user reads (keywords, headers, and images). Technical SEO focuses on how the site works (indexing, security, and speed). To rank well, you need both. A fast site with bad content won't rank, and great content on a slow site will never be seen.",
-                  },
-                  {
-                    id: 3,
-                    question:
-                      "How often should my business conduct a technical audit?",
-                    answer:
-                      "We recommend a full audit at least twice a year. However, for high-traffic stores, MakeOlix Consulting provides continuous monitoring. This allows us to catch errors like a developer accidentally 'no-indexing' a page before they impact your revenue.",
-                  },
-                  {
-                    id: 4,
-                    question: "Why is Core Web Vitals still important in 2026?",
-                    answer:
-                      "Core Web Vitals are Google’s way of measuring 'User Experience.' In 2026, Google’s AI uses these metrics to decide if a site is 'helpful.' If your site is jumpy (Layout Shift) or slow to respond (Input Delay), Google will prioritize your competitors.",
-                  },
-                  {
-                    id: 5,
-                    question:
-                      "Should I hire a freelancer or an agency for technical SEO?",
-                    answer:
-                      "While a freelancer can fix small bugs, a Technical SEO Agency like MakeOlix Consulting provides a team of specialists, consultants, and developers. This collective expertise is necessary for navigating the complex AI-driven search environment of 2026.",
-                  },
-                ],
-              },
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question:
+                "How much do technical SEO services typically cost in the US?",
+              answer:
+                "In 2026, most US-based businesses spend between $2,500 and $10,000 per month on professional technical management. At MakeOlix Consulting, we offer transparent pricing tiers based on the size of your site and the complexity of your code. We focus on providing a clear ROI so your SEO spend is an investment, not an expense.",
+            },
+            {
+              id: 2,
+              question:
+                "What is the difference between Technical SEO and On-Page SEO?",
+              answer:
+                "On-page SEO focuses on what the user reads (keywords, headers, and images). Technical SEO focuses on how the site works (indexing, security, and speed). To rank well, you need both. A fast site with bad content won't rank, and great content on a slow site will never be seen.",
+            },
+            {
+              id: 3,
+              question:
+                "How often should my business conduct a technical audit?",
+              answer:
+                "We recommend a full audit at least twice a year. However, for high-traffic stores, MakeOlix Consulting provides continuous monitoring. This allows us to catch errors like a developer accidentally 'no-indexing' a page before they impact your revenue.",
+            },
+            {
+              id: 4,
+              question: "Why is Core Web Vitals still important in 2026?",
+              answer:
+                "Core Web Vitals are Google’s way of measuring 'User Experience.' In 2026, Google’s AI uses these metrics to decide if a site is 'helpful.' If your site is jumpy (Layout Shift) or slow to respond (Input Delay), Google will prioritize your competitors.",
+            },
+            {
+              id: 5,
+              question:
+                "Should I hire a freelancer or an agency for technical SEO?",
+              answer:
+                "While a freelancer can fix small bugs, a Technical SEO Agency like MakeOlix Consulting provides a team of specialists, consultants, and developers. This collective expertise is necessary for navigating the complex AI-driven search environment of 2026.",
             },
           ],
-        relatedblogs: [
-          {
-            slug: "10-best-e-commerce-seo-services-agencies",
-            image: "/blog-image-16-6-2026 (1).webp",
-            description:
-              "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
+        },
+      },
+    ],
+    relatedblogs: [
+      {
+        slug: "10-best-e-commerce-seo-services-agencies",
+        image: "/blog-image-16-6-2026 (1).webp",
+        description:
+          "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
 
-            buttonText: "Read More",
-            buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
-            buttonVariant: "",
-          },
-          {
-            slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        buttonText: "Read More",
+        buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+        buttonVariant: "",
+      },
+      {
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
 
-            image:
-              "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
-            description:
-              "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
-            buttonText: "Read More",
-            buttonHref:
-              "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
-            buttonVariant: "",
-          },
-          {
-            slug: "want-more-traffic-sales",
-            image:
-              "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
-            description:
-              "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
-            buttonText: "Read More",
-            buttonHref: "/blog/want-more-traffic-sales",
-            buttonVariant: "",
-         },
+        image:
+          "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
+        description:
+          "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
+        buttonText: "Read More",
+        buttonHref:
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        buttonVariant: "",
+      },
+      {
+        slug: "want-more-traffic-sales",
+        image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+        description:
+          "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+        buttonText: "Read More",
+        buttonHref: "/blog/want-more-traffic-sales",
+        buttonVariant: "",
+      },
     ],
   },
 
-
-
-
-
-    "meta-ads-trends-2026-what-your-agency-should-be-doing-right-now": {
+  "meta-ads-trends-2026-what-your-agency-should-be-doing-right-now": {
     metaTitle: "Meta Advertising Agency | Best Social Media Marketing Agency",
 
     metaDescription:
@@ -3136,7 +3130,7 @@ export const BlogData = {
               type: "h2",
               text: "Trend 1: The Move to Creative-First Strategy",
             },
- {
+            {
               type: "para",
               text: "If you hire a Social Media Advertising Agency today, they shouldn't spend 90% of their time inside the Meta Ads Manager tweaking buttons. In 2026, Meta’s AI handles the targeting better than any human. The real battle is won in the 'Creative Studio.'",
               links: [
@@ -3155,11 +3149,11 @@ export const BlogData = {
               text: 'Trend 2: Solving the "Signal Loss" Problem',
             },
 
-             {
+            {
               type: "para",
               text: "With increasing privacy regulations across the USA, tracking users has become harder. A top-tier Facebook Advertising Agency must be experts in the Conversions API (CAPI). Without this server-side tracking, your Meta Ads Agency Account is essentially 'blind,' unable to see which clicks actually lead to sales.",
             },
-             {
+            {
               type: "para",
               text: "We prioritize Facebook Business Advertising structures that rely on first-party data. By feeding Meta's AI high-quality data from your own CRM, we allow the algorithm to find your 'whale' customers, those with the highest lifetime value, rather than just chasing cheap, low-intent clicks.",
             },
@@ -3168,7 +3162,7 @@ export const BlogData = {
               text: "Trend 3: Specialized Meta Ads Agency for E-commerce",
             },
             {
-              type: "para", 
+              type: "para",
               text: "The needs of a local plumber are very different from those of an online boutique. If you are selling products online, you need a Meta Ads Agency For Ecommerce. In 2026, this means mastering Advantage+ Shopping Campaigns (ASC).",
               links: [
                 {
@@ -3178,7 +3172,7 @@ export const BlogData = {
               ],
             },
             {
-              type: "para", 
+              type: "para",
               text: "Our approach involves a holistic view of your funnel. While our ad experts maximize your social presence, we often recommend a Technical SEO Audit to ensure that once a user clicks your ad, your website loads instantly. A slow site is the fastest way to kill a Meta Ads budget. By interlinking our E-commerce Website SEO services with our ad strategies, we ensure that your brand dominates both the 'discovery' phase on social media and the 'search' phase on Google.",
               links: [
                 {
@@ -3201,7 +3195,8 @@ export const BlogData = {
             },
             {
               type: "list",
-              heading: "Here is what a modern Facebook Business Advertising strategy should look like:",
+              heading:
+                "Here is what a modern Facebook Business Advertising strategy should look like:",
               items: [
                 "Consolidated Account Structure: Fewer campaigns, more data per ad set.",
                 "Dynamic Creative Optimization: Letting the AI assemble the best headline and image combinations.",
@@ -3236,7 +3231,8 @@ export const BlogData = {
             },
             {
               type: "list",
-              heading: 'Our reporting isn\'t just about "Impressions" or "Likes." We report on:',
+              heading:
+                'Our reporting isn\'t just about "Impressions" or "Likes." We report on:',
               items: [
                 "MER (Marketing Efficiency Ratio): Total Revenue / Total Ad Spend.",
                 "nCAC (New Customer Acquisition Cost): How much it costs to get a brand-new buyer.",
@@ -3255,100 +3251,537 @@ export const BlogData = {
               type: "para",
               text: "Whether you need a dedicated Meta Ads Manager to oversee your daily spend or a full-scale E-commerce Search Engine Optimization strategy to complement your ads, we have the tools to scale your revenue.",
             },
-           
-
-            
-            
-            
-            
-            
-           
-          
-           
-            
-            
-           
-           
-           
-           
           ],
         },
       },
       {
-              type: "faq",
-              data: {
-                faqdata: [
-                  {
-                    id: 1,
-                    question:
-                      "Is Meta Ads still effective for US businesses in 2026?",
-                    answer:
-                      'Absolutely. While platforms like other platforms are also popular, Meta (Facebook and Instagram) still holds the highest ROI for most US e-commerce brands due to its superior AI and massive reach among high-income demographics. By using Meta Facebook Advertising, businesses can reach users who have the highest "buyer intent."',
-                  },
-                  {
-                    id: 2,
-                    question:
-                      "What is the difference between Meta Ads Manager and Meta Business Suite?",
-                    answer:
-                      "The Meta Business Suite is an all-in-one tool for managing your Facebook and Instagram pages, including posting and responding to messages. The Meta Ads Manager is the specific tool used for creating, managing, and tracking the performance of your paid advertising campaigns. At MakeOlix Consulting, we help you navigate both to ensure a cohesive brand voice.",
-                  },
-                  {
-                    id: 3,
-                    question:
-                      "Why is my Meta Ads ROAS dropping?",
-                    answer:
-                      "A drop in ROAS is usually caused by 'Creative Fatigue' or 'Signal Loss.' If your agency isn't refreshing your videos and images weekly, or if they haven't set up the Conversions API to track data accurately, your performance will decline. As a leading Fb Advertising Agency, MakeOlix Consulting specializes in auditing and fixing these specific issues.",
-                  },
-                  {
-                    id: 4,
-                    question: "How much should an e-commerce brand spend on Meta Ads?",
-                    answer:
-                      "Most successful e-commerce brands reinvest 15% to 30% of their revenue into advertising. However, it's not just about the amount, it's about the strategy. MakeOlix Consulting helps you start with a 'test-and-scale' budget, ensuring we find a winning formula before you spend heavily.",
-                  },
-                  {
-                    id: 5,
-                    question:
-                      "How do I find the best Facebook Advertising Agency?",
-                    answer:
-                      "Look for an agency that focuses on 'Profit' rather than 'Return on Ad Spend.' A great Facebook Advertising Agency like MakeOlix Consulting will dive into your unit economics to ensure that your ads are actually putting money in your bank account after all costs are considered.",
-                  },
-                ],
-              },
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question:
+                "Is Meta Ads still effective for US businesses in 2026?",
+              answer:
+                'Absolutely. While platforms like other platforms are also popular, Meta (Facebook and Instagram) still holds the highest ROI for most US e-commerce brands due to its superior AI and massive reach among high-income demographics. By using Meta Facebook Advertising, businesses can reach users who have the highest "buyer intent."',
+            },
+            {
+              id: 2,
+              question:
+                "What is the difference between Meta Ads Manager and Meta Business Suite?",
+              answer:
+                "The Meta Business Suite is an all-in-one tool for managing your Facebook and Instagram pages, including posting and responding to messages. The Meta Ads Manager is the specific tool used for creating, managing, and tracking the performance of your paid advertising campaigns. At MakeOlix Consulting, we help you navigate both to ensure a cohesive brand voice.",
+            },
+            {
+              id: 3,
+              question: "Why is my Meta Ads ROAS dropping?",
+              answer:
+                "A drop in ROAS is usually caused by 'Creative Fatigue' or 'Signal Loss.' If your agency isn't refreshing your videos and images weekly, or if they haven't set up the Conversions API to track data accurately, your performance will decline. As a leading Fb Advertising Agency, MakeOlix Consulting specializes in auditing and fixing these specific issues.",
+            },
+            {
+              id: 4,
+              question:
+                "How much should an e-commerce brand spend on Meta Ads?",
+              answer:
+                "Most successful e-commerce brands reinvest 15% to 30% of their revenue into advertising. However, it's not just about the amount, it's about the strategy. MakeOlix Consulting helps you start with a 'test-and-scale' budget, ensuring we find a winning formula before you spend heavily.",
+            },
+            {
+              id: 5,
+              question: "How do I find the best Facebook Advertising Agency?",
+              answer:
+                "Look for an agency that focuses on 'Profit' rather than 'Return on Ad Spend.' A great Facebook Advertising Agency like MakeOlix Consulting will dive into your unit economics to ensure that your ads are actually putting money in your bank account after all costs are considered.",
             },
           ],
-        relatedblogs: [
+        },
+      },
+    ],
+    relatedblogs: [
+      {
+        slug: "2026-top-10-technical-seo-agency-list",
+        image: "/pexels-yankrukov-7698812 (1).webp",
+        description:
+          "2026’s Top 10 Technical SEO Agency List: Experts in Crawlability & Speed",
+
+        buttonText: "Read More",
+        buttonHref: "/blog/2026-top-10-technical-seo-agency-list",
+        buttonVariant: "",
+      },
+      {
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+
+        image:
+          "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
+        description:
+          "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
+        buttonText: "Read More",
+        buttonHref:
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        buttonVariant: "",
+      },
+      {
+        slug: "want-more-traffic-sales",
+        image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+        description:
+          "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+        buttonText: "Read More",
+        buttonHref: "/blog/want-more-traffic-sales",
+        buttonVariant: "",
+      },
+    ],
+  },
+   "9-best-ppc-agencies-in-india-2026-features-roi-reviews": {
+    metaTitle: "PPC Agency in India | Best PPC Services & Google Ads Agency for Small Businesses",
+
+    metaDescription:
+      "Looking for the best PPC agency in India? We offer Google Ads management, eCommerce PPC, search, display, shopping, and remarketing campaigns to help businesses maximize ROI and generate quality leads. ",
+
+    sections: [
+      {
+        type: "hero",
+        data: {
+          title:
+            "9 Best PPC Agencies in India (2026): Features, ROI & Reviews",
+        },
+      },
+      {
+        type: "blogcontent",
+        data: {
+          blocks: [
             {
-      slug: "2026-top-10-technical-seo-agency-list",
-      image: "/pexels-yankrukov-7698812 (1).webp",
+              type: "image",
+              src: "/jakub-zerdzicki-9PwLeZA-RGc-unsplash (1).webp",
+              alt: "desc",
+            },
+            {
+              type: "para",
+              text: "Running paid ads without the right agency behind you is one of the fastest ways to burn your marketing budget. The PPC market is crowded, and most agency roundup lists are either outdated or written by the agencies themselves.",
+            },
+            {
+              type: "para",
+              text: "We evaluated the 9 best PPC agencies in India based on their services, industry expertise, international experience, client reputation, and overall approach to performance marketing. This guide gives you an honest, side-by-side look at who actually delivers and who just talks ROAS.",
+            },
+           
+
+            {
+              type: "h2",
+              text: "Quick Comparison",
+            },
+      {
+  type: "table",
+  data: {
+    headers: [
+      "Agency",
+      "Best For",
+      "Industries",
+      "International Experience",
+    ],
+    rows: [
+      [
+        "MakeOlix",
+        "Growth-focused businesses",
+        "SaaS, Ecommerce, Healthcare, Education, Local Services, B2B",
+        "Excellent",
+      ],
+      [
+        "Techmagnate",
+        "Enterprise brands",
+        "Education, Healthcare, Ecommerce",
+        "Good",
+      ],
+      [
+        "SEO Discovery",
+        "Startups & SMBs",
+        "Ecommerce, Local Businesses, B2B",
+        "Good",
+      ],
+      [
+        "PageTraffic",
+        "Long-term PPC management",
+        "Multiple",
+        "Good",
+      ],
+      [
+        "WebFX",
+        "Analytics-driven businesses",
+        "Multiple",
+        "Excellent",
+      ],
+      [
+        "AdLift",
+        "SEO + PPC strategies",
+        "Enterprise, Ecommerce, B2B",
+        "Excellent",
+      ],
+      [
+        "iProspect",
+        "Global enterprises",
+        "Retail, FMCG, Finance, Telecom",
+        "Excellent",
+      ],
+      [
+        "Performics",
+        "Large marketing teams",
+        "Retail, Ecommerce, Consumer Brands",
+        "Excellent",
+      ],
+      [
+        "HikeMyTraffic",
+        "Small businesses",
+        "Local & Ecommerce",
+        "Moderate",
+      ],
+    ],
+  },
+},
+            
+        
+           
+            {
+              type: "h2",
+              text: "9 Best PPC Agencies in India (2026)",
+            },
+            {
+              type: "h2",
+              text: "1. MakeOlix",
+            },
+            {
+              type: "para",
+              text: "Best for: US, UK, and UAE businesses looking for a performance marketing partner rooted in India with international campaign expertise.",
+            },
+            {
+              type: "para",
+              text: "MakeOlix Consulting has managed campaigns across healthcare, SaaS, ecommerce, education, and local services for businesses in India, the US, UK, and UAE, focusing on measurable CPA and ROAS improvements. Our approach goes beyond running ads. We build the full picture: keyword strategy, audience targeting, landing page alignment, and conversion tracking that actually tells you what is working.",
+             
+            },
+            {
+              type: "para",
+              text: "What sets MakeOlix apart is how we treat ad spend. Every dollar you put into a campaign is tracked against real business outcomes, not vanity metrics like impressions or click volume. Our Performance Marketing Services cover Google Ads, Meta Ads, and a cross-channel paid media strategy built around your industry and customer journey.",
+              links: [
+                {
+                  word: "Performance Marketing Services",
+                  url: "https://makeolix.com/services/performance-marketing",
+                
+                },
+                {
+                  word: "Meta Ads",
+                  url: "https://makeolix.com/services/meta-ads",
+                }
+              ],
+            },
+            {
+              type: "para",
+              text: "We also offer transparent monthly reporting so you always know exactly where the budget is going and what it is producing.",
+            },
+            {
+              type: "list",
+              heading: "Key features:",
+              items: [
+                "Google Ads and Meta Ads management",
+                "Full-funnel performance marketing strategy",
+                "Conversion rate optimization and landing page guidance",
+                "Transparent analytics and reporting",
+                "Clients across the US, UK, UAE, and India",
+              ],
+            },
+            {
+              type: "para",
+              text: "ROI focus: Revenue-per-click and cost-per-acquisition, not just click volume.",
+              
+            },
+            {
+              type: "h2",
+              text: "2. Techmagnate",
+            },
+
+            
+            {
+              type: "para",
+              text: "Best for: Large enterprises and established brands.",
+            },
+            {
+              type: "para",
+              text: "Techmagnate has built a strong reputation for managing complex PPC campaigns across industries such as healthcare, education, finance, and ecommerce. Their strength lies in handling large advertising accounts with detailed audience segmentation and structured reporting.",
+            },
+            {
+              type: "para",
+              text: "Businesses with dedicated marketing teams often benefit from their enterprise-focused processes.",
+            },
+            {
+              type: "h2",
+              text: "3. SEO Discovery",
+            },
+            
+            {
+              type: "para",
+              text: "Best for: Startups and small to medium-sized businesses.",
+            },
+            {
+              type: "para",
+              text: "SEO Discovery provides PPC management across Google Ads, Microsoft Advertising, LinkedIn, Amazon, and Meta platforms. Their broad service offering makes them a suitable option for businesses looking to manage multiple advertising channels through a single agency.",
+            },
+            {
+              type: "para",
+              text: "They are particularly popular among businesses seeking scalable digital marketing support.",
+            },
+
+            {
+              type: "h2",
+              text: "4. PageTraffic",
+            },
+            {
+              type: "para",
+              text: "Best for: Businesses looking for consistent campaign management.",
+            },
+            {
+              type: "para",
+              text: 'PageTraffic has over two decades of experience in search marketing. Their PPC approach focuses on improving campaign efficiency through keyword research, bid optimization, and continuous monitoring.',
+            
+            },
+            {
+              type: "para",
+              text: "Businesses looking for stable, long-term campaign management often consider PageTraffic a reliable choice.",
+            },
+            {
+              type: "h2",
+              text: "5. WebFX",
+            },
+            {
+              type: "para",
+              text: "Best for: Companies that value detailed reporting."
+            },
+            {
+              type: "para",
+              text: "As part of the global WebFX network, WebFX combines automation tools with structured reporting and campaign optimization. Their services cover search, display, shopping, and remarketing campaigns.Organizations that rely heavily on performance dashboards often appreciate their analytical approach."
+            },
+            {
+              type: "h2",
+              text: "6. AdLift",    
+            },
+            {
+              type: "para",
+              text: "Best for: Businesses combining SEO and PPC.",
+            },
+            {
+              type: "para",
+              text: "AdLift offers integrated digital marketing strategies where paid advertising complements long-term organic growth. Their campaigns are designed to improve visibility across multiple channels rather than relying on paid traffic alone.",
+            },
+            {
+              type: "para",
+              text: "This makes them suitable for brands investing in sustainable digital growth.",
+            },
+            {
+              type: "h2",
+              text: "7. iProspect",
+            },
+            {
+              type: "para",
+              text: "Best for: Enterprise brands that need global campaign coordination.",
+            },
+            {
+              type: "para",
+              text: "iProspect is part of the Dentsu network, making it one of the larger names among any list of PPC services in India. They are strongest for multinational brands that need campaigns running across multiple regions simultaneously.",
+            },
+            {
+              type: "para",
+              text: "Their size means they are less suited to small businesses or direct-to-consumer brands that need hands-on, personalized campaign attention.",
+            },
+            {
+              type: "h2",
+              text: "8. Performics",
+            },
+            {
+              type: "para",
+              text: "Best for: Analytics-heavy accounts with internal marketing maturity.",
+            },
+            {
+              type: "para",
+              text: "Performics is performance-focused and data-intensive. They work best with brands that already have an internal marketing team capable of absorbing and acting on detailed insights.",
+            },
+            {
+              type: "para",
+              text: "If you are a smaller business without dedicated in-house analysts, their reporting depth may create more work than value.",
+            },
+            {
+              type: "h2",
+              text: "9. HikeMyTraffic",
+            },
+            {
+              type: "para",
+              text: "Best for: Small businesses and local brands.",
+            },
+            {
+              type: "para",
+              text: "HikeMyTraffic combines PPC management with creative advertising support, helping businesses develop engaging ad creatives alongside campaign optimization. Their services are particularly useful for brands looking to improve visibility while maintaining a strong creative presence.",
+            },
+    {
+              type: "h2",
+              text: "What Should You Look for in a PPC Ads Agency?",
+            },
+            {
+              type: "para",
+              text:"Before hiring any PPC ads agency, ask these four questions directly:",
+            },
+            {
+              type: "steps",
+              items: [
+                {
+                  title: "Who Will Manage My Account Day-to-Day? ",
+                  description:
+                    "Many agencies sell on a senior team and deliver through juniors. Know the name of the person running your campaigns.",
+                },
+                {
+                  title: "How Do You Handle AI-Driven Bidding Tools Like Performance Max?",
+                  description:
+                    "In 2026, if an agency cannot clearly explain its approach to Google's automated bidding, they are behind.",
+                },
+                {
+                  title: "How Do You Report Attribution?",
+                  description:
+                    "Last-click attribution misses most of the conversion picture. Ask if they use data-driven attribution or any server-side tracking.",
+                },
+                {
+                  title: "What Does Success Look Like at 90 Days? ",
+                  description:
+                    "Any credible agency should be able to tell you what early indicators they track and at what point you should expect measurable ROI.",
+                },
+              ],
+            },
+           {
+            type: "para",
+            text: "For more on how paid media fits into a broader digital strategy, read our blog on “What Does a Performance Marketing Agency in India Do? A 2026 Guide”",
+           },
+           {
+            type: "h2",
+            text: "PPC vs. Organic Search: Which Should You Prioritize?"
+           },
+           {
+            type:"para",
+            text:"PPC delivers fast, measurable traffic, while SEO builds long-term organic authority. Businesses often see the strongest results when both channels work together."
+           },
+           
+           {
+            type:"para",
+            text:"Whether you choose a Google Ads agency for small businesses or a full-service performance marketing partner, combining paid advertising with Local SEO helps create a sustainable growth strategy.",
+           links: [
+                  {
+                    word: "Local SEO",
+                    url: "https://makeolix.com/services/local-seo",
+                  },
+                ],
+           },
+           {
+            type: "h2",
+            text: "Conclusion"
+           },
+            {
+            type:"para",
+            text:"Choosing the right PPC agency in India comes down to one thing: accountability. The best agencies treat your ad budget like an investment and show you exactly what it returns. The worst ones spend it and show you a traffic graph.",
+           
+           },
+            {
+            type:"para",
+            text:"The agencies listed above each bring unique strengths. At the top of that list is MakeOlix, which brings cross-market performance marketing expertise built specifically for businesses in the US and other English-speaking markets.",
+           
+           },
+            {
+            type:"para",
+            text:"If you are ready to stop guessing at ROI and start seeing it, Get in Touch with MakeOlix today for a free strategy consultation.",
+            links: [
+                  {
+                    word: "Get in Touch",
+                    url: "https://makeolix.com/contact-us",
+                  },
+                ],
+           
+           },
+          ],
+        },
+      },
+
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question:
+                "What are the best PPC services in India?",
+              answer:
+                "The best PPC services in India typically include Google Ads management, Meta Ads, Shopping Ads, YouTube Ads, remarketing campaigns, landing page optimization, conversion tracking, and detailed performance reporting.",
+            },
+            {
+              id: 2,
+              question:
+                "What is the average ROI from PPC services? ",
+              answer:
+                "ROI varies by industry and campaign quality. Well-managed campaigns typically target a 3x to 6x return on ad spend (ROAS). Poorly managed campaigns can burn budget with minimal return, which is why agency selection matters.",
+            },
+            {
+              id: 3,
+              question:
+                "Can an Indian PPC agency manage campaigns for US audiences? ",
+              answer:
+                "Yes. Several top agencies, including MakeOlix, specialize in managing campaigns for US, UK, and UAE audiences from India. The key is finding an agency with actual experience in those markets, not just domestic India campaigns.",
+            },
+            {
+              id: 4,
+              question: "What is the difference between a PPC agency and a performance marketing agency? ",
+              answer:
+                "PPC agencies focus specifically on pay-per-click advertising. Performance marketing agencies take a broader view, including paid search, paid social, affiliate marketing, conversion rate optimization, and analytics. MakeOlix operates as a full performance marketing agency with PPC as a core service.",
+            },
+            {
+              id: 5,
+              question: "How do I know if a PPC agency is right for my ecommerce business? ",
+              answer:
+                "Look for an Ecommerce agency with experience in Google Shopping campaigns, dynamic remarketing, and product feed optimization. Ask for case studies specific to ecommerce verticals, not just general lead generation results.",
+                links: [
+                  {
+                    word: "Ecommerce agency",
+                    url: "https://makeolix.com/services/ecommerce-develop",
+                  },
+                ],
+            },
+          ],
+        },
+      },
+     
+      
+     
+     
+    ],
+
+    relatedblogs: [
+        {
+      slug: "what-does-a-performance-marketing-agency-in-india-do",
+      image: "/campaign-creators-pypeCEaJeZY-unsplash (2).webp",
       description:
-        "2026’s Top 10 Technical SEO Agency List: Experts in Crawlability & Speed",
+        "What Does a Performance Marketing Agency in India Do? A 2026 Guide",
 
       buttonText: "Read More",
-      buttonHref: "/blog/2026-top-10-technical-seo-agency-list",
+      buttonHref: "/blog/what-does-a-performance-marketing-agency-in-india-do",
       buttonVariant: "",
     },
-          {
-            slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+       {
+      slug: "10-best-e-commerce-seo-services-agencies",
+      image: "/blog-image-16-6-2026 (1).webp",
+      description:
+        "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
 
-            image:
-              "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
-            description:
-              "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
-            buttonText: "Read More",
-            buttonHref:
-              "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
-            buttonVariant: "",
-          },
-          {
-            slug: "want-more-traffic-sales",
-            image:
-              "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
-            description:
-              "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
-            buttonText: "Read More",
-            buttonHref: "/blog/want-more-traffic-sales",
-            buttonVariant: "",
-         },
+      buttonText: "Read More",
+      buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+      buttonVariant: "",
+    },
+
+      {
+      slug: "meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
+      image: "/lalmch-computer-767776_1920 (1).webp",
+      description:
+        "Meta Ads Trends 2026: What Your Agency Should Be Doing Right Now",
+
+      buttonText: "Read More",
+      buttonHref: "/blog/meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
+      buttonVariant: "",
+    },
     ],
-  }
-}
+  },
+};
