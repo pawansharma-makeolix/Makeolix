@@ -1,5 +1,12 @@
 export const caseStudiesData = {
   "africa-direct": {
+     seo: {
+    title:
+      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
+    description:
+      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
+    url: "https://makeolix.com/case-studies/africa-direct",
+  },
     sections: [
       {
         type: "hero",
@@ -134,6 +141,13 @@ export const caseStudiesData = {
   },
 
   "crowberry-wood": {
+     seo: {
+    title:
+      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
+    description:
+      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
+    url: "https://makeolix.com/case-studies/africa-direct",
+  },
     sections: [
       {
         type: "hero",
@@ -252,6 +266,13 @@ export const caseStudiesData = {
   },
 
   "heartland-bunkies": {
+     seo: {
+    title:
+      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
+    description:
+      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
+    url: "https://makeolix.com/case-studies/africa-direct",
+  },
     sections: [
       {
         type: "hero",
@@ -403,6 +424,13 @@ export const caseStudiesData = {
   },
 
   "west-coast-belts": {
+     seo: {
+    title:
+      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
+    description:
+      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
+    url: "https://makeolix.com/case-studies/africa-direct",
+  },
     sections: [
       {
         type: "hero",
@@ -556,6 +584,13 @@ export const caseStudiesData = {
   },
 
   "seo-case-study-weathered-not-worn": {
+     seo: {
+    title:
+      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
+    description:
+      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
+    url: "https://makeolix.com/case-studies/africa-direct",
+  },
     sections: [
       {
         type: "hero",
@@ -666,6 +701,13 @@ export const caseStudiesData = {
   },
 
   "aitkens-pewter": {
+     seo: {
+    title:
+      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
+    description:
+      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
+    url: "https://makeolix.com/case-studies/africa-direct",
+  },
     sections: [
       {
         type: "hero",
@@ -781,6 +823,13 @@ export const caseStudiesData = {
   },
 
   "grell-watson": {
+     seo: {
+    title:
+      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
+    description:
+      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
+    url: "https://makeolix.com/case-studies/africa-direct",
+  },
     sections: [
       {
         type: "hero",

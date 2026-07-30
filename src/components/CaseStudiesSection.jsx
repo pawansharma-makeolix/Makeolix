@@ -112,7 +112,7 @@ export default function CaseStudiesSection({
               {/* Gradient overlay that appears on card hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-soft)] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
-
+            
             {/* Description + Button */}
             <div className="p-5">
               <p

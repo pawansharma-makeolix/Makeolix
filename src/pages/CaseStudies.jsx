@@ -84,7 +84,7 @@ url="https://makeolix.com/case-studies"
       <HeroOrbit
         title={"Our Case Studies"}
         primaryBtnText={"Know More"}
-        primaryLink={"/about"}
+        primaryLink={"/about-us"}
         secondaryBtnText={"Get In Touch"}
         secondaryLink={"/contact-us"}
       ></HeroOrbit>

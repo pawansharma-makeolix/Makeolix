@@ -39,7 +39,7 @@ const BlogDetail = () => {
   const relatedBlogs = pageData.relatedblogs || [];
   return (
     <>
-     <SeoMetaDesc
+      <SeoMetaDesc
 
         title={pageData.metaTitle}
 
@@ -49,7 +49,40 @@ const BlogDetail = () => {
 
       />
       <Navbar />
+      <div
+        style={{
+          background: "var(--bg-main)",
+          padding: "25px 20px 0",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            color: "#9cb3c9",
+            fontSize: "15px",
+          }}
+        >
+          <strong>Published:</strong>{" "}
+          {new Date(pageData.publishedAt).toLocaleDateString("en-US", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })}
 
+          {pageData.updatedAt !== pageData.publishedAt && (
+            <>
+              {" "}
+              | <strong>Last Updated:</strong>{" "}
+              {new Date(pageData.updatedAt).toLocaleDateString("en-US", {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              })}
+            </>
+          )}
+        </div>
+      </div>
       {pageData.sections.map((section, index) => {
         switch (section.type) {
           case "hero":
@@ -63,6 +96,7 @@ const BlogDetail = () => {
             return null;
         }
       })}
+
 
       {relatedBlogs.length > 0 && (
         <CaseStudiesSection

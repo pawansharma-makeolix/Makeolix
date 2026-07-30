@@ -2,7 +2,9 @@ import { link, text } from "framer-motion/client";
 
 export const BlogData = {
   "how-do-i-choose-the-best-seo": {
+    
     sections: [
+      
       {
         type: "hero",
         data: {
@@ -3329,8 +3331,9 @@ export const BlogData = {
       },
     ],
   },
-   "9-best-ppc-agencies-in-india-2026-features-roi-reviews": {
-    metaTitle: "PPC Agency in India | Best PPC Services & Google Ads Agency for Small Businesses",
+  "9-best-ppc-agencies-in-india-2026-features-roi-reviews": {
+    metaTitle:
+      "PPC Agency in India | Best PPC Services & Google Ads Agency for Small Businesses",
 
     metaDescription:
       "Looking for the best PPC agency in India? We offer Google Ads management, eCommerce PPC, search, display, shopping, and remarketing campaigns to help businesses maximize ROI and generate quality leads. ",
@@ -3339,8 +3342,7 @@ export const BlogData = {
       {
         type: "hero",
         data: {
-          title:
-            "9 Best PPC Agencies in India (2026): Features, ROI & Reviews",
+          title: "9 Best PPC Agencies in India (2026): Features, ROI & Reviews",
         },
       },
       {
@@ -3360,82 +3362,79 @@ export const BlogData = {
               type: "para",
               text: "We evaluated the 9 best PPC agencies in India based on their services, industry expertise, international experience, client reputation, and overall approach to performance marketing. This guide gives you an honest, side-by-side look at who actually delivers and who just talks ROAS.",
             },
-           
 
             {
               type: "h2",
               text: "Quick Comparison",
             },
-      {
-  type: "table",
-  data: {
-    headers: [
-      "Agency",
-      "Best For",
-      "Industries",
-      "International Experience",
-    ],
-    rows: [
-      [
-        "MakeOlix",
-        "Growth-focused businesses",
-        "SaaS, Ecommerce, Healthcare, Education, Local Services, B2B",
-        "Excellent",
-      ],
-      [
-        "Techmagnate",
-        "Enterprise brands",
-        "Education, Healthcare, Ecommerce",
-        "Good",
-      ],
-      [
-        "SEO Discovery",
-        "Startups & SMBs",
-        "Ecommerce, Local Businesses, B2B",
-        "Good",
-      ],
-      [
-        "PageTraffic",
-        "Long-term PPC management",
-        "Multiple",
-        "Good",
-      ],
-      [
-        "WebFX",
-        "Analytics-driven businesses",
-        "Multiple",
-        "Excellent",
-      ],
-      [
-        "AdLift",
-        "SEO + PPC strategies",
-        "Enterprise, Ecommerce, B2B",
-        "Excellent",
-      ],
-      [
-        "iProspect",
-        "Global enterprises",
-        "Retail, FMCG, Finance, Telecom",
-        "Excellent",
-      ],
-      [
-        "Performics",
-        "Large marketing teams",
-        "Retail, Ecommerce, Consumer Brands",
-        "Excellent",
-      ],
-      [
-        "HikeMyTraffic",
-        "Small businesses",
-        "Local & Ecommerce",
-        "Moderate",
-      ],
-    ],
-  },
-},
-            
-        
-           
+            {
+              type: "table",
+              data: {
+                headers: [
+                  "Agency",
+                  "Best For",
+                  "Industries",
+                  "International Experience",
+                ],
+                rows: [
+                  [
+                    "MakeOlix",
+                    "Growth-focused businesses",
+                    "SaaS, Ecommerce, Healthcare, Education, Local Services, B2B",
+                    "Excellent",
+                  ],
+                  [
+                    "Techmagnate",
+                    "Enterprise brands",
+                    "Education, Healthcare, Ecommerce",
+                    "Good",
+                  ],
+                  [
+                    "SEO Discovery",
+                    "Startups & SMBs",
+                    "Ecommerce, Local Businesses, B2B",
+                    "Good",
+                  ],
+                  [
+                    "PageTraffic",
+                    "Long-term PPC management",
+                    "Multiple",
+                    "Good",
+                  ],
+                  [
+                    "WebFX",
+                    "Analytics-driven businesses",
+                    "Multiple",
+                    "Excellent",
+                  ],
+                  [
+                    "AdLift",
+                    "SEO + PPC strategies",
+                    "Enterprise, Ecommerce, B2B",
+                    "Excellent",
+                  ],
+                  [
+                    "iProspect",
+                    "Global enterprises",
+                    "Retail, FMCG, Finance, Telecom",
+                    "Excellent",
+                  ],
+                  [
+                    "Performics",
+                    "Large marketing teams",
+                    "Retail, Ecommerce, Consumer Brands",
+                    "Excellent",
+                  ],
+                  [
+                    "HikeMyTraffic",
+                    "Small businesses",
+                    "Local & Ecommerce",
+                    "Moderate",
+                  ],
+                ],
+              },
+            },
+
             {
               type: "h2",
               text: "9 Best PPC Agencies in India (2026)",
@@ -3451,7 +3450,6 @@ export const BlogData = {
             {
               type: "para",
               text: "MakeOlix Consulting has managed campaigns across healthcare, SaaS, ecommerce, education, and local services for businesses in India, the US, UK, and UAE, focusing on measurable CPA and ROAS improvements. Our approach goes beyond running ads. We build the full picture: keyword strategy, audience targeting, landing page alignment, and conversion tracking that actually tells you what is working.",
-             
             },
             {
               type: "para",
@@ -3460,12 +3458,11 @@ export const BlogData = {
                 {
                   word: "Performance Marketing Services",
                   url: "https://makeolix.com/services/performance-marketing",
-                
                 },
                 {
                   word: "Meta Ads",
                   url: "https://makeolix.com/services/meta-ads",
-                }
+                },
               ],
             },
             {
@@ -3486,14 +3483,12 @@ export const BlogData = {
             {
               type: "para",
               text: "ROI focus: Revenue-per-click and cost-per-acquisition, not just click volume.",
-              
             },
             {
               type: "h2",
               text: "2. Techmagnate",
             },
 
-            
             {
               type: "para",
               text: "Best for: Large enterprises and established brands.",
@@ -3510,7 +3505,7 @@ export const BlogData = {
               type: "h2",
               text: "3. SEO Discovery",
             },
-            
+
             {
               type: "para",
               text: "Best for: Startups and small to medium-sized businesses.",
@@ -3534,8 +3529,7 @@ export const BlogData = {
             },
             {
               type: "para",
-              text: 'PageTraffic has over two decades of experience in search marketing. Their PPC approach focuses on improving campaign efficiency through keyword research, bid optimization, and continuous monitoring.',
-            
+              text: "PageTraffic has over two decades of experience in search marketing. Their PPC approach focuses on improving campaign efficiency through keyword research, bid optimization, and continuous monitoring.",
             },
             {
               type: "para",
@@ -3547,15 +3541,15 @@ export const BlogData = {
             },
             {
               type: "para",
-              text: "Best for: Companies that value detailed reporting."
+              text: "Best for: Companies that value detailed reporting.",
             },
             {
               type: "para",
-              text: "As part of the global WebFX network, WebFX combines automation tools with structured reporting and campaign optimization. Their services cover search, display, shopping, and remarketing campaigns.Organizations that rely heavily on performance dashboards often appreciate their analytical approach."
+              text: "As part of the global WebFX network, WebFX combines automation tools with structured reporting and campaign optimization. Their services cover search, display, shopping, and remarketing campaigns.Organizations that rely heavily on performance dashboards often appreciate their analytical approach.",
             },
             {
               type: "h2",
-              text: "6. AdLift",    
+              text: "6. AdLift",
             },
             {
               type: "para",
@@ -3613,13 +3607,13 @@ export const BlogData = {
               type: "para",
               text: "HikeMyTraffic combines PPC management with creative advertising support, helping businesses develop engaging ad creatives alongside campaign optimization. Their services are particularly useful for brands looking to improve visibility while maintaining a strong creative presence.",
             },
-    {
+            {
               type: "h2",
               text: "What Should You Look for in a PPC Ads Agency?",
             },
             {
               type: "para",
-              text:"Before hiring any PPC ads agency, ask these four questions directly:",
+              text: "Before hiring any PPC ads agency, ask these four questions directly:",
             },
             {
               type: "steps",
@@ -3630,7 +3624,8 @@ export const BlogData = {
                     "Many agencies sell on a senior team and deliver through juniors. Know the name of the person running your campaigns.",
                 },
                 {
-                  title: "How Do You Handle AI-Driven Bidding Tools Like Performance Max?",
+                  title:
+                    "How Do You Handle AI-Driven Bidding Tools Like Performance Max?",
                   description:
                     "In 2026, if an agency cannot clearly explain its approach to Google's automated bidding, they are behind.",
                 },
@@ -3646,54 +3641,51 @@ export const BlogData = {
                 },
               ],
             },
-           {
-            type: "para",
-            text: "For more on how paid media fits into a broader digital strategy, read our blog on “What Does a Performance Marketing Agency in India Do? A 2026 Guide”",
-           },
-           {
-            type: "h2",
-            text: "PPC vs. Organic Search: Which Should You Prioritize?"
-           },
-           {
-            type:"para",
-            text:"PPC delivers fast, measurable traffic, while SEO builds long-term organic authority. Businesses often see the strongest results when both channels work together."
-           },
-           
-           {
-            type:"para",
-            text:"Whether you choose a Google Ads agency for small businesses or a full-service performance marketing partner, combining paid advertising with Local SEO helps create a sustainable growth strategy.",
-           links: [
-                  {
-                    word: "Local SEO",
-                    url: "https://makeolix.com/services/local-seo",
-                  },
-                ],
-           },
-           {
-            type: "h2",
-            text: "Conclusion"
-           },
             {
-            type:"para",
-            text:"Choosing the right PPC agency in India comes down to one thing: accountability. The best agencies treat your ad budget like an investment and show you exactly what it returns. The worst ones spend it and show you a traffic graph.",
-           
-           },
+              type: "para",
+              text: "For more on how paid media fits into a broader digital strategy, read our blog on “What Does a Performance Marketing Agency in India Do? A 2026 Guide”",
+            },
             {
-            type:"para",
-            text:"The agencies listed above each bring unique strengths. At the top of that list is MakeOlix, which brings cross-market performance marketing expertise built specifically for businesses in the US and other English-speaking markets.",
-           
-           },
+              type: "h2",
+              text: "PPC vs. Organic Search: Which Should You Prioritize?",
+            },
             {
-            type:"para",
-            text:"If you are ready to stop guessing at ROI and start seeing it, Get in Touch with MakeOlix today for a free strategy consultation.",
-            links: [
-                  {
-                    word: "Get in Touch",
-                    url: "https://makeolix.com/contact-us",
-                  },
-                ],
-           
-           },
+              type: "para",
+              text: "PPC delivers fast, measurable traffic, while SEO builds long-term organic authority. Businesses often see the strongest results when both channels work together.",
+            },
+
+            {
+              type: "para",
+              text: "Whether you choose a Google Ads agency for small businesses or a full-service performance marketing partner, combining paid advertising with Local SEO helps create a sustainable growth strategy.",
+              links: [
+                {
+                  word: "Local SEO",
+                  url: "https://makeolix.com/services/local-seo",
+                },
+              ],
+            },
+            {
+              type: "h2",
+              text: "Conclusion",
+            },
+            {
+              type: "para",
+              text: "Choosing the right PPC agency in India comes down to one thing: accountability. The best agencies treat your ad budget like an investment and show you exactly what it returns. The worst ones spend it and show you a traffic graph.",
+            },
+            {
+              type: "para",
+              text: "The agencies listed above each bring unique strengths. At the top of that list is MakeOlix, which brings cross-market performance marketing expertise built specifically for businesses in the US and other English-speaking markets.",
+            },
+            {
+              type: "para",
+              text: "If you are ready to stop guessing at ROI and start seeing it, Get in Touch with MakeOlix today for a free strategy consultation.",
+              links: [
+                {
+                  word: "Get in Touch",
+                  url: "https://makeolix.com/contact-us",
+                },
+              ],
+            },
           ],
         },
       },
@@ -3704,15 +3696,13 @@ export const BlogData = {
           faqdata: [
             {
               id: 1,
-              question:
-                "What are the best PPC services in India?",
+              question: "What are the best PPC services in India?",
               answer:
                 "The best PPC services in India typically include Google Ads management, Meta Ads, Shopping Ads, YouTube Ads, remarketing campaigns, landing page optimization, conversion tracking, and detailed performance reporting.",
             },
             {
               id: 2,
-              question:
-                "What is the average ROI from PPC services? ",
+              question: "What is the average ROI from PPC services? ",
               answer:
                 "ROI varies by industry and campaign quality. Well-managed campaigns typically target a 3x to 6x return on ad spend (ROAS). Poorly managed campaigns can burn budget with minimal return, which is why agency selection matters.",
             },
@@ -3725,63 +3715,63 @@ export const BlogData = {
             },
             {
               id: 4,
-              question: "What is the difference between a PPC agency and a performance marketing agency? ",
+              question:
+                "What is the difference between a PPC agency and a performance marketing agency? ",
               answer:
                 "PPC agencies focus specifically on pay-per-click advertising. Performance marketing agencies take a broader view, including paid search, paid social, affiliate marketing, conversion rate optimization, and analytics. MakeOlix operates as a full performance marketing agency with PPC as a core service.",
             },
             {
               id: 5,
-              question: "How do I know if a PPC agency is right for my ecommerce business? ",
+              question:
+                "How do I know if a PPC agency is right for my ecommerce business? ",
               answer:
                 "Look for an Ecommerce agency with experience in Google Shopping campaigns, dynamic remarketing, and product feed optimization. Ask for case studies specific to ecommerce verticals, not just general lead generation results.",
-                links: [
-                  {
-                    word: "Ecommerce agency",
-                    url: "https://makeolix.com/services/ecommerce-develop",
-                  },
-                ],
+              links: [
+                {
+                  word: "Ecommerce agency",
+                  url: "https://makeolix.com/services/ecommerce-develop",
+                },
+              ],
             },
           ],
         },
       },
-     
-      
-     
-     
     ],
 
     relatedblogs: [
-        {
-      slug: "what-does-a-performance-marketing-agency-in-india-do",
-      image: "/campaign-creators-pypeCEaJeZY-unsplash (2).webp",
-      description:
-        "What Does a Performance Marketing Agency in India Do? A 2026 Guide",
+      {
+        slug: "what-does-a-performance-marketing-agency-in-india-do",
+        image: "/campaign-creators-pypeCEaJeZY-unsplash (2).webp",
+        description:
+          "What Does a Performance Marketing Agency in India Do? A 2026 Guide",
 
-      buttonText: "Read More",
-      buttonHref: "/blog/what-does-a-performance-marketing-agency-in-india-do",
-      buttonVariant: "",
-    },
-       {
-      slug: "10-best-e-commerce-seo-services-agencies",
-      image: "/blog-image-16-6-2026 (1).webp",
-      description:
-        "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
+        buttonText: "Read More",
+        buttonHref:
+          "/blog/what-does-a-performance-marketing-agency-in-india-do",
+        buttonVariant: "",
+      },
+      {
+        slug: "10-best-e-commerce-seo-services-agencies",
+        image: "/blog-image-16-6-2026 (1).webp",
+        description:
+          "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
 
-      buttonText: "Read More",
-      buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
-      buttonVariant: "",
-    },
+        buttonText: "Read More",
+        buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+        buttonVariant: "",
+      },
 
       {
-      slug: "meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
-      image: "/lalmch-computer-767776_1920 (1).webp",
-      description:
-        "Meta Ads Trends 2026: What Your Agency Should Be Doing Right Now",
+        slug: "meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
+        image: "/lalmch-computer-767776_1920 (1).webp",
+        description:
+          "Meta Ads Trends 2026: What Your Agency Should Be Doing Right Now",
 
-      buttonText: "Read More",
-      buttonHref: "/blog/meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
-      buttonVariant: "",
-    },
+        buttonText: "Read More",
+        buttonHref:
+          "/blog/meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
+        buttonVariant: "",
+      },
     ],
   },
 };

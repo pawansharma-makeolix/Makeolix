@@ -56,6 +56,7 @@ const Home = () => {
       <SeoMetaDesc
         title="MakeOlix: India's #1 Result-Driven Digital Marketing Agency"
         url="https://makeolix.com/"
+        description="Partner with MakeOlix for expert SEO, PPC, social media marketing, website development, and branding services that help businesses generate more traffic, leads, and sales."
       ></SeoMetaDesc>
       <Navbar />
       <Hero />

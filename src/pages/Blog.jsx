@@ -12,6 +12,7 @@ import SeoMetaDesc from "../components/SeoMetaDesc";
 const Blog = () => {
   const blogsData = [
     {
+
       slug: "9-best-ppc-agencies-in-india-2026-features-roi-reviews",
       image: "/jakub-zerdzicki-9PwLeZA-RGc-unsplash (1).webp",
       description:

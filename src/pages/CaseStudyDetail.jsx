@@ -12,6 +12,7 @@ import CaseStudiesSection from "../components/CaseStudiesSection";
 import { caseStudiesData } from "../components/data/caseStudiesData";
 import FeaturesSection from "../components/FeaturesSection";
 import OtherPageHero from "../components/OtherPageHero";
+import SeoMetaDesc from "../components/SeoMetaDesc";
 
 function CaseStudyDetail() {
   const { slug } = useParams();
@@ -37,6 +38,11 @@ function CaseStudyDetail() {
 
   return (
     <>
+    <SeoMetaDesc
+    title={pageData.seo.title}
+    description={pageData.seo.description}
+    url={pageData.seo.url}
+/>
       <Navbar />
 
       {pageData.sections.map((section, index) => {
