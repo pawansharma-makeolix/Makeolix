@@ -5,29 +5,29 @@ import Button from "../components/Button";
 const blogs = [
   {
     id: 1,
-    slug: "how-do-i-choose-the-best-seo",
-    desc: "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
-    date: "March 10, 2026",
-    service: "SEO Reseller Service",
-    img: "/growtika-dQkAdUGCntA-unsplash.webp",
+    slug: "9-best-ppc-agencies-in-india-2026-features-roi-reviews",
+    desc: "9 Best PPC Agencies in India (2026): Features, ROI & Reviews",
+    date: "Published: July 20, 2026",
+    
+    img: "/jakub-zerdzicki-9PwLeZA-RGc-unsplash (1).webp",
   },
   {
     id: 2,
-    slug: "top-seo-agencies-in-india",
+    slug: "meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
 
-    desc: "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
-    date: "October 12, 2025",
-    service: "SEO",
-    img: "/myriam-jessier-VCtI-0qlVgA-unsplash (1).webp",
+    desc: "Meta Ads Trends 2026: What Your Agency Should Be Doing Right Now",
+    date: "Published: July 13, 2026",
+    
+    img: "/lalmch-computer-767776_1920 (1).webp",
   },
   {
     id: 3,
-    slug: "want-more-traffic-sales",
+    slug: "2026-top-10-technical-seo-agency-list",
 
-    desc: "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
-    date: "September 10, 2025",
-    service: "E-commerce",
-    img: "/shoper-slLo94wES2M-unsplash (2).webp",
+    desc: "2026’s Top 10 Technical SEO Agency List: Experts in Crawlability & Speed",
+    date: "Published: July 6, 2026",
+    
+    img: "/pexels-yankrukov-7698812 (1).webp",
   },
 ];
 
