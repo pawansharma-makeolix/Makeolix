@@ -1,21 +1,15 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+
 import Navbar from "../components/Navbar";
 import UltraFooter from "../components/UltraFooter";
 import CTAMarquee from "../components/CTAMarquee";
-import HeroOrbit from "../components/HeroOrbit";
-import IntroText from "../components/IntroText";
-import TextMedia from "../components/TextMedia";
-import Usp from "../components/Usp";
-import StepsSection from "../components/StepsSection";
 import CaseStudiesSection from "../components/CaseStudiesSection";
 import { BlogData } from "../components/data/BlogData";
-import FeaturesSection from "../components/FeaturesSection";
 import OtherPageHero from "../components/OtherPageHero";
 import BlogContent from "../components/BlogContent";
 import FaqVariant from "../components/FaqVariant";
 import SeoMetaDesc from "../components/SeoMetaDesc";
-
 const BlogDetail = () => {
   const { slug } = useParams();
 
@@ -40,49 +34,16 @@ const BlogDetail = () => {
   return (
     <>
       <SeoMetaDesc
-
         title={pageData.metaTitle}
-
         description={pageData.metaDescription}
-
         url={`https://makeolix.com/blog/${slug}`}
-
+        image={pageData.image}
+        publishedAt={pageData.publishedAt}
+        updatedAt={pageData.updatedAt}
+        type="article"
       />
       <Navbar />
-      <div
-        style={{
-          background: "var(--bg-main)",
-          padding: "25px 20px 0",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
-            color: "#9cb3c9",
-            fontSize: "15px",
-          }}
-        >
-          <strong>Published:</strong>{" "}
-          {new Date(pageData.publishedAt).toLocaleDateString("en-US", {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          })}
 
-          {pageData.updatedAt !== pageData.publishedAt && (
-            <>
-              {" "}
-              | <strong>Last Updated:</strong>{" "}
-              {new Date(pageData.updatedAt).toLocaleDateString("en-US", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              })}
-            </>
-          )}
-        </div>
-      </div>
       {pageData.sections.map((section, index) => {
         switch (section.type) {
           case "hero":
@@ -97,17 +58,23 @@ const BlogDetail = () => {
         }
       })}
 
-
       {relatedBlogs.length > 0 && (
         <CaseStudiesSection
           heading="Related Blogs"
           subtext="Explore more articles"
           cases={relatedBlogs.map((item) => ({
-            ...item,
-            buttonText: "Read More",
-            buttonHref: `/blog/${item.slug}`,
-            buttonVariant: "",
-          }))}
+  ...item,
+
+  image: BlogData[item.slug]?.image || item.image,
+  description: BlogData[item.slug]?.description || item.description,
+
+  publishedAt: BlogData[item.slug]?.publishedAt,
+  updatedAt: BlogData[item.slug]?.updatedAt,
+
+  buttonText: "Read More",
+  buttonHref: `/blog/${item.slug}`,
+  buttonVariant: "",
+}))}
           columns={3}
         />
       )}

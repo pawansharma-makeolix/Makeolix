@@ -101,11 +101,13 @@ Object.keys(ServiceAreaPagesData).forEach((city) => {
    DYNAMIC BLOG PAGES
 ========================= */
 
-Object.keys(BlogData).forEach((slug) => {
+Object.entries(BlogData).forEach(([slug, blog]) => {
+  const lastmod = blog.updatedAt || blog.publishedAt || today;
+
   urls += `
     <url>
       <loc>${BASE_URL}/blog/${slug}</loc>
-      <lastmod>${today}</lastmod>
+      <lastmod>${lastmod}</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>

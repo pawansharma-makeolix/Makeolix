@@ -112,9 +112,42 @@ export default function CaseStudiesSection({
               {/* Gradient overlay that appears on card hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-soft)] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
-            
+
             {/* Description + Button */}
             <div className="p-5">
+              {(item.publishedAt || item.updatedAt) && (
+                <div
+                  className="text-xs mb-3"
+                  style={{
+                    color: "#7fb7d9",
+                    fontWeight: 500,
+                  }}
+                >
+                  {item.publishedAt && (
+                    <span>
+                      Published:{" "}
+                      {new Date(item.publishedAt).toLocaleDateString("en-US", {
+                        day: "numeric",
+                        month: "long",
+                        year: "numeric",
+                      })}
+                    </span>
+                  )}
+
+                  {item.updatedAt &&
+                    item.updatedAt !== item.publishedAt && (
+                      <span>
+                        {" | "}
+                        Last Updated:{" "}
+                        {new Date(item.updatedAt).toLocaleDateString("en-US", {
+                          day: "numeric",
+                          month: "long",
+                          year: "numeric",
+                        })}
+                      </span>
+                    )}
+                </div>
+              )}
               <p
                 className="text-sm md:text-base mb-5 line-clamp-3"
                 style={{ color: "var(--text-muted)" }}

@@ -5,154 +5,21 @@ import CTAMarquee from "../components/CTAMarquee";
 import UltraFooter from "../components/UltraFooter";
 import HeroOrbit from "../components/HeroOrbit";
 import CaseStudiesSection from "../components/CaseStudiesSection";
-import BlogContent from "../components/BlogContent";
 import SeoMetaDesc from "../components/SeoMetaDesc";
 
 
 const Blog = () => {
-  const blogsData = [
-    {
+ const blogsData = Object.entries(BlogData).map(([slug, blog]) => ({
+  slug,
+  image: blog.image,
+  description: blog.description,
+  publishedAt: blog.publishedAt,
+  updatedAt: blog.updatedAt,
 
-      slug: "9-best-ppc-agencies-in-india-2026-features-roi-reviews",
-      image: "/jakub-zerdzicki-9PwLeZA-RGc-unsplash (1).webp",
-      description:
-        "9 Best PPC Agencies in India (2026): Features, ROI & Reviews",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/9-best-ppc-agencies-in-india-2026-features-roi-reviews",
-      buttonVariant: "",
-    },
-    {
-      slug: "meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
-      image: "/lalmch-computer-767776_1920 (1).webp",
-      description:
-        "Meta Ads Trends 2026: What Your Agency Should Be Doing Right Now",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
-      buttonVariant: "",
-    },
-    {
-      slug: "2026-top-10-technical-seo-agency-list",
-      image: "/pexels-yankrukov-7698812 (1).webp",
-      description:
-        "2026’s Top 10 Technical SEO Agency List: Experts in Crawlability & Speed",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/2026-top-10-technical-seo-agency-list",
-      buttonVariant: "",
-    },
-
-{
-      slug: "the-2026-seo-cliff-is-ai-replacing-everything-you-know-about-ranking",
-      image: "/pexels-freestockpro-12969403 (1).webp",
-      description:
-        "The 2026 SEO Cliff: Is AI Replacing Everything You Know About Ranking?",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/the-2026-seo-cliff-is-ai-replacing-everything-you-know-about-ranking",
-      buttonVariant: "",
-    },
-      {
-      slug: "how-the-best-e-commerce-seo-agency-helps-brands-achieve-10x-growth",
-      image: "/lukas-muller-Q4iYWsWbR90-unsplash (1).webp",
-      description:
-        "How the Best E-commerce SEO Agency Helps Brands Achieve 10X Growth",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/how-the-best-e-commerce-seo-agency-helps-brands-achieve-10x-growth",
-      buttonVariant: "",
-    },
-    {
-      slug: "what-does-a-performance-marketing-agency-in-india-do",
-      image: "/campaign-creators-pypeCEaJeZY-unsplash (2).webp",
-      description:
-        "What Does a Performance Marketing Agency in India Do? A 2026 Guide",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/what-does-a-performance-marketing-agency-in-india-do",
-      buttonVariant: "",
-    },
-    {
-      slug: "top-7-best-wordpress-web-development-companies-in-2026",
-      image: "/domenico-loia-hGV2TfOh0ns-unsplash1 (1).webp",
-      description:
-        "Top 7 Best WordPress Web Development Companies in 2026 ",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/top-7-best-wordpress-web-development-companies-in-2026",
-      buttonVariant: "",
-    },
-     {
-      slug: "local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
-      image: "/10-Best-E-Commerce-SEO-Services-Agencies-to-Grow-Your-Revenue-in-2026 (1).webp",
-      description:
-        "Local SEO Services: 9 Best Ways to Increase Online Visibility in 2026",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/local-seo-services-9-best-ways-to-increase-online-visibility-in-2026",
-      buttonVariant: "",
-    },
-    {
-      slug: "10-best-e-commerce-seo-services-agencies",
-      image: "/blog-image-16-6-2026 (1).webp",
-      description:
-        "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
-      buttonVariant: "",
-    },
-    {
-      slug: "how-do-i-choose-the-best-seo",
-      image: "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
-      description:
-        "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
-      buttonText: "Read More",
-      buttonHref: "/blog/how-do-i-choose-the-best-seo",
-      buttonVariant: "",
-    },
-    {
-      slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
-
-      image:
-        "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
-      description:
-        "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
-      buttonText: "Read More",
-      buttonHref: "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
-      buttonVariant: "",
-    },
-    {
-      slug: "want-more-traffic-sales",
-      image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
-      description:
-        "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
-      buttonText: "Read More",
-      buttonHref: "/blog/want-more-traffic-sales",
-      buttonVariant: "",
-    },
-    {
-      slug: "how-much-do-seo-companies-charge",
-      image: "/How-Much-Do-SEO-Companies-Charge_3.webp",
-      description: "How Much Do SEO Companies Charge?",
-      buttonText: "Read More",
-      buttonHref: "/blog/how-much-do-seo-companies-charge",
-      buttonVariant: "",
-    },
-    {
-      slug: "the-role-of-an-seo-company",
-      image: "/The-Role-of-an-SEO-Company_BLOG-3.webp",
-      description:
-        "The Role of an SEO Company in Boosting Your Online Presence",
-
-      buttonText: "Read More",
-      buttonHref: "/blog/the-role-of-an-seo-company",
-      buttonVariant: "",
-    },
-    
-   
-  ];
+  buttonText: "Read More",
+  buttonHref: `/blog/${slug}`,
+  buttonVariant: "",
+}));
   return (
     <>
      <SeoMetaDesc
