@@ -1,6 +1,12 @@
 import { Heading } from "lucide-react";
 
 export const SmallBusinessSeoData = {
+    meta: {
+    title: "Small Business SEO Agency | Affordable Local SEO Services",
+
+    description:
+      "Grow your business with a top small business SEO agency. Affordable, expert local SEO services and solutions tailored to your goals. "
+  },
   sections: [
     {
       type: "hero",

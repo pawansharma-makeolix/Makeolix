@@ -1,6 +1,12 @@
 import { Heading } from "lucide-react";
 
 export const WebDevDesignData = {
+    meta: {
+    title: "Website Design & Development Company in India | Makeolix",
+
+    description:
+      "Top website design & development company in India. Custom web design, redesign & ecommerce development services. Get a free quote today!"
+  },
   
     sections: [
       {

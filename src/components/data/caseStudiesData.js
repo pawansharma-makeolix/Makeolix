@@ -1,12 +1,18 @@
 export const caseStudiesData = {
   "africa-direct": {
-     seo: {
-    title:
-      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
+    image: "/About-the-Client-600x400-1.webp",
+
     description:
-      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
-    url: "https://makeolix.com/case-studies/africa-direct",
-  },
+      "How MakeOlix Consulting Drove a 22% Visibility Surge & 17% More Clicks for Africa Direct in 3 Months",
+
+   
+    seo: {
+      title:
+        "Africa Direct SEO Case Study | Organic Growth Results | MakeOlix",
+      description:
+        "Explore how MakeOlix helped Africa Direct improve organic traffic, search rankings, and online visibility through a data-driven SEO strategy and measurable results.",
+      url: "https://makeolix.com/case-studies/africa-direct",
+    },
     sections: [
       {
         type: "hero",
@@ -141,13 +147,19 @@ export const caseStudiesData = {
   },
 
   "crowberry-wood": {
-     seo: {
-    title:
-      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
+    image: "/image-Case-Studies-Crowberry-Wood-600x400-1.webp",
+
     description:
-      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
-    url: "https://makeolix.com/case-studies/africa-direct",
-  },
+      "How Crowberry Wood Achieved a 512% Increase in Organic Traffic and 9X Growth in Clicks in 12 Months",
+
+   
+    seo: {
+      title:
+        "Crowberry Wood Case Study – SEO Growth & Results | MakeOlix",
+      description:
+        "Explore how MakeOlix helped Crowberry Wood improve organic visibility, search rankings, and website performance with a data-driven SEO strategy.",
+      url: "https://makeolix.com/case-studies/crowberry-wood",
+    },
     sections: [
       {
         type: "hero",
@@ -266,13 +278,19 @@ export const caseStudiesData = {
   },
 
   "heartland-bunkies": {
-     seo: {
-    title:
-      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
+    image: "/About-the-Brand-2-600x400-1.webp",
+
     description:
-      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
-    url: "https://makeolix.com/case-studies/africa-direct",
-  },
+      "How Heartland Bunkies Achieved 1,300% Growth in Organic Users, 12X Increase in Organic Traffic with SEO",
+
+   
+    seo: {
+      title:
+        "Heartland Bunkies Success Story | MakeOlix Case Study",
+      description:
+        "Explore the Heartland Bunkies case study to learn how MakeOlix delivered effective SEO and digital marketing strategies that increased traffic and conversions.",
+      url: "https://makeolix.com/case-studies/heartland-bunkies",
+    },
     sections: [
       {
         type: "hero",
@@ -424,13 +442,19 @@ export const caseStudiesData = {
   },
 
   "west-coast-belts": {
-     seo: {
-    title:
-      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
+    image: "/About-the-Brand-1-600x400-1.webp",
+
     description:
-      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
-    url: "https://makeolix.com/case-studies/africa-direct",
-  },
+      "How West Coast Belts Scaled Organic Revenue by 130% and Improved Search Visibility in 6 Months",
+
+    
+    seo: {
+      title:
+        "West Coast Belts SEO Case Study | Organic Revenue Growth",
+      description:
+        "Explore the West Coast Belts SEO case study and learn how MakeOlix increased organic visibility, search traffic, and revenue through proven SEO techniques.",
+      url: "https://makeolix.com/case-studies/west-coast-belts",
+    },
     sections: [
       {
         type: "hero",
@@ -584,13 +608,18 @@ export const caseStudiesData = {
   },
 
   "seo-case-study-weathered-not-worn": {
-     seo: {
-    title:
-      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
-    description:
-      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
-    url: "https://makeolix.com/case-studies/africa-direct",
-  },
+    image: "/MSEO-Case-Study-–-Weathered-Not-Worn.webp",
+
+    description: "SEO Case Study – Weathered Not Worn",
+
+   
+    seo: {
+      title:
+        "SEO Case Study: Weathered Not Worn's Organic Traffic Growth | MakeOlix",
+      description:
+        "Explore the Weathered Not Worn SEO case study and learn how strategic SEO improved search visibility, keyword rankings, and sustainable organic growth with MakeOlix.",
+      url: "https://makeolix.com/case-studies/seo-case-study-weathered-not-worn",
+    },
     sections: [
       {
         type: "hero",
@@ -701,13 +730,18 @@ export const caseStudiesData = {
   },
 
   "aitkens-pewter": {
-     seo: {
-    title:
-      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
-    description:
-      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
-    url: "https://makeolix.com/case-studies/africa-direct",
-  },
+    image: "/MSEO-Case-Study-–-Aitkens-Pewter-1.webp",
+
+    description: "SEO Case Study – Aitkens Pewter",
+
+  
+    seo: {
+      title:
+        "Aitkens Pewter SEO Case Study | Organic Growth Results | Makeolix",
+      description:
+        "Explore the Aitkens Pewter SEO case study and discover how Makeolix boosted search rankings, organic traffic, user engagement, and overall business performance.",
+      url: "https://makeolix.com/case-studies/aitkens-pewter",
+    },
     sections: [
       {
         type: "hero",
@@ -823,13 +857,18 @@ export const caseStudiesData = {
   },
 
   "grell-watson": {
-     seo: {
-    title:
-      "Africa Direct SEO Case Study | 22% Visibility Growth & 17% More Clicks",
-    description:
-      "Discover how MakeOlix Consulting increased Africa Direct's organic visibility by 22% and clicks by 17% within 3 months through strategic SEO.",
-    url: "https://makeolix.com/case-studies/africa-direct",
-  },
+    image: "/MSEO-Case-Study-–-Greel-Watson-Patent-Attorneys-1.webp",
+
+    description: "SEO Case Study – Grell & Watson Patent Attorneys",
+
+
+    seo: {
+      title:
+        "Grell Watson Case Study | Digital Marketing Success by MakeOlix",
+      description:
+        "Explore how MakeOlix helped Grell Watson achieve digital growth with strategic marketing solutions, SEO improvements, and performance-driven strategies.",
+      url: "https://makeolix.com/case-studies/grell-watson",
+    },
     sections: [
       {
         type: "hero",

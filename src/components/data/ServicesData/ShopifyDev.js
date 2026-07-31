@@ -1,6 +1,12 @@
 import { Heading } from "lucide-react";
 
 export const ShopifyDevData = {
+  meta: {
+    title: "Shopify Website Development Company India | Shopify Experts",
+
+    description:
+      "Professional Shopify development in India with custom theme development, Shopify web design, ecommerce website development, and scalable online store solutions."
+  },
   sections: [
     {
       type: "hero",

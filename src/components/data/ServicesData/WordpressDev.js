@@ -1,6 +1,12 @@
 import { Heading } from "lucide-react";
 
 export const WordpresDevData = {
+    meta: {
+    title: "WordPress Web Development Company in India | Design & Maintenance",
+
+    description:
+      "Leading WordPress web development company in India offering custom website design, theme customization & maintenance services. Get a free quote today!"
+  },
   
     sections: [
       {

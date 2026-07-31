@@ -1,6 +1,12 @@
 import { Heading } from "lucide-react";
 
 export const EcommerceDevelopData = {
+    meta: {
+    title: "Ecommerce Website Development Company in India | Makeolix",
+
+    description:
+      "Looking for an ecommerce website development company in India? Get custom ecommerce web development, responsive design, and scalable online store solutions to grow your business."
+  },
   sections: [
     {
       type: "hero",

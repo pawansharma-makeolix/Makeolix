@@ -1,6 +1,12 @@
 import { Heading } from "lucide-react";
 
 export const MetaAds = {
+    meta: {
+    title: "Meta Ads Agency | Facebook Advertising & Social Media Marketing Agency",
+
+    description:
+      "Grow your business with our Meta Ads Agency offering Facebook advertising, Meta business ads, and social media marketing to boost leads, sales, and ROI."
+  },
   sections: [
     {
       type: "hero",

@@ -39,9 +39,13 @@ function CaseStudyDetail() {
   return (
     <>
     <SeoMetaDesc
-    title={pageData.seo.title}
-    description={pageData.seo.description}
-    url={pageData.seo.url}
+  title={pageData.seo.title}
+  description={pageData.seo.description}
+  url={pageData.seo.url}
+  image={pageData.image}
+  publishedAt={pageData.publishedAt}
+  updatedAt={pageData.updatedAt}
+  type="article"
 />
       <Navbar />
 

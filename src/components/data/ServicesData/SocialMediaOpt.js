@@ -1,6 +1,12 @@
 import { Heading } from "lucide-react";
 
 export const SocialMediaOpt ={
+  meta: {
+    title: "Social Media Optimization Services in India | MakeOlix",
+
+    description:
+      "Boost your brand with Social Media Optimization Services in India. We optimize social profiles, content, pages, and strategies to increase reach and engagement."
+  },
   
     sections: [
       {

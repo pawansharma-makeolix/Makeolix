@@ -1,6 +1,14 @@
 import { TfiLayoutMenuSeparated } from "react-icons/tfi";
 
 export const PpcAdsData = {
+
+
+    meta: {
+    title: "PPC Agency in India | PPC Services & Google Ads Experts",
+
+    description:
+      "Get ROI-driven PPC services in India from a trusted PPC agency. We offer Google Ads management, pay per click advertising, PPC consulting, and campaign optimization."
+  },
   sections: [
     {
       type: "hero",

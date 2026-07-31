@@ -2877,6 +2877,10 @@ export const BlogData = {
 
     publishedAt: "2026-05-18",
     updatedAt: "2026-05-18",
+     metaTitle: "How to Choose the Best SEO Service for Your Business",
+
+    metaDescription:
+      "Confused about choosing SEO services? Explore important factors to select the right SEO approach and improve your website visibility, traffic, and growth.",
     sections: [
       {
         type: "hero",
@@ -2994,7 +2998,13 @@ export const BlogData = {
             },
             {
               type: "para",
-              text: "Freelance marketers can find affordable SEO reseller partners in India by looking for companies that specialize in white-label SEO services for agencies. The ideal partner should offer flexible pricing, scalable packages, and transparent reporting. Companies like MakeOlix Consulting provide structured monthly plans that help freelancers manage multiple client campaigns without hiring internal staff.",
+              text: "Freelance marketers can find affordable SEO reseller partners in India by looking for companies that specialize in White-label SEO Services for agencies. The ideal partner should offer flexible pricing, scalable packages, and transparent reporting. Companies like MakeOlix Consulting provide structured monthly plans that help freelancers manage multiple client campaigns without hiring internal staff.",
+              links: [
+                {
+                  word: "White-label SEO Services",
+                  url: "https://makeolix.com/services/white-label-seo",
+                },
+              ],
             },
             {
               type: "h2",
@@ -3003,6 +3013,12 @@ export const BlogData = {
             {
               type: "para",
               text: "The best India-based SEO reseller services offer fully managed white-label SEO that includes private-label keyword research, in-depth technical audits, link building, and ongoing monthly SEO maintenance. MakeOlix Consulting delivers these services under your agency brand with detailed reporting and campaign tracking to ensure long-term results.",
+               links: [
+                {
+                  word: "SEO reseller services",
+                  url: "https://makeolix.com/services/seo-reseller-service",
+                },
+              ],
             },
             {
               type: "h2",
@@ -3158,6 +3174,10 @@ export const BlogData = {
 
     publishedAt: "2026-05-11",
     updatedAt: "2026-05-11",
+     metaTitle: "5 Top SEO Agencies in India to Boost Your Productivity in 2025 | Makeolix",
+
+    metaDescription:
+      "Looking for the best SEO agencies in India? Explore top SEO companies that deliver powerful strategies to improve visibility, rankings, traffic, and business growth.",
     sections: [
       {
         type: "hero",
@@ -3196,6 +3216,12 @@ export const BlogData = {
                   title: "All-in-One SEO Powerhouse",
                   description:
                     "It is one of the best plug-ins that is useful to the users of WordPress , Whether you’re an e-commerce platform looking to increase sales or a service provider seeking local visibility, MakeOlix is your go-to E-commerce SEO Agency in India and Local SEO Agency in India, all rolled into one.",
+                    links: [
+                {
+                  word: "E-commerce SEO Agency in India",
+                  url: "https://makeolix.com/services/e-commerce-seo",
+                },
+              ],
                 },
                 {
                   title: "Well-Trained Campaigns",
@@ -3206,6 +3232,12 @@ export const BlogData = {
                   title: "Best SEO Agencies in India – For a Reason",
                   description:
                     "Their innovative approach, real-time reporting, and hands-on communication make them a trusted choice among the Best SEO Agencies in India.",
+                    links: [
+                {
+                  word: "Best SEO Agencies in India.",
+                  url: "https://makeolix.com/services/seo",
+                },
+              ],
                 },
               ],
             },
@@ -3400,6 +3432,10 @@ export const BlogData = {
 
     publishedAt: "2026-05-04",
     updatedAt: "2026-05-04",
+     metaTitle: "Want More Traffic & Sales? Top E-commerce SEO Agency in India",
+
+    metaDescription:
+      "Grow your online store with proven SEO strategies. Partner with a top e-commerce SEO agency in India to increase website traffic, rankings, and sales.",
     sections: [
       {
         type: "hero",
@@ -3445,6 +3481,12 @@ export const BlogData = {
             {
               type: "para",
               text: "At MakeOlix Consulting, we don’t just “do SEO.” We live and breathe it. Our team specializes in E-commerce SEO Services tailored for real growth, organic traffic, conversion rates, and revenue.",
+              links: [
+                {
+                  word: "E-commerce SEO Services",
+                  url: "https://makeolix.com/services/e-commerce-seo",
+                },
+              ],
             },
 
             {
@@ -3558,6 +3600,10 @@ export const BlogData = {
 
     publishedAt: "2026-04-27",
     updatedAt: "2026-04-27",
+     metaTitle: "SEO Company Pricing: How Much Does SEO Cost in 2026?",
+
+    metaDescription:
+      "Explore SEO company pricing, average costs, and different SEO packages. Understand what impacts SEO fees and choose the right SEO service for your business.",
     sections: [
       {
         type: "hero",
@@ -3671,6 +3717,12 @@ export const BlogData = {
                   title: "Monthly Retainer Fees",
                   description:
                     "Monthly retainer fees for SEO services can range from $750 to $5000 or more, depending on the scope of services and the size of the client’s business. Small businesses or startups may opt for more affordable packages, while larger enterprises with complex SEO needs may invest in higher-tier plans.",
+                    links: [
+                {
+                  word: "SEO services",
+                  url: "https://makeolix.com/services/seo",
+                },
+              ],
                 },
                 {
                   title: "Project-Based Pricing",
@@ -3734,6 +3786,10 @@ export const BlogData = {
 
     publishedAt: "2026-04-13",
     updatedAt: "2026-04-13",
+       metaTitle: "The Role of an SEO Company in Growing Your Online Presence | MakeOlix",
+
+    metaDescription:
+      "Explore how an SEO company helps businesses improve search rankings, increase organic traffic, and build a strong online presence with effective SEO strategies.",
     sections: [
       {
         type: "hero",
@@ -3815,6 +3871,13 @@ export const BlogData = {
                   title: "Technical SEO",
                   description:
                     "Technical SEO involves optimizing the technical aspects of your website to improve its crawlability, indexability, and overall performance in search engine rankings. This includes optimizing website speed, improving mobile-friendliness, fixing broken links, and implementing structured data markup. An SEO company will address technical issues that may be hindering your website’s visibility and implement solutions to enhance its overall SEO performance.",
+                    links: [{
+                      word:"Technical SEO",
+                      url: "https://makeolix.com/services/technical-seo",
+                      
+                    }
+                    ]
+                    
                 },
                 {
                   title: "Link Building and Off-Page Optimization",

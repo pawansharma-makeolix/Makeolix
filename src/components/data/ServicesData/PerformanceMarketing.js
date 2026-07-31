@@ -2,6 +2,12 @@ import { desc } from "framer-motion/client";
 import { TfiLayoutMenuSeparated } from "react-icons/tfi";
 
 export const PerformanceMarketingData = {
+    meta: {
+    title: "Performance Marketing Agency India | ROI-Driven Growth Experts",
+
+    description:
+      "Looking for performance marketing services in India? Our digital performance marketing agency creates high-converting campaigns, media strategies, and measurable business growth."
+  },
   sections: [
     {
       type: "hero",

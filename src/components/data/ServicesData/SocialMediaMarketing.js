@@ -1,7 +1,12 @@
 import { Heading } from "lucide-react";
 
 export const socialMediaData ={
-  
+    meta: {
+    title: "Social Media Marketing Agency in India | SMO & Management Services",
+
+    description:
+      "Grow your brand with the best social media marketing agency in India. Get expert SMO services, Facebook & Instagram marketing, social media management."
+  },
     sections: [
       {
         type: "hero",

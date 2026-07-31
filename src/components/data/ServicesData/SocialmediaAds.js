@@ -1,6 +1,12 @@
 import { Heading } from "lucide-react";
 
 export const SocialMediaAds = {
+  meta: {
+    title: "Best Social Media Advertising Agency in India | MakeOlix",
+
+    description:
+      "MakeOlix is a top social media advertising agency in India, helping small businesses grow with ROI-driven social media marketing and advertising campaigns."
+  },
   sections: [
     {
       type: "hero",
