@@ -14,7 +14,6 @@ import { TestimonialData } from "../components/data/TestimonialData";
 import StaggerTestimonials from "../components/StaggerTestimonials";
 import UltraFooter from "../components/UltraFooter";
 import CTAMarquee from "../components/CTAMarquee";
-import HorizontalScrollSection from "../components/HorizontalScrollSection";
 import GoogleReviewsWidget from "../components/GoogleReviewsWidget";
 import SeoMetaDesc from "../components/SeoMetaDesc";
 const Home = () => {

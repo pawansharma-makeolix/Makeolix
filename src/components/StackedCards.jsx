@@ -2,8 +2,7 @@
 
 import { useState, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
-import { SparkleParticles } from "./SparkleParticles";
-
+import SparkleParticles from "./SparkleParticles";
 const cards = [
   {
     id: 0,

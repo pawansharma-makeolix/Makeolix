@@ -44,6 +44,10 @@ const Trusted = () => {
                   key={i}
                   src={logo}
                   alt="client logo"
+                  loading="lazy"
+                  decoding="async"
+                  width="140"
+                  height="56"
                   className="h-14 object-contain opacity-70 hover:opacity-100 
                   transition-all duration-300 transform-gpu
                   hover:scale-105

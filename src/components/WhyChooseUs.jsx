@@ -2,8 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { SparkleParticles } from "./SparkleParticles";
-
+import SparkleParticles from "./SparkleParticles";
 const features = [
   {
     title: "Expertise that Delivers Results",

@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SparkleParticles } from "./SparkleParticles";
-
+import SparkleParticles from "./SparkleParticles";
 const OtherPageHero = ({ title = "About Us" }) => {
   return (
     <section

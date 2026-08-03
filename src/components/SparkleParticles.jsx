@@ -4,10 +4,11 @@ import { useEffect, useId, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-export function SparkleParticles({
+const SparkleParticles = ({
   className,
-  particleColor = ["#118ab2", "#ffffff"], // 🔥 multi color
-}) {
+  particleColor = ["#118ab2", "#ffffff"],
+}) => 
+  {
   const [isReady, setIsReady] = useState(false);
   const id = useId();
 
@@ -29,8 +30,7 @@ export function SparkleParticles({
       enable: false,
       zIndex: 0,
     },
-    fpsLimit: 120,
-
+fpsLimit: 60,
     interactivity: {
       events: {
         onHover: {
@@ -48,24 +48,20 @@ export function SparkleParticles({
       },
 
       number: {
-        value: 80, // ✅ controlled density
+        value: 30, // ✅ controlled density
       },
 
       size: {
         value: { min: 1, max: 4 },
       },
 
-      opacity: {
-        value: { min: 0.05, max: 0.3 }, // ✅ subtle
-        animation: {
-          enable: true,
-          speed: 1.5,
-        },
-      },
+     opacity: {
+    value: 0.25
+},
 
       move: {
         enable: true,
-        speed: 0.6, // ✅ slow = premium
+        speed: 0.3, // ✅ slow = premium
         direction: "none",
         outModes: {
           default: "out",
@@ -77,10 +73,14 @@ export function SparkleParticles({
       },
     },
 
-    detectRetina: true,
+    detectRetina: false,
   };
 
   return (
     isReady && <Particles id={id} options={options} className={className} />
   );
-}
+
+
+};
+
+export default SparkleParticles;

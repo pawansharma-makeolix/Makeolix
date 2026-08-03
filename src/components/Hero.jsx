@@ -60,19 +60,19 @@ const Hero = () => {
   const particlesOptions = {
     fullScreen: { enable: false },
     background: { color: "#051923" },
-    fpsLimit: 120,
+    fpsLimit: 30,
     interactivity: {
       events: {
-        onClick: { enable: true, mode: "push" },
-        onHover: { enable: true, mode: "grab" },
-      },
+    onClick: { enable: false },
+    onHover: { enable: false },
+  },
       modes: {
         push: { quantity: 4 },
         grab: { distance: 140, links: { opacity: 0.4 } },
       },
     },
     particles: {
-      number: { value: 80, density: { enable: true, area: 800 } },
+      number: { value: 25, density: { enable: true, area: 800 } },
       color: { value: ["#ef476f", "#fff", "#118ab2"] },
       links: { enable: true, distance: 110, color: "#ffffff", opacity: 0.7, width: 1 },
       move: { enable: true, speed: 1.2, direction: "none", outModes: { default: "bounce" } },
@@ -89,13 +89,15 @@ const Hero = () => {
       style={{ backgroundColor: "#051923" }}
     >
       {/* Video — hamesha DOM mein, opacity se control */}
-      <video
+     {isDesktop && (
+  <video
         ref={videoRef}
         muted           // ✅ muted ZAROORI hai autoplay ke liye
         loop
         playsInline
-        preload="auto"
-        
+        autoPlay
+preload="metadata"
+poster="/hero-poster.webp"        
         className="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000"
         style={{
           opacity: isDesktop && videoReady ? 1 : 0,
@@ -104,6 +106,7 @@ const Hero = () => {
       >
         <source src="/hero-video.mp4" type="video/mp4" />
       </video>
+)} 
 
       {/* Particles — mobile only */}
       {!isDesktop && init && (
@@ -121,17 +124,7 @@ const Hero = () => {
           We Are{" "}
           <span className="bg-linear-to-r from-white to-[#118ab2] bg-clip-text text-transparent">
             <TypeAnimation
-              sequence={[
-                "Building Brands Across The GLOBE",
-                2000,
-                "Building Brands Across The GLOBE",
-                2000,
-                 "Building Brands Across The GLOBE",
-                2000,
-                 "Building Brands Across The GLOBE",
-                2000,
-                
-              ]}
+              sequence={["Building Brands Across The GLOBE", 2500]}
               speed={50}
               repeat={Infinity}
             />

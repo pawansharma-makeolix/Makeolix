@@ -1,8 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, 
+  useEffect,
+  lazy,
+  Suspense, } from "react";
 import { motion } from "framer-motion";
 import Button from "./Button";
-import { SparkleParticles } from "./SparkleParticles";
-
+const SparkleParticles = lazy(() => import("./SparkleParticles"));
 const About = () => {
   const videoRef = useRef(null);
 
@@ -31,7 +33,11 @@ const About = () => {
 
   return (
     <section className="relative py-20 bg-(--bg-main) text-white overflow-hidden">
-      <SparkleParticles className="absolute inset-0 z-0 blur-[1px]" />
+      <Suspense fallback={null}>
+  <SparkleParticles
+    className="absolute inset-0 z-0 blur-[1px]"
+  />
+</Suspense>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* LEFT CONTENT */}
@@ -75,12 +81,11 @@ const About = () => {
             {/* ✅ src nahi diya — sirf ref, preload none */}
             <video
               ref={videoRef}
-              autoPlay
               loop
               muted
               playsInline
               preload="none"
-              className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+              className="w-full h-full object-cover transition duration-500 group-hover:brightness-110"
             />
 
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition"></div>

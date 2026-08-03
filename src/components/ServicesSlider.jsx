@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { SparkleParticles } from "./SparkleParticles";
+import SparkleParticles from "./SparkleParticles";
 import Button from "../components/Button";
 
 const services = [
@@ -37,7 +37,10 @@ const touchStartTarget = useRef(50);
 
   // Animation loop
   useEffect(() => {
-    const animate = () => {
+  let animationId;
+
+  const animate = () => {
+    if (isActive) {
       progress.current += (target.current - progress.current) * 0.1;
 
       const active = (progress.current / 100) * (services.length - 1);
@@ -53,15 +56,18 @@ const touchStartTarget = useRef(50);
 
         const z = services.length - Math.abs(i - active);
 
-        el.style.transform = `translate3d(${tx}%, ${ty}%, 0) rotate(${rot}deg)`;
+        el.style.transform = `translate3d(${tx}%, ${ty}%,0) rotate(${rot}deg)`;
         el.style.zIndex = Math.round(z * 10);
       });
+    }
 
-      requestAnimationFrame(animate);
-    };
+    animationId = requestAnimationFrame(animate);
+  };
 
-    requestAnimationFrame(animate);
-  }, []);
+  animationId = requestAnimationFrame(animate);
+
+  return () => cancelAnimationFrame(animationId);
+}, [isActive]);
 
   // Scroll control (LOCK scroll inside section)
   useEffect(() => {
@@ -157,6 +163,8 @@ useEffect(() => {
               style={{ backgroundColor: "#051923" }}
             >
               <img
+              loading="lazy"
+  
                 src={service.image}
                 alt={service.title}
                 className="w-full h-full object-cover"
