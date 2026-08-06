@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import LinkRenderer from "./LinkRenderer";
 
 
 
@@ -45,7 +46,7 @@ export default function TextMediaVariant(
               className="mb-4 text-4xl font-extrabold leading-tight sm:text-5xl"
               style={{ color: "#fff" }}
             >
-              {heading}
+<LinkRenderer text={heading} />
             </motion.h2>
 
             <motion.div
@@ -61,8 +62,7 @@ export default function TextMediaVariant(
               className="mb-8 text-sm leading-relaxed"
               style={{ color: "#fff" }}
             >
-              {description}
-            </motion.p>
+<LinkRenderer text={description} />            </motion.p>
 
             {/* Service cards */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
@@ -106,15 +106,15 @@ export default function TextMediaVariant(
          className="mb-1 font-semibold"
   style={{ fontSize: "18px", color: "#fff" }}
         >
-          {s.title}
+<LinkRenderer text={s.title} />
         </h3>
 
         <p
           className="text-xs leading-relaxed"
           style={{ color: "#fff" }}
         >
-          {s.desc}
-        </p>
+<LinkRenderer text={s.desc} />    
+    </p>
       </div>
     </motion.div>
   ))}

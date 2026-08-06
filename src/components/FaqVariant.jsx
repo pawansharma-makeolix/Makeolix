@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import LinkRenderer from "./LinkRenderer";
 
 // ─── Default FAQ Data ─────────────────────────────────────────────────────────
 const defaultBg = "var(--bg-soft)";
@@ -350,15 +351,3 @@ export default function FaqVariant({
   );
 }
 
-// ─── Usage Example ────────────────────────────────────────────────────────────
-// <FAQSection />                          ← uses default content
-//
-// <FAQSection
-//   heading="Got Questions?"
-//   subheading="We have answers for you."
-//   tag="Help"
-//   faqs={[
-//     { id: 1, question: "...", answer: "..." },
-//     { id: 2, question: "...", answer: "..." },
-//   ]}
-// />

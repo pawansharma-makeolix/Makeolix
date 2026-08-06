@@ -2,6 +2,8 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import LinkRenderer from "./LinkRenderer";
+
 
 export default function IntroText({
   heading,
@@ -89,7 +91,7 @@ export default function IntroText({
             className="text-base sm:text-lg leading-relaxed"
             style={{ color: "var(--text-muted)" }}
           >
-            {paragraph}
+  <LinkRenderer text={paragraph} />
           </p>
 
           {/* 🔹 Paragraph Link (optional) */}

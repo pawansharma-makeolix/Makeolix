@@ -12,6 +12,7 @@ import { Check } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import LinkRenderer from "./LinkRenderer";
 export default function TextMedia({
   title,
   subtitle,
@@ -237,7 +238,7 @@ export default function TextMedia({
               transition={{ duration: 0.6 }}
               className="uppercase tracking-[0.25em] text-(--accent-pink) text-xs"
             >
-              {subtitle}
+             <LinkRenderer text={subtitle} />
             </motion.p>
           )}
 
@@ -252,7 +253,7 @@ export default function TextMedia({
   }}
   className="text-white leading-tight"
 >
-  {title}
+  <LinkRenderer text={title} />
 </motion.h2>
 
           {description && (
@@ -260,7 +261,7 @@ export default function TextMedia({
               style={{ opacity }}
               className="text-white max-w-LG leading-relaxed"
             >
-              {description}
+              <LinkRenderer text={description} />
             </motion.p>
           )}
           {listTitle && (
@@ -270,7 +271,7 @@ export default function TextMedia({
               transition={{ duration: 0.35 }}
               className="text-(--blue-3) text-xs uppercase tracking-[0.18em] font-semibold"
             >
-              {listTitle}
+              <LinkRenderer text={listTitle} />
             </motion.p>
           )}
           {/* ✅ LIST SUPPORT */}
@@ -301,7 +302,7 @@ export default function TextMedia({
                     <Check size={12} />
                   </motion.span>
 
-                  <span className="leading-relaxed">{item}</span>
+                  <span className="leading-relaxed"><LinkRenderer text={item} /></span>
                 </motion.li>
               ))}
             </ul>
@@ -309,7 +310,7 @@ export default function TextMedia({
 
           {/* ✅ SECOND PARAGRAPH */}
           {paragraph2 && (
-            <p className="text-white max-w-md leading-relaxed">{paragraph2}</p>
+            <p className="text-white max-w-md leading-relaxed"><LinkRenderer text={paragraph2} /></p>
           )}
 
           {/* CTA */}

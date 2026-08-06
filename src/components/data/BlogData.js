@@ -1,6 +1,266 @@
 import { link, text } from "framer-motion/client";
 
 export const BlogData = {
+
+
+
+ "5-best-performance-marketing-services-in-india-for-2026": {
+    image: "/Performance Marketing By Makeolix.webp",
+
+    description: "5 Best Performance Marketing Services in India for 2026",
+
+    publishedAt: "2026-07-27",
+    updatedAt: "2026-07-27",
+       metaTitle: "The Role of an SEO Company in Growing Your Online Presence | MakeOlix",
+
+    metaDescription:
+      "Explore how an SEO company helps businesses improve search rankings, increase organic traffic, and build a strong online presence with effective SEO strategies.",
+    sections: [
+      {
+        type: "hero",
+        data: {
+          title: "5 Best Performance Marketing Services in India for 2026",
+        },
+      },
+      {
+        type: "blogcontent",
+        data: {
+          blocks: [
+            {
+              type: "image",
+              src: "/Performance Marketing By Makeolix.webp",
+              alt: "desc",
+            },
+            {
+              type: "para",
+              text: "Looking for the best Performance Marketing Services in India? Based on digital expertise, ROI-focused strategies, campaign transparency, and full-funnel marketing capabilities, the top agencies for 2026 are MakeOlix Consulting, Techmagnate, PageTraffic, EZ Rankings, and iQuanti. Each agency offers unique strengths, but the right choice depends on your business goals, budget, and growth stage. ",
+            },
+            {
+              type: "para",
+              text: "This comparison is based on publicly available service offerings, industry expertise, and the ability to deliver measurable business results. If your goal is sustainable growth rather than vanity metrics, these agencies are worth considering.",
+            },
+
+            {
+              type: "h2",
+              text: "How We Selected These Agencies",
+            },
+            {
+              type: "para",
+              text: "Choosing a marketing partner is about more than finding someone to run ads. We evaluated each agency based on its expertise in Google Ads, Meta Ads, LinkedIn Ads, conversion rate optimization (CRO), reporting transparency, industry experience, client portfolio, and long-term growth strategy. Agencies that combine paid advertising with SEO and analytics provide greater value because they help businesses generate immediate leads while building sustainable organic growth.",
+            },
+            {
+              type: "h2",
+              text: "Best Performance Marketing Agencies at a Glance",
+            },
+            {
+              type: "table",
+              data: {
+                headers: [
+                  "Agency",
+                  "Best For",
+                  "Key Strength",
+                  
+                ],
+                rows: [
+                  [
+                    "MakeOlix",
+                    "Small & growing businesses",
+                    "Full-funnel digital marketing",
+                    
+                  ],
+                  [
+                    "Techmagnate",
+                    "Enterprise brands",
+                    "Large-scale paid campaigns",
+                  ],
+                  [
+                    "PageTraffic",
+                    "SEO + PPC",
+                    "Search-driven lead generation",
+                  ],
+                  [
+                    "EZ Rankings",
+                    "Small & mid-sized businesses",
+                    "Affordable digital marketing",
+                  ],
+                  [
+                    "iQuanti",
+                    "Global businesses",
+                    "Data-driven campaign optimization",
+                    
+                  ],
+                 
+                ],
+              },
+            },
+          
+            {
+              type: "h2",
+              text: "MakeOlix Consulting (Best Overall)",
+            },
+            {
+              type: "para",
+              text: "MakeOlix Consulting earns the top position because it combines paid advertising, SEO, website development, social media marketing, and conversion optimization into one integrated growth strategy. As a trusted Performance Marketing Agency India, the company focuses on measurable outcomes such as qualified leads, customer acquisition, and higher return on ad spend (ROAS). Businesses can also strengthen their digital presence by exploring SEO Services, Social Media Marketing, Website Design & Development, and Local SEO solutions available on the MakeOlix website. This integrated approach makes MakeOlix Consulting an ideal partner for startups, SMBs, and businesses targeting both Indian and U.S. markets.",
+              links: [
+                {
+                  word: "Performance Marketing Agency India",
+                  url: "https://makeolix.com/services/performance-marketing",
+                },
+                {
+                  word: "SEO Services",
+                  url: "https://makeolix.com/services/seo",
+                },
+                {
+                  word: "Social Media Marketing",
+                  url: "https://makeolix.com/services/social-media-marketing",
+                },
+                {
+                  word: "Website Design & Development",
+                  url: "https://makeolix.com/services/website-design-development",
+                },
+                {
+                  word: "Local SEO",
+                  url: "https://makeolix.com/services/local-seo",
+                },
+              ]
+            },
+            {
+              type: "h2",
+              text: "Techmagnate",
+            },
+            {
+              type: "para",
+              text: "Techmagnate is recognized for managing enterprise-level paid advertising campaigns supported by analytics and conversion optimization. Its expertise across Google Ads, Meta Ads, and digital strategy makes it a strong choice for businesses seeking scalable lead generation and long-term campaign performance.",
+            },
+            {
+              type: "h2",
+              text: "PageTraffic",
+            },
+            {
+              type: "para",
+              text: "PageTraffic combines SEO with paid advertising to help businesses improve search visibility and customer acquisition. Its strength lies in creating integrated campaigns that drive targeted traffic while supporting long-term online growth through search marketing.",
+            },
+            {
+              type: "h2",
+              text: "EZ Rankings",
+            },
+            {
+              type: "para",
+              text: "EZ Rankings provides performance marketing, SEO, and social media management for businesses looking for affordable yet measurable digital growth. Its data-driven approach helps improve campaign performance while maintaining transparency through regular reporting.",
+            },
+            {
+              type: "h2",
+              text: "iQuanti",
+            },
+            {
+              type: "para",
+              text: "iQuanti specializes in analytics-driven marketing strategies for finance, healthcare, retail, and technology brands. By combining paid media, audience insights, and continuous optimization, the agency helps businesses maximize advertising performance and improve customer acquisition.",
+            },
+            {
+              type: "h2",
+              text: "How to Choose the Right Performance Marketing Agency",
+            },
+            {
+              type: "para",
+              text: "The best Performance-Based Marketing Agency should understand your business objectives before launching campaigns. Look for agencies with proven industry experience, transparent reporting, platform certifications, and expertise in Google Ads, Meta Ads, Google Analytics 4 (GA4), and conversion optimization. Reviewing case studies and performance metrics can also help you choose a partner that aligns with your long-term growth goals.",
+            },
+            {
+              type: "h2",
+              text: "Why SEO and Performance Marketing Work Better Together",
+            },
+            {
+              type: "para",
+              text: "Paid advertising generates immediate visibility, while SEO builds long-term authority and organic traffic. Combining both strategies creates a balanced marketing approach that delivers sustainable business growth. MakeOlix Consulting helps businesses integrate SEO and paid advertising so every campaign supports both short-term conversions and long-term online visibility. This unified strategy improves customer acquisition while maximizing marketing ROI.",
+            },
+            {
+              type: "h2",
+              text: "Conclusion",
+            },
+            {
+              type: "para",
+              text: "Performance marketing is no longer optional for businesses that want to grow in a competitive digital landscape. The right agency can help you generate qualified leads, improve conversions, and scale revenue efficiently. While all the listed agencies offer strong capabilities, the best choice depends on your specific goals, industry, and budget. ",
+            },
+            {
+              type: "para",
+              text: "If you are looking for a partner that focuses on measurable results and full-funnel growth, MakeOlix Consulting stands out as a reliable option for long-term digital success.",
+            },
+            
+          ],
+        },
+      },
+       {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question: "Which company offers the best Performance Marketing Services in India?",
+              answer:
+                "The right agency depends on your business goals. Agencies such as MakeOlix Consulting, Techmagnate, PageTraffic, EZ Rankings, and iQuanti are recognized for delivering measurable marketing results across different industries.",
+            },
+            {
+              id: 2,
+              question: "What does a performance marketing agency do?",
+              answer:
+                "A performance marketing agency manages paid digital campaigns focused on measurable outcomes such as leads, sales, app installs, or customer acquisitions while continuously optimizing campaign performance.",
+            },
+            {
+              id: 3,
+              question:
+                "Is performance marketing better than SEO?",
+              answer:
+                "Performance marketing provides faster results through paid advertising, while SEO builds sustainable organic visibility. Combining both strategies often delivers the strongest long-term business growth.",
+            },
+            {
+              id: 4,
+              question:
+                "How do I choose the right performance marketing agency?",
+              answer:
+                "Look for industry experience, transparent reporting, platform expertise, case studies, conversion optimization capabilities, and a proven track record of delivering measurable ROI.",
+            },
+            {
+              id: 5,
+              question:
+                "Can small businesses benefit from performance marketing?",
+              answer:
+                "Yes. Performance marketing allows small businesses to target the right audience, control advertising budgets, measure campaign performance, and scale marketing efforts based on real business results.",
+             
+            },
+          ],
+        },
+      },
+    ],
+    relatedblogs: [
+      {
+        slug: "how-much-do-seo-companies-charge",
+        image: "/How-Much-Do-SEO-Companies-Charge_3.webp",
+        description: "How Much Do SEO Companies Charge?",
+        buttonText: "Read More",
+        buttonHref: "/blog/how-much-do-seo-companies-charge",
+        buttonVariant: "",
+      },
+      {
+        slug: "how-do-i-choose-the-best-seo",
+        image:
+          "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
+        description:
+          "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
+        buttonText: "Read More",
+        buttonHref: "/blog/how-do-i-choose-the-best-seo",
+        buttonVariant: "",
+      },
+      {
+        slug: "want-more-traffic-sales",
+        image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+        description:
+          "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+        buttonText: "Read More",
+        buttonHref: "/blog/want-more-traffic-sales",
+        buttonVariant: "",
+      },
+    ],
+  },
+
   "9-best-ppc-agencies-in-india-2026-features-roi-reviews": {
     image: "/jakub-zerdzicki-9PwLeZA-RGc-unsplash (1).webp",
 
@@ -3936,4 +4196,13 @@ export const BlogData = {
       },
     ],
   },
+
+
+
+
+
+
+
+
+
 };

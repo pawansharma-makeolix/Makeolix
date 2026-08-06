@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { FiCheck } from "react-icons/fi";
+import LinkRenderer from "./LinkRenderer";
 
 export default function ParallaxHero({
   bgImage,
@@ -108,7 +109,7 @@ export default function ParallaxHero({
           transition={{ delay: 0.1, duration: 0.4 }}
           className="relative text-white leading-[1.08]"
         >
-          {heading}
+          <LinkRenderer text={heading} />
         </motion.h2>
 
         {/* Line */}
@@ -126,7 +127,7 @@ export default function ParallaxHero({
           transition={{ delay: 0.2 }}
           className="text-white/80 leading-[1.9] text-[15px] md:text-[16px]"
         >
-          {desc}
+          <LinkRenderer text={desc} />
         </motion.p>
 
         {/* Subtext */}
@@ -139,7 +140,7 @@ export default function ParallaxHero({
             bg-gradient-to-r from-white via-[var(--accent-pink)] to-white
             bg-clip-text text-transparent"
           >
-            {smallText}
+            <LinkRenderer text={smallText} />
           </motion.p>
         )}
 
@@ -157,7 +158,7 @@ export default function ParallaxHero({
               <span className="mt-[3px] shrink-0 w-5 h-5 rounded-full bg-[rgba(17,138,178,0.16)] border border-[rgba(17,138,178,0.22)] flex items-center justify-center">
                 <FiCheck className="text-[12px] text-[var(--accent-pink)]" />
               </span>
-              <span className="text-white/80 leading-[1.7]">{item}</span>
+              <span className="text-white/80 leading-[1.7]">  <LinkRenderer text={item} /></span>
             </motion.li>
           ))}
         </ul>
@@ -170,7 +171,7 @@ export default function ParallaxHero({
             transition={{ delay: 0.35 }}
             className="mt-8 pl-4 border-l-[3px] border-[var(--accent-pink)]"
           >
-            <p className="text-white font-medium leading-[1.7]">{finalText}</p>
+            <p className="text-white font-medium leading-[1.7]"><LinkRenderer text={finalText} /></p>
           </motion.div>
         )}
       </div>

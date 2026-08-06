@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FiCheckCircle } from "react-icons/fi";
+import LinkRenderer from "./LinkRenderer";
 
 const containerVariants = {
   hidden: {},
@@ -101,7 +102,7 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
             letterSpacing: "-0.02em",
           }}
         >
-          {heading}
+         <LinkRenderer text={heading} />
         </h2>
         {subheading && (
           <p
@@ -112,7 +113,7 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
               lineHeight: 1.7,
             }}
           >
-            {subheading}
+           <LinkRenderer text={subheading} />
           </p>
         )}
       </motion.div>
@@ -189,7 +190,7 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
                     color: "#118ab2",
                   }}
                 >
-                  {item.tag}
+                 <LinkRenderer text={item.tag} />
                 </span>
               )}
             </div>
@@ -216,7 +217,7 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
                 lineHeight: 1.3,
               }}
             >
-              {item.title}
+             <LinkRenderer text={item.title} />
             </h3>
 
             <p
@@ -227,7 +228,7 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
                 lineHeight: 1.7,
               }}
             >
-              {item.desc}
+             <LinkRenderer text={item.desc} />
             </p>
             {Array.isArray(item.points) && item.points.length > 0 && (
   <motion.ul
@@ -277,7 +278,7 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
         <span style={{ marginTop: 2 }}>
           <CheckIcon />
         </span>
-        {point}
+         <LinkRenderer text={point} />
       </motion.li>
     ))}
   </motion.ul>
