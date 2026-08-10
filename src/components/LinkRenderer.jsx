@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const LinkRenderer = ({ text }) => {
+  // Safety check
   if (!text) return null;
   if (typeof text !== "string") return text;
 
   // Format:
   // [Label|URL]
   // [Label|URL|new]
-  const regex = /\[(.*?)\|(.*?)(?:\|(new))?\]/g;
+  const regex = /\[([^\]|]+)\|([^\]|]+)(?:\|(new))?\]/g;
 
   const elements = [];
   let lastIndex = 0;
@@ -20,7 +21,7 @@ const LinkRenderer = ({ text }) => {
 
     const label = match[1].trim();
     const url = match[2].trim();
-    const openNewTab = match[3]?.trim().toLowerCase() === "new";
+    const openNewTab = match[3] === "new";
 
     // External Link
     if (/^https?:\/\//i.test(url)) {
@@ -41,19 +42,15 @@ const LinkRenderer = ({ text }) => {
       );
     }
 
-    // Internal React Link
+    // Internal Link
     else {
       elements.push(
         <Link
           key={match.index}
           to={url}
-          {...(openNewTab
-            ? {
-                target: "_blank",
-                rel: "noopener noreferrer",
-              }
-            : {})}
           className="text-[#0EA5E9] hover:underline"
+          target={openNewTab ? "_blank" : undefined}
+          rel={openNewTab ? "noopener noreferrer" : undefined}
         >
           {label}
         </Link>
