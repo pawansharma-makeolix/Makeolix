@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "./Button";
+import LinkRenderer from "./LinkRenderer";
 
 // ─── CSS Variables ────────────────────────────────────────────────────────────
 const STYLE = `
@@ -187,7 +188,7 @@ function Slide({ service, direction }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.18, duration: 0.4 }}
         >
-          ✦ {service.tag}
+          ✦ <LinkRenderer text={service.tag} />
         </motion.span>
 
         <motion.h3
@@ -200,7 +201,7 @@ function Slide({ service, direction }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.24, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
-          {service.title}
+  <LinkRenderer text={service.title} />
         </motion.h3>
 
         <motion.p
@@ -210,7 +211,7 @@ function Slide({ service, direction }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.32, duration: 0.5 }}
         >
-          {service.description}
+           <LinkRenderer text={service.description} />
         </motion.p>
 
         <motion.div
@@ -474,7 +475,7 @@ export default function ServicesSection({
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.45, duration: 0.5 }}
           >
-            {subheading}
+<LinkRenderer text={subheading} />
           </motion.p>
 
           <motion.div

@@ -8,6 +8,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
+import LinkRenderer from "./LinkRenderer";
 
 // ─── Particle burst on open ───────────────────────────────────────────────────
 
@@ -213,7 +214,7 @@ function StepCard({ step, index, total, globalActive, onActivate, animatedIcons 
                 transition: "all 0.3s",
               }}
             >
-              {step.tag}
+              <LinkRenderer text={step.tag} />
             </motion.span>
           </div>
 
@@ -247,7 +248,7 @@ function StepCard({ step, index, total, globalActive, onActivate, animatedIcons 
               transition: "color 0.3s",
             }}
           >
-            {step.title}
+            <LinkRenderer text={step.title} />
           </h3>
 
           {/* Body — slides open when active */}
@@ -269,7 +270,7 @@ function StepCard({ step, index, total, globalActive, onActivate, animatedIcons 
                   className="text-sm leading-relaxed whitespace-pre-line"
                   style={{ color: "var(--text-muted)" }}
                 >
-                  {step.body}
+                 <LinkRenderer text={step.body} />
                 </motion.p>
 
                 {Array.isArray(step.animatedIcons) && step.animatedIcons.length > 0 && (
@@ -444,8 +445,8 @@ function Header({ eyebrow, heading, subtitle }) {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 0.5, duration: 0.6 }}
       >
-        {subtitle}
-      </motion.p>
+<LinkRenderer text={subtitle} />  
+    </motion.p>
     </div>
   );
 }

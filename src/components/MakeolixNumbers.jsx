@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import LinkRenderer from "./LinkRenderer";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 80, rotate: -3 },
@@ -30,37 +30,48 @@ const MakeolixNumbers = ({
   subheading,
   statsData = [],
   variant = "light",
-  columns, // ← new prop
+  columns,
 }) => {
-
   const isDark = variant === "dark";
-  const lgCols = columns && colsMap[Number(columns)] ? colsMap[Number(columns)] : "lg:grid-cols-3";
+
+  const lgCols =
+    columns && colsMap[Number(columns)]
+      ? colsMap[Number(columns)]
+      : "lg:grid-cols-3";
 
   return (
     <div
       className={`w-full py-20 px-4 ${
         isDark
           ? "bg-[#051923]"
-          : "bg-linear-to-b from-white to-[#e6f2f8]"
+          : "bg-gradient-to-b from-white to-[#e6f2f8]"
       }`}
     >
-      <div className="text-center mb-16 max-w-3xl mx-auto">
+      {/* Heading */}
+      <div className="text-center mb-12">
         <h2
-          className={` ${
+          className={`${
             isDark ? "text-white" : "text-[#003863]"
           }`}
         >
-          {heading}
+          <LinkRenderer text={heading} />
         </h2>
 
         {subheading && (
-          <p className={`mt-3 ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-            {subheading}
+          <p
+            className={`mt-3 ${
+              isDark ? "text-gray-300" : "text-gray-600"
+            }`}
+          >
+            <LinkRenderer text={subheading} />
           </p>
         )}
       </div>
 
-      <div className={`grid grid-cols-1 sm:grid-cols-2 ${lgCols} gap-8 max-w-6xl mx-auto`}>
+      {/* Stats */}
+      <div
+        className={`grid grid-cols-1 sm:grid-cols-2 ${lgCols} gap-8 max-w-6xl mx-auto`}
+      >
         {statsData.map((item, i) => (
           <motion.div
             key={i}
@@ -76,24 +87,31 @@ const MakeolixNumbers = ({
                 : "bg-[#051923]"
             }`}
           >
+            {/* Number */}
             <h3
-              className={` mb-2 ${
+              className={`mb-2 ${
                 isDark ? "text-[#003863]" : "text-[#118ab2]"
               }`}
             >
               {item.number}
             </h3>
 
+            {/* Title */}
             <h4
-              className={` mb-2 ${
+              className={`mb-2 ${
                 isDark ? "text-black" : "text-white"
               }`}
             >
-              {item.title}
+              <LinkRenderer text={item.title} />
             </h4>
 
-            <p className={`${isDark ? "text-gray-600" : "text-gray-400"}`}>
-              {item.desc}
+            {/* Description */}
+            <p
+              className={`${
+                isDark ? "text-gray-600" : "text-gray-400"
+              }`}
+            >
+              <LinkRenderer text={item.desc} />
             </p>
           </motion.div>
         ))}
@@ -101,4 +119,5 @@ const MakeolixNumbers = ({
     </div>
   );
 };
+
 export default MakeolixNumbers;

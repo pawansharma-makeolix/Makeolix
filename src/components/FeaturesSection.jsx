@@ -8,6 +8,7 @@ import {
   useSpring,
 } from "framer-motion";
 import { Check } from "lucide-react";
+import LinkRenderer from "./LinkRenderer";
 
 // ─── Floating Particle ────────────────────────────────────────────────────────
 function Particle({ x, y, size, delay, duration }) {
@@ -40,7 +41,7 @@ function FeatureIconList({ title, items = [] }) {
     <div className="rounded-2xl p-5 md:p-6 border border-[rgba(17,138,178,0.16)] bg-[linear-gradient(135deg,rgba(0,23,31,0.88)_0%,rgba(0,56,99,0.28)_100%)] backdrop-blur-[12px]">
       {title && (
         <h4 className="text-white  text-base mb-4 tracking-[-0.02em]">
-          {title}
+          <LinkRenderer text={title} />
         </h4>
       )}
 
@@ -73,7 +74,7 @@ function FeatureIconList({ title, items = [] }) {
             </motion.span>
 
             <span className="text-sm leading-relaxed text-[var(--text-muted,#a0aec0)]">
-              {item}
+              <LinkRenderer text={item} />
             </span>
           </motion.div>
         ))}
@@ -172,7 +173,7 @@ function FeatureCard({ card, index, side }) {
             ease: [0.22, 1, 0.36, 1],
           }}
         >
-          {card.title}
+         <LinkRenderer text={card.title} />
         </motion.h3>
 
         {/* Body */}
@@ -182,7 +183,7 @@ function FeatureCard({ card, index, side }) {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: delay + 0.32, duration: 0.55 }}
         >
-          {card.body}
+          <LinkRenderer text={card.body} />
         </motion.p>
 
         {/* Card icon lists */}
@@ -403,7 +404,7 @@ useEffect(() => {
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
-              {subtext}
+             <LinkRenderer text={subtext} />
             </motion.p>
           )}
         </div>

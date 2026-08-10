@@ -101,7 +101,7 @@ export const seoData = {
               id: "1",
               title: "E-commerce SEO",
               description:
-                "We also work as an E-commerce SEO Agency, optimizing product pages, categories, and conversion funnels to increase sales.",
+                "We also work as an [E-commerce SEO|/https://www.makeolix.com/services/e-commerce-seo/] Agency, optimizing product pages, categories, and conversion funnels to increase sales.",
               nodes: 9,
             },
             {
@@ -116,7 +116,7 @@ export const seoData = {
 
               title: "White-Label SEO",
               description:
-                "Our white-label SEO reseller Services help agencies and freelancers grow without hiring their own team. We take care of all the SEO work behind the scenes, and you can deliver the results to your clients under your own brand.",
+                "Our white-label  [SEO reseller Services|/https://www.makeolix.com/services/seo-reseller-service/] help agencies and freelancers grow without hiring their own team. We take care of all the SEO work behind the scenes, and you can deliver the results to your clients under your own brand.",
               nodes: 8,
             },
             {
@@ -124,7 +124,7 @@ export const seoData = {
 
               title: "Local SEO",
               description:
-                "As a results-driven Local SEO Company, we optimize your Google Business Profile, citations, and local keywords. Our Local SEO Services help you dominate “near me” searches and attract local customers.",
+                "As a results-driven [Local SEO|/https://www.makeolix.com/services/local-seo-service/] Company, we optimize your Google Business Profile, citations, and local keywords. Our Local SEO Services help you dominate “near me” searches and attract local customers.",
               nodes: 10,
             },
             {
