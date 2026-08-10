@@ -9,10 +9,10 @@ export const BlogData = {
 
     publishedAt: "2026-08-03",
     updatedAt: "2026-08-03",
-       metaTitle: "The Role of an SEO Company in Growing Your Online Presence | MakeOlix",
+       metaTitle: "Best Small Business SEO Services to Grow Online in 2026 ",
 
     metaDescription:
-      "Explore how an SEO company helps businesses improve search rankings, increase organic traffic, and build a strong online presence with effective SEO strategies.",
+      "Explore the best small business SEO services to improve search rankings, attract qualified visitors, increase local visibility, and grow your business online.",
     sections: [
       {
         type: "hero",
@@ -293,10 +293,10 @@ export const BlogData = {
 
     publishedAt: "2026-07-27",
     updatedAt: "2026-07-27",
-       metaTitle: "The Role of an SEO Company in Growing Your Online Presence | MakeOlix",
+       metaTitle: " 5 Best Performance Marketing Services in India 2026 | Top Agencies ",
 
     metaDescription:
-      "Explore how an SEO company helps businesses improve search rankings, increase organic traffic, and build a strong online presence with effective SEO strategies.",
+      "Explore the 5 best Performance Marketing Services in India for 2026. Compare leading Performance Marketing Agencies and performance-based marketing solutions.",
     sections: [
       {
         type: "hero",
