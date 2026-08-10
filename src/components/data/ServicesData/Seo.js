@@ -116,7 +116,7 @@ export const seoData = {
 
               title: "White-Label SEO",
               description:
-                "Our white-label  [SEO reseller Services|services/seo-reseller-service/] help agencies and freelancers grow without hiring their own team. We take care of all the SEO work behind the scenes, and you can deliver the results to your clients under your own brand.",
+                "Our white-label  [SEO reseller Services|/services/seo-reseller-service/] help agencies and freelancers grow without hiring their own team. We take care of all the SEO work behind the scenes, and you can deliver the results to your clients under your own brand.",
               nodes: 8,
             },
             {
