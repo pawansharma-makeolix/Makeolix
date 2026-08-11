@@ -116,7 +116,7 @@ export const seoData = {
 
               title: "White-Label SEO",
               description:
-                "Our white-label  [SEO reseller Services|/seo-reseller-service/] help agencies and freelancers grow without hiring their own team. We take care of all the SEO work behind the scenes, and you can deliver the results to your clients under your own brand.",
+                "Our white-label  [SEO reseller Services|/services/seo-reseller-service] help agencies and freelancers grow without hiring their own team. We take care of all the SEO work behind the scenes, and you can deliver the results to your clients under your own brand.",
               nodes: 8,
             },
             {
@@ -124,7 +124,7 @@ export const seoData = {
 
               title: "Local SEO",
               description:
-                "As a results-driven [Local SEO|/local-seo-service/] Company, we optimize your Google Business Profile, citations, and local keywords. Our Local SEO Services help you dominate “near me” searches and attract local customers.",
+                "As a results-driven [Local SEO|/services/local-seo] Company, we optimize your Google Business Profile, citations, and local keywords. Our Local SEO Services help you dominate “near me” searches and attract local customers.",
               nodes: 10,
             },
             {

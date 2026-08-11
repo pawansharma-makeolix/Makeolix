@@ -106,7 +106,7 @@ export const whitelabelseo ={
               id: "1",
               title: "SEO Reseller Services",
               description:
-                "We handle end-to-end SEO Reseller Services, including strategy, implementation, and optimization. This allows you to focus on client relationships while we drive performance behind the scenes.",
+                "We handle end-to-end [SEO reseller Services|/services/seo-reseller-service], including strategy, implementation, and optimization. This allows you to focus on client relationships while we drive performance behind the scenes.",
               nodes: 9,
             },
             {

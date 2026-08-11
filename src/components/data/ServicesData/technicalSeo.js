@@ -70,7 +70,7 @@ export const technicalSeo = {
             id: 4,
             number: "04",
             title: "Technical SEO For E-commerce ",
-            body: "We optimize product pages, category structures, and site navigation to improve visibility and conversions. This helps e-commerce businesses attract more qualified traffic and increase sales.",
+            body: "We optimize product pages, category structures, and site navigation to improve visibility and conversions. This helps e-commerce businesses attract more qualified traffic and increase sales.If you are an online business looking to scale your growth, our [E-commerce SEO|/services/e-commerce-seo/]  services can help you optimize these things and drive more qualified traffic.",
             icon: "◈",
           },
         ],
