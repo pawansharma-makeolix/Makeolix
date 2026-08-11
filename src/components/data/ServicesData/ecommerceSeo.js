@@ -172,7 +172,8 @@ export const ecommerceSeoData = {
             {
               id: 4,
               number: "04",
-              title: "We focus on measurable ROI, not vanity metrics. You’ll always know what’s working.",
+              title: "Transparent, Performance-Driven Approach",
+              body: "We focus on measurable ROI, not vanity metrics. You’ll always know what’s working.",
               icon: "◈",
             },
             {

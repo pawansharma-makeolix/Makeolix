@@ -124,6 +124,7 @@ export const whitelabelseo ={
                 "We optimize Google Business Profiles, local citations, and geo-targeted keywords. This helps your clients rank higher in “near me” searches and attract local customers.",
               nodes: 8,
             },
+            
             {
               id: "4",
 
