@@ -133,11 +133,17 @@ const H2Block = ({ text, index }) => (
       transition={{ duration: 0.4, ease: "easeOut" }}
     />
     <h2
-      className=" leading-tight pl-4"
-      style={{ color: "#ffffff" }}
-    >
-      {text}
-    </h2>
+  className="leading-tight pl-4"
+  style={{
+    background:
+      "linear-gradient(90deg, #ffffff 0%, #ffffff 65%, #003863 100%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    backgroundClip: "text",
+  }}
+>
+  {text}
+</h2>
   </ScrollReveal>
 );
 
@@ -156,7 +162,7 @@ const ParaBlock = ({ text, index, links }) => (
   <ScrollReveal custom={index} className="mb-5">
     <p
       className="text-base leading-relaxed"
-      style={{ color: "var(--text-muted)" }}
+      style={{ color: "var(--white)" }}
     >
       <RenderTextWithLinks
         text={text}
