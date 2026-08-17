@@ -24,7 +24,7 @@ import BlogDetail from "./pages/BlogDetail";
 import ChatBot from "./components/chatbot/ChatBot";
 import TermsConditions from "./pages/TermsCondition";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Dropshipping from "./pages/Dropshipping";
+// import Dropshipping from "./pages/Dropshipping";
 
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
-          <Route path="/dropshipping" element={<Dropshipping />} />
+          {/* <Route path="/dropshipping" element={<Dropshipping />} /> */}
           <Route path="/pricing/ai-powered-seo" element={<SeoPackages />} />
           <Route path="/pricing/smo" element={<SmoPackages />} />
           <Route path="/pricing/web" element={<WebPackages />} />

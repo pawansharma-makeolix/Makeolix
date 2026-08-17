@@ -73,7 +73,6 @@ const ServiceItem = () => {
             return null;
         }
       })}
-
       <CTAMarquee />
       <UltraFooter />
     </>

@@ -19,7 +19,7 @@ const Dropshipping = () => {
    primaryLabel = "Get Started"
   primaryHref = "/start"
   secondaryLabel = "Learn More"
-  secondaryHref = "/about"
+  secondaryHref = "/about-us"
    ></RippleHero>
     <ConnectedStepSection></ConnectedStepSection>
    <FeatureCarousel></FeatureCarousel>

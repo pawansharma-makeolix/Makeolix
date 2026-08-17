@@ -28,36 +28,36 @@ const RenderTextWithLinks = ({ text, links = [] }) => {
 
       return splitText.flatMap((item, index) => {
 
-        if(index !== splitText.length - 1){
+        if (index !== splitText.length - 1) {
 
-         return [
-  item,
-  link.newTab ? (
-    <a
-      key={index}
-      href={link.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{
-        color: "#118ab2",
-        textDecoration: "underline",
-      }}
-    >
-      {link.word}
-    </a>
-  ) : (
-    <Link
-      key={index}
-      to={link.url}
-      style={{
-        color: "#118ab2",
-        textDecoration: "underline",
-      }}
-    >
-      {link.word}
-    </Link>
-  ),
-];
+          return [
+            item,
+            link.newTab ? (
+              <a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#118ab2",
+                  textDecoration: "underline",
+                }}
+              >
+                {link.word}
+              </a>
+            ) : (
+              <Link
+                key={index}
+                to={link.url}
+                style={{
+                  color: "#118ab2",
+                  textDecoration: "underline",
+                }}
+              >
+                {link.word}
+              </Link>
+            ),
+          ];
 
         }
 
@@ -152,16 +152,16 @@ const H3Block = ({ text, index }) => (
   </ScrollReveal>
 );
 
-const ParaBlock = ({ text, index,links }) => (
+const ParaBlock = ({ text, index, links }) => (
   <ScrollReveal custom={index} className="mb-5">
     <p
       className="text-base leading-relaxed"
       style={{ color: "var(--text-muted)" }}
     >
-     <RenderTextWithLinks 
-   text={text}
-   links={links}
-/>
+      <RenderTextWithLinks
+        text={text}
+        links={links}
+      />
     </p>
   </ScrollReveal>
 );
@@ -346,14 +346,14 @@ const StepsBlock = ({ items }) => {
               {step.title}
             </h4>
             <p
-  className="text-sm leading-relaxed"
-  style={{ color: "var(--text-muted)" }}
->
-  <RenderTextWithLinks
-    text={step.description}
-    links={step.links}
-  />
-</p>
+              className="text-sm leading-relaxed"
+              style={{ color: "var(--text-muted)" }}
+            >
+              <RenderTextWithLinks
+                text={step.description}
+                links={step.links}
+              />
+            </p>
           </div>
 
           {/* Animated left glow line on hover */}
@@ -411,22 +411,22 @@ const BlogContent = ({ blocks = [] }) => {
       <div className="max-w-3xl mx-auto">
         {blocks.map((block, i) => {
           switch (block.type) {
-            
+
             case "h2":
               return <H2Block key={i} text={block.text} index={i} />;
 
             case "h3":
               return <H3Block key={i} text={block.text} index={i} />;
 
-          case "para":
- return (
-   <ParaBlock
-     key={i}
-     text={block.text}
-     links={block.links}
-     index={i}
-   />
- );
+            case "para":
+              return (
+                <ParaBlock
+                  key={i}
+                  text={block.text}
+                  links={block.links}
+                  index={i}
+                />
+              );
 
             case "boldpara":
               return (
@@ -470,67 +470,67 @@ const BlogContent = ({ blocks = [] }) => {
 
             case "quote":
               return <QuoteBlock key={i} text={block.text} index={i} />;
-case "table":
-  return (
-    <div key={i} className="overflow-x-auto my-8">
+            case "table":
+              return (
+                <div key={i} className="overflow-x-auto my-8">
 
-      <table 
-        className="w-full border-collapse"
-        style={{
-          border: "1px solid rgba(255,255,255,0.2)"
-        }}
-      >
+                  <table
+                    className="w-full border-collapse"
+                    style={{
+                      border: "1px solid rgba(255,255,255,0.2)"
+                    }}
+                  >
 
-        <thead>
-          <tr>
-            {block.data.headers.map((head,index)=>(
-              <th
-                key={index}
-                className="px-4 py-3 text-left font-bold"
-                style={{
-                  border: "1px solid rgba(255,255,255,0.2)",
-                  color:"#ffffff"
-                }}
-              >
-                {head}
-              </th>
-            ))}
-          </tr>
-        </thead>
+                    <thead>
+                      <tr>
+                        {block.data.headers.map((head, index) => (
+                          <th
+                            key={index}
+                            className="px-4 py-3 text-left font-bold"
+                            style={{
+                              border: "1px solid rgba(255,255,255,0.2)",
+                              color: "#ffffff"
+                            }}
+                          >
+                            {head}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
 
 
-        <tbody>
+                    <tbody>
 
-          {block.data.rows.map((row,index)=>(
-            <tr key={index}>
+                      {block.data.rows.map((row, index) => (
+                        <tr key={index}>
 
-              {row.map((cell,i)=>(
-                <td
-                  key={i}
-                  className="px-4 py-3"
-                  style={{
-                    border:"1px solid rgba(255,255,255,0.2)",
-                    color:"var(--text-muted)"
-                  }}
-                >
-                  {cell}
-                </td>
-              ))}
+                          {row.map((cell, i) => (
+                            <td
+                              key={i}
+                              className="px-4 py-3"
+                              style={{
+                                border: "1px solid rgba(255,255,255,0.2)",
+                                color: "var(--text-muted)"
+                              }}
+                            >
+                              {cell}
+                            </td>
+                          ))}
 
-            </tr>
-          ))}
+                        </tr>
+                      ))}
 
-        </tbody>
+                    </tbody>
 
-      </table>
+                  </table>
 
-    </div>
-  );
+                </div>
+              );
 
             default:
               return null;
           }
-          
+
         })}
       </div>
     </section>

@@ -2,26 +2,26 @@ import React from "react";
 
 const Trusted = () => {
   const clientLogos = [
-    "/logos/client1.png",
-    "/logos/client2.png",
-    "/logos/client3.png",
-    "/logos/client4.png",
-    "/logos/client5.png",
-    "/logos/client6.png",
-    "/logos/client7.png",
-    "/logos/client8.png",
-    "/logos/client9.png",
+    "/logos/client1.webp",
+    "/logos/client2.webp",
+    "/logos/client3.webp",
+    "/logos/client4.webp",
+    "/logos/client5.webp",
+    "/logos/client6.webp",
+    "/logos/client7.webp",
+    "/logos/client8.webp",
+    "/logos/client9.webp",
   ];
 
   const partnerLogos = [
-    "/logos/partner1.jpg",
-    "/logos/partner2.jpg",
-    "/logos/partner3.jpg",
-    "/logos/partner4.jpg",
-    "/logos/partner5.jpg",
-    "/logos/partner6.jpg",
-    "/logos/partner7.jpg",
-    "/logos/partner8.jpg",
+    "/logos/partner1.webp",
+    "/logos/partner2.webp",
+    "/logos/partner3.webp",
+    "/logos/partner4.webp",
+    "/logos/partner5.webp",
+    "/logos/partner6.webp",
+    "/logos/partner7.webp",
+    "/logos/partner8.webp",
   ];
 
   return (

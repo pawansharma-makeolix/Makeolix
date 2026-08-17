@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-const DEFAULT_HEADING = "How It Works";
+const DEFAULT_HEADING = "How Does a Dropshipping Website Work?";
 const DEFAULT_SUBHEADING =
-  "A simple, proven process that takes your brand from strategy to results — with full transparency at every step.";
+  "";
 const DEFAULT_STEPS = [
   {
     number: "01",
@@ -227,7 +227,7 @@ export function ConnectedStepSection({
             initial={{ opacity: 0, y: 20 }}
             animate={headingInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.55, delay: 0.16 }}
-            className="mt-4 max-w-2xl mx-auto"
+            className="mt-4 max-w-4xl mx-auto"
             style={{ color: "var(--text-muted)" }}
           >
             {subheading}
@@ -237,7 +237,7 @@ export function ConnectedStepSection({
             initial={{ scaleX: 0, opacity: 0 }}
             animate={headingInView ? { scaleX: 1, opacity: 1 } : {}}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="mx-auto mt-8 h-px w-24 origin-center"
+            className="mx-auto mt-2 h-px w-24 origin-center"
             style={{ background: "linear-gradient(to right, transparent, var(--blue-3), transparent)" }}
           />
         </div>
