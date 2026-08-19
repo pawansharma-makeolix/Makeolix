@@ -23,31 +23,9 @@ import {
 } from "lucide-react";
 
 /* ─── Floating Particle ─── */
-const Particle = ({ style }) => (
-  <motion.div
-    className="absolute rounded-full pointer-events-none"
-    style={{
-      width: 4,
-      height: 4,
-      background: "rgba(103,232,249,0.6)",
-      ...style,
-    }}
-    animate={{ y: [0, -120, 0], opacity: [0, 1, 0], scale: [0, 1.5, 0] }}
-    transition={{
-      duration: style.duration ?? 4,
-      repeat: Infinity,
-      delay: style.delay ?? 0,
-      ease: "easeInOut",
-    }}
-  />
-);
 
-const particles = Array.from({ length: 18 }, (_, i) => ({
-  left: `${(i * 37 + 11) % 100}%`,
-  top: `${(i * 53 + 7) % 100}%`,
-  delay: (i * 0.37) % 4,
-  duration: 3 + (i % 3),
-}));
+
+
 
 /* ─── Animated underline input wrapper ─── */
 const FieldWrap = ({ children, focused, className = "" }) => (
@@ -1042,41 +1020,13 @@ export default function ContactSection() {
       />
 
       {/* Radial glow */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 70% 55% at 50% 25%, rgba(17,138,178,0.14) 0%, transparent 70%)",
-        }}
-      />
+     
 
       {/* Floating orbs */}
-      <motion.div
-        className="absolute top-24 left-8 w-80 h-80 rounded-full pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(17,138,178,0.12) 0%, transparent 70%)",
-          filter: "blur(45px)",
-        }}
-        animate={{ scale: [1, 1.25, 1], x: [0, 35, 0], y: [0, -25, 0] }}
-        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute bottom-16 right-8 w-96 h-96 rounded-full pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(0,80,157,0.1) 0%, transparent 70%)",
-          filter: "blur(55px)",
-        }}
-        animate={{ scale: [1, 1.3, 1], x: [0, -40, 0], y: [0, 45, 0] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-      />
+      
+      
 
-      {/* Particles */}
-      {particles.map((p, i) => (
-        <Particle key={i} style={p} />
-      ))}
-
+      
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
           {/* ── LEFT COLUMN ── */}
@@ -1098,7 +1048,7 @@ export default function ContactSection() {
             >
               <motion.div
                 animate={{ rotate: 360 }}
-                transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 3,   ease: "linear" }}
               >
                 <Sparkles size={15} style={{ color: "#67e8f9" }} />
               </motion.div>
@@ -1121,12 +1071,10 @@ export default function ContactSection() {
                   backgroundSize: "200% 200%",
                   display: "inline-block",
                 }}
-                animate={{
-                  backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"],
-                }}
+                
                 transition={{
                   duration: 5,
-                  repeat: Infinity,
+                  
                   ease: "easeInOut",
                 }}
               >
@@ -1187,16 +1135,7 @@ export default function ContactSection() {
                   >
                     <div style={{ color: "#67e8f9" }}>{info.icon}</div>
                     {/* pulse ring */}
-                    <motion.div
-                      className="absolute inset-0 rounded-xl"
-                      style={{ border: "1px solid rgba(103,232,249,0.5)" }}
-                      animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
-                      transition={{
-                        duration: 2.5,
-                        repeat: Infinity,
-                        delay: i * 0.4,
-                      }}
-                    />
+                    
                   </motion.div>
                   <h3
                     className=" mb-1"
@@ -1244,18 +1183,7 @@ export default function ContactSection() {
                       background: "rgba(17,138,178,0.18)",
                       border: "1px solid rgba(17,138,178,0.3)",
                     }}
-                    animate={{
-                      boxShadow: [
-                        "0 0 0px rgba(103,232,249,0)",
-                        "0 0 12px rgba(103,232,249,0.4)",
-                        "0 0 0px rgba(103,232,249,0)",
-                      ],
-                    }}
-                    transition={{
-                      duration: 2.5,
-                      repeat: Infinity,
-                      delay: i * 0.5,
-                    }}
+                   
                   >
                     <div style={{ color: "#67e8f9" }}>{icon}</div>
                   </motion.div>
@@ -1286,31 +1214,8 @@ export default function ContactSection() {
             className="relative"
           >
             {/* Decorative glow blob */}
-            <motion.div
-              className="absolute -top-6 -right-6 w-24 h-24 rounded-full pointer-events-none"
-              style={{
-                background: "linear-gradient(135deg,#118ab2,#00509d)",
-                filter: "blur(22px)",
-                opacity: 0.35,
-              }}
-              animate={{ scale: [1, 1.3, 1], opacity: [0.35, 0.55, 0.35] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            />
-            <motion.div
-              className="absolute -bottom-6 -left-6 w-20 h-20 rounded-full pointer-events-none"
-              style={{
-                background: "linear-gradient(135deg,#67e8f9,#118ab2)",
-                filter: "blur(20px)",
-                opacity: 0.25,
-              }}
-              animate={{ scale: [1, 1.4, 1], opacity: [0.25, 0.4, 0.25] }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 1,
-              }}
-            />
+           
+          
 
             {/* Form Card */}
             <div
