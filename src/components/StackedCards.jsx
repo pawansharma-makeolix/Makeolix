@@ -2,7 +2,8 @@
 
 import { useState, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
-import SparkleParticles from "./SparkleParticles";
+import { lazy, Suspense } from "react";
+const SparkleParticles = lazy(() => import("./SparkleParticles"));
 const cards = [
   {
     id: 0,
@@ -142,7 +143,10 @@ export default function StackedCards() {
   return (
     <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#00171f] px-4 py-20 overflow-hidden">
       {/* particles */}
-      <SparkleParticles className="absolute inset-0 z-0" />
+            {/* particles */}
+      <Suspense fallback={null}>
+        <SparkleParticles className="absolute inset-0 z-0" />
+      </Suspense>
 
       <div className="relative z-10 w-full flex flex-col items-center">
         {/* heading */}

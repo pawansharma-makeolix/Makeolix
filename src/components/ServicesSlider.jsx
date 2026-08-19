@@ -1,6 +1,7 @@
-import React, { useRef, useEffect, useState } from "react";
-import SparkleParticles from "./SparkleParticles";
+import React, { useRef, useEffect, useState, lazy, Suspense } from "react";
 import Button from "../components/Button";
+
+const SparkleParticles = lazy(() => import("./SparkleParticles"));
 
 const services = [
    { title: "Web Development", image: "/web-dev.webp", slug: "web-design-development" },
@@ -133,11 +134,13 @@ useEffect(() => {
       }}
     >
       {/* Particles */}
-      <SparkleParticles
-        className="absolute inset-0 w-full h-full"
-        particleColor={["#ffffff", "#ffffff"]}
-      />
-
+           {/* Particles */}
+      <Suspense fallback={null}>
+        <SparkleParticles
+          className="absolute inset-0 w-full h-full"
+          particleColor={["#ffffff", "#ffffff"]}
+        />
+      </Suspense>
       <div className="relative z-10">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 px-4">

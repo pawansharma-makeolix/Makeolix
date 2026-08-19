@@ -1,7 +1,10 @@
 "use client";
 
+import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
-import SparkleParticles from "./SparkleParticles";
+
+const SparkleParticles = lazy(() => import("./SparkleParticles"));
+
 const OtherPageHero = ({ title = "About Us" }) => {
   return (
     <section
@@ -11,10 +14,12 @@ const OtherPageHero = ({ title = "About Us" }) => {
       }}
     >
       {/* 🌟 PARTICLES BACKGROUND */}
-      <SparkleParticles
-        className="absolute inset-0 w-full h-full"
-        particleColor={["#ffffff", "#ffffff"]}
-      />
+      <Suspense fallback={null}>
+        <SparkleParticles
+          className="absolute inset-0 w-full h-full"
+          particleColor={["#ffffff", "#ffffff"]}
+        />
+      </Suspense>
 
       {/* 🌑 DARK OVERLAY */}
       <div className="absolute inset-0 bg-black/40" />

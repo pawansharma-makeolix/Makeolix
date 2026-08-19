@@ -1,8 +1,7 @@
-"use client";
-
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
-import SparkleParticles from "./SparkleParticles";
+
+const SparkleParticles = lazy(() => import("./SparkleParticles"));
 const features = [
   {
     title: "Expertise that Delivers Results",
@@ -33,10 +32,13 @@ const WhyChooseUs = () => {
   return (
     <div className="relative w-full py-20 px-4 overflow-hidden bg-[#051923]">
       {/* ✨ Particles */}
-      <SparkleParticles
-        className="absolute inset-0 w-full h-full"
-        particleColor={["#118ab2", "#ffffff"]}
-      />
+            {/* ✨ Particles */}
+      <Suspense fallback={null}>
+        <SparkleParticles
+          className="absolute inset-0 w-full h-full"
+          particleColor={["#118ab2", "#ffffff"]}
+        />
+      </Suspense>
 
       <div className="relative z-10">
         {/* Heading */}
