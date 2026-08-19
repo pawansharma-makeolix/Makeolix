@@ -1095,8 +1095,8 @@ export default function ContactSection() {
             </motion.p>
 
             {/* ── Contact Cards: horizontal 3-in-a-row ── */}
-            <motion.div
-              className="grid grid-cols-3 gap-3 mb-10"
+          <motion.div
+  className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-10"
               initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -1289,7 +1289,7 @@ export default function ContactSection() {
                 >
                   By submitting, you agree to our{" "}
                   <a
-                    href="#"
+                    href="/privacy-policy"
                     style={{ color: "#67e8f9" }}
                     className="hover:underline"
                   >
@@ -1297,7 +1297,7 @@ export default function ContactSection() {
                   </a>{" "}
                   and{" "}
                   <a
-                    href="#"
+                    href="/terms-and-conditions"
                     style={{ color: "#67e8f9" }}
                     className="hover:underline"
                   >
