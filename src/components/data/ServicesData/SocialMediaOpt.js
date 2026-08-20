@@ -200,7 +200,7 @@ export const SocialMediaOpt ={
           title: "Ready to Increase Your Social Media ROI?",
           description:
             "Your audience is already active on social media. The question is whether your brand is positioned to capture their attention and convert engagement into business growth. Partner with MakeOlix Consulting to improve your social presence, strengthen customer relationships, and maximize social media performance through strategic optimization. Contact our team today to request a free social media optimization consultation and discover how we can help your business grow.",
-          image: "/john-FlPc9_VocJ4-unsplash (2).jpg",
+          image: "/Woo commerce  - Makeolix Consulting.webp",
         },
       }, 
      

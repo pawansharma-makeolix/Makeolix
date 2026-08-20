@@ -29,7 +29,7 @@ export const ShopifyDevData = {
         title: "At MakeOlix Consulting",
         description:
           "we help businesses create high-performing Shopify stores designed for growth, customer engagement, and long-term success. As a trusted provider of professional Shopify Development Services, our team builds custom Shopify websites tailored to your products, audience behavior, and business goals. Whether you are launching a new online store, redesigning an existing website, or scaling your eCommerce business, our Shopify experts create modern digital experiences that improve conversions, visibility, and user engagement.",
-        image: "/john-FlPc9_VocJ4-unsplash (2).jpg",
+        image: "/Shopify dev - Makeolix Consulting.webp",
       },
     },
     {

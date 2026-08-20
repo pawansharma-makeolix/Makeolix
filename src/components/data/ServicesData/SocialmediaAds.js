@@ -226,7 +226,7 @@ export const SocialMediaAds = {
         title: "Ready to Build Campaigns That Actually Convert?",
         description:
           "Whether you are a startup looking for your first profitable ad campaign or an established brand wanting to scale what is already working, MakeOlix Consulting is ready to build your growth engine. Connect with our team today and let us show you exactly what your next ₹1 in ad spend can return. As one of the best social media advertising agencies in India, we combine creative excellence, data engineering, and platform expertise to deliver results that outlast algorithm changes. Let us get to work",
-        image: "/john-FlPc9_VocJ4-unsplash (2).jpg",
+        image: "/Woo commerce  - Makeolix Consulting.webp",
       },
     },
     {
