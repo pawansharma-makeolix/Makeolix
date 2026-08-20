@@ -66,10 +66,7 @@ const Hero = () => {
     onClick: { enable: false },
     onHover: { enable: false },
   },
-      modes: {
-        push: { quantity: 4 },
-        grab: { distance: 140, links: { opacity: 0.4 } },
-      },
+     
     },
     particles: {
       number: { value: 25, density: { enable: true, area: 800 } },
@@ -90,20 +87,22 @@ const Hero = () => {
     >
       {/* Video — hamesha DOM mein, opacity se control */}
      {isDesktop && (
-  <video
-        ref={videoRef}
-        muted           // ✅ muted ZAROORI hai autoplay ke liye
-        loop
-        playsInline
-        autoPlay
-preload="metadata"
-poster="/hero-poster.webp"        
-        className="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000"
-        style={{
-          opacity: isDesktop && videoReady ? 1 : 0,
-          pointerEvents: "none",
-        }}
-      >
+ <video
+  ref={videoRef}
+  muted
+  loop
+  playsInline
+  autoPlay
+  preload="metadata"
+  poster="/hero-poster.webp"
+  disablePictureInPicture
+  disableRemotePlayback
+  className="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000"
+  style={{
+    opacity: isDesktop && videoReady ? 1 : 0,
+    pointerEvents: "none",
+  }}
+>
         <source src="/hero-video.mp4" type="video/mp4" />
       </video>
 )} 
@@ -126,7 +125,8 @@ poster="/hero-poster.webp"
             <TypeAnimation
               sequence={["Building Brands Across The GLOBE", 2500]}
               speed={50}
-              repeat={Infinity}
+              
+               cursor={false}
             />
           </span>
         </h1>

@@ -83,14 +83,14 @@ export const PerformanceMarketingData = {
             title: "PPC Advertising",
             description:
               "Our PPC performance marketing service covers Google Search, Display, Shopping, and YouTube ads. We build campaigns that capture high-intent traffic and convert it efficiently, with continuous bid management and A/B testing to maximize your return.",
-            nodes: 9,
+            image: "/Servicesglance/PPC Advertising - Makeolix consulting.webp",
           },
           {
             id: "2",
             title: "Paid Social Media Advertising",
             description:
               "We run targeted campaigns across Meta (Facebook and Instagram), LinkedIn, and other platforms, designed to generate quality leads and sales at the lowest possible cost per result.",
-            nodes: 7,
+            image: "/Servicesglance/Seo Reseller - Makeolix consulting.webp",
           },
           {
             id: "3",
@@ -98,7 +98,7 @@ export const PerformanceMarketingData = {
             title: "Programmatic Advertising",
             description:
               "As a full-service performance media agency, we run data-driven programmatic campaigns that reach your audience across thousands of premium placements in real time, at scale and with precision.",
-            nodes: 8,
+            image: "/Servicesglance/PPC Advertising - Makeolix consulting.webp",
           },
           {
             id: "4",
@@ -106,7 +106,7 @@ export const PerformanceMarketingData = {
             title: "Conversion Rate Optimisation (CRO)",
             description:
               "Driving traffic is only half the job. We audit landing pages, test creative variations, and optimize user flows to ensure more of your visitors convert into paying customers.",
-            nodes: 10,
+            image: "/Servicesglance/AEO & GEO Optimization - Makeolix consulting.webp",
           },
           {
             id: "5",
@@ -114,7 +114,7 @@ export const PerformanceMarketingData = {
             title: "Affiliate & Partner Marketing",
             description:
               "We set up and manage affiliate programs that bring you leads and sales through a network of trusted partners, you only pay when results are delivered.",
-            nodes: 6,
+           image: "/Servicesglance/Local keyword targeting - Makeolix consulting.webp",
           },
           {
             id: "6",
@@ -122,7 +122,7 @@ export const PerformanceMarketingData = {
             title: "Remarketing Campaigns",
             description:
               "We re-engage visitors who didn't convert the first time with smart, sequenced ads that bring them back and close the loop on lost revenue.",
-            nodes: 10,
+            image: "/Servicesglance/PPC Advertising - Makeolix consulting.webp",
           },
           {
             id: "7",
@@ -130,7 +130,7 @@ export const PerformanceMarketingData = {
             title: "App Store Optimization (ASO)",
             description:
               "Our App Store Optimization services help improve your app’s visibility and ranking on platforms like the Apple App Store and Google Play Store. We optimize app titles, descriptions, keywords, and visuals to increase downloads, improve user engagement, and drive sustainable growth for your mobile applications.",
-            nodes: 10,
+           image: "/Servicesglance/Seo Reseller - Makeolix consulting.webp",
           },
         ],
       },

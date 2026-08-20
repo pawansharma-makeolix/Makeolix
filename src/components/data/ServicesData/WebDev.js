@@ -109,14 +109,15 @@ export const WebDevDesignData = {
               title: "Custom Website Design",
               description:
                 "Every business needs a unique digital identity. A reliable web design company should provide fully customized website design services based on business goals, audience behavior, and industry trends. Our team creates responsive and conversion-focused websites with clean UI/UX, modern layouts, and strong brand consistency to help businesses improve customer engagement and online visibility.",
-              nodes: 9,
+             image: "/Servicesglance/Custom Website Design - Makeolix Consulting.webp",
             },
             {
               id: "2",
               title: "E-commerce Website Development",
               description:
                 "A modern web development company should also offer advanced eCommerce solutions for businesses looking to grow online. As a leading eCommerce Website Development Company in India, we develop secure, scalable, and user-friendly online stores with mobile optimization, seamless navigation, and secure payment integration. Our eCommerce solutions include Shopify development, WooCommerce development, custom eCommerce platforms, and marketplace solutions designed to improve customer experience and increase conversions.",
-              nodes: 7,
+                           image: "/Servicesglance/Custom WordPress Website Design - Makeolix consulting.webp",
+
             },
             {
               id: "3",
@@ -124,7 +125,8 @@ export const WebDevDesignData = {
               title: "CMS Web Development",
               description:
                 "Content management is essential for growing businesses. A professional company should provide flexible CMS solutions that allow businesses to manage website content efficiently. As an experienced Website Development Company in India, we build scalable CMS websites with strong performance and long-term usability. Our expertise includes WordPress development and custom CMS platforms tailored to modern business requirements.",
-              nodes: 8,
+                           image: "/Servicesglance/Custom WordPress Website Design - Makeolix consulting.webp",
+
             },
             {
               id: "4",
@@ -132,7 +134,7 @@ export const WebDevDesignData = {
               title: "Website Redesign Services",
               description:
                 "Outdated websites can negatively impact trust, engagement, and conversions. A trusted Website Redesign Company in India should help businesses modernize their websites with improved UI/UX, faster speed, mobile responsiveness, and conversion-focused structures. Website redesign services help businesses improve customer trust, user experience, and long-term digital growth.",
-              nodes: 10,
+              image: "/Servicesglance/Custom Website Design - Makeolix Consulting.webp",
             },
             {
               id: "5",
@@ -140,7 +142,7 @@ export const WebDevDesignData = {
               title: "Custom Web Application Development",
               description:
                 "Modern businesses often require advanced and scalable web applications tailored to their operations and workflows. A professional web development company should be capable of building custom solutions such as customer portals, SaaS platforms, and workflow management systems that improve operational efficiency and customer experience.",
-              nodes: 6,
+              image: "/Servicesglance/Custom Website Design - Makeolix Consulting.webp",
             },
             {
               id: "5",
@@ -148,7 +150,8 @@ export const WebDevDesignData = {
               title: "Website Maintenance & Support",
               description:
                 "Ongoing support is another essential service every company should provide. Websites require regular updates, security improvements, performance monitoring, backups, bug fixing, and technical maintenance to remain optimized and secure. Through our complete Website Development Services, we help businesses maintain smooth website performance while supporting long-term digital success in competitive markets, including the U.S. market.",
-              nodes: 6,
+                            image: "/Servicesglance/Custom WordPress Website Design - Makeolix consulting.webp",
+
             },
             
           ],

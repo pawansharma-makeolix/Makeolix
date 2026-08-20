@@ -1,3 +1,4 @@
+import { image } from "framer-motion/client";
 import { Heading } from "lucide-react";
 
 export const socialMediaData ={
@@ -99,14 +100,14 @@ export const socialMediaData ={
             title: "Social Media Strategy & Planning",
             description:
               "Every successful campaign begins with a solid strategy. As a results-driven Social Media Management Company, we develop customized social media plans based on audience research, competitor analysis, and business objectives.",
-            nodes: 9,
+            image: "/Servicesglance/Social Media - Makeolix Consulting.webp",
           },
           {
             id: "2",
             title: "Content Creation & Brand Storytelling",
             description:
               "Our team creates engaging content designed to educate, entertain, and convert. From graphics and videos to captions and campaign messaging, we help businesses build stronger relationships with their audiences.",
-            nodes: 7,
+            image: "/Servicesglance/Content & On-Page Optimization - Makeolix consulting.webp",
           },
           {
             id: "3",
@@ -114,7 +115,7 @@ export const socialMediaData ={
             title: "Social Media Optimization",
             description:
               "As a professional Social Media Optimization Company, we optimize profiles, content structures, hashtags, posting schedules, and engagement strategies to improve visibility and audience interaction. Our advanced Social Media Optimization Services help businesses maximize the value of every social media channel.",
-            nodes: 8,
+            image: "/Servicesglance/Localization content creation - Makeolix consulting.webp",
           },
           {
             id: "4",
@@ -122,7 +123,7 @@ export const socialMediaData ={
             title: "Facebook Marketing",
             description:
               "As an experienced Facebook Marketing Company, we create targeted campaigns designed to increase reach, generate leads, and improve return on ad spend through strategic audience targeting and campaign optimization. Businesses can also explore our Social Media Advertising Services to run data-driven paid campaigns across multiple social platforms.",
-            nodes: 10,
+         image: "/Servicesglance/Social Media - Makeolix Consulting.webp",
           },
           {
             id: "5",
@@ -130,7 +131,7 @@ export const socialMediaData ={
             title: "Instagram Growth Marketing",
             description:
               "Our team also works as a top Instagram Marketing Agency in India, helping brands build stronger communities through creative content, influencer collaborations, Reels strategies, and engagement-focused campaigns.",
-            nodes: 6,
+            image: "/Servicesglance/Link building seo - Makeolix consulting.webp",
           },
           {
             id: "5",
@@ -138,7 +139,7 @@ export const socialMediaData ={
             title: "Social Media Management",
             description:
               "As a trusted Social Media Management Agency in India, we handle content scheduling, audience engagement, account monitoring, performance tracking, and ongoing optimization so you can focus on running your business.",
-            nodes: 6,
+            image: "/Servicesglance/Social Media - Makeolix Consulting.webp",
           },
         ],
       },

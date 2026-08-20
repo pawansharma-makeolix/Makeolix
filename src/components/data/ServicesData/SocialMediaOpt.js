@@ -80,14 +80,14 @@ export const SocialMediaOpt ={
             title: "Social Media Profile & Page Optimization",
             description:
               "Your social profiles are often the first impression customers have of your business. Our Social Media Profile Optimization services focus on improving profile completeness, branding consistency, audience targeting, and platform visibility. We also provide advanced Social Media Page Optimization to ensure every social channel reflects your brand professionally and effectively.",
-            nodes: 9,
+           image: "/Servicesglance/Woo commerce  - Makeolix Consulting.webp",
           },
           {
             id: "2",
             title: "Content Strategy & Social Content Optimization",
             description:
               "Content plays a major role in social media success. Through strategic Social Content Optimization, we improve content structure, messaging, visuals, posting schedules, and engagement opportunities. Our team ensures your content aligns with audience interests while supporting your business objectives.",
-            nodes: 7,
+           image: "/Servicesglance/Social Media - Makeolix Consulting.webp",
           },
           {
             id: "3",
@@ -95,7 +95,7 @@ export const SocialMediaOpt ={
             title: "Social Media Creation & Optimization",
             description:
               "Building a strong social presence requires more than occasional posting. Our Social Media Creation and Optimization services help businesses establish professional social profiles, create engaging content frameworks, and develop long-term audience engagement strategies.",
-            nodes: 8,
+            image: "/Servicesglance/Woo commerce  - Makeolix Consulting.webp",
           },
           {
             id: "4",
@@ -103,7 +103,7 @@ export const SocialMediaOpt ={
             title: "Social Channel Optimization",
             description:
               "Every platform requires a different approach. Our Social Channel Optimization services focus on improving performance across Facebook, Instagram, and other relevant platforms based on your audience and industry.",
-            nodes: 10,
+           image: "/Servicesglance/Campaign Strategy & Setup - Makeolix Consulting.webp",
           },
           {
             id: "5",
@@ -111,7 +111,7 @@ export const SocialMediaOpt ={
             title: "Social Media Marketing Integration",
             description:
               "Our optimization services work closely with broader marketing initiatives. By combining Social Media Marketing Strategy and Optimization, we help businesses create a unified approach that improves visibility, engagement, lead generation, and overall digital growth.",
-            nodes: 6,
+            image: "/Servicesglance/Social Media - Makeolix Consulting.webp",
           },
         ],
       },

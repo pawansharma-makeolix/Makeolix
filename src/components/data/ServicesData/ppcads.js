@@ -109,14 +109,14 @@ export const PpcAdsData = {
             title: "Google Ads Campaign Management",
             description:
               "As an experienced Google Ads Agency in India, we manage Search Ads, Shopping Ads, Display Campaigns, and YouTube Ads focused on maximizing conversions and return on investment.",
-            nodes: 9,
+            image: "/Servicesglance/Google Ads Campaign Management - Makeolix consulting.webp",
           },
           {
             id: "2",
             title: "Competitor & Market Research",
             description:
               "Our team studies industry trends, competitor strategies, audience behavior, and keyword opportunities to build campaigns that outperform competitors.",
-            nodes: 7,
+            image: "/Servicesglance/Localization content creation - Makeolix consulting.webp",
           },
           {
             id: "3",
@@ -124,7 +124,7 @@ export const PpcAdsData = {
             title: "Keyword Research & Audience Targeting",
             description:
               "As a reliable PPC Company in India, we identify high-intent keywords and create detailed audience targeting strategies that help businesses reach users most likely to convert.",
-            nodes: 8,
+            image: "/Servicesglance/Google Ads Campaign Management - Makeolix consulting.webp",
           },
           {
             id: "4",
@@ -132,7 +132,7 @@ export const PpcAdsData = {
             title: "Ad Copy & Creative Optimization",
             description:
               "Strong creatives drive better engagement. We create compelling ad copy and continuously test multiple ad variations to improve click-through rates and conversion performance.",
-            nodes: 10,
+            image: "/Servicesglance/Optimize for voice search - Makeolix consulting.webp",
           },
           {
             id: "5",
@@ -140,7 +140,7 @@ export const PpcAdsData = {
             title: "Meta Ads (Facebook & Instagram) ",
             description:
               "Our team runs paid social campaigns built for your specific audience segments, Meta Ads are designed to generate qualified leads and sales at a competitive cost per result, whether your goal is e-commerce revenue, lead generation, or app growth. ",
-            nodes: 6,
+            image: "/Servicesglance/Woo commerce  - Makeolix Consulting.webp",
           },
           {
             id: "6",
@@ -148,7 +148,7 @@ export const PpcAdsData = {
             title: "Reporting & Campaign Insights",
             description:
               "As a trusted Pay Per Click Company in India, we provide transparent monthly reporting with insights into impressions, clicks, cost-per-click, conversions, and ROI.",
-            nodes: 10,
+           image: "/Servicesglance/Seo Reseller - Makeolix consulting.webp",
           },
           
         ],

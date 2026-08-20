@@ -45,14 +45,15 @@ export const SmallBusinessSeoData = {
               title: "Technical SEO Audits & Core Web Vitals Optimization",
               description:
                 "Our foundational small business packages include deep technical SEO services to fix broken links, improve site architecture, and boost page load speeds, so every piece of content you publish actually gets found.",
-              nodes: 9,
+                    image: "/Servicesglance/Local keyword targeting - Makeolix consulting.webp",
+
             },
             {
               id: "2",
               title: "Keyword Research & Search Intent Mapping",
               description:
                 "Ranking for the wrong keywords is just as costly as not ranking at all. Our small business SEO expert team maps every keyword to a specific stage of the buyer journey: awareness, consideration, or decision, so every page on your site is built to attract visitors who are ready to act.",
-              nodes: 7,
+    image: "/Servicesglance/Ecommerce seo - Makeolix consulting.webp",
             },
             {
               id: "3",
@@ -60,7 +61,7 @@ export const SmallBusinessSeoData = {
               title: "On-Page SEO Optimization",
               description:
                 "Our on-page SEO services optimize titles, meta descriptions, headings, internal links, and content to improve rankings, user experience, and search visibility. We follow Google's E-E-A-T principles to build authority, trust, and long-term organic growth. ",
-              nodes: 8,
+              image: "/Servicesglance/Local seo - Makeolix consulting.webp",
             },
             {
               id: "4",
@@ -68,7 +69,7 @@ export const SmallBusinessSeoData = {
               title: "Content Marketing & Topical Authority Development",
               description:
                 "Our SEO framework combines search intent mapping, topical authority clusters, entity optimization, and AI citation signals to help small businesses gain visibility across Google, AI Overviews, ChatGPT, Gemini, and Perplexity.",
-              nodes: 10,
+              image: "/Servicesglance/Technical seo - Makeolix consulting.webp",
             },
             {
               id: "5",
@@ -76,7 +77,7 @@ export const SmallBusinessSeoData = {
               title: "Link Building & Digital PR",
               description:
                 "We earn high-quality backlinks from relevant and trusted websites through strategic outreach and digital PR campaigns. This helps strengthen your website’s credibility, improve rankings, and increase organic visibility over time.",
-              nodes: 6,
+              image: "/Servicesglance/Ecommerce seo - Makeolix consulting.webp",
             },
             {
               id: "6",
@@ -84,7 +85,7 @@ export const SmallBusinessSeoData = {
               title: "eCommerce SEO Services",
               description:
                 "Running an online store requires a specialized SEO approach. Our ecommerce SEO services optimize product pages, category pages, site architecture, and technical performance to improve search visibility, attract purchase-ready customers, and drive more online sales.",
-              nodes: 10,
+              image: "/Servicesglance/White label seo - Makeolix Consulting.webp",
             },
             {
               id: "7",
@@ -92,7 +93,7 @@ export const SmallBusinessSeoData = {
               title: "App Store Optimization (ASO)",
               description:
                 "Our App Store Optimization services help improve your app’s visibility and ranking on platforms like the Apple App Store and Google Play Store. We optimize app titles, descriptions, keywords, and visuals to increase downloads, improve user engagement, and drive sustainable growth for your mobile applications.",
-              nodes: 10,
+              image: "/Servicesglance/Local seo - Makeolix consulting.webp",
             },
           ],
         },

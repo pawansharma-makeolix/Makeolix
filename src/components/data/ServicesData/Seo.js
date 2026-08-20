@@ -102,14 +102,14 @@ export const seoData = {
               title: "E-commerce SEO",
               description:
                 "We also work as an [E-commerce SEO|/services/e-commerce-seo/] Agency, optimizing product pages, categories, and conversion funnels to increase sales.",
-              nodes: 9,
+    image: "/Servicesglance/Ecommerce seo - Makeolix consulting.webp",
             },
             {
               id: "2",
               title: "Technical SEO",
               description:
                 "As a trusted Technical SEO Company, we fix site speed, indexing issues, mobile usability, and overall performance to improve search visibility.",
-              nodes: 7,
+ image: "/Servicesglance/Technical seo - Makeolix consulting.webp",
             },
             {
               id: "3",
@@ -117,7 +117,7 @@ export const seoData = {
               title: "White-Label SEO",
               description:
                 "Our white-label  [SEO reseller Services|/services/seo-reseller-service] help agencies and freelancers grow without hiring their own team. We take care of all the SEO work behind the scenes, and you can deliver the results to your clients under your own brand.",
-              nodes: 8,
+              image: "/Servicesglance/White label seo - Makeolix Consulting.webp",
             },
             {
               id: "4",
@@ -125,7 +125,7 @@ export const seoData = {
               title: "Local SEO",
               description:
                 "As a results-driven [Local SEO|/services/local-seo] Company, we optimize your Google Business Profile, citations, and local keywords. Our Local SEO Services help you dominate “near me” searches and attract local customers.",
-              nodes: 10,
+              image: "/Servicesglance/Local seo - Makeolix consulting.webp",
             },
             {
               id: "5",
@@ -133,7 +133,7 @@ export const seoData = {
               title: "Link Building Services",
               description:
                 "Our Link Building SEO Services focus on acquiring high-quality, relevant backlinks to improve your website’s authority, rankings, and credibility on Google. As part of our SEO Services, we use ethical strategies to drive long-term growth and targeted traffic.",
-              nodes: 6,
+              image: "/Servicesglance/Link building seo - Makeolix consulting.webp",
             },
             {
               id: "6",
@@ -141,7 +141,7 @@ export const seoData = {
               title: "AEO & GEO Optimization",
               description:
                 "As an advanced SEO company, we offer AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) services to help your business appear in AI-driven search results and featured snippets. We optimize your content for voice search, AI tools, and answer-based queries, ensuring your brand stays visible across evolving search platforms.",
-              nodes: 10,
+              image: "/Servicesglance/AEO & GEO Optimization - Makeolix consulting.webp",
             },
             {
               id: "7",
@@ -149,8 +149,7 @@ export const seoData = {
               title: "App Store Optimization (ASO)",
               description:
                 "Our App Store Optimization services help improve your app’s visibility and ranking on platforms like the Apple App Store and Google Play Store. We optimize app titles, descriptions, keywords, and visuals to increase downloads, improve user engagement, and drive sustainable growth for your mobile applications.",
-              nodes: 10,
-            },
+              image: "/Servicesglance/App store optimization - Makeolix consulting.webp",},
           ],
         },
       },

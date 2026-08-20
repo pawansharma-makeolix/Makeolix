@@ -13,11 +13,14 @@ import LinkRenderer from "./LinkRenderer";
 // ─── Particle burst on open ───────────────────────────────────────────────────
 
 function Burst({ active }) {
-  const DOTS = Array.from({ length: 10 }, (_, i) => ({
-    angle: (i / 10) * 360,
-    dist: 42 + Math.random() * 28,
-    size: 3 + Math.random() * 4,
-  }));
+  const dotsRef = useRef(
+    Array.from({ length: 10 }, (_, i) => ({
+      angle: (i / 10) * 360,
+      dist: 42 + Math.random() * 28,
+      size: 3 + Math.random() * 4,
+    }))
+  );
+  const DOTS = dotsRef.current;
   return (
     <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
       {DOTS.map((d, i) => {
@@ -83,23 +86,7 @@ function LiquidArc({ progress }) {
 
 // ─── Counter that counts up ───────────────────────────────────────────────────
 
-function Counter({ value, run }) {
-  const [display, setDisplay] = useState(0);
-  useEffect(() => {
-    if (!run) { setDisplay(0); return; }
-    let start = 0;
-    const total = 600;
-    const step = 16;
-    const inc = value / (total / step);
-    const id = setInterval(() => {
-      start += inc;
-      if (start >= value) { setDisplay(value); clearInterval(id); }
-      else setDisplay(Math.round(start));
-    }, step);
-    return () => clearInterval(id);
-  }, [run, value]);
-  return <span>{String(display).padStart(2, "0")}</span>;
-}
+
 
 // ─── Single Step Card ─────────────────────────────────────────────────────────
 
@@ -199,7 +186,7 @@ function StepCard({ step, index, total, globalActive, onActivate, animatedIcons 
                 className="absolute inset-0 flex items-center justify-center font-black"
                 style={{ fontSize: 15, color: isActive ? "var(--blue-3)" : "rgba(160,174,192,0.5)" }}
               >
-                <Counter value={step.number} run={inView} />
+                {String(step.number).padStart(2, "0")}
               </div>
             </div>
 
@@ -368,8 +355,11 @@ function StepCard({ step, index, total, globalActive, onActivate, animatedIcons 
 // ─── Background: drifting grid + scanline ─────────────────────────────────────
 
 function Background() {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: false, margin: "-100px" });
+
   return (
-    <div className="absolute inset-0 pointer-events-none overflow-hidden">
+    <div ref={ref} className="absolute inset-0 pointer-events-none overflow-hidden">
       {[
         { left: "-5%", top: "10%", color: "rgba(0,80,157,0.12)" },
         { right: "-5%", top: "40%", color: "rgba(17,138,178,0.09)" },
@@ -382,9 +372,10 @@ function Background() {
             width: 380, height: 380,
             background: `radial-gradient(circle, ${s.color} 0%, transparent 70%)`,
             filter: "blur(50px)",
+            willChange: "transform, opacity",
             ...s,
           }}
-          animate={{ scale: [1, 1.15, 1], opacity: [0.6, 1, 0.6] }}
+          animate={inView ? { scale: [1, 1.15, 1], opacity: [0.6, 1, 0.6] } : {}}
           transition={{ duration: 6 + i * 2, repeat: Infinity, ease: "easeInOut", delay: i }}
         />
       ))}

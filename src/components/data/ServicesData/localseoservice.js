@@ -1,3 +1,4 @@
+import { image } from "framer-motion/client";
 import { TfiLayoutMenuSeparated } from "react-icons/tfi";
 
 export const localSeoData = {
@@ -106,14 +107,14 @@ export const localSeoData = {
               title: "Local Keyword Targeting",
               description:
                 "MakeOlix Consulting is the best Local SEO Company in India because our professionals perform research and apply high-converting local keywords to make sure that your company will be ranked higher in your city or region.",
-              nodes: 9,
+              image: "/Servicesglance/Local keyword targeting - Makeolix consulting.webp",
             },
             {
               id: "2",
               title: "Localization Content Creation.",
               description:
                 "We develop local content that makes sense to you and your areas of service and meets your audience making MakeOlix Consulting a high-quality Local SEO Services Provider.",
-              nodes: 7,
+              image: "/Servicesglance/Localization content creation - Makeolix consulting.webp",
             },
             {
               id: "3",
@@ -121,15 +122,15 @@ export const localSeoData = {
               title: "Local Link Building",
               description:
                 "We add quality, area-specific backlinks to enhance the power and significance of your site like any professional Local SEO Company must do.",
-              nodes: 8,
-            },
+              image: "/Servicesglance/Local link building - Makeolix consulting.webp",
+              },
             {
               id: "4",
 
               title: "Optimize for Voice Search",
               description:
                 "We can ensure your brand remains top in voice search optimization, which would push near me queries - the perfect fit of our practices as a contemporary Local SEO Marketing Agency.",
-              nodes: 10,
+              image: "/Servicesglance/Optimize for voice search - Makeolix consulting.webp",
             },
             {
               id: "5",
@@ -137,7 +138,7 @@ export const localSeoData = {
               title: "White Label Local SEO Services",
               description:
                 "Our White Label Local SEO plans enable agencies to provide globally superior local SEO services under their brand, at a scalable and client-ready.",
-              nodes: 6,
+              image: "/Servicesglance/White label seo - Makeolix Consulting.webp",
             },
             {
               id: "6",
@@ -145,7 +146,7 @@ export const localSeoData = {
               title: "Advanced Local SEO Strategies",
               description:
                 "We employ Advanced Local SEO strategies to keep your business competitive in the changing search environments using schema markup to mobile optimization.",
-              nodes: 10,
+              image: "/Servicesglance/Local seo - Makeolix consulting.webp",
             },
            
           ],

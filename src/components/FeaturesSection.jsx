@@ -11,34 +11,18 @@ import { Check } from "lucide-react";
 import LinkRenderer from "./LinkRenderer";
 
 // ─── Floating Particle ────────────────────────────────────────────────────────
-function Particle({ x, y, size, delay, duration }) {
-  return (
-    <motion.div
-      className="absolute rounded-full pointer-events-none"
-      style={{
-        left: `${x}%`,
-        top: `${y}%`,
-        width: size,
-        height: size,
-        // radial-gradient has no Tailwind equivalent — inline zaroori
-        background:
-          "radial-gradient(circle, rgba(17,138,178,0.6) 0%, transparent 70%)",
-      }}
-      animate={{
-        y: [0, -30, 0],
-        x: [0, 12, -8, 0],
-        opacity: [0, 0.7, 0.4, 0],
-        scale: [0.8, 1.2, 0.9, 0.8],
-      }}
-      transition={{ duration, delay, repeat: Infinity, ease: "easeInOut" }}
-    />
-  );
-}
+
 function FeatureIconList({ title, items = [] }) {
+  const listRef = useRef(null);
+  const isInView = useInView(listRef, { once: false, margin: "-60px" });
+
   if (!items.length) return null;
 
   return (
-    <div className="rounded-2xl p-5 md:p-6 border border-[rgba(17,138,178,0.16)] bg-[linear-gradient(135deg,rgba(0,23,31,0.88)_0%,rgba(0,56,99,0.28)_100%)] backdrop-blur-[12px]">
+    <div
+      ref={listRef}
+      className="rounded-2xl p-5 md:p-6 border border-[rgba(17,138,178,0.16)] bg-[linear-gradient(135deg,rgba(0,23,31,0.88)_0%,rgba(0,56,99,0.28)_100%)] backdrop-blur-[12px]"
+    >
       {title && (
         <h4 className="text-white  text-base mb-4 tracking-[-0.02em]">
           <LinkRenderer text={title} />
@@ -60,9 +44,7 @@ function FeatureIconList({ title, items = [] }) {
             }}
           >
             <motion.span
-              animate={{
-                scale: [1, 1.18, 1],
-              }}
+              animate={isInView ? { scale: [1, 1.18, 1] } : {}}
               transition={{
                 duration: 2,
                 repeat: Infinity,
@@ -280,53 +262,22 @@ export default function FeaturesSection({
 }) {
   const finalLeft = leftCards.length ? leftCards : LEFT_CARDS;
   const finalRight = rightCards.length ? rightCards : RIGHT_CARDS;
-  const [maxCardHeight, setMaxCardHeight] = useState(0);
+  
 
-useEffect(() => {
-  const updateHeights = () => {
-    const cards = Array.from(document.querySelectorAll(".feature-card"));
 
-    if (!cards.length) return;
+ const containerRef = useRef(null);
+const isSectionInView = useInView(containerRef, { once: false, margin: "-100px" });
 
-    // pehle reset
-    cards.forEach((card) => {
-      card.style.minHeight = "auto";
-    });
-
-    const tallest = Math.max(...cards.map((card) => card.offsetHeight));
-    setMaxCardHeight(tallest);
-  };
-
-  updateHeights();
-
-  window.addEventListener("resize", updateHeights);
-
-  return () => {
-    window.removeEventListener("resize", updateHeights);
-  };
-}, [finalLeft, finalRight]);
-  const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  });
-
-  const decoY = useTransform(scrollYProgress, [0, 1], [-60, 60]);
-  const decoRotate = useTransform(scrollYProgress, [0, 1], [0, 45]);
+const { scrollYProgress } = useScroll({
+  target: containerRef,
+  offset: ["start end", "end start"],
+});
+ 
 
   const subtextRef = useRef(null);
   const subtextInView = useInView(subtextRef, { once: true, margin: "-40px" });
 
-  const particles = [
-    { x: 5, y: 20, size: 6, delay: 0, duration: 7 },
-    { x: 15, y: 70, size: 4, delay: 1.2, duration: 9 },
-    { x: 82, y: 15, size: 8, delay: 0.5, duration: 8 },
-    { x: 90, y: 65, size: 5, delay: 2, duration: 6 },
-    { x: 50, y: 5, size: 5, delay: 1.5, duration: 10 },
-    { x: 72, y: 88, size: 4, delay: 0.8, duration: 7 },
-    { x: 28, y: 92, size: 6, delay: 2.5, duration: 9 },
-    { x: 60, y: 50, size: 3, delay: 3, duration: 11 },
-  ];
+  
 
   return (
     <section
@@ -338,14 +289,14 @@ useEffect(() => {
         {/* Left glow */}
         <motion.div
           className="absolute rounded-full w-[50vw] h-[50vw] max-w-[700px] max-h-[700px] -left-[15%] top-[10%] blur-[80px] bg-[radial-gradient(circle,rgba(0,56,99,0.22)_0%,transparent_65%)]"
-          animate={{ scale: [1, 1.1, 1], opacity: [0.6, 1, 0.6] }}
+          animate={isSectionInView ? { scale: [1, 1.1, 1], opacity: [0.6, 1, 0.6] } : {}}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         />
 
         {/* Right glow */}
         <motion.div
           className="absolute rounded-full w-[40vw] h-[40vw] max-w-[560px] max-h-[560px] -right-[10%] bottom-[5%] blur-[80px] bg-[radial-gradient(circle,rgba(17,138,178,0.12)_0%,transparent_65%)]"
-          animate={{ scale: [1, 1.15, 1], opacity: [0.5, 0.9, 0.5] }}
+          animate={isSectionInView ? { scale: [1, 1.15, 1], opacity: [0.5, 0.9, 0.5] } : {}}
           transition={{
             duration: 14,
             repeat: Infinity,
@@ -357,7 +308,7 @@ useEffect(() => {
         {/* Pink center-top glow */}
         <motion.div
           className="absolute rounded-full w-[300px] h-[300px] top-0 left-1/2 -translate-x-1/2 blur-[60px] bg-[radial-gradient(circle,rgba(255,143,171,0.06)_0%,transparent_70%)]"
-          animate={{ opacity: [0.4, 0.9, 0.4] }}
+          animate={isSectionInView ? { opacity: [0.4, 0.9, 0.4] } : {}}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
 

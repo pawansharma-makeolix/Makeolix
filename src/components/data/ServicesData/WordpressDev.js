@@ -46,14 +46,14 @@ export const WordpresDevData = {
               title: "Custom WordPress Website Design",
               description:
                 "We design WordPress websites from the ground up, no page-builder shortcuts, no recycled templates. Our custom WordPress website design process starts with brand strategy, audience research, and conversion goals. The result is a site that feels like yours genuinely and performs like a well-oiled machine - tied to our broader website design and development philosophy.",
-              nodes: 9,
-            },
+              image: "/Servicesglance/Custom WordPress Website Design - Makeolix consulting.webp",
+              },
             {
               id: "2",
               title: "WordPress Theme Customization",
               description:
                 "Already have a theme, but it's not doing you justice? Our WordPress theme customization services go deep, with custom child themes, precision CSS overrides, advanced layout restructuring, and brand alignment throughout. We transform off-the-shelf into bespoke, without the cost of a full rebuild.",
-              nodes: 7,
+               image: "/Servicesglance/Custom Website Design - Makeolix Consulting.webp",
             },
             {
               id: "3",
@@ -61,7 +61,7 @@ export const WordpresDevData = {
               title: "WooCommerce & E-commerce Development",
               description:
                 "We specialize in WooCommerce development, turning WordPress into a high-converting digital storefront. From product catalog architecture to secure checkout flows and payment gateway integration, our e-commerce development builds are designed to sell. Custom product pages, subscription models, multi-currency… we've done it all.",
-              nodes: 8,
+              image: "/Servicesglance/Custom WordPress Website Design - Makeolix consulting.webp",
             },
             {
               id: "4",
@@ -69,7 +69,7 @@ export const WordpresDevData = {
               title: "WordPress Performance & SEO Optimization",
               description:
                 "Speed and search are inseparable. Our affordable WordPress development services include full performance audits, Core Web Vitals fixes, image and asset optimization, schema markup, and technical SEO restructuring. ",
-              nodes: 10,
+              image: "/Servicesglance/Custom WordPress Website Design - Makeolix consulting.webp",
             },
             {
               id: "5",
@@ -77,7 +77,7 @@ export const WordpresDevData = {
               title: "WordPress Website Development for Business",
               description:
                 "From lead-generation landing pages to full multi-page service sites and membership platforms, our WordPress website development services in India cover the full business spectrum. We build for conversion, clear CTAs, trust signals, fast load times, and mobile-first layouts that turn visitors into clients.",
-              nodes: 6,
+              image: "/Servicesglance/Custom WordPress Website Design - Makeolix consulting.webp",
             },
             {
               id: "5",
@@ -85,7 +85,7 @@ export const WordpresDevData = {
               title: "WordPress Maintenance & Ongoing Support",
               description:
                 "Launch isn't the end…it's the beginning. Our proactive WordPress maintenance services keep your site secure, updated, and running smoothly month after month. Core updates, plugin management, security scanning, uptime monitoring, and priority support. Think of us as your on-call technical team, always in your corner.",
-              nodes: 6,
+              image: "/Servicesglance/Custom WordPress Website Design - Makeolix consulting.webp",
             },
             
           ],

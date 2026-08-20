@@ -21,107 +21,7 @@ const STYLE = `
 `;
 
 // ─── Network Visual ───────────────────────────────────────────────────────────
-function NetworkVisual({ nodeCount = 8 }) {
-  const nodes = [
-    { cx: 50, cy: 50, r: 10, main: true },
-    ...Array.from({ length: nodeCount - 1 }, (_, i) => {
-      const angle = (i / (nodeCount - 1)) * Math.PI * 2 + i * 2.4;
-      const radius = 22 + (i % 3) * 8;
-      return {
-        cx: 50 + Math.cos(angle) * radius,
-        cy: 50 + Math.sin(angle) * radius,
-        r: 3 + (i % 3),
-        main: false,
-      };
-    }),
-  ];
-  const links = nodes.slice(1).map((_, i) => [0, i + 1]);
-  for (let i = 1; i < nodes.length - 1; i += 2) links.push([i, i + 1]);
 
-  return (
-    <div className="w-full h-full flex items-center justify-center p-4">
-      <svg
-        viewBox="0 0 100 100"
-        className="w-full h-full"
-        style={{ maxWidth: 300, maxHeight: 300 }}
-      >
-        {[25, 50, 75].map((v) => (
-          <g key={v}>
-            <line x1={v} y1={5} x2={v} y2={95} stroke="rgba(17,138,178,0.07)" strokeWidth={0.4} />
-            <line x1={5} y1={v} x2={95} y2={v} stroke="rgba(17,138,178,0.07)" strokeWidth={0.4} />
-          </g>
-        ))}
-        {links.map(([a, b], i) => (
-          <motion.line
-            key={`l-${i}`}
-            x1={nodes[a].cx} y1={nodes[a].cy} x2={nodes[b].cx} y2={nodes[b].cy}
-            stroke={i % 3 === 0 ? "rgba(255,143,171,0.25)" : "rgba(17,138,178,0.3)"}
-            strokeWidth={0.7}
-            initial={{ pathLength: 0, opacity: 0 }}
-            animate={{ pathLength: 1, opacity: 1 }}
-            transition={{ delay: 0.1 + i * 0.08, duration: 0.7, ease: "easeOut" }}
-          />
-        ))}
-        {links.slice(0, 8).map(([a, b], i) => (
-          <motion.circle
-            key={`d-${i}`}
-            r={1.2}
-            fill={i % 2 === 0 ? "#118ab2" : "#ff8fab"}
-            animate={{
-              cx: [nodes[a].cx, nodes[b].cx, nodes[a].cx],
-              cy: [nodes[a].cy, nodes[b].cy, nodes[a].cy],
-              opacity: [0, 1, 1, 0],
-            }}
-            transition={{ duration: 2.2 + (i % 3) * 0.6, repeat: Infinity, delay: i * 0.35, ease: "easeInOut" }}
-          />
-        ))}
-        {nodes.map((n, i) => (
-          <motion.g
-            key={`n-${i}`}
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            style={{ transformOrigin: `${n.cx}px ${n.cy}px` }}
-            transition={{ delay: 0.05 + i * 0.09, type: "spring", stiffness: 200, damping: 18 }}
-          >
-            <motion.circle
-              cx={n.cx} cy={n.cy}
-              r={n.r + (n.main ? 6 : 3.5)}
-              fill={n.main ? "rgba(17,138,178,0.12)" : "rgba(17,138,178,0.06)"}
-              animate={{ r: [n.r + (n.main ? 6 : 3.5), n.r + (n.main ? 9 : 5), n.r + (n.main ? 6 : 3.5)] }}
-              transition={{ duration: 3 + i * 0.2, repeat: Infinity, ease: "easeInOut" }}
-            />
-            <circle
-              cx={n.cx} cy={n.cy} r={n.r}
-              fill={n.main ? "var(--blue-2)" : i % 3 === 0 ? "rgba(255,143,171,0.35)" : "rgba(17,138,178,0.4)"}
-              stroke={n.main ? "var(--blue-3)" : i % 3 === 0 ? "rgba(255,143,171,0.5)" : "rgba(17,138,178,0.5)"}
-              strokeWidth={n.main ? 1.2 : 0.6}
-            />
-            {n.main && (
-              <motion.circle
-                cx={n.cx} cy={n.cy} r={3} fill="var(--blue-3)"
-                animate={{ r: [3, 4.5, 3], opacity: [0.8, 1, 0.8] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              />
-            )}
-          </motion.g>
-        ))}
-        <motion.circle
-          cx={50} cy={50} r={16}
-          fill="none" stroke="rgba(17,138,178,0.15)" strokeWidth={0.6}
-          strokeDasharray="4 3"
-          animate={{ rotate: 360 }}
-          style={{ transformOrigin: "50px 50px" }}
-          transition={{ duration: 14, repeat: Infinity, ease: "linear" }}
-        />
-        <motion.g animate={{ y: [0, -3, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}>
-          <rect x={64} y={8} width={30} height={12} rx={6} fill="rgba(0,56,99,0.92)" stroke="rgba(17,138,178,0.5)" strokeWidth={0.6} />
-          <text x={79} y={16.5} textAnchor="middle" style={{ fontSize: 5, fill: "var(--blue-3)", fontWeight: 700, fontFamily: "monospace" }}>LIVE</text>
-          <motion.circle cx={68} cy={14} r={1.5} fill="#00c9a7" animate={{ opacity: [1, 0.2, 1] }} transition={{ duration: 1, repeat: Infinity }} />
-        </motion.g>
-      </svg>
-    </div>
-  );
-}
 
 // ─── Progress Dots ────────────────────────────────────────────────────────────
 function ProgressDots({ total, active, onGo }) {
@@ -248,10 +148,25 @@ function Slide({ service, direction }) {
             backdropFilter: "blur(20px)",
             boxShadow: "0 24px 80px rgba(0,0,0,0.55)",
           }}
-          animate={{ rotateX: [0, 2.5, 0, -2.5, 0], rotateY: [0, -3.5, 0, 3.5, 0] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          
         >
-          <NetworkVisual nodeCount={service.nodes} />
+        <motion.div
+          className="relative w-full h-full rounded-3xl overflow-hidden"
+          style={{
+            background: "rgba(4,20,32,0.88)",
+            border: "1px solid rgba(17,138,178,0.22)",
+            backdropFilter: "blur(20px)",
+            boxShadow: "0 24px 80px rgba(0,0,0,0.55)",
+          }}
+         
+        >
+          <img
+            src={service.image}
+            alt={service.title}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </motion.div>
         </motion.div>
       </motion.div>
     </div>

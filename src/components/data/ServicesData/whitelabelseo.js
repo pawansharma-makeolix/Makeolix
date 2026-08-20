@@ -107,14 +107,14 @@ export const whitelabelseo ={
               title: "SEO Reseller Services",
               description:
                 "We handle end-to-end [SEO reseller Services|/services/seo-reseller-service], including strategy, implementation, and optimization. This allows you to focus on client relationships while we drive performance behind the scenes.",
-              nodes: 9,
+              image: "/Servicesglance/Seo Reseller - Makeolix consulting.webp",
             },
             {
               id: "2",
               title: "White Label Link Building Services ",
               description:
                 "Our team builds high-quality, authoritative backlinks from relevant websites. This improves domain authority, boosts rankings, and strengthens your clients’ online presence.",
-              nodes: 7,
+              image: "/Servicesglance/Local link building - Makeolix consulting.webp",
             },
             {
               id: "3",
@@ -122,7 +122,7 @@ export const whitelabelseo ={
               title: "White Label Local SEO Services ",
               description:
                 "We optimize Google Business Profiles, local citations, and geo-targeted keywords. This helps your clients rank higher in “near me” searches and attract local customers.",
-              nodes: 8,
+              image : "/Servicesglance/White label seo - Makeolix Consulting.webp",
             },
             
             {
@@ -131,7 +131,7 @@ export const whitelabelseo ={
               title: "White Label SEO Link Building",
               description:
                 "We implement ethical, scalable link-building strategies using outreach and content partnerships. This ensures long-term growth without risking search engine penalties.",
-              nodes: 10,
+              image: "/Servicesglance/White Label SEO Link Building - Makeolix consulting.webp",
             },
             {
               id: "5",
@@ -139,7 +139,7 @@ export const whitelabelseo ={
               title: "Content & On-Page Optimization ",
               description:
                 "We create and optimize SEO-friendly content, including blogs and landing pages. This improves search visibility, enhances user engagement, and drives more conversions.",
-              nodes: 6,
+              image: "/Servicesglance/Content & On-Page Optimization - Makeolix consulting.webp",
             },
             
           ],

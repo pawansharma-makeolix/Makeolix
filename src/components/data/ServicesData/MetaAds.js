@@ -81,14 +81,14 @@ export const MetaAds = {
             title: "Campaign Strategy & Setup",
             description:
               "We start with in-depth research, understanding your audience, competitors, and goals. For businesses targeting markets like the U.S., we also analyze trends and user behavior to build a strong campaign foundation.",
-            nodes: 9,
+           image: "/Servicesglance/Campaign Strategy & Setup - Makeolix Consulting.webp",
           },
           {
             id: "2",
             title: "Audience Targeting & Segmentation",
             description:
               "Using advanced tools, we identify high-intent users and create precise audience segments to improve conversion rates and reduce wasted ad spend.",
-            nodes: 7,
+           image: "/Servicesglance/Seo Reseller - Makeolix consulting.webp",
           },
           {
             id: "3",
@@ -96,7 +96,7 @@ export const MetaAds = {
             title: "Ad Creative & Copy Optimization",
             description:
               "High-performing ads require compelling visuals and persuasive messaging. We craft engaging creatives that resonate with your audience and continuously refine them to improve engagement and CTR.",
-            nodes: 8,
+            image: "/Servicesglance/Campaign Strategy & Setup - Makeolix Consulting.webp",
           },
           {
             id: "4",
@@ -104,7 +104,7 @@ export const MetaAds = {
             title: "Bid Management & Budget Optimization",
             description:
               "We ensure your budget is spent efficiently by focusing on high-performing campaigns and eliminating wasted spend, helping you achieve better ROI.",
-            nodes: 10,
+            image: "/Servicesglance/Localization content creation - Makeolix consulting.webp",
           },
           {
             id: "5",
@@ -112,7 +112,7 @@ export const MetaAds = {
             title: "A/B Testing & Performance Optimization",
             description:
               "We test different creatives, formats, and strategies to find what works best and scale it for consistent growth.",
-            nodes: 6,
+            image: "/Servicesglance/Campaign Strategy & Setup - Makeolix Consulting.webp",
           },
           {
             id: "6",
@@ -120,7 +120,7 @@ export const MetaAds = {
             title: "Analytics & Reporting",
             description:
               "You receive transparent, data-driven reports with insights into clicks, conversions, cost per result, and ROI, ensuring complete visibility into your campaigns.",
-            nodes: 10,
+            image: "/Servicesglance/AEO & GEO Optimization - Makeolix consulting.webp",
           },
         
         ],

@@ -1,3 +1,4 @@
+import { image } from "framer-motion/client";
 import { Heading } from "lucide-react";
 
 export const EcommerceDevelopData = {
@@ -108,14 +109,14 @@ export const EcommerceDevelopData = {
             title: "Shopify Development Services",
             description:
               "Shopify is one of the most trusted platforms for modern online businesses. As a leading Shopify Development Company in India, we build custom Shopify stores with responsive designs, secure payment integration, and conversion-focused layouts tailored to your business needs. ",
-            nodes: 9,
+            image: "/Servicesglance/Shopify dev - Makeolix Consulting.webp",
           },
           {
             id: "2",
             title: "WooCommerce Development Services",
             description:
               "WooCommerce is a flexible solution for businesses looking for easy content and store management. As an experienced WooCommerce Development Company in India, we create secure, SEO-friendly, and scalable WooCommerce stores designed around your products and business goals. ",
-            nodes: 7,
+            image: "/Servicesglance/Woo commerce  - Makeolix Consulting.webp",
           },
           {
             id: "3",
@@ -123,7 +124,7 @@ export const EcommerceDevelopData = {
             title: "Custom eCommerce Website Development",
             description:
               "Every business has unique requirements, and custom eCommerce development helps create tailored online solutions with advanced functionality and scalable architecture. Our team develops B2B platforms, B2C online stores, multi-vendor marketplaces, and enterprise eCommerce solutions designed for long-term growth. ",
-            nodes: 8,
+            image: "/Servicesglance/Localization content creation - Makeolix consulting.webp",
           },
           {
             id: "4",
@@ -131,7 +132,7 @@ export const EcommerceDevelopData = {
             title: "eCommerce UI/UX & Store Design",
             description:
               "User experience plays a major role in improving conversions and online engagement. Our team creates modern and conversion-focused store layouts that improve navigation, product discovery, and customer interaction. ",
-            nodes: 10,
+            image: "/Servicesglance/Woo commerce  - Makeolix Consulting.webp",
           },
           {
             id: "5",
@@ -139,7 +140,7 @@ export const EcommerceDevelopData = {
             title: "Platform Migration & Optimization",
             description:
               "Outdated platforms can limit business growth and website performance. Our migration and optimization services help businesses move to more scalable eCommerce platforms while maintaining SEO value and improving overall functionality. ",
-            nodes: 6,
+            image: "/Servicesglance/Link building seo - Makeolix consulting.webp",
           },
         ],
       },
