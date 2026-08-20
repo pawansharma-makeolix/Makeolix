@@ -5,29 +5,29 @@ import Button from "../components/Button";
 const blogs = [
   {
     id: 1,
-    slug: "9-best-ppc-agencies-in-india-2026-features-roi-reviews",
-    desc: "9 Best PPC Agencies in India (2026): Features, ROI & Reviews",
-    date: "Published: July 20, 2026",
+    slug: "white-label-seo-vs-seo-reseller-whats-the-difference",
+    desc: "White Label SEO vs SEO Reseller: What’s the Difference?",
+    date: "Published: August 17, 2026",
     
-    img: "/jakub-zerdzicki-9PwLeZA-RGc-unsplash (1).webp",
+    img: "/White label seo - Makeolix Consulting.webp",
   },
   {
     id: 2,
-    slug: "meta-ads-trends-2026-what-your-agency-should-be-doing-right-now",
+    slug: "custom-vs-ready-made-ecommerce-websites-which-ones-right-for-you",
 
-    desc: "Meta Ads Trends 2026: What Your Agency Should Be Doing Right Now",
-    date: "Published: July 13, 2026",
+    desc: "Custom vs Ready-Made Ecommerce Websites: Which One's Right for You?",
+    date: "Published: August 10, 2026",
     
-    img: "/lalmch-computer-767776_1920 (1).webp",
+    img: "/Ecommerce website by makeolix.webp",
   },
   {
     id: 3,
-    slug: "2026-top-10-technical-seo-agency-list",
+    slug: "how-much-do-small-business-seo-services-cost-in-2026",
 
-    desc: "2026’s Top 10 Technical SEO Agency List: Experts in Crawlability & Speed",
-    date: "Published: July 6, 2026",
+    desc: "How Much Do Small Business SEO Services Cost in 2026?",
+    date: "Published: August 03, 2026",
     
-    img: "/pexels-yankrukov-7698812 (1).webp",
+    img: "/Small business seo makeolix.webp",
   },
 ];
 

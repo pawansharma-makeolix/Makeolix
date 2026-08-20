@@ -1,6 +1,303 @@
 import { link, text } from "framer-motion/client";
 
 export const BlogData = {
+  "white-label-seo-vs-seo-reseller-whats-the-difference": {
+    image: "/White label seo - Makeolix Consulting.webp",
+
+    description:
+      "White Label SEO vs SEO Reseller: What’s the Difference?",
+
+    publishedAt: "2026-08-17",
+    updatedAt: "2026-08-17",
+    metaTitle: "White Label SEO vs SEO Reseller: Key Differences Explained",
+
+    metaDescription:
+      "Compare SEO reseller services and white label SEO, including link building, local SEO, and partner services to choose the right solution for your agency",
+    sections: [
+      {
+        type: "hero",
+        data: {
+          title:
+            "White Label SEO vs SEO Reseller: What’s the Difference?",
+        },
+      },
+      {
+        type: "blogcontent",
+        data: {
+          blocks: [
+            {
+              type: "image",
+              src: "/White label seo - Makeolix Consulting.webp",
+              alt: "desc",
+            },
+            {
+              type: "para",
+              text: "White label SEO means you sell search engine optimization services under your own agency's brand while a third-party partner does the actual work behind the scenes. SEO reseller services usually mean you sell a provider's pre-packaged SEO plans, often with less control over branding, pricing, and customization. Both let you offer SEO without hiring an in-house team, but they are not the same business model.",
+            },
+            {
+              type: "para",
+              text: 'If you run a digital agency, web design shop, or freelance marketing practice in the US, you have probably felt this confusion. A client asks for SEO. You do not have the bandwidth or specialized skill set to deliver it yourself. So you start researching outsourcing options, and every provider seems to use "white label" and "reseller" interchangeably, which makes the decision harder, not easier.',
+            },
+            {
+              type: "para",
+              text: "This guide breaks down how these two models differ, which one fits your agency's stage, and what to look for in a white label SEO partner.",
+            },
+             {
+              type: "list",
+              heading: "Key Takeaways",
+              items: [
+                "White label SEO puts your brand on everything: reports, dashboards, client communication. The provider stays invisible.",
+                "SEO reseller services are typically pre-packaged plans (basic, premium, enterprise) with less room for customization.",
+                "White label SEO gives you more control and higher margins. SEO reseller services are simpler and faster to launch.",
+                "SEO is projected to grow from an estimated $72.3 billion in 2025 to $106.15 billion by 2030, so the demand for outsourced SEO delivery is only increasing.",
+                "Many agencies start with reseller-style packages and graduate to full white label partnerships as their client base grows.",
+              ],
+            },
+
+            {
+              type: "h2",
+              text: "What is White Label SEO?",
+            },
+            {
+              type: "para",
+              text: "White label SEO is a business arrangement where a specialist agency does the SEO work, and you present it to your client as your own. Your logo goes on the reports. Your team handles the client relationship. The client never sees the fulfillment partner's name.",
+            },
+
+            {
+              type: "para",
+              text: "At MakeOlix, this is the model we built our SEO reseller service around. We handle keyword research, technical audits, content, and link building behind the scenes, and everything that reaches your client carries your agency's branding, not ours.",
+               links: [
+                {
+                  word: "SEO reseller service",
+                  url: "https://makeolix.com/services/seo-reseller-service/",
+                },
+              ],
+        
+            },
+            {
+              type: "para",
+              text: "Search engine optimization itself has evolved well beyond keyword targeting into technical performance, content quality, and now visibility in AI-powered search results, which is exactly why so many agencies prefer outsourcing it to specialists rather than building the skill set in-house.",
+               links: [
+                {
+                  word: "Search engine optimization",
+                  url: "https://en.wikipedia.org/wiki/Search_engine_optimization",
+                  newTab: true,
+                },
+              ],
+        
+            },
+            {
+              type: "h2",
+              text: "How White Label SEO Works, Step by Step",
+            },
+            {
+              type: "list",
+              items: [
+                "You sign a partnership agreement with a provider.",
+                "You bring the client and set pricing and scope.",
+                "The provider executes the work: audits, on-page optimization, content, and links.",
+                "Reports and dashboards are rebranded with your agency's name and colors.",
+                "You own the client relationship end to end."
+              ]
+            },
+            {
+              type: "h2",
+              text: "What is an SEO Reseller Program?",
+            },
+            {
+              type: "para",
+              text: "SEO reseller services allow agencies to sell SEO packages created by another company.",
+            },
+            {
+              type: "para",
+              text: "Instead of building customized campaigns, agencies usually choose predefined packages based on client requirements. The reseller provider completes the work, while the agency manages sales and customer communication.",
+              
+            },
+             {
+              type: "list",
+              heading: "This approach is often suitable for:",
+              items: [
+                "Small agencies",
+                "Freelancers",
+                "Website development companies",
+                "Marketing consultants",
+                "Businesses testing SEO services for the first time",
+              ],
+            },
+            {
+              type: "para",
+              text: "Although SEO reseller services simplify operations, customization options are generally more limited than a white label partnership."
+            },
+            {
+              type: "h2",
+              text: "White Label SEO vs SEO Reseller: Key Differences Explained",
+            },
+            {
+              type: "table",
+              data: {
+                headers: ["Factor", "White Label SEO", "SEO Reseller"],
+                rows: [
+                  ["Branding", "Fully your agency's brand", "Often generic or co-branded"],
+                  ["Customization", "Tailored strategy per client", "Pre-packaged tiers"],
+                  ["Control", "You direct the strategy and timeline", "Provider controls execution"],
+                  ["Client relationship", "You own it entirely", "Sometimes shared with the provider"],
+                  [
+                    "Margins",
+                    "Typically higher, you set pricing",
+                    "Usually thinner, fixed markup",
+                  ],
+                  ["Best for", "Established agencies with steady client flow", "New freelancers or small agencies testing demand"],
+                  
+                ],
+              },
+            },
+
+            {
+              type: "h2",
+              text: "Which Model Should Your Agency Choose?",
+            },
+            {
+              type: "para",
+              text: "The right choice depends on where your agency is today, not just on price.",
+            },
+            {
+              type: "list",
+              items: [
+                "Choose reseller if: you are testing SEO demand before committing resources and want simple, predictable packages.",
+                "Choose white label if: you have steady client flow, want to protect your brand identity, and need custom strategies for complex accounts.",
+                "Choose a hybrid if: you want unbranded reports and flexible execution with some standardized internal pricing.",
+              ]
+            },
+            {
+              type: "para",
+              text: "Rule of thumb: reseller programs are transactional. White label partnerships function like a strategic extension of your team.",
+            },
+            {
+              type: "h2",
+              text: "What Should You Look for in a White Label SEO Partner?",
+            },
+            {
+              type: "para",
+              text: "Before signing with any provider, vet them the way you would vet an employee joining your team.",
+            },
+            {
+              type: "list",
+              items: [
+                "Ask for a sample of a fully rebranded report, not just a template with the logo removed.",
+                "Confirm whether their white label link building services use vetted, real-traffic sites and disclose their outreach process.",
+                "Check if they offer white label local SEO services if your clients have physical locations, since local search behaves differently from national SEO.",
+                "Ask whether your client will ever interact with, or discover, the fulfillment partner.",
+                "Request a clear SLA covering turnaround times, revisions, and escalation paths.",
+              ]
+            },
+            {
+              type: "para",
+              text: "At MakeOlix, we get asked these questions often, and we see that as a sign of a well-informed agency partner, not a red flag.",
+            },
+            
+            
+
+            {
+              type: "h2",
+              text: "Final Thoughts",
+            },
+            {
+              type: "para",
+              text: "White label SEO and SEO reseller services both solve the same problem: offering expert SEO without building an in-house team. The real difference comes down to branding, control, and margin. Reseller programs suit agencies testing the market, while white label partnerships suit agencies ready to scale with full brand ownership.",
+            },
+            {
+              type: "para",
+              text: "If you are ready to add SEO to your service lineup without the overhead of hiring, we would love to talk. At MakeOlix, we work as a true white label seo reseller, handling everything from technical audits to link building and local SEO, all delivered under your brand. ",
+            },
+            {
+              type: "para",
+              text: "Browse our full range of white label services and Reach out to MakeOlix today to see how a white label partnership could fit your agency's growth plan.",
+                  links: [
+                {
+                  word: "Reach out to MakeOlix",
+                  url: "https://makeolix.com/contact-us",
+                },
+              ],
+            },
+            
+            
+          ],
+        },
+      },
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question:
+                "Is white label SEO the same as SEO reseller services? ",
+              answer:
+                "No. White label SEO fully hides the provider and puts your brand on everything. Reseller services are pre-packaged plans with less customization and sometimes visible provider branding.",
+            },
+            {
+              id: 2,
+              question: "Which model is more profitable? ",
+              answer:
+                "White label SEO usually offers higher margins since you set your own pricing and tailor scope. Reseller programs tend to have thinner, fixed markups.",
+            },
+            {
+              id: 3,
+              question:
+                "Can I combine both models? ",
+              answer:
+                "Yes. Many agencies start with reseller-style packages for simple clients and move to white label service for larger accounts.",
+            },
+            {
+              id: 4,
+              question:
+                "Will my clients find out the work is outsourced? ",
+              answer:
+                "With a genuine white label partner, no. Reports and communication are rebranded, and the provider stays behind the scenes.",
+            },
+            {
+              id: 5,
+              question:
+                "Do white label partners handle link building and local SEO too? ",
+              answer:
+                "Yes, most full-service providers offer white label link building and local SEO alongside core SEO work.",
+            },
+          ],
+        },
+      },
+    ],
+    relatedblogs: [
+      {
+        slug: "10-best-e-commerce-seo-services-agencies",
+        image: "/blog-image-16-6-2026 (1).webp",
+        description:
+          "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
+
+        buttonText: "Read More",
+        buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+        buttonVariant: "",
+      },
+      {
+        slug: "want-more-traffic-sales",
+        image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+        description:
+          "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+        buttonText: "Read More",
+        buttonHref: "/blog/want-more-traffic-sales",
+        buttonVariant: "",
+      },
+      {
+        slug: "how-do-i-choose-the-best-seo",
+        image:
+          "/SEO-Reseller-Service-Provide-In-India-MakeOlix-Consulting.webp",
+        description:
+          "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
+        buttonText: "Read More",
+        buttonHref: "/blog/how-do-i-choose-the-best-seo",
+        buttonVariant: "",
+      },
+    ],
+  },
   "custom-vs-ready-made-ecommerce-websites-which-ones-right-for-you": {
     image: "/Ecommerce website by makeolix.webp",
 
