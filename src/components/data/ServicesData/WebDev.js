@@ -31,7 +31,7 @@ export const WebDevDesignData = {
           title: "Why Businesses Choose MakeOlix Consulting",
           description:
             "Businesses today need more than just developers, they need a strategic digital partner. At MakeOlix Consulting, we deliver industry-focused solutions designed to help brands grow faster in competitive markets. As a trusted Website Development Agency in India, we understand the expectations of international clients and develop websites that align with modern market standards.",
-          image: "/pexels-jakubzerdzicki-36496927.jpg",
+          image: "/Whyy Makeolix consulting.webp",
         },
       },
      
@@ -74,7 +74,7 @@ export const WebDevDesignData = {
         type: "parallax",
 
         data: {
-          bgImage: "/noseberrydigitals-design-9824072_1920.jpg",
+          bgImage: "/What Makes a High-Performing - Makeolix consulting.webp",
           align: "right",
           // LEFT
           
@@ -201,7 +201,7 @@ export const WebDevDesignData = {
         type: "parallax",
 
         data: {
-          bgImage: "/domenico-loia-hGV2TfOh0ns-unsplash (1).jpg",
+          bgImage: "/Results-Driven Web Solutions - Makeolix Consulting.webp",
           align: "both",
           // LEFT
           title: "Results-Driven Web Solutions Built for Growth",
@@ -245,7 +245,7 @@ export const WebDevDesignData = {
           title: "Ready to Build a Website That Drives Real Business Growth?",
           description:
             "Your website should do more than just exist, it should generate leads, build trust, and help your business scale confidently. Partner with MakeOlix Consulting to create a modern, high-performing website tailored for the U.S. market. From custom web development to advanced eCommerce solutions, our experts are ready to help you build a stronger digital presence.Get started today with a strategic website solution designed for performance, scalability, and long-term success.",
-          image: "/kobu-agency-7okkFhxrxNw-unsplash (1).jpg",
+          image: "/Ready to Build a Website - Makeolix consulting.jpg",
           reverse: true,
         },
       },

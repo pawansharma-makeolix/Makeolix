@@ -32,7 +32,7 @@ export const technicalSeo = {
         title: "What Are Technical SEO Services & Why Do They Matter?",
         description:
           "Technical SEO focuses on optimizing the backend of your website so search engines can easily crawl, index, and rank your pages. Unlike content or backlinks alone, technical SEO ensures your website is fast, secure, and structured properly. Our role as a trusted Technical SEO Agency is to identify and fix issues that impact your rankings, like slow loading speed, crawl errors, and poor mobile usability. Through a detailed SEO Technical Audit, we uncover problems that most businesses don’t even realize exist. A strong technical foundation is critical because even the best content won’t rank if search engines can’t access or understand your website.",
-        image: "/pexels-goumbik-669616 (1).jpg",
+        image: "/What Are Technical SEO Services - Makeolix Consulting.webp",
       },
     },
     {
@@ -80,7 +80,7 @@ export const technicalSeo = {
       type: "parallax",
 
       data: {
-        bgImage: "/growtika-MHqhLm2_QGk-unsplash.jpg",
+        bgImage: "/Why Choose MakeOlix Consulting.webp",
         align: "both",
         // LEFT
         title: "Why Choose MakeOlix Consulting?",

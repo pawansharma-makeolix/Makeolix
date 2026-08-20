@@ -31,7 +31,7 @@ export const PerformanceMarketingData = {
         title: "What is Performance Marketing?",
         description:
           "Performance marketing is a digital advertising model where you only pay when a specific action happens - a click, a lead, a sale, or a sign-up. Unlike traditional advertising, where you pay upfront and hope for results, performance marketing puts accountability at the center of every campaign. As a trusted performance-based marketing agency, MakeOlix Consulting builds campaigns that are tied directly to your business goals. No fluff, no vanity metrics - just real, trackable outcomes that move your bottom line. Performance marketing is widely used by e-commerce brands, SaaS companies, D2C businesses, lead generation firms, and local service providers who want to scale efficiently without wasting budget on guesswork.",
-        image: "/pexels-jakubzerdzicki-36950633.jpg",
+        image: "/What is Performance Marketing - Makeolix Consulting.webp",
       },
     },
     {

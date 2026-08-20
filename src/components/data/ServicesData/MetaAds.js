@@ -30,7 +30,7 @@ export const MetaAds = {
         title: "What is Meta Advertising & Why It Matters",
         description:
           "Meta advertising refers to running paid campaigns across platforms like Facebook and Instagram using advanced targeting and analytics tools. With over 3 billion active users across Meta platforms, businesses can reach highly specific audiences based on behavior, interests, demographics, and intent. Our expertise in Meta Business Advertising allows us to create campaigns that don’t just reach people but reach the right people. Whether you're targeting local customers or expanding into competitive regions like the U.S., we tailor strategies that align with audience behavior and market trends.",
-        image: "/metads.jpg",
+        image: "/Meta Ads Campaign Management - Makeolix consulting.webp",
       },
     },
 
@@ -130,7 +130,7 @@ export const MetaAds = {
       type: "parallax",
 
       data: {
-        bgImage: "/pexels-mikael-blomkvist-6476580 (1).jpg",
+        bgImage: "/Why Your Business Needs a Results-Driven - Makeolix consulting.webp",
         align: "left",
         // LEFT
         title: "Why Your Business Needs a Results-Driven Meta Ads Strategy",

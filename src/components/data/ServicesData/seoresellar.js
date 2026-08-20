@@ -28,14 +28,14 @@ export const seoResellerData = {
           title: "Power Up with Advanced Local SEO Reseller Services",
           description:
             "Looking to expand your services with local SEO? Our Advanced Local SEO Reseller Services are tailored for agencies that want to offer geo-targeted visibility to clients. Our attention is on local map pack ranking, Google Business Profile optimization, NAP consistency and hyper-local keywords targeting. The result? Greater exposure to your customers and more confidence in your company.",
-          image: "/john-FlPc9_VocJ4-unsplash (2).jpg",
+          image: "/Why Do Growing Businesses Need SEO Services - Makeolix Consulting.webp",
         },
       },
       {
         type: "parallax",
 
         data: {
-          bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
+          bgImage: "/Why Do Growing Businesses Need SEO Services - Makeolix Consulting.webp",
           align: "left",
           // LEFT
           title: "Why Do Growing Businesses Need SEO Services?",

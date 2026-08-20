@@ -31,14 +31,14 @@ export const localSeoData = {
           title: "What Is Local SEO & Why Does It Matter?",
           description:
             "Local SEO (Search Engine Optimization) refers to the act of ensuring that your online presence is optimized in such a way that your business shows up in the search results when one types something such as “near me” or “best services” (city), (state). Under Local SEO Marketing Services, your business becomes visible in the places where it is most needed and that is in your community. MakeOlix Consulting has Local SEO Experts who help in Google My Business Optimization, Local Link Building, and Local SEO Optimisation that deliver real results. Local SEO is no longer a choice in a world where more than 80 percent of consumers use Google to locate a local business",
-          image: "/pexels-goumbik-577195 (1).jpg",
+          image: "/What Is Local SEO - Makeolix Consulting.webp",
         },
       },
       {
         type: "parallax",
 
         data: {
-          bgImage: "/pexels-ivan-s-7212949.jpg",
+          bgImage: "/How Local SEO Services - Makeolix consulting.webp",
           align: "left",
           // LEFT
           title: "How Local SEO Services Help Your Business Grow?",

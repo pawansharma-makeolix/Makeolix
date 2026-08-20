@@ -4,12 +4,12 @@ import Button from "../components/Button";
 const SparkleParticles = lazy(() => import("./SparkleParticles"));
 
 const services = [
-   { title: "Web Development", image: "/web-dev.webp", slug: "web-design-development" },
-  { title: "Performance Marketing", image: "/performance.webp", slug: "performance-marketing" },
-  { title: "Social Media Marketing", image: "/social.webp", slug: "social-media-marketing" },
-  { title: "Local SEO Service", image: "/seo-local.webp", slug: "local-seo" },
-  { title: "E Commerce Development", image: "/business.webp", slug: "ecommerce-develop" },
-  { title: "SEO", image: "/seo.webp", slug: "seo" },
+   { title: "Web Development", image: "/Web Development - Makeolix consulting.webp", slug: "web-design-development" },
+  { title: "Performance Marketing", image: "/Performance marketing - Makeolix consulting.webp", slug: "performance-marketing" },
+  { title: "Social Media Marketing", image: "/Social media marketing - Makeolix consulting.webp", slug: "social-media-marketing" },
+  { title: "Local SEO Service", image: "/Local seo - Makeolix consulting.webp", slug: "local-seo" },
+  { title: "E Commerce Development", image: "/Ecommerce development - Makeolix consulting.webp", slug: "ecommerce-develop" },
+  { title: "SEO", image: "/SEO - Makeolix consulting.webp", slug: "seo" },
 ];
 
 const ServicesSlider = () => {

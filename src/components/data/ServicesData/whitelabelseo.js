@@ -31,7 +31,7 @@ export const whitelabelseo ={
         title: "What Are White Label SEO Services?",
         description:
           "White Label SEO Services is an outsourced SEO solution that allows you to offer SEO under your own brand while an expert team handles the work behind the scenes. It helps you deliver professional SEO results with no in-house team required, making it a cost-effective and scalable option. The process is simple, you sell SEO services to your clients, and the White Label SEO Provider manages everything from strategy to execution and reporting. A structured White Label SEO Program ensures smooth workflow, consistent results, and complete behind-the-scenes execution while you focus on client relationships and business growth.",
-        image: "/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash (1).jpg",
+        image: "/What Are White Label SEO Services - Makeolix consulting.webp",
       },
     },
     {
@@ -74,7 +74,7 @@ export const whitelabelseo ={
       type: "parallax",
 
       data: {
-        bgImage: "/pexels-olia-danilevich-8145342 (1).jpg",
+        bgImage: "/Your White Label SEO Partner - Makeolix consulting.webp",
         align: "left",
         // LEFT
         title: "Why Choose MakeOlix Consulting as Your White Label SEO Partner?",

@@ -63,7 +63,7 @@ export const ecommerceSeoData = {
       type: "parallax",
 
       data: {
-        bgImage: "/pexels-olly-3760081.jpg",
+        bgImage: "/What is E-commerce SEO - Makeolix Consulting.webp",
         align: "both",
         // LEFT
         title: "What is E-commerce SEO & Why It Matters",

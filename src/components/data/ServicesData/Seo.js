@@ -31,14 +31,14 @@ export const seoData = {
           title: "What Are SEO Services?",
           description:
             "SEO (Search Engine Optimization) is the process of improving your website’s visibility on search engines like Google, helping your ideal customers find your business when they search online. By ranking higher for relevant keywords, SEO drives more organic traffic and increases your chances of generating leads and sales. SEO services involve optimizing your website’s content, structure, and technical performance, along with building quality backlinks to improve authority. It also includes analyzing user behavior and search trends to continuously refine strategies, ensuring long-term growth and better results for your business.",
-          image: "/john-FlPc9_VocJ4-unsplash (2).jpg",
+          image: "/SEO Services -Makeolix Consulting.webp",
         },
       },
       {
         type: "parallax",
 
         data: {
-          bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
+          bgImage: "/Why Do Growing Businesses Need SEO Services - Makeolix Consulting.webp",
           align: "left",
           // LEFT
           title: "Why Do Growing Businesses Need SEO Services?",

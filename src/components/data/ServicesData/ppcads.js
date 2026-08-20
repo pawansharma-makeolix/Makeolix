@@ -32,7 +32,7 @@ export const PpcAdsData = {
         title: "What is PPC Advertising & Why Does It Matter?",
         description:
           "Pay-per-click advertising is a digital marketing model where advertisers pay only when someone clicks on their ads. Instead of waiting months for organic rankings, PPC campaigns place your business directly in front of people actively searching for your products or services. Our expertise in Pay Per Click Advertising in India helps businesses create targeted campaigns across Google Search, YouTube, Shopping Ads, and Display Networks. This allows brands to generate immediate visibility, attract high-intent users, and drive faster conversions. As a trusted PPC Agency in India, MakeOlix Consulting focuses on creating campaigns backed by audience research, keyword intent, competitor analysis, and real-time optimization. Every strategy is designed to help businesses reduce wasted ad spend while improving lead quality and overall campaign performance.",
-        image: "/coffeebeanworks-web-design-1953128_1920.jpg",
+        image: "/PPC Advertising & Why Does It Matter - Makeolix Consulting.webp",
       },
     },
     {
@@ -75,7 +75,7 @@ export const PpcAdsData = {
       type: "parallax",
 
       data: {
-        bgImage: "/ppcadss.jpg",
+        bgImage: "/ppcadss-Makeolix consulting.webp",
         align: "left",
         // LEFT
         title: "Why Businesses Invest in PPC Campaigns",
