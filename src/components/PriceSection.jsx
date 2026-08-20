@@ -4,95 +4,7 @@ import Button from "../components/Button";
 
 const CONTACT_URL = "/contact";
 
-const ShaderCanvas = () => {
-  const canvasRef = useRef(null);
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const gl = canvas.getContext("webgl");
-    if (!gl) return;
-    const vertSrc = `attribute vec2 aPos; void main(){ gl_Position=vec4(aPos,0.,1.); }`;
-    const fragSrc = `
-      precision highp float;
-      uniform float iTime; uniform vec2 iRes;
-      mat2 rot(float a){ float c=cos(a),s=sin(a); return mat2(c,-s,s,c); }
-      float wave(vec2 v1,vec2 v2,float str,float spd){ return sin(dot(normalize(v1),normalize(v2))*str+iTime*spd)/100.0; }
-      vec3 ring(vec2 uv,vec2 cen,float r,float w){
-        vec2 d=cen-uv; float l=length(d);
-        l+=wave(d,vec2(0.,1.),5.,2.); l-=wave(d,vec2(1.,0.),5.,2.);
-        float c=smoothstep(r-w,r,l)-smoothstep(r,r+w,l);
-        return vec3(c);
-      }
-      void main(){
-        vec2 uv=gl_FragCoord.xy/iRes; uv.x*=1.5; uv.x-=0.25;
-        vec2 cen=vec2(.5); float mask=0.;
-        mask+=ring(uv,cen,.35,.032).r;
-        mask+=ring(uv,cen,.332,.009).r;
-        mask+=ring(uv,cen,.368,.004).r;
-        vec2 v=rot(iTime)*uv;
-        vec3 fg=vec3(0.0+v.x*0.2, 0.22+v.y*0.31, 0.45+v.x*0.3);
-        vec3 bg=vec3(0.0,0.09,0.122);
-        vec3 color=mix(bg,fg,mask);
-        color=mix(color,vec3(0.07,0.53,0.7),ring(uv,cen,.35,.002).r);
-        gl_FragColor=vec4(color,1.);
-      }`;
-    const compile = (type, src) => {
-      const s = gl.createShader(type);
-      gl.shaderSource(s, src);
-      gl.compileShader(s);
-      return s;
-    };
-    const prog = gl.createProgram();
-    gl.attachShader(prog, compile(gl.VERTEX_SHADER, vertSrc));
-    gl.attachShader(prog, compile(gl.FRAGMENT_SHADER, fragSrc));
-    gl.linkProgram(prog);
-    gl.useProgram(prog);
-    const buf = gl.createBuffer();
-    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-    gl.bufferData(
-      gl.ARRAY_BUFFER,
-      new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]),
-      gl.STATIC_DRAW,
-    );
-    const loc = gl.getAttribLocation(prog, "aPos");
-    gl.enableVertexAttribArray(loc);
-    gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
-    const iT = gl.getUniformLocation(prog, "iTime");
-    const iR = gl.getUniformLocation(prog, "iRes");
-    let raf;
-    const resize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight);
-    };
-    resize();
-    window.addEventListener("resize", resize);
-    const render = (t) => {
-      gl.uniform1f(iT, t * 0.001);
-      gl.uniform2f(iR, canvas.width, canvas.height);
-      gl.drawArrays(gl.TRIANGLES, 0, 6);
-      raf = requestAnimationFrame(render);
-    };
-    raf = requestAnimationFrame(render);
-    return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener("resize", resize);
-    };
-  }, []);
-  return (
-    <canvas
-      ref={canvasRef}
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        zIndex: 0,
-      }}
-    />
-  );
-};
+
 
 const TickIcon = () => (
   <svg
@@ -622,7 +534,7 @@ export const PricingSection = ({
         overflowX: "hidden",
       }}
     >
-      {showBg && <ShaderCanvas />}
+     
       <div
         style={{
           position: "fixed",
