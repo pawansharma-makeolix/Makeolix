@@ -61,7 +61,7 @@ const awards = [
     link: "https://selectedfirms.co/agency/makeolix-consulting",
   },
   {
-    image: "/Designrush - Makeolix Consulting.webp",
+    image: "/Designrush - Makeolix consulting.webp",
     alt: "Recognized Where Leading Agencies Stand Out",
     title: "Recognized Where Leading Agencies Stand Out",
     description:
@@ -109,7 +109,7 @@ const awards = [
     link: "https://www.g2.com/products/makeolix-consulting/reviews",
   },
   {
-    image: "/Agency network - Makeolix consulting.webp",
+    image: "/Agency Network - Makeolix Consulting.webp",
     alt: "Verified in the Agency Network",
     title: "Verified in the Agency Network",
     description:

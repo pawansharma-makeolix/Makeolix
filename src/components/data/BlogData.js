@@ -1,11 +1,374 @@
 import { link, text } from "framer-motion/client";
 
 export const BlogData = {
+  // "top-9-ecommerce-website-development-companies-in-india-2026": {
+  //   image: "/Top 9 eCommerce Website Development- Makeolix consulting.webp",
+
+  //   description: "Top 9 eCommerce Website Development Companies in India 2026 ",
+
+  //   publishedAt: "2026-08-24",
+  //   updatedAt: "2026-08-24",
+  //   metaTitle: "Top 9 eCommerce Website Development Companies in India 2026",
+
+  //   metaDescription:
+  //     "Explore the top 9 eCommerce website development companies in India for 2026. Compare eCommerce web development, design, and development services.",
+  //   sections: [
+  //     {
+  //       type: "hero",
+  //       data: {
+  //         title: "Top 9 eCommerce Website Development Companies in India 2026",
+  //       },
+  //     },
+  //     {
+  //       type: "blogcontent",
+  //       data: {
+  //         blocks: [
+  //           {
+  //             type: "image",
+  //             src: "/Top 9 eCommerce Website Development- Makeolix consulting.webp",
+  //             alt: "desc",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "If you are a US business owner searching for an ecommerce website development company in India, you already know the problem. Building an online store that actually converts takes more than a nice template. ",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "You need clean code, fast load times, secure checkout, and a team that understands your customers, not just your CMS. Hiring locally often means paying two to three times more for the same skill set you can get from an experienced Indian team.",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "This guide breaks down the 9 best agencies for ecommerce web development, what they specialize in, what they typically cost, and how to pick the right one for your business. We also cover ecommerce website development services in India, AI-powered design trends, and the questions US buyers ask most before signing a contract.",
+  //           },
+  //           {
+  //             type: "list",
+  //             heading: "Key Takeaways",
+  //             items: [
+  //               "India is home to world-class eCommerce development agencies serving businesses across the US and around the world.",
+  //               "The best agencies offer solutions for Shopify, WooCommerce, Magento, and custom development.",
+  //               "AI-powered search, personalized recommendations, and automation are becoming standard features in 2026.",
+  //               "Choose a company based on technical expertise, scalability, SEO readiness, and post-launch support instead of price alone.",
+  //               "MakeOlix provides end-to-end eCommerce development with performance marketing and SEO built into every project.",
+  //             ],
+  //           },
+
+  //           {
+  //             type: "h2",
+  //             text: "What is an eCommerce Website Development Company?",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "An ecommerce website development company designs, builds, and maintains online stores that let businesses sell products or services over the internet. This includes the storefront design, backend catalog and inventory systems, payment gateway integration, and ongoing performance and security upkeep.",
+  //           },
+  //           {
+  //             type: "list",
+  //             heading:
+  //               "Most companies on this list offer a mix of the following:",
+  //             items: [
+  //               "Custom ecommerce web design in India on platforms like Shopify, Magento, and WooCommerce",
+  //               "Store migrations from outdated platforms",
+  //               "Payment gateway and ERP/CRM integrations",
+  //               "Mobile app development for shopping",
+  //               "Post-launch support, SEO, and conversion optimization",
+  //             ],
+  //           },
+  //           {
+  //             type: "h2",
+  //             text: "The Top 9 eCommerce Website Development Companies in India",
+  //           },
+  //           {
+  //             type: "h2",
+  //             text: "1. Webkul (Best for Multi-Vendor Marketplace Development)",
+  //           },
+
+  //           {
+  //             type: "para",
+  //             text: "Webkul is one of India's most recognized eCommerce development companies and is widely known for its Magento, Shopify, and marketplace extensions. It is particularly well suited for businesses planning to build multi-vendor marketplaces or highly customized eCommerce platforms.",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Best for: Multi-vendor marketplaces and Magento development.",
+  //           },
+  //           {
+  //             type: "h2",
+  //             text: "2. MakeOlix Consulting (Best for SEO-Driven eCommerce Growth) ",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "We at MakeOlix Consulting build performance-first ecommerce sites for US brands, focused on speed, mobile experience, and search visibility from day one. Unlike agencies that hand off a site and disappear, we pair development with ongoing ecommerce SEO, so the store is built to rank, not just to look good. This makes us a strong pick for founders who want design, development, and growth under one roof. Our team is also comfortable working across WordPress/WooCommerce, and Shopify builds for small to mid-size US businesses.",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Best for: Businesses looking for development and long-term digital growth under one partner. ",
+  //           },
+
+  //           {
+  //             type: "h2",
+  //             text: "3. Brainvire Infotech (Best for Enterprise eCommerce Solutions)",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Brainvire Infotech has extensive experience delivering enterprise-grade eCommerce platforms for global retailers. Its expertise spans Adobe Commerce (Magento), Shopify, Laravel, cloud technologies, and custom software development for businesses with complex operational requirements.",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Best for: Enterprise businesses and large-scale digital commerce projects.",
+  //           },
+
+  //           {
+  //             type: "h2",
+  //             text: "4. OrangeMantra (Best Full-Service Digital Commerce Partner)",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "OrangeMantra provides end-to-end eCommerce development, UX design, mobile app development, and ongoing digital transformation services. The company has built a strong reputation for delivering scalable solutions backed by long-term technical support.",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Best for: Businesses looking for a full-service technology partner.",
+  //           },
+
+  //           {
+  //             type: "h2",
+  //             text: "5. Emizentech (Best Magento & Shopify Specialists)",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Emizentech has developed a strong reputation in Magento and Shopify development, helping startups and growing businesses launch feature-rich online stores with modern UI, third-party integrations, and ongoing maintenance.",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Best for: Small and medium-sized businesses seeking platform-specific expertise.",
+  //           },
+
+  //           {
+  //             type: "h2",
+  //             text: "6. ValueCoders (Best for Startups and Cost-Effective Development)",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "ValueCoders is known for offering experienced development teams, transparent communication, and competitive pricing. The company works across Shopify, WooCommerce, Magento, and custom development while maintaining strong client satisfaction.",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Best for: Startups and businesses looking for affordable development without sacrificing quality.",
+  //           },
+
+  //           {
+  //             type: "h2",
+  //             text: "7. Hidden Brains (Best for Custom Integrations)",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Hidden Brains specializes in custom eCommerce development combined with ERP, CRM, payment gateway, and third-party software integrations. Its experience makes it a suitable partner for businesses with more complex operational workflows.",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Best for: Businesses requiring custom integrations and scalable infrastructure.",
+  //           },
+
+  //           {
+  //             type: "h2",
+  //             text: "8. TatvaSoft (Best for Custom Enterprise Development)",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "TatvaSoft delivers custom-built eCommerce applications using modern development frameworks and enterprise technologies. The company focuses on scalable architecture, security, and long-term maintainability rather than template-based implementations.",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Best for: Businesses requiring highly customized enterprise eCommerce solutions.",
+  //           },
+
+  //           {
+  //             type: "h2",
+  //             text: "9. Bacancy Technology (Best for Headless Commerce & API Development)",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Bacancy Technology has built expertise in headless commerce, API-first development, cloud-native architecture, and modern JavaScript frameworks. Its solutions are well-suited for businesses planning omnichannel commerce experiences.",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Best for: Businesses planning headless commerce or highly scalable digital ecosystems.",
+  //           },
+  //           {
+  //             type: "h2",
+  //             text: "Which Platform is Best for Your Business?",
+  //           },
+  //           {
+  //             type: "list",
+  //             items: [
+  //               "Shopify works best for startups and D2C brands that want a fast, low-maintenance launch. ",
+  //               "Magento (Adobe Commerce) suits enterprise businesses with complex catalogs, multi-store needs, or heavy B2B functionality. ",
+  //               "WooCommerce is a flexible middle ground for businesses already running on WordPress. ",
+  //             ],
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Most agencies on this list, including our team at MakeOlix, work across all three, so the right fit depends on your budget and how much customization you expect down the line.",
+  //           },
+  //           {
+  //             type: "h2",
+  //             text: "How Are AI Implementations Changing eCommerce Web Design?",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "AI is now built into most modern ecommerce projects instead of being a separate add-on. Common implementations include AI-powered product recommendations, predictive search that understands intent instead of exact keywords, dynamic pricing tools, and chatbots that handle order tracking and returns. ",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "An ecommerce website design company in India with AI implementations should be able to show you real examples of these features working on a live store, not just a sales deck.",
+  //           },
+  //           {
+  //             type: "h2",
+  //             text: "How to Choose the Right eCommerce Developer",
+  //           },
+  //           {
+  //             type: "list",
+
+  //             items: [
+  //               "Review 3 to 5 live projects in your industry, not just the portfolio homepage.",
+  //               "Ask directly about post-launch support and SEO handoff.",
+  //               "Confirm which platform they specialize in versus which they simply support.",
+  //               "Get a fixed-scope proposal, not just an hourly estimate.",
+  //               "Check reviews on Clutch or GoodFirms for recent, verified feedback.",
+  //             ],
+  //           },
+  //           {
+  //             type: "h2",
+  //             text: "Why Businesses Choose MakeOlix",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "We believe successful eCommerce websites are built around measurable business outcomes.",
+  //             links: [
+  //               {
+  //                 word: "eCommerce websites",
+  //                 url: "https://makeolix.com/services/e-commerce-seo",
+  //               },
+  //             ],
+  //           },
+
+  //           {
+  //             type: "list",
+  //             heading: "When we develop an online store, we focus on:",
+  //             items: [
+  //               "Fast loading performance",
+  //               "Conversion-focused UX",
+  //               "Mobile responsiveness",
+  //               "Technical SEO",
+  //               "Secure architecture",
+  //               "AI-ready functionality",
+  //               "Marketing integrations",
+  //               "Analytics-driven optimization",
+  //             ],
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Our approach helps businesses build websites that not only look professional but also support sustainable revenue growth.",
+  //           },
+
+  //           {
+  //             type: "h2",
+  //             text: "Final Thoughts",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "Choosing an ecommerce website development company in India comes down to matching your budget, platform, and growth plans to the right team. The 9 companies above cover everything from lean Shopify launches to enterprise Magento builds with AI-driven personalization. ",
+  //           },
+  //           {
+  //             type: "para",
+  //             text: "If you want a US-focused ecommerce store that is built to convert and built to rank, reach out to our team at MakeOlix Consulting and let us walk you through a plan built around your business, not a template.",
+  //             links: [
+  //               {
+  //                 word: "reach out to our team",
+  //                 url: "https://makeolix.com/contact-us",
+  //               },
+  //             ],
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       type: "faq",
+  //       data: {
+  //         faqdata: [
+  //           {
+  //             id: 1,
+  //             question:
+  //               "What is the best ecommerce website development company in India? ",
+  //             answer:
+  //               "The best choice depends on your business size and platform. MakeOlix Consulting and OrangeMantra suit most small to mid-size US brands, while Brainvire and Bacancy fit larger, more complex builds.",
+  //           },
+  //           {
+  //             id: 2,
+  //             question:
+  //               "How much do ecommerce website development services in India cost?",
+  //             answer:
+  //               "Pricing varies based on platform, customization, integrations, and project complexity. Basic stores cost significantly less than enterprise-level custom solutions.",
+  //           },
+  //           {
+  //             id: 3,
+  //             question: "How long does it take to build an ecommerce website? ",
+  //             answer:
+  //               "A basic store takes 2 to 4 weeks. A custom mid-range build takes 6 to 10 weeks. Enterprise platforms with ERP integrations can take 12 to 20 weeks.",
+  //           },
+  //           {
+  //             id: 4,
+  //             question:
+  //               "Do these companies handle ongoing maintenance and SEO? ",
+  //             answer:
+  //               "Most do, though the depth varies. We recommend confirming this before signing, since some agencies only handle the initial build and stop there.",
+  //           },
+  //           {
+  //             id: 5,
+  //             question: "Why is AI important for eCommerce websites?",
+  //             answer:
+  //               "AI improves personalization, product discovery, customer support, and operational efficiency, helping businesses deliver better shopping experiences and increase conversions.",
+  //           },
+  //         ],
+  //       },
+  //     },
+  //   ],
+  //   relatedblogs: [
+  //     {
+  //       slug: "10-best-e-commerce-seo-services-agencies",
+  //       image: "/blog-image-16-6-2026 (1).webp",
+  //       description:
+  //         "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
+
+  //       buttonText: "Read More",
+  //       buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+  //       buttonVariant: "",
+  //     },
+  //     {
+  //       slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+
+  //       image:
+  //         "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
+  //       description:
+  //         "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
+  //       buttonText: "Read More",
+  //       buttonHref:
+  //         "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+  //       buttonVariant: "",
+  //     },
+  //     {
+  //       slug: "want-more-traffic-sales",
+  //       image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+  //       description:
+  //         "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+  //       buttonText: "Read More",
+  //       buttonHref: "/blog/want-more-traffic-sales",
+  //       buttonVariant: "",
+  //     },
+  //   ],
+  // },
   "white-label-seo-vs-seo-reseller-whats-the-difference": {
     image: "/White label seo - Makeolix Consulting.webp",
 
-    description:
-      "White Label SEO vs SEO Reseller: What’s the Difference?",
+    description: "White Label SEO vs SEO Reseller: What’s the Difference?",
 
     publishedAt: "2026-08-17",
     updatedAt: "2026-08-17",
@@ -17,8 +380,7 @@ export const BlogData = {
       {
         type: "hero",
         data: {
-          title:
-            "White Label SEO vs SEO Reseller: What’s the Difference?",
+          title: "White Label SEO vs SEO Reseller: What’s the Difference?",
         },
       },
       {
@@ -42,7 +404,7 @@ export const BlogData = {
               type: "para",
               text: "This guide breaks down how these two models differ, which one fits your agency's stage, and what to look for in a white label SEO partner.",
             },
-             {
+            {
               type: "list",
               heading: "Key Takeaways",
               items: [
@@ -66,25 +428,23 @@ export const BlogData = {
             {
               type: "para",
               text: "At MakeOlix, this is the model we built our SEO reseller service around. We handle keyword research, technical audits, content, and link building behind the scenes, and everything that reaches your client carries your agency's branding, not ours.",
-               links: [
+              links: [
                 {
                   word: "SEO reseller service",
                   url: "https://makeolix.com/services/seo-reseller-service/",
                 },
               ],
-        
             },
             {
               type: "para",
               text: "Search engine optimization itself has evolved well beyond keyword targeting into technical performance, content quality, and now visibility in AI-powered search results, which is exactly why so many agencies prefer outsourcing it to specialists rather than building the skill set in-house.",
-               links: [
+              links: [
                 {
                   word: "Search engine optimization",
                   url: "https://en.wikipedia.org/wiki/Search_engine_optimization",
                   newTab: true,
                 },
               ],
-        
             },
             {
               type: "h2",
@@ -97,8 +457,8 @@ export const BlogData = {
                 "You bring the client and set pricing and scope.",
                 "The provider executes the work: audits, on-page optimization, content, and links.",
                 "Reports and dashboards are rebranded with your agency's name and colors.",
-                "You own the client relationship end to end."
-              ]
+                "You own the client relationship end to end.",
+              ],
             },
             {
               type: "h2",
@@ -111,9 +471,8 @@ export const BlogData = {
             {
               type: "para",
               text: "Instead of building customized campaigns, agencies usually choose predefined packages based on client requirements. The reseller provider completes the work, while the agency manages sales and customer communication.",
-              
             },
-             {
+            {
               type: "list",
               heading: "This approach is often suitable for:",
               items: [
@@ -126,7 +485,7 @@ export const BlogData = {
             },
             {
               type: "para",
-              text: "Although SEO reseller services simplify operations, customization options are generally more limited than a white label partnership."
+              text: "Although SEO reseller services simplify operations, customization options are generally more limited than a white label partnership.",
             },
             {
               type: "h2",
@@ -137,17 +496,36 @@ export const BlogData = {
               data: {
                 headers: ["Factor", "White Label SEO", "SEO Reseller"],
                 rows: [
-                  ["Branding", "Fully your agency's brand", "Often generic or co-branded"],
-                  ["Customization", "Tailored strategy per client", "Pre-packaged tiers"],
-                  ["Control", "You direct the strategy and timeline", "Provider controls execution"],
-                  ["Client relationship", "You own it entirely", "Sometimes shared with the provider"],
+                  [
+                    "Branding",
+                    "Fully your agency's brand",
+                    "Often generic or co-branded",
+                  ],
+                  [
+                    "Customization",
+                    "Tailored strategy per client",
+                    "Pre-packaged tiers",
+                  ],
+                  [
+                    "Control",
+                    "You direct the strategy and timeline",
+                    "Provider controls execution",
+                  ],
+                  [
+                    "Client relationship",
+                    "You own it entirely",
+                    "Sometimes shared with the provider",
+                  ],
                   [
                     "Margins",
                     "Typically higher, you set pricing",
                     "Usually thinner, fixed markup",
                   ],
-                  ["Best for", "Established agencies with steady client flow", "New freelancers or small agencies testing demand"],
-                  
+                  [
+                    "Best for",
+                    "Established agencies with steady client flow",
+                    "New freelancers or small agencies testing demand",
+                  ],
                 ],
               },
             },
@@ -166,7 +544,7 @@ export const BlogData = {
                 "Choose reseller if: you are testing SEO demand before committing resources and want simple, predictable packages.",
                 "Choose white label if: you have steady client flow, want to protect your brand identity, and need custom strategies for complex accounts.",
                 "Choose a hybrid if: you want unbranded reports and flexible execution with some standardized internal pricing.",
-              ]
+              ],
             },
             {
               type: "para",
@@ -188,14 +566,12 @@ export const BlogData = {
                 "Check if they offer white label local SEO services if your clients have physical locations, since local search behaves differently from national SEO.",
                 "Ask whether your client will ever interact with, or discover, the fulfillment partner.",
                 "Request a clear SLA covering turnaround times, revisions, and escalation paths.",
-              ]
+              ],
             },
             {
               type: "para",
               text: "At MakeOlix, we get asked these questions often, and we see that as a sign of a well-informed agency partner, not a red flag.",
             },
-            
-            
 
             {
               type: "h2",
@@ -212,15 +588,13 @@ export const BlogData = {
             {
               type: "para",
               text: "Browse our full range of white label services and Reach out to MakeOlix today to see how a white label partnership could fit your agency's growth plan.",
-                  links: [
+              links: [
                 {
                   word: "Reach out to MakeOlix",
                   url: "https://makeolix.com/contact-us",
                 },
               ],
             },
-            
-            
           ],
         },
       },
@@ -243,15 +617,13 @@ export const BlogData = {
             },
             {
               id: 3,
-              question:
-                "Can I combine both models? ",
+              question: "Can I combine both models? ",
               answer:
                 "Yes. Many agencies start with reseller-style packages for simple clients and move to white label service for larger accounts.",
             },
             {
               id: 4,
-              question:
-                "Will my clients find out the work is outsourced? ",
+              question: "Will my clients find out the work is outsourced? ",
               answer:
                 "With a genuine white label partner, no. Reports and communication are rebranded, and the provider stays behind the scenes.",
             },
@@ -4230,10 +4602,10 @@ export const BlogData = {
                 {
                   word: "Top Seo Agency In India",
                   url: "https://makeolix.com/services/seo",
-                }
-              ]
+                },
+              ],
             },
-           
+
             {
               type: "steps",
               items: [
@@ -4241,7 +4613,6 @@ export const BlogData = {
                   title: "Verifiable case studies",
                   description:
                     'Ask for a client name, the exact keyword, and the ranking result. Vague "300% traffic growth" claims mean nothing without proof.',
-                 
                 },
                 {
                   title: "Industry fit",
@@ -4252,19 +4623,16 @@ export const BlogData = {
                   title: "Transparent reporting",
                   description:
                     "You should get monthly reports that show rankings, traffic, and conversions, not just activity logs.",
-               
                 },
                 {
                   title: "AI search readiness",
                   description:
                     "By 2026, appearing in Google AI Overviews and ChatGPT answers matters as much as classic blue links. Ask if the agency actively optimizes for this.",
-               
                 },
                 {
                   title: "Clear contract terms",
                   description:
                     "Reputable agencies offer month-to-month flexibility. Long lock-in contracts with no exit clause are a red flag.",
-               
                 },
               ],
             },
@@ -4277,7 +4645,7 @@ export const BlogData = {
               text: "Here are five agencies, including our own team, that consistently deliver for US and international clients.",
             },
             {
-              type: "h2", 
+              type: "h2",
               text: "1. PageTraffic",
             },
             {
@@ -4291,26 +4659,25 @@ export const BlogData = {
                 "Large enterprises",
                 "Global brands",
                 "International SEO projects",
-               
               ],
             },
             {
               type: "h2",
-              text: "2. MakeOlix Consulting"
+              text: "2. MakeOlix Consulting",
             },
             {
               type: "para",
               text: "We built MakeOlix Consulting around one idea: SEO should be measured in leads and revenue, not just rankings. Since 2022, we have worked with 120+ businesses across the US, UK, UAE, and India, helping clients increase qualified organic traffic through Technical SEO, content strategy, and local search optimization.",
-              links: [{
-                word: "Technical SEO",
-                url: "https://makeolix.com/services/technical-seo"
-              }
-              ]
+              links: [
+                {
+                  word: "Technical SEO",
+                  url: "https://makeolix.com/services/technical-seo",
+                },
+              ],
             },
             {
               type: "para",
               text: "We keep strategy and execution transparent, so clients always know what work is happening and why. Businesses that want an India-based team that understands US search behavior and buyer intent tend to fit well with us.",
-              
             },
             {
               type: "list",
@@ -4331,12 +4698,12 @@ export const BlogData = {
               links: [
                 {
                   word: "2026’s Top 10 Technical SEO Agency List: Experts in Crawlability & Speed",
-                  url: "https://makeolix.com/blog/2026-top-10-technical-seo-agency-list"
-                }
-              ]
+                  url: "https://makeolix.com/blog/2026-top-10-technical-seo-agency-list",
+                },
+              ],
             },
             { type: "h2", text: "3. Techmagnate" },
-           
+
             {
               type: "para",
               text: "Techmagnate has built a strong reputation in enterprise and online retail SEO, working with brands across healthcare, BFSI, and e-commerce. Its focus on technical SEO and data-backed optimization suits mid-size to large online retailers looking for structured, process-heavy campaigns.",
@@ -4355,7 +4722,7 @@ export const BlogData = {
               type: "h2",
               text: "4. SEOValley",
             },
-            
+
             {
               type: "para",
               text: "SEOValley is best known for local search optimization, helping businesses with location-based visibility, Google Business Profile management, and regional keyword targeting. It is a solid pick for businesses whose customers search 'near me' more than they search broad national terms.",
@@ -4374,7 +4741,7 @@ export const BlogData = {
               type: "h2",
               text: "5. RankHigher",
             },
-            
+
             {
               type: "para",
               text: "RankHigher positions itself around startups and budget-conscious businesses. If you are an early-stage company that needs foundational SEO without enterprise-level pricing, this is the kind of agency built for that stage.",
@@ -4392,30 +4759,30 @@ export const BlogData = {
               type: "h2",
               text: "Which Agency Fits an E-commerce Business?",
             },
-            
+
             {
               type: "para",
               text: "An e-commerce business should prioritize an E-Commerce Seo Agency In India with experience in product page optimization, category structure, and buyer-intent keyword targeting. Techmagnate and MakeOlix both specialize here, but the details matter. ",
-                links: [
+              links: [
                 {
                   word: "E-Commerce Seo Agency In India",
-                  url: "https://makeolix.com/services/e-commerce-seo"
-            },]
+                  url: "https://makeolix.com/services/e-commerce-seo",
+                },
+              ],
             },
             {
               type: "para",
               text: "E-commerce SEO is not just ranking a homepage. It means optimizing hundreds of product titles and meta descriptions, fixing duplicate content across categories, and building internal links that guide shoppers toward checkout instead of a dead end. ",
-            
-          },
+            },
             {
               type: "para",
               text: "Also Read: Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India ",
               links: [
                 {
                   word: "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
-                  url: "https://makeolix.com/blog/want-more-traffic-sales"
-                }
-              ]
+                  url: "https://makeolix.com/blog/want-more-traffic-sales",
+                },
+              ],
             },
             {
               type: "h2",
@@ -4427,9 +4794,9 @@ export const BlogData = {
               links: [
                 {
                   word: "Local SEO Agency in India",
-                  url: "https://makeolix.com/services/local-seo"
-                }
-              ]
+                  url: "https://makeolix.com/services/local-seo",
+                },
+              ],
             },
             {
               type: "list",
@@ -4446,7 +4813,7 @@ export const BlogData = {
               type: "para",
               text: "MakeOlix is well known for this work. It is also core to what we do for small businesses and local service providers who need consistent visibility in map results, not just standard organic rankings. Any business tied to a physical location or a defined service area should treat these five elements as non-negotiable when evaluating a local SEO partner.",
             },
-             {
+            {
               type: "list",
               heading: "",
               items: [
@@ -4457,7 +4824,7 @@ export const BlogData = {
                 "Confirm contract flexibility before signing anything.",
               ],
             },
-           
+
             {
               type: "para",
               text: "Among the best SEO agencies in India, the ones worth hiring are the ones that can answer these five points clearly, without hiding behind jargon.",
@@ -4474,7 +4841,6 @@ export const BlogData = {
               type: "para",
               text: "If you are ready to work with a team that treats your SEO like it is our own business, reach out to Makeolix Consulting today, and let's build a strategy around real growth, not vanity metrics.",
             },
-           
           ],
         },
       },
@@ -4484,21 +4850,20 @@ export const BlogData = {
           faqdata: [
             {
               id: 1,
-              question:
-                "Which is the Top SEO Agency in India?",
+              question: "Which is the Top SEO Agency in India?",
               answer:
                 "The right agency depends on your business goals. Agencies like MakeOlix, PageTraffic, Techmagnate, SEOValley, and RankHigher each specialize in different areas, from enterprise SEO to local and eCommerce optimization.",
             },
             {
               id: 2,
-              question: "Is it worth hiring an SEO agency in India if my business is based in the US? ",
+              question:
+                "Is it worth hiring an SEO agency in India if my business is based in the US? ",
               answer:
                 "Yes. Many top SEO agencies in India, including our team at MakeOlix, work specifically with US clients and understand US search behavior, time zones, and market competition.",
             },
             {
               id: 3,
-              question:
-                "How long does SEO take to show results? ",
+              question: "How long does SEO take to show results? ",
               answer:
                 "Most businesses start seeing measurable ranking movement within 3 to 6 months, with stronger results building over 12 months of consistent work.",
             },
@@ -4511,16 +4876,15 @@ export const BlogData = {
             },
             {
               id: 5,
-              question:
-                "Can a small business afford professional SEO? ",
+              question: "Can a small business afford professional SEO? ",
               answer:
                 "Yes. Small business SEO packages typically start lower than enterprise campaigns and scale as the business grows. Our Small Business SEO Services are built specifically around that budget reality.",
-                links: [
-                  {
-                    word: "Small Business SEO Services",
-                    url: "https://makeolix.com/services/small-business-seo"
-                  }
-                ]
+              links: [
+                {
+                  word: "Small Business SEO Services",
+                  url: "https://makeolix.com/services/small-business-seo",
+                },
+              ],
             },
           ],
         },
