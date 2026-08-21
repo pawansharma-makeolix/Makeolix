@@ -86,7 +86,7 @@ const awards = [
   },
   {
     image: "/Digital agency network - Makeolix consulting.webp",
-    alt: "Verified Expertise. Results That Matter",
+    alt: "Verified Expertise. Results That Matte",
     title: "Verified Expertise. Results That Matter.",
     description:
       "Recognized as a Verified Agency for delivering results-driven SEO and digital marketing solutions.",
