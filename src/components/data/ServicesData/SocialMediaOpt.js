@@ -110,7 +110,7 @@ export const SocialMediaOpt ={
 
             title: "Social Media Marketing Integration",
             description:
-              "Our optimization services work closely with broader marketing initiatives. By combining Social Media Marketing Strategy and Optimization, we help businesses create a unified approach that improves visibility, engagement, lead generation, and overall digital growth.",
+              "Our optimization services work closely with broader marketing initiatives. By combining [Social Media Marketing|/services/social-media-marketing] Strategy and Optimization, we help businesses create a unified approach that improves visibility, engagement, lead generation, and overall digital growth.To further improve online visibility across search engines and AI-powered platforms, businesses can explore our [SEO services|/services/seo] for sustainable organic growth and higher search rankings.",
             image: "/Servicesglance/Social Media - Makeolix Consulting.webp",
           },
         ],

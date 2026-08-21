@@ -29,7 +29,7 @@ export const SmallBusinessSeoData = {
       data: {
         title: "What Are Small Business SEO Services?",
         description:
-          "Small business SEO services are strategies designed to help growing businesses improve online visibility, attract qualified leads, and increase rankings across search engines and AI-powered search platforms. We at MakeOlix Consulting combine technical SEO, content optimization, local SEO, and authority building to help your business get found by the right customers on Google, Bing, AI Overviews, ChatGPT, and other emerging search experiences. ",
+          "Small business SEO services are strategies designed to help growing businesses improve online visibility, attract qualified leads, and increase rankings across search engines and AI-powered search platforms. We at MakeOlix Consulting combine [technical SEO|/services/technical-seo], content optimization, local SEO, and authority building to help your business get found by the right customers on Google, Bing, AI Overviews, ChatGPT, and other emerging search experiences. ",
         image: "/web-design.jpg",
       },
     },
@@ -82,9 +82,9 @@ export const SmallBusinessSeoData = {
             {
               id: "6",
 
-              title: "eCommerce SEO Services",
+              title: "E-Commerce SEO Services",
               description:
-                "Running an online store requires a specialized SEO approach. Our ecommerce SEO services optimize product pages, category pages, site architecture, and technical performance to improve search visibility, attract purchase-ready customers, and drive more online sales.",
+                "Running an online store requires a specialized SEO approach. Our [ecommerce SEO services|/services/ecommerce-seo] optimize product pages, category pages, site architecture, and technical performance to improve search visibility, attract purchase-ready customers, and drive more online sales.",
               image: "/Servicesglance/White label seo - Makeolix Consulting.webp",
             },
             {

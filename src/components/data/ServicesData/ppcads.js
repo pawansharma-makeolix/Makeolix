@@ -139,7 +139,7 @@ export const PpcAdsData = {
 
             title: "Meta Ads (Facebook & Instagram) ",
             description:
-              "Our team runs paid social campaigns built for your specific audience segments, Meta Ads are designed to generate qualified leads and sales at a competitive cost per result, whether your goal is e-commerce revenue, lead generation, or app growth. ",
+              "Our team runs paid social campaigns built for your specific audience segments, [Meta Ads|/services/meta-ads/] are designed to generate qualified leads and sales at a competitive cost per result, whether your goal is e-commerce revenue, lead generation, or app growth. ",
             image: "/Servicesglance/Woo commerce  - Makeolix Consulting.webp",
           },
           {

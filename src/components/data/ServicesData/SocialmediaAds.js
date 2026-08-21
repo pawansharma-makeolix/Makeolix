@@ -190,6 +190,7 @@ export const SocialMediaAds = {
         type: "steps",
         data: {
           heading: "Our 4-Step Campaign Framework",
+        
           perRow: "4",
           steps: [
             {
@@ -218,6 +219,8 @@ export const SocialMediaAds = {
 
            
           ],
+           subtitle:
+            "Every campaign at MakeOlix follows a structured methodology. It is a productized workflow built specifically for the digital advertising landscape.Interested in a holistic digital presence? Our [Social Media Marketing|/services/social-media-marketing] team works in close coordination with your paid campaigns to ensure organic and paid channels amplify each other.",
         },
       },
     {

@@ -58,7 +58,7 @@ export const EcommerceDevelopData = {
           "Long-term scalability",
         ],
         lastpara:
-          "As a trusted provider of advanced eCommerce Web Development solutions, we combine modern technologies with strategic design practices to help businesses attract and retain customers more effectively. Our eCommerce websites are also optimized for conversational search platforms like ChatGPT, Gemini, Google AI Overviews, and voice search experiences, helping your business remain discoverable in the future of digital commerce.",
+          "As a trusted provider of advanced eCommerce [Web Development solutions|/services/website-design-development] , we combine modern technologies with strategic design practices to help businesses attract and retain customers more effectively. Our eCommerce websites are also optimized for conversational search platforms like ChatGPT, Gemini, Google AI Overviews, and voice search experiences, helping your business remain discoverable in the future of digital commerce.",
       },
     },
     {
@@ -108,7 +108,7 @@ export const EcommerceDevelopData = {
             id: "1",
             title: "Shopify Development Services",
             description:
-              "Shopify is one of the most trusted platforms for modern online businesses. As a leading Shopify Development Company in India, we build custom Shopify stores with responsive designs, secure payment integration, and conversion-focused layouts tailored to your business needs. ",
+              "Shopify is one of the most trusted platforms for modern online businesses. As a leading [Shopify Development Company in India|/services/shopify], we build custom Shopify stores with responsive designs, secure payment integration, and conversion-focused layouts tailored to your business needs. ",
             image: "/Servicesglance/Shopify dev - Makeolix Consulting.webp",
           },
           {

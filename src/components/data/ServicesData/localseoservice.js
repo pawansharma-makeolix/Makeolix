@@ -189,10 +189,10 @@ export const localSeoData = {
       {
         type: "textmedia",
         data: {
-          title: "Xpert Solutions from a Top-Rated Local SEO Company in India",
+          title: "Expert Solutions from a Top-Rated Local SEO Company in India",
           reverse: true,
           description:
-            "MakeOlix Consulting is a firm that provides Local SEO Solutions that are creative, strategic, and technological. Our Local SEO Consulting services including full Local SEO Marketing services will help your business ascend up the ranks in local search and remain there. Here we use the best SEO Multi location, Google My Business optimization and local small business SEO services so that we become the best local SEO company in the business of small businesses in India and beyond.",
+            "MakeOlix Consulting is a firm that provides Local SEO Solutions that are creative, strategic, and technological. Our Local SEO Consulting services including full Local SEO Marketing services will help your business ascend up the ranks in local search and remain there. Here we use the best SEO Multi location, Google My Business optimization and local [small business SEO|/services/small-business-seo] services so that we become the best local SEO company in the business of small businesses in India and beyond.",
           image: "/pexels-khwanchai-4175028.jpg",
         },
       },
@@ -279,7 +279,7 @@ export const localSeoData = {
         data: {
           title: "Make the Next Step to Local Search Prosperity",
           description:
-            "In the case of the near me SEO services, visibility is all and nobody knows that better than MakeOlix Consulting, the most reliable Local SEO Company in India. You may be a dentist in Delhi, a restaurant in Mumbai or a service provider in New York, we help your business shine in local searches. Your customers are already searching for your services. The question is, will they find you or your competitors? Let MakeOlix Consulting, your go-to Local SEO Provider, put your business on the map, literally. Reach out today and start building your local presence the smart way.",
+            "In the case of the near me [SEO services|/services/seo], visibility is all and nobody knows that better than MakeOlix Consulting, the most reliable Local SEO Company in India. You may be a dentist in Delhi, a restaurant in Mumbai or a service provider in New York, we help your business shine in local searches. Your customers are already searching for your services. The question is, will they find you or your competitors? Let MakeOlix Consulting, your go-to Local SEO Provider, put your business on the map, literally. Reach out today and start building your local presence the smart way.",
           image: "/pexels-sarah-blocksidge-69426152-12813050 (1).jpg",
         },
       },

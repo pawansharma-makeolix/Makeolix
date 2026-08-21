@@ -121,7 +121,7 @@ export const PerformanceMarketingData = {
 
             title: "Remarketing Campaigns",
             description:
-              "We re-engage visitors who didn't convert the first time with smart, sequenced ads that bring them back and close the loop on lost revenue.",
+              "We re-engage visitors who didn't convert the first time with smart, sequenced ads that bring them back and close the loop on lost revenue.Pair your performance marketing with our [E-commerce SEO|/services/e-commerce-seo/] service for a complete growth engine, or combine it with [Social Media Marketing|/services/social-media-marketing//] to build brand presence alongside performance. Together, these services create a powerful, full-funnel strategy that works at every stage of the buyer journey.",
             image: "/Servicesglance/PPC Advertising - Makeolix consulting.webp",
           },
           {

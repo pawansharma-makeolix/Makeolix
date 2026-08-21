@@ -114,7 +114,7 @@ export const socialMediaData ={
 
             title: "Social Media Optimization",
             description:
-              "As a professional Social Media Optimization Company, we optimize profiles, content structures, hashtags, posting schedules, and engagement strategies to improve visibility and audience interaction. Our advanced Social Media Optimization Services help businesses maximize the value of every social media channel.",
+              "As a professional Social Media Optimization Company, we optimize profiles, content structures, hashtags, posting schedules, and engagement strategies to improve visibility and audience interaction. Our advanced [Social Media Optimization|/services/social-media-optimization] Services help businesses maximize the value of every social media channel.",
             image: "/Servicesglance/Localization content creation - Makeolix consulting.webp",
           },
           {
@@ -122,7 +122,7 @@ export const socialMediaData ={
 
             title: "Facebook Marketing",
             description:
-              "As an experienced Facebook Marketing Company, we create targeted campaigns designed to increase reach, generate leads, and improve return on ad spend through strategic audience targeting and campaign optimization. Businesses can also explore our Social Media Advertising Services to run data-driven paid campaigns across multiple social platforms.",
+              "As an experienced Facebook Marketing Company, we create targeted campaigns designed to increase reach, generate leads, and improve return on ad spend through strategic audience targeting and campaign optimization. Businesses can also explore our [Social Media Advertising|/services/sma] Services to run data-driven paid campaigns across multiple social platforms.",
          image: "/Servicesglance/Social Media - Makeolix Consulting.webp",
           },
           {

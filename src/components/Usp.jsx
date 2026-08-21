@@ -108,7 +108,7 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
           <p
             style={{
               fontSize: "1rem",
-              color: "#6a96b0",
+              color: "#fff",
               margin: 0,
               lineHeight: 1.7,
             }}
@@ -223,7 +223,7 @@ const Usp = ({ heading, subheading, statsData = [] }) => {
             <p
               style={{
                 fontSize: "0.9rem",
-                color: "#5a889e",
+                color: "#fff",
                 margin: 0,
                 lineHeight: 1.7,
               }}

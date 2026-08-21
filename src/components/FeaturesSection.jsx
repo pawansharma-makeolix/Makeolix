@@ -1,27 +1,25 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef } from "react";
 import {
   motion,
   useInView,
-  useScroll,
-  useTransform,
   useMotionValue,
   useSpring,
 } from "framer-motion";
 import { Check } from "lucide-react";
 import LinkRenderer from "./LinkRenderer";
 
-// ─── Floating Particle ────────────────────────────────────────────────────────
+// ─── Feature Icon List ────────────────────────────────────────────────────────
 
 function FeatureIconList({ title, items = [] }) {
   const listRef = useRef(null);
-  const isInView = useInView(listRef, { once: false, margin: "-60px" });
+  const isInView = useInView(listRef, { once: true, margin: "-60px" });
 
   if (!items.length) return null;
 
   return (
     <div
       ref={listRef}
-      className="rounded-2xl p-5 md:p-6 border border-[rgba(17,138,178,0.16)] bg-[linear-gradient(135deg,rgba(0,23,31,0.88)_0%,rgba(0,56,99,0.28)_100%)] backdrop-blur-[12px]"
+      className="rounded-2xl p-5 md:p-6 border border-[rgba(17,138,178,0.16)] bg-[linear-gradient(135deg,rgba(0,23,31,0.94)_0%,rgba(0,56,99,0.5)_100%)]"
     >
       {title && (
         <h4 className="text-white  text-base mb-4 tracking-[-0.02em]">
@@ -47,7 +45,7 @@ function FeatureIconList({ title, items = [] }) {
               animate={isInView ? { scale: [1, 1.18, 1] } : {}}
               transition={{
                 duration: 2,
-                repeat: Infinity,
+                repeat: 2,
                 delay: i * 0.12,
               }}
               className="mt-[2px] text-[var(--blue-3)] shrink-0"
@@ -96,29 +94,20 @@ function FeatureCard({ card, index, side }) {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ rotateX: springY, rotateY: springX, perspective: 800 }}
-      initial={{ opacity: 0, x: enterX, filter: "blur(12px)" }}
-      animate={isInView ? { opacity: 1, x: 0, filter: "blur(0px)" } : {}}
+      initial={{ opacity: 0, x: enterX }}
+      animate={isInView ? { opacity: 1, x: 0 } : {}}
       transition={{ duration: 0.75, delay, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ scale: 1.025 }}
-      className="relative group cursor-default lg:h-full"
+      className="feature-card relative group cursor-default lg:h-full"
     >
       {/* Glow border on hover */}
       <motion.div className="absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-[linear-gradient(135deg,rgba(17,138,178,0.5),rgba(255,143,171,0.2),transparent)]" />
 
       {/* Card body */}
-      <div className="relative rounded-2xl p-6 md:p-7 overflow-hidden bg-[linear-gradient(135deg,rgba(0,23,31,0.9)_0%,rgba(0,56,99,0.35)_100%)] border border-[rgba(17,138,178,0.18)] backdrop-blur-[16px] lg:h-full">
-        
-        {/* Shimmer sweep */}
-        <motion.div
-          className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 bg-[linear-gradient(110deg,transparent_30%,rgba(17,138,178,0.07)_50%,transparent_70%)]"
-          animate={{ x: ["-120%", "200%"] }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            repeatDelay: 1.5,
-            ease: "easeInOut",
-          }}
-        />
+      <div className="relative rounded-2xl p-6 md:p-7 overflow-hidden bg-[linear-gradient(135deg,rgba(0,23,31,0.97)_0%,rgba(0,56,99,0.55)_100%)] border border-[rgba(17,138,178,0.18)] lg:h-full">
+
+        {/* Shimmer sweep — CSS-only, runs only on hover, zero cost while idle */}
+        <div className="feature-shimmer absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 bg-[linear-gradient(110deg,transparent_30%,rgba(17,138,178,0.07)_50%,transparent_70%)]" />
 
         {/* Top row: number + icon */}
         <div className="flex items-start justify-between mb-4">
@@ -133,10 +122,15 @@ function FeatureCard({ card, index, side }) {
 
           <motion.span
             className="text-xl select-none text-[var(--blue-3)]"
-            animate={{ rotate: [0, 10, -6, 0], scale: [1, 1.18, 0.95, 1] }}
+            animate={
+              isInView
+                ? { rotate: [0, 10, -6, 0], scale: [1, 1.18, 0.95, 1] }
+                : {}
+            }
             transition={{
               duration: 5 + index * 0.7,
-              repeat: Infinity,
+              repeat: 1,
+              delay: delay + 0.6,
               ease: "easeInOut",
             }}
           >
@@ -187,6 +181,19 @@ function FeatureCard({ card, index, side }) {
           }}
         />
       </div>
+
+      <style>{`
+        .feature-shimmer {
+          transform: translateX(-120%);
+        }
+        .feature-card:hover .feature-shimmer {
+          animation: feature-shimmer-sweep 1.1s ease-in-out;
+        }
+        @keyframes feature-shimmer-sweep {
+          from { transform: translateX(-120%); }
+          to { transform: translateX(200%); }
+        }
+      `}</style>
     </motion.div>
   );
 }
@@ -209,12 +216,8 @@ function AnimatedHeading({ text, highlight = [], className = "", style = {} }) {
                 ? "inline-block mr-[0.22em] bg-[linear-gradient(135deg,var(--blue-3)_0%,var(--accent-pink,#ff8fab)_100%)] bg-clip-text text-transparent"
                 : "inline-block mr-[0.22em] text-white"
             }
-            initial={{ opacity: 0, y: 40, filter: "blur(10px)", rotateX: -30 }}
-            animate={
-              isInView
-                ? { opacity: 1, y: 0, filter: "blur(0px)", rotateX: 0 }
-                : {}
-            }
+            initial={{ opacity: 0, y: 40 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{
               delay: i * 0.07,
               duration: 0.65,
@@ -226,27 +229,6 @@ function AnimatedHeading({ text, highlight = [], className = "", style = {} }) {
         );
       })}
     </h2>
-  );
-}
-
-// ─── Orbiting Ring ────────────────────────────────────────────────────────────
-function OrbitRing({ size, duration, reverse = false, opacity = 0.15 }) {
-  return (
-    <motion.div
-      className="absolute rounded-full pointer-events-none"
-      style={{
-        width: size,
-        height: size,
-        top: "50%",
-        left: "50%",
-        x: "-50%",
-        y: "-50%",
-        // dynamic opacity value — inline zaroori (can't build rgba string in Tailwind dynamically)
-        border: `1px solid rgba(17,138,178,${opacity})`,
-      }}
-      animate={{ rotate: reverse ? -360 : 360 }}
-      transition={{ duration, repeat: Infinity, ease: "linear" }}
-    />
   );
 }
 
@@ -262,60 +244,27 @@ export default function FeaturesSection({
 }) {
   const finalLeft = leftCards.length ? leftCards : LEFT_CARDS;
   const finalRight = rightCards.length ? rightCards : RIGHT_CARDS;
-  
 
-
- const containerRef = useRef(null);
-const isSectionInView = useInView(containerRef, { once: false, margin: "-100px" });
-
-const { scrollYProgress } = useScroll({
-  target: containerRef,
-  offset: ["start end", "end start"],
-});
- 
+  const containerRef = useRef(null);
+  const isSectionInView = useInView(containerRef, { once: false, margin: "-100px" });
 
   const subtextRef = useRef(null);
   const subtextInView = useInView(subtextRef, { once: true, margin: "-40px" });
-
-  
 
   return (
     <section
       ref={containerRef}
       className="relative w-full overflow-hidden py-14 md:py-20  bg-[linear-gradient(180deg,var(--bg-main,#00171f)_0%,var(--bg-soft,#051923)_50%,var(--bg-main,#00171f)_100%)]"
     >
-      {/* ── Ambient Background Glows ── */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Left glow */}
-        <motion.div
-          className="absolute rounded-full w-[50vw] h-[50vw] max-w-[700px] max-h-[700px] -left-[15%] top-[10%] blur-[80px] bg-[radial-gradient(circle,rgba(0,56,99,0.22)_0%,transparent_65%)]"
-          animate={isSectionInView ? { scale: [1, 1.1, 1], opacity: [0.6, 1, 0.6] } : {}}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        />
-
-        {/* Right glow */}
-        <motion.div
-          className="absolute rounded-full w-[40vw] h-[40vw] max-w-[560px] max-h-[560px] -right-[10%] bottom-[5%] blur-[80px] bg-[radial-gradient(circle,rgba(17,138,178,0.12)_0%,transparent_65%)]"
-          animate={isSectionInView ? { scale: [1, 1.15, 1], opacity: [0.5, 0.9, 0.5] } : {}}
-          transition={{
-            duration: 14,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 3,
-          }}
-        />
-
-        {/* Pink center-top glow */}
-        <motion.div
-          className="absolute rounded-full w-[300px] h-[300px] top-0 left-1/2 -translate-x-1/2 blur-[60px] bg-[radial-gradient(circle,rgba(255,143,171,0.06)_0%,transparent_70%)]"
-          animate={isSectionInView ? { opacity: [0.4, 0.9, 0.4] } : {}}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        />
-
-        
-
-
-        
+      {/* ── Ambient Background Glows — CSS-driven, paused via class when out of view ── */}
+      <div
+        className={`ambient-glows absolute inset-0 pointer-events-none overflow-hidden ${
+          isSectionInView ? "is-active" : ""
+        }`}
+      >
+        <div className="glow glow-left absolute rounded-full w-[50vw] h-[50vw] max-w-[700px] max-h-[700px] -left-[15%] top-[10%] bg-[radial-gradient(circle,rgba(0,56,99,0.35)_0%,rgba(0,56,99,0.12)_35%,transparent_70%)]" />
+        <div className="glow glow-right absolute rounded-full w-[40vw] h-[40vw] max-w-[560px] max-h-[560px] -right-[10%] bottom-[5%] bg-[radial-gradient(circle,rgba(17,138,178,0.2)_0%,rgba(17,138,178,0.08)_35%,transparent_70%)]" />
+        <div className="glow glow-pink absolute rounded-full w-[300px] h-[300px] top-0 left-1/2 -translate-x-1/2 bg-[radial-gradient(circle,rgba(255,143,171,0.1)_0%,rgba(255,143,171,0.04)_35%,transparent_70%)]" />
       </div>
 
       {/* ── Section Content ── */}
@@ -345,10 +294,8 @@ const { scrollYProgress } = useScroll({
             <motion.p
               ref={subtextRef}
               className="text-base md:text-lg leading-relaxed mx-auto text-white max-w-[1020px]"
-              initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-              animate={
-                subtextInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}
-              }
+              initial={{ opacity: 0, y: 20 }}
+              animate={subtextInView ? { opacity: 1, y: 0 } : {}}
               transition={{
                 duration: 0.75,
                 delay: 0.15,
@@ -419,6 +366,42 @@ const { scrollYProgress } = useScroll({
           </div>
         </div>
       </div>
+
+      <style>{`
+        .ambient-glows .glow {
+          opacity: 0.6;
+          animation-play-state: paused;
+          will-change: transform, opacity;
+        }
+        .ambient-glows.is-active .glow {
+          animation-play-state: running;
+        }
+        .glow-left {
+          animation: glow-left-pulse 12s ease-in-out infinite;
+        }
+        .glow-right {
+          animation: glow-right-pulse 14s ease-in-out infinite;
+          animation-delay: 3s;
+        }
+        .glow-pink {
+          animation: glow-pink-pulse 8s ease-in-out infinite;
+        }
+        @keyframes glow-left-pulse {
+          0%, 100% { transform: scale(1); opacity: 0.6; }
+          50% { transform: scale(1.1); opacity: 1; }
+        }
+        @keyframes glow-right-pulse {
+          0%, 100% { transform: scale(1); opacity: 0.5; }
+          50% { transform: scale(1.15); opacity: 0.9; }
+        }
+        @keyframes glow-pink-pulse {
+          0%, 100% { opacity: 0.4; }
+          50% { opacity: 0.9; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .ambient-glows .glow { animation: none; }
+        }
+      `}</style>
     </section>
   );
 }

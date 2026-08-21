@@ -60,7 +60,7 @@ export const WordpresDevData = {
 
               title: "WooCommerce & E-commerce Development",
               description:
-                "We specialize in WooCommerce development, turning WordPress into a high-converting digital storefront. From product catalog architecture to secure checkout flows and payment gateway integration, our e-commerce development builds are designed to sell. Custom product pages, subscription models, multi-currency… we've done it all.",
+                "We specialize in WooCommerce development, turning WordPress into a high-converting digital storefront. From product catalog architecture to secure checkout flows and payment gateway integration, our [E-commerce development|/services/ecommerce-develop] builds are designed to sell. Custom product pages, subscription models, multi-currency… we've done it all.",
               image: "/Servicesglance/Custom WordPress Website Design - Makeolix consulting.webp",
             },
             {
@@ -171,7 +171,7 @@ export const WordpresDevData = {
         data: {
           heading: "What Makes Us a Different Kind of WordPress Partner",
           
-         subtext: "As an experienced WordPress development agency in India, we believe expertise matters more than offering endless generic services. Our full range of digital capabilities, including website design and development, and e-commerce development, all revolve around one platform we know inside out.",
+         subtext: "As an experienced WordPress development agency in India, we believe expertise matters more than offering endless generic services. Our full range of digital capabilities, including [website design and development|/services/website-design-development] , and e-commerce development, all revolve around one platform we know inside out.",
           leftCards: [
             {
               id: 1,
