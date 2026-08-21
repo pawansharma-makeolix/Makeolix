@@ -60,14 +60,14 @@ const awards = [
       "Recognized as a Top E-Commerce SEO Company, we help online businesses strengthen organic visibility across products, categories, and high-intent searches. ",
     link: "https://selectedfirms.co/agency/makeolix-consulting",
   },
-  {
-    image: "/Designrush - Makeolix consulting.webp",
-    alt: "Recognized Where Leading Agencies Stand Out",
-    title: "Recognized Where Leading Agencies Stand Out",
-    description:
-      "Featured on DesignRush for delivering SEO, eCommerce, web development, and digital marketing solutions.",
-    link: "https://www.designrush.com/agency/profile/makeolix-consulting",
-  },
+  // {
+  //   image: "/Designrush - Makeolix consulting.webp",
+  //   alt: "Recognized Where Leading Agencies Stand Out",
+  //   title: "Recognized Where Leading Agencies Stand Out",
+  //   description:
+  //     "Featured on DesignRush for delivering SEO, eCommerce, web development, and digital marketing solutions.",
+  //   link: "https://www.designrush.com/agency/profile/makeolix-consulting",
+  // },
   {
     image: "/Crunchbase - Makeolix consulting.webp",
     alt: "Built for Growth. Positioned for Scale.",
@@ -108,14 +108,14 @@ const awards = [
       "Featured on G2 for our digital marketing, SEO, Shopify, and eCommerce expertise.",
     link: "https://www.g2.com/products/makeolix-consulting/reviews",
   },
-  {
-    image: "/Agency Network - Makeolix Consulting.webp",
-    alt: "Verified in the Agency Network",
-    title: "Verified in the Agency Network",
-    description:
-      "Recognized as a Verified Agency for providing SEO, web development, and digital marketing services.",
-    link: "https://agencynetwork.org/agency/483/makeolix-consulting-noida",
-  },
+  // {
+  //   image: "/Agency Network - Makeolix Consulting.webp",
+  //   alt: "Verified in the Agency Network",
+  //   title: "Verified in the Agency Network",
+  //   description:
+  //     "Recognized as a Verified Agency for providing SEO, web development, and digital marketing services.",
+  //   link: "https://agencynetwork.org/agency/483/makeolix-consulting-noida",
+  // },
 ];
 
 const Achievements = () => {
