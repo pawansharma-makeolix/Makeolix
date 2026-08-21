@@ -31,7 +31,7 @@ export const WordpresDevData = {
           title: "Scalable WordPress Development Services in India Built for Speed and Conversion",
           description:
             "At MakeOlix, we don't just build websites; we engineer digital platforms designed to scale. Our development process prioritizes clean code architecture for lightning-fast load times and conversion-focused UI/UX to turn casual visitors into paying customers. As a leading WordPress web development company in India, we bring strategy, design, and technical expertise together under one roof… so your website doesn't just look good, it actually works for your business.",
-          image: "/web-design.jpg",
+          image: "/web-design- Makeolix Consulting.webp",
         },
       },
       {

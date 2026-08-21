@@ -31,7 +31,7 @@ export const socialMediaData ={
           title: "At MakeOlix Consulting",
           description:
             "we help businesses increase visibility, build brand authority, and generate qualified leads through professional Social Media Marketing Services. As a trusted digital growth partner serving businesses targeting the U.S. market, our team creates customized social media strategies designed to improve engagement, drive conversions, and support long-term business growth. Whether you want to build brand awareness, generate leads, or increase sales, our experts are ready to help.",
-          image: "/austin-distel-tLZhFRLj6nY-unsplash (1).jpg",
+          image: "/At MakeOlix Consulting.webp",
         },
       },
       {
@@ -40,7 +40,7 @@ export const socialMediaData ={
           title: "What is Social Media Marketing and How Can It Help Your Business Grow?",
           description:
             "Social media marketing means using social platforms to reach potential customers, increase brand awareness, and support business growth. It includes content creation, audience engagement, paid advertising, community management, and performance analysis. Most businesses struggle to consistently engage their audience, expand their reach, and turn social media activity into measurable business growth. Working with a leading Social Media Marketing Agency in India helps businesses get the right support, from experienced marketers and creative content specialists to data-driven strategies that deliver measurable results.",
-          image: "/john-FlPc9_VocJ4-unsplash (2).jpg",
+          image: "/Performance marketing - Makeolix consulting.webp",
           reverse: true,
         },
       },
@@ -48,7 +48,7 @@ export const socialMediaData ={
       type: "parallax",
 
       data: {
-        bgImage: "/pexels-olly-3760081.jpg",
+        bgImage: "/Social Media Marketing Deliver - Makeolix Consulting.webp",
         align: "both",
         // LEFT
         title: "What Results Can Social Media Marketing Deliver?",
@@ -149,7 +149,7 @@ export const socialMediaData ={
         type: "parallax",
 
         data: {
-          bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
+          bgImage: "/Why Do Growing Businesses Need SEO Services - Makeolix Consulting.webp",
           align: "left",
           // LEFT
           title: "Social Media Strategies Designed for Business Growth",
@@ -215,7 +215,7 @@ export const socialMediaData ={
         type: "parallax",
 
         data: {
-          bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
+          bgImage: "/Sociall Media Marketing - Makeolix Consulting.webp",
           align: "right",
           // LEFT
           rightTitle: "What Industries Benefit Most from Social Media Marketing?",
@@ -246,7 +246,7 @@ export const socialMediaData ={
           title: "Is Your Brand Getting the Attention It Deserves on Social Media?",
           description:
             "Social media is one of the most powerful channels for building brand awareness, generating quality leads, and creating long-term customer relationships. At MakeOlix Consulting, we don't just manage your social media, we build strategies that drive real, measurable business results. Let's start with a conversation. Get in touch with our team today for a free consultation and find out exactly how professional social media marketing can take your business to the next level.",
-          image: "/jakob-owens-WUmb_eBrpjs-unsplash (1).jpg",
+          image: "/Social media marketing - Makeolix consulting.webp",
         },
       },
       {

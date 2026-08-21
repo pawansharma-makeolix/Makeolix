@@ -30,7 +30,7 @@ export const SocialMediaOpt ={
         type: "parallax",
 
         data: {
-          bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
+          bgImage: "/Sociall Media Marketing - Makeolix Consulting.webp",
           align: "both",
           // LEFT
           title: "What Industries Benefit Most from Social Media Optimization?",

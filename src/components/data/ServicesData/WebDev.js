@@ -242,7 +242,7 @@ export const WebDevDesignData = {
         title: "Ready to Build a Website That Drives Real Business Growth?",
         description:
           "Your website should do more than just exist, it should generate leads, build trust, and help your business scale confidently. Partner with MakeOlix Consulting to create a modern, high-performing website tailored for the U.S. market. From custom web development to advanced eCommerce solutions, our experts are ready to help you build a stronger digital presence.Get started today with a strategic website solution designed for performance, scalability, and long-term success.",
-        image: "/Ready to Build a Website - Makeolix consulting.jpg",
+        image: "/Ready to Build a Website - Makeolix consulting.webp",
         reverse: true,
       },
     },

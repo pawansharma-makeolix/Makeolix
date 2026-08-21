@@ -104,7 +104,7 @@ export const SocialMediaAds = {
       type: "parallax",
 
       data: {
-        bgImage: "/john-FlPc9_VocJ4-unsplash (3).jpg",
+        bgImage: "/Performance marketing - Makeolix consulting.webp",
         align: "left",
         // LEFT
         title: "Our Performance Marketing Tech Stack",

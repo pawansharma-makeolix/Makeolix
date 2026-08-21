@@ -30,7 +30,7 @@ export const SmallBusinessSeoData = {
         title: "What Are Small Business SEO Services?",
         description:
           "Small business SEO services are strategies designed to help growing businesses improve online visibility, attract qualified leads, and increase rankings across search engines and AI-powered search platforms. We at MakeOlix Consulting combine [technical SEO|/services/technical-seo], content optimization, local SEO, and authority building to help your business get found by the right customers on Google, Bing, AI Overviews, ChatGPT, and other emerging search experiences. ",
-        image: "/web-design.jpg",
+        image: "/White-and-Blue-Modern-Dynamic-Marketing-Strategy-Presentation-11-1-1536x864.webp",
       },
     },
      {
