@@ -55,19 +55,18 @@ export default function Button({
 
       {/* SHINE EFFECT */}
       <motion.span
-        className="absolute inset-0 rounded-full"
-        style={{
-          background:
-            "linear-gradient(110deg, transparent 40%, rgba(255,255,255,0.12) 50%, transparent 60%)",
-        }}
-        animate={{ x: ["-120%", "200%"] }}
-        transition={{
-          duration: 2.5,
-          repeat: Infinity,
-          repeatDelay: 2,
-          ease: "easeInOut",
-        }}
-      />
+  className="absolute inset-0 rounded-full"
+  style={{
+    background:
+      "linear-gradient(110deg, transparent 40%, rgba(255,255,255,0.12) 50%, transparent 60%)",
+  }}
+  initial={{ x: "-120%" }}
+  whileHover={{ x: "200%" }}
+  transition={{
+    duration: 2.5,
+    ease: "easeInOut",
+  }}
+/>
     </motion.div>
   );
 
