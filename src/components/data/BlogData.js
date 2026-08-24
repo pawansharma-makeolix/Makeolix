@@ -1,370 +1,370 @@
 import { link, text } from "framer-motion/client";
 
 export const BlogData = {
-  // "top-9-ecommerce-website-development-companies-in-india-2026": {
-  //   image: "/Top 9 eCommerce Website Development- Makeolix consulting.webp",
+  "top-9-ecommerce-website-development-companies-in-india-2026": {
+    image: "/Top 9 eCommerce Website Development- Makeolix consulting.webp",
 
-  //   description: "Top 9 eCommerce Website Development Companies in India 2026 ",
+    description: "Top 9 eCommerce Website Development Companies in India 2026 ",
 
-  //   publishedAt: "2026-08-24",
-  //   updatedAt: "2026-08-24",
-  //   metaTitle: "Top 9 eCommerce Website Development Companies in India 2026",
+    publishedAt: "2026-08-24",
+    updatedAt: "2026-08-24",
+    metaTitle: "Top 9 eCommerce Website Development Companies in India 2026",
 
-  //   metaDescription:
-  //     "Explore the top 9 eCommerce website development companies in India for 2026. Compare eCommerce web development, design, and development services.",
-  //   sections: [
-  //     {
-  //       type: "hero",
-  //       data: {
-  //         title: "Top 9 eCommerce Website Development Companies in India 2026",
-  //       },
-  //     },
-  //     {
-  //       type: "blogcontent",
-  //       data: {
-  //         blocks: [
-  //           {
-  //             type: "image",
-  //             src: "/Top 9 eCommerce Website Development- Makeolix consulting.webp",
-  //             alt: "desc",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "If you are a US business owner searching for an ecommerce website development company in India, you already know the problem. Building an online store that actually converts takes more than a nice template. ",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "You need clean code, fast load times, secure checkout, and a team that understands your customers, not just your CMS. Hiring locally often means paying two to three times more for the same skill set you can get from an experienced Indian team.",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "This guide breaks down the 9 best agencies for ecommerce web development, what they specialize in, what they typically cost, and how to pick the right one for your business. We also cover ecommerce website development services in India, AI-powered design trends, and the questions US buyers ask most before signing a contract.",
-  //           },
-  //           {
-  //             type: "list",
-  //             heading: "Key Takeaways",
-  //             items: [
-  //               "India is home to world-class eCommerce development agencies serving businesses across the US and around the world.",
-  //               "The best agencies offer solutions for Shopify, WooCommerce, Magento, and custom development.",
-  //               "AI-powered search, personalized recommendations, and automation are becoming standard features in 2026.",
-  //               "Choose a company based on technical expertise, scalability, SEO readiness, and post-launch support instead of price alone.",
-  //               "MakeOlix provides end-to-end eCommerce development with performance marketing and SEO built into every project.",
-  //             ],
-  //           },
+    metaDescription:
+      "Explore the top 9 eCommerce website development companies in India for 2026. Compare eCommerce web development, design, and development services.",
+    sections: [
+      {
+        type: "hero",
+        data: {
+          title: "Top 9 eCommerce Website Development Companies in India 2026",
+        },
+      },
+      {
+        type: "blogcontent",
+        data: {
+          blocks: [
+            {
+              type: "image",
+              src: "/Top 9 eCommerce Website Development- Makeolix consulting.webp",
+              alt: "desc",
+            },
+            {
+              type: "para",
+              text: "If you are a US business owner searching for an ecommerce website development company in India, you already know the problem. Building an online store that actually converts takes more than a nice template. ",
+            },
+            {
+              type: "para",
+              text: "You need clean code, fast load times, secure checkout, and a team that understands your customers, not just your CMS. Hiring locally often means paying two to three times more for the same skill set you can get from an experienced Indian team.",
+            },
+            {
+              type: "para",
+              text: "This guide breaks down the 9 best agencies for ecommerce web development, what they specialize in, what they typically cost, and how to pick the right one for your business. We also cover ecommerce website development services in India, AI-powered design trends, and the questions US buyers ask most before signing a contract.",
+            },
+            {
+              type: "list",
+              heading: "Key Takeaways",
+              items: [
+                "India is home to world-class eCommerce development agencies serving businesses across the US and around the world.",
+                "The best agencies offer solutions for Shopify, WooCommerce, Magento, and custom development.",
+                "AI-powered search, personalized recommendations, and automation are becoming standard features in 2026.",
+                "Choose a company based on technical expertise, scalability, SEO readiness, and post-launch support instead of price alone.",
+                "MakeOlix provides end-to-end eCommerce development with performance marketing and SEO built into every project.",
+              ],
+            },
 
-  //           {
-  //             type: "h2",
-  //             text: "What is an eCommerce Website Development Company?",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "An ecommerce website development company designs, builds, and maintains online stores that let businesses sell products or services over the internet. This includes the storefront design, backend catalog and inventory systems, payment gateway integration, and ongoing performance and security upkeep.",
-  //           },
-  //           {
-  //             type: "list",
-  //             heading:
-  //               "Most companies on this list offer a mix of the following:",
-  //             items: [
-  //               "Custom ecommerce web design in India on platforms like Shopify, Magento, and WooCommerce",
-  //               "Store migrations from outdated platforms",
-  //               "Payment gateway and ERP/CRM integrations",
-  //               "Mobile app development for shopping",
-  //               "Post-launch support, SEO, and conversion optimization",
-  //             ],
-  //           },
-  //           {
-  //             type: "h2",
-  //             text: "The Top 9 eCommerce Website Development Companies in India",
-  //           },
-  //           {
-  //             type: "h2",
-  //             text: "1. Webkul (Best for Multi-Vendor Marketplace Development)",
-  //           },
+            {
+              type: "h2",
+              text: "What is an eCommerce Website Development Company?",
+            },
+            {
+              type: "para",
+              text: "An ecommerce website development company designs, builds, and maintains online stores that let businesses sell products or services over the internet. This includes the storefront design, backend catalog and inventory systems, payment gateway integration, and ongoing performance and security upkeep.",
+            },
+            {
+              type: "list",
+              heading:
+                "Most companies on this list offer a mix of the following:",
+              items: [
+                "Custom ecommerce web design in India on platforms like Shopify, Magento, and WooCommerce",
+                "Store migrations from outdated platforms",
+                "Payment gateway and ERP/CRM integrations",
+                "Mobile app development for shopping",
+                "Post-launch support, SEO, and conversion optimization",
+              ],
+            },
+            {
+              type: "h2",
+              text: "The Top 9 eCommerce Website Development Companies in India",
+            },
+            {
+              type: "h2",
+              text: "1. Webkul (Best for Multi-Vendor Marketplace Development)",
+            },
 
-  //           {
-  //             type: "para",
-  //             text: "Webkul is one of India's most recognized eCommerce development companies and is widely known for its Magento, Shopify, and marketplace extensions. It is particularly well suited for businesses planning to build multi-vendor marketplaces or highly customized eCommerce platforms.",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Best for: Multi-vendor marketplaces and Magento development.",
-  //           },
-  //           {
-  //             type: "h2",
-  //             text: "2. MakeOlix Consulting (Best for SEO-Driven eCommerce Growth) ",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "We at MakeOlix Consulting build performance-first ecommerce sites for US brands, focused on speed, mobile experience, and search visibility from day one. Unlike agencies that hand off a site and disappear, we pair development with ongoing ecommerce SEO, so the store is built to rank, not just to look good. This makes us a strong pick for founders who want design, development, and growth under one roof. Our team is also comfortable working across WordPress/WooCommerce, and Shopify builds for small to mid-size US businesses.",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Best for: Businesses looking for development and long-term digital growth under one partner. ",
-  //           },
+            {
+              type: "para",
+              text: "Webkul is one of India's most recognized eCommerce development companies and is widely known for its Magento, Shopify, and marketplace extensions. It is particularly well suited for businesses planning to build multi-vendor marketplaces or highly customized eCommerce platforms.",
+            },
+            {
+              type: "para",
+              text: "Best for: Multi-vendor marketplaces and Magento development.",
+            },
+            {
+              type: "h2",
+              text: "2. MakeOlix Consulting (Best for SEO-Driven eCommerce Growth) ",
+            },
+            {
+              type: "para",
+              text: "We at MakeOlix Consulting build performance-first ecommerce sites for US brands, focused on speed, mobile experience, and search visibility from day one. Unlike agencies that hand off a site and disappear, we pair development with ongoing ecommerce SEO, so the store is built to rank, not just to look good. This makes us a strong pick for founders who want design, development, and growth under one roof. Our team is also comfortable working across WordPress/WooCommerce, and Shopify builds for small to mid-size US businesses.",
+            },
+            {
+              type: "para",
+              text: "Best for: Businesses looking for development and long-term digital growth under one partner. ",
+            },
 
-  //           {
-  //             type: "h2",
-  //             text: "3. Brainvire Infotech (Best for Enterprise eCommerce Solutions)",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Brainvire Infotech has extensive experience delivering enterprise-grade eCommerce platforms for global retailers. Its expertise spans Adobe Commerce (Magento), Shopify, Laravel, cloud technologies, and custom software development for businesses with complex operational requirements.",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Best for: Enterprise businesses and large-scale digital commerce projects.",
-  //           },
+            {
+              type: "h2",
+              text: "3. Brainvire Infotech (Best for Enterprise eCommerce Solutions)",
+            },
+            {
+              type: "para",
+              text: "Brainvire Infotech has extensive experience delivering enterprise-grade eCommerce platforms for global retailers. Its expertise spans Adobe Commerce (Magento), Shopify, Laravel, cloud technologies, and custom software development for businesses with complex operational requirements.",
+            },
+            {
+              type: "para",
+              text: "Best for: Enterprise businesses and large-scale digital commerce projects.",
+            },
 
-  //           {
-  //             type: "h2",
-  //             text: "4. OrangeMantra (Best Full-Service Digital Commerce Partner)",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "OrangeMantra provides end-to-end eCommerce development, UX design, mobile app development, and ongoing digital transformation services. The company has built a strong reputation for delivering scalable solutions backed by long-term technical support.",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Best for: Businesses looking for a full-service technology partner.",
-  //           },
+            {
+              type: "h2",
+              text: "4. OrangeMantra (Best Full-Service Digital Commerce Partner)",
+            },
+            {
+              type: "para",
+              text: "OrangeMantra provides end-to-end eCommerce development, UX design, mobile app development, and ongoing digital transformation services. The company has built a strong reputation for delivering scalable solutions backed by long-term technical support.",
+            },
+            {
+              type: "para",
+              text: "Best for: Businesses looking for a full-service technology partner.",
+            },
 
-  //           {
-  //             type: "h2",
-  //             text: "5. Emizentech (Best Magento & Shopify Specialists)",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Emizentech has developed a strong reputation in Magento and Shopify development, helping startups and growing businesses launch feature-rich online stores with modern UI, third-party integrations, and ongoing maintenance.",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Best for: Small and medium-sized businesses seeking platform-specific expertise.",
-  //           },
+            {
+              type: "h2",
+              text: "5. Emizentech (Best Magento & Shopify Specialists)",
+            },
+            {
+              type: "para",
+              text: "Emizentech has developed a strong reputation in Magento and Shopify development, helping startups and growing businesses launch feature-rich online stores with modern UI, third-party integrations, and ongoing maintenance.",
+            },
+            {
+              type: "para",
+              text: "Best for: Small and medium-sized businesses seeking platform-specific expertise.",
+            },
 
-  //           {
-  //             type: "h2",
-  //             text: "6. ValueCoders (Best for Startups and Cost-Effective Development)",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "ValueCoders is known for offering experienced development teams, transparent communication, and competitive pricing. The company works across Shopify, WooCommerce, Magento, and custom development while maintaining strong client satisfaction.",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Best for: Startups and businesses looking for affordable development without sacrificing quality.",
-  //           },
+            {
+              type: "h2",
+              text: "6. ValueCoders (Best for Startups and Cost-Effective Development)",
+            },
+            {
+              type: "para",
+              text: "ValueCoders is known for offering experienced development teams, transparent communication, and competitive pricing. The company works across Shopify, WooCommerce, Magento, and custom development while maintaining strong client satisfaction.",
+            },
+            {
+              type: "para",
+              text: "Best for: Startups and businesses looking for affordable development without sacrificing quality.",
+            },
 
-  //           {
-  //             type: "h2",
-  //             text: "7. Hidden Brains (Best for Custom Integrations)",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Hidden Brains specializes in custom eCommerce development combined with ERP, CRM, payment gateway, and third-party software integrations. Its experience makes it a suitable partner for businesses with more complex operational workflows.",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Best for: Businesses requiring custom integrations and scalable infrastructure.",
-  //           },
+            {
+              type: "h2",
+              text: "7. Hidden Brains (Best for Custom Integrations)",
+            },
+            {
+              type: "para",
+              text: "Hidden Brains specializes in custom eCommerce development combined with ERP, CRM, payment gateway, and third-party software integrations. Its experience makes it a suitable partner for businesses with more complex operational workflows.",
+            },
+            {
+              type: "para",
+              text: "Best for: Businesses requiring custom integrations and scalable infrastructure.",
+            },
 
-  //           {
-  //             type: "h2",
-  //             text: "8. TatvaSoft (Best for Custom Enterprise Development)",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "TatvaSoft delivers custom-built eCommerce applications using modern development frameworks and enterprise technologies. The company focuses on scalable architecture, security, and long-term maintainability rather than template-based implementations.",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Best for: Businesses requiring highly customized enterprise eCommerce solutions.",
-  //           },
+            {
+              type: "h2",
+              text: "8. TatvaSoft (Best for Custom Enterprise Development)",
+            },
+            {
+              type: "para",
+              text: "TatvaSoft delivers custom-built eCommerce applications using modern development frameworks and enterprise technologies. The company focuses on scalable architecture, security, and long-term maintainability rather than template-based implementations.",
+            },
+            {
+              type: "para",
+              text: "Best for: Businesses requiring highly customized enterprise eCommerce solutions.",
+            },
 
-  //           {
-  //             type: "h2",
-  //             text: "9. Bacancy Technology (Best for Headless Commerce & API Development)",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Bacancy Technology has built expertise in headless commerce, API-first development, cloud-native architecture, and modern JavaScript frameworks. Its solutions are well-suited for businesses planning omnichannel commerce experiences.",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Best for: Businesses planning headless commerce or highly scalable digital ecosystems.",
-  //           },
-  //           {
-  //             type: "h2",
-  //             text: "Which Platform is Best for Your Business?",
-  //           },
-  //           {
-  //             type: "list",
-  //             items: [
-  //               "Shopify works best for startups and D2C brands that want a fast, low-maintenance launch. ",
-  //               "Magento (Adobe Commerce) suits enterprise businesses with complex catalogs, multi-store needs, or heavy B2B functionality. ",
-  //               "WooCommerce is a flexible middle ground for businesses already running on WordPress. ",
-  //             ],
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Most agencies on this list, including our team at MakeOlix, work across all three, so the right fit depends on your budget and how much customization you expect down the line.",
-  //           },
-  //           {
-  //             type: "h2",
-  //             text: "How Are AI Implementations Changing eCommerce Web Design?",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "AI is now built into most modern ecommerce projects instead of being a separate add-on. Common implementations include AI-powered product recommendations, predictive search that understands intent instead of exact keywords, dynamic pricing tools, and chatbots that handle order tracking and returns. ",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "An ecommerce website design company in India with AI implementations should be able to show you real examples of these features working on a live store, not just a sales deck.",
-  //           },
-  //           {
-  //             type: "h2",
-  //             text: "How to Choose the Right eCommerce Developer",
-  //           },
-  //           {
-  //             type: "list",
+            {
+              type: "h2",
+              text: "9. Bacancy Technology (Best for Headless Commerce & API Development)",
+            },
+            {
+              type: "para",
+              text: "Bacancy Technology has built expertise in headless commerce, API-first development, cloud-native architecture, and modern JavaScript frameworks. Its solutions are well-suited for businesses planning omnichannel commerce experiences.",
+            },
+            {
+              type: "para",
+              text: "Best for: Businesses planning headless commerce or highly scalable digital ecosystems.",
+            },
+            {
+              type: "h2",
+              text: "Which Platform is Best for Your Business?",
+            },
+            {
+              type: "list",
+              items: [
+                "Shopify works best for startups and D2C brands that want a fast, low-maintenance launch. ",
+                "Magento (Adobe Commerce) suits enterprise businesses with complex catalogs, multi-store needs, or heavy B2B functionality. ",
+                "WooCommerce is a flexible middle ground for businesses already running on WordPress. ",
+              ],
+            },
+            {
+              type: "para",
+              text: "Most agencies on this list, including our team at MakeOlix, work across all three, so the right fit depends on your budget and how much customization you expect down the line.",
+            },
+            {
+              type: "h2",
+              text: "How Are AI Implementations Changing eCommerce Web Design?",
+            },
+            {
+              type: "para",
+              text: "AI is now built into most modern ecommerce projects instead of being a separate add-on. Common implementations include AI-powered product recommendations, predictive search that understands intent instead of exact keywords, dynamic pricing tools, and chatbots that handle order tracking and returns. ",
+            },
+            {
+              type: "para",
+              text: "An ecommerce website design company in India with AI implementations should be able to show you real examples of these features working on a live store, not just a sales deck.",
+            },
+            {
+              type: "h2",
+              text: "How to Choose the Right eCommerce Developer",
+            },
+            {
+              type: "list",
 
-  //             items: [
-  //               "Review 3 to 5 live projects in your industry, not just the portfolio homepage.",
-  //               "Ask directly about post-launch support and SEO handoff.",
-  //               "Confirm which platform they specialize in versus which they simply support.",
-  //               "Get a fixed-scope proposal, not just an hourly estimate.",
-  //               "Check reviews on Clutch or GoodFirms for recent, verified feedback.",
-  //             ],
-  //           },
-  //           {
-  //             type: "h2",
-  //             text: "Why Businesses Choose MakeOlix",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "We believe successful eCommerce websites are built around measurable business outcomes.",
-  //             links: [
-  //               {
-  //                 word: "eCommerce websites",
-  //                 url: "https://makeolix.com/services/e-commerce-seo",
-  //               },
-  //             ],
-  //           },
+              items: [
+                "Review 3 to 5 live projects in your industry, not just the portfolio homepage.",
+                "Ask directly about post-launch support and SEO handoff.",
+                "Confirm which platform they specialize in versus which they simply support.",
+                "Get a fixed-scope proposal, not just an hourly estimate.",
+                "Check reviews on Clutch or GoodFirms for recent, verified feedback.",
+              ],
+            },
+            {
+              type: "h2",
+              text: "Why Businesses Choose MakeOlix",
+            },
+            {
+              type: "para",
+              text: "We believe successful eCommerce websites are built around measurable business outcomes.",
+              links: [
+                {
+                  word: "eCommerce websites",
+                  url: "https://makeolix.com/services/e-commerce-seo",
+                },
+              ],
+            },
 
-  //           {
-  //             type: "list",
-  //             heading: "When we develop an online store, we focus on:",
-  //             items: [
-  //               "Fast loading performance",
-  //               "Conversion-focused UX",
-  //               "Mobile responsiveness",
-  //               "Technical SEO",
-  //               "Secure architecture",
-  //               "AI-ready functionality",
-  //               "Marketing integrations",
-  //               "Analytics-driven optimization",
-  //             ],
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Our approach helps businesses build websites that not only look professional but also support sustainable revenue growth.",
-  //           },
+            {
+              type: "list",
+              heading: "When we develop an online store, we focus on:",
+              items: [
+                "Fast loading performance",
+                "Conversion-focused UX",
+                "Mobile responsiveness",
+                "Technical SEO",
+                "Secure architecture",
+                "AI-ready functionality",
+                "Marketing integrations",
+                "Analytics-driven optimization",
+              ],
+            },
+            {
+              type: "para",
+              text: "Our approach helps businesses build websites that not only look professional but also support sustainable revenue growth.",
+            },
 
-  //           {
-  //             type: "h2",
-  //             text: "Final Thoughts",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "Choosing an ecommerce website development company in India comes down to matching your budget, platform, and growth plans to the right team. The 9 companies above cover everything from lean Shopify launches to enterprise Magento builds with AI-driven personalization. ",
-  //           },
-  //           {
-  //             type: "para",
-  //             text: "If you want a US-focused ecommerce store that is built to convert and built to rank, reach out to our team at MakeOlix Consulting and let us walk you through a plan built around your business, not a template.",
-  //             links: [
-  //               {
-  //                 word: "reach out to our team",
-  //                 url: "https://makeolix.com/contact-us",
-  //               },
-  //             ],
-  //           },
-  //         ],
-  //       },
-  //     },
-  //     {
-  //       type: "faq",
-  //       data: {
-  //         faqdata: [
-  //           {
-  //             id: 1,
-  //             question:
-  //               "What is the best ecommerce website development company in India? ",
-  //             answer:
-  //               "The best choice depends on your business size and platform. MakeOlix Consulting and OrangeMantra suit most small to mid-size US brands, while Brainvire and Bacancy fit larger, more complex builds.",
-  //           },
-  //           {
-  //             id: 2,
-  //             question:
-  //               "How much do ecommerce website development services in India cost?",
-  //             answer:
-  //               "Pricing varies based on platform, customization, integrations, and project complexity. Basic stores cost significantly less than enterprise-level custom solutions.",
-  //           },
-  //           {
-  //             id: 3,
-  //             question: "How long does it take to build an ecommerce website? ",
-  //             answer:
-  //               "A basic store takes 2 to 4 weeks. A custom mid-range build takes 6 to 10 weeks. Enterprise platforms with ERP integrations can take 12 to 20 weeks.",
-  //           },
-  //           {
-  //             id: 4,
-  //             question:
-  //               "Do these companies handle ongoing maintenance and SEO? ",
-  //             answer:
-  //               "Most do, though the depth varies. We recommend confirming this before signing, since some agencies only handle the initial build and stop there.",
-  //           },
-  //           {
-  //             id: 5,
-  //             question: "Why is AI important for eCommerce websites?",
-  //             answer:
-  //               "AI improves personalization, product discovery, customer support, and operational efficiency, helping businesses deliver better shopping experiences and increase conversions.",
-  //           },
-  //         ],
-  //       },
-  //     },
-  //   ],
-  //   relatedblogs: [
-  //     {
-  //       slug: "10-best-e-commerce-seo-services-agencies",
-  //       image: "/blog-image-16-6-2026 (1).webp",
-  //       description:
-  //         "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
+            {
+              type: "h2",
+              text: "Final Thoughts",
+            },
+            {
+              type: "para",
+              text: "Choosing an ecommerce website development company in India comes down to matching your budget, platform, and growth plans to the right team. The 9 companies above cover everything from lean Shopify launches to enterprise Magento builds with AI-driven personalization. ",
+            },
+            {
+              type: "para",
+              text: "If you want a US-focused ecommerce store that is built to convert and built to rank, reach out to our team at MakeOlix Consulting and let us walk you through a plan built around your business, not a template.",
+              links: [
+                {
+                  word: "reach out to our team",
+                  url: "https://makeolix.com/contact-us",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question:
+                "What is the best ecommerce website development company in India? ",
+              answer:
+                "The best choice depends on your business size and platform. MakeOlix Consulting and OrangeMantra suit most small to mid-size US brands, while Brainvire and Bacancy fit larger, more complex builds.",
+            },
+            {
+              id: 2,
+              question:
+                "How much do ecommerce website development services in India cost?",
+              answer:
+                "Pricing varies based on platform, customization, integrations, and project complexity. Basic stores cost significantly less than enterprise-level custom solutions.",
+            },
+            {
+              id: 3,
+              question: "How long does it take to build an ecommerce website? ",
+              answer:
+                "A basic store takes 2 to 4 weeks. A custom mid-range build takes 6 to 10 weeks. Enterprise platforms with ERP integrations can take 12 to 20 weeks.",
+            },
+            {
+              id: 4,
+              question:
+                "Do these companies handle ongoing maintenance and SEO? ",
+              answer:
+                "Most do, though the depth varies. We recommend confirming this before signing, since some agencies only handle the initial build and stop there.",
+            },
+            {
+              id: 5,
+              question: "Why is AI important for eCommerce websites?",
+              answer:
+                "AI improves personalization, product discovery, customer support, and operational efficiency, helping businesses deliver better shopping experiences and increase conversions.",
+            },
+          ],
+        },
+      },
+    ],
+    relatedblogs: [
+      {
+        slug: "10-best-e-commerce-seo-services-agencies",
+        image: "/blog-image-16-6-2026 (1).webp",
+        description:
+          "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
 
-  //       buttonText: "Read More",
-  //       buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
-  //       buttonVariant: "",
-  //     },
-  //     {
-  //       slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        buttonText: "Read More",
+        buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+        buttonVariant: "",
+      },
+      {
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
 
-  //       image:
-  //         "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
-  //       description:
-  //         "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
-  //       buttonText: "Read More",
-  //       buttonHref:
-  //         "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
-  //       buttonVariant: "",
-  //     },
-  //     {
-  //       slug: "want-more-traffic-sales",
-  //       image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
-  //       description:
-  //         "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
-  //       buttonText: "Read More",
-  //       buttonHref: "/blog/want-more-traffic-sales",
-  //       buttonVariant: "",
-  //     },
-  //   ],
-  // },
+        image:
+          "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
+        description:
+          "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
+        buttonText: "Read More",
+        buttonHref:
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        buttonVariant: "",
+      },
+      {
+        slug: "want-more-traffic-sales",
+        image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+        description:
+          "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+        buttonText: "Read More",
+        buttonHref: "/blog/want-more-traffic-sales",
+        buttonVariant: "",
+      },
+    ],
+  },
   "white-label-seo-vs-seo-reseller-whats-the-difference": {
     image: "/White label seo - Makeolix Consulting.webp",
 
