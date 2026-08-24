@@ -3,8 +3,17 @@ import { motion } from "framer-motion";
 import Button from "../components/Button";
 
 const blogs = [
-  {
+   {
     id: 1,
+    slug: "top-9-ecommerce-website-development-companies-in-india-2026",
+
+    desc: "Top 9 eCommerce Website Development Companies in India 2026 ",
+    date: "Published: August 24, 2026",
+    
+    img: "/Top 9 eCommerce Website Development- Makeolix consulting.webp",
+  },
+  {
+    id: 2,
     slug: "white-label-seo-vs-seo-reseller-whats-the-difference",
     desc: "White Label SEO vs SEO Reseller: What’s the Difference?",
     date: "Published: August 17, 2026",
@@ -12,7 +21,7 @@ const blogs = [
     img: "/White label seo - Makeolix Consulting.webp",
   },
   {
-    id: 2,
+    id: 3,
     slug: "custom-vs-ready-made-ecommerce-websites-which-ones-right-for-you",
 
     desc: "Custom vs Ready-Made Ecommerce Websites: Which One's Right for You?",
@@ -20,15 +29,7 @@ const blogs = [
     
     img: "/Ecommerce website by makeolix.webp",
   },
-  {
-    id: 3,
-    slug: "how-much-do-small-business-seo-services-cost-in-2026",
-
-    desc: "How Much Do Small Business SEO Services Cost in 2026?",
-    date: "Published: August 03, 2026",
-    
-    img: "/Small business seo makeolix.webp",
-  },
+ 
 ];
 
 const containerVariants = {
