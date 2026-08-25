@@ -532,20 +532,21 @@ export default function Navbar() {
 
           {/* MOBILE HAMBURGER */}
           <button
-            className="lg:hidden"
-            style={{
-              padding: "8px",
-              borderRadius: "12px",
-              color: "#003863",
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-            }}
-            onClick={(e) => {
-              e.stopPropagation();
-              setMobileOpen(!mobileOpen);
-            }}
-          >
+  className="lg:hidden"
+  style={{
+    padding: "8px",
+    borderRadius: "12px",
+    color: "#003863",
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+  }}
+  aria-label={mobileOpen ? "Close menu" : "Open menu"}   // 👈 add this
+  onClick={(e) => {
+    e.stopPropagation();
+    setMobileOpen(!mobileOpen);
+  }}
+>
             <AnimatePresence mode="wait">
               {mobileOpen ? (
                 <motion.span
@@ -855,6 +856,7 @@ export default function Navbar() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               onClick={() => setMobileOpen(false)}
+               aria-label="Close menu"
             />
             <motion.div
               className="mobile-drawer"
@@ -1113,7 +1115,7 @@ export default function Navbar() {
                   borderTop: "1px solid rgba(0,80,157,0.08)",
                 }}
               >
-                <Button href={"/contact-us"}>Get Started</Button>
+                <Button href={"/contact-us"} ariaLabel="Get started with MakeOlix">Get Started</Button>
               </div>
             </motion.div>
           </>
