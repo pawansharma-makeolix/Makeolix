@@ -12,6 +12,7 @@ export default function Button({
   icon = true,
   type = "button", 
   className = "",
+  ariaLabel,          // 👈 add this
 }) {
   const base =
     "relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group overflow-hidden transition-all duration-500 cursor-pointer flex items-center";
@@ -34,47 +35,28 @@ export default function Button({
       }}
       whileTap={{ scale: 0.96 }}
     >
-      {/* TEXT */}
-      <span className="relative z-10 transition-all duration-500 group-hover:translate-x-7">
-        {children}
-      </span>
-
-      {/* ICON SLIDER */}
-      {icon && (
-        <div
-          className="absolute right-1 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45"
-          style={{
-            background: "#fff",
-            color: "#000",
-            boxShadow: "0 0 12px rgba(17,138,178,0.4)",
-          }}
-        >
-          <ArrowUpRight size={16} />
-        </div>
-      )}
-
-      {/* SHINE EFFECT */}
-      <motion.span
-  className="absolute inset-0 rounded-full"
-  style={{
-    background:
-      "linear-gradient(110deg, transparent 40%, rgba(255,255,255,0.12) 50%, transparent 60%)",
-  }}
-  initial={{ x: "-120%" }}
-  whileHover={{ x: "200%" }}
-  transition={{
-    duration: 2.5,
-    ease: "easeInOut",
-  }}
-/>
+      ...
     </motion.div>
   );
 
   if (href) {
-    return <Link to={href}>{content}</Link>;
+    return (
+      <Link to={href} aria-label={ariaLabel}>   
+        {content}
+      </Link>
+    );
   }
 
-  return <button type={type} onClick={onClick} style={{ background: "none", border: "none", padding: 0 }}>{content}</button>;
+  return (
+    <button
+      type={type}
+      onClick={onClick}
+      aria-label={ariaLabel}                    
+      style={{ background: "none", border: "none", padding: 0 }}
+    >
+      {content}
+    </button>
+  );
 }
 
 

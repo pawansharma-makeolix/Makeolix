@@ -151,9 +151,13 @@ function CaseStudiesGrid({
                   {item.shortDescription}
                 </p>
 
-                <Button href={item.href || "#"} variant="primary">
-                  Read More
-                </Button>
+               <Button 
+  href={item.href || "#"} 
+  variant="primary" 
+  ariaLabel={item.title ? `Read more about ${item.title}` : "Read more"}
+>
+  Read More
+</Button>
               </div>
 
               {/* soft glow on hover */}

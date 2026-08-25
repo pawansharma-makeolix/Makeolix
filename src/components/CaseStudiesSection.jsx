@@ -158,6 +158,8 @@ export default function CaseStudiesSection({
                 href={item.buttonHref}
                 onClick={item.buttonOnClick}
                 variant={item.buttonVariant || "primary"}
+                  ariaLabel={`Read more about ${item.description || item.buttonText}`}   // 👈 add
+
               >
                 {item.buttonText || "View Case Study"}
               </Button>

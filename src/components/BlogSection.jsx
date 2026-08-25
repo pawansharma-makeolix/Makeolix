@@ -104,9 +104,9 @@ export default function BlogSection() {
               <div className="text-xs text-(--blue-3) mb-4">{blog.service}</div>
 
               {/* Button */}
-              <Button variant="outline" href={`/blog/${blog.slug}`}>
-                Read More
-              </Button>
+              <Button variant="outline" href={`/blog/${blog.slug}`} ariaLabel={`Read more about ${blog.desc}`}>
+  Read More
+</Button>
             </div>
 
             {/* Glow effect */}
