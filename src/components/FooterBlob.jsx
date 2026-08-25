@@ -75,9 +75,9 @@ export default function FooterBlob({ variant }) {
         ref={blobRef}
         src={imageSrc}
         loading="lazy"
-        className={`absolute w-25 md:w-37.5 lg:w-50 will-change-transform transition-opacity duration-300 ${
-          visible ? "opacity-80" : "opacity-0"
-        }`}
+        alt=""
+        className={`absolute w-25 md:w-37.5 lg:w-50 will-change-transform transition-opacity duration-300 ${visible ? "opacity-80" : "opacity-0"
+          }`}
       />
     </div>
   );

@@ -197,25 +197,27 @@ export default function UltraFooter() {
         <div className="flex flex-wrap justify-center gap-8">
           {Array(1)
             .fill([
-              {
-                img: "/Usflag.webp",
-                address: "8 The Green, STE B Dover, DE 19901",
-                mail: "contactus@makeolix.com",
-                phone: "+91 1204537874",
-              },
-              {
-                img: "/indianflag.png",
-                address: "Suite G-02, H-143, Sector 63, Noida",
-                mail: "contactus@makeolix.com",
-                phone: "+91 1204537874",
-              },
-
-              {
-                img: "/uaeflag.webp",
-                address: "Arriving soon",
-                mail: "contactus@makeolix.com",
-              },
-            ])
+  {
+    img: "/Usflag.webp",
+    alt: "US flag",              // 👈 add
+    address: "8 The Green, STE B Dover, DE 19901",
+    mail: "contactus@makeolix.com",
+    phone: "+91 1204537874",
+  },
+  {
+    img: "/indianflag.png",
+    alt: "Indian flag",          // 👈 add
+    address: "Suite G-02, H-143, Sector 63, Noida",
+    mail: "contactus@makeolix.com",
+    phone: "+91 1204537874",
+  },
+  {
+    img: "/uaeflag.webp",
+    alt: "UAE flag",             // 👈 add
+    address: "Arriving soon",
+    mail: "contactus@makeolix.com",
+  },
+])
             .flat()
             .map((item, i) => (
               <motion.div
@@ -225,6 +227,7 @@ export default function UltraFooter() {
               >
                 <img
                   src={item.img}
+                   alt={item.alt}
                   className="mb-3 rounded w-8 h-7 object-cover"
                 />
 
