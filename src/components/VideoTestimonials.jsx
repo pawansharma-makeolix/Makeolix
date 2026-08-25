@@ -98,12 +98,13 @@ const VideoTestimonials = () => {
                 <>
                   <img
                     src={video.thumbnail}
-                    alt="thumbnail"
+                    alt={`Client testimonial ${i + 1} thumbnail`}
                     loading="lazy" // ✅ images bhi lazy load
                     className="absolute inset-0 w-full h-full object-cover pointer-events-none"
                   />
                   <button
                     onClick={() => handlePlay(i)}
+                    aria-label="Play testimonial video"  
                     className="absolute inset-0 flex items-center justify-center"
                   >
                     <div
@@ -121,6 +122,8 @@ const VideoTestimonials = () => {
 
         <button
           onClick={prev}
+            aria-label="Previous testimonial"   // 👈 add
+
           className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 
           w-10 h-10 rounded-full flex items-center justify-center text-white z-30"
           style={{ backgroundColor: "#00509d" }}
@@ -130,6 +133,8 @@ const VideoTestimonials = () => {
 
         <button
           onClick={next}
+            aria-label="Next testimonial"   // 👈 add
+
           className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 
           w-10 h-10 rounded-full flex items-center justify-center text-white z-30"
           style={{ backgroundColor: "#00509d" }}
