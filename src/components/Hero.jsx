@@ -136,8 +136,12 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-center gap-4">
-          <Button href={"/contact-us"}>Get In Touch</Button>
-          <Button variant="outline" href={"/about"}>Know More</Button>
+         <Button href={"/contact-us"} ariaLabel="Get in touch with MakeOlix">
+  Get In Touch
+</Button>
+<Button variant="outline" href={"/about"} ariaLabel="Know more about MakeOlix">
+  Know More
+</Button>
         </div>
       </div>
     </section>

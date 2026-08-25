@@ -331,6 +331,8 @@ export default function HeroOrbit({
   primaryLink,
   secondaryLink,
   showButtons = true,
+    primaryAriaLabel,      // 👈 add
+  secondaryAriaLabel, 
 }) {
   const ref = useRef(null);
 
@@ -474,20 +476,17 @@ export default function HeroOrbit({
               variants={fadeUp}
               className="flex items-center gap-4 flex-wrap justify-center"
             >
-              {primaryLink && primaryBtnText && (
-                <Button href={primaryLink}>
-                  {primaryBtnText}
-                </Button>
-              )}
+               {primaryLink && primaryBtnText && (
+    <Button href={primaryLink} ariaLabel={primaryAriaLabel || primaryBtnText}>
+      {primaryBtnText}
+    </Button>
+  )}
 
               {secondaryLink && secondaryBtnText && (
-                <Button
-                  variant="outline"
-                  href={secondaryLink}
-                >
-                  {secondaryBtnText}
-                </Button>
-              )}
+    <Button variant="outline" href={secondaryLink} ariaLabel={secondaryAriaLabel || secondaryBtnText}>
+      {secondaryBtnText}
+    </Button>
+  )}
             </motion.div>
           )}
       </motion.div>

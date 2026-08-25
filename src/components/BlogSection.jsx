@@ -126,7 +126,7 @@ export default function BlogSection() {
         transition={{ delay: 0.3 }}
         className="text-center mt-16 flex justify-center"
       >
-        <Button className="w-50 " href="/blog">
+        <Button className="w-50 " href="/blog" ariaLabel="View more Blogs of  MakeOlix"> 
           View More
         </Button>
       </motion.div>

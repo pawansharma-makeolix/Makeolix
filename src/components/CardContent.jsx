@@ -20,7 +20,7 @@ const CardContent = ({ title, desc, icon }) => {
           style={{
             background: "var(--blue-3)",
             color: "#fff",
-          }}
+          }} ariaLabel="Know more about MakeOlix"
         >
           Learn More
         </button>

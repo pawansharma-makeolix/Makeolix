@@ -61,9 +61,9 @@ const About = () => {
             heights in the digital space.
           </p>
 
-          <Button className="w-40" href={"/about"}>
-            Know More
-          </Button>
+          <Button className="w-40" href={"/about"} ariaLabel="Know more about MakeOlix">
+  Know More
+</Button>
         </motion.div>
 
         <motion.div
