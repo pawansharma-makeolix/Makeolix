@@ -77,31 +77,23 @@ export default function UltraFooter() {
           </p>
 
           <div className="flex gap-4 mt-6">
-            {[
-              {
-                Icon: FaFacebookF,
-                url: "https://www.facebook.com/makeolixconsulting",
-              },
-              {
-                Icon: FaInstagram,
-                url: "https://www.instagram.com/makeolix_consulting",
-              },
-              {
-                Icon: FaLinkedinIn,
-                url: "https://www.linkedin.com/company/makeolix-consulting-inc/",
-              },
-            ].map((social, i) => (
-              <motion.a
-                key={i}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.2, rotate: 8 }}
-                className="p-3 bg-(--bg-soft) rounded-full hover:bg-(--blue-2)"
-              >
-                <social.Icon size={16} />
-              </motion.a>
-            ))}
+           {[
+  { Icon: FaFacebookF, url: "https://www.facebook.com/makeolixconsulting", label: "Facebook" },
+  { Icon: FaInstagram, url: "https://www.instagram.com/makeolix_consulting", label: "Instagram" },
+  { Icon: FaLinkedinIn, url: "https://www.linkedin.com/company/makeolix-consulting-inc/", label: "LinkedIn" },
+].map((social, i) => (
+  <motion.a
+    key={i}
+    href={social.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={social.label}   // 👈 add this
+    whileHover={{ scale: 1.2, rotate: 8 }}
+    className="p-3 bg-(--bg-soft) rounded-full hover:bg-(--blue-2)"
+  >
+    <social.Icon size={16} />
+  </motion.a>
+))}
           </div>
         </div>
 

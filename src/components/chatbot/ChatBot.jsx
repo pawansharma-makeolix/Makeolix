@@ -106,6 +106,7 @@ export default function ChatBot() {
 
           setOpen(!open);
         }}
+        aria-label={open ? "Close chat" : "Open chat"} 
         className="fixed bottom-5 right-5 z-10000 h-16 w-16 rounded-full bg-linear-to-br from-(--blue-2) to-(--blue-3) shadow-[0_0_40px_rgba(17,138,178,0.45)] flex items-center justify-center"
       >
         {open ? (
