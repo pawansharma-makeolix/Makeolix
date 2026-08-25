@@ -8,7 +8,8 @@
     "build": "npm run generate-sitemap && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate-sitemap": "node generate-sitemap.js"
+    "generate-sitemap": "node generate-sitemap.js",
+  "generate-llms": "node generate-llms.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
