@@ -280,7 +280,7 @@ export const localSeoData = {
           title: "Make the Next Step to Local Search Prosperity",
           description:
             "In the case of the near me [SEO services|/services/seo], visibility is all and nobody knows that better than MakeOlix Consulting, the most reliable Local SEO Company in India. You may be a dentist in Delhi, a restaurant in Mumbai or a service provider in New York, we help your business shine in local searches. Your customers are already searching for your services. The question is, will they find you or your competitors? Let MakeOlix Consulting, your go-to Local SEO Provider, put your business on the map, literally. Reach out today and start building your local presence the smart way.",
-          image: "/pexels-sarah-blocksidge-69426152-12813050 (1).jpg",
+          image: "/Local Search Prosperity - Makeolix consulting.webp",
         },
       },
       {

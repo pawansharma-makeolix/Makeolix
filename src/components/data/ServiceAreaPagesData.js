@@ -293,7 +293,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/seoagency.jpg",
+          bgImage: "/seoagency-Makeolix consulting.webp",
           align: "left",
           // LEFT
           title: "Why MakeOlix is the Best SEO Services Company in Phoenix",
@@ -1251,7 +1251,7 @@ export const ServiceAreaPagesData = {
           title: "Local SEO That Drives Real Results",
           description:
             "As a trusted SEO Consultant Chicago, we specialize in helping businesses dominate local search results. Local SEO is not just about ranking, it’s about being found by customers ready to take action. Our team focuses on optimizing your local presence, ensuring your business appears in relevant searches, maps, and directories. This approach helps us stand out as a reliable Chicago Local SEO Agency focused on real outcomes.",
-          image: "/12019-city-1775878_1920.jpg",
+          image: "/Local SEO Results - Makeolix consulting.webp",
           reverse: true,
         },
       },
@@ -1592,7 +1592,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/myriam-jessier-eveI7MOcSmw-unsplash.jpg",
+          bgImage: "/Local SEO That Drives- Makeolix consulting.webp",
           align: "both",
           // LEFT
           title: "Local SEO That Drives Real Customers",
@@ -3027,7 +3027,7 @@ export const ServiceAreaPagesData = {
           subtitle: "columbus SEO Agency",
           description:
             "MakeOlix Consulting is a company that supports businesses in Columbus to realize the full potential of their digital presence and online marketing through result-oriented SEO approaches. In case your site is not ranking, getting quality leads, or turning traffic into paying customers, our team of proven SEO experts will do so. Being the leading Columbus SEO Company, we integrate high-level research and data-driven insights with proven methods to deliver quantifiable results that can directly influence the growth of your business. You do not receive more clicks with us, you receive quality leads, better sales and brand recognition in the long run.",
-          image: "/ronaldcandonga-job-5382501_1920.jpg",
+          image: "/columbus SEO Agency - Makeolix consulting.webp",
         },
       },
       {

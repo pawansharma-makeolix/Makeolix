@@ -801,7 +801,7 @@ export const caseStudiesData = {
           title: "Here we can see the Users, Sessions",
           description:
             "Compare: 8 Aug 2023- 5 Nov 2023 to 7 Nov 2023- 4 Feb 2024",
-          image: "/_Image_hoyxwzhoyxwzhoyx.png",
+          image: "/Comparission - Makeolix Consulting.webp",
           reverse: true,
         },
       },
@@ -881,7 +881,7 @@ export const caseStudiesData = {
         type: "intro",
         data: {
           topImage: {
-            src: "/Image_2cg6z42cg6z42cg6.png",
+            src: "/Grell and watson - Makeolix consulting.webp",
             alt: "Africa Direct",
             href: "https://gwpatentattorney.com/",
             width: "140px",
@@ -919,7 +919,7 @@ export const caseStudiesData = {
           title: "Google Analytics Data",
           description:
             "Compare: 9 Dec 2023 – 7 jan 2024 to 6 Jan 2024 – 4 Feb 2024",
-          image: "/Image_7204yf7204yf7204.png",
+          image: "/Google Analytics Data - Makeolix consulting.webp",
         },
       },
       {
