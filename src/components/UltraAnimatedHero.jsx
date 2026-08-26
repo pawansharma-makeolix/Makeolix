@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { motion, useMotionValue, animate } from "framer-motion";
-import CustomCursor from "../components/CustomCursor";
+// import CustomCursor from "../components/CustomCursor";
 import Button from "./Button";
 
 export default function UltraAnimatedHero({
@@ -50,7 +50,7 @@ export default function UltraAnimatedHero({
 
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
 
       <section className="relative min-h-screen pt-30 flex items-center justify-center overflow-hidden bg-(--bg-main) px-6">
 

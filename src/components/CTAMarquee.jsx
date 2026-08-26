@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
-import { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 import Button from "../components/Button";
 import FooterBlob from "../components/FooterBlob";
 import { useInView } from "framer-motion";
@@ -60,21 +60,10 @@ function MarqueeItem({ children }) {
 
 /* ── Main component ─────────────────────────────────────── */
 export default function CTAMarquee() {
-  const y = useMotionValue(0);
-  const [paused, setPaused] = useState(false);
   const sectionRef = useRef(null);
 
   const isInView = useInView(sectionRef, {
     amount: 0.3,
-  });
-  useAnimationFrame((_, delta) => {
-    if (paused || !isInView) return;
-
-    let next = y.get() - delta * 0.01;
-
-    if (next < -50) next = 0;
-
-    y.set(next);
   });
 
   const allItems = [...items, ...items];
@@ -98,8 +87,8 @@ export default function CTAMarquee() {
           <motion.div
             key={i}
             className={`absolute rounded-full blur-[120px] ${b.className}`}
-            style={b.style}
-            animate={b.animate}
+            style={{ ...b.style, willChange: "transform" }}
+            animate={isInView ? b.animate : undefined}
             transition={{
               duration: b.duration,
               repeat: Infinity,
@@ -112,11 +101,7 @@ export default function CTAMarquee() {
       {/* ── CONTENT ── */}
       <div className="relative z-10 grid md:grid-cols-2 gap-12 max-w-5xl w-full items-center">
         {/* LEFT: Marquee */}
-        <div
-          className="relative h-137.5 overflow-hidden"
-          onMouseEnter={() => setPaused(true)}
-          onMouseLeave={() => setPaused(false)}
-        >
+        <div className="relative h-137.5 overflow-hidden">
           <div
             className="absolute top-0 left-0 right-0 h-40 z-10 pointer-events-none"
             style={{
@@ -125,9 +110,9 @@ export default function CTAMarquee() {
             }}
           />
 
-
           <motion.div
             className="flex flex-col pl-4"
+            style={{ willChange: "transform" }}
             animate={isInView ? { y: ["0%", "-50%"] } : { y: "0%" }}
             transition={{
               duration: 18,
@@ -182,5 +167,3 @@ export default function CTAMarquee() {
     </section>
   );
 }
-
-//

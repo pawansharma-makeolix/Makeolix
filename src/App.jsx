@@ -1,7 +1,7 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import CustomCursor from "./components/CustomCursor";
+// import CustomCursor from "./components/CustomCursor";
 import ScrollToTop from "./components/ScrollToTop";
 import ChatBot from "./components/chatbot/ChatBot";
 
@@ -33,7 +33,7 @@ function App() {
       <Router>
         <ScrollToTop></ScrollToTop>
         <ChatBot></ChatBot>
-        <CustomCursor />
+        {/* <CustomCursor /> */}
 
         <Suspense fallback={null}>
           <Routes>

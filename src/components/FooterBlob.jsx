@@ -22,6 +22,27 @@ export default function FooterBlob({ variant }) {
     };
     updateRect();
 
+    const animate = () => {
+      const p = posRef.current;
+      const dx = p.targetX - p.currentX;
+      const dy = p.targetY - p.currentY;
+
+      // convergence ho chuka to loop rok do — idle me DOM write band
+      if (Math.abs(dx) < 0.01 && Math.abs(dy) < 0.01) {
+        rafRef.current = null;
+        return;
+      }
+
+      p.currentX += dx * 0.15;
+      p.currentY += dy * 0.15;
+
+      if (blobRef.current) {
+        blobRef.current.style.transform = `translate3d(${p.currentX}px, ${p.currentY}px, 0) translate(-50%, -50%)`;
+      }
+
+      rafRef.current = requestAnimationFrame(animate);
+    };
+
     const move = (e) => {
       const rect = rectRef.current;
       if (!rect) return;
@@ -32,7 +53,6 @@ export default function FooterBlob({ variant }) {
         e.clientY >= rect.top &&
         e.clientY <= rect.bottom;
 
-      // sirf tab setVisible call karo jab value actually change ho
       if (inside !== insideRef.current) {
         insideRef.current = inside;
         setVisible(inside);
@@ -41,31 +61,25 @@ export default function FooterBlob({ variant }) {
       if (inside) {
         posRef.current.targetX = e.clientX - rect.left;
         posRef.current.targetY = e.clientY - rect.top;
+
+        // loop idle pada tha to yahi se restart karo
+        if (rafRef.current === null) {
+          rafRef.current = requestAnimationFrame(animate);
+        }
       }
-    };
-
-    const animate = () => {
-      const p = posRef.current;
-      p.currentX += (p.targetX - p.currentX) * 0.15;
-      p.currentY += (p.targetY - p.currentY) * 0.15;
-
-      if (blobRef.current) {
-        blobRef.current.style.transform = `translate3d(${p.currentX}px, ${p.currentY}px, 0) translate(-50%, -50%)`;
-      }
-
-      rafRef.current = requestAnimationFrame(animate);
     };
 
     window.addEventListener("mousemove", move, { passive: true });
     window.addEventListener("resize", updateRect);
     window.addEventListener("scroll", updateRect, { passive: true });
-    rafRef.current = requestAnimationFrame(animate);
+
+    // mount pe rAF start NAHI karte — sirf pehli baar mouse "inside" aayega tab start hoga
 
     return () => {
       window.removeEventListener("mousemove", move);
       window.removeEventListener("resize", updateRect);
       window.removeEventListener("scroll", updateRect);
-      if (rafRef.current) cancelAnimationFrame(rafRef.current); // yahi missing tha
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
   }, []);
 
