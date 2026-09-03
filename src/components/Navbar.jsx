@@ -57,7 +57,7 @@ const navItems = [
         href: "/services/website-design-development",
 
         items: [
-          { label: "WordPress Development", href: "/services/wordpress-dev" },
+          { label: "WordPress Development", href: "/services/wordpress-development" },
           {
             label: "React Development",
             href: "/services/react-dev",
@@ -96,10 +96,10 @@ const navItems = [
 
       {
         heading: "Ecommerce Development",
-        href: "/services/ecommerce-develop",
+        href: "/services/ecommerce-development",
 
         items: [
-          { label: "Shopify Development", href: "/services/shopify" },
+          { label: "Shopify Development", href: "/services/shopify-development", },
           {
             label: "WooCommerce Development",
             href: "/services/woocommerce",
