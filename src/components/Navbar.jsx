@@ -212,6 +212,21 @@ const navItems = [
   // {name: "Dropshipping", href: "/dropshipping"},
   { name: "About", href: "/about-us" },
   { name: "Testimonials", href: "/testimonials" },
+//  {
+//   name: "Portfolio",
+//   href: "#",
+//   mega: true,
+//   submenu: [
+//     {
+//       label: "Shopify Portfolio",
+//       href: "/portfolio/shopify-portfolio",
+//     },
+//     {
+//       label: "WordPress Portfolio",
+//       href: "/portfolio/wordpress-portfolio",
+//     },
+//   ],
+// },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blog" },
   { name: "Contact Us", href: "/contact-us" },
@@ -575,7 +590,7 @@ export default function Navbar() {
 
         {/* ── MEGA MENU — direct child of nav ── */}
         <AnimatePresence>
-          {activeMegaItem?.mega && (
+          {activeMegaItem?.mega && (activeMegaItem.groups || activeMegaItem.submenu) && (
             <div
               style={{
                 position: "absolute",
@@ -657,7 +672,11 @@ export default function Navbar() {
                       opacity: 0.55,
                     }}
                   >
-                    {activeMegaItem.groups ? "Our Services" : "Our Packages"}
+                    {activeMegaItem.groups
+  ? "Our Services"
+  : activeMegaItem.name === "Portfolio"
+    ? "Our Portfolio"
+    : "Our Packages"}
                   </p>
                 </div>
 

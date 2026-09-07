@@ -26,6 +26,8 @@ const Blog = lazy(() => import("./pages/Blog"));
 const BlogDetail = lazy(() => import("./pages/BlogDetail"));
 const TermsConditions = lazy(() => import("./pages/TermsCondition"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+// const ShopifyPortfolio = lazy(() => import("./pages/ShopifyPortfolio"));
+// const WordpressPortfolio = lazy(() => import("./pages/WordpressPortfolio"));
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/matrix-maximizer-plan" element={<MM79 />} />
             <Route path="/testimonials" element={<Testimonials />} />
+            {/* <Route path="/portfolio/shopify-portfolio" element={<ShopifyPortfolio />}   /> */}
+            {/* <Route path="/portfolio/wordpress-portfolio" element={<WordpressPortfolio />}   /> */}
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
             <Route path="/blog" element={<Blog />} />
