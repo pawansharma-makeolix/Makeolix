@@ -3,16 +3,16 @@ import { link, text } from "framer-motion/client";
 export const BlogData = {
 
 "which-are-the-top-ecommerce-seo-service-providers": {
-    image: "/Which are the Top eCommerce SEO Service Providers - Makeolix consulting.webp",
+    image: "/Which are the Top eCommerce SEO Service Providers - Makeolix consulting-.webp",
 
     description: "Which are the Top eCommerce SEO Service Providers?",
 
     publishedAt: "2026-09-07",
     updatedAt: "2026-09-07",
-    metaTitle: "Top 9 eCommerce Website Development Companies in India 2026",
+    metaTitle: "Top Ecommerce SEO Service Providers | Ecommerce SEO Company in India",
 
     metaDescription:
-      "Explore the top 9 eCommerce website development companies in India for 2026. Compare eCommerce web development, design, and development services.",
+      "Explore the top Ecommerce SEO service providers in India. Find the best Ecommerce SEO company and agency to improve organic rankings, increase online sales.",
     sections: [
       {
         type: "hero",
