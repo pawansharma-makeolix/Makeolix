@@ -5,9 +5,25 @@ export const SocialMediaOpt ={
     title: "Social Media Optimization Services in India | MakeOlix",
 
     description:
-      "Boost your brand with Social Media Optimization Services in India. We optimize social profiles, content, pages, and strategies to increase reach and engagement."
+      "Boost your brand with Social Media Optimization Services in India. We optimize social profiles, content, pages, and strategies to increase reach and engagement.",
+
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: "Social Media Optimization (SMO) Services",
+      url: "https://makeolix.com/services/social-media-optimization",
+      brand: {
+        "@type": "Brand",
+        name: "MakeOlix",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        reviewCount: "754",
+      },
+    },
   },
-  
+
     sections: [
       {
         type: "hero",

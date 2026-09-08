@@ -25,15 +25,19 @@ const ServiceItem = () => {
   if (!pageData) return <PageNotFound></PageNotFound>;
   return (
     <>
-    <Helmet>
+   <Helmet>
+  <title>{pageData.meta?.title}</title>
 
-<title>{pageData.meta?.title}</title>
+  <meta
+    name="description"
+    content={pageData.meta?.description}
+  />
 
-<meta
- name="description"
- content={pageData.meta?.description}
-/>
-
+  {pageData.meta?.schema && (
+    <script type="application/ld+json">
+      {JSON.stringify(pageData.meta.schema)}
+    </script>
+  )}
 </Helmet>
       {shouldNoIndex && (
         <Helmet>
