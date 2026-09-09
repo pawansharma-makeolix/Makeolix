@@ -32,6 +32,20 @@ urls += `
     <priority>1.0</priority>
   </url>
 `;
+/* =========================
+   DYNAMIC SERVICE PAGES
+========================= */
+
+Object.keys(ServicesPagesData).forEach((slug) => {
+  urls += `
+    <url>
+      <loc>${BASE_URL}/services/${slug}</loc>
+      <lastmod>${today}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  `;
+});
 
 /* =========================
    STATIC PAGES
@@ -64,18 +78,19 @@ staticPages.forEach((page) => {
     </url>
   `;
 });
-
 /* =========================
-   DYNAMIC SERVICE PAGES
+   DYNAMIC BLOG PAGES
 ========================= */
 
-Object.keys(ServicesPagesData).forEach((slug) => {
+Object.entries(BlogData).forEach(([slug, blog]) => {
+  const lastmod = blog.updatedAt || blog.publishedAt || today;
+
   urls += `
     <url>
-      <loc>${BASE_URL}/services/${slug}</loc>
-      <lastmod>${today}</lastmod>
+      <loc>${BASE_URL}/blog/${slug}</loc>
+      <lastmod>${lastmod}</lastmod>
       <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
+      <priority>1.0</priority>
     </url>
   `;
 });
@@ -97,22 +112,7 @@ Object.keys(ServiceAreaPagesData).forEach((city) => {
 
 
 
-/* =========================
-   DYNAMIC BLOG PAGES
-========================= */
 
-Object.entries(BlogData).forEach(([slug, blog]) => {
-  const lastmod = blog.updatedAt || blog.publishedAt || today;
-
-  urls += `
-    <url>
-      <loc>${BASE_URL}/blog/${slug}</loc>
-      <lastmod>${lastmod}</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  `;
-});
 /* =========================
    DYNAMIC CASE STUDIES
 ========================= */
