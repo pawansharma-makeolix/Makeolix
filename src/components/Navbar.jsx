@@ -204,9 +204,9 @@ const navItems = [
       // { label: "SEO + AI Visibility", href: "/pricing/seo+ai_visibility" },
       { label: "AI-POWERED SEO ", href: "/pricing/ai-powered-seo" },
       { label: "SMO ", href: "/pricing/smo" },
-      { label: "WEB DEV", href: "/pricing/web" },
+      { label: "WEB DEV", href: "/pricing/web-development" },
 
-      { label: "AEO + GEO", href: "/pricing/aeo+geo" },
+      { label: "AEO + GEO", href: "/pricing/aeo-geo" },
     ],
   },
   // {name: "Dropshipping", href: "/dropshipping"},

@@ -63,9 +63,9 @@ const staticPages = [
   "/blog",
   "/pricing/ai-powered-seo",
 "/pricing/smo",
-"/pricing/web",
-"/pricing/aeo+geo",
-"/pricing/seo+ai_visibility",
+"/pricing/web-development",
+"/pricing/aeo-geo",
+
 ];
 
 staticPages.forEach((page) => {
@@ -147,3 +147,4 @@ ${urls}
 fs.writeFileSync("./public/sitemap.xml", sitemap);
 
 console.log("✅ Sitemap generated successfully!");
+

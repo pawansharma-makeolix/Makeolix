@@ -14,7 +14,7 @@ function AeoGeo() {
 <SeoMetaDesc
   title="AEO + GEO Pricing Plans | AI Search Optimization Services"
   description="Explore affordable AEO + GEO pricing plans by MakeOlix. Optimize your brand for AI search engines, ChatGPT, Gemini, and Google AI Overviews with expert solutions."
-  url="https://makeolix.com/pricing/aeo+geo"
+  url="https://makeolix.com/pricing/aeo-geo"
 />
 <Navbar></Navbar>
 <HeroOrbit 

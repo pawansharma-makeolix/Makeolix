@@ -191,7 +191,7 @@ export const BlogData = {
                links: [
                 {
                   word: "eCommerce development",
-                  url: "https://makeolix.com/services/e-commerce-seo",
+                  url: "https://makeolix.com/services/ecommerce-development",
                 },
               ],
 
@@ -1033,7 +1033,7 @@ export const BlogData = {
               links: [
                 {
                   word: "Ecommerce Website Development Company in India",
-                  url: "https://makeolix.com/services/ecommerce-develop",
+                  url: "https://makeolix.com/services/ecommerce-development",
                 },
               ],
             },

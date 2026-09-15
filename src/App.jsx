@@ -44,12 +44,12 @@ function App() {
             {/* <Route path="/dropshipping" element={<Dropshipping />} /> */}
             <Route path="/pricing/ai-powered-seo" element={<SeoPackages />} />
             <Route path="/pricing/smo" element={<SmoPackages />} />
-            <Route path="/pricing/web" element={<WebPackages />} />
-            <Route path="/pricing/aeo+geo" element={<AeoGeo />} />
-            <Route
+            <Route path="/pricing/web-development" element={<WebPackages />} />
+            <Route path="/pricing/aeo-geo" element={<AeoGeo />} />
+            {/* <Route
               path="/pricing/seo+ai_visibility"
               element={<SeoAiVisibility />}
-            />
+            /> */}
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/matrix-maximizer-plan" element={<MM79 />} />
             <Route path="/testimonials" element={<Testimonials />} />

@@ -12,7 +12,7 @@ const WebPackages = () => {
     <SeoMetaDesc
   title="Website Development Pricing Plans | Affordable Web Design Packages "
   description="Explore MakeOlix's affordable website development pricing plans. Choose from custom web design packages for businesses, startups, and eCommerce websites."
-  url="https://makeolix.com/pricing/web"
+  url="https://makeolix.com/pricing/web-development"
 />
       <Navbar></Navbar>
       <HeroOrbit
