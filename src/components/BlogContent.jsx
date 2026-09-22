@@ -153,34 +153,90 @@ const RenderTextWithLinks = ({ text, links = [] }) => {
 
       return splitText.flatMap((item, index) => {
         if (index !== splitText.length - 1) {
-          return [
-            item,
-            link.newTab ? (
+          const isMailLink = link.url?.startsWith("mailto:");
+
+          const isExternalLink =
+            link.url?.startsWith("http://") ||
+            link.url?.startsWith("https://");
+
+          const commonStyle = {
+            color: "#118ab2",
+            textDecoration: "underline",
+            fontWeight: 800,
+            display: "inline-block",
+            transition:
+              "transform 180ms ease, color 180ms ease",
+            transformOrigin: "center",
+          };
+
+          const handleMouseEnter = (e) => {
+            e.currentTarget.style.transform =
+              "translateY(0px) scale(1.035)";
+            e.currentTarget.style.color = "#fff";
+          };
+
+          const handleMouseLeave = (e) => {
+            e.currentTarget.style.transform =
+              "translateY(0) scale(1)";
+            e.currentTarget.style.color = "#118ab2";
+          };
+
+          let linkElement;
+
+          // ─────────────────────────────────────
+          // EMAIL LINK
+          // ─────────────────────────────────────
+          if (isMailLink) {
+            linkElement = (
+              <a
+                key={`${link.word}-${index}`}
+                href={link.url}
+                style={commonStyle}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                {link.word}
+              </a>
+            );
+          }
+
+          // ─────────────────────────────────────
+          // EXTERNAL LINK
+          // ─────────────────────────────────────
+          else if (isExternalLink || link.newTab) {
+            linkElement = (
               <a
                 key={`${link.word}-${index}`}
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{
-                  color: "#118ab2",
-                  textDecoration: "underline",
-                }}
+                style={commonStyle}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 {link.word}
               </a>
-            ) : (
+            );
+          }
+
+          // ─────────────────────────────────────
+          // INTERNAL LINK
+          // ─────────────────────────────────────
+          else {
+            linkElement = (
               <Link
                 key={`${link.word}-${index}`}
                 to={link.url}
-                style={{
-                  color: "#118ab2",
-                  textDecoration: "underline",
-                }}
+                style={commonStyle}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 {link.word}
               </Link>
-            ),
-          ];
+            );
+          }
+
+          return [item, linkElement];
         }
 
         return item;
@@ -190,6 +246,8 @@ const RenderTextWithLinks = ({ text, links = [] }) => {
 
   return content;
 };
+
+
 
 // ─────────────────────────────────────────────────────────────────────
 // H2 Block
