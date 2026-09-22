@@ -10,6 +10,7 @@ import OtherPageHero from "../components/OtherPageHero";
 import BlogContent from "../components/BlogContent";
 import FaqVariant from "../components/FaqVariant";
 import SeoMetaDesc from "../components/SeoMetaDesc";
+import BlogMetaInfo from "../components/BlogMetaInfo";
 const BlogDetail = () => {
   const { slug } = useParams();
 
@@ -46,8 +47,23 @@ const BlogDetail = () => {
 
       {pageData.sections.map((section, index) => {
         switch (section.type) {
-          case "hero":
-            return <OtherPageHero key={index} {...section.data} />;
+      case "hero":
+  return (
+    <React.Fragment key={index}>
+      <OtherPageHero {...section.data} />
+
+      <div className="mx-auto w-full max-w-2xl px-4">
+        <div className="max-w-7xl">
+         <BlogMetaInfo
+  publishedAt={pageData.publishedAt}
+  authorId={pageData.authorId}
+  sections={pageData.sections}
+  views={pageData.views ?? 0}
+/>
+        </div>
+      </div>
+    </React.Fragment>
+  );
 
           case "blogcontent":
             return <BlogContent key={index} {...section.data} />;

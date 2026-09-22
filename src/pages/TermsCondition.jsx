@@ -200,36 +200,53 @@ const termsData = {
     { type: "h2", text: "Refund & Cancellation Policy" },
     {
       type: "para",
-      text: "Due to the nature of digital services, refunds are subject to specific conditions.",
+      text: "All MakeOlix subscriptions, the chosen plan service, are billed in advance every month and are non-refundable; i.e., no refunds will be issued. MakeOlix does not offer prorated refunds for canceled subscription plans. There will be no refunds or credits for partial months of service, upgrade/downgrade refunds, or refunds for months.",
+    },
+    {
+      type: "para",
+      text: "Once a project or service has been confirmed, we immediately allocate time, resources, tools, and our team's expertise to begin planning and execution. As these services are tailored specifically to each client and cannot be returned or resold, we do not offer refunds after payment has been received.",
     },
     {
       type: "list",
       heading:
-        "Refund requests may be considered only under circumstances such as:",
+        "Our no-refund policy applies to all services offered by MakeOlix, including but not limited to:",
       items: [
-        "Failure to initiate agreed services within a reasonable timeframe",
-        "Duplicate payments",
-        "Internal operational issues preventing service delivery",
+        "Search Engine Optimization (SEO)",
+        "AEO & GEO Services",
+        "Performance Marketing",
+        "Social Media Marketing",
+        "Website Design & Development",
+        "E-commerce Development",
+        "Local SEO Services",
+        "Branding & Digital Growth Solutions",
+        "Custom consulting and digital marketing services",
       ],
+    },
+   { type: "h2", text: "Cancellation of Services" },
+    {
+      type: "para",
+      text: "If you wish to discontinue an ongoing service or project, you must provide at least 30 days' prior written notice by emailing contactus@makeolix.com.  ",
+       links: [
+                {
+                  word: "contactus@makeolix.com",
+                  url: "mailto:contactus@makeolix.com",
+                },
+              ],
     },
     {
       type: "para",
-      text: "Refund requests must be submitted within 15 days of the payment date.",
-    },
-    {
-      type: "list",
-      heading: "Refunds will not apply for:",
-      items: [
-        "Completed work or delivered milestones",
-        "SEO rankings or marketing expectations were not achieved due to external factors",
-        "Delays caused by a lack of client communication or approvals",
-        "Change of mind after project initiation",
-      ],
+      text: "The 30-day notice period allows us to complete any ongoing work, finalize agreed deliverables, and ensure a smooth transition. If a cancellation request is submitted with less than 30 days' notice, the client will remain responsible for all applicable fees during the notice period.",
+     
     },
     {
       type: "para",
-      text: "If you want to discontinue ongoing services, you must provide a 30-day written notice. Services will continue during the notice period with standard billing applicable.For cancellation or refund inquiries, contact: contactus@makeolix.com  ",
+      text: "For recurring monthly services, billing will continue throughout the 30-day notice period. No refunds, credits, or prorated reimbursements will be provided for the current billing cycle or any unused portion of the service.",
     },
+    {
+      type: "para",
+      text: "Cancellation of a project or service does not entitle the client to a partial or full refund for payments already made.",
+    },
+  
     { type: "h2", text: "Confidentiality" },
     {
       type: "para",

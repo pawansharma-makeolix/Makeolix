@@ -10,6 +10,8 @@ export const BlogData = {
     publishedAt: "2026-09-07",
     updatedAt: "2026-09-07",
     metaTitle: "Top Ecommerce SEO Service Providers | Ecommerce SEO Company in India",
+  authorId: "author-1",
+  views: 1240,
 
     metaDescription:
       "Explore the top Ecommerce SEO service providers in India. Find the best Ecommerce SEO company and agency to improve organic rankings, increase online sales.",
@@ -307,6 +309,7 @@ export const BlogData = {
     publishedAt: "2026-08-24",
     updatedAt: "2026-08-24",
     metaTitle: "Top 9 eCommerce Website Development Companies in India 2026",
+  authorId: "author-2",
 
     metaDescription:
       "Explore the top 9 eCommerce website development companies in India for 2026. Compare eCommerce web development, design, and development services.",
@@ -671,6 +674,7 @@ export const BlogData = {
     publishedAt: "2026-08-17",
     updatedAt: "2026-08-17",
     metaTitle: "White Label SEO vs SEO Reseller: Key Differences Explained",
+  authorId: "author-3",
 
     metaDescription:
       "Compare SEO reseller services and white label SEO, including link building, local SEO, and partner services to choose the right solution for your agency",
@@ -977,6 +981,7 @@ export const BlogData = {
     publishedAt: "2026-08-10",
     updatedAt: "2026-08-10",
     metaTitle: "Ecommerce Website Development Company in India | Makeolix",
+  authorId: "author-1",
 
     metaDescription:
       "Build a powerful online store with an Ecommerce Website Development Company in India. Get scalable, secure, and user-friendly ecommerce solutions.",
@@ -1208,6 +1213,7 @@ export const BlogData = {
     publishedAt: "2026-08-03",
     updatedAt: "2026-08-03",
     metaTitle: "Best Small Business SEO Services to Grow Online in 2026 ",
+  authorId: "author-2",
 
     metaDescription:
       "Explore the best small business SEO services to improve search rankings, attract qualified visitors, increase local visibility, and grow your business online.",
@@ -1450,6 +1456,7 @@ export const BlogData = {
     updatedAt: "2026-07-27",
     metaTitle:
       " 5 Best Performance Marketing Services in India 2026 | Top Agencies ",
+  authorId: "author-3",
 
     metaDescription:
       "Explore the 5 best Performance Marketing Services in India for 2026. Compare leading Performance Marketing Agencies and performance-based marketing solutions.",
@@ -1694,6 +1701,7 @@ export const BlogData = {
     updatedAt: "2026-07-20",
     metaTitle:
       "PPC Agency in India | Best PPC Services & Google Ads Agency for Small Businesses",
+  authorId: "author-1",
 
     metaDescription:
       "Looking for the best PPC agency in India? We offer Google Ads management, eCommerce PPC, search, display, shopping, and remarketing campaigns to help businesses maximize ROI and generate quality leads. ",
@@ -2399,6 +2407,7 @@ export const BlogData = {
     publishedAt: "2026-07-06",
     updatedAt: "2026-07-06",
     metaTitle: "Technical SEO Agency & SEO for Ecommerce | MakeOlix Consulting",
+  authorId: "author-2",
 
     metaDescription:
       "Boost rankings and sales with MakeOlix Consulting. Expert Technical SEO Agency offering advanced SEO for Ecommerce websites to improve traffic and conversions",
@@ -2664,6 +2673,7 @@ export const BlogData = {
     publishedAt: "2026-06-29",
     updatedAt: "2026-06-29",
     metaTitle: "AI SEO Guide: SGE, LLMs & Generative AI for SEO",
+      authorId: "author-1",
 
     metaDescription:
       "Explore AI SEO, generative AI content, AI-powered keyword research, content optimization, and the key differences between AI SEO and traditional SEO.",
@@ -2903,6 +2913,7 @@ export const BlogData = {
     publishedAt: "2026-06-22",
     updatedAt: "2026-06-22",
     metaTitle: "Best Ecommerce SEO Services Agency in India | Makeolix",
+  authorId: "author-3",
 
     metaDescription:
       "Boost rankings and sales with the best ecommerce SEO services agency in India. Expert ecommerce SEO optimization, consultants, and SEO for ecommerce stores.",
@@ -3272,6 +3283,7 @@ export const BlogData = {
     publishedAt: "2026-06-15",
     updatedAt: "2026-06-15",
     metaTitle: "Performance Marketing Agency in India | PPC & Paid Marketing",
+  authorId: "author-1",
 
     metaDescription:
       "Grow your business with a leading performance marketing agency in India. We deliver PPC, paid performance marketing, and ROI-driven digital campaigns.",
@@ -3699,6 +3711,7 @@ export const BlogData = {
     publishedAt: "2026-06-08",
     updatedAt: "2026-06-08",
     metaTitle: "WordPress Development Agency | Custom WP Solutions | Makeolix",
+  authorId: "author-1",
 
     metaDescription:
       "Makeolix is a trusted WordPress development agency offering custom website development, plugin integration, theme customization, and ongoing support.",
@@ -4022,6 +4035,7 @@ export const BlogData = {
 
     description:
       "Local SEO Services: 9 Best Ways to Increase Online Visibility in 2026",
+  authorId: "author-1",
 
     publishedAt: "2026-06-01",
     updatedAt: "2026-06-01",
@@ -4295,6 +4309,7 @@ export const BlogData = {
     publishedAt: "2026-05-25",
     updatedAt: "2026-05-25",
     metaTitle: "Best E-Commerce SEO Services Agency | E-commerce SEO Experts",
+  authorId: "author-2",
 
     metaDescription:
       "Boost your online store with expert E-commerce Search Engine Optimization. Our best E-Commerce SEO services agency helps increase rankings, traffic, and sales.",
@@ -4558,6 +4573,7 @@ export const BlogData = {
 
     description:
       "How Do I Choose the Best SEO Reseller Service Provider in India: Complete Guide for Growing Agencies 2026",
+  authorId: "author-3",
 
     publishedAt: "2026-05-18",
     updatedAt: "2026-05-18",
@@ -4860,6 +4876,7 @@ export const BlogData = {
     updatedAt: "2026-05-11",
     metaTitle:
       "5 Top SEO Agencies in India to Boost Your Productivity in 2026 ",
+  authorId: "author-1",
 
     metaDescription:
       "Explore the 5 top SEO agencies in India for 2026, offering e-commerce SEO, local SEO, and growth-focused strategies to improve rankings, traffic, and productivity. ",
@@ -5228,6 +5245,7 @@ export const BlogData = {
     publishedAt: "2026-05-04",
     updatedAt: "2026-05-04",
     metaTitle: "Want More Traffic & Sales? Top E-commerce SEO Agency in India",
+  authorId: "author-2",
 
     metaDescription:
       "Grow your online store with proven SEO strategies. Partner with a top e-commerce SEO agency in India to increase website traffic, rankings, and sales.",
@@ -5396,6 +5414,7 @@ export const BlogData = {
     publishedAt: "2026-04-27",
     updatedAt: "2026-04-27",
     metaTitle: "SEO Company Pricing: How Much Does SEO Cost in 2026?",
+  authorId: "author-1",
 
     metaDescription:
       "Explore SEO company pricing, average costs, and different SEO packages. Understand what impacts SEO fees and choose the right SEO service for your business.",
@@ -5583,6 +5602,7 @@ export const BlogData = {
     updatedAt: "2026-04-13",
     metaTitle:
       "The Role of an SEO Company in Growing Your Online Presence | MakeOlix",
+  authorId: "author-3",
 
     metaDescription:
       "Explore how an SEO company helps businesses improve search rankings, increase organic traffic, and build a strong online presence with effective SEO strategies.",
