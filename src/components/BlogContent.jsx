@@ -1115,7 +1115,7 @@ const MobileTableOfContents = ({
 // Main BlogContent Component
 // ─────────────────────────────────────────────────────────────────────
 
-const BlogContent = ({ blocks = [] }) => {
+const BlogContent = ({ blocks = [] ,  blogDescription = "",}) => {
   // ─────────────────────────────────────────────────────────────────
   // Build TOC only from H2 blocks
   // Existing BlogData does NOT need to change.
@@ -1357,7 +1357,7 @@ const BlogContent = ({ blocks = [] }) => {
                     <ImageBlock
                       key={i}
                       src={block.src}
-                      alt={block.alt}
+                      alt={blogDescription || block.alt || ""}
                       caption={block.caption}
                       index={i}
                     />

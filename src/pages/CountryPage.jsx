@@ -7,13 +7,12 @@ import { useParams } from "react-router-dom";
 import IntroText from "../components/IntroText";
 import StepsSection from "../components/StepsSection";
 import Navbar from "../components/Navbar";
-import ServicesSection from "../components/ServicesSection";
-import { PhoenixServiceData } from "../components/data/PhoenixServiceData";
 import ParallaxHero from "../components/ParallaxHero";
 import FaqVariant from "../components/FaqVariant";
 import { ServiceAreaPagesData } from "../components/data/ServiceAreaPagesData";
 import MakeolixNumbers from "../components/MakeolixNumbers";
 import FeaturesSection from "../components/FeaturesSection";
+import SeoMetaDesc from "../components/SeoMetaDesc";
 const CountryPage = () => {
   const { city } = useParams();
   const pageData = ServiceAreaPagesData[city];
@@ -22,6 +21,11 @@ const CountryPage = () => {
   }
   return (
     <>
+    <SeoMetaDesc
+  title={pageData.metaTitle}
+  description={pageData.metaDescription}
+url={`https://makeolix.com/${city}`}
+/>
       <Navbar></Navbar>
       {pageData.sections.map((section, index) => {
         switch (section.type) {

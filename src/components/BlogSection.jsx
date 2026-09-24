@@ -5,6 +5,15 @@ import Button from "../components/Button";
 const blogs = [
   {
     id: 1,
+    slug: "seo-vs-aeo-vs-geo-explained-how-each-strategy-works",
+
+    desc: "SEO vs AEO vs GEO Explained: How Each Strategy Works",
+    date: "Published: Sep 14, 2026",
+    
+    img: "/Seo vs Aeo vs Geo - Makeolix Consulting.webp",
+  },
+  {
+    id: 2,
     slug: "which-are-the-top-ecommerce-seo-service-providers",
 
     desc: "Which are the Top eCommerce SEO Service Providers?",
@@ -13,7 +22,7 @@ const blogs = [
     img: "/Which are the Top eCommerce SEO Service Providers - Makeolix consulting-.webp",
   },
    {
-    id: 2,
+    id: 3,
     slug: "top-9-ecommerce-website-development-companies-in-india-2026",
 
     desc: "Top 9 eCommerce Website Development Companies in India 2026 ",
@@ -21,14 +30,7 @@ const blogs = [
     
     img: "/Top 9 eCommerce Website Development- Makeolix consulting.webp",
   },
-  {
-    id: 3,
-    slug: "white-label-seo-vs-seo-reseller-whats-the-difference",
-    desc: "White Label SEO vs SEO Reseller: What’s the Difference?",
-    date: "Published: August 17, 2026",
-    
-    img: "/White label seo - Makeolix Consulting.webp",
-  },
+  
   
  
 ];

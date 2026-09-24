@@ -2,6 +2,710 @@ import { link, text } from "framer-motion/client";
 
 export const BlogData = {
 
+ "seo-vs-performance-marketing-which-is-better-for-businesses-in-2026": {
+    image: "/SEO vs Performance Marketing Which is Better for Businesses in 2026.webp",
+
+    description: "SEO vs. Performance Marketing: Which is Better for Businesses in 2026?",
+
+    publishedAt: "2026-09-21",
+    updatedAt: "2026-09-21",
+    metaTitle: "SEO vs. Performance Marketing: Which is Better  in 2026?",
+  authorId: "author-1",
+  views: 1240,
+
+    metaDescription:
+      "Compare SEO and performance marketing in 2026. Explore SEO optimization services, SEO services for small businesses, and performance marketing strategies in India.",
+    sections: [
+      {
+        type: "hero",
+        data: {
+          title: "SEO vs. Performance Marketing: Which is Better for Businesses in 2026?",
+        },
+      },
+      {
+        type: "blogcontent",
+        data: {
+          blocks: [
+            {
+              type: "image",
+              src: "/SEO vs Performance Marketing Which is Better for Businesses in 2026.webp",
+              alt: "desc",
+            },
+            {
+              type: "para",
+              text: "Imagine this: you have a great website, a solid product, and a marketing budget ready to go. But now comes the difficult part. ",
+            },
+            {
+              type: "para",
+              text: "Do you put that money into SEO or start running paid campaigns? One promises long-term organic visibility. The other can get your business in front of potential customers much faster. So if you are deciding between an SEO Optimization Service and a performance marketing agency in India, it is easy to wonder which one deserves your budget in 2026. ",
+            },
+            {
+              type: "para",
+              text: "The right choice depends on what your business wants to achieve, how quickly you need results, and how you plan to grow. Before choosing one over the other, understand how SEO and performance marketing differ, and where each delivers the most value.",
+            },
+            {
+              type: "h2",
+              text: "SEO vs. Performance Marketing: Quick Comparison",
+            },
+            
+            {
+              type: "table",
+              data: {
+                headers: ["Factor", "SEO", "Performance Marketing"],
+                rows: [
+                  [
+                    "Time to Results",
+                    "3-6+ Months",
+                    "Days to Weeks",
+                  ],
+                  [
+                    "Cost Over Time",
+                    "Lower Long-Term",
+                    "Ongoing Spend Required",
+                    
+                  ],
+                  [
+                    "Traffic After Stopping",
+                    "Continues",
+                    "Stops Immediately",
+                    
+                  ],
+                  [
+                    "Best For",
+                    "Sustainable Brand Growth",
+                    "Fast, Measurable Sales",
+                  ],
+                  [
+                    "Trust Signal",
+                    "Higher (Organic = Credible)",
+                    "Lower (Users Know It's an Ad)",
+                  ],
+                 
+                ],
+              },
+            },
+            {
+              type: "h2",
+              text: "What is SEO and How Does It Work?",  
+            },
+           
+            {
+              type: "para",
+              text: "SEO Optimization Service means improving your website so it ranks organically on Google, Bing, and increasingly, inside AI answers on ChatGPT, Gemini, and Copilot. No ad spend involved. You earn the click.",  
+                 links: [
+                {
+                  word: "SEO Optimization Service",
+                  url: "https://makeolix.com/services/seo",
+                },
+              ],
+            },
+ {
+              type: "list",
+              heading: "It works through three main levers:",
+              items: [
+                "Technical SEO – site speed, mobile experience, crawlability",
+                "Content and on-page SEO – answering what your audience is actually searching for",
+                "Authority building – backlinks, brand mentions, and trust signals",
+                
+              ],
+            },
+
+            {
+              type: "para",
+              text: "The catch? SEO is slow. You're usually looking at 3 to 8 months before you see meaningful movement, sometimes longer in competitive niches. But once you rank, that traffic keeps coming without a daily ad bill draining your account.",  
+            },
+            {
+              type: "h2",
+              text: "What is Performance Marketing and Why Do Businesses Use It?",  
+            },
+            
+            {
+              type: "para",
+              text: "Performance marketing covers paid channels where you only pay for a defined outcome. Click, lead, sale. Google Ads, Meta Ads, LinkedIn Ads, programmatic display- all of it falls under this umbrella.",
+            },
+            {
+              type: "para",
+              text: "The appeal is speed. Launch a campaign on Monday, get clicks by Tuesday. A solid performance marketing strategy gives you control over budget, targeting, and messaging in near real time, which makes it the go-to for product launches, seasonal sales, and businesses that need revenue this quarter, not next year.",
+               links: [
+                {
+                  word: "performance marketing strategy",
+                  url: "https://makeolix.com/services/performance-marketing",
+                },
+              ],
+            },
+            {
+              type: "para",
+              text: "The tradeoff is obvious once you've run a few campaigns: turn the budget off, and the traffic stops. There's no compounding value sitting on a page waiting for the next search.",
+            },
+            {
+              type: "h2",
+              text: "Which One Should Your Business Choose?",
+            },
+            {
+              type: "para",
+              text: "Choose SEO if you're building a brand for the long haul and can afford to invest before seeing returns. Choose performance marketing if you need revenue now, are testing a new product, or operate in a seasonal business where timing is everything.",
+            },
+            {
+              type: "para",
+              text: "Here's the part most agencies won't tell you: for most growing businesses, the real answer is both, sequenced correctly.",
+            },
+            {
+              type: "para",
+              text: "We at MakeOlix Consulting typically advise clients to run performance marketing first to generate immediate cash flow and market data, while SEO builds quietly in the background. Once organic rankings start pulling weight, ad spend can shift toward retargeting and high-intent keywords instead of carrying the whole funnel. That combination consistently outperforms either channel running alone, especially for SEO services for small business owners who can't afford to gamble everything on one channel.",
+              links: [
+                {
+                  word: "SEO services for small business",
+                  url: "https://makeolix.com/services/small-business-seo",
+                },
+              ],
+            },
+
+  {
+              type: "h2",
+              text: "How Do SEO and Performance Marketing Work Together?",
+            },
+  {
+              type: "para",
+              text: "Think of it less as competition and more as division of labor.",
+            },
+             
+
+            {
+              type: "steps",
+              items: [
+                {
+                  title: "Paid ads validate keywords fast ",
+                  description:
+                    "Run a small campaign, see which search terms convert, then build SEO content around those exact terms instead of guessing.",
+                },
+                {
+                  title: "SEO content feeds retargeting",
+                  description:
+                    "Blog visitors who don't convert become a warm retargeting audience for your ads, at a much lower cost per click than cold traffic.",
+                },
+                {
+                  title: "Combined presence builds trust",
+                  description:
+                    "Showing up both in the ad slot and the organic result signals authority. Buyers notice that, even if they can't articulate why.",
+                },
+                {
+                  title: "Data flows both directions",
+                  description:
+                    "Ad platforms reveal what messaging converts. SEO reveals what questions people are actually asking before they buy. Feed one into the other.",
+                },
+              ],
+            },
+            
+           
+            {
+              type: "h2",
+              text: "What Should Businesses Focus On Beyond Traffic?",
+            },
+            {
+              type: "para",
+              text: "Traffic is only one part of the equation.",
+            },
+            {
+              type: "para",
+              text: "A better measurement framework connects visibility with business outcomes.",
+            },
+            {
+              type: "list",
+              heading:
+                "Look at:",
+              items: [
+                "Qualified leads",
+                "Conversion rate",
+                "Cost per lead or acquisition",
+                "Revenue from campaigns",
+                "Organic conversions",
+                "Customer acquisition cost",
+                "Landing-page performance",
+                "Repeat purchases",
+                "Search visibility for high-intent queries",
+              ],
+            },
+            {
+              type: "para",
+              text: "At MakeOlix Consulting, our approach starts with understanding the business and its goals. We also highlight personalized website audits and transparent communication as part of our approach.",
+            },
+            {
+              type: "para",
+              text: "That matters because a strategy for an established eCommerce brand should not look identical to one for a local service business or early-stage startup.",
+            },
+            {
+              type: "h2",
+              text: "The Bottom Line",
+            },
+            {
+              type: "para",
+              text: "SEO and performance marketing aren't rivals fighting for your budget. They're two speeds of the same engine, one built for momentum, one built for durability. The businesses winning in 2026 aren't the ones picking a side. They're the ones sequencing both with a clear plan.",
+            },
+            {
+              type: "para",
+              text: "If you're still deciding where SEO, paid campaigns, or both fit into your growth plan, MakeOlix Consulting can help you build that roadmap around your business goals, audience, and growth stage, rather than simply adding another marketing channel to the mix.",
+               links: [
+                {
+                  word: "MakeOlix Consulting",
+                  url: "https://makeolix.com/contact-us",
+                },
+              ],
+              
+            },
+
+           
+            
+            
+           
+            
+            
+         
+           
+            
+
+           
+            
+            
+
+           
+           
+            
+            
+          ],
+        },
+      },
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question:
+                "Is SEO considered performance marketing?",
+              answer:
+                "No. SEO is not typically considered performance marketing. SEO focuses on building organic visibility, while performance marketing uses paid campaigns to drive and measure specific actions such as leads, sales, or conversions.",
+            },
+            {
+              id: 2,
+              question:
+                "Is SEO better than performance marketing for a new business?",
+              answer:
+                "Not necessarily. New businesses often need performance marketing first for quick revenue and market validation, then layer in SEO once there's budget and content history to build on.",
+            },
+            {
+              id: 3,
+              question: "How much should a small business budget for SEO vs. ads?",
+              answer:
+                "There's no universal split, but many small businesses start with 60-70% toward ads for early traction and gradually shift 30-40% toward SEO as organic momentum builds.",
+            },
+            {
+              id: 4,
+              question:
+                "Can SEO and performance marketing target the same keywords?",
+              answer:
+                "Yes, and they should. Running paid ads on high-intent keywords while building organic content around the same terms reinforces both channels and improves overall conversion rates.",
+            },
+            {
+              id: 5,
+              question: "Does AI search change whether SEO still matters in 2026?",
+              answer:
+                "It makes SEO matter more, not less. AI Overviews and chat-based search engines pull from well-structured, authoritative organic content, so a strong SEO Optimization Service in India is now part of AI visibility, not separate from it.",
+            },
+          ],
+        },
+      },
+    ],
+    relatedblogs: [
+      {
+        slug: "10-best-e-commerce-seo-services-agencies",
+        image: "/blog-image-16-6-2026 (1).webp",
+        description:
+          "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
+
+        buttonText: "Read More",
+        buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+        buttonVariant: "",
+      },
+      {
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+
+        image:
+          "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
+        description:
+          "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
+        buttonText: "Read More",
+        buttonHref:
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        buttonVariant: "",
+      },
+      {
+        slug: "want-more-traffic-sales",
+        image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+        description:
+          "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+        buttonText: "Read More",
+        buttonHref: "/blog/want-more-traffic-sales",
+        buttonVariant: "",
+      },
+    ],
+  },
+  "seo-vs-aeo-vs-geo-explained-how-each-strategy-works": {
+    image: "/Seo vs Aeo vs Geo - Makeolix Consulting.webp",
+
+    description: "SEO vs AEO vs GEO Explained: How Each Strategy Works",
+
+    publishedAt: "2026-09-14",
+    updatedAt: "2026-09-14",
+    metaTitle: "SEO vs AEO vs GEO Explained: How Each Strategy Works",
+  authorId: "author-1",
+  views: 1240,
+
+    metaDescription:
+      "Learn the difference between SEO, AEO, and GEO. Discover how each strategy works and how they can improve search visibility, answer visibility, and AI-driven results.",
+    sections: [
+      {
+        type: "hero",
+        data: {
+          title: "SEO vs AEO vs GEO Explained: How Each Strategy Works",
+        },
+      },
+      {
+        type: "blogcontent",
+        data: {
+          blocks: [
+            {
+              type: "image",
+              src: "/Seo vs Aeo vs Geo - Makeolix Consulting.webp",
+              alt: "desc",
+            },
+            {
+              type: "para",
+              text: "Search is no longer limited to a list of website links. People can now find information through traditional search results, direct answers, and AI-generated responses. This has made SEO, AEO, and GEO important terms for businesses that want to stay visible online.",
+            },
+            {
+              type: "para",
+              text: "In simple terms, SEO helps your website appear in search results, AEO helps your content answer questions directly, and GEO focuses on visibility in generative AI experiences. These approaches are different, but they can work together as part of one content strategy.",
+            },
+            {
+              type: "h2",
+              text: "SEO vs AEO vs GEO: Quick Comparison",
+            },
+            {
+              type: "para",
+              text: "Understanding the SEO, AEO, and GEO differences becomes easier when you compare what each approach is designed to achieve."
+            },
+            {
+              type: "table",
+              data: {
+                headers: ["Factor", "SEO", "AEO","GEO"],
+                rows: [
+                  [
+                    "Main Goal",
+                    "Search rankings and organic traffic",
+                    "Direct answers and answer visibility",
+                    "AI visibility, mentions, and citations",
+                  ],
+                  [
+                    "Focus",
+                    "Search engines",
+                    "Answer engines",
+                    "Generative AI and search",
+                  ],
+                  [
+                    "Key Platforms",
+                    "Google, Bing",
+                    "Featured snippets, PAA, voice search",
+                    "ChatGPT, Gemini, Perplexity, AI search",
+                  ],
+                  [
+                    "Content Focus",
+                    "Keywords, topics, helpful content",
+                    "Questions and clear answers",
+                    "Context, authority, evidence, and depth",
+                  ],
+                  [
+                    "Key Metrics",
+                    "Rankings, traffic, CTR",
+                    "Answer visibility and zero-click exposure",
+                    "AI mentions, citations, and referral traffic",
+                  ],
+                 
+                ],
+              },
+            },
+            {
+              type: "para",
+              text: "The difference between SEO, AEO, and GEO mainly comes down to where and how people receive information. SEO focuses on helping pages rank. AEO focuses on making information easy to use as a direct answer. GEO focuses on making useful and trustworthy information available to generative AI systems.",  
+            },
+            {
+              type: "h2",
+              text: "How Does SEO Work?",  
+            },
+            {
+              type: "para",
+              text: "Search engine optimization is the process of improving a website so search engines can understand, index, and rank its pages.",  
+                 links: [
+                {
+                  word: "Search engine optimization",
+                  url: "https://makeolix.com/services/seo",
+                },
+              ],
+            },
+ {
+              type: "list",
+              heading: "A strong SEO strategy usually includes:",
+              items: [
+                "Choosing topics and keywords people actually search for",
+                "Creating useful and original content",
+                "Improving page titles, headings, and on-page elements",
+                "Making the website easy for search engines to crawl",
+                "Building useful internal links",
+                "Earning relevant backlinks",
+                "Improving website speed, mobile usability, and overall page experience",
+              ],
+            },
+
+            {
+              type: "para",
+              text: "The main goal is to help the right people find your website through organic search.",  
+            },
+            {
+              type: "para",
+              text: "SEO also provides an important foundation for newer search experiences. Google states that its generative AI features are built on its existing Search systems, so basic SEO practices such as having accessible, indexable, useful content remain important.",  
+            },
+            
+            {
+              type: "h2",
+              text: "How Does AEO Work?",
+            },
+            {
+              type: "para",
+              text: "Answer Engine Optimization focuses on making content easy to understand and use when someone asks a specific question.",
+            },
+            {
+              type: "para",
+              text: "Instead of only trying to rank a page for a keyword, the content should also provide a clear answer to the question behind that search.",
+            },
+
+
+             {
+              type: "list",
+              heading: "For example, a page about commercial moving could answer questions such as:",
+              items: [
+                "How much does commercial moving cost?",
+                "How long does a business move take?",
+                "What should I move first?",
+               
+              ],
+            },
+
+
+            {
+              type: "para",
+              text: "Useful AEO practices include clear headings, short direct answers, lists, tables, FAQs, and well-organized information. This makes the content easier for both people and search systems to understand.",
+            },
+            {
+              type: "para",
+              text: "Featured snippets are one example of a search feature where Google may show a direct answer from a webpage. However, there is no method that guarantees a page will receive one because Google chooses when and which pages appear in these features.",
+             
+            },
+            {
+              type: "para",
+              text: "AEO can also support searches where people want quick answers rather than a long list of pages.",
+             
+            },
+            {
+              type: "h2",
+              text: "How Does GEO Work?",
+            },
+            {
+              type: "para",
+              text: "Generative Engine Optimization is an industry term used for improving a brand's visibility in generative AI experiences.",
+            },
+            {
+              type: "para",
+              text: "Generative AI systems can create answers by using information from different sources. This means content needs to do more than simply include keywords. It should provide clear information, useful context, trustworthy sources, and information that adds something valuable to the topic.",
+            },
+            {
+              type: "list",
+              heading:
+                "A practical AI search optimization approach can include:",
+              items: [
+                "Creating original and helpful information",
+                "Showing expertise and first-hand knowledge",
+                "Supporting important claims with evidence",
+                "Covering a topic clearly and completely",
+                "Using simple language and clear page structure",
+                "Keeping important information easy to find",
+              ],
+            },
+            {
+              type: "para",
+              text: "Generative search optimization is therefore closely connected to content quality, authority, and how clearly information can be understood.",
+            },
+            {
+              type: "para",
+              text: "Businesses may also consider AI Overviews optimization, ChatGPT optimization, and LLM optimization when planning content for AI-based search experiences. These should not be treated as secret hacks. Google's current guidance specifically recommends focusing on strong SEO fundamentals and useful, original content rather than creating special AI-only files or trying to manipulate AI systems.",
+            },
+            {
+              type: "h2",
+              text: "SEO vs AEO vs GEO: How Do They Work Together?",
+            },
+            {
+              type: "para",
+              text: "SEO, AEO, and GEO do not have to be separate strategies.",
+            },
+            {
+              type: "para",
+              text: "Think of them as three ways of making the same useful content easier to discover and understand.",
+            },
+
+            {
+              type: "steps",
+              items: [
+                {
+                  title: "SEO ",
+                  description:
+                    "helps people find your website through traditional search.",
+                },
+                {
+                  title: "AEO",
+                  description:
+                    "helps your content provide clear answers to specific questions.",
+                },
+                {
+                  title: "GEO",
+                  description:
+                    "focuses on how useful and trustworthy your information is within generative AI experiences.",
+                },
+              ],
+            },
+            {
+              type: "para",
+              text: "For example, a company could publish one detailed guide about a product or service. SEO can help that guide gain search visibility. Clear question-based sections can make it easier to use for direct-answer searches. Original information, supporting evidence, and strong topical coverage can also make the content more useful in AI-generated search experiences.",
+            },
+            {
+              type: "para",
+              text: "This is why businesses generally do not need to choose only one approach. A well-planned content strategy can support traditional search and newer AI experiences at the same time.",
+            },
+            {
+              type: "para",
+              text: "MakeOlix Consulting follows this broader approach by treating search visibility as more than just keyword rankings. The focus should remain on creating content that answers real questions and gives users useful information.",
+               links: [
+                {
+                  word: "MakeOlix Consulting",
+                  url: "https://makeolix.com/",
+                },
+              ],
+            },
+            
+            
+            {
+              type: "h2",
+              text: "SEO vs AEO vs GEO: Which Strategy Should You Use?",
+            },
+            {
+              type: "para",
+              text: "The right approach depends on what you want your website to achieve.",
+            },
+            {
+              type: "para",
+              text: "If your main goal is organic traffic and search rankings, SEO remains essential. If your audience often searches through questions and wants quick answers, AEO-focused content can add value. If your business wants to be visible as people increasingly use generative AI to research topics, GEO-related content practices can also be considered.",
+            },
+            {
+              type: "para",
+              text: "The important point is that these approaches are not replacements for one another. Strong technical foundations, useful content, clear information, and a good user experience remain important across search. Google also confirms that its AI search features continue to rely on core Search systems and quality signals.",
+               
+
+            },
+
+           
+            
+            
+
+           
+           
+            
+            
+          ],
+        },
+      },
+      {
+        type: "faq",
+        data: {
+          faqdata: [
+            {
+              id: 1,
+              question:
+                "What is the difference between SEO and AEO?",
+              answer:
+                "SEO focuses mainly on improving a website's visibility in traditional search results. AEO focuses on providing clear answers to specific questions. In practice, the two can support each other because well-optimized content can both rank in search and provide useful direct answers.",
+            },
+            {
+              id: 2,
+              question:
+                "What is the difference between AEO and GEO?",
+              answer:
+                "AEO focuses on answering questions clearly, while GEO focuses on visibility within generative AI experiences. AEO may target direct-answer formats and question-based searches, while GEO places more emphasis on useful context, original information, authority, and information that AI systems can understand.",
+            },
+            {
+              id: 3,
+              question: "Is GEO replacing SEO?",
+              answer:
+                "No. GEO should not be viewed as a replacement for SEO. Google's current guidance says its generative AI search features use existing Search ranking and quality systems, which means strong SEO foundations continue to matter.",
+            },
+            {
+              id: 4,
+              question:
+                "Does AEO help with featured snippets?",
+              answer:
+                "Content that gives clear, direct answers can be suitable for search features such as featured snippets, but there is no guarantee that Google will select a particular page. Google's systems decide which result is shown for a given search.",
+            },
+            {
+              id: 5,
+              question: "Should businesses use SEO, AEO, and GEO together?",
+              answer:
+                "For many businesses, using the three approaches together can make sense. SEO supports traditional search visibility, AEO helps answer user questions, and GEO addresses visibility in generative AI experiences. The exact balance should depend on the business, audience, content, and search behavior.",
+            },
+          ],
+        },
+      },
+    ],
+    relatedblogs: [
+      {
+        slug: "10-best-e-commerce-seo-services-agencies",
+        image: "/blog-image-16-6-2026 (1).webp",
+        description:
+          "10 Best E-Commerce SEO Services Agencies to Grow Your Revenue in 2026",
+
+        buttonText: "Read More",
+        buttonHref: "/blog/10-best-e-commerce-seo-services-agencies",
+        buttonVariant: "",
+      },
+      {
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+
+        image:
+          "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
+        description:
+          "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
+        buttonText: "Read More",
+        buttonHref:
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        buttonVariant: "",
+      },
+      {
+        slug: "want-more-traffic-sales",
+        image: "/Top-E-commerce-SEO-Agency-in-India-MakeOlix-Consulting.webp",
+        description:
+          "Want More Traffic & Sales? Partner with a Top E-commerce SEO Agency in India",
+        buttonText: "Read More",
+        buttonHref: "/blog/want-more-traffic-sales",
+        buttonVariant: "",
+      },
+    ],
+  },
+
 "which-are-the-top-ecommerce-seo-service-providers": {
     image: "/Which are the Top eCommerce SEO Service Providers - Makeolix consulting-.webp",
 

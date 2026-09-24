@@ -55,7 +55,7 @@ const BlogDetail = () => {
   );
 
           case "blogcontent":
-            return <BlogContent key={index} {...section.data} />;
+            return <BlogContent key={index} {...section.data}  blogDescription={pageData.description}/>;
           case "faq":
             return <FaqVariant key={index} faqs={section.data.faqdata} />;
           default:

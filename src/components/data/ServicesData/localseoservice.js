@@ -193,7 +193,7 @@ export const localSeoData = {
           reverse: true,
           description:
             "MakeOlix Consulting is a firm that provides Local SEO Solutions that are creative, strategic, and technological. Our Local SEO Consulting services including full Local SEO Marketing services will help your business ascend up the ranks in local search and remain there. Here we use the best SEO Multi location, Google My Business optimization and local [small business SEO|/services/small-business-seo] services so that we become the best local SEO company in the business of small businesses in India and beyond.",
-          image: "/pexels-khwanchai-4175028.jpg",
+          image: "/Expert Solutions from a Top-Rated-Makeolix.webp",
         },
       },
 {

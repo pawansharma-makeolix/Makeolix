@@ -5,17 +5,17 @@ const benefits = [
   {
     title: "Long-Term Growth",
     text: "A solid foundation for long-term search engine performance and user engagement",
-    image: "/yamu_jay-global-business-9062781_1920.jpg",
+    image: "/Long-Term Growth-Makeolix consulting.webp",
   },
   {
     title: "Immediate Impact",
     text: "Immediate improvements in technical, content, and user experience aspects",
-    image: "/imediategrowth.jpg",
+    image: "/imediategrowth.webp",
   },
   {
     title: "Cost-Effective Coverage",
     text: "Affordable yet comprehensive service targeting critical SEO elements",
-    image: "/costeffective.jpg",
+    image: "/costeffective.webp",
   },
 ];
 

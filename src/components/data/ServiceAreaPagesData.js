@@ -2,6 +2,11 @@ import { desc, head, image, param } from "framer-motion/client";
 
 export const ServiceAreaPagesData = {
   "indianapolis-seo-agency": {
+     metaTitle:
+    "Indianapolis SEO Agency | Expert SEO Services",
+
+  metaDescription:
+    "Grow your business with a trusted Indianapolis SEO agency offering expert SEO services, local SEO, technical SEO, and strategies that drive rankings and leads.",
     sections: [
       {
         type: "hero",
@@ -193,6 +198,11 @@ export const ServiceAreaPagesData = {
   },
 
   "phoenix-seo-agency": {
+    metaTitle:
+    "Phoenix SEO Agency | Expert SEO Services in Phoenix",
+
+  metaDescription:
+    "Boost rankings, traffic, and leads with expert Phoenix SEO services. Get customized SEO strategies, local SEO, technical SEO, and proven growth solutions.",
     sections: [
       {
         type: "hero",
@@ -352,6 +362,12 @@ export const ServiceAreaPagesData = {
   },
 
   "los-angeles-seo-agency": {
+  metaTitle:
+    "Los Angeles SEO Agency | Expert SEO Services & Growth",
+
+  metaDescription:
+    "Boost rankings, traffic, and leads with a trusted Los Angeles SEO agency. Get expert SEO strategies, local SEO, and proven solutions for sustainable growth.",
+
     sections: [
       {
         type: "hero",
@@ -527,6 +543,11 @@ export const ServiceAreaPagesData = {
   },
 
   "new-york-seo-agency": {
+     metaTitle:
+    "New York SEO Agency | Expert SEO Services for Growth",
+
+  metaDescription:
+    "Grow your online presence with a trusted New York SEO agency. Get expert SEO services, higher rankings, targeted traffic, and measurable business growth.",
     sections: [
       {
         type: "hero",
@@ -686,6 +707,11 @@ export const ServiceAreaPagesData = {
   },
 
   "san-diego-seo-agency": {
+     metaTitle:
+    "San Diego SEO Agency | Expert SEO Services That Drive Growth",
+
+  metaDescription:
+    "Explore your online visibility with a trusted San Diego SEO agency. Get expert SEO services, higher rankings, qualified traffic, and sustainable business growth.",
     sections: [
       {
         type: "hero",
@@ -862,6 +888,11 @@ export const ServiceAreaPagesData = {
   },
 
   "seattle-seo-agency": {
+     metaTitle:
+    "Seattle SEO Agency | Expert SEO Services for Business",
+
+  metaDescription:
+    "Grow your online visibility with a trusted Seattle SEO agency offering expert SEO services, local SEO, technical SEO, and strategies that drive qualified traffic.",
     sections: [
       {
         type: "hero",
@@ -990,7 +1021,7 @@ export const ServiceAreaPagesData = {
           title: "Why Choose MakeOlix Consulting?",
           description:
             "SEO delivers the best results when it’s part of a complete digital strategy. At MakeOlix Consulting, we combine our experience as a Seattle Top SEO Company with the Best Digital Marketing Services in Seattle to help your business grow more effectively.From content marketing and website optimization to conversion-focused strategies, we create a seamless online experience that turns visitors into loyal customers. We also maintain a strong focus on transparency by providing regular updates on rankings, traffic, and conversions. Our goal goes beyond improving rankings, we focus on real business growth by helping you generate leads, increase sales, and build long-term success.",
-          image: "/imagine-buddy-vsLbaIdhwaU-unsplash (1).jpg",
+          image: "/Why Choosse MakeOlix Consulting.webp",
         },
       },
 
@@ -1037,6 +1068,11 @@ export const ServiceAreaPagesData = {
   },
 
   "boston-seo-agency": {
+    metaTitle:
+    "Boston SEO Agency | Expert SEO Services for Business",
+
+  metaDescription:
+    "Boost your online visibility with a trusted Boston SEO agency. Get expert SEO services, higher rankings, qualified traffic, and sustainable business growth.",
     sections: [
       {
         type: "hero",
@@ -1193,6 +1229,11 @@ export const ServiceAreaPagesData = {
   },
 
   "chicago-seo-agency": {
+     metaTitle:
+    "Chicago SEO Agency | Expert SEO Services for Business",
+
+  metaDescription:
+    "Grow your business with a trusted Chicago SEO agency. Get expert SEO services, local optimization, higher rankings, qualified traffic, and more leads.",
     sections: [
       {
         type: "hero",
@@ -1210,7 +1251,7 @@ export const ServiceAreaPagesData = {
           description:
             "Choosing the Best SEO Services Company in Chicago means working with a team that understands both search engines and local markets. At MakeOlix Consulting, we combine deep industry knowledge with data-driven strategies. We don’t believe in one-size-fits-all solutions. Every business gets a tailored SEO roadmap based on its goals, competitors, and audience behavior. Our transparent reporting and consistent performance tracking ensure you always know how your business is growing.",
           image:
-            "/diggitymarketing-search-engine-optimization-4111000_1920.jpg",
+            "/diggitymarketing-search-engine-optimization.webp",
         },
       },
       {
@@ -1298,7 +1339,7 @@ export const ServiceAreaPagesData = {
           title: "Complete Digital Growth for Chicago Businesses",
           description:
             "We help businesses achieve the Best Local SEO in Chicago by integrating SEO with a broader growth strategy. Our goal is to not only improve rankings but also drive conversions and revenue. With our expertise, your business can compete with top brands and benefit from the Best Digital Marketing Services in Chicago, all under one roof. If you want to scale faster, consider combining SEO with our Performance Marketing strategies..",
-          image: "/startupstockphotos-student-849826_1920.jpg",
+          image: "/Complete Digital Growth for Chicago Businesses.webp",
         },
       },
 
@@ -1346,6 +1387,11 @@ export const ServiceAreaPagesData = {
   },
 
   "dallas-seo-agency": {
+     metaTitle:
+    "Dallas SEO Agency | Expert SEO Services for Businesses",
+
+  metaDescription:
+    "Boost your online visibility with a Dallas SEO agency offering expert SEO strategies, local SEO, keyword optimization, and proven growth for your business.",
     sections: [
       {
         type: "hero",
@@ -1505,6 +1551,11 @@ export const ServiceAreaPagesData = {
   },
 
   "houston-seo-agency": {
+     metaTitle:
+    "Houston SEO Agency | Expert SEO Services for Growth",
+
+  metaDescription:
+    "Grow your Houston business with expert SEO services. Boost rankings, drive qualified traffic, increase leads, and build long-term online visibility.",
     sections: [
       {
         type: "hero",
@@ -1663,6 +1714,11 @@ export const ServiceAreaPagesData = {
   },
 
   "jacksonville-seo-agency": {
+     metaTitle:
+    "Best Jacksonville SEO Agency | SEO Services for Business",
+
+  metaDescription:
+    "Grow your business with a trusted Jacksonville SEO agency offering expert SEO services, local optimization, keyword research, and strategies that drive results.",
     sections: [
       {
         type: "hero",
@@ -1838,6 +1894,11 @@ export const ServiceAreaPagesData = {
   },
 
   "miami-seo-agency": {
+    metaTitle:
+    "Miami SEO Agency | SEO Services for Business Growth",
+
+  metaDescription:
+    "Grow your Miami business with expert SEO services. Boost search rankings, increase organic traffic, generate qualified leads, and achieve sustainable growth.",
     sections: [
       {
         type: "hero",
@@ -1990,6 +2051,11 @@ export const ServiceAreaPagesData = {
   },
 
   "philadelphia-seo-agency": {
+    metaTitle:
+    "Philadelphia SEO Agency | SEO Services for Businesses",
+
+  metaDescription:
+    "Grow your online visibility with a trusted Philadelphia SEO agency. Get expert SEO services, higher rankings, qualified traffic, and measurable business growth.",
     sections: [
       {
         type: "hero",
@@ -2157,6 +2223,11 @@ export const ServiceAreaPagesData = {
   },
 
   "san-antonio-seo-agency": {
+    metaTitle:
+    "San Antonio SEO Agency | Expert SEO Services",
+
+  metaDescription:
+    "Boost your online visibility with a trusted San Antonio SEO agency. Get expert SEO services, higher rankings, quality traffic, and sustainable business growth.",
     sections: [
       {
         type: "hero",
@@ -2318,6 +2389,11 @@ export const ServiceAreaPagesData = {
   },
 
   "san-francisco-seo-agency": {
+     metaTitle:
+    "San Francisco SEO Agency | Expert SEO Services",
+
+  metaDescription:
+    "Boost your online visibility with a trusted San Francisco SEO agency. Get expert SEO services, higher rankings, quality traffic, and sustainable business growth.",
     sections: [
       {
         type: "hero",
@@ -2490,6 +2566,11 @@ export const ServiceAreaPagesData = {
   },
 
   "toronto-seo-agency": {
+     metaTitle:
+    "Toronto Best SEO Agency | Expert SEO Services for Businesses",
+
+  metaDescription:
+    "Grow your online visibility with a trusted Toronto SEO agency. Get expert SEO services, higher rankings, qualified traffic, and sustainable business growth.",
     sections: [
       {
         type: "hero",
@@ -2652,6 +2733,11 @@ export const ServiceAreaPagesData = {
   },
 
   "austin-seo-agency": {
+     metaTitle:
+    "Austin SEO Agency | Expert SEO Services for Business Growth",
+
+  metaDescription:
+    "Grow your business with a trusted Austin SEO agency offering expert SEO services, local SEO, technical optimization, and proven strategies for higher rankings.",
     sections: [
       {
         type: "hero",
@@ -2707,7 +2793,7 @@ export const ServiceAreaPagesData = {
         type: "parallax",
 
         data: {
-          bgImage: "/startupstockphotos-student-849828_1920.jpg",
+          bgImage: "/The Austin Business Results-Makeolix consulting.webp",
           align: "both",
           // LEFT
           title: "The Austin Business Results",
@@ -2818,6 +2904,11 @@ export const ServiceAreaPagesData = {
   },
 
   "charlotte-seo-agency": {
+     metaTitle:
+    "Charlotte SEO Agency | Expert SEO Services for Businesses",
+
+  metaDescription:
+    "Grow your business with a trusted Charlotte SEO agency offering expert SEO services, local SEO, technical SEO, and proven strategies to increase online visibility.",
     sections: [
       {
         type: "hero",
@@ -3013,6 +3104,11 @@ export const ServiceAreaPagesData = {
   },
 
   "columbus-seo-agency": {
+     metaTitle:
+    "Columbus SEO Agency | SEO Services for Business Growth",
+
+  metaDescription:
+    "Boost your online visibility with a Columbus SEO agency offering expert SEO services, local SEO, keyword optimization, and strategies that drive traffic and leads.",
     sections: [
       {
         type: "hero",
@@ -3229,7 +3325,14 @@ export const ServiceAreaPagesData = {
   },
 
   "denver-seo-agency": {
+     metaTitle:
+    "Best Denver SEO Agency | Expert SEO Services in Denver",
+
+  metaDescription:
+    "Looking for the best Denver SEO agency? Get expert SEO services, local SEO, technical SEO, and proven strategies to improve search rankings, drive qualified traffic, and generate more leads.",
+
     sections: [
+      
       {
         type: "hero",
         data: {
