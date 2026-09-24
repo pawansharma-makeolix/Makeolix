@@ -3,8 +3,17 @@ import { motion } from "framer-motion";
 import Button from "../components/Button";
 
 const blogs = [
-  {
+    {
     id: 1,
+    slug: "seo-vs-performance-marketing-which-is-better-for-businesses-in-2026",
+
+    desc: "SEO vs. Performance Marketing: Which is Better for Businesses in 2026?",
+    date: "Published: Sep 21, 2026",
+    
+    img: "/SEO vs Performance Marketing Which is Better for Businesses in 2026.webp",
+  },
+  {
+    id: 2,
     slug: "seo-vs-aeo-vs-geo-explained-how-each-strategy-works",
 
     desc: "SEO vs AEO vs GEO Explained: How Each Strategy Works",
@@ -13,7 +22,7 @@ const blogs = [
     img: "/Seo vs Aeo vs Geo - Makeolix Consulting.webp",
   },
   {
-    id: 2,
+    id: 3,
     slug: "which-are-the-top-ecommerce-seo-service-providers",
 
     desc: "Which are the Top eCommerce SEO Service Providers?",
@@ -21,15 +30,7 @@ const blogs = [
     
     img: "/Which are the Top eCommerce SEO Service Providers - Makeolix consulting-.webp",
   },
-   {
-    id: 3,
-    slug: "top-9-ecommerce-website-development-companies-in-india-2026",
-
-    desc: "Top 9 eCommerce Website Development Companies in India 2026 ",
-    date: "Published: August 24, 2026",
-    
-    img: "/Top 9 eCommerce Website Development- Makeolix consulting.webp",
-  },
+   
   
   
  
