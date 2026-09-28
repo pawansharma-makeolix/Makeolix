@@ -146,7 +146,7 @@ export default function UltraFooter() {
                 "Website Design & Development":
                   "/services/website-design-development",
                 "Local SEO Services": "/services/local-seo",
-                "Ecommerce Development": "/services/ecommerce-develop",
+                "Ecommerce Development": "/services/ecommerce-development",
                 "Social Media Marketing": "/services/social-media-marketing",
               };
               return (
