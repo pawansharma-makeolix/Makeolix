@@ -17,6 +17,7 @@ import FeaturesSection from "../components/FeaturesSection";
 import MakeolixNumbers from "../components/MakeolixNumbers";
 import PageNotFound from "../components/PageNotFound";
 import TextMediaVariant from "../components/TextMediaVariant";
+import SeoMetaDesc from "../components/SeoMetaDesc";
 const ServiceItem = () => {
   const { slug } = useParams();
   const pageData = ServicesPagesData[slug];
@@ -25,20 +26,19 @@ const ServiceItem = () => {
   if (!pageData) return <PageNotFound></PageNotFound>;
   return (
     <>
-   <Helmet>
-  <title>{pageData.meta?.title}</title>
+ <SeoMetaDesc
+  title={pageData.meta?.title}
+  description={pageData.meta?.description}
+  url={`https://makeolix.com/services/${slug}`}
+/>
 
-  <meta
-    name="description"
-    content={pageData.meta?.description}
-  />
-
-  {pageData.meta?.schema && (
+{pageData.meta?.schema && (
+  <Helmet>
     <script type="application/ld+json">
       {JSON.stringify(pageData.meta.schema)}
     </script>
-  )}
-</Helmet>
+  </Helmet>
+)}
       {shouldNoIndex && (
         <Helmet>
           <meta name="robots" content="noindex, nofollow" />
