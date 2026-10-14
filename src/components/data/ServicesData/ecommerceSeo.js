@@ -29,7 +29,7 @@ export const ecommerceSeoData = {
       data: {
         heading: "Services We Provide for E-commerce Growth",
         subheading:
-          "At MakeOlix Consulting, we offer end-to-end seo services for e-commerce websites designed to maximize growth. We also integrate strategies like content marketing, [Local SEO|/services/local-seo], and technical audits across your domain to ensure complete optimization.",
+          "At MakeOlix Consulting, we offer end-to-end seo services for e-commerce websites designed to maximize growth. We also integrate strategies like content marketing, [Local SEO Services|/services/local-seo], and technical audits across your domain to ensure complete optimization.",
 
         statsData: [
           {
@@ -46,7 +46,7 @@ export const ecommerceSeoData = {
           },
           {
             title: "Technical SEO Improvements",
-            desc: "Our team handles e-commerce [Technical SEO|/services/technical-seo], including site speed, mobile responsiveness, structured data, and crawlability. We fix backend issues that impact rankings and user experience, ensuring faster loading, better indexing, and improved overall performance. ",
+            desc: "Our team handles e-commerce [Technical SEO Services|/services/technical-seo], including site speed, mobile responsiveness, structured data, and crawlability. We fix backend issues that impact rankings and user experience, ensuring faster loading, better indexing, and improved overall performance. ",
           },
           {
             title: "Content, Authority & Internal Linking",
@@ -93,7 +93,7 @@ export const ecommerceSeoData = {
           "It reduces customer acquisition costs",
         ],
         rightlastpara:
-          "Our team works as your dedicated e-commerce seo consultant, helping you navigate the competitive landscape with precision and strategy.",
+          "Our team works as your dedicated e-commerce seo company, helping you navigate the competitive landscape with precision and strategy.",
       },
     },
     {
