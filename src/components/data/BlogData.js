@@ -327,7 +327,7 @@ export const BlogData = {
         buttonVariant: "",
       },
       {
-        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
 
         image:
           "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
@@ -335,7 +335,7 @@ export const BlogData = {
           "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
         buttonText: "Read More",
         buttonHref:
-          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
         buttonVariant: "",
       },
       {
@@ -683,7 +683,7 @@ export const BlogData = {
         buttonVariant: "",
       },
       {
-        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
 
         image:
           "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
@@ -691,7 +691,7 @@ export const BlogData = {
           "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
         buttonText: "Read More",
         buttonHref:
-          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
         buttonVariant: "",
       },
       {
@@ -982,7 +982,7 @@ export const BlogData = {
         buttonVariant: "",
       },
       {
-        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
 
         image:
           "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
@@ -990,7 +990,7 @@ export const BlogData = {
           "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
         buttonText: "Read More",
         buttonHref:
-          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
         buttonVariant: "",
       },
       {
@@ -1348,7 +1348,7 @@ export const BlogData = {
         buttonVariant: "",
       },
       {
-        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
 
         image:
           "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
@@ -1356,7 +1356,7 @@ export const BlogData = {
           "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
         buttonText: "Read More",
         buttonHref:
-          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
         buttonVariant: "",
       },
       {
@@ -3079,7 +3079,7 @@ export const BlogData = {
         buttonVariant: "",
       },
       {
-        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
 
         image:
           "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
@@ -3087,7 +3087,7 @@ export const BlogData = {
           "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
         buttonText: "Read More",
         buttonHref:
-          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
         buttonVariant: "",
       },
       {
@@ -3345,7 +3345,7 @@ export const BlogData = {
         buttonVariant: "",
       },
       {
-        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
 
         image:
           "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
@@ -3353,7 +3353,7 @@ export const BlogData = {
           "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
         buttonText: "Read More",
         buttonHref:
-          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
         buttonVariant: "",
       },
       {
@@ -3585,7 +3585,7 @@ export const BlogData = {
         buttonVariant: "",
       },
       {
-        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
 
         image:
           "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
@@ -3593,7 +3593,7 @@ export const BlogData = {
           "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
         buttonText: "Read More",
         buttonHref:
-          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
         buttonVariant: "",
       },
       {
@@ -5240,7 +5240,7 @@ export const BlogData = {
     ],
     relatedblogs: [
       {
-        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
 
         image:
           "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
@@ -5248,7 +5248,7 @@ export const BlogData = {
           "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
         buttonText: "Read More",
         buttonHref:
-          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
         buttonVariant: "",
       },
       {
@@ -5538,7 +5538,7 @@ export const BlogData = {
     ],
     relatedblogs: [
       {
-        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+        slug: "5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
 
         image:
           "/5-Top-SEO-Agencies-in-India-to-Boost-Your-Productivity-in-2025-MakeOlix-Consulting.webp",
@@ -5546,7 +5546,7 @@ export const BlogData = {
           "5 Top SEO Agencies in India to Boost Your Productivity in 2025",
         buttonText: "Read More",
         buttonHref:
-          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
+          "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2026",
         buttonVariant: "",
       },
       {
