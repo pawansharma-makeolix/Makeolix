@@ -59,6 +59,17 @@ function App() {
             <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
+            
+<Route
+  path="/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025"
+  element={
+    <Navigate
+      to="/blog/5-best-performance-marketing-services-in-india-for-2026"
+      replace
+    />
+  }
+/>
+
 
             <Route
               path="/phoenix"
