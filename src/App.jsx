@@ -26,8 +26,8 @@ const Blog = lazy(() => import("./pages/Blog"));
 const BlogDetail = lazy(() => import("./pages/BlogDetail"));
 const TermsConditions = lazy(() => import("./pages/TermsCondition"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
-// const ShopifyPortfolio = lazy(() => import("./pages/ShopifyPortfolio"));
-// const WordpressPortfolio = lazy(() => import("./pages/WordpressPortfolio"));
+
+   const HalloweenCursor = lazy(() => import("./components/HalloweenCursor"));
 
 function App() {
   return (
@@ -35,6 +35,9 @@ function App() {
       <Router>
         <ScrollToTop></ScrollToTop>
         <ChatBot></ChatBot>
+          <Suspense fallback={null}>
+     <HalloweenCursor />
+   </Suspense>
         {/* <CustomCursor /> */}
 
         <Suspense fallback={null}>
