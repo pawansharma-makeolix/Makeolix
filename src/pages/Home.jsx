@@ -16,6 +16,7 @@ import UltraFooter from "../components/UltraFooter";
 import CTAMarquee from "../components/CTAMarquee";
 import GoogleReviewsWidget from "../components/GoogleReviewsWidget";
 import SeoMetaDesc from "../components/SeoMetaDesc";
+import HalloweenHero from "../components/HalloweenHero";
 const Home = () => {
   const stats = [
     {
@@ -58,7 +59,8 @@ const Home = () => {
         description="Partner with MakeOlix for expert SEO, PPC, social media marketing, website development, and branding services that help businesses generate more traffic, leads, and sales."
       ></SeoMetaDesc>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
+      <HalloweenHero></HalloweenHero>
       <Trusted></Trusted>
       <About></About>
 
