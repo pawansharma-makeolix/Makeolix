@@ -194,7 +194,7 @@ export default function UltraFooter() {
     alt: "US flag",              // 👈 add
     address: "8 The Green, STE B Dover, DE 19901",
     mail: "contactus@makeolix.com",
-    phone: "+91 1204537874",
+    phone: "+1 472 473 2459",
   },
   {
     img: "/indianflag.png",
