@@ -54,7 +54,6 @@ Object.keys(ServicesPagesData).forEach((slug) => {
 const staticPages = [
   "/about-us",
   "/contact-us",
-  "/careers",
   "/privacy-policy",
   "/terms-and-conditions",
   "/matrix-maximizer-plan",

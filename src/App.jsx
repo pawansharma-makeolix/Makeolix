@@ -147,6 +147,7 @@ function App() {
             <Route path="/terms-and-conditions" element={<TermsConditions />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             {/* <Route path="/industry/:slug" element={<IndustryItem />} /> */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </Router>
