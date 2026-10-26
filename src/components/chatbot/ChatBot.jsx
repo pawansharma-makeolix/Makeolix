@@ -19,22 +19,19 @@ export default function ChatBot() {
     },
   ];
   const [open, setOpen] = useState(false);
-  const [showPopup, setShowPopup] = useState(false); // CHANGED: pehle true tha
+  const [showPopup, setShowPopup] = useState(true);
   const [typing, setTyping] = useState(false);
 
   const [messages, setMessages] = useState(initialMessages);
 
   const messagesEndRef = useRef(null);
 
-  // CHANGED: popup 4 sec baad dikhega aur 10 sec pe hat jayega
   useEffect(() => {
-    const show = setTimeout(() => setShowPopup(true), 2000);
-    const hide = setTimeout(() => setShowPopup(false), 10000);
+    const timer = setTimeout(() => {
+      setShowPopup(false);
+    }, 5000);
 
-    return () => {
-      clearTimeout(show);
-      clearTimeout(hide);
-    };
+    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -84,7 +81,6 @@ export default function ChatBot() {
       <AnimatePresence>
         {showPopup && !open && (
           <motion.div
-            data-nosnippet // CHANGED: Google isko snippet/title me use na kare
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
@@ -110,7 +106,7 @@ export default function ChatBot() {
 
           setOpen(!open);
         }}
-        aria-label={open ? "Close chat" : "Open chat"}
+        aria-label={open ? "Close chat" : "Open chat"} 
         className="fixed bottom-5 right-5 z-10000 h-16 w-16 rounded-full bg-linear-to-br from-(--blue-2) to-(--blue-3) shadow-[0_0_40px_rgba(17,138,178,0.45)] flex items-center justify-center"
       >
         {open ? (
@@ -125,7 +121,6 @@ export default function ChatBot() {
       <AnimatePresence>
         {open && (
           <motion.div
-            data-nosnippet // CHANGED: chat window text bhi snippet se bahar
             initial={{ opacity: 0, y: 40, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 40, scale: 0.95 }}

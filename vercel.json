@@ -1,26 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025",
-      "destination": "/blog/5-best-performance-marketing-services-in-india-for-2026",
-      "permanent": true
-    },
-    {
-      "source": "/services/ecommerce-seo",
-      "destination": "/services/e-commerce-seo",
-      "permanent": true
-    },
-    {
-      "source": "/:city(phoenix|jacksonville|houston|los-angeles|indianapolis|charlotte|san-francisco|san-antonio|columbus|new-york|austin|philadelphia|denver)",
-      "destination": "/:city-seo-agency",
-      "permanent": true
-    },
-    {
-  "source": "/case-study-type/:path*",
-  "destination": "/case-studies",
-  "permanent": true
-}
-  ],
   "rewrites": [
     {
       "source": "/api/(.*)",
