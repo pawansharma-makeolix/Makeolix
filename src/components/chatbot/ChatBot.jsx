@@ -28,7 +28,7 @@ export default function ChatBot() {
 
   // CHANGED: popup 4 sec baad dikhega aur 10 sec pe hat jayega
   useEffect(() => {
-    const show = setTimeout(() => setShowPopup(true), 2000);
+    const show = setTimeout(() => setShowPopup(true), 4000);
     const hide = setTimeout(() => setShowPopup(false), 10000);
 
     return () => {

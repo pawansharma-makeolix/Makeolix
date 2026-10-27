@@ -611,7 +611,11 @@ export default function Navbar() {
                 transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
                 style={{
                   // Services = wide grouped, Pricing = narrow simple
-                  width: activeMegaItem.groups ? "1200px" : "380px",
+                 width: activeMegaItem.groups
+  ? "min(1200px, calc(100vw - 24px))"
+  : "min(380px, calc(100vw - 24px))",
+maxWidth: "calc(100vw - 24px)",
+boxSizing: "border-box",
                   maxHeight: "80vh", // 👈 IMPORTANT (screen ke hisaab se)
                   overflowY: "auto",
 
@@ -992,20 +996,31 @@ export default function Navbar() {
                                         key={gi}
                                         style={{ marginBottom: "12px" }}
                                       >
-                                        <p
-                                          className="nav-font"
-                                          style={{
-                                            fontSize: "11px",
-                                            fontWeight: 700,
-                                            color: "#00509d",
-                                            textTransform: "uppercase",
-                                            letterSpacing: "0.08em",
-                                            padding: "4px 16px 6px",
-                                            opacity: 0.7,
-                                          }}
-                                        >
-                                          {group.icon} {group.heading}
-                                        </p>
+                                       
+<Link
+  to={group.href || "/services/seo"}
+  onClick={() => setMobileOpen(false)}
+  className="nav-font"
+  style={{
+    display: "flex",
+    alignItems: "center",
+    width: "100%",
+    minHeight: "44px",
+    padding: "8px 16px",
+    marginBottom: "4px",
+    fontSize: "12px",
+    fontWeight: 700,
+    color: "#00509d",
+    textTransform: "uppercase",
+    letterSpacing: "0.06em",
+    textDecoration: "none",
+    cursor: "pointer",
+    touchAction: "manipulation",
+  }}
+>
+  {group.icon} {group.heading}
+</Link>
+
                                         {group.items
                                           .filter(
                                             (item) => item.isActive !== false,
