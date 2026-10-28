@@ -212,21 +212,21 @@ const navItems = [
   // {name: "Dropshipping", href: "/dropshipping"},
   { name: "About", href: "/about-us" },
   { name: "Testimonials", href: "/testimonials" },
-//  {
-//   name: "Portfolio",
-//   href: "#",
-//   mega: true,
-//   submenu: [
-//     {
-//       label: "Shopify Portfolio",
-//       href: "/portfolio/shopify-portfolio",
-//     },
-//     {
-//       label: "WordPress Portfolio",
-//       href: "/portfolio/wordpress-portfolio",
-//     },
-//   ],
-// },
+  //  {
+  //   name: "Portfolio",
+  //   href: "#",
+  //   mega: true,
+  //   submenu: [
+  //     {
+  //       label: "Shopify Portfolio",
+  //       href: "/portfolio/shopify-portfolio",
+  //     },
+  //     {
+  //       label: "WordPress Portfolio",
+  //       href: "/portfolio/wordpress-portfolio",
+  //     },
+  //   ],
+  // },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blog" },
   { name: "Contact Us", href: "/contact-us" },
@@ -547,21 +547,21 @@ export default function Navbar() {
 
           {/* MOBILE HAMBURGER */}
           <button
-  className="lg:hidden"
-  style={{
-    padding: "8px",
-    borderRadius: "12px",
-    color: "#003863",
-    background: "none",
-    border: "none",
-    cursor: "pointer",
-  }}
-  aria-label={mobileOpen ? "Close menu" : "Open menu"}   // 👈 add this
-  onClick={(e) => {
-    e.stopPropagation();
-    setMobileOpen(!mobileOpen);
-  }}
->
+            className="lg:hidden"
+            style={{
+              padding: "8px",
+              borderRadius: "12px",
+              color: "#003863",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+            }}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}   // 👈 add this
+            onClick={(e) => {
+              e.stopPropagation();
+              setMobileOpen(!mobileOpen);
+            }}
+          >
             <AnimatePresence mode="wait">
               {mobileOpen ? (
                 <motion.span
@@ -611,11 +611,11 @@ export default function Navbar() {
                 transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
                 style={{
                   // Services = wide grouped, Pricing = narrow simple
-                 width: activeMegaItem.groups
-  ? "min(1200px, calc(100vw - 24px))"
-  : "min(380px, calc(100vw - 24px))",
-maxWidth: "calc(100vw - 24px)",
-boxSizing: "border-box",
+                  width: activeMegaItem.groups
+                    ? "min(1200px, calc(100vw - 24px))"
+                    : "min(380px, calc(100vw - 24px))",
+                  maxWidth: "calc(100vw - 24px)",
+                  boxSizing: "border-box",
                   maxHeight: "80vh", // 👈 IMPORTANT (screen ke hisaab se)
                   overflowY: "auto",
 
@@ -677,10 +677,10 @@ boxSizing: "border-box",
                     }}
                   >
                     {activeMegaItem.groups
-  ? "Our Services"
-  : activeMegaItem.name === "Portfolio"
-    ? "Our Portfolio"
-    : "Our Packages"}
+                      ? "Our Services"
+                      : activeMegaItem.name === "Portfolio"
+                        ? "Our Portfolio"
+                        : "Our Packages"}
                   </p>
                 </div>
 
@@ -879,7 +879,7 @@ boxSizing: "border-box",
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               onClick={() => setMobileOpen(false)}
-               aria-label="Close menu"
+              aria-label="Close menu"
             />
             <motion.div
               className="mobile-drawer"
@@ -996,30 +996,30 @@ boxSizing: "border-box",
                                         key={gi}
                                         style={{ marginBottom: "12px" }}
                                       >
-                                       
-<Link
-  to={group.href || "/services/seo"}
-  onClick={() => setMobileOpen(false)}
-  className="nav-font"
-  style={{
-    display: "flex",
-    alignItems: "center",
-    width: "100%",
-    minHeight: "44px",
-    padding: "8px 16px",
-    marginBottom: "4px",
-    fontSize: "12px",
-    fontWeight: 700,
-    color: "#00509d",
-    textTransform: "uppercase",
-    letterSpacing: "0.06em",
-    textDecoration: "none",
-    cursor: "pointer",
-    touchAction: "manipulation",
-  }}
->
-  {group.icon} {group.heading}
-</Link>
+
+                                        <Link
+                                          to={group.href || "/services/seo"}
+                                          onClick={() => setMobileOpen(false)}
+                                          className="nav-font"
+                                          style={{
+                                            display: "flex",
+                                            alignItems: "center",
+                                            width: "100%",
+                                            minHeight: "44px",
+                                            padding: "8px 16px",
+                                            marginBottom: "4px",
+                                            fontSize: "12px",
+                                            fontWeight: 700,
+                                            color: "#00509d",
+                                            textTransform: "uppercase",
+                                            letterSpacing: "0.06em",
+                                            textDecoration: "none",
+                                            cursor: "pointer",
+                                            touchAction: "manipulation",
+                                          }}
+                                        >
+                                          {group.icon} {group.heading}
+                                        </Link>
 
                                         {group.items
                                           .filter(
