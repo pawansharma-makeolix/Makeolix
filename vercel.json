@@ -1,6 +1,13 @@
 {
   "headers": [
     {
+      "source": "/.well-known/ard.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
       "source": "/.well-known/ai-catalog.json",
       "headers": [
         { "key": "Content-Type", "value": "application/json" },
@@ -14,7 +21,7 @@
       "destination": "/api/$1"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!\\.well-known/).*)",
       "destination": "/index.html"
     }
   ]
