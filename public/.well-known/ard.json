@@ -8,8 +8,13 @@
     {
       "identifier": "urn:air:makeolix.com:llms-txt",
       "displayName": "MakeOlix llms.txt",
-      "mediaType": "text/markdown",
-      "url": "https://makeolix.com/llms.txt"
+      "type": "text/markdown",
+      "url": "https://makeolix.com/llms.txt",
+      "representativeQueries": [
+        "MakeOlix Consulting services",
+        "SEO and performance marketing agency for US businesses",
+        "eCommerce website development agency"
+      ]
     }
   ]
 }
