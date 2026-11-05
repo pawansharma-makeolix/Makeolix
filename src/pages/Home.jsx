@@ -17,6 +17,7 @@ import CTAMarquee from "../components/CTAMarquee";
 import GoogleReviewsWidget from "../components/GoogleReviewsWidget";
 import SeoMetaDesc from "../components/SeoMetaDesc";
 import HalloweenHero from "../components/HalloweenHero";
+import BlackFridayHero from "../components/BlackFridayHero";
 const Home = () => {
   const stats = [
     {
@@ -60,6 +61,7 @@ const Home = () => {
       ></SeoMetaDesc>
       <Navbar />
       {/* <Hero /> */}
+      {/* <BlackFridayHero></BlackFridayHero> */}
       <HalloweenHero></HalloweenHero>
       <Trusted></Trusted>
       <About></About>
