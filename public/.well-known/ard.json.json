@@ -1,4 +1,15 @@
-
 {
-  "entries": []
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "MakeOlix Consulting",
+    "identifier": "urn:air:makeolix.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:makeolix.com:llms-txt",
+      "displayName": "MakeOlix llms.txt",
+      "mediaType": "text/markdown",
+      "url": "https://makeolix.com/llms.txt"
+    }
+  ]
 }
