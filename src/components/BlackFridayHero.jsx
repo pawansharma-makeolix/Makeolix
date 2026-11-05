@@ -822,7 +822,7 @@ const BlackFridayHero = () => {
             <Button href={"/contact-us"} ariaLabel="Get in touch with MakeOlix">
               Claim The Offer
             </Button>
-            <Button variant="outline" href={"/about"} ariaLabel="Know more about MakeOlix">
+            <Button variant="outline" href={"/about-us"} ariaLabel="Know more about MakeOlix">
               Know More
             </Button>
           </div>

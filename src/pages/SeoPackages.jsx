@@ -21,7 +21,7 @@ const SeoPackages = () => {
         primaryBtnText={"Discuss With Us"}
         primaryLink={"/contact-us"}
         secondaryBtnText={"Know More"}
-        secondaryLink={"/about"}
+        secondaryLink={"/about-us"}
       ></HeroOrbit>
       <PriceSection
         plans={SEO_PLANS}

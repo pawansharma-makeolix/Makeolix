@@ -33,7 +33,7 @@ url="https://makeolix.com/blog"
       <HeroOrbit
         title={"Our Blogs"}
         primaryBtnText={"Know More"}
-        primaryLink={"/about"}
+        primaryLink={"/about-us"}
         secondaryBtnText={"Get In Touch"}
         secondaryLink={"/contact-us"}
       ></HeroOrbit>

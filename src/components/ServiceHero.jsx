@@ -183,7 +183,7 @@ export default function ServiceHero({
   subtitle,
   primaryCTA = {
     text: "About Us",
-    link: "/about",
+    link: "/about-us",
   },
   secondaryCTA = {
     text: "Contact Us",

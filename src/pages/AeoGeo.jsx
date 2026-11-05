@@ -22,7 +22,7 @@ title={"AEO + GEO"}
 primaryBtnText={"Discuss With Us"}
 primaryLink={"/contact-us"}
 secondaryBtnText={"Know More"}
-secondaryLink={"/about"}
+secondaryLink={"/about-us"}
 ></HeroOrbit>
 <SEOPricingTable></SEOPricingTable>
       <CTAMarquee></CTAMarquee>

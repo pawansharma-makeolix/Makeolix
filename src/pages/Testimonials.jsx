@@ -65,7 +65,7 @@ url="https://makeolix.com/testimonials"
       <HeroOrbit
         title={"Our Testimonials"}
         primaryBtnText={"Know More"}
-        primaryLink={"/contact-us"}
+        primaryLink={"/about-us"}
         secondaryBtnText={"Get In Touch"}
         secondaryLink={"/contact-us"}
       ></HeroOrbit>
