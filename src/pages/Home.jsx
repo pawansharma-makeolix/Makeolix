@@ -61,8 +61,8 @@ const Home = () => {
       ></SeoMetaDesc>
       <Navbar />
       {/* <Hero /> */}
-      {/* <BlackFridayHero></BlackFridayHero> */}
-      <HalloweenHero></HalloweenHero>
+      <BlackFridayHero></BlackFridayHero>
+      {/* <HalloweenHero></HalloweenHero> */}
       <Trusted></Trusted>
       <About></About>
 
