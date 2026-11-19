@@ -84,7 +84,7 @@ const REASONS = [
   },
 ];
 
-export default function WhyChooseMakeolix({ seoLink = "/seo-services" }) {
+export default function WhyChooseMakeolix({ seoLink = "https://makeolix.com/services/seo" }) {
   const sectionRef = useRef(null);
 
   useEffect(() => {
