@@ -4,10 +4,11 @@ import UltraFooter from "../components/UltraFooter";
 import HeroOrbit from "../components/HeroOrbit";
 import StaggerTestimonials from "../components/StaggerTestimonials";
 import CTAMarquee from "../components/CTAMarquee";
-import UltraAnimatedHero from "../components/UltraAnimatedHero";
 import VideoTestimonials from "../components/VideoTestimonials";
 import { TestimonialData } from "../components/data/TestimonialData";
 import SeoMetaDesc from "../components/SeoMetaDesc";
+import VirtualAssistantHero from "../components/VirtualAssistantHero";
+
 const Testimonials = () => {
   const servicesData = [
     {
@@ -62,6 +63,11 @@ description="Read genuine client testimonials and success stories from businesse
 url="https://makeolix.com/testimonials"
     ></SeoMetaDesc>
       <Navbar></Navbar>
+      <VirtualAssistantHero
+        headline="Your Virtual Assistant"
+        description="Smart virtual assistance designed to simplify your daily operations and help your business grow."
+        
+      />
       <HeroOrbit
         title={"Our Testimonials"}
         primaryBtnText={"Know More"}
@@ -79,5 +85,6 @@ url="https://makeolix.com/testimonials"
 };
 
 export default Testimonials;
+
 
 

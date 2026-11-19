@@ -64,7 +64,7 @@ const Home = () => {
       <BlackFridayHero></BlackFridayHero>
       {/* <HalloweenHero></HalloweenHero> */}
       <Trusted></Trusted>
-      <About></About>
+    <About></About>
 
       <KnowPoints></KnowPoints>
       <ServicesSlider />

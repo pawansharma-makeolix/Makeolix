@@ -118,9 +118,9 @@ function ServiceCard({ card, isActive, onClick, index }) {
         transition={{ delay: 0.2 + index * 0.1 }}
         className="relative z-10"
       >
-        <h3 className="text-white  text-[15px] leading-snug mb-3">
+        <h4 className="text-white  text-[15px] leading-snug mb-3">
           {card.title}
-        </h3>
+        </h4>
 
         <p className="text-[#cbd5e1] text-[13px] leading-relaxed">
           {card.desc}

@@ -107,15 +107,17 @@ export default function UltraFooter() {
               "Case Studies",
               "Blog",
               "Contact Us",
+              "Virtual Assistant",
             ].map((item, i) => {
               // Create the proper links based on the page name
               const linkPaths = {
-                Home: "/",
+                "Home": "/",
                 "About Us": "/about",
                 "Contact Us": "/contact-us",
-                Testimonials: "/testimonials",
+                "Testimonials": "/testimonials",
                 "Case Studies": "/case-studies",
-                Blog: "/blog",
+                "Blog": "/blog",
+                "Virtual Assistant": "/virtual-assistant",
               };
               return (
                 <motion.li key={i} whileHover={{ x: 6 }}>

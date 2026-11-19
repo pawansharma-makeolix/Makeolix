@@ -26,6 +26,7 @@ const Blog = lazy(() => import("./pages/Blog"));
 const BlogDetail = lazy(() => import("./pages/BlogDetail"));
 const TermsConditions = lazy(() => import("./pages/TermsCondition"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const VirtualAssistant = lazy(() => import("./pages/VirtualAssistant"));
 
    
 
@@ -60,6 +61,8 @@ function App() {
             <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
+            <Route path="/virtual-assistant" element={<VirtualAssistant />} />
+            
             
 <Route
   path="/blog/5-top-seo-agencies-in-india-to-boost-your-productivity-in-2025"
